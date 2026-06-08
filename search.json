@@ -222,89 +222,144 @@
   {
     "objectID": "06_Decimo/Quimica.html",
     "href": "06_Decimo/Quimica.html",
-    "title": "3  Química - Décimo",
+    "title": "3  Escritura de ecuaciones químicas",
     "section": "",
-    "text": "3.1 Escritura de ecuaciones químicas",
+    "text": "3.1 Teoría",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
-    "objectID": "06_Decimo/Quimica.html#teoría",
-    "href": "06_Decimo/Quimica.html#teoría",
-    "title": "3  Química - Décimo",
-    "section": "3.2 Teoría",
-    "text": "3.2 Teoría",
+    "objectID": "06_Decimo/Quimica.html#teor�ia",
+    "href": "06_Decimo/Quimica.html#teor�ia",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "",
+    "text": "Una ecuación química es una representación abreviada (taquigrafía) que describe un cambio o reacción mediante el uso de símbolos de elementos y fórmulas de compuestos en lugar de palabras descriptivas. En este sistema de notación, las sustancias iniciales denominadas reactivos se ubican siempre a la izquierda, mientras que las sustancias resultantes llamadas productos se posicionan a la derecha, separadas por una flecha (\\(\\rightarrow\\)) que señala la dirección de la transformación. Para otorgar precisión física al modelo, se añaden subíndices entre paréntesis que indican el estado de agregación: (s) para sólidos, (l) para líquidos, (g) para gases y (aq) para soluciones acuosas (sustancias disueltas en agua). En situaciones donde la transformación puede ocurrir en ambos sentidos, se emplea una flecha doble, asegurando que la ecuación refleje fielmente la naturaleza reversible del fenómeno químico estudiado (Oriakhi 2021). \\[SO_{3}(g) + H_{2}O(l) \\rightarrow H_{2}SO_{4}(aq)\n\\]",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
-    "objectID": "06_Decimo/Quimica.html#ideas-previas",
-    "href": "06_Decimo/Quimica.html#ideas-previas",
-    "title": "3  Química - Décimo",
-    "section": "3.4 Ideas Previas",
-    "text": "3.4 Ideas Previas\n\n3.4.1 Ideas Previas - Cuentos",
+    "objectID": "06_Decimo/Quimica.html#ideas-previas-cuentos",
+    "href": "06_Decimo/Quimica.html#ideas-previas-cuentos",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.2 Ideas Previas - Cuentos",
+    "text": "3.2 Ideas Previas - Cuentos\n\nImagina que estás en la cocina intentando preparar un pastel, pero la receta está escrita en un idioma que no entiendes. Ves dibujos de huevos, harina y un horno, pero no sabes en qué orden van ni qué sucede cuando se mezclan. Al final, el pastel sale del horno, pero no tienes idea de cómo explicarle a alguien más exactamente qué pasó dentro de ese molde.",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
-    "objectID": "06_Decimo/Quimica.html#contextualización",
-    "href": "06_Decimo/Quimica.html#contextualización",
-    "title": "3  Química - Décimo",
-    "section": "3.7 Contextualización",
-    "text": "3.7 Contextualización\n\n3.7.1 Contextualización - Método Richard Feynman",
+    "objectID": "06_Decimo/Quimica.html#ideas-previas-preguntas",
+    "href": "06_Decimo/Quimica.html#ideas-previas-preguntas",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.3 Ideas Previas - Preguntas",
+    "text": "3.3 Ideas Previas - Preguntas\n\n\n¿Cómo podrías dibujar la “receta” del pastel usando solo símbolos para que cualquier persona en el mundo la entienda?\nSi los ingredientes desaparecen al mezclarse, ¿crees que realmente dejaron de existir o solo se transformaron?\n¿Por qué es importante saber si un ingrediente es líquido o sólido antes de empezar?\n¿Qué pasaría si intentas leer la receta al revés, del pastel terminado hacia los ingredientes?",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
-    "objectID": "06_Decimo/Quimica.html#contextualización-para-caracterizados",
-    "href": "06_Decimo/Quimica.html#contextualización-para-caracterizados",
-    "title": "3  Química - Décimo",
-    "section": "3.9 Contextualización para caracterizados",
-    "text": "3.9 Contextualización para caracterizados\n\n3.9.1 Contextualización - Apoyo Cognitivo y TDAH",
+    "objectID": "06_Decimo/Quimica.html#contextualizaci�on-m�etodo-richard-feynman",
+    "href": "06_Decimo/Quimica.html#contextualizaci�on-m�etodo-richard-feynman",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.4 Contextualización - Método Richard Feynman",
+    "text": "3.4 Contextualización - Método Richard Feynman\n\nEscribir una ecuación química es como enviar un mensaje de texto ultra rápido sobre lo que sucede en una fiesta de átomos. En lugar de escribir “el gas oxígeno se une con el gas hidrógeno”, usamos etiquetas cortas que todo el mundo conoce. Los reactivos son como los invitados que llegan a la fiesta (lo que tienes al principio), y los productos son los grupos de amigos que se forman al final. La flecha es el “momento del cambio”, como cuando suena la música y todos cambian de pareja. Usar letras como (s) o (g) es solo para avisar si los invitados están quietos como estatuas (sólidos) o volando por toda la habitación (gases). Es un lenguaje universal que permite que un científico en China y uno en Colombia entiendan la misma historia sin usar traductores.",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
+    ]
+  },
+  {
+    "objectID": "06_Decimo/Quimica.html#contextualizaci�on-apoyo-cognitivo-y-tdah",
+    "href": "06_Decimo/Quimica.html#contextualizaci�on-apoyo-cognitivo-y-tdah",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.5 Contextualización - Apoyo Cognitivo y TDAH",
+    "text": "3.5 Contextualización - Apoyo Cognitivo y TDAH\n\nTú eres un organizador visual experto. Para entender las ecuaciones, piensa en ellas como una línea de tiempo: antes de la flecha es el “pasado” y después es el “futuro”. No intentes leer todo a la vez; enfócate en los símbolos pequeños entre paréntesis que te dicen cómo se siente la materia. ¡Crea tu propia herramienta! Recorta tarjetas de dos colores: rojas para lo que entra (reactivos) y azules para lo que sale (productos). Dibuja una flecha grande en tu mesa. Mueve las tarjetas de izquierda a derecha siguiendo la flecha para que tu cerebro sienta el movimiento del cambio químico.",
+    "crumbs": [
+      "Décimo - Química",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
+    ]
+  },
+  {
+    "objectID": "06_Decimo/Quimica.html#contextualizaci�on-neurodivergencia-y-accesibilidad",
+    "href": "06_Decimo/Quimica.html#contextualizaci�on-neurodivergencia-y-accesibilidad",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.6 Contextualización - Neurodivergencia y Accesibilidad",
+    "text": "3.6 Contextualización - Neurodivergencia y Accesibilidad\n\nPara ti, el orden es la clave. Las ecuaciones tienen reglas fijas que nunca cambian, lo cual es genial porque siempre puedes confiar en ellas. Si no puedes ver bien los símbolos o te cuesta mover objetos pequeños, usaremos sonidos o texturas. ¡Crea tu propia herramienta! Usa recipientes con diferentes texturas (arena para sólidos, agua para líquidos). Etiqueta cada uno con letras grandes en relieve. Al leer una ecuación, toca el recipiente que corresponde al estado (s, l o g) para que tu cuerpo asocie el símbolo con la realidad física de la sustancia.",
+    "crumbs": [
+      "Décimo - Química",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
+    ]
+  },
+  {
+    "objectID": "06_Decimo/Quimica.html#ejemplo-guiado-nivel-b�asico",
+    "href": "06_Decimo/Quimica.html#ejemplo-guiado-nivel-b�asico",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.7 Ejemplo Guiado - Nivel Básico",
+    "text": "3.7 Ejemplo Guiado - Nivel Básico\n\n\nJustificación Teórica: Según las reglas de escritura, los nombres de las sustancias deben reemplazarse por sus fórmulas químicas y los estados por sus símbolos correspondientes.\nEjecución: Traducir “Carbono sólido reacciona con Oxígeno gaseoso para formar Dióxido de Carbono gaseoso”: \\[C(s) + O_{2}(g) \\rightarrow CO_{2}(g)\n\\]",
+    "crumbs": [
+      "Décimo - Química",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
     "objectID": "06_Decimo/Quimica.html#ejercicios",
     "href": "06_Decimo/Quimica.html#ejercicios",
-    "title": "3  Química - Décimo",
-    "section": "3.13 Ejercicios",
-    "text": "3.13 Ejercicios",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.8 Ejercicios",
+    "text": "3.8 Ejercicios\n\n\nTraduce a ecuación: El magnesio sólido reacciona con el oxígeno gaseoso para formar óxido de magnesio sólido.\nIdentifica los reactivos y productos en: \\(Zn(s) + 2HCl(aq) \\rightarrow ZnCl_{2}(aq) + H_{2}(g)\\).",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
-    "objectID": "06_Decimo/Quimica.html#aplicación",
-    "href": "06_Decimo/Quimica.html#aplicación",
-    "title": "3  Química - Décimo",
-    "section": "3.15 Aplicación",
-    "text": "3.15 Aplicación\n\n3.15.1 Aplicación - Vida real",
+    "objectID": "06_Decimo/Quimica.html#aplicaci�on-vida-real",
+    "href": "06_Decimo/Quimica.html#aplicaci�on-vida-real",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.9 Aplicación - Vida real",
+    "text": "3.9 Aplicación - Vida real\n\nCuando ves que una bicicleta vieja se llena de óxido marrón, está ocurriendo una reacción que los químicos escriben como una ecuación. El hierro sólido de la bicicleta se une con el oxígeno del aire para crear una sustancia nueva. Sin las ecuaciones, los ingenieros no podrían calcular cuánto metal necesitan para construir puentes que resistan la humedad del ambiente.",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
+    ]
+  },
+  {
+    "objectID": "06_Decimo/Quimica.html#aplicaci�on-laboratorio",
+    "href": "06_Decimo/Quimica.html#aplicaci�on-laboratorio",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.10 Aplicación - Laboratorio",
+    "text": "3.10 Aplicación - Laboratorio\n\nObjetivo: Observar y representar una reacción química simple.\nMateriales: - Un vaso de vidrio transparente. - Vinagre blanco. - Bicarbonato de sodio. Procedimiento: - Coloca dos cucharadas de bicarbonato en el vaso. - Vierte lentamente el vinagre. - Observa las burbujas (gas) que se forman. Conclusión: Las burbujas indican la formación de \\(CO_{2}\\) gaseoso. La ecuación representa este cambio invisible a nivel atómico. Los residuos líquidos pueden verterse por el desagüe.",
+    "crumbs": [
+      "Décimo - Química",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
     ]
   },
   {
     "objectID": "06_Decimo/Quimica.html#socioemocional",
     "href": "06_Decimo/Quimica.html#socioemocional",
-    "title": "3  Química - Décimo",
-    "section": "3.18 Socioemocional",
-    "text": "3.18 Socioemocional",
+    "title": "3  Escritura de ecuaciones químicas",
+    "section": "3.11 Socioemocional",
+    "text": "3.11 Socioemocional\n\nTú tienes la capacidad de aprender este nuevo idioma científico. Si al principio los símbolos te parecen confusos, recuerda que cada error es una pista para tu cerebro sobre cómo mejorar. ¡Sigue adelante, estás desbloqueando una nueva forma de ver el mundo!\n\n\n\n\n\nOriakhi, Christopher O. 2021. Chemistry in Quantitative Language: Fundamentals of General Chemistry Calculations. Oxford University Press.",
     "crumbs": [
       "Décimo - Química",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Química - Décimo</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Escritura de ecuaciones químicas</span>"
+    ]
+  },
+  {
+    "objectID": "bibliografia.html",
+    "href": "bibliografia.html",
+    "title": "Appendix A — Referencias",
+    "section": "",
+    "text": "Oriakhi, Christopher O. 2021. Chemistry in Quantitative Language:\nFundamentals of General Chemistry Calculations. Oxford University\nPress.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Referencias</span>"
     ]
   }
 ]

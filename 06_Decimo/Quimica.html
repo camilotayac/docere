@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.38">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Química - Décimo – Plan para docentes de Ciencias Naturales</title>
+<title>3&nbsp; Escritura de ecuaciones químicas – Plan para docentes de Ciencias Naturales</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -44,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-87aed0b8589e23e45aa8556edf37a91b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,19 +78,40 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var marginSidebar = document.getElementById("quarto-margin-sidebar");
+  
+  if (marginSidebar) {
+    var imgContainer = document.createElement("div");
+    imgContainer.className = "quarto-cover-image-sidebar";
+    imgContainer.style.width = "100%";
+    imgContainer.style.marginBottom = "25px";
+    imgContainer.style.paddingBottom = "15px";
+    imgContainer.style.borderBottom = "1px solid #eee";
+    imgContainer.style.textAlign = "center";
+    
+    // NOTA EL '/' ANTES DE Portada.png. Esto le dice al navegador: 
+    // "Busca siempre en la raíz del proyecto, no en la carpeta actual".
+    imgContainer.innerHTML = '<img src="/Portada.png" style="max-width: 85%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">';
+    
+    marginSidebar.insertBefore(imgContainer, marginSidebar.firstChild);
+  }
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -112,13 +152,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Química - Décimo</span></h1>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></h1>
         </a>     
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -131,14 +171,48 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Plan para docentes de Ciencias Naturales</a> 
-        <div class="sidebar-tools-main">
-    <a href="../Plan-para-docentes-de-Ciencias-Naturales.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/camilotayac/plan-ciencias-naturales/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Plan-para-docentes-de-Ciencias-Naturales.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../Plan-para-docentes-de-Ciencias-Naturales.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Buscar"></div>
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -147,7 +221,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Introducción</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -170,7 +244,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Décimo - Química</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -178,7 +252,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../06_Decimo/Quimica.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Química - Décimo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
   </div>
 </li>
       </ul>
@@ -187,7 +261,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -195,7 +269,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Bibliografía</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
   </div>
 </li>
       </ul>
@@ -207,58 +281,29 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#escritura-de-ecuaciones-químicas" id="toc-escritura-de-ecuaciones-químicas" class="nav-link active" data-scroll-target="#escritura-de-ecuaciones-químicas"><span class="header-section-number">3.1</span> Escritura de ecuaciones químicas</a></li>
-  <li><a href="#teoría" id="toc-teoría" class="nav-link" data-scroll-target="#teoría"><span class="header-section-number">3.2</span> Teoría</a></li>
-  <li><span class="header-section-number">3.3</span> Teoría</li>
-  <li><a href="#ideas-previas" id="toc-ideas-previas" class="nav-link" data-scroll-target="#ideas-previas"><span class="header-section-number">3.4</span> Ideas Previas</a>
-  <ul class="collapse">
-  <li><a href="#ideas-previas---cuentos" id="toc-ideas-previas---cuentos" class="nav-link" data-scroll-target="#ideas-previas---cuentos"><span class="header-section-number">3.4.1</span> Ideas Previas - Cuentos</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.5</span> Ideas previas
-  <ul class="collapse">
-  <li><a href="#ideas-previas---preguntas" id="toc-ideas-previas---preguntas" class="nav-link" data-scroll-target="#ideas-previas---preguntas"><span class="header-section-number">3.5.1</span> Ideas Previas - Preguntas</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.6</span> Ideas previas</li>
-  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización"><span class="header-section-number">3.7</span> Contextualización</a>
-  <ul class="collapse">
-  <li><a href="#contextualización---método-richard-feynman" id="toc-contextualización---método-richard-feynman" class="nav-link" data-scroll-target="#contextualización---método-richard-feynman"><span class="header-section-number">3.7.1</span> Contextualización - Método Richard Feynman</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.8</span> Contextualización</li>
-  <li><a href="#contextualización-para-caracterizados" id="toc-contextualización-para-caracterizados" class="nav-link" data-scroll-target="#contextualización-para-caracterizados"><span class="header-section-number">3.9</span> Contextualización para caracterizados</a>
-  <ul class="collapse">
-  <li><a href="#contextualización---apoyo-cognitivo-y-tdah" id="toc-contextualización---apoyo-cognitivo-y-tdah" class="nav-link" data-scroll-target="#contextualización---apoyo-cognitivo-y-tdah"><span class="header-section-number">3.9.1</span> Contextualización - Apoyo Cognitivo y TDAH</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.10</span> Contextualización para caracterizados
-  <ul class="collapse">
-  <li><a href="#contextualización---neurodivergencia-y-accesibilidad" id="toc-contextualización---neurodivergencia-y-accesibilidad" class="nav-link" data-scroll-target="#contextualización---neurodivergencia-y-accesibilidad"><span class="header-section-number">3.10.1</span> Contextualización - Neurodivergencia y Accesibilidad</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.11</span> Contextualización para caracterizados</li>
-  <li><span class="header-section-number">3.12</span> Ejemplo</li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">3.13</span> Ejercicios</a></li>
-  <li><span class="header-section-number">3.14</span> Ejercicios</li>
-  <li><a href="#aplicación" id="toc-aplicación" class="nav-link" data-scroll-target="#aplicación"><span class="header-section-number">3.15</span> Aplicación</a>
-  <ul class="collapse">
-  <li><a href="#aplicación---vida-real" id="toc-aplicación---vida-real" class="nav-link" data-scroll-target="#aplicación---vida-real"><span class="header-section-number">3.15.1</span> Aplicación - Vida real</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.16</span> Aplicación
-  <ul class="collapse">
-  <li><a href="#aplicación---laboratorio" id="toc-aplicación---laboratorio" class="nav-link" data-scroll-target="#aplicación---laboratorio"><span class="header-section-number">3.16.1</span> Aplicación - Laboratorio</a></li>
-  </ul></li>
-  <li><span class="header-section-number">3.17</span> Aplicación</li>
-  <li><a href="#socioemocional" id="toc-socioemocional" class="nav-link" data-scroll-target="#socioemocional"><span class="header-section-number">3.18</span> Socioemocional</a></li>
-  <li><span class="header-section-number">3.19</span> Socioemocional</li>
+  <li><a href="#teor�ia" id="toc-teor�ia" class="nav-link active" data-scroll-target="#teor�ia"><span class="header-section-number">3.1</span> Teoría</a></li>
+  <li><a href="#ideas-previas-cuentos" id="toc-ideas-previas-cuentos" class="nav-link" data-scroll-target="#ideas-previas-cuentos"><span class="header-section-number">3.2</span> Ideas Previas - Cuentos</a></li>
+  <li><a href="#ideas-previas-preguntas" id="toc-ideas-previas-preguntas" class="nav-link" data-scroll-target="#ideas-previas-preguntas"><span class="header-section-number">3.3</span> Ideas Previas - Preguntas</a></li>
+  <li><a href="#contextualizaci�on-m�etodo-richard-feynman" id="toc-contextualizaci�on-m�etodo-richard-feynman" class="nav-link" data-scroll-target="#contextualizaci�on-m�etodo-richard-feynman"><span class="header-section-number">3.4</span> Contextualización - Método Richard Feynman</a></li>
+  <li><a href="#contextualizaci�on-apoyo-cognitivo-y-tdah" id="toc-contextualizaci�on-apoyo-cognitivo-y-tdah" class="nav-link" data-scroll-target="#contextualizaci�on-apoyo-cognitivo-y-tdah"><span class="header-section-number">3.5</span> Contextualización - Apoyo Cognitivo y TDAH</a></li>
+  <li><a href="#contextualizaci�on-neurodivergencia-y-accesibilidad" id="toc-contextualizaci�on-neurodivergencia-y-accesibilidad" class="nav-link" data-scroll-target="#contextualizaci�on-neurodivergencia-y-accesibilidad"><span class="header-section-number">3.6</span> Contextualización - Neurodivergencia y Accesibilidad</a></li>
+  <li><a href="#ejemplo-guiado-nivel-b�asico" id="toc-ejemplo-guiado-nivel-b�asico" class="nav-link" data-scroll-target="#ejemplo-guiado-nivel-b�asico"><span class="header-section-number">3.7</span> Ejemplo Guiado - Nivel Básico</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">3.8</span> Ejercicios</a></li>
+  <li><a href="#aplicaci�on-vida-real" id="toc-aplicaci�on-vida-real" class="nav-link" data-scroll-target="#aplicaci�on-vida-real"><span class="header-section-number">3.9</span> Aplicación - Vida real</a></li>
+  <li><a href="#aplicaci�on-laboratorio" id="toc-aplicaci�on-laboratorio" class="nav-link" data-scroll-target="#aplicaci�on-laboratorio"><span class="header-section-number">3.10</span> Aplicación - Laboratorio</a></li>
+  <li><a href="#socioemocional" id="toc-socioemocional" class="nav-link" data-scroll-target="#socioemocional"><span class="header-section-number">3.11</span> Socioemocional</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/plan-ciencias-naturales/edit/main/06_Decimo/Quimica.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Química - Décimo</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></h1>
 </div>
 
 
@@ -275,37 +320,22 @@ window.Quarto = {
 </header>
 
 
-<section id="escritura-de-ecuaciones-químicas" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="escritura-de-ecuaciones-químicas"><span class="header-section-number">3.1</span> Escritura de ecuaciones químicas</h2>
-</section>
-<section id="teoría" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="teoría"><span class="header-section-number">3.2</span> Teoría</h2>
-</section>
-<section class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id=""><span class="header-section-number">3.3</span> Teoría</h2>
-<div class="teoria-box">
-<p>Una <strong>ecuación química</strong> es una representación abreviada (taquigrafía) que describe un cambio o reacción mediante el uso de símbolos de elementos y fórmulas de compuestos en lugar de palabras descriptivas. En este sistema de notación, las sustancias iniciales denominadas <strong>reactivos</strong> se ubican siempre a la izquierda, mientras que las sustancias resultantes llamadas <strong>productos</strong> se posicionan a la derecha, separadas por una flecha (<span class="math inline">\(\rightarrow\)</span>) que señala la dirección de la transformación. Para otorgar precisión física al modelo, se añaden subíndices entre paréntesis que indican el <strong>estado de agregación</strong>: (s) para sólidos, (l) para líquidos, (g) para gases y (aq) para soluciones acuosas (sustancias disueltas en agua). En situaciones donde la transformación puede ocurrir en ambos sentidos, se emplea una flecha doble, asegurando que la ecuación refleje fielmente la naturaleza reversible del fenómeno químico estudiado. <span class="math display">\[SO_{3}(g) + H_{2}O(l) \rightarrow H_{2}SO_{4}(aq)
+<section id="teor�ia" class="level2 teoria-box-heading" data-number="3.1">
+<h2 class="teoria-box-heading anchored" data-number="3.1" data-anchor-id="teor�ia"><span class="header-section-number">3.1</span> Teoría</h2>
+<div class="teoria-box" title="Teoría">
+<p>Una <strong>ecuación química</strong> es una representación abreviada (taquigrafía) que describe un cambio o reacción mediante el uso de símbolos de elementos y fórmulas de compuestos en lugar de palabras descriptivas. En este sistema de notación, las sustancias iniciales denominadas <strong>reactivos</strong> se ubican siempre a la izquierda, mientras que las sustancias resultantes llamadas <strong>productos</strong> se posicionan a la derecha, separadas por una flecha (<span class="math inline">\(\rightarrow\)</span>) que señala la dirección de la transformación. Para otorgar precisión física al modelo, se añaden subíndices entre paréntesis que indican el <strong>estado de agregación</strong>: (s) para sólidos, (l) para líquidos, (g) para gases y (aq) para soluciones acuosas (sustancias disueltas en agua). En situaciones donde la transformación puede ocurrir en ambos sentidos, se emplea una flecha doble, asegurando que la ecuación refleje fielmente la naturaleza reversible del fenómeno químico estudiado <span class="citation" data-cites="oriakhi2021chemistry">(<a href="../bibliografia.html#ref-oriakhi2021chemistry" role="doc-biblioref">Oriakhi 2021</a>)</span>. <span class="math display">\[SO_{3}(g) + H_{2}O(l) \rightarrow H_{2}SO_{4}(aq)
 \]</span></p>
 </div>
 </section>
-<section id="ideas-previas" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="ideas-previas"><span class="header-section-number">3.4</span> Ideas Previas</h2>
-<section id="ideas-previas---cuentos" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="ideas-previas---cuentos"><span class="header-section-number">3.4.1</span> Ideas Previas - Cuentos</h3>
-</section>
-</section>
-<section class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id=""><span class="header-section-number">3.5</span> Ideas previas</h2>
-<div class="ideas-previas-box">
+<section id="ideas-previas-cuentos" class="level2 ideas-previas-box-heading" data-number="3.2">
+<h2 class="ideas-previas-box-heading anchored" data-number="3.2" data-anchor-id="ideas-previas-cuentos"><span class="header-section-number">3.2</span> Ideas Previas - Cuentos</h2>
+<div class="ideas-previas-box" title="Ideas Previas - Cuentos">
 <p>Imagina que estás en la cocina intentando preparar un pastel, pero la receta está escrita en un idioma que no entiendes. Ves dibujos de huevos, harina y un horno, pero no sabes en qué orden van ni qué sucede cuando se mezclan. Al final, el pastel sale del horno, pero no tienes idea de cómo explicarle a alguien más exactamente qué pasó dentro de ese molde.</p>
 </div>
-<section id="ideas-previas---preguntas" class="level3" data-number="3.5.1">
-<h3 data-number="3.5.1" class="anchored" data-anchor-id="ideas-previas---preguntas"><span class="header-section-number">3.5.1</span> Ideas Previas - Preguntas</h3>
 </section>
-</section>
-<section class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id=""><span class="header-section-number">3.6</span> Ideas previas</h2>
-<div class="ideas-previas-box">
+<section id="ideas-previas-preguntas" class="level2 ideas-previas-box-heading" data-number="3.3">
+<h2 class="ideas-previas-box-heading anchored" data-number="3.3" data-anchor-id="ideas-previas-preguntas"><span class="header-section-number">3.3</span> Ideas Previas - Preguntas</h2>
+<div class="ideas-previas-box" title="Ideas Previas - Preguntas">
 <ul>
 <li><strong>¿Cómo podrías dibujar la “receta” del pastel usando solo símbolos para que cualquier persona en el mundo la entienda?</strong></li>
 <li><strong>Si los ingredientes desaparecen al mezclarse, ¿crees que realmente dejaron de existir o solo se transformaron?</strong></li>
@@ -314,43 +344,27 @@ window.Quarto = {
 </ul>
 </div>
 </section>
-<section id="contextualización" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="contextualización"><span class="header-section-number">3.7</span> Contextualización</h2>
-<section id="contextualización---método-richard-feynman" class="level3" data-number="3.7.1">
-<h3 data-number="3.7.1" class="anchored" data-anchor-id="contextualización---método-richard-feynman"><span class="header-section-number">3.7.1</span> Contextualización - Método Richard Feynman</h3>
-</section>
-</section>
-<section class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id=""><span class="header-section-number">3.8</span> Contextualización</h2>
-<div class="contexto-box">
+<section id="contextualizaci�on-m�etodo-richard-feynman" class="level2 contexto-box-heading" data-number="3.4">
+<h2 class="contexto-box-heading anchored" data-number="3.4" data-anchor-id="contextualizaci�on-m�etodo-richard-feynman"><span class="header-section-number">3.4</span> Contextualización - Método Richard Feynman</h2>
+<div class="contexto-box" title="Contextualización - Método Richard Feynman">
 <p>Escribir una ecuación química es como enviar un mensaje de texto ultra rápido sobre lo que sucede en una fiesta de átomos. En lugar de escribir “el gas oxígeno se une con el gas hidrógeno”, usamos etiquetas cortas que todo el mundo conoce. Los <strong>reactivos</strong> son como los invitados que llegan a la fiesta (lo que tienes al principio), y los <strong>productos</strong> son los grupos de amigos que se forman al final. La flecha es el “momento del cambio”, como cuando suena la música y todos cambian de pareja. Usar letras como (s) o (g) es solo para avisar si los invitados están quietos como estatuas (<strong>sólidos</strong>) o volando por toda la habitación (<strong>gases</strong>). Es un <strong>lenguaje universal</strong> que permite que un científico en China y uno en Colombia entiendan la misma historia sin usar traductores.</p>
 </div>
 </section>
-<section id="contextualización-para-caracterizados" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="contextualización-para-caracterizados"><span class="header-section-number">3.9</span> Contextualización para caracterizados</h2>
-<section id="contextualización---apoyo-cognitivo-y-tdah" class="level3" data-number="3.9.1">
-<h3 data-number="3.9.1" class="anchored" data-anchor-id="contextualización---apoyo-cognitivo-y-tdah"><span class="header-section-number">3.9.1</span> Contextualización - Apoyo Cognitivo y TDAH</h3>
-</section>
-</section>
-<section class="level2" data-number="3.10">
-<h2 data-number="3.10" class="anchored" data-anchor-id=""><span class="header-section-number">3.10</span> Contextualización para caracterizados</h2>
-<div class="caracterizados-box">
+<section id="contextualizaci�on-apoyo-cognitivo-y-tdah" class="level2 caracterizados-box-heading" data-number="3.5">
+<h2 class="caracterizados-box-heading anchored" data-number="3.5" data-anchor-id="contextualizaci�on-apoyo-cognitivo-y-tdah"><span class="header-section-number">3.5</span> Contextualización - Apoyo Cognitivo y TDAH</h2>
+<div class="caracterizados-box" title="Contextualización - Apoyo Cognitivo y TDAH">
 <p>Tú eres un organizador visual experto. Para entender las ecuaciones, piensa en ellas como una línea de tiempo: antes de la flecha es el “pasado” y después es el “futuro”. No intentes leer todo a la vez; enfócate en los símbolos pequeños entre paréntesis que te dicen cómo se siente la materia. <strong>¡Crea tu propia herramienta!</strong> Recorta tarjetas de dos colores: rojas para lo que entra (reactivos) y azules para lo que sale (productos). Dibuja una flecha grande en tu mesa. Mueve las tarjetas de izquierda a derecha siguiendo la flecha para que tu cerebro sienta el movimiento del cambio químico.</p>
 </div>
-<section id="contextualización---neurodivergencia-y-accesibilidad" class="level3" data-number="3.10.1">
-<h3 data-number="3.10.1" class="anchored" data-anchor-id="contextualización---neurodivergencia-y-accesibilidad"><span class="header-section-number">3.10.1</span> Contextualización - Neurodivergencia y Accesibilidad</h3>
 </section>
-</section>
-<section class="level2" data-number="3.11">
-<h2 data-number="3.11" class="anchored" data-anchor-id=""><span class="header-section-number">3.11</span> Contextualización para caracterizados</h2>
-<div class="caracterizados-box">
+<section id="contextualizaci�on-neurodivergencia-y-accesibilidad" class="level2 caracterizados-box-heading" data-number="3.6">
+<h2 class="caracterizados-box-heading anchored" data-number="3.6" data-anchor-id="contextualizaci�on-neurodivergencia-y-accesibilidad"><span class="header-section-number">3.6</span> Contextualización - Neurodivergencia y Accesibilidad</h2>
+<div class="caracterizados-box" title="Contextualización - Neurodivergencia y Accesibilidad">
 <p>Para ti, el orden es la clave. Las ecuaciones tienen reglas fijas que nunca cambian, lo cual es genial porque siempre puedes confiar en ellas. Si no puedes ver bien los símbolos o te cuesta mover objetos pequeños, usaremos sonidos o texturas. <strong>¡Crea tu propia herramienta!</strong> Usa recipientes con diferentes texturas (arena para sólidos, agua para líquidos). Etiqueta cada uno con letras grandes en relieve. Al leer una ecuación, toca el recipiente que corresponde al estado (s, l o g) para que tu cuerpo asocie el símbolo con la realidad física de la sustancia.</p>
 </div>
 </section>
-<section class="level2" data-number="3.12">
-<h2 data-number="3.12" class="anchored" data-anchor-id=""><span class="header-section-number">3.12</span> Ejemplo</h2>
-<div class="ejemplo-box">
-<p><strong>Ejemplo Guiado - Nivel Básico:</strong></p>
+<section id="ejemplo-guiado-nivel-b�asico" class="level2 ejemplo-box-heading" data-number="3.7">
+<h2 class="ejemplo-box-heading anchored" data-number="3.7" data-anchor-id="ejemplo-guiado-nivel-b�asico"><span class="header-section-number">3.7</span> Ejemplo Guiado - Nivel Básico</h2>
+<div class="ejemplo-box" title="Ejemplo Guiado - Nivel Básico">
 <ul>
 <li><strong>Justificación Teórica:</strong> Según las reglas de escritura, los nombres de las sustancias deben reemplazarse por sus fórmulas químicas y los estados por sus símbolos correspondientes.</li>
 <li><strong>Ejecución:</strong> Traducir “Carbono sólido reacciona con Oxígeno gaseoso para formar Dióxido de Carbono gaseoso”: <span class="math display">\[C(s) + O_{2}(g) \rightarrow CO_{2}(g)
@@ -358,50 +372,40 @@ window.Quarto = {
 </ul>
 </div>
 </section>
-<section id="ejercicios" class="level2" data-number="3.13">
-<h2 data-number="3.13" class="anchored" data-anchor-id="ejercicios"><span class="header-section-number">3.13</span> Ejercicios</h2>
-</section>
-<section class="level2" data-number="3.14">
-<h2 data-number="3.14" class="anchored" data-anchor-id=""><span class="header-section-number">3.14</span> Ejercicios</h2>
-<div class="ejercicios-box">
+<section id="ejercicios" class="level2 ejercicios-box-heading" data-number="3.8">
+<h2 class="ejercicios-box-heading anchored" data-number="3.8" data-anchor-id="ejercicios"><span class="header-section-number">3.8</span> Ejercicios</h2>
+<div class="ejercicios-box" title="Ejercicios">
 <ul>
 <li>Traduce a ecuación: El magnesio sólido reacciona con el oxígeno gaseoso para formar óxido de magnesio sólido.</li>
 <li>Identifica los reactivos y productos en: <span class="math inline">\(Zn(s) + 2HCl(aq) \rightarrow ZnCl_{2}(aq) + H_{2}(g)\)</span>.</li>
 </ul>
 </div>
 </section>
-<section id="aplicación" class="level2" data-number="3.15">
-<h2 data-number="3.15" class="anchored" data-anchor-id="aplicación"><span class="header-section-number">3.15</span> Aplicación</h2>
-<section id="aplicación---vida-real" class="level3" data-number="3.15.1">
-<h3 data-number="3.15.1" class="anchored" data-anchor-id="aplicación---vida-real"><span class="header-section-number">3.15.1</span> Aplicación - Vida real</h3>
-</section>
-</section>
-<section class="level2" data-number="3.16">
-<h2 data-number="3.16" class="anchored" data-anchor-id=""><span class="header-section-number">3.16</span> Aplicación</h2>
-<div class="aplicacion-box">
+<section id="aplicaci�on-vida-real" class="level2 aplicacion-box-heading" data-number="3.9">
+<h2 class="aplicacion-box-heading anchored" data-number="3.9" data-anchor-id="aplicaci�on-vida-real"><span class="header-section-number">3.9</span> Aplicación - Vida real</h2>
+<div class="aplicacion-box" title="Aplicación - Vida real">
 <p>Cuando ves que una bicicleta vieja se llena de óxido marrón, está ocurriendo una reacción que los químicos escriben como una ecuación. El hierro sólido de la bicicleta se une con el oxígeno del aire para crear una sustancia nueva. Sin las ecuaciones, los ingenieros no podrían calcular cuánto metal necesitan para construir puentes que resistan la humedad del ambiente.</p>
 </div>
-<section id="aplicación---laboratorio" class="level3" data-number="3.16.1">
-<h3 data-number="3.16.1" class="anchored" data-anchor-id="aplicación---laboratorio"><span class="header-section-number">3.16.1</span> Aplicación - Laboratorio</h3>
 </section>
-</section>
-<section class="level2" data-number="3.17">
-<h2 data-number="3.17" class="anchored" data-anchor-id=""><span class="header-section-number">3.17</span> Aplicación</h2>
-<div class="aplicacion-box">
+<section id="aplicaci�on-laboratorio" class="level2 aplicacion-box-heading" data-number="3.10">
+<h2 class="aplicacion-box-heading anchored" data-number="3.10" data-anchor-id="aplicaci�on-laboratorio"><span class="header-section-number">3.10</span> Aplicación - Laboratorio</h2>
+<div class="aplicacion-box" title="Aplicación - Laboratorio">
 <p><strong>Objetivo:</strong> Observar y representar una reacción química simple.<br>
 <strong>Materiales:</strong> - Un vaso de vidrio transparente. - Vinagre blanco. - Bicarbonato de sodio. <strong>Procedimiento:</strong> - Coloca dos cucharadas de bicarbonato en el vaso. - Vierte lentamente el vinagre. - Observa las burbujas (gas) que se forman. <strong>Conclusión:</strong> Las burbujas indican la formación de <span class="math inline">\(CO_{2}\)</span> gaseoso. La ecuación representa este cambio invisible a nivel atómico. Los residuos líquidos pueden verterse por el desagüe.</p>
 </div>
 </section>
-<section id="socioemocional" class="level2" data-number="3.18">
-<h2 data-number="3.18" class="anchored" data-anchor-id="socioemocional"><span class="header-section-number">3.18</span> Socioemocional</h2>
-</section>
-<section class="level2" data-number="3.19">
-<h2 data-number="3.19" class="anchored" data-anchor-id=""><span class="header-section-number">3.19</span> Socioemocional</h2>
-<div class="socioemocional-box">
+<section id="socioemocional" class="level2 socioemocional-box-heading" data-number="3.11">
+<h2 class="socioemocional-box-heading anchored" data-number="3.11" data-anchor-id="socioemocional"><span class="header-section-number">3.11</span> Socioemocional</h2>
+<div class="socioemocional-box" title="Socioemocional">
 <p>Tú tienes la capacidad de aprender este nuevo idioma científico. Si al principio los símbolos te parecen confusos, recuerda que cada error es una pista para tu cerebro sobre cómo mejorar. ¡Sigue adelante, estás desbloqueando una nueva forma de ver el mundo!</p>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-oriakhi2021chemistry" class="csl-entry" role="listitem">
+Oriakhi, Christopher O. 2021. <em>Chemistry in Quantitative Language: Fundamentals of General Chemistry Calculations</em>. Oxford University Press.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -430,12 +434,12 @@ window.Quarto = {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -812,12 +816,25 @@ window.Quarto = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../bibliografia.html" class="pagination-link" aria-label="Bibliografía">
-        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Bibliografía</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../bibliografia.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2021, Norah Jones</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/plan-ciencias-naturales/edit/main/06_Decimo/Quimica.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
