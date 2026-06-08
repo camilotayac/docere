@@ -1,0 +1,240 @@
+/* ============================================================
+   EDU-BOXES — Estilos para cajas educativas (HTML)
+   Misma paleta que los tcolorbox en PDF
+   ============================================================ */
+
+.edu-box {
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 1em 0;
+  border-style: solid;
+  border-width: 1.5px;
+}
+.edu-box-title {
+  font-weight: bold;
+  display: block;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+}
+
+/* --- Teoría (azul) --- */
+.teoria-box {
+  background-color: #f0f4ff;
+  border-color: #2244aa;
+}
+.teoria-box::before {
+  content: "Teoría";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #2244aa;
+}
+
+/* --- Ideas previas (amarillo) --- */
+.ideas-previas-box {
+  background-color: #fffff0;
+  border-color: #b8a800;
+}
+.ideas-previas-box::before {
+  content: "Ideas previas";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #b8a800;
+}
+
+.sub-ideas-previas-box {
+  background-color: #fffff5;
+  border-color: #a09000;
+}
+.sub-ideas-previas-box::before {
+  content: attr(data-title, "Subsección");
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #a09000;
+}
+
+/* --- Contextualización (verde) --- */
+.contexto-box {
+  background-color: #f0fff0;
+  border-color: #1a7a1a;
+}
+.contexto-box::before {
+  content: "Contextualización";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #1a7a1a;
+}
+
+.sub-contexto-box {
+  background-color: #f0fff0;
+  border-color: #1a6a1a;
+}
+.sub-contexto-box::before {
+  content: attr(data-title, "Subsección");
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #1a6a1a;
+}
+
+/* --- Caracterización (violeta) --- */
+.caracterizados-box {
+  background-color: #f8f0ff;
+  border-color: #6a1a9a;
+}
+.caracterizados-box::before {
+  content: "Contextualización para caracterizados";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #6a1a9a;
+}
+
+.sub-caracterizados-box {
+  background-color: #f8f0ff;
+  border-color: #6a1a8a;
+}
+.sub-caracterizados-box::before {
+  content: attr(data-title, "Subsección");
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #6a1a8a;
+}
+
+/* --- Retos (naranja) --- */
+.retos-box {
+  background-color: #fff8f0;
+  border-color: #cc6600;
+}
+.retos-box::before {
+  content: "Retos";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #cc6600;
+}
+
+/* --- Socioemocional (rosa) --- */
+.socioemocional-box {
+  background-color: #fff0f5;
+  border-color: #cc3366;
+}
+.socioemocional-box::before {
+  content: "Socioemocional";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #cc3366;
+}
+
+/* --- Ejercicios (rojo) --- */
+.ejercicios-box {
+  background-color: #fff5f5;
+  border-color: #aa2222;
+}
+.ejercicios-box::before {
+  content: "Ejercicios";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #aa2222;
+}
+
+/* --- Aplicación (violeta) --- */
+.aplicacion-box {
+  background-color: #f8f0ff;
+  border-color: #6a1a8a;
+}
+.aplicacion-box::before {
+  content: "Aplicación";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #6a1a8a;
+}
+
+.sub-aplicacion-box {
+  background-color: #faf5ff;
+  border-color: #5a157a;
+}
+.sub-aplicacion-box::before {
+  content: attr(data-title, "Subsección");
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #5a157a;
+}
+
+/* --- Notas para el docente (cyan) --- */
+.notas-docente-box {
+  background-color: #f0ffff;
+  border-color: #0088aa;
+}
+.notas-docente-box::before {
+  content: "Notas para el docente";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #0088aa;
+}
+
+/* --- Ejemplo (gris) --- */
+.ejemplo-box {
+  background-color: #f8f8f8;
+  border-color: #555555;
+}
+.ejemplo-box::before {
+  content: "Ejemplo";
+  display: block;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: -10px -14px 10px -14px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  background-color: #555555;
+}
