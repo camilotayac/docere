@@ -72,27 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var marginSidebar = document.getElementById("quarto-margin-sidebar");
-  
-  if (marginSidebar) {
-    var imgContainer = document.createElement("div");
-    imgContainer.className = "quarto-cover-image-sidebar";
-    imgContainer.style.width = "100%";
-    imgContainer.style.marginBottom = "25px";
-    imgContainer.style.paddingBottom = "15px";
-    imgContainer.style.borderBottom = "1px solid #eee";
-    imgContainer.style.textAlign = "center";
-    
-    // NOTA EL '/' ANTES DE Portada.png. Esto le dice al navegador: 
-    // "Busca siempre en la raíz del proyecto, no en la carpeta actual".
-    imgContainer.innerHTML = '<img src="/Portada.png" style="max-width: 85%; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">';
-    
-    marginSidebar.insertBefore(imgContainer, marginSidebar.firstChild);
-  }
-});
-</script>
 
 
 <link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/edu-boxes.css">
