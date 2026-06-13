@@ -29,6 +29,8 @@ section:has(> .aplicacion-box-heading)         { border-color: #6a1a8a; }
 section:has(> .sub-aplicacion-box-heading)     { border-color: #5a157a; }
 section:has(> .notas-docente-box-heading)      { border-color: #0088aa; }
 section:has(> .ejemplo-box-heading)            { border-color: #555555; }
+section:has(> .evaluacion-box-heading)        { border-color: #1a7a7a; }
+section:has(> .sub-evaluacion-box-heading)    { border-color: #185a5a; }
 
 /* ---- HEADING: fila superior (título) ---- */
 h2[class*="-box-heading"],
@@ -57,6 +59,8 @@ h3[class*="-box-heading"] {
 .sub-aplicacion-box-heading    { background-color: #ddc8ff; }
 .notas-docente-box-heading     { background-color: #b0e8ff; }
 .ejemplo-box-heading           { background-color: #d8d8d8; }
+.evaluacion-box-heading        { background-color: #b0e0d0; }
+.sub-evaluacion-box-heading    { background-color: #b0e0d0; }
 
 /* ---- CUADRO DE CONTENIDO: fila inferior ---- */
 .teoria-box, .ideas-previas-box, .sub-ideas-previas-box,
@@ -64,7 +68,8 @@ h3[class*="-box-heading"] {
 .caracterizados-box, .sub-caracterizados-box,
 .retos-box, .socioemocional-box, .ejercicios-box,
 .aplicacion-box, .sub-aplicacion-box,
-.notas-docente-box, .ejemplo-box {
+.notas-docente-box, .ejemplo-box, .evaluacion-box,
+.sub-evaluacion-box {
   padding: 0.9em 1.1em;
   margin: 0 !important;
   border-radius: 0 !important;
@@ -86,3 +91,5 @@ h3[class*="-box-heading"] {
 .sub-aplicacion-box    { background-color: #faf5ff; }
 .notas-docente-box     { background-color: #f0ffff; }
 .ejemplo-box           { background-color: #f8f8f8; }
+.evaluacion-box        { background-color: #f0faf5; }
+.sub-evaluacion-box    { background-color: #e0f5ee; }
