@@ -27,6 +27,7 @@ educación básica y media en Colombia (grados 6–11).
 |--------|--------|-------------|--------------------|
 | **Docēre** | Latín | *enseñar, instruir, educar* | Nombre del proyecto completo |
 | **Artifex** | Latín | *artesano, creador, el que construye con maestría* | Motor generador de planes de clase |
+| **Natura Docens** | Latín | *La naturaleza que enseña / Enseñando naturaleza* | Libro Quarto de Ciencias Naturales |
 
 ---
 
