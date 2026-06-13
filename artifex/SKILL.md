@@ -70,7 +70,7 @@ Docere/                              ← Raiz del monorepo
 │       ├── agente_qa.md                 → Paso 10 (Verificacion)
 │       ├── bibliografia.md              → Paso 0.5 (seleccion de refs)
 │       └── estructura_libro.md          → Paso 11 (colocacion en book/)
-├── book/                            → Libro Quarto de Ciencias Naturales
+├── book/                            → Libro Quarto Natura Docens
 │   ├── _quarto.yml
 │   ├── references.bib
 │   ├── preamble.tex

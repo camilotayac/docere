@@ -7,7 +7,7 @@ bibliography: references.bib
 
 book:
   cover-image: Portada.png
-  title: "Plan para docentes de Ciencias Naturales"
+  title: "Natura Docens"
   bread-crumbs: false
   page-footer: "Copyright 2021, Norah Jones"
   downloads: [pdf,epub]

@@ -197,7 +197,7 @@ format:
 
   <a href="/" class="btn-home">⚗️ &nbsp;Volver al laboratorio</a>
 
-  <div class="footer-404">Plan para docentes de Ciencias Naturales &nbsp;·&nbsp; Error 404</div>
+  <div class="footer-404">Natura Docens &nbsp;·&nbsp; Error 404</div>
 
 </div>
 ```

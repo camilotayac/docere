@@ -53,8 +53,7 @@ educación básica y media en Colombia (grados 6–11).
                              ▼
         ┌─────────────────────────────────────┐
         │  book/  (Libro Quarto)              │
-        │  Plan para docentes de              │
-        │  Ciencias Naturales                 │
+        │  Natura Docens                      │
         │                                     │
         │  quarto render → HTML / PDF / EPUB  │
         └─────────────────────────────────────┘
