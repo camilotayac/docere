@@ -15,8 +15,12 @@
 
 <br>
 
+> **Docendō discimus** — *Enseñando aprendemos* (Séneca)
+
+<br>
+
 **Docēre** (latín: *enseñar*) — Monorepo que une **Artifex**, un motor multi-agente
-generador de planes de clase, con un **libro Quarto** de Ciencias Naturales para
+generador de planes de clase, con el libro Quarto **Natura Docens** de Ciencias Naturales para
 educación básica y media en Colombia (grados 6–11).
 
 ---
@@ -31,7 +35,7 @@ educación básica y media en Colombia (grados 6–11).
 
 ---
 
-### Arquitectura
+## Architectūra — Arquitectura
 
 ```
                     Input (PDF / DOCX / MD)
@@ -66,7 +70,7 @@ educación básica y media en Colombia (grados 6–11).
 
 ---
 
-## Estructura del proyecto
+## Structūra — Estructura del proyecto
 
 ```
 Docere/
@@ -105,7 +109,7 @@ Docere/
 
 ---
 
-## Primeros pasos
+## Initium — Primeros pasos
 
 ### Requisitos
 
@@ -126,7 +130,7 @@ quarto --version   # verificar instalación
 
 ---
 
-## Uso con opencode
+## Usus — Uso con opencode
 
 ### Flujo completo
 
@@ -167,7 +171,7 @@ quarto render book/ --to html   # solo HTML
 
 ---
 
-## Los 15 pasos de Artifex
+## Gradūs Artificis — Los 15 pasos de Artifex
 
 | Paso | Nombre | Referencia | Genera |
 |------|--------|------------|--------|
@@ -189,7 +193,7 @@ quarto render book/ --to html   # solo HTML
 
 ---
 
-## Validación (QA)
+## Recognitiō — Validación (QA)
 
 El Paso 10 ejecuta `validate_output.py` con **15 checks mecánicos** agrupados
 por categoría:
@@ -235,7 +239,7 @@ por categoría:
 
 ---
 
-## Formato de salida
+## Fōrma — Formato de salida
 
 Cada plan de clase usa Quarto fenced divs (`:::`) con **23 secciones**
 distribuidas en **11 tipos de box**:
@@ -253,7 +257,7 @@ La extensiones en `book/_extensions/` convierten estos divs en:
 
 ---
 
-## Personalización
+## Instrūmenta — Personalización
 
 | Componente | Dónde | Qué hacer |
 |------------|-------|-----------|
@@ -265,7 +269,7 @@ La extensiones en `book/_extensions/` convierten estos divs en:
 
 ---
 
-## Publicación
+## Ēditiō — Publicación
 
 El libro se despliega automáticamente a GitHub Pages con cada push a `main`.
 
@@ -280,7 +284,7 @@ push a main → quarto render --to html → upload _book/ → GitHub Pages
 
 ---
 
-## Stack tecnológico
+## Instrūmentārium — Stack tecnológico
 
 | Componente | Tecnología |
 |------------|-----------|
@@ -288,3 +292,7 @@ push a main → quarto render --to html → upload _book/ → GitHub Pages
 | Formato de libro | Quarto (QMD → HTML / PDF / EPUB) |
 | Despliegue | GitHub Actions → GitHub Pages |
 | Repositorio | [github.com/camilotayac/docere](https://github.com/camilotayac/docere) |
+
+<br>
+
+> **Nōn scholae, sed vītae discimus** — *No aprendemos para la escuela, sino para la vida* (Séneca)
