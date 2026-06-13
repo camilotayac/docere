@@ -1,4 +1,4 @@
-# Estructura del Libro — Docere/book/
+# Estructura del Libro — Docere/liber/
 
 Mapa de grados, archivos .qmd y secciones existentes en el proyecto Quarto.
 
@@ -15,7 +15,7 @@ Mapa de grados, archivos .qmd y secciones existentes en el proyecto Quarto.
 
 ## Ruta base
 
-Todos los archivos están en `book/<carpeta>/<archivo>.qmd` relativo a la raíz de Docere/.
+Todos los archivos están en `liber/<carpeta>/<archivo>.qmd` relativo a la raíz de Docere/.
 
 ## Formato de cada archivo
 

@@ -1,6 +1,6 @@
-# Gestión de Bibliografía — Docere/book/references.bib
+# Gestión de Bibliografía — Docere/liber/references.bib
 
-El archivo `book/references.bib` contiene las referencias bibliográficas
+El archivo `liber/references.bib` contiene las referencias bibliográficas
 disponibles para todos los planes de clase. Está en formato BibTeX estándar.
 
 ## Referencias disponibles
@@ -27,7 +27,7 @@ Editorial: Pearson Educación (14ª ed.)
 
 Al inicio del proceso (Paso 0.5), el orquestador DEBE:
 
-1. **Leer** `book/references.bib` y extraer la lista de referencias.
+1. **Leer** `liber/references.bib` y extraer la lista de referencias.
 2. **Presentar** al usuario las referencias disponibles en formato legible.
 3. **Preguntar** cuáles desea usar para este plan de clase:
    - Opción "Todas" (por defecto)
@@ -51,14 +51,14 @@ Al inicio del proceso (Paso 0.5), el orquestador DEBE:
 
 5. **Incluir** en el YAML front matter del .qmd generado la línea:
    ```yaml
-   bibliography: ../../book/references.bib
+   bibliography: ../../liber/references.bib
    ```
-   (ruta relativa desde `output/` hasta `book/references.bib`)
+   (ruta relativa desde `output/` hasta `liber/references.bib`)
 
 ## Notas
 
 - La ruta en el YAML debe ser relativa al archivo .qmd generado. Si el .qmd
-  se coloca en `book/<grado>/`, usar `../references.bib`. Si se coloca en
-  `output/`, usar `../book/references.bib`.
+  se coloca en `liber/<grado>/`, usar `../references.bib`. Si se coloca en
+  `output/`, usar `../liber/references.bib`.
 - Las referencias se renderizan automáticamente al compilar con Quarto
   usando el formato de citación estándar.

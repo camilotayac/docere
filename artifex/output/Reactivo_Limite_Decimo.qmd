@@ -1,6 +1,6 @@
 ---
 title: "Reactivo Limite"
-bibliography: ../../book/references.bib
+bibliography: ../../liber/references.bib
 ---
 
 ::: {.teoria-box title="Teoria"}

@@ -57,7 +57,7 @@ educación básica y media en Colombia (grados 6–11).
                              │
                              ▼
         ┌─────────────────────────────────────┐
-        │  book/  (Libro Quarto)              │
+        │  liber/  (Libro Quarto)              │
         │  Natura Docens                      │
         │                                     │
         │  quarto render → HTML / PDF / EPUB  │
@@ -95,7 +95,7 @@ Docere/
 │       ├── agente_qa.md                        → Paso 10
 │       ├── bibliografia.md                     → Paso 0.5
 │       └── estructura_libro.md                 → Paso 11
-├── book/                             ← Libro Quarto
+├── liber/                             ← Libro Quarto
 │   ├── _quarto.yml                   ← Configuración del libro
 │   ├── _extensions/                  ← edu-boxes.lua + edu-boxes.css
 │   ├── preamble.tex                  ← tcolorbox para PDF
@@ -149,11 +149,11 @@ Al iniciar, opencode carga `artifex/SKILL.md` y el orquestador ejecuta:
 | 1 | Escanea `input/` | Detecta archivos PDF, DOCX o MD |
 | 2 | Presenta plan | Lista pasos disponibles y pide confirmación |
 | 3 | **Paso 0** | Convierte el input a MD (`convert_input_to_md.py`) |
-| 4 | **Paso 0.5** | Lee `book/references.bib` y pregunta qué referencias usar |
+| 4 | **Paso 0.5** | Lee `liber/references.bib` y pregunta qué referencias usar |
 | 5 | **Pasos 1–9** | Ejecuta el agente de cada sección (Teoría → Socioemocional) |
 | 6 | **Paso 10** | QA: validación mecánica (`validate_output.py --json`) + revisión semántica LLM |
 | 7 | **Paso 10b** | Si QA falla, retroalimenta al agente responsable (máx 3 iteraciones) |
-| 8 | **Paso 11** | Coloca el `.qmd` en `book/<grado>/` o mejora uno existente |
+| 8 | **Paso 11** | Coloca el `.qmd` en `liber/<grado>/` o mejora uno existente |
 | — | *Entre pasos* | Valida que el box-type esperado esté presente (máx 2 reintentos) |
 
 ### Modo mejora
@@ -165,8 +165,8 @@ al usuario qué sección mejorar y ejecuta solo ese agente.
 ### Compilar el libro
 
 ```bash
-quarto render book/
-quarto render book/ --to html   # solo HTML
+quarto render liber/
+quarto render liber/ --to html   # solo HTML
 ```
 
 ---
@@ -189,7 +189,7 @@ quarto render book/ --to html   # solo HTML
 | 9 | Socioemocional | `agente_socioemocional.md` | Cierre reflexivo (Ley 2503/2025) |
 | 10 | QA | `agente_qa.md` | Validación mecánica + semántica |
 | 10b | Feedback loop | — | Re-ejecuta agente si QA falla (máx 3) |
-| 11 | Colocar / mejorar | `estructura_libro.md` | `.qmd` en `book/<grado>/` |
+| 11 | Colocar / mejorar | `estructura_libro.md` | `.qmd` en `liber/<grado>/` |
 
 ---
 
@@ -250,7 +250,7 @@ ejemplo-box (×3) · ejercicio-box (×3) · reto-box · aplicacion-box
 laboratorio-box · evaluacion-box · sub-evaluacion-box · socioemocional-box
 ```
 
-La extensiones en `book/_extensions/` convierten estos divs en:
+La extensiones en `liber/_extensions/` convierten estos divs en:
 - **HTML**: `edu-boxes.css` (clases CSS con colores pastel)
 - **PDF**: `preamble.tex` (entornos `tcolorbox`)
 - **EPUB**: herencia de CSS
@@ -261,11 +261,11 @@ La extensiones en `book/_extensions/` convierten estos divs en:
 
 | Componente | Dónde | Qué hacer |
 |------------|-------|-----------|
-| **Referencias** | `book/references.bib` | Agregar entradas BibTeX |
+| **Referencias** | `liber/references.bib` | Agregar entradas BibTeX |
 | **Agentes** | `artifex/references/*.md` | Modificar prompts y criterios |
-| **Grados / materias** | `book/<grado>/` + `_quarto.yml` | Crear carpeta y registrar |
-| **Estilos HTML** | `book/_extensions/edu-boxes.css` | Editar colores, bordes, tipografía |
-| **Estilos PDF** | `book/preamble.tex` | Editar definiciones `tcolorbox` |
+| **Grados / materias** | `liber/<grado>/` + `_quarto.yml` | Crear carpeta y registrar |
+| **Estilos HTML** | `liber/_extensions/edu-boxes.css` | Editar colores, bordes, tipografía |
+| **Estilos PDF** | `liber/preamble.tex` | Editar definiciones `tcolorbox` |
 
 ---
 
@@ -279,7 +279,7 @@ https://camilotayac.github.io/docere
 
 Workflow (`.github/workflows/publish.yml`):
 ```
-push a main → quarto render --to html → upload _book/ → GitHub Pages
+push a main → quarto render --to html → upload _liber/ → GitHub Pages
 ```
 
 ---

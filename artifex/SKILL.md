@@ -17,13 +17,13 @@ metadata:
 # Docere — Artifex: Generador de Plan de Clase
 
 Artifex: 13 pasos para generar y colocar planes de clase estructurados
-dentro del libro Quarto `book/`. El agente orquestador lee este archivo,
+dentro del libro Quarto `liber/`. El agente orquestador lee este archivo,
 ejecuta cada paso en orden y llama al agente especializado indicado.
 
 > [!IMPORTANT]
 > **Paso 0 (Input)** usa un script Python para convertir PDF/DOCX a MD.
 > **Paso 0.5** pregunta al usuario qué referencias bibliográficas usar.
-> **Paso 11** coloca o mejora el .qmd generado dentro de `book/`.
+> **Paso 11** coloca o mejora el .qmd generado dentro de `liber/`.
 > Todos los demas pasos son ejecutados por el agente leyendo el archivo
 > de instrucciones correspondiente en `references/`.
 
@@ -69,8 +69,8 @@ Docere/                              ← Raiz del monorepo
 │       ├── agente_socioemocional.md     → Paso 9
 │       ├── agente_qa.md                 → Paso 10 (Verificacion)
 │       ├── bibliografia.md              → Paso 0.5 (seleccion de refs)
-│       └── estructura_libro.md          → Paso 11 (colocacion en book/)
-├── book/                            → Libro Quarto Natura Docens
+│       └── estructura_libro.md          → Paso 11 (colocacion en liber/)
+├── liber/                            → Libro Quarto Natura Docens
 │   ├── _quarto.yml
 │   ├── references.bib
 │   ├── preamble.tex
@@ -103,7 +103,7 @@ El agente marca cada paso al completarlo.
 - [ ] **Paso 9:** Socioemocional (`references/agente_socioemocional.md`)
 - [ ] **Paso 10:** QA Final — validacion mecanica + semantica (`references/agente_qa.md`)
 - [ ] **Paso 10b:** Bucle de Retroalimentacion (si QA fallo, repetir pasos)
-- [ ] **Paso 11:** Colocar o mejorar en book/ (`references/estructura_libro.md`)
+- [ ] **Paso 11:** Colocar o mejorar en liber/ (`references/estructura_libro.md`)
 
 ---
 
@@ -144,9 +144,9 @@ python3 scripts/convert_input_to_md.py \
 ### Paso 0.5 — Seleccionar Bibliografia
 
 **El agente lee:** `references/bibliografia.md`
-**Entrada:** `book/references.bib`
+**Entrada:** `liber/references.bib`
 **Accion:**
-1. Leer `book/references.bib` y extraer las referencias disponibles.
+1. Leer `liber/references.bib` y extraer las referencias disponibles.
 2. Presentar al usuario las referencias en formato legible.
 3. Preguntar cuales desea usar:
    - "Todas" (por defecto)
@@ -154,7 +154,7 @@ python3 scripts/convert_input_to_md.py \
    - Seleccion individual
 4. Inyectar las referencias seleccionadas a todos los agentes downstream
    como `## Referencias disponibles` al final de cada prompt.
-5. Incluir `bibliography: ../../book/references.bib` en el YAML del .qmd
+5. Incluir `bibliography: ../../liber/references.bib` en el YAML del .qmd
    (o la ruta relativa correcta segun destino final).
 **Verificacion:** Las referencias seleccionadas se documentan para los pasos
 siguientes.
@@ -336,25 +336,25 @@ detallada de errores y el agente responsable de cada uno.
 
 ---
 
-### Paso 11 — Colocar o mejorar en book/
+### Paso 11 — Colocar o mejorar en liber/
 
 **El agente lee:** `references/estructura_libro.md`
-**Entrada:** Archivo .qmd aprobado por QA + `book/` existente
+**Entrada:** Archivo .qmd aprobado por QA + `liber/` existente
 **Accion:**
 
 1. **Preguntar grado:** `{Sexto, Septimo, Octavo, Noveno, Decimo, Once}`
    y mapear a carpeta `{02_Sexto, 03_Septimo, 04_Octavo, 05_Noveno,
    06_Decimo, 07_Once}`.
 
-2. **Listar archivos** .qmd existentes en `book/<carpeta>/`.
+2. **Listar archivos** .qmd existentes en `liber/<carpeta>/`.
 
 3. **Preguntar al usuario:**
    - Si el archivo NO existe: `"¿Qué nombre para el nuevo archivo?"`
-     → Copiar el .qmd completo a `book/<carpeta>/<nombre>.qmd`.
+     → Copiar el .qmd completo a `liber/<carpeta>/<nombre>.qmd`.
    - Si el archivo SI existe: entrar en modo MEJORA.
 
 4. **Modo MEJORA:**
-   a. Ejecutar `python3 scripts/validate_output.py --sections book/<ruta>.qmd`
+   a. Ejecutar `python3 scripts/validate_output.py --sections liber/<ruta>.qmd`
       para detectar boxes presentes vs faltantes.
    b. Mostrar menu al usuario:
       ```
@@ -377,7 +377,7 @@ detallada de errores y el agente responsable de cada uno.
 
 5. **Confirmar** los cambios y mostrar la ruta final del archivo.
 
-**Salida:** Archivo .qmd colocado o modificado en `book/`.
+**Salida:** Archivo .qmd colocado o modificado en `liber/`.
 **Verificacion:** El archivo destino existe y QA pasa.
 
 ---
