@@ -19,8 +19,9 @@
 
 <br>
 
-**Docēre** (latín: *enseñar*) — Monorepo que une **Artifex**, un motor multi-agente
-generador de planes de clase, con el libro Quarto **Natura Docens** de Ciencias Naturales para
+**Docēre** (latín: *enseñar*) — Monorepo que une **Bibliotheca**, un skill opencode
+para buscar y extraer contenido de libros científicos; **Artifex**, un motor multi-agente
+generador de planes de clase; y el libro Quarto **Natura Docens** de Ciencias Naturales para
 educación básica y media en Colombia (grados 6–11).
 
 ---
@@ -31,6 +32,7 @@ educación básica y media en Colombia (grados 6–11).
 |--------|--------|-------------|--------------------|
 | **Docēre** | Latina | *enseñar, instruir, educar* | Nombre del proyecto completo |
 | **Artifex** | Latina | *artesano, creador, el que construye con maestría* | Motor generador de planes de clase |
+| **Bibliothēca** | Latina | *biblioteca, depósito de libros* | Skill de búsqueda y extracción de libros científicos |
 | **Natura Docens** | Latina | *La naturaleza que enseña / Enseñando naturaleza* | Libro Quarto de Ciencias Naturales |
 
 ---
@@ -38,34 +40,41 @@ educación básica y media en Colombia (grados 6–11).
 ## Architectūra — Arquitectura
 
 ```
-                    Input (PDF / DOCX / MD)
-                             │
-                             ▼
-    ┌────────────────────────────────────────────────────┐
-    │                   Artifex                          │
-    │                                                     │
-    │   opencode + 11 agentes LLM + QA híbrido           │
-    │                                                     │
-    │   0 → 0.5 → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →      │
-    │   8.5 → 9 → 10 → 10b (feedback) → 11               │
-    │                                                     │
-    │   Validación mecánica entre cada paso               │
-    └────────────────────────────────────────────────────┘
-                             │
-                             ▼
-                      .qmd estructurado
-                             │
-                             ▼
-        ┌─────────────────────────────────────┐
-        │  liber/  (Libro Quarto)              │
-        │  Natura Docens                      │
-        │                                     │
-        │  quarto render → HTML / PDF / EPUB  │
-        └─────────────────────────────────────┘
-                             │
-                             ▼
-              GitHub Pages (automático)
-        https://camilotayac.github.io/docere
+     ┌─────────────────────────────┐
+     │      Bibliotheca            │
+     │  Busca y extrae secciones   │
+     │  de libros científicos      │
+     │  ─────────────────────────  │
+     │  python3 extraer.py         │
+     │  --tema "reactivo límite"   │
+     └──────────┬──────────────────┘
+                │ output: .md + .pdf
+                ▼
+     ┌────────────────────────────────────────────────────┐
+     │                   Artifex                          │
+     │                                                     │
+     │   opencode + 11 agentes LLM + QA híbrido           │
+     │                                                     │
+     │   0 → 0.5 → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 →      │
+     │   8.5 → 9 → 10 → 10b (feedback) → 11               │
+     │                                                     │
+     │   Validación mecánica entre cada paso               │
+     └────────────────────────────────────────────────────┘
+                              │
+                              ▼
+                       .qmd estructurado
+                              │
+                              ▼
+         ┌─────────────────────────────────────┐
+         │  liber/  (Libro Quarto)              │
+         │  Natura Docens                      │
+         │                                     │
+         │  quarto render → HTML / PDF / EPUB  │
+         └─────────────────────────────────────┘
+                              │
+                              ▼
+               GitHub Pages (automático)
+         https://camilotayac.github.io/docere
 ```
 
 ---
@@ -74,13 +83,26 @@ educación básica y media en Colombia (grados 6–11).
 
 ```
 Docere/
-├── artifex/                          ← Motor generativo Artifex
-│   ├── SKILL.md                      ← Orquestador (cargado por opencode)
-│   ├── input/                        ← Colocar PDF, DOCX o MD del tema
-│   ├── output/                       ← .qmd generados (histórico)
+├── Bibliotheca/                       ← Skill de biblioteca científica
+│   ├── SKILL.md                       ← Orquestador (cargado por opencode)
+│   ├── agents/
+│   │   ├── extractor.md               ← Workflow de extracción
+│   │   ├── validador.md               ← Workflow de validación
+│   │   └── retroalimentador.md        ← Workflow de mejora continua
 │   ├── scripts/
-│   │   ├── convert_input_to_md.py    → PDF/DOCX → MD  (Paso 0)
-│   │   └── validate_output.py        → 15 checks mecánicos (Paso 10)
+│   │   ├── extraer.py                 → Busca y extrae por tema
+│   │   └── validar.py                 → Valida calidad de extracciones
+│   └── Física/, Química/, Biología/,
+│       Matemáticas/, Computación/,
+│       Filosofía/                     ← Libros por materia (PDF/EPUB)
+│         └── Español/, English/       ← Subcarpeta por idioma
+├── artifex/                           ← Motor generativo Artifex
+│   ├── SKILL.md                       ← Orquestador (cargado por opencode)
+│   ├── input/                         ← Input para planes (incluye output de Bibliotheca)
+│   ├── output/                        ← .qmd generados (histórico)
+│   ├── scripts/
+│   │   ├── convert_input_to_md.py     → PDF/DOCX → MD  (Paso 0)
+│   │   └── validate_output.py         → 15 checks mecánicos (Paso 10)
 │   └── references/
 │       ├── agente_teoria.md                    → Paso 1
 │       ├── agente_ideas_previas.md             → Paso 2
@@ -123,7 +145,7 @@ Docere/
 git clone git@github.com:camilotayac/docere.git
 cd docere
 
-pip install pymupdf python-docx
+pip install pymupdf python-docx pyyaml
 
 quarto --version   # verificar instalación
 ```
@@ -132,7 +154,7 @@ quarto --version   # verificar instalación
 
 ## Usus — Uso con opencode
 
-### Flujo completo
+### Flujo completo (Artifex)
 
 ```bash
 # 1. Colocar el archivo fuente
@@ -155,6 +177,26 @@ Al iniciar, opencode carga `artifex/SKILL.md` y el orquestador ejecuta:
 | 7 | **Paso 10b** | Si QA falla, retroalimenta al agente responsable (máx 3 iteraciones) |
 | 8 | **Paso 11** | Coloca el `.qmd` en `liber/<grado>/` o mejora uno existente |
 | — | *Entre pasos* | Valida que el box-type esperado esté presente (máx 2 reintentos) |
+
+### Bibliotheca — Extraer secciones de libros
+
+Bibliotheca busca un tema en los libros almacenados en `Bibliotheca/<Materia>/`
+y extrae las secciones relevantes como PDF + Markdown en `artifex/input/`.
+
+```bash
+# Listar libros disponibles
+python3 Bibliotheca/scripts/extraer.py --list-libros
+
+# Extraer secciones sobre un tema
+python3 Bibliotheca/scripts/extraer.py --tema "reactivo limite" --materia Química
+
+# Validar calidad de las extracciones
+python3 Bibliotheca/scripts/validar.py "artifex/input/reactivo_limite/" --tema "reactivo limite"
+```
+
+El output se guarda directamente en `artifex/input/<tema>/`, listo para que
+Artifex lo use como fuente del plan de clase. Al abrir opencode, el skill
+se carga desde `Bibliotheca/SKILL.md`.
 
 ### Modo mejora
 
@@ -262,7 +304,9 @@ La extensiones en `liber/_extensions/` convierten estos divs en:
 | Componente | Dónde | Qué hacer |
 |------------|-------|-----------|
 | **Referencias** | `liber/references.bib` | Agregar entradas BibTeX |
-| **Agentes** | `artifex/references/*.md` | Modificar prompts y criterios |
+| **Agentes (Artifex)** | `artifex/references/*.md` | Modificar prompts y criterios |
+| **Agentes (Bibliotheca)** | `Bibliotheca/agents/*.md` | Modificar prompts y criterios |
+| **Libros** | `Bibliotheca/<Materia>/<Idioma>/` | Colocar PDF/EPUB (no se suben a GitHub) |
 | **Grados / materias** | `liber/<grado>/` + `_quarto.yml` | Crear carpeta y registrar |
 | **Estilos HTML** | `liber/_extensions/edu-boxes.css` | Editar colores, bordes, tipografía |
 | **Estilos PDF** | `liber/preamble.tex` | Editar definiciones `tcolorbox` |
@@ -288,6 +332,7 @@ push a main → quarto render --to html → upload _liber/ → GitHub Pages
 
 | Componente | Tecnología |
 |------------|-----------|
+| Biblioteca científica | Bibliotheca skill + Python (PyMuPDF + PyYAML) |
 | Motor generativo | opencode + Python + LLM |
 | Formato de libro | Quarto (QMD → HTML / PDF / EPUB) |
 | Despliegue | GitHub Actions → GitHub Pages |

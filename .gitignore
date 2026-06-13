@@ -6,3 +6,7 @@ __pycache__/
 .DS_Store
 *.log
 **/*.quarto_ipynb
+
+# Bibliotheca - libros locales (no se suben a GitHub)
+Bibliotheca/**/*.pdf
+Bibliotheca/**/*.epub
