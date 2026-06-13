@@ -1,0 +1,86 @@
+# Biología - Décimo
+
+## Fundamentos de la reproducción vegetal
+
+
+## Teoría
+
+::: {.teoria-box}
+Reproducción vegetal = Proceso biológico fundamental + Capacidad de generar nuevos individuos mediante mecanismos de herencia asexual o sexual para garantizar la supervivencia de la especie. La **reproducción asexual** ocurre cuando una planta utiliza la división celular mitótica para producir descendientes que son clones genéticos del progenitor, aprovechando estructuras como raíces adventicias, bulbos o estolones terrestres. Por otro lado, la **reproducción sexual** es el mecanismo que introduce variabilidad genética al combinar material hereditario de dos gametos, permitiendo que las poblaciones vegetales se adapten a entornos cambiantes y sobrevivan a presiones selectivas extremas. 
+
+:::
+
+## Ideas Previas
+
+
+### Ideas Previas - Cuentos
+
+::: {.ideas-previas-box}
+Imagina que tienes una planta de fresas en una maceta y, de pronto, notas que una de sus ramas largas toca la tierra de la maceta vecina. Semanas después, en ese lugar exacto, ha brotado una planta nueva sin que nadie haya plantado una semilla. ¿Es posible que una planta se "copie" a sí misma para caminar por el jardín?
+
+:::
+### Ideas Previas - Preguntas
+
+::: {.ideas-previas-box}
+
+- **¿Cómo crees que la nueva planta sabe cómo crecer si no vino de una semilla?**
+- **¿Qué ventaja tendría una planta al ser idéntica a su madre en lugar de ser diferente?**
+- **¿Qué pasaría con un bosque entero de clones si llegara una enfermedad que afectara a un solo árbol?**
+
+
+:::
+
+
+## Contextualización
+
+
+### Contextualización - Método Richard Feynman
+
+::: {.contexto-box}
+La reproducción de las plantas es como tener dos formas de crear una biblioteca: puedes simplemente fotocopiar un libro que ya existe (**reproducción asexual**) o puedes tomar capítulos de dos libros distintos para crear una historia nueva (**reproducción sexual**). Si fotocopias, el libro es exactamente igual y funciona bien si el ambiente no cambia; pero si mezclas historias, creas una versión única que podría ser mejor para enfrentar nuevos retos. Las plantas usan raíces, tallos o bulbos para clonarse rápidamente, pero usan las flores para mezclar sus genes y asegurar que sus hijos tengan herramientas diferentes para el futuro.
+
+:::
+
+
+## Contextualización para caracterizados
+
+
+### Estrategia DUA Universal - Todos los Perfiles
+
+::: {.caracterizados-box}
+Para comprender la reproducción, vamos a usar nuestros sentidos y el movimiento. Si te cuesta concentrarte o procesar textos largos, enfócate en las diferencias visuales entre un clon y un hijo único. Si tienes dificultades visuales, utiliza texturas para diferenciar una raíz de una semilla. **¡Crea tu propia herramienta!** Consigue una papa (tubérculo) que tenga "ojitos" y un sobre de semillas. Toca la superficie lisa de la papa y compárala con la dureza de la semilla; la papa es un almacén de clones listos para brotar, mientras que la semilla es una cápsula del tiempo con una identidad nueva. Dibuja o describe qué pasaría si cortas la papa en trozos: cada trozo es una copia fiel.
+
+:::
+
+
+::: {.ejemplo-box}
+**Ejemplo Guiado - Nivel Básico:**
+
+- **Justificación Teórica:** La mitosis permite la regeneración de tejidos y la formación de individuos genéticamente iguales en la reproducción asexual.
+- **Aplicación:** Un agricultor corta un fragmento de tallo de caña de azúcar y lo planta; el resultado es una planta con las mismas características de dulzura que la original.
+
+
+:::
+
+## Ejercicios
+
+::: {.ejercicios-box}
+
+- Identifica si un estolón de fresa representa reproducción sexual o asexual.
+- Explica por qué los bulbos de tulipán producen flores iguales año tras año.
+- Describe el papel de la mitosis en la formación de un clon vegetal.
+
+
+:::
+
+
+::: {.aplicacion-box}
+En la agricultura moderna, la reproducción asexual es clave para mantener la calidad de los alimentos, como en el caso de las manzanas o los plátanos, que son clones seleccionados por su sabor. Sin embargo, la falta de diversidad genética hace que estas plantaciones sean vulnerables a plagas globales.
+
+:::
+
+
+::: {.socioemocional-box}
+Tú tienes la capacidad de adaptarte y crecer, al igual que las plantas. Reconoce que tu esfuerzo por aprender hoy es la semilla de tu conocimiento del mañana.
+
+:::

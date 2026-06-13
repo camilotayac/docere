@@ -1,0 +1,34 @@
+# Generalidades
+
+Este documento presenta un plan de temas por periodos para el **área de Ciencias Naturales** (Biología, Física y Química), dirigido a docentes, como guía de organización y secuenciación de contenidos durante el año escolar.
+
+## Importante - Fundamentación
+
+En fundamentación se establece el contenido teórico específico y concreto. Acá se establece la información respaldada por libros universitarios, enfocada a la temática específica o artículos de revisión o de investigación. El docente que quiera aportar en la forma de explicar el concepto lo puede realizar en conceptualización.
+Este documento se actualiza de forma colaborativa. Para facilitar el seguimiento, se recomienda registrar aquí quién realizó cada modificación y qué se cambió (por ejemplo: correcciones de redacción, incorporación de secciones, ajuste de figuras o referencias).
+
+| Fecha | Usuario | Cambio realizado |
+|---|---|---|
+| 8-Jun-2026 | Camilo Tayac | Reactivo Limite |
+
+## Prefacio
+
+Este libro de Ciencias Naturales está diseñado para acompañar el proceso de aprendizaje desde grado sexto hasta grado undécimo, integrando Biología, Física y Química en una ruta progresiva. El material prioriza la comprensión conceptual, el razonamiento científico y la aplicación práctica de los contenidos en contextos escolares.
+
+La organización de cada unidad busca mantener un equilibrio entre precisión académica y lenguaje accesible. Por esa razón, los temas se presentan de lo general a lo específico, con explicaciones estructuradas, ejemplos guiados y actividades que fortalecen habilidades cognitivas como análisis, interpretación y resolución de problemas.
+
+El enfoque metodológico combina fundamentación teórica, contextualización didáctica y ejercicios de consolidación. De este modo, el texto puede utilizarse tanto en clase como en trabajo autónomo, procesos de nivelación o preparación de evaluaciones.
+
+## Cómo está organizado este libro
+
+Cada bloque por grado incluye una secuencia de contenidos por periodos académicos y por área. Dentro de cada tema, se mantiene una estructura consistente para facilitar la lectura:
+
+- presentación del concepto central,
+- desarrollo explicativo paso a paso,
+- ejemplos de aplicación,
+- actividades para fortalecer la comprensión.
+
+## Sugerencias de uso
+
+Se recomienda trabajar los contenidos en orden, registrar ideas clave y verificar la comprensión con los ejercicios propuestos. Cuando aparezcan dificultades, conviene retomar los ejemplos y relacionarlos con situaciones del entorno cotidiano.
+

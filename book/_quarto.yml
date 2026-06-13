@@ -1,0 +1,71 @@
+project:
+  type: book
+  resources:
+    - Portada.png
+
+bibliography: references.bib
+
+book:
+  cover-image: Portada.png
+  title: "Plan para docentes de Ciencias Naturales"
+  bread-crumbs: false
+  page-footer: "Copyright 2021, Norah Jones"
+  downloads: [pdf,epub]
+  page-navigation: true
+  repo-url: https://github.com/camilotayac/docere/
+  repo-actions: [edit]
+  sharing: [twitter, facebook]
+  
+  sidebar:
+    collapse-level: 1
+
+  chapters:
+    - part: "Introducción"
+      chapters:
+        - index.qmd
+        - 01_Generalidades/01_Introduccion.qmd
+        - 01_Generalidades/02_PlanDeArea.qmd
+    - part: "Décimo - Química"
+      chapters:
+        - 06_Decimo/Quimica.qmd
+
+
+  appendices:
+    - bibliografia.qmd
+
+  site-url: https://camilotayac.github.io/docere/
+  language: es
+  
+
+format:
+  pdf:
+    documentclass: scrbook
+    classoption: [12pt, oneside, open=any]
+    include-in-header: preamble.tex
+    toc: true
+    toc-depth: 1
+    number-depth: 1
+    number-sections: true
+    secnumdepth: 2
+    lang: en
+    colorlinks: true
+    
+  html:
+    theme: cosmo
+    css: _extensions/edu-boxes.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+
+  epub:
+    cover-image: Portada.png   
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    
+theme:
+  light: flatly
+  dark: darkly
+    
+filters:
+  - _extensions/edu-boxes.lua

@@ -1,0 +1,101 @@
+# Plan de Área de Ciencias Naturales
+
+## Biología
+
+| Grado | Periodo | Eje Temático | DBA Alineado | Pre-requisito | Capítulo |
+|---|---|---|---|---|---|
+| 6° | I | Fundamentos de la Materia y la Vida | DBA 3: Clasificación de materiales (sustancias puras y mezclas). | Conocimientos básicos sobre la materia. | 1, 2 y 3 |
+| 6° | II | La Célula como Unidad Funcional | DBA 4: Funciones básicas de la célula (transporte, energía y división). | Dominio de moléculas biológicas (Periodo 1). | 4 y 5 |
+| 6° | III | Clasificación y Diversidad | DBA 5: Clasificación taxonómica según el tipo de células y biodiversidad. | Diferenciación entre células procariotas y eucariotas (Periodo 2). | 19, 20 y 21 |
+| 6° | IV | Fenómenos Físicos y Químicos | DBA 1: Cargas eléctricas. DBA 2: Influencia de T y P en propiedades fisicoquímicas. | Conceptos de energía y transformación de la materia (Periodo 1). | 6 e integración |
+|    |    |    |    |    |    |
+| 7° | I | Transformación de Energía Celular | DBA 3: Fotosíntesis como construcción de materia y Respiración Celular. | Estructura de organelos (cloroplastos y mitocondrias). | 7 y 8 |
+| 7° | II | Dinámica de Poblaciones y Nutrición | DBA 3: Nutrición autótrofa/heterótrofa en cadenas y redes tróficas. | Conceptos de fotosíntesis (Periodo 1). | 28 y 29 |
+| 7° | III | Flujo de Energía y Ciclos Nutrientes | DBA 4: Ciclos biogeoquímicos (C, N y H₂O) y mantenimiento de suelos. | Transferencia de energía en redes tróficas (Periodo 2). | 30 |
+| 7° | IV | Biodiversidad e Impacto Humano | DBA 4: Efectos de la intervención humana (erosión, minería) y conservación. | Ciclos del agua y carbono (Periodo 3). | 31 |
+|    |    |    |    |    |    |
+| 8° | I | Reproducción Celular y Herencia | DBA 5: Importancia de la división celular (mitosis/meiosis) en la vida. | Concepto de célula y núcleo (Grado 6). | 9 y 10 |
+| 8° | II | Sistemas de Reproducción Organísmica | DBA 5: Reproducción sexual/asexual en animales y plantas; salud y variabilidad. | Procesos de meiosis y gametogénesis (Periodo 1). | 42 y 46 |
+| 8° | III | Homeostasis y Control Maestro | DBA 4: Relación entre sistema nervioso, endocrino y la organización corporal. | Conceptos básicos de tejidos y órganos (Grado 7). | 32, 38 y 39 |
+| 8° | IV | Sistemas de Ejecución, Defensa y Excreción | DBA 4: Relación entre sistema inmune, urinario (excretor), muscular y esqueleto. | Coordinación nerviosa y señales químicas (Periodo 3). | 36, 37 y 41 |
+|    |    |    |    |    |    |
+| 9° | I | Genética Clásica y Herencia | DBA 4: Principios mendelianos y post-mendelianos; predicción de características. | Conceptos de meiosis y reproducción (Grado 8). | 11 |
+| 9° | II | Genética Molecular y Biotecnología | DBA 5: Estructura del ADN, expresión génica (proteínas) y biotecnología. | Patrones de herencia y variabilidad (Periodo 1). | 12, 13 y 14 |
+| 9° | III | Teorías de la Evolución | DBA 6: Selección natural, ancestro común y evidencias de la evolución. | Mecanismos de mutación y cambios en el ADN (Periodo 2). | 15, 16 y 17 |
+| 9° | IV | Historia de la Vida y Diversidad | DBA 6: Eras geológicas, sistemática y conservación de la biodiversidad. | Procesos de especiación y selección natural (Periodo 3). | 18, 19 |
+|    |    |    |    |    |    |
+| 10° | I | Fundamentos Moleculares de la Biotecnología | DBA 4: Estructura y función del ADN y ARN en la manipulación genética. | Genética mendeliana y celular (visto en 9°). | 12 y 13 |
+| 10° | II | Técnicas de Ingeniería Genética | DBA 4: Descripción de técnicas (PCR, clonación, secuenciación y edición). | Mecanismos de expresión y regulación génica (Periodo 1). | 14 |
+| 10° | III | Aplicaciones en Salud y Reproducción | DBA 4: Fertilización asistida, terapias génicas y medicina genómica. | Fisiología reproductiva y desarrollo animal. | 14, 42 y 43 |
+| 10° | IV | Bioética e Impacto Socio-Ambiental | DBA 4: Implicaciones legales, sociales y ambientales de los transgénicos. | Aplicaciones biotecnológicas en agricultura y salud (Periodo 3). | 14 y 31 |
+|    |    |    |    |    |    |
+| 11° | I | Cambio Climático y Flujo de Energía | DBA 5: Explicación del calentamiento global, sus causas y acciones globales. | Ciclos biogeoquímicos y flujo de energía (Grado 7). | 29 |
+| 11° | II | Colombia: País Megadiverso | DBA 5: Implicaciones sociales y ambientales de la megadiversidad en Colombia. | Clasificación de ecosistemas y biomas (Grado 4). | 30 |
+| 11° | III | Impacto Humano en la Biodiversidad | DBA 5: Efectos de la minería, ganadería, agricultura y obras civiles en el país. | Análisis de intervención humana en suelos (Grado 7). | 31 |
+| 11° | IV | Gestión y Conservación Ambiental | DBA 5: Diseño de investigaciones y acciones para evitar el maltrato y tráfico ilegal. | Visión sistémica de la biodiversidad (Periodo 2 y 3). | 31 |
+
+## Química
+
+| Grado | Periodo | Eje Temático | DBA Alineado | Pre-requisito | Capítulo |
+|---|---|---|---|---|---|
+| 6° | I | La materia y sus propiedades generales. | — | — | — |
+| 6° | II | Clases de materia. | — | — | — |
+| 6° | III | Mezclas y su clasificación. | — | — | — |
+| 6° | IV | Técnicas de separación de mezclas. | — | — | — |
+|    |    |    |    |    |    |
+| 7° | I | Teoría atómica y estructura atómica. | — | — | — |
+| 7° | II | Propiedades de la materia. | — | — | — |
+| 7° | III | Propiedades fisicoquímicas. | — | — | — |
+| 7° | IV | Cambios químicos básicos. | — | — | — |
+|    |    |    |    |    |    |
+| 8° | I | Estructura atómica. Modelos atómicos y Tabla periódica. | — | — | — |
+| 8° | II | Enlaces químicos (Iónico y Covalente). | — | — | — |
+| 8° | III | Nomenclatura inorgánica (Óxidos, bases, ácidos). | — | — | — |
+|    |    |    |    |    |    |
+| 9° | I | Mol, masa molar y estequiometría. | — | — | — |
+| 9° | II | Soluciones y concentraciones químicas. | — | — | — |
+| 9° | III | Leyes de los gases (Boyle, Charles, Gay-Lussac). | — | — | — |
+| 9° | IV | Química orgánica: Introducción al Carbono. | — | — | — |
+|    |    |    |    |    |    |
+| 10° | I | Solución, disolución y ecuaciones químicas. | — | — | — |
+| 10° | III | Reacciones químicas y estequiometría. | — | — | — |
+| 10° | IV | Gases ideales y estados de agregación. | — | — | — |
+|    |    |    |    |    |    |
+| 11° | I | Hidrocarburos (Alcanos, Alquenos, Alquinos). | — | — | — |
+| 11° | II | Grupos funcionales oxigenados y nitrogenados. | — | — | — |
+| 11° | III | Biomoléculas: Carbohidratos, lípidos y proteínas. | — | — | — |
+| 11° | IV | Cinética y equilibrio químico. Química ambiental. | — | — | — |
+
+## Física
+
+| Grado | Periodo | Eje Temático | DBA Alineado | Pre-requisito | Capítulo |
+|---|---|---|---|---|---|
+| 6° | I | Introducción a la física. Carga, fuerza y corriente eléctrica. | — | — | — |
+| 6° | II | Fuentes de voltaje, resistencia y circuitos eléctricos. | — | — | — |
+| 6° | III | Temperatura y densidad. Magnetismo y efectos de la corriente. | — | — | — |
+| 6° | IV | Electromagnetismo e inducción electromagnética. | — | — | — |
+|    |    |    |    |    |    |
+| 7° | I | Movimiento, rapidez, aceleración y principio de inercia. | — | — | — |
+| 7° | II | Fuerza, masa y rozamiento. Peso y densidad. | — | — | — |
+| 7° | III | Trabajo, potencia y energía. | — | — | — |
+| 7° | IV | Trabajo, potencia y energía (Continuación). | — | — | — |
+|    |    |    |    |    |    |
+| 8° | I | Mecánica de fluidos: Densidad y presión. | — | — | — |
+| 8° | II | Principios de Arquímedes y Pascal. | — | — | — |
+| 8° | III | Calor y temperatura. Escalas termométricas. | — | — | — |
+| 8° | IV | Termodinámica y transferencia de calor. | — | — | — |
+|    |    |    |    |    |    |
+| 9° | I | Movimiento ondulatorio y fenómenos ondulatorios. | — | — | — |
+| 9° | II | Acústica: Naturaleza y cualidades del sonido. | — | — | — |
+| 9° | III | Óptica: Reflexión y refracción de la luz. | — | — | — |
+| 9° | IV | Espejos, lentes y el funcionamiento del ojo. | — | — | — |
+|    |    |    |    |    |    |
+| 10° | I | Cinemática: Vectores, MRU y MRUA. | — | — | — |
+| 10° | II | Dinámica: Leyes de Newton y fuerzas. | — | — | — |
+| 10° | III | Trabajo, Energía y Potencia. | — | — | — |
+| 10° | IV | Estática y mecánica de fluidos. | — | — | — |
+|    |    |    |    |    |    |
+| 11° | I | Movimiento Armónico Simple (MAS) y Ondas. | — | — | — |
+| 11° | II | Sonido y Óptica geométrica. | — | — | — |
+| 11° | III | Electrostática y Electrodinámica (Ley de Ohm). | — | — | — |
+| 11° | IV | Electromagnetismo y Física Moderna. | — | — | — |

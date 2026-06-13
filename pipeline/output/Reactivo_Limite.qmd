@@ -1,0 +1,178 @@
+---
+title: "Reactivo Limite"
+bibliography: ../references.bib
+---
+
+::: {.teoria-box title="Teoria"}
+
+**Estequiometria** es la rama de la quimica que estudia las relaciones cuantitativas entre reactivos y productos en una reaccion quimica. En una reaccion, los reactivos no siempre estan en las proporciones exactas que indica la ecuacion balanceada. Cuando las cantidades no siguen la proporcion molar estequiometrica, uno de los reactivos se consume completamente antes que los otros. A este se le denomina **reactivo limite**, y determina la cantidad maxima de producto que se puede formar. Los reactivos que no se consumen totalmente se llaman **reactivos en exceso**.
+
+Para identificar el reactivo limite se siguen cuatro pasos: (1) escribir y balancear la ecuacion quimica, (2) convertir las masas de los reactivos a moles usando las masas molares ($n = m / M$), (3) dividir los moles de cada reactivo entre su coeficiente estequiometrico, y (4) el reactivo con el menor cociente es el limite. Una vez identificado, se usa su cantidad de moles para calcular la cantidad de producto esperada mediante la relacion molar de la ecuacion balanceada.
+
+La cantidad maxima calculada se denomina **rendimiento teorico**. En la practica, el rendimiento real suele ser menor debido a perdidas o reacciones secundarias. El porcentaje de rendimiento se expresa como:
+
+$$\%\ \text{rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teorico}} \times 100$$
+
+:::
+
+::: {.ideas-previas-box title="Ideas Previas - Cuentos"}
+
+Imagina que estas organizando una fiesta y tienes 10 bolsas de pan de hamburguesa y 8 salchichas. Cada hamburguesa necesita un pan y una salchicha. Al empezar a armarlas, descubres que despues de la octava hamburguesa ya no quedan salchichas, aunque aun te sobran 2 panes. Las salchichas se acabaron primero y determinaron cuantas hamburguesas pudiste hacer. En quimica ocurre exactamente igual: uno de los ingredientes se acaba primero y limita la cantidad de producto.
+
+:::
+
+::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
+
+- Cuando cocinas una receta, alguna vez te ha sobrado un ingrediente porque otro se acabo primero? Como decidiste cuanto producto hacer?
+- Que crees que pasaria si en un laboratorio un cientifico usara demasiado de un reactivo y muy poco de otro? El producto seria el esperado?
+- Que diferencia hay entre "tener suficiente" y "tener exactamente lo necesario" para que ocurra una reaccion?
+- Por que crees que es importante para un ingeniero quimico saber cual reactivo se agotara primero en una reaccion industrial?
+
+:::
+
+::: {.contexto-box title="Contextualización - Método Richard Feynman"}
+
+Como en la fiesta de las hamburguesas, en quimica pasa lo mismo: los reactivos se combinan en proporciones fijas, como una receta. Si tienes 10 moles de nitrogeno y 15 moles de hidrogeno para hacer amoniaco, la receta dice que por cada molecula de nitrogeno necesitas 3 de hidrogeno. Aunque tengas mas nitrogeno en total, el hidrogeno se acaba primero porque la receta lo gasta mas rapido. Ese es el reactivo limite: el ingrediente que se termina primero y pone el tope a cuanto producto puedes hacer. Los demas simplemente sobran.
+
+**Cuidado:** Esta analogia funciona para entender la idea, pero en quimica no "ves" cuando un reactivo se acaba. Necesitas convertir las cantidades a moles y comparar proporciones para descubrirlo. Eso es lo que hace el calculo estequiometrico.
+
+:::
+
+::: {.caracterizados-box title="Contextualización - Apoyo Cognitivo y TDAH"}
+
+Tu eres un detective de cantidades. Para encontrar al reactivo limite, sigue esta pista en 4 pasos:
+
+1. **Escribe la ecuacion:** Anota los reactivos y productos con sus coeficientes.
+2. **Convierte a moles:** Usa la formula $n = m/M$ para cada reactivo.
+3. **Divide y venceras:** Divide los moles de cada reactivo entre su numero en la ecuacion.
+4. **El mas pequeno gana:** El reactivo con el resultado mas pequeno es el limite.
+
+**¡Crea tu propia herramienta!** Consigue 20 fichas de dos colores (10 rojas y 10 azules). Las rojas seran el reactivo A y las azules el reactivo B. Si la ecuacion dice $2A + 1B \rightarrow producto$, entonces por cada 2 fichas rojas que uses, gastas 1 azul. Simula la reaccion moviendo las fichas hasta que un color se acabe. Ese color es tu reactivo limite.
+
+:::
+
+::: {.caracterizados-box title="Contextualización - Visual"}
+
+Construye un diagrama de barras de dos colores:
+
+- **Color 1 (azul):** Moles disponibles de cada reactivo.
+- **Color 2 (naranja):** Moles necesarios segun la estequiometria.
+
+Debajo de cada barra, escribe el cociente: moles disponibles / coeficiente. El reactivo con la barra de cociente mas pequena es el limite. Anade una flecha hacia abajo senalando ese reactivo con la etiqueta "**LIMITE**".
+
+Dibuja tambien una "balanza de reactivos": en un platillo pon las cantidades disponibles y en el otro las cantidades necesarias. El platillo que se eleve (porque falta) indica el reactivo limite.
+
+:::
+
+::: {.caracterizados-box title="Contextualización - Neurodivergencia y Accesibilidad"}
+
+Para ti, las reglas fijas son una fortaleza. La identificacion del reactivo limite sigue siempre los mismos 4 pasos, en el mismo orden. Nada cambia. Eso significa que una vez que aprendas el proceso, siempre funcionara.
+
+**¡Crea tu propia herramienta!** Consigue tres recipientes pequenos con diferentes texturas: uno con arena (reactivo A), otro con arroz (reactivo B), y un tercero vacio (el producto). Usa una cuchara como "coeficiente estequiometrico": por cada cucharada de arena que pongas en el recipiente vacio, anade una cucharada de arroz. Sigue la proporcion que indique tu ecuacion. Cuando uno de los dos ingredientes se acabe, ese es tu reactivo limite. El tacto te ayudara a recordar que el que se acaba primero es el que manda.
+
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado"}
+
+**Enunciado:** Considera la reaccion de sintesis del amoniaco:  
+$$N_2 + 3H_2 \rightarrow 2NH_3$$  
+Si disponemos de 10 moles de nitrogeno ($N_2$) y 15 moles de hidrogeno ($H_2$), determina cual es el reactivo limite y que cantidad de amoniaco ($NH_3$) se puede formar.
+
+**Justificación Teórica:** Como vimos en la contextualizacion, los reactivos se combinan en proporciones fijas. La ecuacion balanceada indica que por cada molecula de $N_2$ se necesitan 3 de $H_2$. Para identificar cual se acaba primero debemos comparar los moles disponibles ajustados por sus coeficientes, no las cantidades absolutas.
+
+**Ejecución:**
+
+**Paso 1: Identificar los coeficientes estequiometricos**  
+$N_2 \rightarrow 1$, $H_2 \rightarrow 3$, $NH_3 \rightarrow 2$  
+← (los coeficientes indican la proporcion en que se combinan los reactivos y se forman los productos)
+
+**Paso 2: Calcular el cociente moles/coeficiente para cada reactivo**  
+$N_2: 10 / 1 = 10$  
+$H_2: 15 / 3 = 5$  
+← (el cociente representa cuantas veces puede darse la reaccion si ese reactivo fuese el limite)
+
+**Paso 3: Identificar el reactivo limite**  
+El menor cociente es 5 ($H_2$), por lo tanto el $H_2$ es el reactivo limite.  
+← (aunque hay mas moles de $H_2$ (15) que de $N_2$ (10) en valor absoluto, el $H_2$ es el limite porque su demanda estequiometrica es 3 veces mayor)
+
+**Paso 4: Calcular la cantidad de producto**  
+$15\ \text{mol}\ H_2 \times \frac{2\ \text{mol}\ NH_3}{3\ \text{mol}\ H_2} = 10\ \text{mol}\ NH_3$  
+← (la cantidad de producto se calcula siempre a partir del reactivo limite, nunca del exceso)
+
+**Paso 5: Calcular la cantidad sobrante del reactivo en exceso**  
+$N_2$ consumido: $15\ \text{mol}\ H_2 \times \frac{1\ \text{mol}\ N_2}{3\ \text{mol}\ H_2} = 5\ \text{mol}\ N_2$  
+$N_2$ sobrante: $10 - 5 = 5\ \text{mol}\ N_2$  
+← (el reactivo en exceso no participa completamente; solo reacciona la cantidad proporcional al limite)
+
+**Resultado:**  
+- **Reactivo limite:** $H_2$  
+- **$NH_3$ formado:** 10 moles  
+- **$N_2$ sobrante:** 5 moles  
+
+**Auto-explicación:** El error mas comun es mirar las cantidades absolutas (10 vs 15) y concluir que el $N_2$ es el limite por ser menor numericamente. Sin embargo, lo que importa no es la cantidad absoluta sino la cantidad ajustada por el coeficiente. Por que crees que el paso de dividir entre el coeficiente es el mas importante del proceso?
+
+:::
+
+::: {.ejercicios-box title="Ejercicios"}
+
+- Completa: En una reaccion quimica, el \underline{} es el reactivo que se consume primero y determina la cantidad de \underline{} formado.
+- Explica en tres lineas por que el reactivo en exceso no afecta la cantidad de producto obtenido.
+- Dada la reaccion $2Mg + O_2 \rightarrow 2MgO$, si se tienen 6 moles de Mg y 4 moles de $O_2$:
+  a) Cual es el reactivo limite?
+  b) Cuantos moles de MgO se forman?
+  c) Cual reactivo y cuanto sobra?
+- Indica V o F y justifica:
+  - El rendimiento real siempre es mayor que el rendimiento teorico. (\ \)
+  - El reactivo limite es el que tiene mayor masa molar. (\ \)
+  - Si dos reactivos estan en proporcion estequiometrica, no hay reactivo limite ni en exceso. (\ \)
+- Se hacen reaccionar 10 g de $Zn$ (masa molar = 65,4 g/mol) con 5 g de $HCl$ (masa molar = 36,5 g/mol) segun: $Zn + 2HCl \rightarrow ZnCl_2 + H_2$. Determina el reactivo limite y los moles de $H_2$ producidos.
+
+:::
+
+::: {.retos-box title="Retos"}
+
+En equipos de 3 personas, disenen un "Juego de Mesa del Reactivo Limite" que permita a sus companeros practicar la identificacion del reactivo limite. El juego debe incluir:
+
+- Un tablero con al menos 6 casillas que representen pasos del proceso de identificacion.
+- 10 tarjetas de reto con ecuaciones quimicas y cantidades de reactivos diferentes.
+- Un sistema de puntuacion que premie la identificacion correcta del reactivo limite y el calculo del producto.
+- Instrucciones claras en una hoja aparte.
+- Una tarjeta de "comodin" que explique el concepto de reactivo limite en terminos simples.
+
+:::
+
+::: {.aplicacion-box title="Aplicación - Vida real"}
+
+Cuando un medico receta un medicamento, la dosis se calcula cuidadosamente para que el principio activo (el reactivo limite) sea suficiente para producir el efecto deseado sin generar exceso de sustancias que el cuerpo no pueda procesar. En la industria farmaceutica, las empresas calculan exactamente cuanto de cada ingrediente necesitan para que no sobre ni falte nada, ahorrando recursos y evitando contaminacion. La proxima vez que veas una receta medica, recuerda que detras de esa dosis hay un calculo estequiometrico similar al del reactivo limite.
+
+:::
+
+::: {.aplicacion-box title="Aplicación - Laboratorio"}
+
+**Objetivo:** Observar experimentalmente el concepto de reactivo limite mediante una reaccion efervescente.
+
+**Materiales:**
+- 5 tabletas efervescentes (misma marca y tamano)
+- 5 vasos transparentes
+- Agua
+- Cronometro (o reloj con segundero)
+- Balanza (opcional)
+
+**Procedimiento:**
+1. Rotula los vasos del 1 al 5.
+2. Agrega 100 mL de agua a cada vaso.
+3. Coloca 1 tableta en el vaso 1, 2 tabletas en el vaso 2, y asi hasta 5 tabletas en el vaso 5.
+4. Observa cual tableta se disuelve primero en cada vaso.
+5. Anota el tiempo que tarda en completarse la reaccion en cada vaso.
+6. Identifica en que vaso el agua (disolvente) dejo de ser suficiente para disolver mas tableta.
+
+**Conclusion:** Al aumentar el numero de tabletas, llega un punto donde el agua se satura y no puede disolver mas. El agua actua como reactivo limite: una vez que se agota, la reaccion se detiene, y el exceso de tableta queda sin reaccionar en el fondo.
+
+:::
+
+::: {.socioemocional-box title="Socioemocional"}
+
+Aprender sobre el reactivo limite puede ser frustrante al principio porque implica seguir pasos muy precisos y hacer calculos. Pero cada error en un ejercicio es una pista: te dice exactamente en que paso debes enfocarte mas. La quimica no se trata de tener razon siempre, sino de observar, ajustar y volver a intentar. Identificar lo que nos limita nos permite usar mejor nuestros recursos y crecer. Confia en el metodo, practica los pasos y celebra cada pequeno avance.
+
+:::
+

@@ -1,0 +1,526 @@
+# Física - Séptimo
+
+## velocidad media
+
+
+## Teoría
+
+::: {.teoria-box}
+La **velocidad media** ($v_{med-x}$) es una **magnitud vectorial** que cuantifica la tasa de cambio temporal de la **posición** de una **partícula** a lo largo de un intervalo específico. Para estudiar analíticamente el **movimiento rectilíneo** (desplazamiento en una sola dimensión) de un objeto complejo, la física simplifica el cuerpo modelándolo como una **partícula** (un punto matemático sin extensión geométrica) ubicada dentro de un **sistema de coordenadas** que posee un **origen** y una dirección positiva predefinida. Tomando como base este eje de referencia, el **desplazamiento** ($\Delta x$) se conceptualiza como el cambio neto o la diferencia espacial entre dos ubicaciones, calculándose rigurosamente así:
+$$\Delta x = x_2 - x_1
+$$
+donde la variable $x_2$ denota la coordenada de la posición final y la variable $x_1$ representa la coordenada de la posición inicial. Esta alteración en el espacio ocurre invariablemente durante un **intervalo de tiempo** ($\Delta t$), magnitud escalar que se obtiene mediante:
+$$\Delta t = t_2 - t_1
+$$
+siendo $t_2$ el instante cronológico de finalización y $t_1$ el instante de inicio del evento. Integrando ambas magnitudes, la **velocidad media** se establece matemáticamente como el cociente directo entre el **desplazamiento** y el **intervalo de tiempo**, expresado en la ecuación fundamental:
+$$v_{med-x} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+$$
+De esta relación fraccionaria se extrae una propiedad crucial: dado que el tiempo siempre avanza (haciendo que $\Delta t$ sea siempre positivo), el signo algebraico de la **velocidad media** es dictado exclusivamente por el signo del **desplazamiento**, indicando así la **dirección del movimiento**; un resultado positivo refleja un tránsito hacia el lado positivo del eje de coordenadas, mientras que un resultado negativo expone un retroceso o avance hacia el sector negativo. Traspasando esta abstracción algebraica a un modelo visual, si se grafica la cinemática del objeto en un plano cartesiano creando una **gráfica posición-tiempo** ($x-t$), la **velocidad media** adquiere un significado geométrico preciso, correspondiendo numéricamente a la **pendiente** de la línea recta secante que interconecta el punto de partida $(t_1, x_1)$ con el punto de llegada $(t_2, x_2)$ a lo largo de la curva de trayectoria.
+
+### Ejemplo de Aplicación: Un automóvil de arrancones se desplaza sobre una pista recta alineada con el eje $x$. Los sensores de la pista registran que en el instante de tiempo inicial $t_1 = 1.0\text{ s}$, el frente del vehículo cruza la posición $x_1 = 19\text{ m}$. Posteriormente, en el instante de tiempo $t_2 = 4.0\text{ s}$, el vehículo alcanza la marca de posición $x_2 = 277\text{ m}$. Se requiere evaluar el comportamiento cinemático promedio del automóvil durante esta fracción de la carrera.- **Paso 1 (Determinación del desplazamiento espacial $\Delta x$):** Para comprender qué tanta distancia neta cubrió el vehículo y hacia dónde, se calcula la diferencia entre su ubicación final e inicial. Al aplicar la ecuación del **desplazamiento**, se sustituyen los valores medidos:
+$$\Delta x = x_2 - x_1 = 277\text{ m} - 19\text{ m} = 258\text{ m}
+$$
+El hecho de que $258\text{ m}$ sea un valor algebraicamente positivo confirma que el automóvil avanzó de forma continua en el mismo sentido que la dirección positiva del **sistema de coordenadas**.- **Paso 2 (Cálculo del intervalo temporal $\Delta t$):** Se debe establecer la duración exacta del fenómeno físico evaluado. Utilizando la diferencia temporal, se insertan los instantes registrados por el reloj:
+$$\Delta t = t_2 - t_1 = 4.0\text{ s} - 1.0\text{ s} = 3.0\text{ s}
+$$
+Esto indica que toda la acción analizada transcurrió en una ventana de tres segundos.
+
+**Paso 3 (Cálculo de la velocidad media $v_{med-x}$):** Finalmente, se sintetiza la información relacionando el cambio de espacio con la inversión de tiempo, lo que arroja el ritmo promedio al que el vehículo cambió su posición. Empleando la fórmula de velocidad media, se dividen los resultados previos:
+$$v_{med-x} = \frac{\Delta x}{\Delta t} = \frac{258\text{ m}}{3.0\text{ s}} = 86\text{ m/s}
+$$
+La interpretación de este resultado indica que, aunque el vehículo pudo haber acelerado o frenado durante esos tres segundos, su progreso general equivale a haberse movido a una tasa constante de $86\text{ m}$ por cada segundo transcurrido, siempre apuntando hacia el eje positivo.
+
+:::
+
+
+## Ideas Previas
+
+
+### Ideas Previas - Cuentos
+
+::: {.ideas-previas-box}
+
+Ejemplo breve o situación cotidiana que conecte el tema con la experiencia del estudiante.
+
+:::
+
+### Ideas Previas - Preguntas
+
+::: {.ideas-previas-box}
+
+Preguntas diagnósticas para activar conocimientos previos antes de profundizar en la teoría.
+
+:::
+
+
+## Contextualización
+
+
+### Contextualización - Método Richard Feynman
+
+::: {.contexto-box}
+
+Imagínate que estás en una pista recta y queremos medir cómo te mueves; para lograrlo, primero anotamos tu **posición** inicial (que llamaremos $x_1$ en el tiempo $t_1$) y luego vemos dónde terminaste (tu nueva posición $x_2$ en un tiempo posterior $t_2$). A la distancia neta y recta entre tu inicio y tu final le llamamos **desplazamiento** (representado en física por $\Delta x$, que no es más que la resta $x_2 - x_1$); piénsalo simplemente como la respuesta a la pregunta "¿cuánto avancé y hacia dónde?". Ahora, si nos da curiosidad saber qué tan rápido hiciste ese viaje en promedio, calculamos tu **velocidad media** ($v_{med-x}$), lo cual es tan fácil como tomar ese **desplazamiento** y dividirlo entre el **intervalo de tiempo** que te tomó lograrlo ($\Delta t$, o sea, la resta de los tiempos $t_2 - t_1$); matemáticamente lo escribimos así:
+$$v_{med-x} = \frac{\Delta x}{\Delta t}
+$$
+Un truco súper útil de esto es que el signo de la velocidad nos chismea hacia dónde vas: si es positivo, te moviste "hacia adelante" (a la derecha en un mapa normal), y si es negativo, te echaste en reversa o fuiste hacia la izquierda. Y si alguna vez te piden dibujar todo este viaje en una **gráfica de posición contra tiempo**, resulta que esa **velocidad media** es exactamente igual a la **pendiente** (el grado de inclinación) de la línea recta que conecta tu punto de salida con el de llegada; así que, visualmente, ¡entre más empinada veas esa línea, más rápido estabas yendo!
+
+
+
+
+:::
+
+
+## Contextualización para caracterizados
+
+
+### Contextualización - Cognitivo
+
+::: {.caracterizados-box}
+
+**¡Hola! Qué gusto saludarte.**
+
+Hoy tú y yo vamos a aprender cómo se mueven las cosas. Para hacerlo más divertido, vamos a imaginar que estamos estudiando un auto de carreras que viaja en línea recta.
+
+Aprenderemos tres palabras clave: **desplazamiento**, **tiempo** y **velocidad**. No te preocupes si suenan complicadas, las vamos a entender paso a paso.
+
+Para empezar, vamos a construir algo juntos que te ayudará mucho.
+
+**¡Crea tu propia herramienta!**
+
+Vamos a hacer una **``Pista de Carreras''** para ver el movimiento con tus propios ojos. Solo necesitas 3 cosas muy sencillas.
+
+
+ - **Paso 1:** Busca una regla escolar (la que tenga números grandes), un borrador pequeño (o un sacapuntas) y tu cuaderno.
+ - **Paso 2:** Pon la regla acostada sobre tu mesa. Los números de tu regla van a ser nuestra pista. Cada número es una posición diferente.
+ - **Paso 3:** Toma tu borrador, que será nuestro auto de carreras. Ponlo sobre el número $0$ de la regla. ¡Ya estás listo en la línea de salida!
+
+
+**Reto 1: Posición y Tiempo (¿Dónde estás y cuándo?)**
+
+Para estudiar cómo se mueve tu auto (tu borrador), necesitas saber dos cosas. Primero, la **posición**: que es el número exacto de la regla donde está parado el auto. Segundo, el **tiempo**: que son los segundos que marca tu reloj cuando el auto pasa por ahí.
+
+Mueve tu borrador al número $5$ de tu regla. Esa es tu nueva posición.
+
+**Reto 2: El Desplazamiento (El viaje del auto)**
+
+El desplazamiento es el cambio de posición de tu auto desde donde empezó hasta donde terminó.
+
+En los libros de ciencia vas a ver un triángulo pequeño dibujado así: $\Delta$. Ese triángulo se llama **Delta** y es una palabra secreta que significa ``cambio''. Entonces, si ves $\Delta x$, solo significa ``el cambio de posición de tu auto''.
+
+Para saber tu desplazamiento, solo tienes que ver a qué número llegó el auto y restarle el número de donde salió. Por ejemplo, si saliste del número $2$ y llegaste al número $10$, tu auto se desplazó $8$ unidades en la regla.
+
+**Reto 3: La Velocidad Media (¿Qué tan rápido fuiste?)**
+
+Imagina que moviste tu borrador del $0$ al $10$. Si lo haces muy rápido, te toma poquito tiempo. Si lo haces lento, te toma más tiempo.
+
+La velocidad media nos dice qué tan rápido cambiaste de posición. Se calcula tomando tu viaje (el desplazamiento) y dividiéndolo entre los segundos que te demoraste.
+
+**Un secreto importante sobre la dirección:**
+
+
+ - Si mueves tu borrador hacia adelante (hacia los números más grandes, como del $2$ al $8$), tu velocidad es positiva.
+ - Si mueves tu borrador hacia atrás (hacia los números más pequeños, como del $8$ al $2$), significa que vas en reversa y tu velocidad es negativa.
+
+
+¡Lo hiciste muy bien! Has aprendido cómo los científicos miden el movimiento de cualquier cosa en el mundo.
+
+:::
+
+
+::: {.ejemplo-box}
+
+Ejemplo guiado paso a paso relacionado con el contenido teórico del tema.
+
+:::
+
+
+## Ejercicios
+
+::: {.ejercicios-box}
+
+Incluye ejercicios progresivos: básico, intermedio y de profundización.
+
+:::
+
+
+## Retos
+
+::: {.retos-box}
+
+Propón un reto de aplicación que exija análisis y justificación de respuestas.
+
+:::
+
+
+## Aplicación
+
+
+Conecta el tema con un contexto real (hogar, industria, ambiente o salud).
+
+
+## Socioemocional
+
+::: {.socioemocional-box}
+
+Invita a reflexionar sobre trabajo colaborativo, perseverancia y toma de decisiones.
+
+:::
+
+## Velocidad instantánea
+
+
+## Teoría
+
+::: {.teoria-box}
+La **velocidad instantánea** es una magnitud vectorial cinemática que describe la tasa de cambio de la posición de una partícula en un instante temporal infinitamente preciso. A diferencia de la **velocidad media**, que proporciona un panorama general del desplazamiento de un cuerpo sobre un intervalo de tiempo discreto, esta medida puntual surge de la necesidad física de conocer el estado dinámico exacto en una coordenada temporal específica. Esta transición de un enfoque macroscópico a uno microscópico se fundamenta aplicando el límite matemático cuando el intervalo de tiempo dinámico ($\Delta t$) tiende a cero, proceso que transforma el cociente de incrementos finitos en la **derivada** de la posición ($x$) con respecto al tiempo ($t$). Su expresión matemática se define rigurosamente así:
+$$v_x = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
+$$
+donde $v_x$ representa la componente a lo largo del eje x de la velocidad instantánea, $x$ simboliza la función escalar de posición y $t$ denota la variable independiente del tiempo. Gráficamente, al modelar la trayectoria en un **diagrama de posición-tiempo** ($x-t$), este concepto analítico equivale a calcular la **pendiente** de la recta tangente a la curva de movimiento en el punto de interés; una pendiente positiva indica progresión direccional a favor del eje, una pendiente negativa señala un retroceso espacial, y una pendiente nula evidencia un estado de reposo transitorio. Finalmente, a partir de este vector, se extrae su valor absoluto para definir la **rapidez instantánea**, un parámetro puramente escalar que cuantifica la magnitud del ritmo de avance, despojando al dato de cualquier información sobre la orientación espacial del desplazamiento.
+
+### Ejemplo de Aplicación: Análisis cinemático unidimensional de un guepardo en cacería. La posición temporal del felino respecto a un sistema de referencia estático está modelada por la ecuación cuadrática $x = 20 + 5.0t^2$, donde la variable $x$ se mide en metros (m) y el tiempo $t$ en segundos (s). Se requiere comparar su comportamiento general en el intervalo de $t_1 = 1.0\text{ s}$ a $t_2 = 2.0\text{ s}$ con su estado dinámico exacto en $t_1 = 1.0\text{ s}$.
+
+
+- **Paso 1 (Cálculo de coordenadas espaciales instantáneas):** Para estructurar la velocidad media, primero se deben establecer las posiciones exactas en los umbrales del intervalo temporal. Sustituyendo los valores límite en la función de posición maestra, evaluamos:
+$$x_1 = 20 + 5.0(1.0)^2 = 25\text{ m}
+$$
+$$x_2 = 20 + 5.0(2.0)^2 = 40\text{ m}
+$$
+- **Paso 2 (Determinación de la velocidad media inter-temporal):** Utilizando las coordenadas previas, se extrae la razón de cambio sobre el lapso total transcurrido. Aplicando la ecuación fundamental de la cinemática discreta:
+$$v_{med,x} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
+$$
+se halla:
+$$\Delta x = 40 - 25 = 15\text{ m}
+$$
+$$\Delta t = 2.0 - 1.0 = 1.0\text{ s}
+$$
+El cociente algebraico arroja:
+$$v_{med,x} = \frac{15}{1.0} = 15\text{ m/s}
+$$
+indicando el ritmo de avance promediado.
+- **Paso 3 (Transición analítica mediante derivación polinómica):** Dado que la tasa de cambio promedio es geométricamente insuficiente para revelar la velocidad puntual, se debe derivar la ecuación de posición original respecto a la variable temporal. Aplicando los axiomas del cálculo diferencial, la formulación teórica requiere ejecutar:
+$$v_x = \frac{d}{dt}(20 + 5.0t^2)
+$$
+La derivada de la constante posicional inicial se anula, y la derivada del término cuadrático entrega la función lineal de velocidad:
+$$v_x = 10t
+$$
+- **Paso 4 (Evaluación puntual de la magnitud instantánea):** Para cristalizar la magnitud precisa de la velocidad en el evento solicitado, se inyecta el instante de interés en la función vectorial derivada. Sustituyendo el parámetro $t = 1.0\text{ s}$ en la nueva ecuación, el cálculo final es:
+$$v_x = 10(1.0) = 10\text{ m/s}
+$$
+Esta resolución demuestra que en ese exacto instante de análisis el animal se desplazaba a $10\text{ m/s}$, una cifra métrica inferior a la media del intervalo debido al carácter acelerativo (no lineal) de su función de posición geométrica.
+
+### Método Richard Feynman
+
+La **velocidad media** (el promedio de tu viaje) nos da un resumen general de cómo nos movimos, pero esconde todos los detalles de lo que pasó en el camino; por eso necesitamos la **velocidad instantánea**, que es exactamente qué tan rápido y hacia dónde te mueves en un momento preciso, igualito a la aguja del velocímetro de tu carro que miras en un solo parpadeo. Para atrapar este valor tan escurridizo, tomamos la fórmula normal de la velocidad (el cambio de posición dividido entre el tiempo) y hacemos la trampa de encoger el **intervalo de tiempo** ($\Delta t$) hasta que sea ridículamente pequeño, casi llegando a cero. En lenguaje matemático riguroso, este límite de tiempo minúsculo se convierte en la **derivada de la posición respecto al tiempo**:
+$$v_x = \frac{dx}{dt}
+$$
+Si queremos ver este truco dibujado en una **gráfica de posición-tiempo** ($x-t$), la velocidad en cualquier instante es simplemente la **pendiente de la recta tangente** (la inclinación exacta de una línea recta que apenas le da un ``besito'' o roza la curva de la gráfica en ese único punto). Finalmente, es vital no confundir esto con la **rapidez**; la rapidez es solamente el número suelto de qué tan de prisa vas (su magnitud pura, sin importar a dónde y siempre positiva), mientras que la **velocidad** es una idea mucho más completa porque es una cantidad vectorial, lo que significa que incluye obligatoriamente la **dirección del movimiento**, usando un signo positivo o negativo para decirnos sin confusiones si nos estamos moviendo hacia adelante o de reversa.
+
+### Cognitivo
+
+**¡Hola! Qué gusto saludarte.**
+
+Hoy vamos a aprender un concepto de física súper interesante llamado **velocidad instantánea**. No te preocupes por los nombres complicados, lo vamos a descubrir paso a paso juntos.
+
+**Reto 1: El viaje completo**
+
+Imagina que vas en un auto desde tu casa hasta el parque. Ese viaje dura $10$ minutos. Si calculamos qué tan rápido fuiste en todo ese tiempo, estamos hablando de la **velocidad media**. Es como un resumen de todo tu viaje. Pero tú sabes que en el camino a veces el auto va rápido, a veces va lento y a veces se detiene en un semáforo rojo, ¿verdad?
+
+**Reto 2: El momento exacto**
+
+Aquí es donde entra la **velocidad instantánea**. Imagina que justo en el minuto $5$ de tu viaje, miras el reloj del auto que marca la velocidad (el velocímetro). El número que ves en ese segundo exacto es tu velocidad instantánea. Es tu velocidad en un instante, como si tomaras una fotografía. No importa qué pasó antes o qué pasará después, solo importa ese pequeño momento.
+
+**¡Crea tu propia herramienta!**
+
+Para que esto sea más fácil de ver, vamos a construir un **``Medidor de Instantes''**. Solo necesitas cosas que tienes en casa.
+
+
+ - **Paso 1:** Busca un trozo de lana, un cordón de zapato o una cuerda de unos $30$ centímetros.
+ - **Paso 2:** Busca una pinza de colgar ropa o un clip de papel.
+ - **Paso 3:** Estira el cordón sobre tu mesa. Todo el cordón representa los $10$ minutos de tu viaje al parque (el tiempo para tu velocidad media).
+ - **Paso 4:** Ahora, pellizca el cordón con tu pinza de ropa en cualquier parte. ¡Ese punto exacto donde está la pinza es un solo momento de tu viaje! Ahí es donde medimos la velocidad instantánea.
+
+
+Si mueves la pinza a diferentes partes del cordón, estás viendo diferentes ``instantes''. En un instante la pinza puede estar donde el auto iba muy rápido, y en otro instante puede estar donde el auto estaba frenando.
+
+
+:::
+
+
+## Ideas Previas
+
+
+### Ideas Previas - Cuentos
+
+::: {.ideas-previas-box}
+
+Ejemplo breve o situación cotidiana que conecte el tema con la experiencia del estudiante.
+
+:::
+
+### Ideas Previas - Preguntas
+
+::: {.ideas-previas-box}
+
+Preguntas diagnósticas para activar conocimientos previos antes de profundizar en la teoría.
+
+:::
+
+
+## Contextualización
+
+
+### Contextualización - Método Richard Feynman
+
+::: {.contexto-box}
+
+
+:::
+
+
+## Contextualización para caracterizados
+
+
+### Contextualización - Cognitivo
+
+::: {.caracterizados-box}
+
+Resume los conceptos clave en ideas puntuales y relaciones causa-efecto.
+
+:::
+
+
+### Contextualización - Visual
+
+::: {.caracterizados-box}
+
+Representa la idea con esquema, mapa conceptual o tabla comparativa.
+
+:::
+
+
+::: {.ejemplo-box}
+
+Ejemplo guiado paso a paso relacionado con el contenido teórico del tema.
+
+:::
+
+
+## Ejercicios
+
+::: {.ejercicios-box}
+
+Incluye ejercicios progresivos: básico, intermedio y de profundización.
+
+:::
+
+
+## Retos
+
+::: {.retos-box}
+
+Propón un reto de aplicación que exija análisis y justificación de respuestas.
+
+:::
+
+
+## Aplicación
+
+
+Conecta el tema con un contexto real (hogar, industria, ambiente o salud).
+
+
+## Socioemocional
+
+::: {.socioemocional-box}
+
+Invita a reflexionar sobre trabajo colaborativo, perseverancia y toma de decisiones.
+
+:::
+
+## Aceleración
+
+
+## Teoría
+
+::: {.teoria-box}
+La **aceleración media** es una cantidad vectorial que describe la tasa de cambio de la **velocidad** de una partícula durante un intervalo de tiempo específico. Esta magnitud mide cómo varía la rapidez o dirección del movimiento, y se calcula matemáticamente mediante la ecuación:
+$$a_{med-x} = \frac{\Delta v_x}{\Delta t} = \frac{v_{2x} - v_{1x}}{t_2 - t_1}
+$$
+donde $v_{1x}$ y $v_{2x}$ representan la velocidad inicial y final, mientras que $t_1$ y $t_2$ corresponden a los instantes de tiempo inicial y final, resultando en unidades del Sistema Internacional de $\text{m/s}^2$. Al reducir este intervalo de tiempo $\Delta t$ hasta acercarlo a cero, se transita del concepto promedio a la **aceleración instantánea**, la cual es una magnitud límite que define la tasa de cambio de la velocidad en un punto temporal exacto. Dicha transición implica aplicar el cálculo diferencial, definiendo la aceleración instantánea como la primera **derivada** de la velocidad respecto al tiempo, expresada como:
+$$a_x = \lim_{\Delta t \to 0} \frac{\Delta v_x}{\Delta t} = \frac{dv_x}{dt}
+$$
+Dado que la velocidad es a su vez la tasa de cambio de la **posición** ($x$), la aceleración instantánea también se comprende en profundidad como la segunda derivada de la posición respecto al tiempo, formalizada algebraicamente como:
+$$a_x = \frac{d^2x}{dt^2}
+$$
+Es crucial destacar que una **aceleración** con signo negativo no siempre denota una disminución de la rapidez (frenado); el objeto disminuye su rapidez únicamente si los vectores de aceleración y velocidad presentan signos algebraicos opuestos, mientras que aumenta su rapidez si ambas magnitudes vectoriales comparten la misma dirección.
+
+### Ejemplo de Aplicación: Se analiza el movimiento de una partícula cuya velocidad en el eje $x$ está gobernada por la función $v_x = 60 \, \text{m/s} + (0.50 \, \text{m/s}^3)t^2$. Se requiere calcular la aceleración media en el intervalo desde $t_1 = 1.0 \, \text{s}$ hasta $t_2 = 3.0 \, \text{s}$, y posteriormente, determinar la aceleración instantánea en ambos instantes.
+
+- **Paso 1 (Determinación de velocidades instantáneas limítrofes):** Para hallar la tasa de cambio promedio, es indispensable conocer el estado exacto de la velocidad en los límites del intervalo temporal. Sustituyendo el tiempo inicial $t_1 = 1.0 \, \text{s}$ en la función de velocidad, se obtiene:
+$$v_{1x} = 60 \, \text{m/s} + (0.50 \, \text{m/s}^3)(1.0 \, \text{s})^2 = 60.5 \, \text{m/s}
+$$
+Replicando la operación para el tiempo final $t_2 = 3.0 \, \text{s}$, el resultado es:
+$$v_{2x} = 60 \, \text{m/s} + (0.50 \, \text{m/s}^3)(3.0 \, \text{s})^2 = 64.5 \, \text{m/s}
+$$
+- **Paso 2 (Cálculo algebraico de la aceleración media):** Utilizando las velocidades calculadas, se aplica la fórmula fundamental de la aceleración media integrando las diferencias sobre el delta temporal:
+$$a_{med-x} = \frac{v_{2x} - v_{1x}}{t_2 - t_1}
+$$
+Al introducir los datos de la partícula, se configura:
+$$a_{med-x} = \frac{64.5 \, \text{m/s} - 60.5 \, \text{m/s}}{3.0 \, \text{s} - 1.0 \, \text{s}} = \frac{4.0 \, \text{m/s}}{2.0 \, \text{s}} = 2.0 \, \text{m/s}^2
+$$
+Este valor escalar representa el aumento promedio de la velocidad por cada segundo transcurrido en dicho periodo.
+- **Paso 3 (Diferenciación de la función para el estado instantáneo):** Para evaluar la aceleración en instantes concretos, el promedio es insuficiente; se requiere la función específica de aceleración, obtenida mediante la derivada de la velocidad. Al derivar la función original:
+$$v_x = 60 + 0.50t^2
+$$
+respecto al tiempo $t$, la constante independiente ($60$) se anula y, aplicando la regla de la potencia, se obtiene:
+$$a_x = \frac{dv_x}{dt} = 2 \cdot (0.50 \, \text{m/s}^3)t = (1.0 \, \text{m/s}^3)t
+$$
+- **Paso 4 (Evaluación puntual de la aceleración instantánea):** Finalmente, se evalúa la nueva función derivada $a_x$ en los instantes de interés. Para el segundo inicial $t = 1.0 \, \text{s}$, la aceleración instantánea es:
+$$a_x = (1.0 \, \text{m/s}^3)(1.0 \, \text{s}) = 1.0 \, \text{m/s}^2
+$$
+Para el tercer segundo $t = 3.0 \, \text{s}$, el cálculo arroja:
+$$a_x = (1.0 \, \text{m/s}^3)(3.0 \, \text{s}) = 3.0 \, \text{m/s}^2
+$$
+Esta disparidad de valores demuestra teóricamente que la aceleración no es constante, sino que el ritmo al que la partícula gana velocidad aumenta linealmente a medida que avanza el tiempo.
+
+### Método Richard Feynman
+
+Así como la **velocidad** nos dice qué tan rápido estamos cambiando de posición, la **aceleración** nos cuenta qué tan rápido está cambiando esa misma velocidad. Si tomamos un cronómetro y medimos cuánto cambió nuestra velocidad en un tramo de tiempo específico, obtenemos la **aceleración media**, que es simplemente el cambio total de la velocidad dividido entre ese lapso que esperamos:
+$$\frac{\Delta v_x}{\Delta t}
+$$
+Pero si queremos ser súper precisos y saber qué está pasando exactamente en un microsegundo en particular, encogemos ese intervalo de tiempo hasta que sea casi un cero absoluto; a esto lo llamamos **aceleración instantánea**, y en el lenguaje matemático no es más que la **derivada** de la velocidad respecto al tiempo:
+$$\frac{dv_x}{dt}
+$$
+Un error súper común es pensar que una aceleración negativa siempre significa frenar, pero no es así, la aceleración solo te dice qué estás haciendo con los pedales. Piensa que es como ir en un auto: si tu **velocidad** y tu **aceleración** apuntan hacia el mismo lado (ambas tienen signo positivo o ambas tienen signo negativo), estás pisando el acelerador y vas cada vez más rápido; pero si apuntan en direcciones contrarias (tienen signos opuestos), estás pisando el freno y tu rapidez disminuye, sin importar si te estabas moviendo hacia adelante o de reversa.
+
+### Cognitivo
+
+**¡Hola! Qué bueno saludarte hoy.**
+
+Vamos a aprender juntos sobre un tema genial de la física: la **aceleración**. Lo haremos paso a paso y de una forma muy fácil.
+
+**Reto 1: Entender qué es la velocidad**
+
+Imagina que vas caminando hacia el parque. La velocidad es qué tan rápido te estás moviendo para llegar allí. Si caminas despacio, tu velocidad es baja. Si corres, tu velocidad es alta.
+
+**Reto 2: Descubrir qué es la aceleración**
+
+Ahora, piensa que empiezas caminando despacio y, de repente, ¡empiezas a correr muy rápido! Ese cambio, ese salto de ir despacio a ir rápido, se llama aceleración.
+
+La aceleración es simplemente cuando tu velocidad cambia. Si pisas el acelerador de un auto, aceleras. Si pisas el freno, también cambias tu velocidad, ¡así que también es un tipo de aceleración!
+
+**Reto 3: Aceleración Media vs. Aceleración Instantánea**
+
+Aquí está el secreto para entender las dos formas de medir esto:
+
+
+ - **Aceleración Media:** Es como contar la historia de todo tu viaje. Es el resumen de cómo cambió tu velocidad desde que saliste de casa hasta que llegaste al parque.
+ - **Aceleración Instantánea:** Es como tomar una fotografía. Es saber exactamente cómo estaba cambiando tu velocidad en un solo segundo, justo en el momento en que un perro se cruzó en tu camino.
+
+
+**¡Crea tu propia herramienta!**
+
+Vamos a construir un **Simulador de Aceleración** para que veas con tus propios ojos cómo funciona esto. Es muy fácil y rápido.
+
+
+ - **Paso 1:** Busca 5 objetos pequeños iguales que tengas en casa (pueden ser botones, frijoles, o haz 5 bolitas de papel).
+ - **Paso 2:** Toma una hoja de papel en blanco y pon tu regla acostada sobre ella. La regla será nuestra carretera.
+ - **Paso 3:** Para ver un auto ``sin aceleración'' (misma velocidad), pon un botón en el número 0, otro en el 2, otro en el 4 y otro en el 6. ¡Mira cómo la distancia siempre es igual!
+ - **Paso 4:** Ahora, para ver la aceleración, pon el primer botón en el 0, el segundo en el 1, el tercero en el 3, y el cuarto en el 6. ¡Mira cómo los botones se van separando cada vez más! Eso significa que el auto va cada vez más rápido.
+
+
+:::
+
+
+## Ideas Previas
+
+
+### Ideas Previas - Cuentos
+
+::: {.ideas-previas-box}
+
+Ejemplo breve o situación cotidiana que conecte el tema con la experiencia del estudiante.
+
+:::
+
+### Ideas Previas - Preguntas
+
+::: {.ideas-previas-box}
+
+Preguntas diagnósticas para activar conocimientos previos antes de profundizar en la teoría.
+
+:::
+
+
+## Contextualización
+
+
+### Contextualización - Método Richard Feynman
+
+::: {.contexto-box}
+
+Explica el concepto con palabras sencillas, como si se lo enseñaras a alguien de menor grado.
+
+:::
+
+
+## Contextualización para caracterizados
+
+
+### Contextualización - Cognitivo
+
+::: {.caracterizados-box}
+
+Resume los conceptos clave en ideas puntuales y relaciones causa-efecto.
+
+:::
+
+
+### Contextualización - Visual
+
+::: {.caracterizados-box}
+
+Representa la idea con esquema, mapa conceptual o tabla comparativa.
+
+:::
+
+
+::: {.ejemplo-box}
+
+Ejemplo guiado paso a paso relacionado con el contenido teórico del tema.
+
+:::
+
+
+## Ejercicios
+
+::: {.ejercicios-box}
+
+Incluye ejercicios progresivos: básico, intermedio y de profundización.
+
+:::
+
+
+## Retos
+
+::: {.retos-box}
+
+Propón un reto de aplicación que exija análisis y justificación de respuestas.
+
+:::
+
+
+## Aplicación
+
+
+Conecta el tema con un contexto real (hogar, industria, ambiente o salud).
+
+
+## Socioemocional
+
+::: {.socioemocional-box}
+
+Invita a reflexionar sobre trabajo colaborativo, perseverancia y toma de decisiones.
+
+:::

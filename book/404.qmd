@@ -1,0 +1,203 @@
+---
+title: "Página no encontrada"
+format:
+  html:
+    page-layout: full
+    toc: false
+    number-sections: false
+---
+
+```{=html}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+  body, .quarto-container, #quarto-content, main {
+    background: #0a0e1a !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  #page-404 {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at 30% 20%, #0d1f4a 0%, #0a0e1a 50%, #060810 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Partículas flotantes */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: float linear infinite;
+  }
+  @keyframes float {
+    0%   { transform: translateY(100vh) rotate(0deg);   opacity: 0;    }
+    10%  { opacity: 0.15; }
+    90%  { opacity: 0.15; }
+    100% { transform: translateY(-10vh) rotate(720deg); opacity: 0;    }
+  }
+
+  /* Fórmulas flotantes */
+  .formula {
+    position: absolute;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(100, 160, 255, 0.25);
+    animation: drift linear infinite;
+    white-space: nowrap;
+  }
+  @keyframes drift {
+    0%   { transform: translate(0, 100vh); opacity: 0; }
+    5%   { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { transform: translate(30px, -10vh); opacity: 0; }
+  }
+
+  /* Átomo animado */
+  .atom {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+  }
+  .nucleus {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px; height: 22px;
+    background: radial-gradient(circle, #7eb8ff, #2244aa);
+    border-radius: 50%;
+    box-shadow: 0 0 20px #4488ff, 0 0 40px #2244aa88;
+  }
+  .orbit {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 80px; height: 30px;
+    margin: -15px 0 0 -40px;
+    border: 1.5px solid rgba(100, 180, 255, 0.4);
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+  }
+  .orbit:nth-child(3) { transform: rotate(60deg);  animation-delay: -1s; }
+  .orbit:nth-child(4) { transform: rotate(120deg); animation-delay: -2s; }
+  @keyframes spin {
+    from { transform: rotate(var(--r, 0deg)); }
+    to   { transform: rotate(calc(var(--r, 0deg) + 360deg)); }
+  }
+
+  /* 404 */
+  .error-code {
+    font-size: clamp(5rem, 18vw, 10rem);
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, #ffffff 0%, #a8c8ff 50%, #6699ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px rgba(100, 160, 255, 0.5));
+    margin-bottom: 0.5rem;
+    letter-spacing: -4px;
+  }
+
+  .error-title {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 600;
+    color: rgba(200, 220, 255, 0.95);
+    margin-bottom: 1rem;
+  }
+
+  .error-desc {
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    font-weight: 300;
+    color: rgba(160, 190, 240, 0.75);
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .equation {
+    font-size: 0.88rem;
+    color: rgba(120, 170, 255, 0.45);
+    font-family: monospace;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* Botón */
+  .btn-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, #2244aa, #4466dd);
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(34, 68, 170, 0.5), 0 0 0 1px rgba(100, 160, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  .btn-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(34, 68, 170, 0.7), 0 0 0 1px rgba(100, 160, 255, 0.4);
+    background: linear-gradient(135deg, #2a52cc, #5577ff);
+  }
+
+  .footer-404 {
+    margin-top: 3rem;
+    font-size: 0.78rem;
+    color: rgba(100, 140, 200, 0.3);
+    letter-spacing: 0.05em;
+  }
+</style>
+
+<div id="page-404">
+
+  <!-- Partículas -->
+  <div class="particle" style="width:6px;height:6px;background:#4488ff;left:10%;animation-duration:18s;animation-delay:0s;"></div>
+  <div class="particle" style="width:4px;height:4px;background:#aa66ff;left:25%;animation-duration:22s;animation-delay:3s;"></div>
+  <div class="particle" style="width:5px;height:5px;background:#44aaff;left:42%;animation-duration:16s;animation-delay:6s;"></div>
+  <div class="particle" style="width:3px;height:3px;background:#6688ff;left:63%;animation-duration:25s;animation-delay:1s;"></div>
+  <div class="particle" style="width:7px;height:7px;background:#3366cc;left:78%;animation-duration:20s;animation-delay:4s;"></div>
+  <div class="particle" style="width:4px;height:4px;background:#8866ff;left:90%;animation-duration:14s;animation-delay:8s;"></div>
+
+  <!-- Fórmulas flotantes -->
+  <div class="formula" style="left:8%;animation-duration:28s;animation-delay:2s;">H₂O + CO₂ → H₂CO₃</div>
+  <div class="formula" style="left:55%;animation-duration:32s;animation-delay:5s;">E = mc²</div>
+  <div class="formula" style="left:72%;animation-duration:24s;animation-delay:9s;">NaCl → Na⁺ + Cl⁻</div>
+  <div class="formula" style="left:33%;animation-duration:30s;animation-delay:12s;">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O</div>
+  <div class="formula" style="left:16%;animation-duration:26s;animation-delay:7s;">Fe + O₂ → Fe₂O₃</div>
+
+  <!-- Átomo -->
+  <div class="atom">
+    <div class="nucleus"></div>
+    <div class="orbit"></div>
+    <div class="orbit"></div>
+    <div class="orbit"></div>
+  </div>
+
+  <div class="error-code">404</div>
+  <div class="error-title">Página no encontrada</div>
+  <div class="error-desc">
+    Parece que este elemento se disolvió en la solución…
+    La página que buscas no existe o fue removida del experimento.
+  </div>
+
+  <div class="equation">error_404 + búsqueda → resultado ∉ este_directorio</div>
+
+  <a href="/" class="btn-home">⚗️ &nbsp;Volver al laboratorio</a>
+
+  <div class="footer-404">Plan para docentes de Ciencias Naturales &nbsp;·&nbsp; Error 404</div>
+
+</div>
+```

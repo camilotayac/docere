@@ -1,0 +1,147 @@
+# Biología - Sexto
+
+## Teorías sobre el origen del universo y la vida
+
+
+## Teoría
+
+::: {.teoria-box}
+
+Las teorías sobre el origen del universo y de la vida buscan responder dos preguntas fundamentales: **¿de dónde viene todo lo que existe?** y **¿cómo apareció la vida en la Tierra?**
+
+Desde la ciencia, una explicación ampliamente aceptada para el origen del universo es la teoría del **Big Bang**. Esta propone que, hace aproximadamente **13,8 mil millones de años**, toda la materia y la energía estaban concentradas en un estado extremadamente denso y caliente. Luego ocurrió una gran expansión, y con el tiempo se formaron galaxias, estrellas y planetas.
+
+Respecto al origen de la vida, no existe una única explicación definitiva, pero sí varias propuestas científicas. Una de las más conocidas es la **evolución química**, que plantea que en la Tierra primitiva se formaron moléculas sencillas que, por procesos naturales, dieron lugar a moléculas más complejas hasta originar las primeras células.
+
+También se estudian otras ideas como la **panspermia**, que sugiere que algunos componentes de la vida pudieron llegar desde el espacio en meteoritos. En cualquier caso, la ciencia continúa investigando evidencias para comprender mejor este proceso.
+
+Es importante diferenciar entre **hipótesis**, **teoría científica** y **creencia**: una teoría científica se construye con observaciones, experimentos y evidencias que pueden revisarse y mejorarse.
+
+:::
+
+
+## Ideas Previas
+
+
+### Ideas Previas - Cuentos
+
+::: {.ideas-previas-box}
+
+Imagina que eres una persona investigadora que llega a un lugar desconocido y debe reconstruir qué pasó allí. No viste los hechos, pero sí puedes observar pistas. Así trabaja la ciencia: para comprender el origen del universo y de la vida, analiza señales como galaxias lejanas, rocas antiguas, fósiles y moléculas orgánicas.
+
+:::
+
+### Ideas Previas - Preguntas
+
+::: {.ideas-previas-box}
+
+
+ - ¿Qué diferencia hay entre una explicación científica y una creencia personal?
+ - ¿Qué condiciones crees que son necesarias para que exista vida?
+ - ¿Por qué los científicos hablan de evidencias cuando explican el origen del universo?
+ - ¿El conocimiento científico cambia o permanece igual para siempre?
+
+
+:::
+
+
+## Contextualización
+
+
+### Contextualización - Método Richard Feynman
+
+::: {.contexto-box}
+
+Explícalo de forma sencilla: el universo comenzó muy concentrado y luego se expandió, como cuando inflas un globo. Con el tiempo se formaron estrellas, planetas y, en la Tierra, aparecieron condiciones que permitieron el origen de la vida. La ciencia no inventa respuestas; propone explicaciones basadas en pruebas observables.
+
+:::
+
+
+## Contextualización para caracterizados
+
+
+### Contextualización - Cognitivo
+
+::: {.caracterizados-box}
+
+
+ - Define con tus palabras: Big Bang, evolución química y teoría científica.
+ - Explica dos diferencias entre hipótesis y teoría científica.
+ - Ordena cronológicamente: formación de galaxias, formación de la Tierra, primeras células.
+
+
+:::
+
+
+### Contextualización - Visual
+
+::: {.caracterizados-box}
+
+Construye una línea de tiempo con dos colores:
+
+ - **Color 1:** eventos del universo (Big Bang, galaxias, estrellas, sistema solar).
+ - **Color 2:** eventos de la vida (Tierra primitiva, moléculas orgánicas, primeras células).
+
+Añade un dibujo o símbolo para cada evento clave.
+
+:::
+
+
+::: {.ejemplo-box}
+
+**Pregunta guía:** ¿Por qué el Big Bang se considera una teoría científica?
+
+**Paso 1:** Identifica evidencias: expansión del universo y radiación cósmica de fondo.
+
+**Paso 2:** Relaciona esas evidencias con una fase inicial más densa y caliente.
+
+**Paso 3:** Concluye: la teoría se sostiene en observaciones y modelos que pueden verificarse y ajustarse con nuevos datos.
+
+:::
+
+
+## Ejercicios
+
+::: {.ejercicios-box}
+
+
+ - Completa: una teoría científica debe estar apoyada en \underline{}.
+ - Escribe dos evidencias que apoyen la teoría del Big Bang.
+ - Explica en cinco líneas la propuesta de evolución química.
+ - Indica V o F y justifica:
+ 
+ - Las teorías científicas nunca cambian. (\ \ )
+ - El conocimiento científico se revisa con nueva evidencia. (\ \ )
+ 
+
+
+:::
+
+
+## Retos
+
+::: {.retos-box}
+
+En equipos, elaboren una infografía titulada *“Del origen del universo al origen de la vida”*. Debe incluir:
+
+ - 5 eventos clave en orden temporal,
+ - 3 conceptos científicos correctamente definidos,
+ - 1 pregunta de discusión para la clase.
+
+
+:::
+
+
+## Aplicación
+
+
+Este tema se aplica cuando interpretamos noticias sobre astronomía, exploración espacial o hallazgos de moléculas orgánicas en meteoritos. Comprender estas teorías ayuda a analizar información científica con pensamiento crítico y a distinguir evidencia de opinión.
+
+
+## Socioemocional
+
+::: {.socioemocional-box}
+
+Reflexiona: estudiar nuestros orígenes puede despertar asombro y preguntas profundas. Escuchar posturas distintas con respeto, argumentar con evidencia y reconocer que aprender implica revisar ideas fortalece la convivencia y la curiosidad científica.
+
+:::
