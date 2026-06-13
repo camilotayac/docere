@@ -25,7 +25,7 @@ Editorial: Pearson Educación (14ª ed.)
 
 ## Instrucciones para el orquestador
 
-Al inicio del pipeline (Paso 0.5), el orquestador DEBE:
+Al inicio del proceso (Paso 0.5), el orquestador DEBE:
 
 1. **Leer** `book/references.bib` y extraer la lista de referencias.
 2. **Presentar** al usuario las referencias disponibles en formato legible.

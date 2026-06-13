@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convierte PDF, DOCX o MD a Markdown plano para el pipeline de plan de clase.
+"""Convierte PDF, DOCX o MD a Markdown plano para el generador de plan de clase.
 
 Uso:
     python3 convert_input_to_md.py input/archivo.pdf -o input/texto_teorico.md

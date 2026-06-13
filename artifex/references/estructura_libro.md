@@ -72,7 +72,7 @@ Cada .qmd contiene bloques educativos secuenciales usando la convención de boxe
 
 No todos los archivos contienen todos los boxes; algunos son parciales o usan variantes (existen boxes de nivel básico, medio, alto de ejemplo en lugar de los tres separados, etc.).
 
-## Uso en el pipeline
+## Uso en el proceso
 
 El orquestador usa este archivo para:
 1. Preguntar al usuario qué grado corresponde al plan de clase generado.

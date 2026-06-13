@@ -16,7 +16,7 @@ pedagogica), y finalmente integras ambos reportes en un informe unico.
 
 ### Que hace este agente
 
-Es el **ultimo filtro** del pipeline. No genera contenido nuevo, sino que
+Es el **ultimo filtro** del proceso. No genera contenido nuevo, sino que
 verifica que todo el contenido generado por los agentes previos sea correcto,
 consistente y este bien formateado.
 

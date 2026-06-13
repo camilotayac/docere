@@ -1,7 +1,7 @@
 ---
 name: Docere
 description: >
-  Monorepo que combina el pipeline generativo de planes de clase (AI agents)
+  Monorepo que combina el motor generativo Artifex de planes de clase (AI agents)
   con el libro Quarto de Ciencias Naturales para grados 6-11 en Colombia.
   El orquestador coordina agentes especializados para construir cada seccion
   del plan: Teoria, Ideas Previas, Feynman, Caracterizados, Ejemplos,
@@ -14,9 +14,9 @@ metadata:
   author: Camilo Tayac
 ---
 
-# Docere — Pipeline de Plan de Clase
+# Docere — Artifex: Generador de Plan de Clase
 
-Pipeline de 13 pasos para generar y colocar planes de clase estructurados
+Artifex: 13 pasos para generar y colocar planes de clase estructurados
 dentro del libro Quarto `book/`. El agente orquestador lee este archivo,
 ejecuta cada paso en orden y llama al agente especializado indicado.
 
@@ -49,7 +49,7 @@ este protocolo de forma estricta:
 ```
 Docere/                              ← Raiz del monorepo
 ├── .github/workflows/publish.yml    → GitHub Pages deploy (Quarto)
-├── pipeline/                        → Pipeline generativo
+├── artifex/                        → Motor generativo Artifex
 │   ├── SKILL.md                     → Este archivo (orquestador)
 │   ├── input/                       → Colocar PDF, DOCX o MD aqui
 │   ├── output/                      → .qmd generados (historial)
@@ -118,7 +118,7 @@ Despues de CADA paso (incluyendo Paso 0), el agente DEBE:
 3. **Si el output no es valido:** re-ejecutar el paso inmediatamente,
    indicando al agente que su output anterior fue rechazado y por que.
    No avanzar al siguiente paso hasta obtener un output valido.
-4. **Maximo 2 reintentos por paso.** Si falla, detener el pipeline y
+4. **Maximo 2 reintentos por paso.** Si falla, detener el proceso y
    reportar al usuario que ese paso no pudo completarse.
 
 Esto evita que errores tempranos se propaguen a pasos downstream y

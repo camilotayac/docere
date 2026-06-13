@@ -166,7 +166,7 @@ Reescribe el borrador integrando la analogía. Usa esta estructura:
 **Si 4 o más son "No":** cambia de analogía por completo.
 
 **No incluyas pasos numerados ni procedimientos de cálculo.** Eso
-pertenece a la sección de Ejemplos Guiados (Paso 5 del pipeline).
+pertenece a la sección de Ejemplos Guiados (Paso 5 del proceso).
 
 ---
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Valida el archivo .qmd generado por el pipeline de plan de clase.
+"""Valida el archivo .qmd generado por el generador de plan de clase.
 
 Realiza checks mecánicos (sin LLM) sobre el output y produce un reporte
 JSON estructurado que mapea cada fallo al agente responsable.
@@ -406,7 +406,7 @@ def validate(text: str, path: str = "") -> dict:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Valida el .qmd generado por el pipeline de plan de clase")
+        description="Valida el .qmd generado por el generador de plan de clase")
     parser.add_argument("input", type=Path, help="Archivo .qmd a validar")
     parser.add_argument("--json", action="store_true",
                         help="Salida en JSON")
