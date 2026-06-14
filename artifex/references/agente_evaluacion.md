@@ -237,17 +237,14 @@ Para cada pregunta:
 ### Paso 4 — Verificar
 
 - Cada pregunta tiene Contexto, Enunciado y 4 opciones?
-- La distribucion de competencias es 2-2-1?
-- Exactamente 1 opcion correcta por pregunta?
-- Los distractores son plausibles (no absurdos)?
-- No hay---
+- No incluir "Todas las anteriores" ni "Ninguna de las anteriores"?
 
 ## Plantilla de Salida
 
 ```markdown
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
 
-**Pregunta 1** — Nivel Bajo
+**Nivel Bajo**
 
 {Contexto con situación real o de laboratorio, datos organizados, 3-5 líneas o tabla. Masas molares explícitas si se requieren.}
 
@@ -260,7 +257,7 @@ D. {Opción 4 — distractor}
 
 
 
-**Pregunta 2** — Nivel Bajo
+**Nivel Bajo**
 
 {Párrafo del contexto...}
 
@@ -273,7 +270,7 @@ D. {...}
 
 
 
-**Pregunta 3** — Nivel Medio
+**Nivel Medio**
 
 {Contexto con 2+ variables, tabla y/o gráfica...}
 
@@ -286,7 +283,7 @@ D. {...}
 
 
 
-**Pregunta 4** — Nivel Medio
+**Nivel Medio**
 
 {Contexto experimental o analítico con datos organizados...}
 
@@ -299,7 +296,7 @@ D. {...}
 
 
 
-**Pregunta 5** — Nivel Alto
+**Nivel Alto**
 
 {Situación problema abierta, no rutinaria, multipaso...}
 
@@ -316,16 +313,17 @@ D. {...}
 ## Restricciones de Formato
 
 - Un bloque: `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
-- Cada pregunta con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego el párrafo de contexto, después el párrafo del enunciado/pregunta, y finalmente las opciones `A.`, `B.`, `C.`, `D.`.
-- **Prohibido** usar las etiquetas literales `*Contexto:*` o `*Enunciado:*`.
+- Cada pregunta inicia con `**Nivel {Bajo|Medio|Alto}**` en su propia línea, luego el párrafo de contexto, después el párrafo del enunciado/pregunta, y finalmente las opciones `A.`, `B.`, `C.`, `D.`.
+- **Prohibido** usar las etiquetas literales `*Contexto:*` o `*Enunciado:*` ni números o prefijos de pregunta en los encabezados.
 - **Salto de línea obligatorio** antes de la primera opción `A.` (sin esto Quarto pega las opciones al texto).
 - **Dos saltos de línea** entre preguntas.
-- Numeración de preguntas del 1 al 5.
+- Distribución exacta: 5 reactivos (2 de Nivel Bajo, 2 de Nivel Medio, 1 de Nivel Alto).
 - **Todo valor numérico** en contexto, enunciado y opciones debe ir en LaTeX inline `$...$` con la unidad dentro de `\text{}` y `\,` thin space: `$10.0\,\text{g}$ de Ca`, `$500\,\text{g}$ de glucosa`, `A. $7.0\,\text{g}$`, `$\frac{4}{3} < \frac{2}{1}$`.
 - Los nombres de compuestos químicos van en LaTeX: `$Ca$`, `$NO_2$`, `$FeS_2$`.
 - No incluir respuestas correctas ni claves (va en Socialización, Paso 8.6).
 - No incluir "Todas las anteriores" ni "Ninguna de las anteriores".
 - Lenguaje claro y directo, adecuado al grado.
+
 
 ## Casos Borde
 

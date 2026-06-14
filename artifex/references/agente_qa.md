@@ -101,6 +101,7 @@ la seccion 1 de este agente. Cada title debe coincidir caracter por caracter.
 - La reflexion socioemocional nombra la competencia de la Ley 2503/2025 que trabaja.
 - La evaluacion tiene exactamente 5 reactivos.
 - Las 3 competencias ICFES (Interpretacion, Argumentacion, Proposicion) estan cubiertas.
+- Cada reactivo inicia únicamente con su nivel (`**Nivel Bajo**`, `**Nivel Medio**`, `**Nivel Alto**`) sin número ni prefijo "Pregunta" en el encabezado.
 - Cada reactivo tiene párrafo de contexto y párrafo de enunciado (sin etiquetas literales *Contexto:* / *Enunciado:*) y opciones A, B, C, D.
 - Cada reactivo tiene entrada correspondiente en Socializacion.
 - En Socializacion: cada entrada tiene Nivel, Competencia, Afirmacion,
