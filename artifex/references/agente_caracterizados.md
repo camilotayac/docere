@@ -44,10 +44,13 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 - **Ejemplo:** Enunciado claro, cada paso numerado con su operacion,
   resultado al final. Incluir el calculo en cada paso. La ecuacion
   quimica principal debe ir en display math (`$$...$$`) en linea
-  aparte, no inline.
-- **Ejercicios:** Enunciados directos, con los datos claramente listados.
-  Indicar "Sigue los pasos 1-4". Agregar `\underline{\hspace{6cm}}`
-  despues de cada ejercicio para espacio de respuesta.
+  aparte, no inline. **Todo valor numérico** (masas, moles, cocientes,
+  resultados) debe ir en LaTeX inline `$...$`, ej:
+  `$55.85 \div 55.85 = 1.00$ mol`.
+- **Ejercicios:** Enunciados directos, con los datos claramente listados
+  en LaTeX (ej: `$26.98$ g de Al`). Indicar "Sigue los pasos 1-4".
+  Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio para
+  espacio de respuesta.
 
 #### Visual
 - **Teoria:** Organizador grafico en **tabla Markdown** (NUNCA ASCII).
@@ -56,7 +59,8 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 - **Ejemplo:** Tabla Markdown de datos de entrada, diagrama de flujo
   con `->`, resultado final. Prohibido recuadros ASCII (`┌ ┐ └ ┘`).
   La ecuacion quimica principal en display math (`$$...$$`), no texto
-  plano ni inline.
+  plano ni inline. **Todo valor numérico** en celdas de tabla y
+  operaciones debe ir en LaTeX inline `$...$`.
 - **Ejercicios:** Tabla Markdown con datos dados, espacio para que el
   estudiante complete. Agregar `\underline{\hspace{6cm}}` despues de
   cada ejercicio.
@@ -66,30 +70,35 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   sujeto+verbo+objeto. Sin dobles negaciones, sin voz pasiva. Listas con
   guiones. Separacion visual entre parrafos.
 - **Ejemplo:** Enunciado en 1-2 oraciones cortas. Cada paso en una linea
-  separada con `->` entre calculo y resultado.
+  separada con `->` entre calculo y resultado. **Todo valor numérico**
+  en LaTeX inline `$...$` (ej: `$55.85$ g`, `$1.00 \div 1 = 1.00$`).
 - **Ejercicios:** Enunciados cortos, vocabulario simple, datos en formato
-  claro. Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
+  claro con LaTeX (ej: `$24.30$ g de Mg`). Agregar
+  `\underline{\hspace{6cm}}` despues de cada ejercicio.
 
 #### Autismo y Pensamiento Concreto
 - **Teoria:** Comienza con **Regla fija:** en negrita. Lenguaje 100%
   literal, sin metaforas. Explicitar lo que otras versiones dan por
   sobrentendido. Estructura identica siempre.
 - **Ejemplo:** Misma estructura de regla fija + pasos literales. Mostrar
-  cada operacion aritmetica con su resultado.
-- **Ejercicios:** Enunciados literales, estructura predecible. Pedir que
-  apliquen la regla fija del inicio. Agregar `\underline{\hspace{6cm}}`
-  despues de cada ejercicio.
+  cada operacion aritmetica con su resultado en LaTeX inline `$...$`
+  (ej: `$55.85 \div 55.85 = 1.00$ mol`).
+- **Ejercicios:** Enunciados literales, estructura predecible. Datos en
+  LaTeX (ej: `$26.98$ g de Al`). Pedir que apliquen la regla fija del
+  inicio. Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
 
 #### Accesibilidad Sensorial (Visual/Auditiva)
-- **Teoria:** Descripciones textuales entre `[corchetes]` de cualquier
-  elemento visual. Indicar formato recomendado: "Este texto funciona
-  con lectores de pantalla." No asumir que el estudiante ve colores,
-  graficos o esquemas.
-- **Ejemplo:** Describir con palabras cada paso. Usar formato de texto
-  plano, sin caracteres especiales que el lector de pantalla no
-  interprete.
-- **Ejercicios:** Instrucciones descriptivas. Indicar formato accesible.
-  Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
+- **Teoria:** NO usar `[corchetes]`. Incluir la formula LaTeX junto
+  con su descripcion textual accesible, ej:
+  `$Fe + S \rightarrow FeS$ (hierro mas azufre produce sulfuro de
+  hierro)`. **Todo valor numerico** en LaTeX inline `$...$`. No asumir
+  que el estudiante ve colores, graficos o esquemas.
+- **Ejemplo:** Describir con palabras cada paso. Incluir la formula
+  LaTeX y la descripcion textual: `$55.85 \div 55.85 = 1.00$ mol
+  (hierro)`. No usar `[corchetes]` ni formato de solo texto plano.
+- **Ejercicios:** Instrucciones descriptivas con LaTeX y texto
+  accesible. Agregar `\underline{\hspace{6cm}}` despues de cada
+  ejercicio.
 
 #### Socioemocional y Psicosocial
 - **Teoria:** Abre con frase de validacion. Usa "vamos a", "puedes",
@@ -97,9 +106,10 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   positivo.
 - **Ejemplo:** Validar que el proceso puede parecer largo pero que
   cada paso es sencillo. Mostrar los pasos con lenguaje tranquilizador.
+  **Todo valor numérico** en LaTeX inline `$...$`.
 - **Ejercicios:** Mensaje de animo antes de cada ejercicio: "Intentalo,
-  ya viste como se hace." Agregar `\underline{\hspace{6cm}}` despues
-  de cada ejercicio.
+  ya viste como se hace." Datos en LaTeX (ej: `$26.98$ g de Al`).
+  Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
 
 ### Criterios de verificacion
 

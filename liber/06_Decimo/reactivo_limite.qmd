@@ -96,7 +96,12 @@ En el municipio de Nemocón (Cundinamarca), las minas de sal han operado durante
 Para identificar el reactivo límite sigue estos pasos en orden:
 
 1. Escribe y balancea la ecuación química.
-2. Convierte las masas a moles. **Fórmula:** $n = \frac{m}{M}$ ($n$ = moles, $m$ = masa en gramos, $M$ = masa molar en g/mol)
+2. Convierte las masas a moles.
+
+   $$n = \frac{m}{M}$$
+
+   Donde $n$ = cantidad de sustancia (mol), $m$ = masa del reactivo (g), $M$ = masa molar (g/mol).
+
 3. Divide los moles entre su coeficiente.
 4. El cociente más pequeño es el **reactivo límite**.
 5. Usa sus moles para calcular el producto.
@@ -105,19 +110,19 @@ Para identificar el reactivo límite sigue estos pasos en orden:
 
 $$Fe + S \rightarrow FeS$$
 
-Se tienen 55.85 g de Fe y 48.09 g de S. Masas molares: Fe = 55.85 g/mol, S = 32.06 g/mol.
+Se tienen $55.85$ g de Fe y $48.09$ g de S. Masas molares: $Fe = 55.85$ g/mol, $S = 32.06$ g/mol.
 
-**Paso 1:** Convertir a moles. Fe: 55.85 ÷ 55.85 = 1.00 mol. S: 48.09 ÷ 32.06 = 1.50 mol.
+**Paso 1:** Convertir a moles. $Fe: 55.85 \div 55.85 = 1.00$ mol. $S: 48.09 \div 32.06 = 1.50$ mol.
 
-**Paso 2:** Dividir entre coeficiente. Fe: 1.00 ÷ 1 = 1.00. S: 1.50 ÷ 1 = 1.50.
+**Paso 2:** Dividir entre coeficiente. $Fe: 1.00 \div 1 = 1.00$. $S: 1.50 \div 1 = 1.50$.
 
-**Paso 3:** Comparar. 1.00 < 1.50. El **Fe** es el reactivo límite.
+**Paso 3:** Comparar. $1.00 < 1.50$. El **Fe** es el reactivo límite.
 
-**Paso 4:** Calcular producto. 1.00 mol Fe × (1 mol FeS / 1 mol Fe) = 1.00 mol FeS = 87.91 g.
+**Paso 4:** Calcular producto. $1.00 \text{ mol Fe} \times \frac{1 \text{ mol FeS}}{1 \text{ mol Fe}} = 1.00 \text{ mol FeS} = 87.91$ g.
 
 **Ejercicios:**
 
-1. En $2Al + 3S \rightarrow Al_2S_3$ se tienen 26.98 g de Al y 64.12 g de S (masas molares: Al = 26.98 g/mol, S = 32.06 g/mol). Sigue los 4 pasos para hallar el reactivo límite y los gramos de $Al_2S_3$.
+1. En $2Al + 3S \rightarrow Al_2S_3$ se tienen $26.98$ g de Al y $64.12$ g de S (masas molares: $Al = 26.98$ g/mol, $S = 32.06$ g/mol). Sigue los 4 pasos para hallar el reactivo límite y los gramos de $Al_2S_3$.
 
    \underline{\hspace{6cm}}
 
@@ -125,7 +130,7 @@ Se tienen 55.85 g de Fe y 48.09 g de S. Masas molares: Fe = 55.85 g/mol, S = 32.
 
    \underline{\hspace{6cm}}
 
-2. En $2Mg + O_2 \rightarrow 2MgO$ se tienen 24.30 g de Mg y 32.00 g de $O_2$ (masas molares: Mg = 24.30 g/mol, $O_2$ = 32.00 g/mol). ¿Cuál es el reactivo límite y qué masa de MgO se produce?
+2. En $2Mg + O_2 \rightarrow 2MgO$ se tienen $24.30$ g de Mg y $32.00$ g de $O_2$ (masas molares: $Mg = 24.30$ g/mol, $O_2 = 32.00$ g/mol). ¿Cuál es el reactivo límite y qué masa de MgO se produce?
 
    \underline{\hspace{6cm}}
 
@@ -141,36 +146,36 @@ Reacción:
 
 $$Fe + S \rightarrow FeS$$
 
-(balanceada 1:1)
+(balanceada $1:1$)
 
 Datos de entrada:
 
-| Reactivo | Masa (g) | M (g/mol) | Moles (n) |
+| Reactivo | Masa (g) | M (g/mol) | Moles ($n$) |
 |---|---|---|---|
-| Fe **(azul)** | 55.85 | 55.85 | 55.85 ÷ 55.85 = **1.00 mol** |
-| S **(rojo)** | 48.09 | 32.06 | 48.09 ÷ 32.06 = **1.50 mol** |
+| Fe **(azul)** | $55.85$ | $55.85$ | $55.85 \div 55.85 =$ **$1.00$ mol** |
+| S **(rojo)** | $48.09$ | $32.06$ | $48.09 \div 32.06 =$ **$1.50$ mol** |
 
-**Moles de Fe = 1.00 (azul)** — **Moles de S = 1.50 (rojo)**
+$Fe$ **moles = 1.00 (azul)** — $S$ **moles = 1.50 (rojo)**
 
-Dividir entre coeficiente (ambos = 1):
+Dividir entre coeficiente (ambos $= 1$):
 
-```
-Fe (azul): 1.00 ÷ 1 = 1.00
-S  (rojo): 1.50 ÷ 1 = 1.50
-Menor cociente → Fe es RL (verde)
-```
+$Fe$ **(azul):** $1.00 \div 1 = 1.00$
 
-**Ejemplo:** Del diagrama anterior, Fe es el reactivo límite **(verde)**. Calcular producto: 1.00 mol × (1/1) × 87.91 g/mol = **87.91 g FeS (verde)**.
+$S$ **(rojo):** $1.50 \div 1 = 1.50$
+
+Menor cociente $\rightarrow$ Fe es RL **(verde)**
+
+**Ejemplo:** Del diagrama anterior, Fe es el reactivo límite **(verde)**. Calcular producto: $1.00 \text{ mol} \times \frac{1}{1} \times 87.91 \text{ g/mol} =$ **$87.91$ g FeS (verde)**.
 
 **Ejercicios:**
 
-1. Completa la tabla para $2Al + 3S \rightarrow Al_2S_3$ con 26.98 g Al y 64.12 g S. ¿Qué reactivo está **(azul)** y cuál **(rojo)**? ¿Cuál es **(verde)** el RL?
+1. Completa la tabla para $2Al + 3S \rightarrow Al_2S_3$ con $26.98$ g Al y $64.12$ g S. ¿Qué reactivo está **(azul)** y cuál **(rojo)**? ¿Cuál es **(verde)** el RL?
 
    \underline{\hspace{6cm}}
 
    \underline{\hspace{6cm}}
 
-2. Dibuja el diagrama de flujo para $2Mg + O_2 \rightarrow 2MgO$ con 24.30 g Mg y 32.00 g $O_2$. Incluye los cocientes y señala el RL. Usa **(azul)**, **(rojo)** y **(verde)**.
+2. Dibuja el diagrama de flujo para $2Mg + O_2 \rightarrow 2MgO$ con $24.30$ g Mg y $32.00$ g $O_2$. Incluye los cocientes y señala el RL. Usa **(azul)**, **(rojo)** y **(verde)**.
 
    \underline{\hspace{6cm}}
 
@@ -186,17 +191,17 @@ Una ecuación química es una receta. Los reactivos son los ingredientes. El pro
 
 $$Fe + S \rightarrow FeS$$
 
-Tienes 55.85 g de Fe y 48.09 g de S.
+Tienes $55.85$ g de Fe y $48.09$ g de S.
 
-1. **Convierte a moles.** 55.85 g Fe → 1.00 mol. 48.09 g S → 1.50 mol.
-2. **Divide por el coeficiente.** Fe: 1.00 ÷ 1 = 1.00. S: 1.50 ÷ 1 = 1.50.
-3. **Compara.** 1.00 < 1.50. El Fe se acaba primero.
+1. **Convierte a moles.** $55.85$ g Fe $\rightarrow 1.00$ mol. $48.09$ g S $\rightarrow 1.50$ mol.
+2. **Divide por el coeficiente.** $Fe: 1.00 \div 1 = 1.00$. $S: 1.50 \div 1 = 1.50$.
+3. **Compara.** $1.00 < 1.50$. El Fe se acaba primero.
 
-**Resultado:** El Fe es el reactivo límite. Se forman 87.91 g de FeS.
+**Resultado:** El Fe es el reactivo límite. Se forman $87.91$ g de FeS.
 
 **Ejercicios:**
 
-1. En $2Al + 3S \rightarrow Al_2S_3$ tienes 26.98 g de Al y 64.12 g de S. Sigue los 3 pasos para hallar el reactivo límite.
+1. En $2Al + 3S \rightarrow Al_2S_3$ tienes $26.98$ g de Al y $64.12$ g de S. Sigue los 3 pasos para hallar el reactivo límite.
 
    \underline{\hspace{6cm}}
 
@@ -204,7 +209,7 @@ Tienes 55.85 g de Fe y 48.09 g de S.
 
    \underline{\hspace{6cm}}
 
-2. En $2Mg + O_2 \rightarrow 2MgO$ tienes 24.30 g de Mg y 32.00 g de $O_2$. ¿Cuál reactivo se acaba primero? Calcula los gramos de MgO.
+2. En $2Mg + O_2 \rightarrow 2MgO$ tienes $24.30$ g de Mg y $32.00$ g de $O_2$. ¿Cuál reactivo se acaba primero? Calcula los gramos de MgO.
 
    \underline{\hspace{6cm}}
 
@@ -216,23 +221,23 @@ Tienes 55.85 g de Fe y 48.09 g de S.
 
 ::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
 
-Regla fija: los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente (moles ÷ coeficiente) más pequeño se agota primero. Ese es el reactivo límite.
+Regla fija: los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente (moles $\div$ coeficiente) más pequeño se agota primero. Ese es el reactivo límite.
 
 **Ejemplo:** Reacción:
 
 $$Fe + S \rightarrow FeS$$
 
-Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
+Coeficientes: ambos $1$. Datos: $55.85$ g Fe y $48.09$ g S.
 
-1. Moles de Fe = 55.85 ÷ 55.85 = 1.00 mol. Moles de S = 48.09 ÷ 32.06 = 1.50 mol.
-2. Cociente de Fe = 1.00 ÷ 1 = 1.00.
-3. Cociente de S = 1.50 ÷ 1 = 1.50.
-4. Aplicar la regla fija. 1.00 < 1.50. El Fe tiene el cociente más pequeño. El Fe es el reactivo límite.
-5. Producto = 1.00 mol Fe × (1 mol FeS / 1 mol Fe) × 87.91 g/mol = 87.91 g FeS.
+1. Moles de $Fe = 55.85 \div 55.85 = 1.00$ mol. Moles de $S = 48.09 \div 32.06 = 1.50$ mol.
+2. Cociente de $Fe = 1.00 \div 1 = 1.00$.
+3. Cociente de $S = 1.50 \div 1 = 1.50$.
+4. Aplicar la regla fija. $1.00 < 1.50$. El Fe tiene el cociente más pequeño. El Fe es el reactivo límite.
+5. Producto $= 1.00 \text{ mol Fe} \times \frac{1 \text{ mol FeS}}{1 \text{ mol Fe}} \times 87.91 \text{ g/mol} = 87.91$ g FeS.
 
 **Ejercicios:**
 
-1. Aplica la regla fija a $2Al + 3S \rightarrow Al_2S_3$ con 26.98 g Al y 64.12 g S. ¿Cuál es el reactivo límite?
+1. Aplica la regla fija a $2Al + 3S \rightarrow Al_2S_3$ con $26.98$ g Al y $64.12$ g S. ¿Cuál es el reactivo límite?
 
    \underline{\hspace{6cm}}
 
@@ -240,7 +245,7 @@ Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
 
    \underline{\hspace{6cm}}
 
-2. Aplica la regla fija a $2Mg + O_2 \rightarrow 2MgO$ con 24.30 g Mg y 32.00 g $O_2$. ¿Cuántos gramos de MgO se producen?
+2. Aplica la regla fija a $2Mg + O_2 \rightarrow 2MgO$ con $24.30$ g Mg y $32.00$ g $O_2$. ¿Cuántos gramos de MgO se producen?
 
    \underline{\hspace{6cm}}
 
@@ -252,20 +257,18 @@ Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
 
 ::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
 
-[Formato accesible: texto plano. Funciona con lectores de pantalla.]
+Formato accesible: $Fe + S \rightarrow FeS$ (hierro más azufre produce sulfuro de hierro). Los coeficientes son ambos $1$, lo que significa que un mol de Fe reacciona con exactamente un mol de S.
 
-[Ecuación química: Fe (hierro) más S (azufre) produce FeS (sulfuro de hierro). Los coeficientes son ambos 1, lo que significa que un mol de Fe reacciona con exactamente un mol de S.]
+**Ejemplo:** Se tienen $55.85$ gramos de Fe (hierro) y $48.09$ gramos de S (azufre). La masa molar del Fe (hierro) es $55.85$ g/mol. La masa molar del S (azufre) es $32.06$ g/mol.
 
-**Ejemplo:** [Se tienen 55.85 gramos de Fe (hierro) y 48.09 gramos de S (azufre). La masa molar del Fe (hierro) es 55.85 gramos por mol. La masa molar del S (azufre) es 32.06 gramos por mol.]
+1. Convertir masa a moles. $Fe: 55.85 \div 55.85 = 1.00$ mol (hierro). $S: 48.09 \div 32.06 = 1.50$ moles (azufre).
+2. Dividir moles entre coeficiente. $Fe: 1.00 \div 1 = 1.00$ (hierro). $S: 1.50 \div 1 = 1.50$ (azufre).
 
-1. [Convertir masa a moles. Para Fe (hierro): 55.85 dividido 55.85 es igual a 1.00 mol. Para S (azufre): 48.09 dividido 32.06 es igual a 1.50 moles.]
-2. [Dividir moles entre coeficiente. Fe (hierro): 1.00 dividido 1 es 1.00. S (azufre): 1.50 dividido 1 es 1.50.]
-
-**Resultado:** [El cociente de Fe (hierro) es menor que el de S (azufre). Fe (hierro) es el reactivo límite. Se producen 87.91 gramos de FeS (sulfuro de hierro).]
+**Resultado:** El cociente de Fe (hierro) es menor que el de S (azufre). Fe (hierro) es el reactivo límite. Se producen $87.91$ gramos de FeS (sulfuro de hierro).
 
 **Ejercicios:**
 
-1. [Reacción: 2Al (aluminio) más 3S (azufre) produce Al2S3 (sulfuro de aluminio). Datos: 26.98 gramos de Al (aluminio) y 64.12 gramos de S (azufre). Masa molar del Al (aluminio): 26.98 g/mol. Masa molar del S (azufre): 32.06 g/mol. Convierte a moles, divide entre coeficientes e identifica el reactivo límite.]
+1. Reacción: $2Al + 3S \rightarrow Al_2S_3$ (aluminio más azufre produce sulfuro de aluminio). Datos: $26.98$ gramos de Al (aluminio) y $64.12$ gramos de S (azufre). Masa molar del Al (aluminio): $26.98$ g/mol. Masa molar del S (azufre): $32.06$ g/mol. Convierte a moles, divide entre coeficientes e identifica el reactivo límite.
 
    \underline{\hspace{6cm}}
 
@@ -273,7 +276,7 @@ Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
 
    \underline{\hspace{6cm}}
 
-2. [Reacción: 2Mg (magnesio) más O2 (oxígeno molecular) produce 2MgO (óxido de magnesio). Datos: 24.30 gramos de Mg (magnesio) y 32.00 gramos de O2 (oxígeno molecular). Masa molar del Mg (magnesio): 24.30 g/mol. Masa molar del O2 (oxígeno molecular): 32.00 g/mol. Determina cuál es el reactivo límite y la masa de MgO (óxido de magnesio) producida.]
+2. Reacción: $2Mg + O_2 \rightarrow 2MgO$ (magnesio más oxígeno molecular produce óxido de magnesio). Datos: $24.30$ gramos de Mg (magnesio) y $32.00$ gramos de $O_2$ (oxígeno molecular). Masa molar del Mg (magnesio): $24.30$ g/mol. Masa molar del $O_2$ (oxígeno molecular): $32.00$ g/mol. Determina cuál es el reactivo límite y la masa de MgO (óxido de magnesio) producida.
 
    \underline{\hspace{6cm}}
 
@@ -293,17 +296,17 @@ $$Fe + S \rightarrow FeS$$
 
 Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
 
-1. **Convertimos las masas a moles.** 55.85 g de Fe son 1.00 mol. 48.09 g de S son 1.50 moles. Bien, ya dimos el primer paso.
-2. **Dividimos cada cantidad entre su coeficiente** (los dos son 1, así que no cambia). Fe: 1.00. S: 1.50.
-3. **Comparamos:** 1.00 < 1.50. El que tiene el número más pequeño es el reactivo límite. ¡El Fe se acaba primero! Es como cuando en un juego el recurso más escaso determina hasta dónde puedes llegar. Tú ya identificaste ese recurso.
+1. **Convertimos las masas a moles.** $55.85$ g de Fe son $1.00$ mol. $48.09$ g de S son $1.50$ moles. Bien, ya dimos el primer paso.
+2. **Dividimos cada cantidad entre su coeficiente** (los dos son $1$, así que no cambia). $Fe: 1.00$. $S: 1.50$.
+3. **Comparamos:** $1.00 < 1.50$. El que tiene el número más pequeño es el reactivo límite. ¡El Fe se acaba primero! Es como cuando en un juego el recurso más escaso determina hasta dónde puedes llegar. Tú ya identificaste ese recurso.
 
-**Resultado:** El Fe produce 1.00 mol de FeS, que son 87.91 gramos. ¡Lo lograste!
+**Resultado:** El Fe produce $1.00$ mol de FeS, que son $87.91$ gramos. ¡Lo lograste!
 
 **Ejercicios:**
 
 ¡Inténtalo! Ya viste cómo se hace. Vas a descubrir que puedes resolverlo solo.
 
-1. En la reacción $2Al + 3S \rightarrow Al_2S_3$, tienes 26.98 g de Al y 64.12 g de S. Sigue los mismos pasos del ejemplo. ¿Cuál es el reactivo límite?
+1. En la reacción $2Al + 3S \rightarrow Al_2S_3$, tienes $26.98$ g de Al y $64.12$ g de S. Sigue los mismos pasos del ejemplo. ¿Cuál es el reactivo límite?
 
    \underline{\hspace{6cm}}
 
@@ -311,7 +314,7 @@ Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
 
    \underline{\hspace{6cm}}
 
-2. En $2Mg + O_2 \rightarrow 2MgO$, con 24.30 g de Mg y 32.00 g de $O_2$, ¿qué masa de MgO puedes obtener? Confía en tu proceso, paso a paso.
+2. En $2Mg + O_2 \rightarrow 2MgO$, con $24.30$ g de Mg y $32.00$ g de $O_2$, ¿qué masa de MgO puedes obtener? Confía en tu proceso, paso a paso.
 
    \underline{\hspace{6cm}}
 
@@ -327,7 +330,7 @@ Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
 
 $$CO(g) + 2H_2(g) \rightarrow CH_3OH(g)$$
 
-Si se tienen 4 moles de CO y 6 moles de $H_2$, ¿cuál es el reactivo límite y cuántos moles de $CH_3OH$ se pueden producir?
+Si se tienen $4$ moles de CO y $6$ moles de $H_2$, ¿cuál es el reactivo límite y cuántos moles de $CH_3OH$ se pueden producir?
 
 **Justificacion Teorica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
 
@@ -345,7 +348,7 @@ $3 < 4$, por lo tanto el H$_2$ es el **reactivo límite**.
 **Paso 4: Calcular moles de producto usando el reactivo límite**
 $6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2} = 3 \text{ mol CH}_3\text{OH}$
 
-**Resultado:** El reactivo límite es el $H_2$ y se producen 3 moles de $CH_3OH$ [@chang2017quimica].
+**Resultado:** El reactivo límite es el $H_2$ y se producen $3$ moles de $CH_3OH$ [@chang2017quimica].
 
 :::
 
@@ -355,7 +358,7 @@ $6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2} 
 
 $$2NO(g) + O_2(g) \rightarrow 2NO_2(g)$$
 
-Si se hacen reaccionar 30.0 g de NO con 20.0 g de $O_2$, determine el reactivo límite y la masa de $NO_2$ producida. Masas molares: NO = 30.01 g/mol, $O_2$ = 32.00 g/mol, $NO_2$ = 46.01 g/mol.
+Si se hacen reaccionar $30.0$ g de $NO$ con $20.0$ g de $O_2$, determine el reactivo límite y la masa de $NO_2$ producida. Masas molares: $NO = 30.01$ g/mol, $O_2 = 32.00$ g/mol, $NO_2 = 46.01$ g/mol.
 
 **Justificacion Teorica:** Primero se convierten las masas a moles, luego se dividen entre los coeficientes para identificar el reactivo límite. Finalmente se usa la relación molar para calcular la masa de producto.
 
@@ -377,7 +380,7 @@ $0.500 < 0.625$, el **NO** es el reactivo límite.
 **Paso 5: Calcular masa de NO$_2$ producida**
 $1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times \frac{46.01 \text{ g}}{\text{mol}} = 46.01 \text{ g NO}_2$
 
-**Resultado:** El reactivo límite es el NO y se producen 46.01 g de $NO_2$ [@brown2022chemistry].
+**Resultado:** El reactivo límite es el $NO$ y se producen $46.01$ g de $NO_2$ [@brown2022chemistry].
 
 :::
 
@@ -387,7 +390,7 @@ $1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times \
 
 $$2NH_3(g) + CO_2(g) \rightarrow (NH_2)_2CO(ac) + H_2O(l)$$
 
-En un proceso se hacen reaccionar 637.2 g de $NH_3$ con 1142 g de $CO_2$. Determine: (a) el reactivo límite, (b) la masa de urea que se formará, (c) la masa del reactivo en exceso que queda sin reaccionar. Masas molares: $NH_3$ = 17.03 g/mol, $CO_2$ = 44.01 g/mol, $(NH_2)_2CO$ = 60.06 g/mol.
+En un proceso se hacen reaccionar $637.2$ g de $NH_3$ con $1142$ g de $CO_2$. Determine: (a) el reactivo límite, (b) la masa de urea que se formará, (c) la masa del reactivo en exceso que queda sin reaccionar. Masas molares: $NH_3 = 17.03$ g/mol, $CO_2 = 44.01$ g/mol, $(NH_2)_2CO = 60.06$ g/mol.
 
 **Justificacion Teorica:** Se requieren tres etapas: identificar el reactivo límite comparando los moles ajustados por coeficiente; calcular la masa de producto usando el reactivo límite; y determinar cuánto del otro reactivo se consumió para hallar el sobrante.
 
@@ -414,15 +417,15 @@ $37.42 \text{ mol NH}_3 \times \frac{1 \text{ mol CO}_2}{2 \text{ mol NH}_3} = 1
 $25.95 - 18.71 = 7.24 \text{ mol CO}_2$ sin reaccionar
 $7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$
 
-**Resultado:** (a) El reactivo límite es el $NH_3$. (b) Se producen 1124 g de urea. (c) Quedan 319 g de $CO_2$ sin reaccionar. [@chang2017quimica]
+**Resultado:** (a) El reactivo límite es el $NH_3$. (b) Se producen $1124$ g de urea. (c) Quedan $319$ g de $CO_2$ sin reaccionar. [@chang2017quimica]
 
 :::
 
 ::: {.ejercicios-box title="Nivel Bajo"}
 
-- Completar: En la reacción $2H_2 + O_2 \rightarrow 2H_2O$, si se tienen 3 moles de $H_2$ y 2 moles de $O_2$, el reactivo límite es el \underline{\hspace{3cm}} porque su cociente de moles dividido entre coeficiente es \underline{\hspace{2cm}}, mientras que el del otro reactivo es \underline{\hspace{2cm}}.
+- Completar: En la reacción $2H_2 + O_2 \rightarrow 2H_2O$, si se tienen $3$ moles de $H_2$ y $2$ moles de $O_2$, el reactivo límite es el \underline{\hspace{3cm}} porque su cociente de moles dividido entre coeficiente es \underline{\hspace{2cm}}, mientras que el del otro reactivo es \underline{\hspace{2cm}}.
 - V/F: El reactivo en exceso es aquel que se consume completamente durante la reacción. (\hspace{0.5cm})
-- Identificación: En la ecuación $N_2 + 3H_2 \rightarrow 2NH_3$, indica cuál es el reactivo límite si se tienen 2 moles de $N_2$ y 5 moles de $H_2$.
+- Identificación: En la ecuación $N_2 + 3H_2 \rightarrow 2NH_3$, indica cuál es el reactivo límite si se tienen $2$ moles de $N_2$ y $5$ moles de $H_2$.
 
   \underline{\hspace{6cm}}
 
@@ -432,21 +435,21 @@ $7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$
 
 ::: {.ejercicios-box title="Nivel Medio"}
 
-- Respuesta corta: Se hacen reaccionar 10.0 g de $Zn$ (masa molar 65.38 g/mol) con 5.0 g de $HCl$ (masa molar 36.46 g/mol) según $Zn + 2HCl \rightarrow ZnCl_2 + H_2$. ¿Cuál es el reactivo límite y cuántos gramos de $ZnCl_2$ se producen?
+- Respuesta corta: Se hacen reaccionar $10.0$ g de $Zn$ (masa molar $65.38$ g/mol) con $5.0$ g de $HCl$ (masa molar $36.46$ g/mol) según $Zn + 2HCl \rightarrow ZnCl_2 + H_2$. ¿Cuál es el reactivo límite y cuántos gramos de $ZnCl_2$ se producen?
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
-- Aplicación simple: En la reacción $2Al + 3Cl_2 \rightarrow 2AlCl_3$, si se tienen 54.0 g de Al y 106.5 g de $Cl_2$, ¿cuántos gramos de $AlCl_3$ se pueden obtener?
+- Aplicación simple: En la reacción $2Al + 3Cl_2 \rightarrow 2AlCl_3$, si se tienen $54.0$ g de $Al$ y $106.5$ g de $Cl_2$, ¿cuántos gramos de $AlCl_3$ se pueden obtener?
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
-- Clasificación: Dados los siguientes pares de reactivos, identifica en cada caso cuál sería el reactivo límite sin hacer cálculos detallados, solo observando las proporciones: (a) 1 mol $CH_4$ + 3 mol $O_2$ en $CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$; (b) 2 mol $Fe$ + 2 mol $O_2$ en $4Fe + 3O_2 \rightarrow 2Fe_2O_3$.
+- Clasificación: Dados los siguientes pares de reactivos, identifica en cada caso cuál sería el reactivo límite sin hacer cálculos detallados, solo observando las proporciones: (a) $1$ mol $CH_4$ + $3$ mol $O_2$ en $CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$; (b) $2$ mol $Fe$ + $2$ mol $O_2$ en $4Fe + 3O_2 \rightarrow 2Fe_2O_3$.
 
   \underline{\hspace{6cm}}
 
@@ -456,14 +459,14 @@ $7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$
 
 ::: {.ejercicios-box title="Nivel Alto"}
 
-- Problema abierto: El etileno ($C_2H_4$) se puede preparar calentando hexano ($C_6H_{14}$): $C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4$ (sin balancear). Si se calientan 86.0 g de hexano y se obtienen 28.0 g de etileno, calcula el rendimiento porcentual de la reacción. Sugerencia: primero balancea la ecuación.
+- Problema abierto: El etileno ($C_2H_4$) se puede preparar calentando hexano ($C_6H_{14}$): $C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4$ (sin balancear). Si se calientan $86.0$ g de hexano y se obtienen $28.0$ g de etileno, calcula el rendimiento porcentual de la reacción. Sugerencia: primero balancea la ecuación.
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
 
   \underline{\hspace{6cm}}
-- Análisis de errores: Un estudiante afirma que en la reacción $2Mg + O_2 \rightarrow 2MgO$, si se tienen 48.6 g de Mg y 32.0 g de $O_2$, el reactivo límite es el $O_2$ porque hay menos masa de oxígeno. Explica por qué esta conclusión es incorrecta y determina la respuesta correcta.
+- Análisis de errores: Un estudiante afirma que en la reacción $2Mg + O_2 \rightarrow 2MgO$, si se tienen $48.6$ g de $Mg$ y $32.0$ g de $O_2$, el reactivo límite es el $O_2$ porque hay menos masa de oxígeno. Explica por qué esta conclusión es incorrecta y determina la respuesta correcta.
 
   \underline{\hspace{6cm}}
 
@@ -496,24 +499,24 @@ En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la
 
 **Materiales:**
 - Bicarbonato de sodio ($NaHCO_3$)
-- Vinagre blanco (solución de ácido acético $CH_3COOH$ al 5%)
+- Vinagre blanco (solución de ácido acético $CH_3COOH$ al $5\%$)
 - Balanza digital
-- 2 vasos desechables pequeños
+- $2$ vasos desechables pequeños
 - Cuchara plástica
 
 **Procedimiento:**
-1. Mide 5.0 g de bicarbonato de sodio y colócalos en un vaso.
-2. Mide 30 mL de vinagre en el segundo vaso.
+1. Mide $5.0$ g de bicarbonato de sodio y colócalos en un vaso.
+2. Mide $30$ mL de vinagre en el segundo vaso.
 3. Agrega el vinagre al bicarbonato y observa la efervescencia.
 4. Una vez que la reacción se detenga, verifica si quedó bicarbonato sin reaccionar en el fondo (toca con la cuchara).
-5. Repite el experimento invirtiendo las cantidades: 30 g de bicarbonato y 5 mL de vinagre.
+5. Repite el experimento invirtiendo las cantidades: $30$ g de bicarbonato y $5$ mL de vinagre.
 
 **Resultados:**
 
 | Ensayo | $NaHCO_3$ (g) | Vinagre (mL) | ¿Sobró bicarbonato? | Reactivo límite |
 |---|---|---|---|---|
-| 1 | 5.0 | 30 | | |
-| 2 | 30 | 5 | | |
+| $1$ | $5.0$ | $30$ | | |
+| $2$ | $30$ | $5$ | | |
 
 **Conclusion:** Basado en tus observaciones, ¿qué ensayo tuvo el vinagre como reactivo límite? ¿Cómo lo sabes?
 
@@ -529,13 +532,13 @@ En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la
 
 **Pregunta 1** — Nivel Bajo
 
-*Contexto:* En la reacción $N_2 + 3H_2 \rightarrow 2NH_3$, un estudiante dispone de 2 moles de $N_2$ y 4 moles de $H_2$.
+*Contexto:* En la reacción $N_2 + 3H_2 \rightarrow 2NH_3$, un estudiante dispone de $2$ moles de $N_2$ y $4$ moles de $H_2$.
 
 *Enunciado:* De acuerdo con la información anterior, ¿cuál de las siguientes afirmaciones es correcta?
 
-A. El $N_2$ es el reactivo límite porque su coeficiente estequiométrico es 1.
+A. El $N_2$ es el reactivo límite porque su coeficiente estequiométrico es $1$.
 
-B. El $H_2$ es el reactivo límite porque 4 ÷ 3 < 2 ÷ 1.
+B. El $H_2$ es el reactivo límite porque $4 \div 3 < 2 \div 1$.
 
 C. El $N_2$ y el $H_2$ están en proporción estequiométrica exacta.
 
@@ -546,60 +549,60 @@ D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
 
 *Contexto:* La ecuación $2H_2 + O_2 \rightarrow 2H_2O$ representa la formación de agua.
 
-*Enunciado:* Si se tienen 4 g de $H_2$ y 32 g de $O_2$, ¿cuál de las siguientes opciones describe correctamente la situación? (Masas molares: $H_2$ = 2 g/mol, $O_2$ = 32 g/mol)
+*Enunciado:* Si se tienen $4$ g de $H_2$ y $32$ g de $O_2$, ¿cuál de las siguientes opciones describe correctamente la situación? (Masas molares: $H_2 = 2$ g/mol, $O_2 = 32$ g/mol)
 
-A. El oxígeno es el reactivo límite porque 32 g > 4 g.
+A. El oxígeno es el reactivo límite porque $32$ g $> 4$ g.
 
-B. El hidrógeno es el reactivo límite porque 2 ÷ 2 = 1 y 1 ÷ 1 = 1, están en proporción exacta.
+B. El hidrógeno es el reactivo límite porque $2 \div 2 = 1$ y $1 \div 1 = 1$, están en proporción exacta.
 
-C. El oxígeno es el reactivo límite porque 1 ÷ 1 = 1 y 2 ÷ 2 = 1, ambos están igual.
+C. El oxígeno es el reactivo límite porque $1 \div 1 = 1$ y $2 \div 2 = 1$, ambos están igual.
 
 D. No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
 
 
 **Pregunta 3** — Nivel Medio
 
-*Contexto:* En un laboratorio se hacen reaccionar 10.0 g de calcio (Ca) con 10.0 g de oxígeno ($O_2$) según la ecuación $2Ca + O_2 \rightarrow 2CaO$ (masas molares: Ca = 40.08 g/mol, $O_2$ = 32.00 g/mol, CaO = 56.08 g/mol).
+*Contexto:* En un laboratorio se hacen reaccionar $10.0$ g de calcio ($Ca$) con $10.0$ g de oxígeno ($O_2$) según la ecuación $2Ca + O_2 \rightarrow 2CaO$ (masas molares: $Ca = 40.08$ g/mol, $O_2 = 32.00$ g/mol, $CaO = 56.08$ g/mol).
 
 *Enunciado:* ¿Cuál es la masa máxima de CaO que se puede obtener?
 
-A. 7.0 g
+A. $7.0$ g
 
-B. 14.0 g
+B. $14.0$ g
 
-C. 20.0 g
+C. $20.0$ g
 
-D. 28.0 g
+D. $28.0$ g
 
 
 **Pregunta 4** — Nivel Medio
 
-*Contexto:* La fermentación de la glucosa produce etanol y dióxido de carbono: $C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2$. Un ingeniero dispone de 500 g de glucosa y obtiene 200 g de etanol (masas molares: glucosa = 180.16 g/mol, etanol = 46.07 g/mol).
+*Contexto:* La fermentación de la glucosa produce etanol y dióxido de carbono: $C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2$. Un ingeniero dispone de $500$ g de glucosa y obtiene $200$ g de etanol (masas molares: glucosa $= 180.16$ g/mol, etanol $= 46.07$ g/mol).
 
 *Enunciado:* ¿Cuál es el rendimiento porcentual de la reacción?
 
-A. 39.1%
+A. $39.1\%$
 
-B. 68.5%
+B. $68.5\%$
 
-C. 78.3%
+C. $78.3\%$
 
-D. 100%
+D. $100\%$
 
 
 **Pregunta 5** — Nivel Alto
 
-*Contexto:* En la tostación de la pirita ($FeS_2$) para producir $SO_2$, la ecuación es $4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2$. Un mineral contiene 240 g de $FeS_2$ con impurezas inertes y se usa oxígeno en exceso, obteniéndose 192 g de $SO_2$ (masas molares: $FeS_2$ = 119.98 g/mol, $SO_2$ = 64.06 g/mol).
+*Contexto:* En la tostación de la pirita ($FeS_2$) para producir $SO_2$, la ecuación es $4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2$. Un mineral contiene $240$ g de $FeS_2$ con impurezas inertes y se usa oxígeno en exceso, obteniéndose $192$ g de $SO_2$ (masas molares: $FeS_2 = 119.98$ g/mol, $SO_2 = 64.06$ g/mol).
 
 *Enunciado:* ¿Cuál es el porcentaje de pureza del mineral?
 
-A. 50.0%
+A. $50.0\%$
 
-B. 62.5%
+B. $62.5\%$
 
-C. 75.0%
+C. $75.0\%$
 
-D. 87.5%
+D. $87.5\%$
 
 :::
 
@@ -610,35 +613,35 @@ D. 87.5%
 *Afirmacion:* Comprende las relaciones estequiométricas en una ecuación química balanceada.
 *Evidencia:* Identifica correctamente el reactivo límite dividiendo los moles disponibles entre los coeficientes estequiométricos.
 *Respuesta correcta:* B
-*Explicacion:* El cociente para $N_2$ es 2 ÷ 1 = 2, y para $H_2$ es 4 ÷ 3 ≈ 1.33. Como 1.33 < 2, el $H_2$ es el reactivo límite.
+*Explicacion:* El cociente para $N_2$ es $2 \div 1 = 2$, y para $H_2$ es $4 \div 3 \approx 1.33$. Como $1.33 < 2$, el $H_2$ es el reactivo límite.
 
 **Pregunta 2** — Nivel Bajo
 *Competencia:* Argumentación
 *Afirmacion:* Justifica la identificación del reactivo límite basándose en cálculos estequiométricos.
-*Evidencia:* Reconoce que cuando los cocientes moles ÷ coeficiente son iguales, los reactivos están en proporción estequiométrica exacta y no hay reactivo límite.
+*Evidencia:* Reconoce que cuando los cocientes moles $\div$ coeficiente son iguales, los reactivos están en proporción estequiométrica exacta y no hay reactivo límite.
 *Respuesta correcta:* D
-*Explicacion:* $H_2$: 2 mol ÷ 2 = 1; $O_2$: 1 mol ÷ 1 = 1. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.
+*Explicacion:* $H_2: 2 \text{ mol} \div 2 = 1$; $O_2: 1 \text{ mol} \div 1 = 1$. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.
 
 **Pregunta 3** — Nivel Medio
 *Competencia:* Interpretación
 *Afirmacion:* Determina la cantidad de producto a partir del reactivo límite.
 *Evidencia:* Calcula los moles de cada reactivo y del producto usando relaciones estequiométricas.
 *Respuesta correcta:* B
-*Explicacion:* Ca: 10.0 ÷ 40.08 = 0.249 mol, cociente = 0.249 ÷ 2 = 0.1245. $O_2$: 10.0 ÷ 32.00 = 0.3125 mol, cociente = 0.3125 ÷ 1 = 0.3125. El Ca es el reactivo límite. Masa de CaO = 0.249 mol × (2 ÷ 2) × 56.08 g/mol = 14.0 g.
+*Explicacion:* $Ca: 10.0 \div 40.08 = 0.249$ mol, cociente $= 0.249 \div 2 = 0.1245$. $O_2: 10.0 \div 32.00 = 0.3125$ mol, cociente $= 0.3125 \div 1 = 0.3125$. El Ca es el reactivo límite. Masa de $CaO = 0.249 \text{ mol} \times (2 \div 2) \times 56.08 \text{ g/mol} = 14.0$ g.
 
 **Pregunta 4** — Nivel Medio
 *Competencia:* Argumentación
 *Afirmacion:* Calcula el rendimiento porcentual de una reacción.
 *Evidencia:* Relaciona el rendimiento real con el rendimiento teórico usando la fórmula del porcentaje de rendimiento.
 *Respuesta correcta:* C
-*Explicacion:* Moles de glucosa = 500 ÷ 180.16 = 2.775 mol. Rendimiento teórico de etanol = 2.775 × 2 × 46.07 = 255.6 g. % rendimiento = (200 ÷ 255.6) × 100 = 78.3%.
+*Explicacion:* Moles de glucosa $= 500 \div 180.16 = 2.775$ mol. Rendimiento teórico de etanol $= 2.775 \times 2 \times 46.07 = 255.6$ g. $\%$ rendimiento $= (200 \div 255.6) \times 100 = 78.3\%$.
 
 **Pregunta 5** — Nivel Alto
 *Competencia:* Proposición
 *Afirmacion:* Propone estrategias para determinar la pureza de un mineral a partir de datos experimentales.
 *Evidencia:* Relaciona la masa de producto obtenida con la masa del reactivo puro necesaria, usando la estequiometría de la reacción.
 *Respuesta correcta:* C
-*Explicacion:* Moles de $SO_2$ = 192 ÷ 64.06 = 3.0 mol. Moles de $FeS_2$ puro = 3.0 × (4 ÷ 8) = 1.5 mol. Masa de $FeS_2$ puro = 1.5 × 119.98 = 180 g. Pureza = (180 ÷ 240) × 100 = 75%.
+*Explicacion:* Moles de $SO_2$ $= 192 \div 64.06 = 3.0$ mol. Moles de $FeS_2$ puro $= 3.0 \times (4 \div 8) = 1.5$ mol. Masa de $FeS_2$ puro $= 1.5 \times 119.98 = 180$ g. Pureza $= (180 \div 240) \times 100 = 75\%$.
 
 :::
 

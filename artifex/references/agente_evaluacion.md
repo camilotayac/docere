@@ -339,6 +339,11 @@ D. {...}
   (sin esto Quarto pega las opciones al texto).
 - **Dos saltos de linea** entre preguntas.
 - Numeracion de preguntas del 1 al 5.
+- **Todo valor numerico** en contexto, enunciado y opciones debe ir en
+  LaTeX inline `$...$`: `$10.0$ g de Ca`, `$500$ g de glucosa`,
+  `A. $7.0$ g`, `$4 \div 3 < 2 \div 1$`.
+- Los nombres de compuestos quimicos van en LaTeX: `$Ca$`, `$NO_2$`,
+  `$FeS_2$`.
 - No incluir respuestas correctas ni claves (va en Socializacion, Paso 8.6).
 - No incluir emojis.
 - No incluir "Todas las anteriores" ni "Ninguna de las anteriores".

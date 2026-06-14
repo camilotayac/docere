@@ -245,8 +245,11 @@ excepcion o dato a deducir.}
 - **Toda ecuacion quimica principal** debe ir en display math con
   `$$...$$` en linea separada (ej. `$$2NO + O_2 \rightarrow 2NO_2$$`).
   No usar inline `$...$` ni texto plano con flecha Unicode.
-- Las operaciones de calculo dentro de los pasos pueden ir inline
-  con `$...$`.
+- **Todo valor numerico** en enunciados, datos y resultados debe ir
+  en LaTeX inline `$...$` (ej: `$30.0$ g de NO`, `$4$ moles de CO`,
+  `$46.01$ g de $NO_2$`).
+- Las operaciones de calculo dentro de los pasos deben ir inline
+  con `$...$` (ej: `$n_{NO} = \frac{30.0 \text{ g}}{30.01 \text{ g/mol}} = 1.00 \text{ mol NO}$`).
 - Codificacion por colores opcional pero consistente si se usa. Usar
   `**(color)**` no `<span style="color:...">`.
 

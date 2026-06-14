@@ -50,6 +50,14 @@ Incluir:
 - **Conclusion:** Que deberian observar los estudiantes y como se relaciona
   con el concepto.
 
+### Reglas de formato
+
+- **Todo valor numerico** en materiales, procedimiento y tablas debe ir
+  en LaTeX inline `$...$`: `$5.0$ g`, `$30$ mL`.
+- Los compuestos quimicos van en LaTeX: `$NaHCO_3$`, `$CH_3COOH$`.
+- Las celdas de tablas de resultados deben tener datos numericos en
+  `$...$`.
+
 ### Criterios de verificacion
 
 - La aplicacion de vida real es autentica (no forzada) e idealmente basada

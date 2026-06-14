@@ -68,6 +68,9 @@ Evita jerga innecesaria.
 - Las formulas importantes que se referencian desde el texto deben usar
   display math con `\tag{N}` (ej. `$$n = \frac{m}{M}\tag{1}$$`) y
   referenciarse como "Ecuación 1" o "(1)" en el texto.
+- **Todo valor numerico** (masas, moles, porcentajes, coeficientes) que
+  acompan e a las formulas debe ir en LaTeX inline `$...$`:
+  `$55.85$ g/mol`, `$30.0$ g`, `$2$ moles`.
 - No usar HTML inline (`<span>`, `<div>`, `<style>`) en ningun caso.
 
 ---

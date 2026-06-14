@@ -44,7 +44,15 @@ Usar `*Campo:* valor` sin espacios extra. El orden es:
 *Explicación:* {texto}
 ```
 
-### Criterios de verificación
+### Reglas de formato
+
+- **Todo valor numerico y operacion** en la explicacion debe ir en LaTeX
+  inline `$...$`: `$2 \div 1 = 2$`, `$10.0 \div 40.08 = 0.249$ mol`,
+  `$(180 \div 240) \times 100 = 75\%$`.
+- Usar `\div` para division en LaTeX (no `÷`).
+- Los compuestos quimicos en LaTeX: `$N_2$`, `$H_2$`, `$SO_2$`.
+
+### Criterios de verificacion
 
 - Hay exactamente 5 entradas (Pregunta 1 a Pregunta 5).
 - Cada entrada tiene los 6 campos obligatorios.

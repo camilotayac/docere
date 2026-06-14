@@ -177,6 +177,10 @@ Crea 1-2 ejercicios que:
 - Cada ejercicio en una linea que comienza con `- `.
 - Usar `(\ \)` para espacios de respuesta en V/F.
 - Usar `\underline{}` para espacios en blanco en completar.
+- **Todo valor numerico** (masas, moles, coeficientes) debe ir en LaTeX
+  inline `$...$`: `$5.0$ g`, `$2$ moles de $H_2$`, `$54.0$ g de $Al$`.
+- Los coeficientes estequiometricos en los enunciados deben ir en LaTeX:
+  `$2$ moles de $N_2$ y $5$ moles de $H_2$`, no `2 moles de $N_2$ y 5 moles de $H_2$`.
 - No incluir las soluciones (el docente las conoce).
 - Total entre 6-8 ejercicios (2-3 + 2-3 + 1-2).
 - No incluir emojis.
