@@ -647,7 +647,7 @@ $\underline{\hspace{6cm}}$
 
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
 
-**Pregunta 1** — Nivel Bajo
+**Nivel Bajo**
 
 En la reacción $N_2 + 3H_2 \rightarrow 2NH_3$, un estudiante dispone de $2\,\text{mol}$ de $N_2$ y $4\,\text{mol}$ de $H_2$.
 
@@ -662,7 +662,7 @@ C. El $N_2$ y el $H_2$ están en proporción estequiométrica exacta.
 D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
 
 
-**Pregunta 2** — Nivel Bajo
+**Nivel Bajo**
 
 La ecuación $2H_2 + O_2 \rightarrow 2H_2O$ representa la formación de agua.
 
@@ -677,7 +677,7 @@ C. El oxígeno es el reactivo límite porque $\frac{1}{1} = 1$ y $\frac{2}{2} = 
 D. No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
 
 
-**Pregunta 3** — Nivel Medio
+**Nivel Medio**
 
 En un laboratorio se hacen reaccionar $10.0\,\text{g}$ de calcio ($Ca$) con $10.0\,\text{g}$ de oxígeno ($O_2$) según la ecuación $2Ca + O_2 \rightarrow 2CaO$ (masas molares: $Ca = 40.08\,\text{g/mol}$, $O_2 = 32.00\,\text{g/mol}$, $CaO = 56.08\,\text{g/mol}$).
 
@@ -692,7 +692,7 @@ C. $20.0\,\text{g}$
 D. $28.0\,\text{g}$
 
 
-**Pregunta 4** — Nivel Medio
+**Nivel Medio**
 
 La fermentación de la glucosa produce etanol y dióxido de carbono: $C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2$. Un ingeniero dispone de $500\,\text{g}$ de glucosa y obtiene $200\,\text{g}$ de etanol (masas molares: glucosa $= 180.16\,\text{g/mol}$, etanol $= 46.07\,\text{g/mol}$).
 
@@ -707,7 +707,7 @@ C. $78.3\%$
 D. $100\%$
 
 
-**Pregunta 5** — Nivel Alto
+**Nivel Alto**
 
 En la tostación de la pirita ($FeS_2$) para producir $SO_2$, la ecuación es $4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2$. Un mineral contiene $240\,\text{g}$ de $FeS_2$ con impurezas inertes y se usa oxígeno en exceso, obteniéndose $192\,\text{g}$ de $SO_2$ (masas molares: $FeS_2 = 119.98\,\text{g/mol}$, $SO_2 = 64.06\,\text{g/mol}$).
 
