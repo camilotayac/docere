@@ -514,7 +514,7 @@ La próxima vez que veas un automóvil en la calle, recuerda que su tubo de esca
 
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
 
-**Pregunta 1** — Nivel Bajo
+**Nivel Bajo**
 
 Una ecuación química balanceada muestra las relaciones cuantitativas de los átomos en una reacción. Considere la reacción de síntesis de agua: $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 
@@ -529,7 +529,7 @@ C. $2$ y $1$
 D. $4$ y $2$
 
 
-**Pregunta 2** — Nivel Bajo
+**Nivel Bajo**
 
 Al balancear una ecuación química, los químicos colocan números enteros delante de las fórmulas químicas (coeficientes) pero nunca modifican los números pequeños que están dentro de las fórmulas (subíndices).
 
@@ -544,7 +544,7 @@ C. Porque los subíndices representan el estado físico de los reactivos y produ
 D. Porque los subíndices solo pueden ser números impares menores que tres.
 
 
-**Pregunta 3** — Nivel Medio
+**Nivel Medio**
 
 En el laboratorio se calienta clorato de potasio ($K{Cl}O_3$) para obtener cloruro de potasio ($K{Cl}$) y oxígeno gaseoso ($O_2$). La reacción se representa por la siguiente ecuación desbalanceada: $$K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)$$
 
@@ -559,7 +559,7 @@ C. $2$, $1$ y $3$
 D. $3$, $3$ y $2$
 
 
-**Pregunta 4** — Nivel Medio
+**Nivel Medio**
 
 Un estudiante quiere balancear la combustión de metano ($CH_4$) y escribe la siguiente ecuación balanceada: $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$. Las masas molares de las sustancias son: $CH_4 = 16.04\,\text{g/mol}$, $O_2 = 32.00\,\text{g/mol}$, $CO_2 = 44.01\,\text{g/mol}$ y $H_2O = 18.02\,\text{g/mol}$.
 
@@ -574,7 +574,7 @@ C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma can
 D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico.
 
 
-**Pregunta 5** — Nivel Alto
+**Nivel Alto**
 
 La combustión del gas etano se representa por la ecuación: $$C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
 
