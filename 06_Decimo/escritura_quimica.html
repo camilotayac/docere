@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Escritura de ecuaciones químicas – Natura Docens</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../bibliografia.html" rel="next">
+<link href="../06_Decimo/reactivo_limite.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/edu-boxes.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></h1>
+        </a>     
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Natura Docens</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/camilotayac/docere/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../natura-docens.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../natura-docens.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Generalidades</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01_Generalidades/02_PlanDeArea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Décimo - Química</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/reactivo_limite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/escritura_quimica.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#teoria" id="toc-teoria" class="nav-link active" data-scroll-target="#teoria"><span class="header-section-number">5.1</span> Teoria</a></li>
+  <li><a href="#ideas-previas-cuento" id="toc-ideas-previas-cuento" class="nav-link" data-scroll-target="#ideas-previas-cuento"><span class="header-section-number">5.2</span> Ideas Previas - Cuento</a></li>
+  <li><a href="#ideas-previas-preguntas" id="toc-ideas-previas-preguntas" class="nav-link" data-scroll-target="#ideas-previas-preguntas"><span class="header-section-number">5.3</span> Ideas Previas - Preguntas</a></li>
+  <li><a href="#ideas-previas-contextualizacion" id="toc-ideas-previas-contextualizacion" class="nav-link" data-scroll-target="#ideas-previas-contextualizacion"><span class="header-section-number">5.4</span> Ideas Previas - Contextualizacion</a></li>
+  <li><a href="#contextualizacion-metodo-richard-feynman" id="toc-contextualizacion-metodo-richard-feynman" class="nav-link" data-scroll-target="#contextualizacion-metodo-richard-feynman"><span class="header-section-number">5.5</span> Contextualizacion - Metodo Richard Feynman</a></li>
+  <li><a href="#contextualizacion-apoyo-cognitivo-y-tdah" id="toc-contextualizacion-apoyo-cognitivo-y-tdah" class="nav-link" data-scroll-target="#contextualizacion-apoyo-cognitivo-y-tdah"><span class="header-section-number">5.6</span> Contextualizacion - Apoyo Cognitivo y TDAH</a></li>
+  <li><a href="#contextualizacion-visual" id="toc-contextualizacion-visual" class="nav-link" data-scroll-target="#contextualizacion-visual"><span class="header-section-number">5.7</span> Contextualizacion - Visual</a></li>
+  <li><a href="#contextualizacion-dislexia-y-dificultades-lectoras" id="toc-contextualizacion-dislexia-y-dificultades-lectoras" class="nav-link" data-scroll-target="#contextualizacion-dislexia-y-dificultades-lectoras"><span class="header-section-number">5.8</span> Contextualizacion - Dislexia y Dificultades Lectoras</a></li>
+  <li><a href="#contextualizacion-autismo-y-pensamiento-concreto" id="toc-contextualizacion-autismo-y-pensamiento-concreto" class="nav-link" data-scroll-target="#contextualizacion-autismo-y-pensamiento-concreto"><span class="header-section-number">5.9</span> Contextualizacion - Autismo y Pensamiento Concreto</a></li>
+  <li><a href="#contextualizacion-accesibilidad-sensorial" id="toc-contextualizacion-accesibilidad-sensorial" class="nav-link" data-scroll-target="#contextualizacion-accesibilidad-sensorial"><span class="header-section-number">5.10</span> Contextualizacion - Accesibilidad Sensorial</a></li>
+  <li><a href="#contextualizacion-socioemocional-y-psicosocial" id="toc-contextualizacion-socioemocional-y-psicosocial" class="nav-link" data-scroll-target="#contextualizacion-socioemocional-y-psicosocial"><span class="header-section-number">5.11</span> Contextualizacion - Socioemocional y Psicosocial</a></li>
+  <li><a href="#ejemplo-guiado-nivel-bajo" id="toc-ejemplo-guiado-nivel-bajo" class="nav-link" data-scroll-target="#ejemplo-guiado-nivel-bajo"><span class="header-section-number">5.12</span> Ejemplo Guiado - Nivel Bajo</a></li>
+  <li><a href="#ejemplo-guiado-nivel-medio" id="toc-ejemplo-guiado-nivel-medio" class="nav-link" data-scroll-target="#ejemplo-guiado-nivel-medio"><span class="header-section-number">5.13</span> Ejemplo Guiado - Nivel Medio</a></li>
+  <li><a href="#ejemplo-guiado-nivel-alto" id="toc-ejemplo-guiado-nivel-alto" class="nav-link" data-scroll-target="#ejemplo-guiado-nivel-alto"><span class="header-section-number">5.14</span> Ejemplo Guiado - Nivel Alto</a></li>
+  <li><a href="#nivel-bajo" id="toc-nivel-bajo" class="nav-link" data-scroll-target="#nivel-bajo"><span class="header-section-number">5.15</span> Nivel Bajo</a></li>
+  <li><a href="#nivel-medio" id="toc-nivel-medio" class="nav-link" data-scroll-target="#nivel-medio"><span class="header-section-number">5.16</span> Nivel Medio</a></li>
+  <li><a href="#nivel-alto" id="toc-nivel-alto" class="nav-link" data-scroll-target="#nivel-alto"><span class="header-section-number">5.17</span> Nivel Alto</a></li>
+  <li><a href="#retos" id="toc-retos" class="nav-link" data-scroll-target="#retos"><span class="header-section-number">5.18</span> Retos</a></li>
+  <li><a href="#aplicacion-vida-real" id="toc-aplicacion-vida-real" class="nav-link" data-scroll-target="#aplicacion-vida-real"><span class="header-section-number">5.19</span> Aplicacion - Vida real</a></li>
+  <li><a href="#aplicacion-laboratorio" id="toc-aplicacion-laboratorio" class="nav-link" data-scroll-target="#aplicacion-laboratorio"><span class="header-section-number">5.20</span> Aplicacion - Laboratorio</a></li>
+  <li><a href="#evaluacion-tipo-icfes" id="toc-evaluacion-tipo-icfes" class="nav-link" data-scroll-target="#evaluacion-tipo-icfes"><span class="header-section-number">5.21</span> Evaluacion - tipo ICFES</a></li>
+  <li><a href="#socializacion" id="toc-socializacion" class="nav-link" data-scroll-target="#socializacion"><span class="header-section-number">5.22</span> Socializacion</a></li>
+  <li><a href="#socioemocional" id="toc-socioemocional" class="nav-link" data-scroll-target="#socioemocional"><span class="header-section-number">5.23</span> Socioemocional</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/escritura_quimica.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="teoria" class="level2 teoria-box-heading unlisted teoria-box teoria-box-section" title="Teoria" data-number="5.1">
+<h2 class="teoria-box-heading unlisted anchored" data-number="5.1" data-anchor-id="teoria"><span class="header-section-number">5.1</span> Teoria</h2>
+<p>La <strong>ecuacion quimica</strong> (representacion simbolica de una reaccion quimica) utiliza simbolos quimicos para mostrar que sucede durante un cambio quimico. En ella, las sustancias iniciales llamadas <strong>reactivos</strong> (sustancias que reaccionan) se escriben a la izquierda, y las nuevas sustancias llamadas <strong>productos</strong> (sustancias producidas) se escriben a la derecha, separadas por una flecha que indica la direccion de la reaccion <span class="citation" data-cites="chang2017quimica">(<a href="../bibliografia.html#ref-chang2017quimica" role="doc-biblioref">Chang and Goldsby 2017</a>)</span>. Para que se cumpla la <strong>ley de la conservacion de la masa</strong> (principio de que los atomos no se crean ni se destruyen, solo se reordenan), una ecuacion debe estar balanceada. El <strong>balanceo</strong> (proceso de igualar el numero de atomos de cada elemento en ambos lados de la ecuacion) se realiza colocando <strong>coeficientes estequiometricos</strong> (numeros enteros delante de las formulas) sin alterar nunca los subindices, ya que cambiarlos modificaria la identidad de las sustancias <span class="citation" data-cites="brown2022chemistry">(<a href="../bibliografia.html#ref-brown2022chemistry" role="doc-biblioref">Brown et al. 2022</a>)</span>.</p>
+<p>Para proporcionar informacion adicional, se indica el estado fisico de los componentes mediante subindices abreviados en parentesis: sólido <span class="math inline">\((s)\)</span>, líquido <span class="math inline">\((l)\)</span>, gaseoso <span class="math inline">\((g)\)</span> y acuoso <span class="math inline">\((ac)\)</span> para sustancias disueltas en agua. Un ejemplo de ecuacion quimica balanceada es la combustion de hidrogeno gaseoso para producir agua liquida:</p>
+<p><strong>Formula (1):</strong></p>
+<p><span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\tag{1}\]</span></p>
+<p>Donde los coeficientes indican que <span class="math inline">\(2\)</span> moles de <span class="math inline">\(H_2\)</span> gaseoso reaccionan con <span class="math inline">\(1\)</span> mol de <span class="math inline">\(O_2\)</span> gaseoso para producir <span class="math inline">\(2\)</span> moles de <span class="math inline">\(H_2O\)</span> liquida <span class="citation" data-cites="oriakhi2021chemistry">(<a href="../bibliografia.html#ref-oriakhi2021chemistry" role="doc-biblioref">Oriakhi 2021</a>)</span>.</p>
+</section>
+<section id="ideas-previas-cuento" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Cuento" data-number="5.2">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="5.2" data-anchor-id="ideas-previas-cuento"><span class="header-section-number">5.2</span> Ideas Previas - Cuento</h2>
+<p>Imagina que trabajas en un taller en Bogotá armando bicicletas. Tienes en tu mesa <span class="math inline">\(8\)</span> llantas, <span class="math inline">\(3\)</span> marcos y <span class="math inline">\(6\)</span> pedales. Para armar una bicicleta completa necesitas exactamente <span class="math inline">\(2\)</span> llantas, <span class="math inline">\(1\)</span> marco y <span class="math inline">\(2\)</span> pedales. Empiezas a ensamblar las bicicletas una por una hasta que te das cuenta de que algunas piezas se agotan antes que otras y no puedes seguir armando mas bicicletas completas, sobrando algunas partes sueltas.</p>
+<ul>
+<li><p>¿Te ha pasado algo similar al intentar armar o construir un objeto en tu casa?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Qué crees que pasaría si en el cuento tuvieras <span class="math inline">\(10\)</span> llantas pero siguieras teniendo solo <span class="math inline">\(3\)</span> marcos?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Qué diferencia hay entre tener las piezas sueltas en el taller y tener la bicicleta completamente armada y funcional?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Por qué crees que es importante saber la cantidad exacta de cada pieza antes de iniciar el proceso de ensamble?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+</ul>
+</section>
+<section id="ideas-previas-preguntas" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Preguntas" data-number="5.3">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="5.3" data-anchor-id="ideas-previas-preguntas"><span class="header-section-number">5.3</span> Ideas Previas - Preguntas</h2>
+<ul>
+<li><p>¿Qué sabes sobre cómo representan los científicos los cambios que ocurren en la naturaleza?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Has visto o vivido alguna vez una situación donde una sustancia cambie por completo, como cuando se quema un papel o se oxida un clavo?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Cómo crees que funcionaría una receta para preparar un pastel si decides cambiar la cantidad de harina sin ajustar los demás ingredientes?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>¿Qué te gustaría descubrir acerca de los códigos, fórmulas y símbolos que utilizan los químicos en sus laboratorios?</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+</ul>
+</section>
+<section id="ideas-previas-contextualizacion" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Contextualizacion" data-number="5.4">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="5.4" data-anchor-id="ideas-previas-contextualizacion"><span class="header-section-number">5.4</span> Ideas Previas - Contextualizacion</h2>
+<p>En una panadería tradicional de Cali, don José prepara pan de bono. Para lograr la consistencia perfecta, él mezcla almidón de yuca, queso costeño, huevo y leche en proporciones muy precisas que ha anotado en su cuaderno. Si cambia la cantidad de un solo ingrediente, la masa no hornea correctamente y se pierde el producto. Lo que acabas de observar en la cocina es precisamente lo que estudiaremos hoy al analizar cómo las sustancias se combinan en la naturaleza respetando proporciones fijas en una reacción química.</p>
+</section>
+<section id="contextualizacion-metodo-richard-feynman" class="level2 contexto-box-heading unlisted contexto-box contexto-box-section" title="Contextualizacion - Metodo Richard Feynman" data-number="5.5">
+<h2 class="contexto-box-heading unlisted anchored" data-number="5.5" data-anchor-id="contextualizacion-metodo-richard-feynman"><span class="header-section-number">5.5</span> Contextualizacion - Metodo Richard Feynman</h2>
+<p>Explicar cómo escribir y balancear una ecuación química es como organizar las fichas de un juego de construcción de figuras. Imagina que tienes fichas rojas y azules sueltas. Si unes dos fichas rojas con una azul para formar una nave de juguete, al final de la construcción debes tener exactamente el mismo número de fichas rojas y azules con las que iniciaste, solo que ahora están acopladas de una forma diferente. En este juego, las fichas sueltas representan las sustancias que reaccionan y la nave armada representa la nueva sustancia producida. El balanceo de la ecuación consiste en colocar números grandes al inicio de cada grupo de fichas para asegurarnos de que ninguna ficha aparezca de la nada ni desaparezca misteriosamente en el proceso. Cuidado: esta analogía sirve para entender la conservación de las partes, pero los átomos reales no son piezas de plástico que se unen a presión, sino partículas que comparten electrones debido a fuerzas de atracción invisibles.</p>
+</section>
+<section id="contextualizacion-apoyo-cognitivo-y-tdah" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Apoyo Cognitivo y TDAH" data-number="5.6">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.6" data-anchor-id="contextualizacion-apoyo-cognitivo-y-tdah"><span class="header-section-number">5.6</span> Contextualizacion - Apoyo Cognitivo y TDAH</h2>
+<p><strong>Teoria de balanceo en pasos:</strong> 1. <strong>Identificar reactivos y productos.</strong> Escribir sus formulas. Colocar reactivos a la izquierda y productos a la derecha. 2. <strong>Contar atomos.</strong> Contar la cantidad de atomos de cada elemento en ambos lados. 3. <strong>Ajustar coeficientes.</strong> Colocar numeros enteros delante de las formulas para igualar los atomos. No cambiar los subindices. 4. <strong>Verificar balanceo.</strong> Confirmar que el numero total de atomos es igual en reactivos y productos.</p>
+<p><strong>Ejemplo:</strong> Balancear la reaccion entre hidrogeno gaseoso (<span class="math inline">\(H_2\)</span>) y cloro gaseoso (<span class="math inline">\(Cl_2\)</span>) para producir cloruro de hidrogeno (<span class="math inline">\(HCl\)</span>): <span class="math display">\[H_2(g) + Cl_2(g) \rightarrow H{Cl}(g)\]</span></p>
+<ol type="1">
+<li><strong>Paso 1: Contar atomos iniciales.</strong> Reactivos: <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(Cl\)</span>. Productos: <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(Cl\)</span>.</li>
+<li><strong>Paso 2: Ajustar el producto.</strong> Colocar el coeficiente <span class="math inline">\(2\)</span> antes de <span class="math inline">\(HCl\)</span>: <span class="math display">\[H_2(g) + Cl_2(g) \rightarrow 2H{Cl}(g)\]</span></li>
+<li><strong>Paso 3: Recuento final.</strong> Reactivos: <span class="math inline">\(2\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span>. Productos: <span class="math inline">\(2 \times 1 = 2\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2 \times 1 = 2\)</span> de <span class="math inline">\(Cl\)</span>. El balanceo es correcto.</li>
+</ol>
+<p><strong>Ejercicios:</strong> Sigue los pasos <span class="math inline">\(1\)</span> a <span class="math inline">\(4\)</span> para balancear las siguientes ecuaciones quimicas: - Ejercicio 1: Balancear la reaccion entre sodio solido y cloro gaseoso: <span class="math display">\[Na(s) + Cl_2(g) \rightarrow Na{Cl}(s)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Balancear la reaccion entre magnesio solido y oxigeno gaseoso: <span class="math display">\[Mg(s) + O_2(g) \rightarrow MgO(s)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="contextualizacion-visual" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Visual" data-number="5.7">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.7" data-anchor-id="contextualizacion-visual"><span class="header-section-number">5.7</span> Contextualizacion - Visual</h2>
+<p><strong>Teoria visual de balanceo:</strong> | Reactivos (izquierda) | Flecha de cambio | Productos (derecha) | Regla del color | |—|—|—|—| | Sustancias iniciales | Indica que se <strong>(rojo)</strong> produce | Nuevas sustancias | Coeficientes en <strong>(azul)</strong> cambian moles | | Coeficientes en <strong>(verde)</strong> indican cantidad | <code>\rightarrow</code> | Subindices en <strong>(negro)</strong> son fijos | No alterar subindices |</p>
+<p><strong>Ejemplo:</strong> Balancear la combustion de metano (<span class="math inline">\(CH_4\)</span>) para producir dioxido de carbono (<span class="math inline">\(CO_2\)</span>) y agua (<span class="math inline">\(H_2O\)</span>): <span class="math display">\[CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
+<ol type="1">
+<li><p><strong>Tabla de conteo inicial:</strong> | Elemento | Reactivos | Productos | Estado | |—|—|—|—| | Carbono (<span class="math inline">\(C\)</span>) | <span class="math inline">\(1\)</span> | <span class="math inline">\(1\)</span> | Balanceado | | Hidrogeno (<span class="math inline">\(H\)</span>) | <span class="math inline">\(4\)</span> | <span class="math inline">\(2\)</span> | Desbalanceado | | Oxigeno (<span class="math inline">\(O\)</span>) | <span class="math inline">\(2\)</span> | <span class="math inline">\(3\)</span> (de <span class="math inline">\(2\)</span> en <span class="math inline">\(CO_2\)</span> + <span class="math inline">\(1\)</span> en <span class="math inline">\(H_2O\)</span>) | Desbalanceado |</p></li>
+<li><p><strong>Diagrama de flujo de ajuste:</strong> Ajustar <span class="math inline">\(H\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(azul)</strong> en <span class="math inline">\(H_2O\)</span> -&gt; Ajustar <span class="math inline">\(O\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(verde)</strong> en <span class="math inline">\(O_2\)</span>. <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span></p></li>
+<li><p><strong>Tabla de conteo final:</strong> | Elemento | Reactivos | Productos | Estado | |—|—|—|—| | Carbono (<span class="math inline">\(C\)</span>) | <span class="math inline">\(1\)</span> | <span class="math inline">\(1\)</span> | Balanceado | | Hidrogeno (<span class="math inline">\(H\)</span>) | <span class="math inline">\(4\)</span> | <span class="math inline">\(2 \times 2 = 4\)</span> | Balanceado | | Oxigeno (<span class="math inline">\(O\)</span>) | <span class="math inline">\(2 \times 2 = 4\)</span> | <span class="math inline">\(2\)</span> + <span class="math inline">\(2 = 4\)</span> | Balanceado |</p></li>
+</ol>
+<p>El resultado final esta balanceado.</p>
+<p><strong>Ejercicios:</strong> Completa las tablas de conteo y balancea las siguientes ecuaciones quimicas: - Ejercicio 1: Ecuacion: <span class="math display">\[C(s) + O_2(g) \rightarrow CO(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Ecuacion: <span class="math display">\[CO(g) + O_2(g) \rightarrow CO_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="contextualizacion-dislexia-y-dificultades-lectoras" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Dislexia y Dificultades Lectoras" data-number="5.8">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.8" data-anchor-id="contextualizacion-dislexia-y-dificultades-lectoras"><span class="header-section-number">5.8</span> Contextualizacion - Dislexia y Dificultades Lectoras</h2>
+<p><strong>Teoria de balanceo simple:</strong> - El hidrogeno (<span class="math inline">\(H\)</span>) y el oxigeno (<span class="math inline">\(O\)</span>) reaccionan. - Ellos forman agua (<span class="math inline">\(H_2O\)</span>). - Los atomos se conservan siempre. - Tu no cambias los subindices. - Tu colocas los coeficientes grandes. - Los coeficientes igualan los atomos.</p>
+<p><strong>Ejemplo:</strong> Balancear la reaccion entre hierro (<span class="math inline">\(Fe\)</span>) y azufre (<span class="math inline">\(S\)</span>): <span class="math display">\[Fe(s) + S(s) \rightarrow FeS(s)\]</span></p>
+<ul>
+<li>Contar atomos:
+<ul>
+<li>Reactivos: <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(Fe\)</span> y <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(S\)</span>.</li>
+<li>Productos: <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(Fe\)</span> y <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(S\)</span>.</li>
+</ul></li>
+<li>Comparar cantidades:
+<ul>
+<li>El numero de atomos es igual en reactivos y productos.</li>
+</ul></li>
+<li>Ecuacion balanceada:
+<ul>
+<li><span class="math display">\[Fe(s) + S(s) \rightarrow FeS(s)\]</span></li>
+</ul></li>
+</ul>
+<p><strong>Ejercicios:</strong> Balancea las siguientes reacciones quimicas cortas: - Ejercicio 1: Reaccion entre carbon y oxigeno: <span class="math display">\[C(s) + O_2(g) \rightarrow CO_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Reaccion entre hidrogeno y fluor: <span class="math display">\[H_2(g) + F_2(g) \rightarrow HF(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="contextualizacion-autismo-y-pensamiento-concreto" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Autismo y Pensamiento Concreto" data-number="5.9">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.9" data-anchor-id="contextualizacion-autismo-y-pensamiento-concreto"><span class="header-section-number">5.9</span> Contextualizacion - Autismo y Pensamiento Concreto</h2>
+<p><strong>Regla fija:</strong> El numero total de atomos de cada elemento quimico antes de la reaccion quimica debe ser exactamente igual al numero total de atomos despues de la reaccion quimica. No se debe modificar ningun subindice. Solo se deben modificar los coeficientes multiplicadores colocados delante de las formulas quimicas.</p>
+<p><strong>Ejemplo:</strong> Balancear la ecuacion de sintesis de agua: <span class="math display">\[H_2(g) + O_2(g) \rightarrow H_2O(l)\]</span></p>
+<ol type="1">
+<li><strong>Contar reactivos.</strong> El reactivo hidrogeno (<span class="math inline">\(H_2\)</span>) contiene <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(H\)</span>. El reactivo oxigeno (<span class="math inline">\(O_2\)</span>) contiene <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(O\)</span>.</li>
+<li><strong>Contar productos.</strong> El producto agua (<span class="math inline">\(H_2O\)</span>) contiene <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(O\)</span>.</li>
+<li><strong>Identificar desigualdad.</strong> El elemento <span class="math inline">\(O\)</span> no es igual (<span class="math inline">\(2\)</span> reactivos frente a <span class="math inline">\(1\)</span> producto).</li>
+<li><strong>Multiplicar producto.</strong> Colocar coeficiente <span class="math inline">\(2\)</span> antes de <span class="math inline">\(H_2O\)</span>: <span class="math display">\[H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto da <span class="math inline">\(2 \times 2 = 4\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2 \times 1 = 2\)</span> atomos de <span class="math inline">\(O\)</span> en productos.</li>
+<li><strong>Multiplicar reactivo.</strong> Colocar coeficiente <span class="math inline">\(2\)</span> antes de <span class="math inline">\(H_2\)</span>: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto da <span class="math inline">\(2 \times 2 = 4\)</span> atomos de <span class="math inline">\(H\)</span> en reactivos.</li>
+<li><strong>Verificar conteo.</strong> Reactivos: <span class="math inline">\(4\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(4\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(O\)</span>. La ecuacion esta balanceada.</li>
+</ol>
+<p><strong>Ejercicios:</strong> Aplica la regla fija para balancear las siguientes ecuaciones quimicas detallando cada paso: - Ejercicio 1: Sintesis de amoniaco: <span class="math display">\[N_2(g) + H_2(g) \rightarrow NH_3(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Combustion de monoxido de carbono: <span class="math display">\[CO(g) + O_2(g) \rightarrow CO_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="contextualizacion-accesibilidad-sensorial" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Accesibilidad Sensorial" data-number="5.10">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.10" data-anchor-id="contextualizacion-accesibilidad-sensorial"><span class="header-section-number">5.10</span> Contextualizacion - Accesibilidad Sensorial</h2>
+<p>[Estructura accesible de balanceo: las ecuaciones quimicas describen reacciones. Los reactivos estan a la izquierda y los productos a la derecha. El balanceo asegura que la materia se conserve.]</p>
+<p><strong>Ejemplo:</strong> Balancear la ecuacion de sintesis de amoniaco: <span class="math display">\[N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)\]</span> (una molecula de nitrogeno gaseoso con dos atomos mas tres moleculas de hidrogeno gaseoso con dos atomos cada una producen dos moleculas de amoniaco gaseoso, cada una con un atomo de nitrogeno y tres de hidrogeno).</p>
+<ol type="1">
+<li><strong>Paso 1: Contar reactivos.</strong> El nitrogeno molecular (<span class="math inline">\(N_2\)</span>) aporta <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(N\)</span>. Las tres moleculas de hidrogeno (<span class="math inline">\(3H_2\)</span>) aportan <span class="math inline">\(3 \times 2 = 6\)</span> atomos de <span class="math inline">\(H\)</span>.</li>
+<li><strong>Paso 2: Contar productos.</strong> Las dos moleculas de amoniaco (<span class="math inline">\(2NH_3\)</span>) aportan <span class="math inline">\(2 \times 1 = 2\)</span> atomos de <span class="math inline">\(N\)</span> y <span class="math inline">\(2 \times 3 = 6\)</span> atomos de <span class="math inline">\(H\)</span>.</li>
+<li><strong>Paso 3: Validar.</strong> Como <span class="math inline">\(2\)</span> de <span class="math inline">\(N\)</span> reactivos es igual a <span class="math inline">\(2\)</span> de <span class="math inline">\(N\)</span> productos, y <span class="math inline">\(6\)</span> de <span class="math inline">\(H\)</span> reactivos es igual a <span class="math inline">\(6\)</span> de <span class="math inline">\(H\)</span> productos, la ecuacion esta balanceada.</li>
+</ol>
+<p><strong>Ejercicios:</strong> Balancea las siguientes reacciones y escribe la descripcion textual de los reactivos y productos: - Ejercicio 1: Sintesis de cloruro de hidrogeno gaseoso: <span class="math display">\[H_2(g) + Cl_2(g) \rightarrow H{Cl}(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Formacion de agua: <span class="math display">\[H_2(g) + O_2(g) \rightarrow H_2O(l)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="contextualizacion-socioemocional-y-psicosocial" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Socioemocional y Psicosocial" data-number="5.11">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="5.11" data-anchor-id="contextualizacion-socioemocional-y-psicosocial"><span class="header-section-number">5.11</span> Contextualizacion - Socioemocional y Psicosocial</h2>
+<p>Al aprender a balancear ecuaciones quimicas, es muy comun cometer errores en los conteos de atomos o sentirse abrumado por intentar diferentes combinaciones. Esta reflexion aporta a tu competencia de <strong>Autonomia</strong> al recordarte que el error es una parte valiosa del proceso cientifico y que tu capacidad para resolver problemas complejos se fortalece con cada intento fallido.</p>
+<p><strong>Ejemplo:</strong> Balancear paso a paso la reaccion entre zinc (<span class="math inline">\(Zn\)</span>) y acido clorhidrico (<span class="math inline">\(HCl\)</span>) en medio acuoso para formar cloruro de zinc (<span class="math inline">\(ZnCl_2\)</span>) e hidrogeno gaseoso (<span class="math inline">\(H_2\)</span>): <span class="math display">\[Zn(s) + H{Cl}(ac) \rightarrow Zn{Cl}_2(ac) + H_2(g)\]</span></p>
+<ol type="1">
+<li><strong>Paso 1: Identificar datos.</strong> Contamos reactivos: <span class="math inline">\(1\)</span> de <span class="math inline">\(Zn\)</span>, <span class="math inline">\(1\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> de <span class="math inline">\(Cl\)</span>. Contamos productos: <span class="math inline">\(1\)</span> de <span class="math inline">\(Zn\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span>.</li>
+<li><strong>Paso 2: Ensayar coeficiente.</strong> Vemos que necesitamos duplicar <span class="math inline">\(H\)</span> y <span class="math inline">\(Cl\)</span> en reactivos. Colocamos coeficiente <span class="math inline">\(2\)</span> antes de <span class="math inline">\(HCl\)</span>: <span class="math display">\[Zn(s) + 2H{Cl}(ac) \rightarrow Zn{Cl}_2(ac) + H_2(g)\]</span></li>
+<li><strong>Paso 3: Validar.</strong> Recuento final: <span class="math inline">\(1\)</span> de <span class="math inline">\(Zn\)</span> en ambos lados, <span class="math inline">\(2\)</span> de <span class="math inline">\(H\)</span> en ambos lados y <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span> en ambos lados. El sistema esta balanceado y nos demuestra que la persistencia da resultados correctos.</li>
+</ol>
+<p><strong>Ejercicios:</strong> Balancea con paciencia las siguientes ecuaciones quimicas y describe brevemente como te sentiste durante el proceso: - Ejercicio 1: Reaccion entre magnesio y acido clorhidrico: <span class="math display">\[Mg(s) + H{Cl}(ac) \rightarrow Mg{Cl}_2(ac) + H_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span> - Ejercicio 2: Reaccion entre hierro y acido clorhidrico: <span class="math display">\[Fe(s) + H{Cl}(ac) \rightarrow Fe{Cl}_2(ac) + H_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="ejemplo-guiado-nivel-bajo" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Bajo" data-number="5.12">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="5.12" data-anchor-id="ejemplo-guiado-nivel-bajo"><span class="header-section-number">5.12</span> Ejemplo Guiado - Nivel Bajo</h2>
+<p><strong>Enunciado:</strong> Balancear la ecuacion quimica para la combustion de hidrogeno gaseoso (<span class="math inline">\(H_2\)</span>) en presencia de oxigeno (<span class="math inline">\(O_2\)</span>) para producir agua liquida (<span class="math inline">\(H_2O\)</span>): <span class="math display">\[H_2(g) + O_2(g) \rightarrow H_2O(l)\]</span></p>
+<p><strong>Justificacion Teorica:</strong> Se aplica la ley de la conservacion de la masa, la cual exige que el numero de atomos de cada elemento sea igual en ambos lados.</p>
+<p><strong>Ejecucion:</strong></p>
+<p><strong>Paso 1: Contar los atomos iniciales de cada elemento</strong> Reactivos: <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> atomo de <span class="math inline">\(O\)</span>. &lt;- (Muchos estudiantes cometen el error de asumir que la ecuacion esta balanceada porque el hidrogeno tiene el mismo numero, pero debemos revisar todos los elementos, y el oxigeno esta desbalanceado.)</p>
+<p><strong>Paso 2: Ajustar el oxigeno colocando un coeficiente en el producto</strong> Multiplicar el producto por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> <strong>(rojo)</strong> delante de <span class="math inline">\(H_2O\)</span>: <span class="math display">\[H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto cambia el conteo de productos a <span class="math inline">\(4\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(O\)</span>. &lt;- (Cuidado: recuerda que nunca debes cambiar los subindices. No escribas <span class="math inline">\(H_2O_2\)</span> para igualar el oxigeno, pues estarias convirtiendo agua en peroxido de hidrogeno, alterando su identidad.)</p>
+<p><strong>Paso 3: Ajustar el hidrogeno en los reactivos</strong> Multiplicar el reactivo <span class="math inline">\(H_2\)</span> por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> <strong>(rojo)</strong> delante de <span class="math inline">\(H_2\)</span>: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto nos da <span class="math inline">\(4\)</span> atomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> atomos de <span class="math inline">\(O\)</span> en reactivos. &lt;- (Al cambiar un coeficiente en reactivos, siempre debemos hacer un recuento final para verificar que no desbalanceamos otro elemento.)</p>
+<p><strong>Paso 4: Realizar la verificacion final de atomos</strong> Reactivos: <span class="math inline">\(2 \times 2 = 4\)</span> atomos de <span class="math inline">\(H\)</span>, <span class="math inline">\(1 \times 2 = 2\)</span> atomos de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(2 \times 2 = 4\)</span> atomos de <span class="math inline">\(H\)</span>, <span class="math inline">\(2 \times 1 = 2\)</span> atomos de <span class="math inline">\(O\)</span>. Los atomos estan balanceados.</p>
+<p><strong>Resultado:</strong> La ecuacion balanceada es <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span></p>
+</section>
+<section id="ejemplo-guiado-nivel-medio" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Medio" data-number="5.13">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="5.13" data-anchor-id="ejemplo-guiado-nivel-medio"><span class="header-section-number">5.13</span> Ejemplo Guiado - Nivel Medio</h2>
+<p><strong>Enunciado:</strong> Balancear la ecuacion quimica de descomposicion por calentamiento del clorato de potasio (<span class="math inline">\(KClO_3\)</span>) en cloruro de potasio (<span class="math inline">\(KCl\)</span>) y oxigeno gaseoso (<span class="math inline">\(O_2\)</span>): <span class="math display">\[K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)\]</span></p>
+<p><strong>Justificacion Teorica:</strong> Se debe encontrar el minimo comun multiplo para igualar el elemento oxigeno que tiene diferentes subindices impar y par en los dos lados de la ecuacion.</p>
+<p><strong>Ejecucion:</strong></p>
+<p><strong>Paso 1: Contar los atomos iniciales en reactivos y productos</strong> Reactivos: <span class="math inline">\(1\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(1\)</span> de <span class="math inline">\(Cl\)</span>, <span class="math inline">\(3\)</span> de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(1\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(1\)</span> de <span class="math inline">\(Cl\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(O\)</span>. &lt;- (El oxigeno tiene un numero impar a la izquierda y un numero par a la derecha. Ojo: para balancear esto mas facil, busca el minimo comun multiplo entre <span class="math inline">\(3\)</span> y <span class="math inline">\(2\)</span>, que es <span class="math inline">\(6\)</span>.)</p>
+<p><strong>Paso 2: Balancear el oxigeno usando coeficientes en ambos lados</strong> Colocar un coeficiente <span class="math inline">\(2\)</span> <strong>(azul)</strong> delante de <span class="math inline">\(K{Cl}O_3\)</span> y un coeficiente <span class="math inline">\(3\)</span> <strong>(azul)</strong> delante de <span class="math inline">\(O_2\)</span> para obtener <span class="math inline">\(6\)</span> atomos de oxigeno en ambos lados: <span class="math display">\[2K{Cl}O_3(s) \rightarrow K{Cl}(s) + 3O_2(g)\]</span> Ahora tenemos en reactivos <span class="math inline">\(2\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span> y <span class="math inline">\(6\)</span> de <span class="math inline">\(O\)</span>. En productos tenemos <span class="math inline">\(1\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(1\)</span> de <span class="math inline">\(Cl\)</span> y <span class="math inline">\(6\)</span> de <span class="math inline">\(O\)</span>. &lt;- (Cuidado: al colocar el coeficiente 2 delante del <span class="math inline">\(K{Cl}O_3\)</span>, tambien multiplicamos por 2 al potasio y al cloro, desbalanceandolos temporalmente.)</p>
+<p><strong>Paso 3: Balancear el potasio y el cloro en los productos</strong> Colocar un coeficiente <span class="math inline">\(2\)</span> <strong>(azul)</strong> delante de <span class="math inline">\(K{Cl}\)</span> en los productos: <span class="math display">\[2K{Cl}O_3(s) \rightarrow 2K{Cl}(s) + 3O_2(g)\]</span> Ahora tenemos en productos <span class="math inline">\(2\)</span> de <span class="math inline">\(K\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span>. &lt;- (Esta es la forma de resolver el desbalance provocado en el paso anterior, reajustando los coeficientes de los elementos restantes.)</p>
+<p><strong>Paso 4: Realizar la verificacion final</strong> Reactivos: <span class="math inline">\(2\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span>, <span class="math inline">\(6\)</span> de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(2\)</span> de <span class="math inline">\(K\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(Cl\)</span>, <span class="math inline">\(6\)</span> de <span class="math inline">\(O\)</span>. El balanceo de la ecuacion es correcto.</p>
+<p><strong>Resultado:</strong> La ecuacion balanceada es <span class="math display">\[2K{Cl}O_3(s) \rightarrow 2K{Cl}(s) + 3O_2(g)\]</span></p>
+</section>
+<section id="ejemplo-guiado-nivel-alto" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Alto" data-number="5.14">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="5.14" data-anchor-id="ejemplo-guiado-nivel-alto"><span class="header-section-number">5.14</span> Ejemplo Guiado - Nivel Alto</h2>
+<p><strong>Enunciado:</strong> Balancear la ecuacion de combustion completa de etano (<span class="math inline">\(C_2H_6\)</span>) con oxigeno molecular (<span class="math inline">\(O_2\)</span>) para producir dioxido de carbono (<span class="math inline">\(CO_2\)</span>) y vapor de agua (<span class="math inline">\(H_2O\)</span>): <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
+<p><strong>Justificacion Teorica:</strong> Se balancea primero el carbono y el hidrogeno, y finalmente el oxigeno. Si resulta un coeficiente fraccionario para el oxigeno, se multiplica toda la ecuacion por <span class="math inline">\(2\)</span> para obtener los coeficientes enteros mas simples.</p>
+<p><strong>Ejecucion:</strong></p>
+<p><strong>Paso 1: Contar los atomos iniciales de cada elemento</strong> Reactivos: <span class="math inline">\(2\)</span> de <span class="math inline">\(C\)</span>, <span class="math inline">\(6\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(1\)</span> de <span class="math inline">\(C\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(3\)</span> de <span class="math inline">\(O\)</span>. &lt;- (El oxigeno aparece en dos productos distintos, por lo que es mejor dejarlo de ultimo y enfocarse primero en el carbono y el hidrogeno.)</p>
+<p><strong>Paso 2: Balancear los atomos de carbono</strong> Colocar un coeficiente <span class="math inline">\(2\)</span> <strong>(verde)</strong> delante de <span class="math inline">\(CO_2\)</span> en los productos para igualar los <span class="math inline">\(2\)</span> carbonos de los reactivos: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + H_2O(g)\]</span> Ahora los productos tienen <span class="math inline">\(2\)</span> carbonos. &lt;- (Cuidado: esto altera los atomos de oxigeno en productos, que ahora suman <span class="math inline">\(2 \times 2 + 1 = 5\)</span> atomos.)</p>
+<p><strong>Paso 3: Balancear los atomos de hidrogeno</strong> Colocar un coeficiente <span class="math inline">\(3\)</span> <strong>(verde)</strong> delante de <span class="math inline">\(H_2O\)</span> en los productos para igualar los <span class="math inline">\(6\)</span> hidrogenos de los reactivos: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)\]</span> Productos: <span class="math inline">\(3 \times 2 = 6\)</span> atomos de <span class="math inline">\(H\)</span>. Reactivos: <span class="math inline">\(6\)</span> atomos de <span class="math inline">\(H\)</span>. &lt;- (Esto incrementa nuevamente el oxigeno en productos a <span class="math inline">\(2 \times 2 + 3 = 7\)</span> atomos.)</p>
+<p><strong>Paso 4: Ajustar el oxigeno usando un coeficiente fraccionario</strong> Como hay <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> en productos and solo un par (<span class="math inline">\(O_2\)</span>) en reactivos, colocamos el coeficiente fraccionario <span class="math inline">\(\frac{7}{2}\)</span> <strong>(verde)</strong> en reactivos: <span class="math display">\[C_2H_6(g) + \frac{7}{2}O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)\]</span> Esto nos da <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> a cada lado. &lt;- (Muchos estudiantes terminan aqui, pero las reglas quimicas exigen que los coeficientes sean numeros enteros simples.)</p>
+<p><strong>Paso 5: Multiplicar toda la ecuacion por dos para obtener numeros enteros</strong> Multiplicamos todos los coeficientes por <span class="math inline">\(2\)</span> para eliminar el denominador de la fraccion: <span class="math display">\[2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)\]</span> Esto cambia todos los coeficientes a numeros enteros. &lt;- (No olvides multiplicar TODOS los coeficientes de la ecuacion, no solo el de la fraccion, de lo contrario desbalancearias de nuevo los carbonos e hidrogenos.)</p>
+<p><strong>Paso 6: Recuento final de atomos</strong> Reactivos: <span class="math inline">\(2 \times 2 = 4\)</span> carbonos, <span class="math inline">\(2 \times 6 = 12\)</span> hidrogenos, <span class="math inline">\(7 \times 2 = 14\)</span> oxigenos. Productos: <span class="math inline">\(4 \times 1 = 4\)</span> carbonos, <span class="math inline">\(6 \times 2 = 12\)</span> hidrogenos, <span class="math inline">\(4 \times 2 + 6 \times 1 = 14\)</span> oxigenos. La ecuacion esta balanceada con los enteros mas simples.</p>
+<p><strong>Resultado:</strong> La ecuacion balanceada es <span class="math display">\[2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)\]</span></p>
+</section>
+<section id="nivel-bajo" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Bajo" data-number="5.15">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="5.15" data-anchor-id="nivel-bajo"><span class="header-section-number">5.15</span> Nivel Bajo</h2>
+<ul>
+<li><p>Complete la siguiente frase usando la palabra adecuada en el espacio en blanco:</p>
+<p>La ley de la <span class="math inline">\(\underline{\hspace{3cm}}\)</span> de la masa establece que durante un cambio quimico los atomos no se crean ni se destruyen.</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>Balancee la siguiente ecuacion quimica de oxidacion del hierro solido: <span class="math display">\[Fe(s) + O_2(g) \rightarrow Fe_2O_3(s)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+</ul>
+</section>
+<section id="nivel-medio" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Medio" data-number="5.16">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="5.16" data-anchor-id="nivel-medio"><span class="header-section-number">5.16</span> Nivel Medio</h2>
+<ul>
+<li><p>Balancee la ecuacion de combustion completa de gas propano (<span class="math inline">\(C_3H_8\)</span>): <span class="math display">\[C_3H_8(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>Balancee la reaccion entre aluminio metalico solido y acido clorhidrico acuoso: <span class="math display">\[Al(s) + H{Cl}(ac) \rightarrow Al{Cl}_3(ac) + H_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+</ul>
+</section>
+<section id="nivel-alto" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Alto" data-number="5.17">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="5.17" data-anchor-id="nivel-alto"><span class="header-section-number">5.17</span> Nivel Alto</h2>
+<ul>
+<li><p>Analice el siguiente caso de error: Un estudiante intenta balancear la ecuacion de formacion de agua escribiendo <span class="math display">\[H_2(g) + O_2(g) \rightarrow H_2O_2(l)\]</span>. Explique en detalle que regla fundamental del balanceo de ecuaciones se ha violado y que compuesto se formo en su lugar.</p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+<li><p>Balancee la reaccion de combustion completa de gas butano (<span class="math inline">\(C_4H_{10}\)</span>) con oxigeno gaseoso, asegurandose de que todos los coeficientes resultantes sean enteros: <span class="math display">\[C_4H_{10}(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p></li>
+</ul>
+</section>
+<section id="retos" class="level2 retos-box-heading unlisted retos-box retos-box-section" title="Retos" data-number="5.18">
+<h2 class="retos-box-heading unlisted anchored" data-number="5.18" data-anchor-id="retos"><span class="header-section-number">5.18</span> Retos</h2>
+<p>En equipos de <span class="math inline">\(3\)</span> personas, disenaran una infografia analogica en un pliego de cartulina titulada Codigos y Simbolos del Cambio Quimico que explique los siguientes requisitos:</p>
+<ul>
+<li>Una representacion grafica a escala molecular (dibujos de esferas de colores) que ilustre la diferencia entre un coeficiente y un subindice.</li>
+<li>El balanceo detallado paso a paso de la combustion de un combustible de su eleccion.</li>
+<li>Una explicacion del significado fisico de cada estado de agregacion <span class="math inline">\((s, l, g, ac)\)</span> con un dibujo cotidiano.</li>
+<li>El tiempo sugerido para completar este reto en el aula es de <span class="math inline">\(1\)</span> sesion de clase de <span class="math inline">\(60\)</span> minutos.</li>
+</ul>
+</section>
+<section id="aplicacion-vida-real" class="level2 aplicacion-box-heading unlisted aplicacion-box aplicacion-box-section" title="Aplicacion - Vida real" data-number="5.19">
+<h2 class="aplicacion-box-heading unlisted anchored" data-number="5.19" data-anchor-id="aplicacion-vida-real"><span class="header-section-number">5.19</span> Aplicacion - Vida real</h2>
+<p>La proxima vez que veas un automovil en la calle, recuerda que su tubo de escape tiene un dispositivo llamado convertidor catalitico. Este aparato toma gases muy toxicos como el monoxido de carbono (<span class="math inline">\(CO\)</span>) y los oxidos de nitrogeno (<span class="math inline">\(NO\)</span>), y los transforma en gases seguros mediante la reaccion: <span class="math display">\[2CO(g) + 2NO(g) \rightarrow 2CO_2(g) + N_2(g)\]</span>. Esta reaccion quimica balanceada muestra como el motor controla de forma estricta el numero de atomos que libera a la atmosfera, protegiendo el aire de nuestras ciudades colombianas.</p>
+</section>
+<section id="aplicacion-laboratorio" class="level2 aplicacion-box-heading unlisted aplicacion-box aplicacion-box-section" title="Aplicacion - Laboratorio" data-number="5.20">
+<h2 class="aplicacion-box-heading unlisted anchored" data-number="5.20" data-anchor-id="aplicacion-laboratorio"><span class="header-section-number">5.20</span> Aplicacion - Laboratorio</h2>
+<p><strong>Objetivo:</strong> Demostrar la ley de la conservacion de la masa mediante el balanceo y la medicion de masas en la reaccion entre vinagre y bicarbonato de sodio en un sistema cerrado.</p>
+<p><strong>Materiales:</strong> - <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) - <span class="math inline">\(50\,\text{mL}\)</span> de vinagre comercial (acido acetico, <span class="math inline">\(CH_3COOH\)</span>) - <span class="math inline">\(1\)</span> globo de latex mediano - <span class="math inline">\(1\)</span> botella plastica vacia y limpia de <span class="math inline">\(500\,\text{mL}\)</span> - <span class="math inline">\(1\)</span> balanza digital escolar - <span class="math inline">\(1\)</span> embudo pequeño de plastico o papel</p>
+<p><strong>Procedimiento:</strong> <em>Preparacion:</em> 1. <strong>Pesar bicarbonato.</strong> Pesar exactamente <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) en la balanza. 2. <strong>Preparar globo.</strong> Colocar el embudo en la boquilla del globo de latex. 3. <strong>Cargar globo.</strong> Verter los <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato con cuidado dentro del globo y retirar el embudo. 4. <strong>Medir vinagre.</strong> Medir <span class="math inline">\(50\,\text{mL}\)</span> de vinagre comercial en un vaso graduado. 5. <strong>Cargar botella.</strong> Verter los <span class="math inline">\(50\,\text{mL}\)</span> de vinagre dentro de la botella de plastico.</p>
+<p><em>Montaje y medicion:</em> 6. <strong>Ajustar boquilla.</strong> Estirar la boquilla del globo y colocarla en la boca de la botella sin dejar caer el solido. 7. <strong>Pesar sistema.</strong> Colocar la botella armada en la balanza y registrar la masa inicial del sistema.</p>
+<p><em>Reaccion y registro:</em> 8. <strong>Mezclar reactivos.</strong> Levantar el globo permitiendo que el bicarbonato caiga todo dentro de la botella con vinagre. 9. <strong>Observar burbujas.</strong> Esperar que termine la efervescencia y observar como se infla el globo con dioxido de carbono (<span class="math inline">\(CO_2\)</span>). 10. <strong>Pesar producto.</strong> Colocar la botella con el globo inflado en la balanza y registrar la masa final.</p>
+<p><strong>Resultados:</strong> | Variable medida | Masa registrada en gramos | Observaciones visuales | |—|—|—| | Masa inicial del sistema cerrado | <span class="math inline">\(\underline{\hspace{3cm}}\)</span> | Presencia de reactivos separados | | Masa final del sistema cerrado | <span class="math inline">\(\underline{\hspace{3cm}}\)</span> | Globo inflado con gas y liquido transparente |</p>
+<p><strong>Conclusion:</strong> Escribe si la masa vario durante el proceso y explica este resultado aplicando la ecuacion balanceada de la reaccion: <span class="math display">\[NaHCO_3(ac) + CH_3COOH(ac) \rightarrow CH_3COONa(ac) + H_2O(l) + CO_2(g)\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+<p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
+</section>
+<section id="evaluacion-tipo-icfes" class="level2 evaluacion-box-heading unlisted evaluacion-box evaluacion-box-section" title="Evaluacion - tipo ICFES" data-number="5.21">
+<h2 class="evaluacion-box-heading unlisted anchored" data-number="5.21" data-anchor-id="evaluacion-tipo-icfes"><span class="header-section-number">5.21</span> Evaluacion - tipo ICFES</h2>
+<p><strong>Pregunta 1</strong> — Nivel Bajo</p>
+<p><em>Contexto:</em> Una ecuacion quimica balanceada muestra las relaciones cuantitativas de los atomos en una reaccion. Considere la reaccion de sintesis de agua: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span></p>
+<p><em>Enunciado:</em> De acuerdo con la ley de la conservacion de la masa, ¿cual es el numero total de atomos de oxigeno presentes en el lado de los reactivos y de los productos, respectivamente?</p>
+<p>A. <span class="math inline">\(2\)</span> y <span class="math inline">\(2\)</span> B. <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span> C. <span class="math inline">\(2\)</span> y <span class="math inline">\(1\)</span> D. <span class="math inline">\(4\)</span> y <span class="math inline">\(2\)</span></p>
+<p><strong>Pregunta 2</strong> — Nivel Bajo</p>
+<p><em>Contexto:</em> Al balancear una ecuacion quimica, los quimicos colocan numeros enteros delante de las formulas quimicas (coeficientes) pero nunca modifican los numeros pequeños que estan dentro de las formulas (subindices).</p>
+<p><em>Enunciado:</em> ¿Por que no se deben alterar los subindices al balancear una ecuacion quimica?</p>
+<p>A. Porque al cambiar los subindices se cambia la identidad quimica de las sustancias. B. Porque al cambiar los subindices se destruye la masa total de los reactivos. C. Porque los subindices representan el estado fisico de los reactivos y productos. D. Porque los subindices solo pueden ser numeros impares menores que tres.</p>
+<p><strong>Pregunta 3</strong> — Nivel Medio</p>
+<p><em>Contexto:</em> En el laboratorio se calienta clorato de potasio (<span class="math inline">\(K{Cl}O_3\)</span>) para obtener cloruro de potasio (<span class="math inline">\(K{Cl}\)</span>) y oxigeno gaseoso (<span class="math inline">\(O_2\)</span>). La reaccion se representa por la siguiente ecuacion desbalanceada: <span class="math display">\[K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)\]</span></p>
+<p><em>Enunciado:</em> Al realizar el balanceo de la ecuacion con los coeficientes enteros mas pequeños posibles, ¿cuales son los coeficientes que deben preceder al <span class="math inline">\(K{Cl}O_3\)</span>, <span class="math inline">\(K{Cl}\)</span> y <span class="math inline">\(O_2\)</span>, respectivamente?</p>
+<p>A. <span class="math inline">\(2\)</span>, <span class="math inline">\(2\)</span> y <span class="math inline">\(3\)</span> B. <span class="math inline">\(1\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span> C. <span class="math inline">\(2\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(3\)</span> D. <span class="math inline">\(3\)</span>, <span class="math inline">\(3\)</span> y <span class="math inline">\(2\)</span></p>
+<p><strong>Pregunta 4</strong> — Nivel Medio</p>
+<p><em>Contexto:</em> Un estudiante quiere balancear la combustion de metano (<span class="math inline">\(CH_4\)</span>) y escribe la siguiente ecuacion balanceada: <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span>. Las masas molares de las sustancias son: <span class="math inline">\(CH_4 = 16.04\,\text{g/mol}\)</span>, <span class="math inline">\(O_2 = 32.00\,\text{g/mol}\)</span>, <span class="math inline">\(CO_2 = 44.01\,\text{g/mol}\)</span> y <span class="math inline">\(H_2O = 18.02\,\text{g/mol}\)</span>.</p>
+<p><em>Enunciado:</em> ¿Cual de los siguientes argumentos justifica correctamente que la ecuacion cumple con la ley de la conservacion de la masa?</p>
+<p>A. Porque la suma de las masas de los reactivos (<span class="math inline">\(16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}\)</span>) es igual a la suma de las masas de los productos (<span class="math inline">\(44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}\)</span>). B. Porque el numero de moleculas reactivas es exactamente igual al numero de moleculas de productos. C. Porque el carbono se transformo en oxigeno gaseoso manteniendo la misma cantidad de moles totales. D. Porque la masa molecular de cada sustancia individual permanece constante antes y despues del cambio quimico.</p>
+<p><strong>Pregunta 5</strong> — Nivel Alto</p>
+<p><em>Contexto:</em> La combustion del gas etano se representa por la ecuacion: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
+<p><em>Enunciado:</em> Si se balancea primero el carbono y el hidrogeno colocando coeficientes enteros en los productos, ¿cual es la fraccion adecuada que debe colocarse delante del oxigeno (<span class="math inline">\(O_2\)</span>) en los reactivos para balancear la ecuacion antes de multiplicar por dos?</p>
+<p>A. <span class="math inline">\(\frac{7}{2}\)</span> B. <span class="math inline">\(\frac{5}{2}\)</span> C. <span class="math inline">\(\frac{9}{2}\)</span> D. <span class="math inline">\(\frac{3}{2}\)</span></p>
+</section>
+<section id="socializacion" class="level2 evaluacion-box-heading unlisted evaluacion-box evaluacion-box-section" title="Socializacion" data-number="5.22">
+<h2 class="evaluacion-box-heading unlisted anchored" data-number="5.22" data-anchor-id="socializacion"><span class="header-section-number">5.22</span> Socializacion</h2>
+<p><strong>Pregunta 1</strong> — Nivel Bajo <em>Competencia:</em> Interpretacion <em>Afirmación:</em> El estudiante reconoce que el numero de atomos de cada elemento es igual en reactivos y productos en una ecuacion balanceada. <em>Evidencia:</em> Identifica el numero total de atomos de oxigeno en una ecuacion balanceada de formacion de agua. <em>Respuesta correcta:</em> A <em>Explicación:</em> En reactivos hay <span class="math inline">\(1 \times 2 = 2\)</span> atomos de oxigeno (provenientes de <span class="math inline">\(1O_2\)</span>) y en productos hay <span class="math inline">\(2 \times 1 = 2\)</span> atomos de oxigeno (provenientes de <span class="math inline">\(2H_2O\)</span>). Por lo tanto, la opcion A es la correcta. Las demas opciones representan conteos desbalanceados.</p>
+<p><strong>Pregunta 2</strong> — Nivel Bajo <em>Competencia:</em> Argumentacion <em>Afirmación:</em> El estudiante comprende la diferencia entre coeficientes y subindices en una ecuacion quimica. <em>Evidencia:</em> Justifica por que no se deben alterar los subindices durante el balanceo de una ecuacion quimica. <em>Respuesta correcta:</em> A <em>Explicación:</em> Modificar los subindices altera la composicion quimica de las sustancias, convirtiendolas en compuestos distintos (por ejemplo, cambiar <span class="math inline">\(H_2O\)</span> a <span class="math inline">\(H_2O_2\)</span> cambia agua por peroxido de hidrogeno). Por lo tanto, la opcion A es la correcta. Las demas opciones confunden la ley de la conservacion de la masa o el significado fisico de los estados.</p>
+<p><strong>Pregunta 3</strong> — Nivel Medio <em>Competencia:</em> Interpretacion <em>Afirmación:</em> El estudiante aplica el metodo de balanceo por tanteo a una reaccion de descomposicion. <em>Evidencia:</em> Determina los coeficientes estequiometricos minimos enteros para balancear la ecuacion de descomposicion de clorato de potasio. <em>Respuesta correcta:</em> A <em>Explicación:</em> Para balancear el oxigeno (<span class="math inline">\(3\)</span> a la izquierda, <span class="math inline">\(2\)</span> a la derecha), se usa el minimo comun multiplo <span class="math inline">\(6\)</span>, colocando <span class="math inline">\(2\)</span> delante de <span class="math inline">\(K{Cl}O_3\)</span> y <span class="math inline">\(3\)</span> delante de <span class="math inline">\(O_2\)</span>. Luego se balancea el potasio y el cloro colocando <span class="math inline">\(2\)</span> delante de <span class="math inline">\(K{Cl}\)</span>. Los coeficientes enteros minimos son <span class="math inline">\(2\)</span>, <span class="math inline">\(2\)</span> y <span class="math inline">\(3\)</span>. Por lo tanto, la opcion A es la correcta. Las demas opciones dejan la ecuacion desbalanceada.</p>
+<p><strong>Pregunta 4</strong> — Nivel Medio <em>Competencia:</em> Argumentacion <em>Afirmación:</em> El estudiante justifica el cumplimiento de la ley de conservacion de la masa usando datos de masa de reactivos y productos. <em>Evidencia:</em> Compara la suma de masas de reactivos con la de productos para demostrar la conservacion de la materia en una combustion. <em>Respuesta correcta:</em> A <em>Explicación:</em> La masa de los reactivos es <span class="math inline">\(16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}\)</span>, y la masa de los productos es <span class="math inline">\(44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}\)</span>. Al ser practicamente iguales (diferencia de redondeo de <span class="math inline">\(0.01\,\text{g}\)</span>), se demuestra la conservacion de la masa. La opcion B es incorrecta porque el numero de moleculas no tiene que conservarse. La opcion C y D contienen errores conceptuales.</p>
+<p><strong>Pregunta 5</strong> — Nivel Alto <em>Competencia:</em> Proposicion <em>Afirmación:</em> El estudiante propone el uso de coeficientes fraccionarios para balancear de forma intermedia una ecuacion de combustion. <em>Evidencia:</em> Determina la fraccion estequiometrica para el oxigeno en la combustion intermedia de etano. <em>Respuesta correcta:</em> A <em>Explicación:</em> Al balancear carbonos (<span class="math inline">\(2CO_2\)</span>) e hidrogenos (<span class="math inline">\(3H_2O\)</span>), sumamos <span class="math inline">\(2 \times 2 + 3 = 7\)</span> atomos de oxigeno en productos. Para igualarlos con el reactivo <span class="math inline">\(O_2\)</span>, se requiere la fraccion <span class="math inline">\(\frac{7}{2}\)</span>. Por lo tanto, la opcion A es la correcta. Las demas opciones no igualan el oxigeno.</p>
+</section>
+<section id="socioemocional" class="level2 socioemocional-box-heading unlisted socioemocional-box socioemocional-box-section" title="Socioemocional" data-number="5.23">
+<h2 class="socioemocional-box-heading unlisted anchored" data-number="5.23" data-anchor-id="socioemocional"><span class="header-section-number">5.23</span> Socioemocional</h2>
+<p>Al enfrentarte al balanceo de ecuaciones quimicas, es normal sentir frustracion si los numeros no coinciden en el primer intento. Esta reflexion aporta a tu competencia de <strong>Regulacion Emocional</strong> (Ley 2503 de 2025) al invitarte a respirar profundo y ver cada desbalance como una señal de que estas aprendiendo a ser mas observador, tal como los quimicos ensayan y ajustan sus formulas con paciencia para entender el orden de la naturaleza.</p>
+</section>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-brown2022chemistry" class="csl-entry" role="listitem">
+Brown, Theodore L., H. Eugene LeMay, Bruce E. Bursten, Catherine J. Murphy, Patrick M. Woodward, and Matthew W. Stoltzfus. 2022. <em>Chemistry: The Central Science</em>. 15th ed. Pearson.
+</div>
+<div id="ref-chang2017quimica" class="csl-entry" role="listitem">
+Chang, Raymond, and Kenneth A. Goldsby. 2017. <em>Química</em>. 12th ed. McGraw-Hill Interamericana.
+</div>
+<div id="ref-oriakhi2021chemistry" class="csl-entry" role="listitem">
+Oriakhi, Christopher O. 2021. <em>Chemistry in Quantitative Language: Fundamentals of General Chemistry Calculations</em>. Oxford University Press.
+</div>
+</div>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/camilotayac\.github\.io\/docere\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../06_Decimo/reactivo_limite.html" class="pagination-link" aria-label="Reactivo límite">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../bibliografia.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025, Camilo Tayac</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/escritura_quimica.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
