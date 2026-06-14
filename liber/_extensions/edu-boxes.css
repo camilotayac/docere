@@ -113,19 +113,20 @@ h3[class*="-box-heading"].collapsed::after {
 }
 
 /* Remove bottom padding of the outer box when collapsed to avoid empty space below the header */
-div[class*="-box"]:has(.collapse:not(.show)) {
+[class*="-box"]:has(.collapse:not(.show)) {
   padding-bottom: 0 !important;
 }
 
 /* Remove bottom margin of the heading when collapsed */
-div[class*="-box"]:has(.collapse:not(.show)) h2[class*="-box-heading"],
-div[class*="-box"]:has(.collapse:not(.show)) h3[class*="-box-heading"] {
+[class*="-box"]:has(.collapse:not(.show)) h2[class*="-box-heading"],
+[class*="-box"]:has(.collapse:not(.show)) h3[class*="-box-heading"] {
   margin-bottom: 0 !important;
 }
 
 /* Reduce margin-top when a box-section is the first element on the page (sits at the top of the content) */
-div[class*="-box-section"]:first-child,
-#title-block-header + div[class*="-box-section"],
-.quarto-title-block + div[class*="-box-section"] {
+[class*="-box-section"]:first-child,
+#title-block-header + [class*="-box-section"],
+.quarto-title-block + [class*="-box-section"],
+main > [class*="-box-section"]:first-of-type {
   margin-top: 0.5em !important;
 }
