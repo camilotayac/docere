@@ -3,24 +3,55 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: python3 -m pytest tests/ -v
+
+  render:
+    needs: lint-test
+    strategy:
+      matrix:
+        format: [html, pdf, epub]
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+      - run: quarto render --to ${{ matrix.format }}
+        working-directory: ./liber
+      - uses: actions/upload-artifact@v4
+        with:
+          name: book-${{ matrix.format }}
+          path: ./liber/_book
+
+  deploy:
+    needs: render
+    runs-on: ubuntu-latest
+    permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: actions/download-artifact@v4
         with:
-          tinytex: true
-      - run: quarto render --to html --to pdf --to epub
-        working-directory: ./liber
+          path: ./_book
+          merge-multiple: true
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./liber/_book
+          path: ./_book
       - id: deployment
         uses: actions/deploy-pages@v4

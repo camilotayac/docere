@@ -133,12 +133,13 @@ Estructura:
 
 - **Objetivo:** 1 linea.
 - **Materiales:** Lista de 2-6 materiales simples.
-- **Procedimiento:** 3-6 pasos numerados.
+- **Procedimiento:** 2-4 secciones (fases del experimento), cada una con
+  2-4 pasos numerados (total 8-12 pasos). Usar `*Seccion:*` para cada fase.
 - **Resultados:** Tabla Markdown o espacio en blanco para que el estudiante
   registre observaciones. Incluir encabezados de columna si hay multiples
   medidas. Dejar celdas vacias para que el estudiante complete.
 - **Conclusion:** 1-2 lineas explicando que se espera observar y que
-  significa. Agregar `\underline{\hspace{6cm}}` (3 lineas) para que el
+  significa. Agregar `$\underline{\hspace{6cm}}$` (3 lineas) para que el
   estudiante escriba su respuesta.
 
 ### Paso 4 — Verificar
@@ -170,9 +171,18 @@ Estructura:
 - {Material 3}
 
 **Procedimiento:**
+*Preparacion:*
 1. {Paso 1}
 2. {Paso 2}
+
+*Ensayo:*
 3. {Paso 3}
+4. {Paso 4}
+5. {Paso 5}
+
+*Registro:*
+6. {Paso 6}
+7. {Paso 7}
 
 **Resultados:**
 {Tabla o espacio para que el estudiante registre observaciones,

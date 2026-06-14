@@ -68,6 +68,7 @@ Docere/                              ← Raiz del monorepo
 │       ├── agente_retos.md              → Paso 7
 │       ├── agente_aplicacion.md         → Paso 8
 │       ├── agente_evaluacion.md         → Paso 8.5
+│       ├── agente_socializacion.md      → Paso 8.6
 │       ├── agente_socioemocional.md     → Paso 9
 │       ├── agente_qa.md                 → Paso 10 (Verificacion)
 │       ├── bibliografia.md              → Paso 0.5 (seleccion de refs)
@@ -460,47 +461,47 @@ El archivo `.qmd` generado sigue esta estructura:
 {Narrativa de 3-6 lineas}
 - {Pregunta 1: conexion personal referida al cuento}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 2: especulacion referida al cuento}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 3: contraste referido al cuento}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 4: reflexion referida al cuento}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
 - {Pregunta 1: saber previo}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 2: experiencia}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 3: especulacion}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Pregunta 4: curiosidad}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
@@ -514,32 +515,32 @@ hacia la teoria.}
 
 ::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
 {Teoria adaptada en pasos numerados verticales + ejemplo resuelto paso a paso
-+ 2 ejercicios con \\underline{\\hspace{6cm}} para respuesta.}
++ 2 ejercicios con $\\underline{\\hspace{6cm}}$ para respuesta.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Visual"}
 {Teoria con tabla Markdown y colores **(azul) (rojo) (verde)** + ejemplo con
-tabla y diagrama -> + 2 ejercicios con \\underline{\\hspace{6cm}}.}
+tabla y diagrama -> + 2 ejercicios con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
 {Teoria en oraciones cortas + ejemplo paso a paso + 2 ejercicios
-con \\underline{\\hspace{6cm}}.}
+con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
 **Regla fija:** {regla} + ejemplo literal + 2 ejercicios
-con \\underline{\\hspace{6cm}}.}
+con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
 [Formato accesible] + {teoria entre corchetes} + ejemplo + 2 ejercicios
-con \\underline{\\hspace{6cm}}.}
+con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
 {Frase de validacion} + {teoria con lenguaje de acompañamiento} + ejemplo
-+ 2 ejercicios con \\underline{\\hspace{6cm}}.}
++ 2 ejercicios con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
@@ -559,33 +560,33 @@ con \\underline{\\hspace{6cm}}.}
 ::: {.ejercicios-box title="Nivel Bajo"}
 - {Ejercicio de recuperacion}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {V/F o identificacion}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.ejercicios-box title="Nivel Medio"}
 - {Respuesta corta o aplicacion}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 - {Aplicacion simple}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.ejercicios-box title="Nivel Alto"}
 - {Problema abierto o analisis de errores}
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 
-  \\underline{\\hspace{6cm}}
+  $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.retos-box title="Retos"}
@@ -599,7 +600,7 @@ con \\underline{\\hspace{6cm}}.}
 ::: {.aplicacion-box title="Aplicacion - Laboratorio"}
 **Objetivo:** ... **Materiales:** ... **Procedimiento:**
 1. ... **Resultados:** {tabla Markdown} **Conclusion:**
-{Pregunta} \\underline{\\hspace{6cm}} \\underline{\\hspace{6cm}}
+{Pregunta} $\\underline{\\hspace{6cm}}$ $\\underline{\\hspace{6cm}}$
 :::
 
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}

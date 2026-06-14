@@ -1,209 +1,55 @@
-% =========================================================
-% PREÁMBULO QUARTO — Estilos educativos (tcolorbox)
-% =========================================================
-
 \usepackage{xcolor}
-\usepackage[most]{tcolorbox}
+\usepackage[many]{tcolorbox}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{tikz}
 \usepackage{pdfpages}
-\usetikzlibrary{babel}
-\usetikzlibrary{decorations.pathreplacing,positioning,fit,calc}
+
+% ---- Paleta de colores para cajas educativas ----
+% Formato: box-{nombre}-{h=fondo título, f=borde, c=fondo contenido}
+\definecolor{box-teoria-h}{HTML}{d6e4ff}
+\definecolor{box-teoria-f}{HTML}{2244aa}
+\definecolor{box-ideas-previas-h}{HTML}{fff0a0}
+\definecolor{box-ideas-previas-f}{HTML}{b8a800}
+\definecolor{box-sub-ideas-previas-f}{HTML}{a09000}
+\definecolor{box-contexto-h}{HTML}{c0f0c0}
+\definecolor{box-contexto-f}{HTML}{1a7a1a}
+\definecolor{box-sub-contexto-f}{HTML}{1a6a1a}
+\definecolor{box-caracterizados-h}{HTML}{e8d0ff}
+\definecolor{box-caracterizados-f}{HTML}{6a1a9a}
+\definecolor{box-sub-caracterizados-f}{HTML}{5a158a}
+\definecolor{box-retos-h}{HTML}{ffd8a0}
+\definecolor{box-retos-f}{HTML}{cc6600}
+\definecolor{box-socioemocional-h}{HTML}{ffd0e0}
+\definecolor{box-socioemocional-f}{HTML}{cc3366}
+\definecolor{box-ejercicios-h}{HTML}{ffbbbb}
+\definecolor{box-ejercicios-f}{HTML}{aa2222}
+\definecolor{box-aplicacion-h}{HTML}{ddc8ff}
+\definecolor{box-aplicacion-f}{HTML}{6a1a8a}
+\definecolor{box-sub-aplicacion-f}{HTML}{5a157a}
+\definecolor{box-ejemplo-h}{HTML}{d8d8d8}
+\definecolor{box-ejemplo-f}{HTML}{555555}
+\definecolor{box-evaluacion-h}{HTML}{b0e0d0}
+\definecolor{box-evaluacion-f}{HTML}{1a7a7a}
+\definecolor{box-sub-evaluacion-f}{HTML}{185a5a}
+\definecolor{box-notas-docente-h}{HTML}{b0e8ff}
+\definecolor{box-notas-docente-f}{HTML}{0088aa}
+
+\newtcolorbox{educativebox}[3][]{
+  breakable, enhanced, boxrule=0.8pt, arc=2mm,
+  left=2mm, right=2mm, top=1.5mm, bottom=1.5mm,
+  after skip=5mm,
+  colbacktitle=#2,
+  colframe=#3,
+  colback=#3!12,
+  coltitle=black,
+  fonttitle=\bfseries,
+  titlerule=1pt,
+  titlerule style=black!20,
+  #1
+}
 
 \AtBeginDocument{
   \includepdf[pages=-, fitpaper=true]{Portada.pdf}
   \pagestyle{plain}
-}
-
-% ---- Paleta de colores (matching HTML) ----
-% Fondos del título (pastel)
-\definecolor{teoriaHeading}{HTML}{d6e4ff}
-\definecolor{ideasPrevHeading}{HTML}{fff0a0}
-\definecolor{contextoHeading}{HTML}{c0f0c0}
-\definecolor{caracterizadosHeading}{HTML}{e8d0ff}
-\definecolor{retosHeading}{HTML}{ffd8a0}
-\definecolor{socioHeading}{HTML}{ffd0e0}
-\definecolor{ejerciciosHeading}{HTML}{ffbbbb}
-\definecolor{aplicacionHeading}{HTML}{ddc8ff}
-\definecolor{notasHeading}{HTML}{b0e8ff}
-\definecolor{ejemploHeading}{HTML}{d8d8d8}
-\definecolor{evaluacionHeading}{HTML}{b0e0d0}
-% Fondos del contenido (claro)
-\definecolor{teoriaContent}{HTML}{f0f4ff}
-\definecolor{ideasPrevContent}{HTML}{fffff0}
-\definecolor{contextoContent}{HTML}{f0fff0}
-\definecolor{caracterizadosContent}{HTML}{f8f0ff}
-\definecolor{retosContent}{HTML}{fff8f0}
-\definecolor{socioContent}{HTML}{fff0f5}
-\definecolor{ejerciciosContent}{HTML}{fff5f5}
-\definecolor{aplicacionContent}{HTML}{f8f0ff}
-\definecolor{notasContent}{HTML}{f0ffff}
-\definecolor{ejemploContent}{HTML}{f8f8f8}
-\definecolor{evaluacionContent}{HTML}{f0faf5}
-% Bordes
-\definecolor{teoriaFrame}{HTML}{2244aa}
-\definecolor{ideasPrevFrame}{HTML}{b8a800}
-\definecolor{contextoFrame}{HTML}{1a7a1a}
-\definecolor{subcontextoFrame}{HTML}{1a6a1a}
-\definecolor{caracterizadosFrame}{HTML}{6a1a9a}
-\definecolor{subcaracterizadosFrame}{HTML}{5a158a}
-\definecolor{retosFrame}{HTML}{cc6600}
-\definecolor{socioFrame}{HTML}{cc3366}
-\definecolor{ejerciciosFrame}{HTML}{aa2222}
-\definecolor{aplicacionFrame}{HTML}{6a1a8a}
-\definecolor{subaplicacionFrame}{HTML}{5a157a}
-\definecolor{notasFrame}{HTML}{0088aa}
-\definecolor{ejemploFrame}{HTML}{555555}
-\definecolor{evaluacionFrame}{HTML}{1a7a7a}
-\definecolor{subevaluacionFrame}{HTML}{185a5a}
-
-% Estilo base para todas las cajas didácticas
-\tcbset{
- eduBase/.style={
- breakable,
- enhanced,
- boxrule=0.8pt,
- arc=2mm,
- left=2mm,
- right=2mm,
- top=1.5mm,
- bottom=1.5mm,
- after skip=5mm,
- coltitle=black,
- fonttitle=\bfseries,
- titlerule=1pt,
- titlerule style=black!20
- }
-}
-
-% Cajas principales
-\newtcolorbox{teoriabox}[1][]{
- eduBase,
- colback=teoriaContent,
- colframe=teoriaFrame,
- colbacktitle=teoriaHeading,
- title=Teor\'{i}a,
- #1
-}
-\newtcolorbox{contextobox}[1][]{
- eduBase,
- colback=contextoContent,
- colframe=contextoFrame,
- colbacktitle=contextoHeading,
- title=Contextualizaci\'{o}n,
- #1
-}
-\newtcolorbox{subcontextobox}[1][]{
- eduBase,
- colback=contextoContent,
- colframe=subcontextoFrame,
- colbacktitle=contextoHeading,
- title=Subsecci\'{o}n,
- #1
-}
-\newtcolorbox{caracterizacioncaracterizadosbox}[1][]{
- eduBase,
- colback=caracterizadosContent,
- colframe=caracterizadosFrame,
- colbacktitle=caracterizadosHeading,
- title=Contextualizaci\'{o}n para caracterizados,
- #1
-}
-\newtcolorbox{subcaracterizadosbox}[1][]{
- eduBase,
- colback=caracterizadosContent,
- colframe=subcaracterizadosFrame,
- colbacktitle=caracterizadosHeading,
- title=Subsecci\'{o}n,
- #1
-}
-\newtcolorbox{retosbox}[1][]{
- eduBase,
- colback=retosContent,
- colframe=retosFrame,
- colbacktitle=retosHeading,
- title=Retos,
- #1
-}
-\newtcolorbox{ideaspreviasbox}[1][]{
- eduBase,
- colback=ideasPrevContent,
- colframe=ideasPrevFrame,
- colbacktitle=ideasPrevHeading,
- title=Ideas previas,
- #1
-}
-\newtcolorbox{subideaspreviasbox}[1][]{
- eduBase,
- colback=ideasPrevContent,
- colframe=ideasPrevFrame,
- colbacktitle=ideasPrevHeading,
- title=Subsecci\'{o}n,
- #1
-}
-\newtcolorbox{socioemocionalbox}[1][]{
- eduBase,
- colback=socioContent,
- colframe=socioFrame,
- colbacktitle=socioHeading,
- title=Socioemocional,
- #1
-}
-\newtcolorbox{ejerciciosbox}[1][]{
- eduBase,
- colback=ejerciciosContent,
- colframe=ejerciciosFrame,
- colbacktitle=ejerciciosHeading,
- title=Ejercicios,
- #1
-}
-\newtcolorbox{aplicacionbox}[1][]{
- eduBase,
- colback=aplicacionContent,
- colframe=aplicacionFrame,
- colbacktitle=aplicacionHeading,
- title=Aplicaci\'{o}n,
- #1
-}
-\newtcolorbox{subaplicacionbox}[1][]{
- eduBase,
- colback=aplicacionContent,
- colframe=subaplicacionFrame,
- colbacktitle=aplicacionHeading,
- title=Subsecci\'{o}n,
- #1
-}
-\newtcolorbox{ejemplobox}[1][]{
- eduBase,
- colback=ejemploContent,
- colframe=ejemploFrame,
- colbacktitle=ejemploHeading,
- title=Ejemplo,
- #1
-}
-\newtcolorbox{notasdocente}[1][]{
- eduBase,
- colback=notasContent,
- colframe=notasFrame,
- colbacktitle=notasHeading,
- title=Notas para el docente,
- #1
-}
-\newtcolorbox{evaluacionbox}[1][]{
- eduBase,
- colback=evaluacionContent,
- colframe=evaluacionFrame,
- colbacktitle=evaluacionHeading,
- title=Evaluaci\'{o}n,
- #1
-}
-\newtcolorbox{subevaluacionbox}[1][]{
- eduBase,
- colback=evaluacionContent,
- colframe=subevaluacionFrame,
- colbacktitle=evaluacionHeading,
- title=Socializaci\'{o}n,
- #1
 }

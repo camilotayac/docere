@@ -1,0 +1,15 @@
+---
+title: Mala Clase
+---
+
+::: {.teoria-box title="Teoria"}
+Contenido [{nota para docente}]
+:::
+
+::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
+**Pregunta 1** - Nivel Bajo
+
+*Enunciado:* {text without blank line}
+A. Opcion A
+B. Opcion B
+:::

@@ -1,4 +1,8 @@
-# Agente de Estilo — Guía de Formato LaTeX Book para Planes de Clase
+# Agente de Estilo — Guia de Formato LaTeX Book para Planes de Clase
+
+> **Referencia**: Las reglas globales estan en `_reglas_comunes.md`.
+> Este archivo detalla las reglas especificas de estilo LaTeX que
+> complementan las reglas comunes.
 
 ## Rol
 
@@ -90,7 +94,20 @@ Reglas:
   descriptivo en español junto a la fórmula LaTeX, ej:
   `$Fe + S \rightarrow FeS$ (hierro más azufre produce sulfuro de hierro)`.
 
-### 5. Pasos numerados
+### 5. Símbolos y fórmulas químicas
+
+- **TODO símbolo de elemento químico** debe ir en LaTeX inline `$...$`:
+  - `$Fe$`, `$Na$`, `$Cl$`, `$H$`, `$O$`, `$C$`, `$N$`, `$Ca$`, `$Mg$`, `$S$`, `$P$`, `$K$`
+  - Incluso cuando aparece solo en el texto: "el $Fe$ se oxida", "$NaCl$ es una sal"
+  - Prohibido escribir elementos como texto plano: `Fe`, `Na`, `Cl`, `H2O`, `CO2`
+- Subíndices con `_`: `$H_2O$`, `$C_6H_{12}O_6$`, `$Fe_2O_3$`, `$H_2SO_4$`
+- Superíndices (cargas iónicas, isótopos): `$Ca^{2+}$`, `$SO_4^{2-}$`, `$^{14}C$`, `$^{235}U$`
+- Estados de agregación: `$(s)$`, `$(l)$`, `$(g)$`, `$(ac)$` dentro del math mode
+- Ecuaciones completas en display `$$...$$`: `$$2H_2 + O_2 \rightarrow 2H_2O$$`
+- Prohibido usar flecha Unicode `→` fuera de LaTeX; usar `\rightarrow`
+- Prohibido usar subíndices/superíndices Unicode (`₂`, `³`, `²⁺`) fuera de LaTeX
+
+### 6. Pasos numerados
 
 - Los pasos deben formatearse como **lista numerada Markdown**:
   ```
@@ -103,7 +120,7 @@ Reglas:
 - El texto en negrita después del número es la acción/operación.
 - Después de la negrita va un punto y el resto es explicación.
 
-### 6. Espacios de respuesta
+### 7. Espacios de respuesta
 
 - Toda pregunta y ejercicio debe tener espacio para que el estudiante
   escriba su respuesta.
@@ -126,7 +143,7 @@ Ejemplo correcto:
   $$\underline{\hspace{6cm}}$$
 ```
 
-### 7. Estructura general
+### 8. Estructura general
 
 - Todo el contenido debe estar dentro de `::: {.tipo-box title="Título"}`.
 - No debe haber texto fuera de los boxes.
@@ -149,5 +166,9 @@ Ejemplo correcto:
 | Cálculo paso a paso | `$\frac{55.85}{55.85} = 1.00$ mol` | `55.85 ÷ 55.85 = 1.00 mol` |
 | División/desigualdad | `\frac{}{}`, `<`, `>` en LaTeX | `÷`, `<`, `>` fuera de LaTeX |
 | Pasos | `1. **Acción.** Explicación.` | `**1.** a **2.** b **3.** c` |
-| Espacio respuesta | `\underline{\hspace{6cm}}` | Nada |
+| Espacio respuesta | `$$\underline{\hspace{6cm}}$$` | `\underline{\hspace{6cm}}` sin `$$` |
+| Elemento químico | `$Fe$`, `$Na$`, `$O$`, `$C$` | `Fe`, `Na`, `O`, `C` |
+| Fórmula química | `$H_2O$`, `$NaCl$`, `$H_2SO_4$` | `H2O`, `NaCl`, `H2SO4` |
+| Ecuación química | `$$2H_2 + O_2 \rightarrow 2H_2O$$` | `2H2 + O2 -> 2H2O` |
+| Ion/isótopo | `$Ca^{2+}$`, `$^{14}C$` | `Ca2+`, `Ca+2`, `14C` |
 | HTML | `**texto**` | `<span> <div> <style>` |

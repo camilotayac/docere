@@ -62,16 +62,7 @@ estructuras cognitivas existentes.
 
 ---
 
-## Entrada de Retroalimentación (Opcional)
-
-Si el orquestador incluye un bloque `## Feedback de QA` al final de este
-prompt, el agente DEBE:
-1. Leer los errores reportados que le corresponden (indicados en el campo
-   "Agente" del feedback).
-2. Identificar qué parte de su output generó el error.
-3. Corregir específicamente esa parte, sin modificar lo que ya está correcto.
-4. Si no hay feedback o no hay errores asignados a este agente, comportarse
-  normalmente.
+> **Retroalimentacion:** Ver `_qa_feedback_template.md` para el manejo de feedback de QA.
 
 ---
 
@@ -179,7 +170,7 @@ accion. Termina con una frase-puente hacia la teoria.}
 - El caso de contextualizacion NO debe contener terminologia tecnica.
 - Cada bloque de preguntas debe ir como lista con `- ` al inicio.
 - **Espacios de respuesta:** despues de cada pregunta agregar
-  `\underline{\hspace{6cm}}` en lineas separadas (indentadas 2 espacios).
+  `$\underline{\hspace{6cm}}$` en lineas separadas (indentadas 2 espacios).
   Cada pregunta debe tener al menos 2 lineas de subrayado.
 - No incluir emojis.
 

@@ -1,44 +1,24 @@
--- edu-boxes.lua
--- Convierte fenced divs con clases específicas a entornos tcolorbox en PDF
--- y aplica clases CSS personalizadas en HTML.
--- También genera headings (h2/h3) para que los boxes aparezcan en el TOC.
-
-local mapping = {
-  ['teoria-box']              = 'teoriabox',
-  ['ideas-previas-box']       = 'ideaspreviasbox',
-  ['sub-ideas-previas-box']   = 'subideaspreviasbox',
-  ['contexto-box']            = 'contextobox',
-  ['sub-contexto-box']        = 'subcontextobox',
-  ['caracterizados-box']      = 'caracterizacioncaracterizadosbox',
-  ['sub-caracterizados-box']  = 'subcaracterizadosbox',
-  ['retos-box']               = 'retosbox',
-  ['socioemocional-box']      = 'socioemocionalbox',
-  ['ejercicios-box']          = 'ejerciciosbox',
-  ['aplicacion-box']          = 'aplicacionbox',
-  ['sub-aplicacion-box']      = 'subaplicacionbox',
-  ['ejemplo-box']             = 'ejemplobox',
-  ['evaluacion-box']          = 'evaluacionbox',
-  ['sub-evaluacion-box']      = 'subevaluacionbox',
-  ['notas-docente-box']       = 'notasdocente',
+local boxes = {
+  ['teoria-box']             = { h='box-teoria-h',             f='box-teoria-f',             heading='Teoría', sub=false },
+  ['ideas-previas-box']      = { h='box-ideas-previas-h',      f='box-ideas-previas-f',      heading='Ideas previas', sub=false },
+  ['sub-ideas-previas-box']  = { h='box-ideas-previas-h',      f='box-sub-ideas-previas-f',  heading='', sub=true },
+  ['contexto-box']           = { h='box-contexto-h',           f='box-contexto-f',           heading='Contextualización', sub=false },
+  ['sub-contexto-box']       = { h='box-contexto-h',           f='box-sub-contexto-f',       heading='', sub=true },
+  ['caracterizados-box']     = { h='box-caracterizados-h',     f='box-caracterizados-f',     heading='Contextualización para caracterizados', sub=false },
+  ['sub-caracterizados-box'] = { h='box-caracterizados-h',     f='box-sub-caracterizados-f', heading='', sub=true },
+  ['retos-box']              = { h='box-retos-h',              f='box-retos-f',              heading='Retos', sub=false },
+  ['socioemocional-box']     = { h='box-socioemocional-h',     f='box-socioemocional-f',     heading='Socioemocional', sub=false },
+  ['ejercicios-box']         = { h='box-ejercicios-h',         f='box-ejercicios-f',         heading='Ejercicios', sub=false },
+  ['aplicacion-box']         = { h='box-aplicacion-h',         f='box-aplicacion-f',         heading='Aplicación', sub=false },
+  ['sub-aplicacion-box']     = { h='box-aplicacion-h',         f='box-sub-aplicacion-f',     heading='', sub=true },
+  ['ejemplo-box']            = { h='box-ejemplo-h',            f='box-ejemplo-f',            heading='Ejemplo', sub=false },
+  ['evaluacion-box']         = { h='box-evaluacion-h',         f='box-evaluacion-f',         heading='Evaluación', sub=false },
+  ['sub-evaluacion-box']     = { h='box-evaluacion-h',         f='box-sub-evaluacion-f',     heading='Socialización', sub=true },
+  ['notas-docente-box']      = { h='box-notas-docente-h',      f='box-notas-docente-f',      heading='Notas para el docente', sub=false },
 }
 
-local box_headings = {
-  ['teoria-box']             = 'Teoría',
-  ['ideas-previas-box']      = 'Ideas previas',
-  ['contexto-box']           = 'Contextualización',
-  ['caracterizados-box']     = 'Contextualización para caracterizados',
-  ['retos-box']              = 'Retos',
-  ['socioemocional-box']     = 'Socioemocional',
-  ['ejercicios-box']         = 'Ejercicios',
-  ['aplicacion-box']         = 'Aplicación',
-  ['ejemplo-box']            = 'Ejemplo',
-  ['evaluacion-box']         = 'Evaluación',
-  ['sub-evaluacion-box']     = 'Socialización',
-  ['notas-docente-box']      = 'Notas para el docente',
-}
-
--- Genera un ID de ancla válido desde el texto del título
 local function slugify(text)
+  if text == '' then return '' end
   return text:lower()
     :gsub('[áàäâã]', 'a'):gsub('[éèëê]', 'e')
     :gsub('[íìïî]', 'i'):gsub('[óòöôõ]', 'o')
@@ -47,39 +27,37 @@ local function slugify(text)
     :gsub('%-+', '-'):gsub('^%-+', ''):gsub('%-+$', '')
 end
 
-local function make_heading(div, cls, text)
-  local title_text = div.attributes['title'] or text or ''
-  local heading_class = cls .. '-heading'
+local function make_heading(div, cls, box)
+  local title_text = div.attributes['title'] or box.heading or ''
   local anchor_id = slugify(title_text)
-  local attr = pandoc.Attr(anchor_id, {heading_class}, {})
-  if cls:match('^sub%-') then
-    return pandoc.Header(3, {pandoc.Str(title_text)}, attr)
-  end
-  return pandoc.Header(2, {pandoc.Str(title_text)}, attr)
+  local heading_cls = cls .. '-heading'
+  local attr = pandoc.Attr(anchor_id, {heading_cls, 'unlisted'}, {})
+  local level = box.sub and 3 or 2
+  return pandoc.Header(level, {pandoc.Str(title_text)}, attr)
 end
 
 function Div(div)
   for _, cls in ipairs(div.classes) do
-    local env = mapping[cls]
-    if env then
-      local heading = make_heading(div, cls, box_headings[cls])
+    local box = boxes[cls]
+    if box then
+      local title = div.attributes['title'] or box.heading or ''
 
       if FORMAT:match('latex') then
-        local title = div.attributes['title']
-        local begin_cmd
-        if title then
-          begin_cmd = '\\begin{' .. env .. '}[title={' .. title .. '}]'
-        else
-          begin_cmd = '\\begin{' .. env .. '}'
-        end
-        local begin_raw = pandoc.RawBlock('latex', begin_cmd)
-        local end_raw   = pandoc.RawBlock('latex', '\\end{' .. env .. '}')
+        local cmd = string.format(
+          '\\begin{educativebox}[title={%s}]{%s}{%s}',
+          title, box.h, box.f
+        )
+        local begin_raw = pandoc.RawBlock('latex', cmd)
+        local end_raw = pandoc.RawBlock('latex', '\\end{educativebox}')
         div.content:insert(1, begin_raw)
         div.content:insert(end_raw)
-        return div.content  -- Solo la caja, el título ya está en el tcolorbox
+        return div.content
       end
 
-      return {heading, div}
+      local heading = make_heading(div, cls, box)
+      div.classes:insert(cls .. '-section')
+      div.content:insert(1, heading)
+      return div
     end
   end
 end

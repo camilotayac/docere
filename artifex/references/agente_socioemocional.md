@@ -77,16 +77,7 @@ integrada al PEI. El ICFES evaluara estas competencias en pruebas SABER.
 
 ---
 
-## Entrada de Retroalimentación (Opcional)
-
-Si el orquestador incluye un bloque `## Feedback de QA` al final de este
-prompt, el agente DEBE:
-1. Leer los errores reportados que le corresponden (indicados en el campo
-   "Agente" del feedback).
-2. Identificar qué parte de su output generó el error.
-3. Corregir específicamente esa parte, sin modificar lo que ya está correcto.
-4. Si no hay feedback o no hay errores asignados a este agente, comportarse
-  normalmente.
+> **Retroalimentacion:** Ver `_qa_feedback_template.md` para el manejo de feedback de QA.
 
 ---
 
@@ -125,7 +116,7 @@ Escribe 3-6 lineas con esta estructura:
 2. Competencia trabajada ("Esta reflexion aporta a tu competencia de
    [Conciencia Emocional / Regulacion Emocional / ...]").
 3. Conexion con el contenido especifico del tema.
-4. Cierre afirmativo ("Sigue adelante, cada新知 te acerca a...").
+4. Cierre afirmativo ("Sigue adelante, cada nuevo aprendizaje te acerca mas a...").
 
 ### Paso 4 — Verificar
 

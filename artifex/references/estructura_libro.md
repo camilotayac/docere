@@ -19,58 +19,13 @@ Todos los archivos están en `liber/<carpeta>/<archivo>.qmd` relativo a la raíz
 
 ## Formato de cada archivo
 
-Cada .qmd contiene bloques educativos secuenciales usando la convención de boxes:
+Cada .qmd contiene bloques educativos secuenciales usando la convención de boxes.
+La lista completa de secciones (23 bloques, 11 tipos) y sus titulos exactos esta
+definida en `agente_qa.md` — **ese es el unico source of truth** para todos los
+agentes del pipeline.
 
-```markdown
-::: {.teoria-box title="Teoria"}
-:::
-::: {.ideas-previas-box title="Ideas Previas - Cuento"}
-:::
-::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
-:::
-::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
-:::
-::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Visual"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
-:::
-::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
-:::
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
-:::
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
-:::
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
-:::
-::: {.ejercicios-box title="Nivel Bajo"}
-:::
-::: {.ejercicios-box title="Nivel Medio"}
-:::
-::: {.ejercicios-box title="Nivel Alto"}
-:::
-::: {.retos-box title="Retos"}
-:::
-::: {.aplicacion-box title="Aplicacion - Vida real"}
-:::
-::: {.aplicacion-box title="Aplicacion - Laboratorio"}
-:::
-::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
-:::
-::: {.evaluacion-box title="Socializacion"}
-:::
-::: {.socioemocional-box title="Socioemocional"}
-:::
-```
-
-No todos los archivos contienen todos los boxes; algunos son parciales o usan variantes (existen boxes de nivel básico, medio, alto de ejemplo en lugar de los tres separados, etc.).
+> **Nota:** Las reglas de formato estan en `_reglas_comunes.md`. No todos los
+> archivos .qmd contienen todos los boxes; algunos son parciales.
 
 ## Uso en el proceso
 

@@ -2,6 +2,7 @@ _book/
 .quarto/
 site_libs/
 __pycache__/
+**/__pycache__/
 *.pyc
 .DS_Store
 *.log
@@ -11,3 +12,19 @@ __pycache__/
 Bibliotheca/**/*.pdf
 Bibliotheca/**/*.epub
 Bibliotheca/**/.toc_cache/
+
+# Directorio compartido de output
+output/
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+/.luarc.json

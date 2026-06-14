@@ -1,50 +1,56 @@
-/* ============================================================
-   EDU-BOXES — Estilos para cajas educativas (HTML)
-   ============================================================ */
-
-/* ---- La <section> de Quarto actúa como el recuadro unificado ---- */
-/* overflow:hidden + border-radius recorta los fondos del heading y el contenido */
-section:has(> h2[class*="-box-heading"]),
-section:has(> h3[class*="-box-heading"]) {
-  overflow: hidden !important;
-  border-radius: 6px !important;
-  margin-top: 2em !important;
-  padding: 0 !important;
+/* ---- Contenedor unificado (tiene clases .teoria-box y .teoria-box-section) ---- */
+.teoria-box-section,
+.ideas-previas-box-section,
+.sub-ideas-previas-box-section,
+.contexto-box-section,
+.sub-contexto-box-section,
+.caracterizados-box-section,
+.sub-caracterizados-box-section,
+.retos-box-section,
+.socioemocional-box-section,
+.ejercicios-box-section,
+.aplicacion-box-section,
+.sub-aplicacion-box-section,
+.notas-docente-box-section,
+.ejemplo-box-section,
+.evaluacion-box-section,
+.sub-evaluacion-box-section {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 2em;
   border-style: solid;
   border-width: 1.5px;
 }
 
-/* Borde de la sección por tipo de caja */
-section:has(> .teoria-box-heading)             { border-color: #2244aa; }
-section:has(> .ideas-previas-box-heading)      { border-color: #b8a800; }
-section:has(> .sub-ideas-previas-box-heading)  { border-color: #a09000; }
-section:has(> .contexto-box-heading)           { border-color: #1a7a1a; }
-section:has(> .sub-contexto-box-heading)       { border-color: #1a6a1a; }
-section:has(> .caracterizados-box-heading)     { border-color: #6a1a9a; }
-section:has(> .sub-caracterizados-box-heading) { border-color: #5a158a; }
-section:has(> .retos-box-heading)              { border-color: #cc6600; }
-section:has(> .socioemocional-box-heading)     { border-color: #cc3366; }
-section:has(> .ejercicios-box-heading)         { border-color: #aa2222; }
-section:has(> .aplicacion-box-heading)         { border-color: #6a1a8a; }
-section:has(> .sub-aplicacion-box-heading)     { border-color: #5a157a; }
-section:has(> .notas-docente-box-heading)      { border-color: #0088aa; }
-section:has(> .ejemplo-box-heading)            { border-color: #555555; }
-section:has(> .evaluacion-box-heading)        { border-color: #1a7a7a; }
-section:has(> .sub-evaluacion-box-heading)    { border-color: #185a5a; }
+.teoria-box-section             { border-color: #2244aa; }
+.ideas-previas-box-section      { border-color: #b8a800; }
+.sub-ideas-previas-box-section  { border-color: #a09000; }
+.contexto-box-section           { border-color: #1a7a1a; }
+.sub-contexto-box-section       { border-color: #1a6a1a; }
+.caracterizados-box-section     { border-color: #6a1a9a; }
+.sub-caracterizados-box-section { border-color: #5a158a; }
+.retos-box-section              { border-color: #cc6600; }
+.socioemocional-box-section     { border-color: #cc3366; }
+.ejercicios-box-section         { border-color: #aa2222; }
+.aplicacion-box-section         { border-color: #6a1a8a; }
+.sub-aplicacion-box-section     { border-color: #5a157a; }
+.notas-docente-box-section      { border-color: #0088aa; }
+.ejemplo-box-section            { border-color: #555555; }
+.evaluacion-box-section         { border-color: #1a7a7a; }
+.sub-evaluacion-box-section     { border-color: #185a5a; }
 
-/* ---- HEADING: fila superior (título) ---- */
+/* ---- HEADING ---- */
 h2[class*="-box-heading"],
 h3[class*="-box-heading"] {
-  margin: 0 !important;
-  padding: 0.5em 1em !important;
-  border-radius: 0 !important;
-  border: none !important;
-  font-size: 1em !important;
+  margin: -0.9em -1.1em 0.9em -1.1em;
+  padding: 0.5em 1em;
+  border-radius: 0;
+  border: none;
+  font-size: 1em;
   font-weight: 700;
-  color: #1a1a1a !important;
+  color: #1a1a1a;
 }
 
-/* Fondo pastel del título por tipo */
 .teoria-box-heading            { background-color: #d6e4ff; }
 .ideas-previas-box-heading     { background-color: #fff0a0; }
 .sub-ideas-previas-box-heading { background-color: #fff0a0; }
@@ -62,7 +68,7 @@ h3[class*="-box-heading"] {
 .evaluacion-box-heading        { background-color: #b0e0d0; }
 .sub-evaluacion-box-heading    { background-color: #b0e0d0; }
 
-/* ---- CUADRO DE CONTENIDO: fila inferior ---- */
+/* ---- CONTENIDO ---- */
 .teoria-box, .ideas-previas-box, .sub-ideas-previas-box,
 .contexto-box, .sub-contexto-box,
 .caracterizados-box, .sub-caracterizados-box,
@@ -71,12 +77,8 @@ h3[class*="-box-heading"] {
 .notas-docente-box, .ejemplo-box, .evaluacion-box,
 .sub-evaluacion-box {
   padding: 0.9em 1.1em;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  border: none !important;
 }
 
-/* Fondo claro del contenido por tipo */
 .teoria-box            { background-color: #f0f4ff; }
 .ideas-previas-box     { background-color: #fffff0; }
 .sub-ideas-previas-box { background-color: #fffff5; }

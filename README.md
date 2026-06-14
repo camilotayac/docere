@@ -5,6 +5,7 @@
 <div align="center">
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-camilotayac.github.io/docere-2ea44f?style=flat&logo=githubpages&logoColor=white)](https://camilotayac.github.io/docere)
+[![tests](https://img.shields.io/github/actions/workflow/status/camilotayac/docere/publish.yml?label=tests&logo=github)](https://github.com/camilotayac/docere/actions)
 [![Quarto](https://img.shields.io/badge/Quarto-1.4%2B-39729E?style=flat&logo=quarto&logoColor=white)]()
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)]()
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat)]()
@@ -145,7 +146,7 @@ Docere/
 git clone git@github.com:camilotayac/docere.git
 cd docere
 
-pip install pymupdf python-docx pyyaml
+pip install -r requirements.txt
 
 quarto --version   # verificar instalación
 ```
@@ -237,7 +238,7 @@ quarto render liber/ --to html   # solo HTML
 
 ## Recognitiō — Validación (QA)
 
-El Paso 10 ejecuta `validate_output.py` con **15 checks mecánicos** agrupados
+El Paso 10 ejecuta `validate_output.py` con **25 checks mecánicos** agrupados
 por categoría:
 
 ### Estructura general
@@ -254,26 +255,44 @@ por categoría:
 | 5 | `check_no_todas_las_anteriores` | Opciones "Todas las anteriores" / "Ninguna de las anteriores" |
 | 6 | `check_no_emojis` | Emojis en el contenido |
 | 7 | `check_latex_balance` | `$` o `$$` desbalanceados |
+| 8 | `check_no_html_inline` | HTML inline (`<span>`, `<div>`, `<style>`) |
+| 9 | `check_no_ascii_boxes` | Caracteres de dibujo de cajas ASCII |
+| 10 | `check_chemical_formulas` | Fórmulas químicas fuera de math mode |
 
 ### Conteo de secciones
 | # | Check | Esperado |
 |---|-------|----------|
-| 8 | `check_caracterizados_count` | 6 boxes de caracterización |
-| 9 | `check_ejemplos_niveles` | 3 ejemplos (Bajo, Medio, Alto) |
-| 10 | `check_ejercicios_count` | 3 ejercicios |
+| 11 | `check_caracterizados_count` | 6 boxes de caracterización |
+| 12 | `check_caracterizados_content` | Cada box con teoría + Ejemplo + Ejercicios |
+| 13 | `check_ejemplos_niveles` | 3 ejemplos (Bajo, Medio, Alto) |
+| 14 | `check_ejercicios_count` | 3 ejercicios |
+
+### Espacios de respuesta
+| # | Check | Esperado |
+|---|-------|----------|
+| 15 | `check_ejercicios_answer_space` | `\underline{\hspace{6cm}}` en ejercicios |
+| 16 | `check_caracterizados_answer_space` | `\underline{\hspace{6cm}}` en caracterizados |
+| 17 | `check_answer_spaces_math_mode` | `\underline` dentro de `$$...$$` |
 
 ### Evaluación ICFES
 | # | Check | Esperado |
 |---|-------|----------|
-| 11 | `check_evaluacion_reactivos` | 5 reactivos |
-| 12 | `check_evaluacion_distribucion` | 2 Bajo + 2 Medio + 1 Alto |
-| 13 | `check_evaluacion_opciones` | Opciones A/B/C/D por reactivo |
-| 14 | `check_socializacion_fields` | Nivel, Competencia, Afirmación, Evidencia, Respuesta, Explicación |
+| 18 | `check_evaluacion_reactivos` | 5 reactivos |
+| 19 | `check_evaluacion_distribucion` | 2 Bajo + 2 Medio + 1 Alto |
+| 20 | `check_evaluacion_opciones` | Opciones A/B/C/D por reactivo |
+| 21 | `check_socializacion_box_exists` | Box de socialización con claves |
+| 22 | `check_socializacion_fields` | Nivel, Competencia, Afirmación, Evidencia, Respuesta, Explicación |
+| 23 | `check_icfes_enunciado_blank_line` | Línea en blanco entre enunciado y opciones |
 
 ### Socioemocional
 | # | Check | Esperado |
 |---|-------|----------|
-| 15 | `check_socioemocional_competencia` | Competencia de Ley 2503/2025 nombrada explícitamente |
+| 24 | `check_socioemocional_competencia` | Competencia de Ley 2503/2025 nombrada explícitamente |
+
+### Estilo
+| # | Check | Esperado |
+|---|-------|----------|
+| 25 | `check_title_has_no_accents` | Títulos sin acentos |
 
 > Si algún check falla, el Paso 10b retroalimenta al agente específico
 > (el JSON de salida incluye `failures_by_agent`) y re-ejecuta.
@@ -323,7 +342,34 @@ https://camilotayac.github.io/docere
 
 Workflow (`.github/workflows/publish.yml`):
 ```
-push a main → quarto render --to html → upload _liber/ → GitHub Pages
+push a main → lint + test → quarto render → upload _liber/ → GitHub Pages
+```
+
+---
+
+## Developus — Desarrollo
+
+### Tests
+
+```bash
+python3 -m pytest tests/ -v          # Todos los tests
+python3 -m pytest tests/ -v -k pdf   # Solo tests de PDF
+```
+
+### Linting y formato
+
+```bash
+ruff check .                          # Linter
+ruff format .                         # Formatear código
+ruff format --check .                 # Verificar formato (CI)
+```
+
+### Pre-commit hooks
+
+```bash
+pip install pre-commit
+pre-commit install
+pre-commit run --all-files
 ```
 
 ---
