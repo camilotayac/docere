@@ -1,4 +1,4 @@
-/* ---- Contenedor unificado (tiene clases .teoria-box y .teoria-box-section) ---- */
+/* ---- Contenedor unificado ---- */
 .teoria-box-section,
 .ideas-previas-box-section,
 .sub-ideas-previas-box-section,
@@ -15,38 +15,18 @@
 .ejemplo-box-section,
 .evaluacion-box-section,
 .sub-evaluacion-box-section {
-  overflow: hidden;
-  border-radius: 6px;
-  margin-top: 2em;
-  border-style: solid;
-  border-width: 1.5px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-
-.teoria-box-section             { border-color: #2244aa; }
-.ideas-previas-box-section      { border-color: #b8a800; }
-.sub-ideas-previas-box-section  { border-color: #a09000; }
-.contexto-box-section           { border-color: #1a7a1a; }
-.sub-contexto-box-section       { border-color: #1a6a1a; }
-.caracterizados-box-section     { border-color: #6a1a9a; }
-.sub-caracterizados-box-section { border-color: #5a158a; }
-.retos-box-section              { border-color: #cc6600; }
-.socioemocional-box-section     { border-color: #cc3366; }
-.ejercicios-box-section         { border-color: #aa2222; }
-.aplicacion-box-section         { border-color: #6a1a8a; }
-.sub-aplicacion-box-section     { border-color: #5a157a; }
-.notas-docente-box-section      { border-color: #0088aa; }
-.ejemplo-box-section            { border-color: #555555; }
-.evaluacion-box-section         { border-color: #1a7a7a; }
-.sub-evaluacion-box-section     { border-color: #185a5a; }
 
 /* ---- HEADING ---- */
 h2[class*="-box-heading"],
 h3[class*="-box-heading"] {
-  margin: -0.9em -1.1em 0.9em -1.1em;
-  padding: 0.5em 1em;
-  border-radius: 0;
+  margin: 0;
+  padding: 0.6em 1em;
+  border-radius: 6px;
   border: none;
-  font-size: 1em;
+  font-size: 1.05em;
   font-weight: 700;
   color: #1a1a1a;
 }
@@ -76,7 +56,7 @@ h3[class*="-box-heading"] {
 .aplicacion-box, .sub-aplicacion-box,
 .notas-docente-box, .ejemplo-box, .evaluacion-box,
 .sub-evaluacion-box {
-  padding: 0.9em 1.1em;
+  padding: 0.8em 0 0.2em 0;
 }
 
 
@@ -111,13 +91,3 @@ h3[class*="-box-heading"].collapsed::after {
   transform: translateY(-50%) rotate(-90deg);
 }
 
-/* Remove bottom padding of the outer box when collapsed to avoid empty space below the header */
-div[class*="-box"]:has(.collapse:not(.show)) {
-  padding-bottom: 0 !important;
-}
-
-/* Remove bottom margin of the heading when collapsed */
-div[class*="-box"]:has(.collapse:not(.show)) h2[class*="-box-heading"],
-div[class*="-box"]:has(.collapse:not(.show)) h3[class*="-box-heading"] {
-  margin-bottom: 0 !important;
-}
