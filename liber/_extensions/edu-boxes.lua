@@ -27,6 +27,30 @@ local function slugify(text)
     :gsub('%-+', '-'):gsub('^%-+', ''):gsub('%-+$', '')
 end
 
+local box_counter = 0
+
+local function make_heading_collapsible(div, cls, box, collapse_id, start_collapsed)
+  local title_text = div.attributes['title'] or box.heading or ''
+  local anchor_id = slugify(title_text)
+  local heading_cls = cls .. '-heading'
+  
+  local classes = { heading_cls, 'unlisted' }
+  if start_collapsed then
+    table.insert(classes, 'collapsed')
+  end
+  
+  local attributes = {
+    ['data-bs-toggle'] = 'collapse',
+    ['data-bs-target'] = '#' .. collapse_id,
+    ['aria-expanded'] = start_collapsed and 'false' or 'true',
+    ['aria-controls'] = collapse_id
+  }
+  
+  local attr = pandoc.Attr(anchor_id, classes, attributes)
+  local level = box.sub and 3 or 2
+  return pandoc.Header(level, {pandoc.Str(title_text)}, attr)
+end
+
 local function make_heading(div, cls, box)
   local title_text = div.attributes['title'] or box.heading or ''
   local anchor_id = slugify(title_text)
@@ -52,6 +76,36 @@ function Div(div)
         div.content:insert(1, begin_raw)
         div.content:insert(end_raw)
         return div.content
+      end
+
+      if FORMAT:match('html') then
+        box_counter = box_counter + 1
+        local collapse_id = 'box-collapse-' .. box_counter
+        
+        local collapse_attr = div.attributes['collapse']
+        local start_collapsed = (collapse_attr == 'true')
+        
+        local heading = make_heading_collapsible(div, cls, box, collapse_id, start_collapsed)
+        
+        local original_content = {}
+        for _, block in ipairs(div.content) do
+          table.insert(original_content, block)
+        end
+        
+        local body_classes = { 'collapse' }
+        if not start_collapsed then
+          table.insert(body_classes, 'show')
+        end
+        
+        local body_attr = pandoc.Attr(collapse_id, body_classes, {})
+        local body_div = pandoc.Div(original_content, body_attr)
+        
+        div.content = pandoc.List()
+        div.content:insert(heading)
+        div.content:insert(body_div)
+        
+        div.classes:insert(cls .. '-section')
+        return div
       end
 
       local heading = make_heading(div, cls, box)

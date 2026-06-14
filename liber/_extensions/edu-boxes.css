@@ -95,3 +95,44 @@ h3[class*="-box-heading"] {
 .ejemplo-box           { background-color: #f8f8f8; }
 .evaluacion-box        { background-color: #f0faf5; }
 .sub-evaluacion-box    { background-color: #e0f5ee; }
+
+/* ---- COLLAPSIBLE BOXES SUPPORT ---- */
+
+/* Trigger elements (headings) are clickable, have user-select and padding for icon */
+h2[class*="-box-heading"],
+h3[class*="-box-heading"] {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-right: 2.5em !important; /* Make room for the toggle icon */
+}
+
+/* Toggle icon using a pseudo-element (arrow down) */
+h2[class*="-box-heading"]::after,
+h3[class*="-box-heading"]::after {
+  content: "▼";
+  position: absolute;
+  right: 1.25em;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+/* Rotate the icon when collapsed (arrow points right) */
+h2[class*="-box-heading"].collapsed::after,
+h3[class*="-box-heading"].collapsed::after {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+/* Remove bottom padding of the outer box when collapsed to avoid empty space below the header */
+div[class*="-box"]:has(.collapse:not(.show)) {
+  padding-bottom: 0 !important;
+}
+
+/* Remove bottom margin of the heading when collapsed */
+div[class*="-box"]:has(.collapse:not(.show)) h2[class*="-box-heading"],
+div[class*="-box"]:has(.collapse:not(.show)) h3[class*="-box-heading"] {
+  margin-bottom: 0 !important;
+}
