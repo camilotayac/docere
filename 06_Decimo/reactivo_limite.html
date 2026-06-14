@@ -60,10 +60,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,7 +129,169 @@ window.Quarto = {
 <link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/edu-boxes.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -156,13 +322,13 @@ window.Quarto = {
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../Natura-Docens.pdf">
+            <a class="dropdown-item sidebar-tools-main-item" href="../natura-docens.pdf">
               <i class="bi bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../Natura-Docens.epub">
+            <a class="dropdown-item sidebar-tools-main-item" href="../natura-docens.epub">
               <i class="bi bi-journal pe-1"></i>
             Download ePub
             </a>
@@ -186,6 +352,7 @@ window.Quarto = {
           </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -298,6 +465,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></h1>
@@ -317,9 +485,8 @@ window.Quarto = {
 </header>
 
 
-<section id="teoria" class="level2 teoria-box-heading" data-number="4.1">
-<h2 class="teoria-box-heading anchored" data-number="4.1" data-anchor-id="teoria"><span class="header-section-number">4.1</span> Teoria</h2>
-<div class="teoria-box" title="Teoria">
+<section id="teoria" class="level2 teoria-box-heading unlisted teoria-box teoria-box-section" title="Teoria" data-number="4.1">
+<h2 class="teoria-box-heading unlisted anchored" data-number="4.1" data-anchor-id="teoria"><span class="header-section-number">4.1</span> Teoria</h2>
 <p>La <strong>estequiometría</strong> es la rama de la química que estudia las relaciones cuantitativas entre reactivos y productos en una reacción química balanceada. Cuando se lleva a cabo una reacción, los reactivos no siempre están presentes en las proporciones exactas que indica la ecuación balanceada. En tales casos, uno de los reactivos se consume completamente antes que los demás, limitando la cantidad de producto que se puede formar. A este reactivo se le denomina <strong>reactivo límite</strong> (o reactivo limitante), mientras que los reactivos que no se consumen totalmente reciben el nombre de <strong>reactivos en exceso</strong> <span class="citation" data-cites="chang2017quimica">(<a href="../bibliografia.html#ref-chang2017quimica" role="doc-biblioref">Chang and Goldsby 2017</a>)</span>.</p>
 <p>Para identificar el reactivo límite se siguen cuatro pasos: (1) escribir y balancear la ecuación química; (2) convertir las masas de los reactivos a moles usando las masas molares; (3) dividir los moles de cada reactivo entre su coeficiente estequiométrico en la ecuación balanceada; y (4) el reactivo con el menor cociente es el reactivo límite. Una vez identificado, se usan sus moles para calcular la cantidad máxima de producto posible, denominada <strong>rendimiento teórico</strong>.</p>
 <p><strong>Fórmula (1):</strong></p>
@@ -330,11 +497,9 @@ window.Quarto = {
 <p><span class="math display">\[ \% \text{ rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teórico}} \times 100 \tag{2} \]</span></p>
 <p>Donde rendimiento real = masa de producto obtenida experimentalmente (g), rendimiento teórico = masa máxima calculada a partir del reactivo límite (g).</p>
 <p><span class="citation" data-cites="brown2022chemistry">(<a href="../bibliografia.html#ref-brown2022chemistry" role="doc-biblioref">Brown et al. 2022</a>)</span></p>
-</div>
 </section>
-<section id="ideas-previas-cuento" class="level2 ideas-previas-box-heading" data-number="4.2">
-<h2 class="ideas-previas-box-heading anchored" data-number="4.2" data-anchor-id="ideas-previas-cuento"><span class="header-section-number">4.2</span> Ideas Previas - Cuento</h2>
-<div class="ideas-previas-box" title="Ideas Previas - Cuento">
+<section id="ideas-previas-cuento" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Cuento" data-number="4.2">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="4.2" data-anchor-id="ideas-previas-cuento"><span class="header-section-number">4.2</span> Ideas Previas - Cuento</h2>
 <p>Imagina que estás armando emparedados para una fiesta y tienes 12 rebanadas de pan y 8 tajadas de queso. Cada emparedado necesita dos rebanadas de pan y una tajada de queso. Empiezas a armar y, después del octavo emparedado, te das cuenta de que ya no queda queso, pero todavía te sobran rebanadas de pan. El queso determinó cuántos emparedados pudiste hacer.</p>
 <ul>
 <li><p><strong>¿Qué crees que pasaría si, en lugar de 8 tajadas de queso, hubieras tenido 15? ¿Habrían cambiado los emparedados que lograste armar?</strong></p>
@@ -350,11 +515,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ul>
-</div>
 </section>
-<section id="ideas-previas-preguntas" class="level2 ideas-previas-box-heading" data-number="4.3">
-<h2 class="ideas-previas-box-heading anchored" data-number="4.3" data-anchor-id="ideas-previas-preguntas"><span class="header-section-number">4.3</span> Ideas Previas - Preguntas</h2>
-<div class="ideas-previas-box" title="Ideas Previas - Preguntas">
+<section id="ideas-previas-preguntas" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Preguntas" data-number="4.3">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="4.3" data-anchor-id="ideas-previas-preguntas"><span class="header-section-number">4.3</span> Ideas Previas - Preguntas</h2>
 <ul>
 <li><p><strong>¿Qué crees que significa que algo sea “limitante” en un proceso cotidiano?</strong></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
@@ -369,23 +532,17 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ul>
-</div>
 </section>
-<section id="ideas-previas-contextualizacion" class="level2 ideas-previas-box-heading" data-number="4.4">
-<h2 class="ideas-previas-box-heading anchored" data-number="4.4" data-anchor-id="ideas-previas-contextualizacion"><span class="header-section-number">4.4</span> Ideas Previas - Contextualizacion</h2>
-<div class="ideas-previas-box" title="Ideas Previas - Contextualizacion">
+<section id="ideas-previas-contextualizacion" class="level2 ideas-previas-box-heading unlisted ideas-previas-box ideas-previas-box-section" title="Ideas Previas - Contextualizacion" data-number="4.4">
+<h2 class="ideas-previas-box-heading unlisted anchored" data-number="4.4" data-anchor-id="ideas-previas-contextualizacion"><span class="header-section-number">4.4</span> Ideas Previas - Contextualizacion</h2>
 <p>En el municipio de Nemocón (Cundinamarca), las minas de sal han operado durante siglos. Los mineros saben que, para extraer una tonelada de sal, necesitan cierta cantidad de agua y cierta cantidad de energía térmica. Si un día solo tienen suficiente carbón para calentar el agua durante la mitad del tiempo necesario, la producción de ese día estará limitada por el combustible, no por el agua disponible. De manera similar, en una reacción química uno de los reactivos se agota antes y determina cuánto producto se puede obtener.</p>
-</div>
 </section>
-<section id="contextualizacion-metodo-richard-feynman" class="level2 contexto-box-heading" data-number="4.5">
-<h2 class="contexto-box-heading anchored" data-number="4.5" data-anchor-id="contextualizacion-metodo-richard-feynman"><span class="header-section-number">4.5</span> Contextualizacion - Metodo Richard Feynman</h2>
-<div class="contexto-box" title="Contextualizacion - Metodo Richard Feynman">
+<section id="contextualizacion-metodo-richard-feynman" class="level2 contexto-box-heading unlisted contexto-box contexto-box-section" title="Contextualizacion - Metodo Richard Feynman" data-number="4.5">
+<h2 class="contexto-box-heading unlisted anchored" data-number="4.5" data-anchor-id="contextualizacion-metodo-richard-feynman"><span class="header-section-number">4.5</span> Contextualizacion - Metodo Richard Feynman</h2>
 <p>¿Alguna vez has armado un mueble de kit y te has dado cuenta de que te faltan tornillos? Revisas la bolsa de piezas, cuentas los tornillos que tienes, y luego miras el instructivo: cada panel frontal necesita dos tornillos. Resulta que tienes 10 paneles pero solo 12 tornillos. Aunque tengas los 10 paneles listos, solo podrás fijar 6 de ellos porque los tornillos se acaban primero. Pues bien, en química ocurre exactamente lo mismo: los tornillos son uno de los <strong>reactivos</strong>, los paneles son el otro, y el <strong>reactivo límite</strong> son esos tornillos que determinan cuántos muebles completos puedes armar. Pero cuidado: en química no siempre es tan sencillo como contar piezas, porque los reactivos se combinan en proporciones fijas según la ecuación balanceada, y hay que usar moles (no unidades individuales) para hacer los cálculos correctos.</p>
-</div>
 </section>
-<section id="contextualizacion-apoyo-cognitivo-y-tdah" class="level2 caracterizados-box-heading" data-number="4.6">
-<h2 class="caracterizados-box-heading anchored" data-number="4.6" data-anchor-id="contextualizacion-apoyo-cognitivo-y-tdah"><span class="header-section-number">4.6</span> Contextualizacion - Apoyo Cognitivo y TDAH</h2>
-<div class="caracterizados-box" title="Contextualizacion - Apoyo Cognitivo y TDAH">
+<section id="contextualizacion-apoyo-cognitivo-y-tdah" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Apoyo Cognitivo y TDAH" data-number="4.6">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.6" data-anchor-id="contextualizacion-apoyo-cognitivo-y-tdah"><span class="header-section-number">4.6</span> Contextualizacion - Apoyo Cognitivo y TDAH</h2>
 <p>Para identificar el reactivo límite sigue estos pasos en orden:</p>
 <ol type="1">
 <li><p>Escribe y balancea la ecuación química.</p></li>
@@ -421,11 +578,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="contextualizacion-visual" class="level2 caracterizados-box-heading" data-number="4.7">
-<h2 class="caracterizados-box-heading anchored" data-number="4.7" data-anchor-id="contextualizacion-visual"><span class="header-section-number">4.7</span> Contextualizacion - Visual</h2>
-<div class="caracterizados-box" title="Contextualizacion - Visual">
+<section id="contextualizacion-visual" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Visual" data-number="4.7">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.7" data-anchor-id="contextualizacion-visual"><span class="header-section-number">4.7</span> Contextualizacion - Visual</h2>
 <p>Reacción:</p>
 <p><span class="math display">\[Fe + S \rightarrow FeS\]</span></p>
 <p>(balanceada <span class="math inline">\(1:1\)</span>)</p>
@@ -476,11 +631,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="contextualizacion-dislexia-y-dificultades-lectoras" class="level2 caracterizados-box-heading" data-number="4.8">
-<h2 class="caracterizados-box-heading anchored" data-number="4.8" data-anchor-id="contextualizacion-dislexia-y-dificultades-lectoras"><span class="header-section-number">4.8</span> Contextualizacion - Dislexia y Dificultades Lectoras</h2>
-<div class="caracterizados-box" title="Contextualizacion - Dislexia y Dificultades Lectoras">
+<section id="contextualizacion-dislexia-y-dificultades-lectoras" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Dislexia y Dificultades Lectoras" data-number="4.8">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.8" data-anchor-id="contextualizacion-dislexia-y-dificultades-lectoras"><span class="header-section-number">4.8</span> Contextualizacion - Dislexia y Dificultades Lectoras</h2>
 <p>Una ecuación química es una receta. Los reactivos son los ingredientes. El producto es el resultado. La ecuación balanceada dice cuánto necesitas de cada reactivo. El reactivo límite es el ingrediente que se acaba primero.</p>
 <p><strong>Ejemplo:</strong> La reacción es:</p>
 <p><span class="math display">\[Fe + S \rightarrow FeS\]</span></p>
@@ -508,11 +661,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="contextualizacion-autismo-y-pensamiento-concreto" class="level2 caracterizados-box-heading" data-number="4.9">
-<h2 class="caracterizados-box-heading anchored" data-number="4.9" data-anchor-id="contextualizacion-autismo-y-pensamiento-concreto"><span class="header-section-number">4.9</span> Contextualizacion - Autismo y Pensamiento Concreto</h2>
-<div class="caracterizados-box" title="Contextualizacion - Autismo y Pensamiento Concreto">
+<section id="contextualizacion-autismo-y-pensamiento-concreto" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Autismo y Pensamiento Concreto" data-number="4.9">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.9" data-anchor-id="contextualizacion-autismo-y-pensamiento-concreto"><span class="header-section-number">4.9</span> Contextualizacion - Autismo y Pensamiento Concreto</h2>
 <p>Regla fija: los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente (<span class="math inline">\(\frac{\text{moles}}{\text{coeficiente}}\)</span>) más pequeño se agota primero. Ese es el reactivo límite.</p>
 <p><strong>Ejemplo:</strong> Reacción:</p>
 <p><span class="math display">\[Fe + S \rightarrow FeS\]</span></p>
@@ -542,11 +693,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="contextualizacion-accesibilidad-sensorial" class="level2 caracterizados-box-heading" data-number="4.10">
-<h2 class="caracterizados-box-heading anchored" data-number="4.10" data-anchor-id="contextualizacion-accesibilidad-sensorial"><span class="header-section-number">4.10</span> Contextualizacion - Accesibilidad Sensorial</h2>
-<div class="caracterizados-box" title="Contextualizacion - Accesibilidad Sensorial">
+<section id="contextualizacion-accesibilidad-sensorial" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Accesibilidad Sensorial" data-number="4.10">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.10" data-anchor-id="contextualizacion-accesibilidad-sensorial"><span class="header-section-number">4.10</span> Contextualizacion - Accesibilidad Sensorial</h2>
 <p>Formato accesible: <span class="math inline">\(Fe + S \rightarrow FeS\)</span> (hierro más azufre produce sulfuro de hierro). Los coeficientes son ambos <span class="math inline">\(1\)</span>, lo que significa que un mol de Fe reacciona con exactamente un mol de S.</p>
 <p><strong>Ejemplo:</strong> Se tienen <span class="math inline">\(55.85\,\text{g}\)</span> de Fe (hierro) y <span class="math inline">\(48.09\,\text{g}\)</span> de S (azufre). La masa molar del Fe (hierro) es <span class="math inline">\(55.85\,\text{g/mol}\)</span>. La masa molar del S (azufre) es <span class="math inline">\(32.06\,\text{g/mol}\)</span>.</p>
 <ol type="1">
@@ -571,11 +720,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="contextualizacion-socioemocional-y-psicosocial" class="level2 caracterizados-box-heading" data-number="4.11">
-<h2 class="caracterizados-box-heading anchored" data-number="4.11" data-anchor-id="contextualizacion-socioemocional-y-psicosocial"><span class="header-section-number">4.11</span> Contextualizacion - Socioemocional y Psicosocial</h2>
-<div class="caracterizados-box" title="Contextualizacion - Socioemocional y Psicosocial">
+<section id="contextualizacion-socioemocional-y-psicosocial" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Socioemocional y Psicosocial" data-number="4.11">
+<h2 class="caracterizados-box-heading unlisted anchored" data-number="4.11" data-anchor-id="contextualizacion-socioemocional-y-psicosocial"><span class="header-section-number">4.11</span> Contextualizacion - Socioemocional y Psicosocial</h2>
 <p>Sabemos que los cálculos con muchos pasos pueden sentirse difíciles al principio, pero no te preocupes: vamos a hacerlo juntos, paso a paso. Cada paso que completes te acerca a dominar el concepto. Tú puedes hacerlo.</p>
 <p><strong>Ejemplo:</strong> Observa esta reacción:</p>
 <p><span class="math display">\[Fe + S \rightarrow FeS\]</span></p>
@@ -605,11 +752,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ol>
-</div>
 </section>
-<section id="ejemplo-guiado-nivel-bajo" class="level2 ejemplo-box-heading" data-number="4.12">
-<h2 class="ejemplo-box-heading anchored" data-number="4.12" data-anchor-id="ejemplo-guiado-nivel-bajo"><span class="header-section-number">4.12</span> Ejemplo Guiado - Nivel Bajo</h2>
-<div class="ejemplo-box" title="Ejemplo Guiado - Nivel Bajo">
+<section id="ejemplo-guiado-nivel-bajo" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Bajo" data-number="4.12">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="4.12" data-anchor-id="ejemplo-guiado-nivel-bajo"><span class="header-section-number">4.12</span> Ejemplo Guiado - Nivel Bajo</h2>
 <p><strong>Enunciado:</strong> La síntesis del metanol (<span class="math inline">\(CH_3OH\)</span>) a partir de monóxido de carbono e hidrógeno sigue la reacción:</p>
 <p><span class="math display">\[CO(g) + 2H_2(g) \rightarrow CH_3OH(g)\]</span></p>
 <p>Si se tienen <span class="math inline">\(4\,\text{mol}\)</span> de CO y <span class="math inline">\(6\,\text{mol}\)</span> de <span class="math inline">\(H_2\)</span>, ¿cuál es el reactivo límite y cuántos moles de <span class="math inline">\(CH_3OH\)</span> se pueden producir?</p>
@@ -625,11 +770,9 @@ window.Quarto = {
 <p><strong>Paso 4: Calcular moles de producto usando el reactivo límite</strong></p>
 <p><span class="math display">\[6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2} = 3 \text{ mol CH}_3\text{OH}\]</span></p>
 <p><strong>Resultado:</strong> El reactivo límite es el <span class="math inline">\(H_2\)</span> y se producen <span class="math inline">\(3\,\text{mol}\)</span> de <span class="math inline">\(CH_3OH\)</span> <span class="citation" data-cites="chang2017quimica">(<a href="../bibliografia.html#ref-chang2017quimica" role="doc-biblioref">Chang and Goldsby 2017</a>)</span>.</p>
-</div>
 </section>
-<section id="ejemplo-guiado-nivel-medio" class="level2 ejemplo-box-heading" data-number="4.13">
-<h2 class="ejemplo-box-heading anchored" data-number="4.13" data-anchor-id="ejemplo-guiado-nivel-medio"><span class="header-section-number">4.13</span> Ejemplo Guiado - Nivel Medio</h2>
-<div class="ejemplo-box" title="Ejemplo Guiado - Nivel Medio">
+<section id="ejemplo-guiado-nivel-medio" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Medio" data-number="4.13">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="4.13" data-anchor-id="ejemplo-guiado-nivel-medio"><span class="header-section-number">4.13</span> Ejemplo Guiado - Nivel Medio</h2>
 <p><strong>Enunciado:</strong> La reacción entre el óxido nítrico y el oxígeno produce dióxido de nitrógeno:</p>
 <p><span class="math display">\[2NO(g) + O_2(g) \rightarrow 2NO_2(g)\]</span></p>
 <p>Si se hacen reaccionar <span class="math inline">\(30.0\,\text{g}\)</span> de <span class="math inline">\(NO\)</span> con <span class="math inline">\(20.0\,\text{g}\)</span> de <span class="math inline">\(O_2\)</span>, determine el reactivo límite y la masa de <span class="math inline">\(NO_2\)</span> producida. Masas molares: <span class="math inline">\(NO = 30.01\,\text{g/mol}\)</span>, <span class="math inline">\(O_2 = 32.00\,\text{g/mol}\)</span>, <span class="math inline">\(NO_2 = 46.01\,\text{g/mol}\)</span>.</p>
@@ -650,11 +793,9 @@ window.Quarto = {
 <p><strong>Paso 5: Calcular masa de NO<span class="math inline">\(_2\)</span> producida</strong></p>
 <p><span class="math display">\[1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times \frac{46.01 \text{ g}}{\text{mol}} = 46.01 \text{ g NO}_2\]</span></p>
 <p><strong>Resultado:</strong> El reactivo límite es el <span class="math inline">\(NO\)</span> y se producen <span class="math inline">\(46.01\,\text{g}\)</span> de <span class="math inline">\(NO_2\)</span> <span class="citation" data-cites="brown2022chemistry">(<a href="../bibliografia.html#ref-brown2022chemistry" role="doc-biblioref">Brown et al. 2022</a>)</span>.</p>
-</div>
 </section>
-<section id="ejemplo-guiado-nivel-alto" class="level2 ejemplo-box-heading" data-number="4.14">
-<h2 class="ejemplo-box-heading anchored" data-number="4.14" data-anchor-id="ejemplo-guiado-nivel-alto"><span class="header-section-number">4.14</span> Ejemplo Guiado - Nivel Alto</h2>
-<div class="ejemplo-box" title="Ejemplo Guiado - Nivel Alto">
+<section id="ejemplo-guiado-nivel-alto" class="level2 ejemplo-box-heading unlisted ejemplo-box ejemplo-box-section" title="Ejemplo Guiado - Nivel Alto" data-number="4.14">
+<h2 class="ejemplo-box-heading unlisted anchored" data-number="4.14" data-anchor-id="ejemplo-guiado-nivel-alto"><span class="header-section-number">4.14</span> Ejemplo Guiado - Nivel Alto</h2>
 <p><strong>Enunciado:</strong> La urea <span class="math inline">\([(NH_2)_2CO]\)</span> se prepara a partir de amoníaco y dióxido de carbono:</p>
 <p><span class="math display">\[2NH_3(g) + CO_2(g) \rightarrow (NH_2)_2CO(ac) + H_2O(l)\]</span></p>
 <p>En un proceso se hacen reaccionar <span class="math inline">\(637.2\,\text{g}\)</span> de <span class="math inline">\(NH_3\)</span> con <span class="math inline">\(1142\,\text{g}\)</span> de <span class="math inline">\(CO_2\)</span>. Determine: (a) el reactivo límite, (b) la masa de urea que se formará, (c) la masa del reactivo en exceso que queda sin reaccionar. Masas molares: <span class="math inline">\(NH_3 = 17.03\,\text{g/mol}\)</span>, <span class="math inline">\(CO_2 = 44.01\,\text{g/mol}\)</span>, <span class="math inline">\((NH_2)_2CO = 60.06\,\text{g/mol}\)</span>.</p>
@@ -677,11 +818,9 @@ window.Quarto = {
 <p><span class="math display">\[25.95 - 18.71 = 7.24 \text{ mol CO}_2\]</span></p>
 <p><span class="math display">\[7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2\]</span></p>
 <p><strong>Resultado:</strong> (a) El reactivo límite es el <span class="math inline">\(NH_3\)</span>. (b) Se producen <span class="math inline">\(1124\,\text{g}\)</span> de urea. (c) Quedan <span class="math inline">\(319\,\text{g}\)</span> de <span class="math inline">\(CO_2\)</span> sin reaccionar. <span class="citation" data-cites="chang2017quimica">(<a href="../bibliografia.html#ref-chang2017quimica" role="doc-biblioref">Chang and Goldsby 2017</a>)</span></p>
-</div>
 </section>
-<section id="nivel-bajo" class="level2 ejercicios-box-heading" data-number="4.15">
-<h2 class="ejercicios-box-heading anchored" data-number="4.15" data-anchor-id="nivel-bajo"><span class="header-section-number">4.15</span> Nivel Bajo</h2>
-<div class="ejercicios-box" title="Nivel Bajo">
+<section id="nivel-bajo" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Bajo" data-number="4.15">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="4.15" data-anchor-id="nivel-bajo"><span class="header-section-number">4.15</span> Nivel Bajo</h2>
 <ul>
 <li><p>Completar: En la reacción <span class="math inline">\(2H_2 + O_2 \rightarrow 2H_2O\)</span>, si se tienen <span class="math inline">\(3\,\text{mol}\)</span> de <span class="math inline">\(H_2\)</span> y <span class="math inline">\(2\,\text{mol}\)</span> de <span class="math inline">\(O_2\)</span>, el reactivo límite es el <span class="math inline">\(\underline{\hspace{3cm}}\)</span> porque su cociente de moles dividido entre coeficiente es <span class="math inline">\(\underline{\hspace{2cm}}\)</span>, mientras que el del otro reactivo es <span class="math inline">\(\underline{\hspace{2cm}}\)</span>.</p></li>
 <li><p>V/F: El reactivo en exceso es aquel que se consume completamente durante la reacción. (<span class="math inline">\(\hspace{0.5cm}\)</span>)</p></li>
@@ -689,11 +828,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ul>
-</div>
 </section>
-<section id="nivel-medio" class="level2 ejercicios-box-heading" data-number="4.16">
-<h2 class="ejercicios-box-heading anchored" data-number="4.16" data-anchor-id="nivel-medio"><span class="header-section-number">4.16</span> Nivel Medio</h2>
-<div class="ejercicios-box" title="Nivel Medio">
+<section id="nivel-medio" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Medio" data-number="4.16">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="4.16" data-anchor-id="nivel-medio"><span class="header-section-number">4.16</span> Nivel Medio</h2>
 <ul>
 <li><p>Respuesta corta: Se hacen reaccionar <span class="math inline">\(10.0\,\text{g}\)</span> de <span class="math inline">\(Zn\)</span> (masa molar <span class="math inline">\(65.38\,\text{g/mol}\)</span>) con <span class="math inline">\(5.0\,\text{g}\)</span> de <span class="math inline">\(HCl\)</span> (masa molar <span class="math inline">\(36.46\,\text{g/mol}\)</span>) según <span class="math inline">\(Zn + 2HCl \rightarrow ZnCl_2 + H_2\)</span>. ¿Cuál es el reactivo límite y cuántos gramos de <span class="math inline">\(ZnCl_2\)</span> se producen?</p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
@@ -707,11 +844,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ul>
-</div>
 </section>
-<section id="nivel-alto" class="level2 ejercicios-box-heading" data-number="4.17">
-<h2 class="ejercicios-box-heading anchored" data-number="4.17" data-anchor-id="nivel-alto"><span class="header-section-number">4.17</span> Nivel Alto</h2>
-<div class="ejercicios-box" title="Nivel Alto">
+<section id="nivel-alto" class="level2 ejercicios-box-heading unlisted ejercicios-box ejercicios-box-section" title="Nivel Alto" data-number="4.17">
+<h2 class="ejercicios-box-heading unlisted anchored" data-number="4.17" data-anchor-id="nivel-alto"><span class="header-section-number">4.17</span> Nivel Alto</h2>
 <ul>
 <li><p>Problema abierto: El etileno (<span class="math inline">\(C_2H_4\)</span>) se puede preparar calentando hexano (<span class="math inline">\(C_6H_{14}\)</span>): <span class="math inline">\(C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4\)</span> (sin balancear). Si se calientan <span class="math inline">\(86.0\,\text{g}\)</span> de hexano y se obtienen <span class="math inline">\(28.0\,\text{g}\)</span> de etileno, calcula el rendimiento porcentual de la reacción. Sugerencia: primero balancea la ecuación.</p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
@@ -722,28 +857,22 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p></li>
 </ul>
-</div>
 </section>
-<section id="retos" class="level2 retos-box-heading" data-number="4.18">
-<h2 class="retos-box-heading anchored" data-number="4.18" data-anchor-id="retos"><span class="header-section-number">4.18</span> Retos</h2>
-<div class="retos-box" title="Retos">
+<section id="retos" class="level2 retos-box-heading unlisted retos-box retos-box-section" title="Retos" data-number="4.18">
+<h2 class="retos-box-heading unlisted anchored" data-number="4.18" data-anchor-id="retos"><span class="header-section-number">4.18</span> Retos</h2>
 <p>El concepto de reactivo límite se aplica en la industria farmacéutica para maximizar la producción de medicamentos usando el principio del reactivo más costoso como límite. Para este reto:</p>
 <ul>
 <li>Diseña un cartel informativo que explique los cuatro pasos para determinar el reactivo límite usando como ejemplo una reacción de tu elección. Incluye los cálculos paso a paso.</li>
 <li>Construye un modelo físico con materiales reciclables (tapas, fichas, cuentas) que represente los moles de cada reactivo antes y después de la reacción, mostrando claramente cuál es el reactivo límite y cuál está en exceso.</li>
 <li>Prepara una breve exposición (máximo 3 minutos) explicando por qué es importante identificar el reactivo límite en procesos industriales como la producción de fertilizantes o medicamentos.</li>
 </ul>
-</div>
 </section>
-<section id="aplicacion-vida-real" class="level2 aplicacion-box-heading" data-number="4.19">
-<h2 class="aplicacion-box-heading anchored" data-number="4.19" data-anchor-id="aplicacion-vida-real"><span class="header-section-number">4.19</span> Aplicacion - Vida real</h2>
-<div class="aplicacion-box" title="Aplicacion - Vida real">
+<section id="aplicacion-vida-real" class="level2 aplicacion-box-heading unlisted aplicacion-box aplicacion-box-section" title="Aplicacion - Vida real" data-number="4.19">
+<h2 class="aplicacion-box-heading unlisted anchored" data-number="4.19" data-anchor-id="aplicacion-vida-real"><span class="header-section-number">4.19</span> Aplicacion - Vida real</h2>
 <p>En la producción industrial de ácido sulfúrico (<span class="math inline">\(H_2SO_4\)</span>) en plantas como la de Cartagena (Colombia), el azufre se quema para formar <span class="math inline">\(SO_2\)</span>, que luego se oxida a <span class="math inline">\(SO_3\)</span> y finalmente se hidrata. Los ingenieros controlan cuidadosamente las cantidades de reactivos para garantizar que el azufre (el reactivo más costoso y menos abundante) se consuma por completo, mientras que el oxígeno del aire se suministra en exceso. Así se maximiza el rendimiento económico del proceso. La próxima vez que veas una batería de carro o un producto de limpieza, recuerda que el ácido sulfúrico que contienen se fabricó aplicando el concepto de reactivo límite para optimizar su producción.</p>
-</div>
 </section>
-<section id="aplicacion-laboratorio" class="level2 aplicacion-box-heading" data-number="4.20">
-<h2 class="aplicacion-box-heading anchored" data-number="4.20" data-anchor-id="aplicacion-laboratorio"><span class="header-section-number">4.20</span> Aplicacion - Laboratorio</h2>
-<div class="aplicacion-box" title="Aplicacion - Laboratorio">
+<section id="aplicacion-laboratorio" class="level2 aplicacion-box-heading unlisted aplicacion-box aplicacion-box-section" title="Aplicacion - Laboratorio" data-number="4.20">
+<h2 class="aplicacion-box-heading unlisted anchored" data-number="4.20" data-anchor-id="aplicacion-laboratorio"><span class="header-section-number">4.20</span> Aplicacion - Laboratorio</h2>
 <p><strong>Objetivo:</strong> Determinar experimentalmente el reactivo límite en la reacción entre bicarbonato de sodio y vinagre.</p>
 <p><strong>Materiales:</strong> - Bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) - Vinagre blanco (solución de ácido acético <span class="math inline">\(CH_3COOH\)</span> al <span class="math inline">\(5\%\)</span>) - Balanza digital - <span class="math inline">\(2\)</span> vasos desechables pequeños - Cuchara plástica</p>
 <p><strong>Procedimiento:</strong></p>
@@ -789,11 +918,9 @@ window.Quarto = {
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
 <p><span class="math inline">\(\underline{\hspace{6cm}}\)</span></p>
-</div>
 </section>
-<section id="evaluacion-tipo-icfes" class="level2 evaluacion-box-heading" data-number="4.21">
-<h2 class="evaluacion-box-heading anchored" data-number="4.21" data-anchor-id="evaluacion-tipo-icfes"><span class="header-section-number">4.21</span> Evaluacion - tipo ICFES</h2>
-<div class="evaluacion-box" title="Evaluacion - tipo ICFES">
+<section id="evaluacion-tipo-icfes" class="level2 evaluacion-box-heading unlisted evaluacion-box evaluacion-box-section" title="Evaluacion - tipo ICFES" data-number="4.21">
+<h2 class="evaluacion-box-heading unlisted anchored" data-number="4.21" data-anchor-id="evaluacion-tipo-icfes"><span class="header-section-number">4.21</span> Evaluacion - tipo ICFES</h2>
 <p><strong>Pregunta 1</strong> — Nivel Bajo</p>
 <p><em>Contexto:</em> En la reacción <span class="math inline">\(N_2 + 3H_2 \rightarrow 2NH_3\)</span>, un estudiante dispone de <span class="math inline">\(2\,\text{mol}\)</span> de <span class="math inline">\(N_2\)</span> y <span class="math inline">\(4\,\text{mol}\)</span> de <span class="math inline">\(H_2\)</span>.</p>
 <p><em>Enunciado:</em> De acuerdo con la información anterior, ¿cuál de las siguientes afirmaciones es correcta?</p>
@@ -829,23 +956,19 @@ window.Quarto = {
 <p>B. <span class="math inline">\(62.5\%\)</span></p>
 <p>C. <span class="math inline">\(75.0\%\)</span></p>
 <p>D. <span class="math inline">\(87.5\%\)</span></p>
-</div>
 </section>
-<section id="socializacion" class="level2 evaluacion-box-heading" data-number="4.22">
-<h2 class="evaluacion-box-heading anchored" data-number="4.22" data-anchor-id="socializacion"><span class="header-section-number">4.22</span> Socializacion</h2>
-<div class="evaluacion-box" title="Socializacion">
+<section id="socializacion" class="level2 evaluacion-box-heading unlisted evaluacion-box evaluacion-box-section" title="Socializacion" data-number="4.22">
+<h2 class="evaluacion-box-heading unlisted anchored" data-number="4.22" data-anchor-id="socializacion"><span class="header-section-number">4.22</span> Socializacion</h2>
 <p><strong>Pregunta 1</strong> — Nivel Bajo <em>Competencia:</em> Interpretación <em>Afirmacion:</em> Comprende las relaciones estequiométricas en una ecuación química balanceada. <em>Evidencia:</em> Identifica correctamente el reactivo límite dividiendo los moles disponibles entre los coeficientes estequiométricos. <em>Respuesta correcta:</em> B <em>Explicacion:</em> El cociente para <span class="math inline">\(N_2\)</span> es <span class="math inline">\(\frac{2}{1} = 2\)</span>, y para <span class="math inline">\(H_2\)</span> es <span class="math inline">\(\frac{4}{3} \approx 1.33\)</span>. Como <span class="math inline">\(1.33 &lt; 2\)</span>, el <span class="math inline">\(H_2\)</span> es el reactivo límite.</p>
 <p><strong>Pregunta 2</strong> — Nivel Bajo <em>Competencia:</em> Argumentación <em>Afirmacion:</em> Justifica la identificación del reactivo límite basándose en cálculos estequiométricos. <em>Evidencia:</em> Reconoce que cuando los cocientes <span class="math inline">\(\frac{\text{moles}}{\text{coeficiente}}\)</span> son iguales, los reactivos están en proporción estequiométrica exacta y no hay reactivo límite. <em>Respuesta correcta:</em> D <em>Explicacion:</em> <span class="math inline">\(H_2: \frac{2 \text{ mol}}{2} = 1\)</span>; <span class="math inline">\(O_2: \frac{1 \text{ mol}}{1} = 1\)</span>. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.</p>
 <p><strong>Pregunta 3</strong> — Nivel Medio <em>Competencia:</em> Interpretación <em>Afirmacion:</em> Determina la cantidad de producto a partir del reactivo límite. <em>Evidencia:</em> Calcula los moles de cada reactivo y del producto usando relaciones estequiométricas. <em>Respuesta correcta:</em> B <em>Explicacion:</em> <span class="math inline">\(Ca: \frac{10.0}{40.08} = 0.249\,\text{mol}\)</span>, cociente <span class="math inline">\(= \frac{0.249}{2} = 0.1245\)</span>. <span class="math inline">\(O_2: \frac{10.0}{32.00} = 0.3125\,\text{mol}\)</span>, cociente <span class="math inline">\(= \frac{0.3125}{1} = 0.3125\)</span>. El Ca es el reactivo límite. Masa de <span class="math inline">\(CaO = 0.249 \text{ mol} \times (\frac{2}{2}) \times 56.08 \text{ g/mol} = 14.0\,\text{g}\)</span>.</p>
 <p><strong>Pregunta 4</strong> — Nivel Medio <em>Competencia:</em> Argumentación <em>Afirmacion:</em> Calcula el rendimiento porcentual de una reacción. <em>Evidencia:</em> Relaciona el rendimiento real con el rendimiento teórico usando la fórmula del porcentaje de rendimiento. <em>Respuesta correcta:</em> C <em>Explicacion:</em> Moles de glucosa <span class="math inline">\(= \frac{500}{180.16} = 2.775\,\text{mol}\)</span>. Rendimiento teórico de etanol <span class="math inline">\(= 2.775 \times 2 \times 46.07 = 255.6\,\text{g}\)</span>. <span class="math inline">\(\%\)</span> rendimiento <span class="math inline">\(= (\frac{200}{255.6}) \times 100 = 78.3\%\)</span>.</p>
 <p><strong>Pregunta 5</strong> — Nivel Alto <em>Competencia:</em> Proposición <em>Afirmacion:</em> Propone estrategias para determinar la pureza de un mineral a partir de datos experimentales. <em>Evidencia:</em> Relaciona la masa de producto obtenida con la masa del reactivo puro necesaria, usando la estequiometría de la reacción. <em>Respuesta correcta:</em> C <em>Explicacion:</em> Moles de <span class="math inline">\(SO_2\)</span> <span class="math inline">\(= \frac{192}{64.06} = 3.0\,\text{mol}\)</span>. Moles de <span class="math inline">\(FeS_2\)</span> puro <span class="math inline">\(= 3.0 \times (\frac{4}{8}) = 1.5\,\text{mol}\)</span>. Masa de <span class="math inline">\(FeS_2\)</span> puro <span class="math inline">\(= 1.5 \times 119.98 = 180\,\text{g}\)</span>. Pureza <span class="math inline">\(= (\frac{180}{240}) \times 100 = 75\%\)</span>.</p>
-</div>
 </section>
-<section id="socioemocional" class="level2 socioemocional-box-heading" data-number="4.23">
-<h2 class="socioemocional-box-heading anchored" data-number="4.23" data-anchor-id="socioemocional"><span class="header-section-number">4.23</span> Socioemocional</h2>
-<div class="socioemocional-box" title="Socioemocional">
+<section id="socioemocional" class="level2 socioemocional-box-heading unlisted socioemocional-box socioemocional-box-section" title="Socioemocional" data-number="4.23">
+<h2 class="socioemocional-box-heading unlisted anchored" data-number="4.23" data-anchor-id="socioemocional"><span class="header-section-number">4.23</span> Socioemocional</h2>
 <p>Al aprender sobre el reactivo límite, es normal sentir que hay muchos pasos y cálculos que recordar. La clave está en la <strong>regulación emocional</strong>: reconocer que la frustración inicial es parte del proceso de aprendizaje y que cada paso resuelto es un logro. Identificar el reactivo límite en química es como identificar aquello que nos limita en la vida: cuando sabemos qué nos está frenando, podemos concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado conceptos difíciles antes; este es solo un escalón más. Respira, organiza tus pasos como organizas los cálculos, y verás que el resultado llega.</p>
-</div>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -856,11 +979,23 @@ Brown, Theodore L., H. Eugene LeMay, Bruce E. Bursten, Catherine J. Murphy, Patr
 Chang, Raymond, and Kenneth A. Goldsby. 2017. <em>Química</em>. 12th ed. McGraw-Hill Interamericana.
 </div>
 </div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
