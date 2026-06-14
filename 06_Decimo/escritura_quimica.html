@@ -559,13 +559,111 @@ window.Quarto = {
 </section>
 <section id="contextualizacion-visual" class="level2 caracterizados-box-heading unlisted caracterizados-box caracterizados-box-section" title="Contextualizacion - Visual" data-number="5.7">
 <h2 class="caracterizados-box-heading unlisted anchored" data-number="5.7" data-anchor-id="contextualizacion-visual"><span class="header-section-number">5.7</span> Contextualizacion - Visual</h2>
-<p><strong>Teoria visual de balanceo:</strong> | Reactivos (izquierda) | Flecha de cambio | Productos (derecha) | Regla del color | |—|—|—|—| | Sustancias iniciales | Indica que se <strong>(rojo)</strong> produce | Nuevas sustancias | Coeficientes en <strong>(azul)</strong> cambian moles | | Coeficientes en <strong>(verde)</strong> indican cantidad | <code>\rightarrow</code> | Subindices en <strong>(negro)</strong> son fijos | No alterar subindices |</p>
+<p><strong>Teoria visual de balanceo:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reactivos (izquierda)</th>
+<th>Flecha de cambio</th>
+<th>Productos (derecha)</th>
+<th>Regla del color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sustancias iniciales</td>
+<td>Indica que se <strong>(rojo)</strong> produce</td>
+<td>Nuevas sustancias</td>
+<td>Coeficientes en <strong>(azul)</strong> cambian moles</td>
+</tr>
+<tr class="even">
+<td>Coeficientes en <strong>(verde)</strong> indican cantidad</td>
+<td><code>\rightarrow</code></td>
+<td>Subindices en <strong>(negro)</strong> son fijos</td>
+<td>No alterar subindices</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Ejemplo:</strong> Balancear la combustion de metano (<span class="math inline">\(CH_4\)</span>) para producir dioxido de carbono (<span class="math inline">\(CO_2\)</span>) y agua (<span class="math inline">\(H_2O\)</span>): <span class="math display">\[CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
 <ol type="1">
-<li><p><strong>Tabla de conteo inicial:</strong> | Elemento | Reactivos | Productos | Estado | |—|—|—|—| | Carbono (<span class="math inline">\(C\)</span>) | <span class="math inline">\(1\)</span> | <span class="math inline">\(1\)</span> | Balanceado | | Hidrogeno (<span class="math inline">\(H\)</span>) | <span class="math inline">\(4\)</span> | <span class="math inline">\(2\)</span> | Desbalanceado | | Oxigeno (<span class="math inline">\(O\)</span>) | <span class="math inline">\(2\)</span> | <span class="math inline">\(3\)</span> (de <span class="math inline">\(2\)</span> en <span class="math inline">\(CO_2\)</span> + <span class="math inline">\(1\)</span> en <span class="math inline">\(H_2O\)</span>) | Desbalanceado |</p></li>
-<li><p><strong>Diagrama de flujo de ajuste:</strong> Ajustar <span class="math inline">\(H\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(azul)</strong> en <span class="math inline">\(H_2O\)</span> -&gt; Ajustar <span class="math inline">\(O\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(verde)</strong> en <span class="math inline">\(O_2\)</span>. <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span></p></li>
-<li><p><strong>Tabla de conteo final:</strong> | Elemento | Reactivos | Productos | Estado | |—|—|—|—| | Carbono (<span class="math inline">\(C\)</span>) | <span class="math inline">\(1\)</span> | <span class="math inline">\(1\)</span> | Balanceado | | Hidrogeno (<span class="math inline">\(H\)</span>) | <span class="math inline">\(4\)</span> | <span class="math inline">\(2 \times 2 = 4\)</span> | Balanceado | | Oxigeno (<span class="math inline">\(O\)</span>) | <span class="math inline">\(2 \times 2 = 4\)</span> | <span class="math inline">\(2\)</span> + <span class="math inline">\(2 = 4\)</span> | Balanceado |</p></li>
+<li><strong>Tabla de conteo inicial:</strong></li>
 </ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Reactivos</th>
+<th>Productos</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carbono (<span class="math inline">\(C\)</span>)</td>
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+<td>Balanceado</td>
+</tr>
+<tr class="even">
+<td>Hidrogeno (<span class="math inline">\(H\)</span>)</td>
+<td><span class="math inline">\(4\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+<td>Desbalanceado</td>
+</tr>
+<tr class="odd">
+<td>Oxigeno (<span class="math inline">\(O\)</span>)</td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(3\)</span> (de <span class="math inline">\(2\)</span> en <span class="math inline">\(CO_2\)</span> + <span class="math inline">\(1\)</span> en <span class="math inline">\(H_2O\)</span>)</td>
+<td>Desbalanceado</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li><p><strong>Diagrama de flujo de ajuste:</strong> Ajustar <span class="math inline">\(H\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(azul)</strong> en <span class="math inline">\(H_2O\)</span> -&gt; Ajustar <span class="math inline">\(O\)</span> colocando un coeficiente <span class="math inline">\(2\)</span> <strong>(verde)</strong> en <span class="math inline">\(O_2\)</span>. <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span></p></li>
+<li><p><strong>Tabla de conteo final:</strong></p></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Reactivos</th>
+<th>Productos</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carbono (<span class="math inline">\(C\)</span>)</td>
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+<td>Balanceado</td>
+</tr>
+<tr class="even">
+<td>Hidrogeno (<span class="math inline">\(H\)</span>)</td>
+<td><span class="math inline">\(4\)</span></td>
+<td><span class="math inline">\(2 \times 2 = 4\)</span></td>
+<td>Balanceado</td>
+</tr>
+<tr class="odd">
+<td>Oxigeno (<span class="math inline">\(O\)</span>)</td>
+<td><span class="math inline">\(2 \times 2 = 4\)</span></td>
+<td><span class="math inline">\(2\)</span> + <span class="math inline">\(2 = 4\)</span></td>
+<td>Balanceado</td>
+</tr>
+</tbody>
+</table>
 <p>El resultado final esta balanceado.</p>
 <p><strong>Ejercicios:</strong> Completa las tablas de conteo y balancea las siguientes ecuaciones quimicas: - Ejercicio 1: Ecuacion: <span class="math display">\[C(s) + O_2(g) \rightarrow CO(g)\]</span></p>
 <p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
@@ -676,7 +774,7 @@ window.Quarto = {
 <p><strong>Paso 1: Contar los atomos iniciales de cada elemento</strong> Reactivos: <span class="math inline">\(2\)</span> de <span class="math inline">\(C\)</span>, <span class="math inline">\(6\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(1\)</span> de <span class="math inline">\(C\)</span>, <span class="math inline">\(2\)</span> de <span class="math inline">\(H\)</span> y <span class="math inline">\(3\)</span> de <span class="math inline">\(O\)</span>. &lt;- (El oxigeno aparece en dos productos distintos, por lo que es mejor dejarlo de ultimo y enfocarse primero en el carbono y el hidrogeno.)</p>
 <p><strong>Paso 2: Balancear los atomos de carbono</strong> Colocar un coeficiente <span class="math inline">\(2\)</span> <strong>(verde)</strong> delante de <span class="math inline">\(CO_2\)</span> en los productos para igualar los <span class="math inline">\(2\)</span> carbonos de los reactivos: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + H_2O(g)\]</span> Ahora los productos tienen <span class="math inline">\(2\)</span> carbonos. &lt;- (Cuidado: esto altera los atomos de oxigeno en productos, que ahora suman <span class="math inline">\(2 \times 2 + 1 = 5\)</span> atomos.)</p>
 <p><strong>Paso 3: Balancear los atomos de hidrogeno</strong> Colocar un coeficiente <span class="math inline">\(3\)</span> <strong>(verde)</strong> delante de <span class="math inline">\(H_2O\)</span> en los productos para igualar los <span class="math inline">\(6\)</span> hidrogenos de los reactivos: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)\]</span> Productos: <span class="math inline">\(3 \times 2 = 6\)</span> atomos de <span class="math inline">\(H\)</span>. Reactivos: <span class="math inline">\(6\)</span> atomos de <span class="math inline">\(H\)</span>. &lt;- (Esto incrementa nuevamente el oxigeno en productos a <span class="math inline">\(2 \times 2 + 3 = 7\)</span> atomos.)</p>
-<p><strong>Paso 4: Ajustar el oxigeno usando un coeficiente fraccionario</strong> Como hay <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> en productos and solo un par (<span class="math inline">\(O_2\)</span>) en reactivos, colocamos el coeficiente fraccionario <span class="math inline">\(\frac{7}{2}\)</span> <strong>(verde)</strong> en reactivos: <span class="math display">\[C_2H_6(g) + \frac{7}{2}O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)\]</span> Esto nos da <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> a cada lado. &lt;- (Muchos estudiantes terminan aqui, pero las reglas quimicas exigen que los coeficientes sean numeros enteros simples.)</p>
+<p><strong>Paso 4: Ajustar el oxigeno usando un coeficiente fraccionario</strong> Como hay <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> en productos y solo un par (<span class="math inline">\(O_2\)</span>) en reactivos, colocamos el coeficiente fraccionario <span class="math inline">\(\frac{7}{2}\)</span> <strong>(verde)</strong> en reactivos: <span class="math display">\[C_2H_6(g) + \frac{7}{2}O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)\]</span> Esto nos da <span class="math inline">\(7\)</span> atomos de <span class="math inline">\(O\)</span> a cada lado. &lt;- (Muchos estudiantes terminan aqui, pero las reglas quimicas exigen que los coeficientes sean numeros enteros simples.)</p>
 <p><strong>Paso 5: Multiplicar toda la ecuacion por dos para obtener numeros enteros</strong> Multiplicamos todos los coeficientes por <span class="math inline">\(2\)</span> para eliminar el denominador de la fraccion: <span class="math display">\[2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)\]</span> Esto cambia todos los coeficientes a numeros enteros. &lt;- (No olvides multiplicar TODOS los coeficientes de la ecuacion, no solo el de la fraccion, de lo contrario desbalancearias de nuevo los carbonos e hidrogenos.)</p>
 <p><strong>Paso 6: Recuento final de atomos</strong> Reactivos: <span class="math inline">\(2 \times 2 = 4\)</span> carbonos, <span class="math inline">\(2 \times 6 = 12\)</span> hidrogenos, <span class="math inline">\(7 \times 2 = 14\)</span> oxigenos. Productos: <span class="math inline">\(4 \times 1 = 4\)</span> carbonos, <span class="math inline">\(6 \times 2 = 12\)</span> hidrogenos, <span class="math inline">\(4 \times 2 + 6 \times 1 = 14\)</span> oxigenos. La ecuacion esta balanceada con los enteros mas simples.</p>
 <p><strong>Resultado:</strong> La ecuacion balanceada es <span class="math display">\[2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)\]</span></p>
@@ -733,10 +831,37 @@ window.Quarto = {
 <h2 class="aplicacion-box-heading unlisted anchored" data-number="5.20" data-anchor-id="aplicacion-laboratorio"><span class="header-section-number">5.20</span> Aplicacion - Laboratorio</h2>
 <p><strong>Objetivo:</strong> Demostrar la ley de la conservacion de la masa mediante el balanceo y la medicion de masas en la reaccion entre vinagre y bicarbonato de sodio en un sistema cerrado.</p>
 <p><strong>Materiales:</strong> - <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) - <span class="math inline">\(50\,\text{mL}\)</span> de vinagre comercial (acido acetico, <span class="math inline">\(CH_3COOH\)</span>) - <span class="math inline">\(1\)</span> globo de latex mediano - <span class="math inline">\(1\)</span> botella plastica vacia y limpia de <span class="math inline">\(500\,\text{mL}\)</span> - <span class="math inline">\(1\)</span> balanza digital escolar - <span class="math inline">\(1\)</span> embudo pequeño de plastico o papel</p>
-<p><strong>Procedimiento:</strong> <em>Preparacion:</em> 1. <strong>Pesar bicarbonato.</strong> Pesar exactamente <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) en la balanza. 2. <strong>Preparar globo.</strong> Colocar el embudo en la boquilla del globo de latex. 3. <strong>Cargar globo.</strong> Verter los <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato con cuidado dentro del globo y retirar el embudo. 4. <strong>Medir vinagre.</strong> Medir <span class="math inline">\(50\,\text{mL}\)</span> de vinagre comercial en un vaso graduado. 5. <strong>Cargar botella.</strong> Verter los <span class="math inline">\(50\,\text{mL}\)</span> de vinagre dentro de la botella de plastico.</p>
+<p><strong>Procedimiento:</strong></p>
+<p><em>Preparacion:</em> 1. <strong>Pesar bicarbonato.</strong> Pesar exactamente <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato de sodio (<span class="math inline">\(NaHCO_3\)</span>) en la balanza. 2. <strong>Preparar globo.</strong> Colocar el embudo en la boquilla del globo de latex. 3. <strong>Cargar globo.</strong> Verter los <span class="math inline">\(10.0\,\text{g}\)</span> de bicarbonato con cuidado dentro del globo y retirar el embudo. 4. <strong>Medir vinagre.</strong> Medir <span class="math inline">\(50\,\text{mL}\)</span> de vinagre comercial en un vaso graduado. 5. <strong>Cargar botella.</strong> Verter los <span class="math inline">\(50\,\text{mL}\)</span> de vinagre dentro de la botella de plastico.</p>
 <p><em>Montaje y medicion:</em> 6. <strong>Ajustar boquilla.</strong> Estirar la boquilla del globo y colocarla en la boca de la botella sin dejar caer el solido. 7. <strong>Pesar sistema.</strong> Colocar la botella armada en la balanza y registrar la masa inicial del sistema.</p>
 <p><em>Reaccion y registro:</em> 8. <strong>Mezclar reactivos.</strong> Levantar el globo permitiendo que el bicarbonato caiga todo dentro de la botella con vinagre. 9. <strong>Observar burbujas.</strong> Esperar que termine la efervescencia y observar como se infla el globo con dioxido de carbono (<span class="math inline">\(CO_2\)</span>). 10. <strong>Pesar producto.</strong> Colocar la botella con el globo inflado en la balanza y registrar la masa final.</p>
-<p><strong>Resultados:</strong> | Variable medida | Masa registrada en gramos | Observaciones visuales | |—|—|—| | Masa inicial del sistema cerrado | <span class="math inline">\(\underline{\hspace{3cm}}\)</span> | Presencia de reactivos separados | | Masa final del sistema cerrado | <span class="math inline">\(\underline{\hspace{3cm}}\)</span> | Globo inflado con gas y liquido transparente |</p>
+<p><strong>Resultados:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable medida</th>
+<th>Masa registrada en gramos</th>
+<th>Observaciones visuales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Masa inicial del sistema cerrado</td>
+<td><span class="math inline">\(\underline{\hspace{3cm}}\)</span></td>
+<td>Presencia de reactivos separados</td>
+</tr>
+<tr class="even">
+<td>Masa final del sistema cerrado</td>
+<td><span class="math inline">\(\underline{\hspace{3cm}}\)</span></td>
+<td>Globo inflado con gas y liquido transparente</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Conclusion:</strong> Escribe si la masa vario durante el proceso y explica este resultado aplicando la ecuacion balanceada de la reaccion: <span class="math display">\[NaHCO_3(ac) + CH_3COOH(ac) \rightarrow CH_3COONa(ac) + H_2O(l) + CO_2(g)\]</span></p>
 <p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
 <p><span class="math display">\[\underline{\hspace{6cm}}\]</span></p>
@@ -747,23 +872,38 @@ window.Quarto = {
 <p><strong>Pregunta 1</strong> — Nivel Bajo</p>
 <p><em>Contexto:</em> Una ecuacion quimica balanceada muestra las relaciones cuantitativas de los atomos en una reaccion. Considere la reaccion de sintesis de agua: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span></p>
 <p><em>Enunciado:</em> De acuerdo con la ley de la conservacion de la masa, ¿cual es el numero total de atomos de oxigeno presentes en el lado de los reactivos y de los productos, respectivamente?</p>
-<p>A. <span class="math inline">\(2\)</span> y <span class="math inline">\(2\)</span> B. <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span> C. <span class="math inline">\(2\)</span> y <span class="math inline">\(1\)</span> D. <span class="math inline">\(4\)</span> y <span class="math inline">\(2\)</span></p>
+<p>A. <span class="math inline">\(2\)</span> y <span class="math inline">\(2\)</span></p>
+<p>B. <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span></p>
+<p>C. <span class="math inline">\(2\)</span> y <span class="math inline">\(1\)</span></p>
+<p>D. <span class="math inline">\(4\)</span> y <span class="math inline">\(2\)</span></p>
 <p><strong>Pregunta 2</strong> — Nivel Bajo</p>
 <p><em>Contexto:</em> Al balancear una ecuacion quimica, los quimicos colocan numeros enteros delante de las formulas quimicas (coeficientes) pero nunca modifican los numeros pequeños que estan dentro de las formulas (subindices).</p>
 <p><em>Enunciado:</em> ¿Por que no se deben alterar los subindices al balancear una ecuacion quimica?</p>
-<p>A. Porque al cambiar los subindices se cambia la identidad quimica de las sustancias. B. Porque al cambiar los subindices se destruye la masa total de los reactivos. C. Porque los subindices representan el estado fisico de los reactivos y productos. D. Porque los subindices solo pueden ser numeros impares menores que tres.</p>
+<p>A. Porque al cambiar los subindices se cambia la identidad quimica de las sustancias.</p>
+<p>B. Porque al cambiar los subindices se destruye la masa total de los reactivos.</p>
+<p>C. Porque los subindices representan el estado fisico de los reactivos y productos.</p>
+<p>D. Porque los subindices solo pueden ser numeros impares menores que tres.</p>
 <p><strong>Pregunta 3</strong> — Nivel Medio</p>
 <p><em>Contexto:</em> En el laboratorio se calienta clorato de potasio (<span class="math inline">\(K{Cl}O_3\)</span>) para obtener cloruro de potasio (<span class="math inline">\(K{Cl}\)</span>) y oxigeno gaseoso (<span class="math inline">\(O_2\)</span>). La reaccion se representa por la siguiente ecuacion desbalanceada: <span class="math display">\[K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)\]</span></p>
 <p><em>Enunciado:</em> Al realizar el balanceo de la ecuacion con los coeficientes enteros mas pequeños posibles, ¿cuales son los coeficientes que deben preceder al <span class="math inline">\(K{Cl}O_3\)</span>, <span class="math inline">\(K{Cl}\)</span> y <span class="math inline">\(O_2\)</span>, respectivamente?</p>
-<p>A. <span class="math inline">\(2\)</span>, <span class="math inline">\(2\)</span> y <span class="math inline">\(3\)</span> B. <span class="math inline">\(1\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span> C. <span class="math inline">\(2\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(3\)</span> D. <span class="math inline">\(3\)</span>, <span class="math inline">\(3\)</span> y <span class="math inline">\(2\)</span></p>
+<p>A. <span class="math inline">\(2\)</span>, <span class="math inline">\(2\)</span> y <span class="math inline">\(3\)</span></p>
+<p>B. <span class="math inline">\(1\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span></p>
+<p>C. <span class="math inline">\(2\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(3\)</span></p>
+<p>D. <span class="math inline">\(3\)</span>, <span class="math inline">\(3\)</span> y <span class="math inline">\(2\)</span></p>
 <p><strong>Pregunta 4</strong> — Nivel Medio</p>
 <p><em>Contexto:</em> Un estudiante quiere balancear la combustion de metano (<span class="math inline">\(CH_4\)</span>) y escribe la siguiente ecuacion balanceada: <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span>. Las masas molares de las sustancias son: <span class="math inline">\(CH_4 = 16.04\,\text{g/mol}\)</span>, <span class="math inline">\(O_2 = 32.00\,\text{g/mol}\)</span>, <span class="math inline">\(CO_2 = 44.01\,\text{g/mol}\)</span> y <span class="math inline">\(H_2O = 18.02\,\text{g/mol}\)</span>.</p>
 <p><em>Enunciado:</em> ¿Cual de los siguientes argumentos justifica correctamente que la ecuacion cumple con la ley de la conservacion de la masa?</p>
-<p>A. Porque la suma de las masas de los reactivos (<span class="math inline">\(16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}\)</span>) es igual a la suma de las masas de los productos (<span class="math inline">\(44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}\)</span>). B. Porque el numero de moleculas reactivas es exactamente igual al numero de moleculas de productos. C. Porque el carbono se transformo en oxigeno gaseoso manteniendo la misma cantidad de moles totales. D. Porque la masa molecular de cada sustancia individual permanece constante antes y despues del cambio quimico.</p>
+<p>A. Porque la suma de las masas de los reactivos (<span class="math inline">\(16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}\)</span>) es igual a la suma de las masas de los productos (<span class="math inline">\(44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}\)</span>).</p>
+<p>B. Porque el numero de moleculas reactivas es exactamente igual al numero de moleculas de productos.</p>
+<p>C. Porque el carbono se transformo en oxigeno gaseoso manteniendo la misma cantidad de moles totales.</p>
+<p>D. Porque la masa molecular de cada sustancia individual permanece constante antes y despues del cambio quimico.</p>
 <p><strong>Pregunta 5</strong> — Nivel Alto</p>
 <p><em>Contexto:</em> La combustion del gas etano se representa por la ecuacion: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
 <p><em>Enunciado:</em> Si se balancea primero el carbono y el hidrogeno colocando coeficientes enteros en los productos, ¿cual es la fraccion adecuada que debe colocarse delante del oxigeno (<span class="math inline">\(O_2\)</span>) en los reactivos para balancear la ecuacion antes de multiplicar por dos?</p>
-<p>A. <span class="math inline">\(\frac{7}{2}\)</span> B. <span class="math inline">\(\frac{5}{2}\)</span> C. <span class="math inline">\(\frac{9}{2}\)</span> D. <span class="math inline">\(\frac{3}{2}\)</span></p>
+<p>A. <span class="math inline">\(\frac{7}{2}\)</span></p>
+<p>B. <span class="math inline">\(\frac{5}{2}\)</span></p>
+<p>C. <span class="math inline">\(\frac{9}{2}\)</span></p>
+<p>D. <span class="math inline">\(\frac{3}{2}\)</span></p>
 </section>
 <section id="socializacion" class="level2 evaluacion-box-heading unlisted evaluacion-box evaluacion-box-section" title="Socializacion" data-number="5.22">
 <h2 class="evaluacion-box-heading unlisted anchored" data-number="5.22" data-anchor-id="socializacion"><span class="header-section-number">5.22</span> Socializacion</h2>
