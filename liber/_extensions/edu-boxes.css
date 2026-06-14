@@ -133,8 +133,8 @@ main > [class*="-box-section"]:first-of-type {
 
 /* ---- DARK MODE SUPPORT ---- */
 
-body.quarto-dark [class*="-box"],
-[data-bs-theme="dark"] [class*="-box"] {
+body.quarto-dark [class*="-box-section"],
+[data-bs-theme="dark"] [class*="-box-section"] {
   background-color: transparent !important;
 }
 
