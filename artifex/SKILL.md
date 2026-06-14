@@ -102,7 +102,8 @@ El agente marca cada paso al completarlo.
 - [ ] **Paso 6:** Ejercicios (`references/agente_ejercicios.md`)
 - [ ] **Paso 7:** Retos (`references/agente_retos.md`)
 - [ ] **Paso 8:** Aplicacion (`references/agente_aplicacion.md`)
-- [ ] **Paso 8.5:** Evaluacion tipo ICFES (`references/agente_evaluacion.md`)
+- [ ] **Paso 8.5:** Evaluacion tipo ICFES — 5 preguntas (`references/agente_evaluacion.md`)
+- [ ] **Paso 8.6:** Socializacion — claves de respuesta (`references/agente_socializacion.md`)
 - [ ] **Paso 9:** Socioemocional (`references/agente_socioemocional.md`)
 - [ ] **Paso 10:** QA Final — validacion mecanica + semantica (`references/agente_qa.md`)
 - [ ] **Paso 10b:** Bucle de Retroalimentacion (si QA fallo, repetir pasos)
@@ -200,16 +201,19 @@ continuidad narrativa si estan disponibles.
 
 ---
 
-### Paso 4 — Caracterizados
+### Paso 4 — Caracterizados (DUA)
 
 **El agente lee:** `references/agente_caracterizados.md`
-**Entrada:** Bloque de Teoria
-**Accion:** Genera 6 versiones de texto adaptado (DUA Colombia - Decreto 1421):
-Apoyo Cognitivo/TDAH, Visual, Dislexia/Dificultades Lectoras,
-Autismo/Pensamiento Concreto, Accesibilidad Sensorial,
-Socioemocional/Psicosocial.
+**Entrada:** Bloque de Teoria (Paso 1) + Bloque de Ejemplos (Paso 5) +
+Bloque de Ejercicios (Paso 6)
+**Accion:** Genera 6 miniclases DUA, una por perfil. Cada una contiene:
+(1) texto teorico adaptado al perfil, (2) un ejemplo resuelto paso a
+paso contextualizado, (3) dos ejercicios de practica. Los datos de
+ejemplos y ejercicios DUA deben ser distintos a los de los bloques
+generales (Pasos 5 y 6).
 **Verificacion:** Existen exactamente 6 `{.caracterizados-box}` con
-los titles definidos en `agente_caracterizados.md`.
+los titles definidos en `agente_caracterizados.md`. Cada bloque contiene
+las secciones teoria, **Ejemplo:** y **Ejercicios:**.
 
 ---
 
@@ -271,11 +275,22 @@ distractores.
 correcta, 3 distractores) escalonados por nivel de dificultad ICFES:
 2 Bajo, 2 Medio, 1 Alto. Distribucion de competencias: Interpretacion (2),
 Argumentacion (2), Proposicion (1). Cada reactivo incluye Contexto,
-Enunciado y opciones. Ademas genera un bloque de Socializacion con
-Competencia, Afirmacion, Evidencia, Nivel, Respuesta correcta y
-Explicacion para cada reactivo.
-**Verificacion:** Existen 1 `{.evaluacion-box}` y 1 `{.sub-evaluacion-box}`.
-Dentro del evaluacion-box: 5 reactivos, 2 Bajo + 2 Medio + 1 Alto.
+Enunciado y opciones. Sin incluir claves de respuesta (va en Paso 8.6).
+**Verificacion:** Existe 1 `{.evaluacion-box}` con title="Evaluacion - tipo ICFES"
+con 5 reactivos (2 Bajo + 2 Medio + 1 Alto).
+
+---
+
+### Paso 8.6 — Socializacion
+
+**El agente lee:** `references/agente_socializacion.md`
+**Entrada:** `{.evaluacion-box}` generado en Paso 8.5 (las 5 preguntas ICFES)
+**Accion:** Genera un segundo `{.evaluacion-box}` con title="Socializacion"
+conteniendo las claves de respuesta: para cada pregunta, Competencia,
+Afirmacion, Evidencia, Nivel, Respuesta correcta y Explicacion.
+**Verificacion:** Existe un segundo `{.evaluacion-box}` con title="Socializacion"
+con 5 entradas, cada una con Competencia, Afirmacion, Evidencia, Respuesta
+correcta y Explicacion.
 
 ---
 
@@ -461,31 +476,7 @@ hacia la teoria.}
 :::
 
 ::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
-{Explicacion simple con analogia}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
-{Texto adaptado con pasos numerados, frases cortas y negritas}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Visual"}
-{Texto adaptado como tabla, diagrama de flujo o mapa conceptual}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
-{Texto adaptado con oraciones cortas, sintaxis clara y separacion visual}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
-{Texto adaptado con regla explicita y lenguaje literal}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
-{Texto adaptado con descripciones textuales y formato accesible}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
-{Texto adaptado con validacion, acompañamiento y cierre positivo}
+{Explicacion Feynman del concepto}
 :::
 
 ::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
@@ -512,6 +503,30 @@ hacia la teoria.}
 {Ejercicios de analisis: problema abierto, detectar errores}
 :::
 
+::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Visual"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
+{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+:::
+
 ::: {.retos-box title="Retos"}
 {Actividad desafiante}
 :::
@@ -530,7 +545,7 @@ Cada uno: Contexto + Enunciado + opciones A, B, C, D. 1 correcta,
 3 distractores.}
 :::
 
-::: {.sub-evaluacion-box title="Socializacion"}
+::: {.evaluacion-box title="Socializacion"}
 {Clave de respuestas para el docente. Cada pregunta: Nivel (Bajo/Medio/Alto),
 Competencia, Afirmacion, Evidencia, Respuesta correcta, Explicacion.}
 :::

@@ -26,27 +26,9 @@ book:
         - index.qmd
         - 01_Generalidades/01_Introduccion.qmd
         - 01_Generalidades/02_PlanDeArea.qmd
-    - part: "Sexto"
+    - part: "Décimo - Química"
       chapters:
-        - 02_Sexto/Biologia.qmd
-    - part: "Séptimo"
-      chapters:
-        - 03_Septimo/Quimica.qmd
-        - 03_Septimo/Fisica.qmd
-    - part: "Octavo"
-      chapters:
-        - 04_Octavo/Quimica.qmd
-        - 04_Octavo/Biologia.qmd
-    - part: "Noveno"
-      chapters:
-        - 05_Noveno/Quimica.qmd
-    - part: "Décimo"
-      chapters:
-        - 06_Decimo/Quimica.qmd
-        - 06_Decimo/Biologia.qmd
-    - part: "Once"
-      chapters:
-        - 07_Once/QUIMICA.qmd
+        - 06_Decimo/reactivo_limite.qmd
 
 
   appendices:

@@ -11,9 +11,8 @@ distractores), cada uno construido con la estructura formal:
 Competencia → Afirmacion → Evidencia → Contexto → Enunciado → Opciones A, B, C, D
 ```
 
-Ademas, produces un bloque de **socializacion** donde se revelan la
-competencia, afirmacion, evidencia, respuesta correcta y su explicacion
-para que el docente la use al retroalimentar.
+Las claves de respuesta (competencia, afirmacion, evidencia, respuesta
+correcta, explicacion) las genera el agente de Socializacion (Paso 8.6).
 
 ---
 
@@ -71,6 +70,43 @@ Distribucion por nivel en la evaluacion:
 - La opcion correcta debe ser **inequivoca** para quien domina el concepto.
 - No usar "Todas las anteriores" o "Ninguna de las anteriores".
 
+### Formato visual obligatorio (separacion de opciones)
+
+Cada opcion A, B, C, D DEBE ir en una **linea separada** con un **salto de
+linea en blanco** entre el enunciado y la primera opcion:
+
+```
+*Enunciado:* {pregunta concreta.}
+
+A. {Texto de la opcion 1}
+B. {Texto de la opcion 2}
+C. {Texto de la opcion 3}
+D. {Texto de la opcion 4}
+```
+
+**IMPORTANTE:** Sin el salto de linea en blanco, Quarto renderiza las
+opciones pegadas al enunciado como un solo parrafo. El salto de linea
+es obligatorio.
+
+Entre cada pregunta debe haber **dos saltos de linea en blanco**:
+
+```
+**Pregunta 1** — Nivel Bajo
+
+*Contexto:* ...
+
+*Enunciado:* ...
+
+A. ...
+B. ...
+C. ...
+D. ...
+
+
+
+**Pregunta 2** — Nivel Bajo
+```
+
 ### Objetivo
 
 Producir 5 reactivos ICFES completos que:
@@ -85,17 +121,12 @@ Producir 5 reactivos ICFES completos que:
 - Usen contextos transversales o cotidianos cuando sea posible.
 - Los distractores se basen en errores tipicos de los Ejercicios (Paso 6)
   y Ejemplos (Paso 5).
-- Incluyan una socializacion separada con la respuesta correcta y su
-  explicacion.
 
 ### Criterios de verificacion
 
 - Hay exactamente 5 preguntas.
 - Cada pregunta tiene Contexto (2-4 lineas), Nivel (Bajo/Medio/Alto),
   Enunciado, y 4 opciones A, B, C, D.
-- Cada pregunta tiene su correspondiente entrada en Socializacion.
-- En Socializacion: Competencia, Afirmacion, Evidencia, Respuesta correcta,
-  Explicacion.
 - Las 3 competencias estan cubiertas (2 Interpretacion, 2 Argumentacion,
   1 Proposicion).
 - Distribucion de dificultad: 2 Bajo, 2 Medio, 1 Alto.
@@ -133,9 +164,7 @@ prompt, el agente DEBE:
 
 ## Salida
 
-- Dos bloques:
-  1. `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
-  2. `::: {.sub-evaluacion-box title="Socializacion"}`
+- Un bloque: `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
 
 ---
 
@@ -191,14 +220,20 @@ aumento de temperatura en un grafico combinado." (Medio)
 
 Para cada pregunta:
 
-**Contexto** (2-4 lineas):
-- Presenta un texto breve, tabla, grafico, escenario o situacion.
-- Debe ser comprensible sin conocimientos previos del tema.
-- Idealmente transversal o cotidiano.
-- Puede incluir datos ficticios pero realistas.
+**Contexto** (3-5 lineas o tabla):
+- Presenta una situacion problema del mundo real o de laboratorio con datos
+  organizados (masas, moles, ecuaciones, tablas).
+- Debe sentirse como un examen ICFES real: el estudiante recibe informacion
+  y debe procesarla, no solo recordar una formula.
+- Incluir MASAS MOLARES explicitas si se requieren calculos.
+- Los datos numericos deben ser realistas y coherentes.
+- Separar del enunciado con un salto de linea.
 
 **Enunciado:**
-- La pregunta concreta que el estudiante debe responder.
+- La pregunta concreta que el estudiante debe responder APLICANDO la teoria
+  al contexto dado.
+- NO debe ser una pregunta generica ("¿Que es reactivo limite?"); debe
+  remitirse al contexto especifico del problema.
 - Redactado de forma clara y directa.
 - Debe poder responderse unicamente con la informacion del contexto + el
   concepto aprendido.
@@ -208,27 +243,17 @@ Para cada pregunta:
 - Tres distractores plausibles (errores conceptuales comunes).
 - Misma extension y estructura gramatical entre las 4.
 - Sin "Todas las anteriores" ni "Ninguna de las anteriores".
+- Cada opcion en SU PROPIA LINEA.
+- **Salto de linea obligatorio** entre el enunciado y la primera opcion.
+- Usar formato `A.`, `B.`, `C.`, `D.` (sin guion, solo letra y punto).
 
-### Paso 4 — Redactar socializacion
-
-Para cada pregunta, escribe en el bloque de socializacion:
-
-- **Competencia:** {Interpretacion | Argumentacion | Proposicion}
-- **Afirmacion:** {La afirmacion definida en Paso 2}
-- **Evidencia:** {La evidencia definida en Paso 2}
-- **Respuesta correcta:** {Letra de la opcion correcta}
-- **Explicacion:** {Por que esa opcion es correcta y por que los
-  distractores son incorrectos. 2-4 lineas.}
-
-### Paso 5 — Verificar
+### Paso 4 — Verificar
 
 - Cada pregunta tiene Contexto, Enunciado y 4 opciones?
-- Cada pregunta tiene entrada en socializacion?
 - La distribucion de competencias es 2-2-1?
 - Exactamente 1 opcion correcta por pregunta?
 - Los distractores son plausibles (no absurdos)?
 - No hay "Todas las anteriores" ni "Ninguna de las anteriores"?
-- Las explicaciones en socializacion son claras y utiles para el docente?
 
 ---
 
@@ -239,14 +264,16 @@ Para cada pregunta, escribe en el bloque de socializacion:
 
 **Pregunta 1** — Nivel Bajo
 
-*Contexto:* {Texto, tabla o escenario simple, 1 variable.}
+*Contexto:* {Contexto con situacion real o de laboratorio, datos organizados, 3-5 lineas o tabla. Masas molares explicitas si se requieren.}
 
-*Enunciado:* {Pregunta concreta.}
+*Enunciado:* {Pregunta concreta que exige aplicar la teoria al contexto dado.}
 
 A. {Opcion 1 — correcta}
-B. {Opcion 2 — distractor}
+B. {Opcion 2 — distractor basado en error conceptual comun}
 C. {Opcion 3 — distractor}
 D. {Opcion 4 — distractor}
+
+
 
 **Pregunta 2** — Nivel Bajo
 
@@ -259,6 +286,8 @@ B. {...}
 C. {...}
 D. {...}
 
+
+
 **Pregunta 3** — Nivel Medio
 
 *Contexto:* {Contexto con 2+ variables, tabla y/o grafica.}
@@ -270,9 +299,11 @@ B. {...}
 C. {...}
 D. {...}
 
+
+
 **Pregunta 4** — Nivel Medio
 
-*Contexto:* {Contexto experimental o analitico.}
+*Contexto:* {Contexto experimental o analitico con datos organizados.}
 
 *Enunciado:* {...}
 
@@ -281,9 +312,11 @@ B. {...}
 C. {...}
 D. {...}
 
+
+
 **Pregunta 5** — Nivel Alto
 
-*Contexto:* {Situacion problema abierta, no rutinaria.}
+*Contexto:* {Situacion problema abierta, no rutinaria, multipaso.}
 
 *Enunciado:* {...}
 
@@ -292,86 +325,23 @@ B. {...}
 C. {...}
 D. {...}
 
-:::
 
-::: {.sub-evaluacion-box title="Socializacion"}
-
-**Pregunta 1** — Nivel Bajo
-
-*Competencia:* Interpretacion
-
-*Afirmacion:* {El estudiante ...}
-
-*Evidencia:* {Accion concreta ...}
-
-*Respuesta correcta:* {A, B, C o D}
-
-*Explicacion:* {Por que es correcta y por que los distractores no. 2-4 lineas.}
-
-**Pregunta 2** — Nivel Bajo
-
-*Competencia:* Argumentacion
-
-*Afirmacion:* {...}
-
-*Evidencia:* {...}
-
-*Respuesta correcta:* {...}
-
-*Explicacion:* {...}
-
-**Pregunta 3** — Nivel Medio
-
-*Competencia:* Interpretacion
-
-*Afirmacion:* {...}
-
-*Evidencia:* {...}
-
-*Respuesta correcta:* {...}
-
-*Explicacion:* {...}
-
-**Pregunta 4** — Nivel Medio
-
-*Competencia:* Argumentacion
-
-*Afirmacion:* {...}
-
-*Evidencia:* {...}
-
-*Respuesta correcta:* {...}
-
-*Explicacion:* {...}
-
-**Pregunta 5** — Nivel Alto
-
-*Competencia:* Proposicion
-
-*Afirmacion:* {...}
-
-*Evidencia:* {...}
-
-*Respuesta correcta:* {...}
-
-*Explicacion:* {...}
 
 :::
 ```
 
 ## Restricciones de Formato
 
-- Dos bloques en orden: `evaluacion-box` primero, `sub-evaluacion-box` debajo.
-- `evaluacion-box`: Cada pregunta con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego `*Contexto:*`,
+- Un bloque: `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
+- Cada pregunta con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego `*Contexto:*`,
   `*Enunciado:*`, y opciones `A.`, `B.`, `C.`, `D.`.
-- `sub-evaluacion-box`: Cada entrada con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego
-  `*Competencia:*`, `*Afirmacion:*`, `*Evidencia:*`, `*Respuesta correcta:*`,
-  `*Explicacion:*`.
-- Numeracion de preguntas del 1 al 5 en ambos bloques.
+- **Salto de linea obligatorio** entre `*Enunciado:*` y la primera opcion `A.`
+  (sin esto Quarto pega las opciones al texto).
+- **Dos saltos de linea** entre preguntas.
+- Numeracion de preguntas del 1 al 5.
+- No incluir respuestas correctas ni claves (va en Socializacion, Paso 8.6).
 - No incluir emojis.
 - No incluir "Todas las anteriores" ni "Ninguna de las anteriores".
-- No incluir respuestas correctas dentro del `evaluacion-box` (solo en
-  socializacion).
 - Lenguaje claro y directo, adecuado al grado.
 
 ## Casos Borde

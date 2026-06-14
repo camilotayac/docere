@@ -30,7 +30,6 @@ EXPECTED_BOXES = [
     (r'\.retos-box\b', 'retos-box', 'Retos', 'agente_retos'),
     (r'\.aplicacion-box\b', 'aplicacion-box', 'Aplicacion', 'agente_aplicacion'),
     (r'\.evaluacion-box\b', 'evaluacion-box', 'Evaluacion', 'agente_evaluacion'),
-    (r'\.sub-evaluacion-box\b', 'sub-evaluacion-box', 'Socializacion', 'agente_evaluacion'),
     (r'\.socioemocional-box\b', 'socioemocional-box', 'Socioemocional', 'agente_socioemocional'),
 ]
 
@@ -183,15 +182,29 @@ def check_evaluacion_opciones(text: str, path: str) -> dict:
             "failures_by_agent": {"agente_evaluacion": ["opciones_faltantes"]}}
 
 
+def check_socializacion_box_exists(text: str, path: str) -> dict:
+    """Verifica que exista un evaluacion-box con title Socializacion."""
+    boxes = re.findall(
+        r'::: \{\.evaluacion-box[^}]*\}', text)
+    socializacion = [b for b in boxes if 'Socializacion' in b]
+    if socializacion:
+        return {"name": "socializacion_box_exists", "passed": True,
+                "detail": "evaluacion-box con title Socializacion encontrado"}
+    return {"name": "socializacion_box_exists", "passed": False,
+            "detail": f"No se encontró evaluacion-box con title Socializacion. Total evaluacion-box: {len(boxes)}",
+            "failures_by_agent": {"agente_socializacion": ["missing_socializacion_box"]}}
+
+
 def check_socializacion_fields(text: str, path: str) -> dict:
-    """Verifica que en sub-evaluacion-box existan los campos obligatorios."""
-    socializacion_match = re.search(
-        r'::: \{\.sub-evaluacion-box[^}]*\}.*?:::', text, re.DOTALL)
-    if not socializacion_match:
+    """Verifica que en el evaluacion-box de Socializacion existan los campos obligatorios."""
+    boxes = re.findall(
+        r'::: \{\.evaluacion-box[^}]*\}.*?:::', text, re.DOTALL)
+    socializacion = [b for b in boxes if 'Socializacion' in b]
+    if not socializacion:
         return {"name": "socializacion_fields", "passed": False,
-                "detail": "FALTA sub-evaluacion-box",
-                "failures_by_agent": {"agente_evaluacion": ["missing_sub-evaluacion-box"]}}
-    soc_text = socializacion_match.group()
+                "detail": "FALTA evaluacion-box con title Socializacion",
+                "failures_by_agent": {"agente_socializacion": ["missing_socializacion_box"]}}
+    soc_text = socializacion[0]
     required_fields = [
         (r'Nivel', 'Nivel'),
         (r'Competencia', 'Competencia'),
@@ -250,6 +263,29 @@ def check_caracterizados_count(text: str, path: str) -> dict:
             "failures_by_agent": {"agente_caracterizados": [f"caracterizados_count_{count}"]}}
 
 
+def check_caracterizados_content(text: str, path: str) -> dict:
+    """Verifica que cada caracterizados-box tenga teoria + ejemplo + 2 ejercicios."""
+    boxes = re.findall(
+        r'::: \{\.caracterizados-box[^}]*\}.*?:::', text, re.DOTALL)
+    errors = []
+    for i, b in enumerate(boxes):
+        title_m = re.search(r'title="([^"]+)"', b)
+        title = title_m.group(1) if title_m else f"box-{i}"
+        issues = []
+        if not re.search(r'\*\*Ejemplo:\*\*', b):
+            issues.append("falta **Ejemplo:**")
+        if not re.search(r'\*\*Ejercicios:\*\*', b):
+            issues.append("falta **Ejercicios:**")
+        if issues:
+            errors.append(f"{title}: {', '.join(issues)}")
+    if not errors:
+        return {"name": "caracterizados_content", "passed": True,
+                "detail": "Cada caracterizados-box contiene teoria, Ejemplo: y Ejercicios:"}
+    return {"name": "caracterizados_content", "passed": False,
+            "detail": "; ".join(errors),
+            "failures_by_agent": {"agente_caracterizados": ["contenido_incompleto"]}}
+
+
 def check_ejercicios_count(text: str, path: str) -> dict:
     """Verifica exactamente 3 niveles de ejercicios (Bajo, Medio, Alto)."""
     boxes = re.findall(
@@ -281,13 +317,12 @@ def check_section_order(text: str, path: str) -> dict:
         'teoria-box',
         'ideas-previas-box',
         'contexto-box',
-        'caracterizados-box',
         'ejemplo-box',
         'ejercicios-box',
+        'caracterizados-box',
         'retos-box',
         'aplicacion-box',
         'evaluacion-box',
-        'sub-evaluacion-box',
         'socioemocional-box',
     ]
     found = []
@@ -337,7 +372,6 @@ EXPECTED_SECTIONS = {
     "retos-box": "Retos",
     "aplicacion-box": "Aplicacion",
     "evaluacion-box": "Evaluacion",
-    "sub-evaluacion-box": "Socializacion",
     "socioemocional-box": "Socioemocional",
 }
 
@@ -367,12 +401,14 @@ ALL_CHECKS = [
     check_no_emojis,
     check_latex_balance,
     check_caracterizados_count,
+    check_caracterizados_content,
     check_ejemplos_niveles,
     check_ejercicios_count,
     check_section_order,
     check_evaluacion_reactivos,
     check_evaluacion_distribucion,
     check_evaluacion_opciones,
+    check_socializacion_box_exists,
     check_socializacion_fields,
     check_socioemocional_competencia,
 ]
