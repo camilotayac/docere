@@ -42,7 +42,9 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   frases cortas (1-2 lineas por parrafo), conceptos clave en **negrita**,
   una idea por parrafo. NO en parrafo corrido.
 - **Ejemplo:** Enunciado claro, cada paso numerado con su operacion,
-  resultado al final. Incluir el calculo en cada paso.
+  resultado al final. Incluir el calculo en cada paso. La ecuacion
+  quimica principal debe ir en display math (`$$...$$`) en linea
+  aparte, no inline.
 - **Ejercicios:** Enunciados directos, con los datos claramente listados.
   Indicar "Sigue los pasos 1-4". Agregar `\underline{\hspace{6cm}}`
   despues de cada ejercicio para espacio de respuesta.
@@ -53,6 +55,8 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   Prohibido `<span style="color:...">` o tablas en code blocks.
 - **Ejemplo:** Tabla Markdown de datos de entrada, diagrama de flujo
   con `->`, resultado final. Prohibido recuadros ASCII (`┌ ┐ └ ┘`).
+  La ecuacion quimica principal en display math (`$$...$$`), no texto
+  plano ni inline.
 - **Ejercicios:** Tabla Markdown con datos dados, espacio para que el
   estudiante complete. Agregar `\underline{\hspace{6cm}}` despues de
   cada ejercicio.

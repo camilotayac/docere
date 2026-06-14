@@ -10,3 +10,4 @@ __pycache__/
 # Bibliotheca - libros locales (no se suben a GitHub)
 Bibliotheca/**/*.pdf
 Bibliotheca/**/*.epub
+Bibliotheca/**/.toc_cache/

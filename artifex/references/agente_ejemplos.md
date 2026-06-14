@@ -242,8 +242,11 @@ excepcion o dato a deducir.}
 - No incluir notas entre corchetes `[{...}]` — el razonamiento ya
   cumple esa funcion.
 - Usar LaTeX para formulas (`$...$` o `$$...$$`).
-- Formulas principales (ecuaciones de la reaccion) usar display math
-  con `$$...$$` en linea separada, sin HTML.
+- **Toda ecuacion quimica principal** debe ir en display math con
+  `$$...$$` en linea separada (ej. `$$2NO + O_2 \rightarrow 2NO_2$$`).
+  No usar inline `$...$` ni texto plano con flecha Unicode.
+- Las operaciones de calculo dentro de los pasos pueden ir inline
+  con `$...$`.
 - Codificacion por colores opcional pero consistente si se usa. Usar
   `**(color)**` no `<span style="color:...">`.
 

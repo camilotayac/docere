@@ -55,14 +55,20 @@ Reglas:
 
 ### 4. Fórmulas
 
-- Fórmulas importantes (las que se referencian desde el texto) deben ir en
-  **display math** con `$$...\tag{N}$$` para poder referenciarlas.
-- Fórmulas simples uso único pueden ir inline con `$...$`.
-- Cuando una fórmula tiene `\tag{N}`, referenciarla en el texto como
+- Las **ecuaciones químicas principales** de cada bloque (Teoria,
+  Caracterizados, Ejemplos) deben ir en display math `$$...$$` en su
+  propia línea, separadas del texto con líneas en blanco.
+- Fórmulas importantes que se referencian desde el texto deben usar
+  `\tag{N}` (ej. `$$n = \frac{m}{M}\tag{1}$$`) y referenciarse como
   "Ecuación N" o "(N)".
+- Fórmulas de uso único (dentro de ejercicios o enunciados) pueden ir
+  inline con `$...$`.
+- Las reacciones químicas no deben ir como texto plano (`Fe + S → FeS`)
+  sino en LaTeX display: `$$Fe + S \rightarrow FeS$$`.
+- Prohibido usar flecha Unicode (`→`) dentro de LaTeX; usar
+  `\rightarrow`.
 - Las fórmulas enumeradas deben separarse del texto circundante con
   líneas en blanco.
-- Coherencia: no mezclar `$$` sin tag con `\tag` en el mismo bloque.
 
 ### 5. Pasos numerados
 

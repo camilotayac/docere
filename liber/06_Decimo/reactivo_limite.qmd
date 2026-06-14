@@ -101,7 +101,11 @@ Para identificar el reactivo límite sigue estos pasos en orden:
 4. El cociente más pequeño es el **reactivo límite**.
 5. Usa sus moles para calcular el producto.
 
-**Ejemplo:** En la reacción $Fe + S \rightarrow FeS$ se tienen 55.85 g de Fe y 48.09 g de S. Masas molares: Fe = 55.85 g/mol, S = 32.06 g/mol.
+**Ejemplo:** La reacción es:
+
+$$Fe + S \rightarrow FeS$$
+
+Se tienen 55.85 g de Fe y 48.09 g de S. Masas molares: Fe = 55.85 g/mol, S = 32.06 g/mol.
 
 **Paso 1:** Convertir a moles. Fe: 55.85 ÷ 55.85 = 1.00 mol. S: 48.09 ÷ 32.06 = 1.50 mol.
 
@@ -133,7 +137,11 @@ Para identificar el reactivo límite sigue estos pasos en orden:
 
 ::: {.caracterizados-box title="Contextualizacion - Visual"}
 
-Reacción: **Fe + S → FeS** (balanceada 1:1)
+Reacción:
+
+$$Fe + S \rightarrow FeS$$
+
+(balanceada 1:1)
 
 Datos de entrada:
 
@@ -174,7 +182,11 @@ Menor cociente → Fe es RL (verde)
 
 Una ecuación química es una receta. Los reactivos son los ingredientes. El producto es el resultado. La ecuación balanceada dice cuánto necesitas de cada reactivo. El reactivo límite es el ingrediente que se acaba primero.
 
-**Ejemplo:** La reacción es $Fe + S \rightarrow FeS$. Tienes 55.85 g de Fe y 48.09 g de S.
+**Ejemplo:** La reacción es:
+
+$$Fe + S \rightarrow FeS$$
+
+Tienes 55.85 g de Fe y 48.09 g de S.
 
 1. **Convierte a moles.** 55.85 g Fe → 1.00 mol. 48.09 g S → 1.50 mol.
 2. **Divide por el coeficiente.** Fe: 1.00 ÷ 1 = 1.00. S: 1.50 ÷ 1 = 1.50.
@@ -206,7 +218,11 @@ Una ecuación química es una receta. Los reactivos son los ingredientes. El pro
 
 Regla fija: los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente (moles ÷ coeficiente) más pequeño se agota primero. Ese es el reactivo límite.
 
-**Ejemplo:** Reacción $Fe + S \rightarrow FeS$. Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
+**Ejemplo:** Reacción:
+
+$$Fe + S \rightarrow FeS$$
+
+Coeficientes: ambos 1. Datos: 55.85 g Fe y 48.09 g S.
 
 1. Moles de Fe = 55.85 ÷ 55.85 = 1.00 mol. Moles de S = 48.09 ÷ 32.06 = 1.50 mol.
 2. Cociente de Fe = 1.00 ÷ 1 = 1.00.
@@ -271,7 +287,11 @@ Regla fija: los reactivos se combinan en una proporción fija de moles. El react
 
 Sabemos que los cálculos con muchos pasos pueden sentirse difíciles al principio, pero no te preocupes: vamos a hacerlo juntos, paso a paso. Cada paso que completes te acerca a dominar el concepto. Tú puedes hacerlo.
 
-**Ejemplo:** Observa esta reacción: $Fe + S \rightarrow FeS$. Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
+**Ejemplo:** Observa esta reacción:
+
+$$Fe + S \rightarrow FeS$$
+
+Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
 
 1. **Convertimos las masas a moles.** 55.85 g de Fe son 1.00 mol. 48.09 g de S son 1.50 moles. Bien, ya dimos el primer paso.
 2. **Dividimos cada cantidad entre su coeficiente** (los dos son 1, así que no cambia). Fe: 1.00. S: 1.50.
@@ -514,8 +534,11 @@ En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la
 *Enunciado:* De acuerdo con la información anterior, ¿cuál de las siguientes afirmaciones es correcta?
 
 A. El $N_2$ es el reactivo límite porque su coeficiente estequiométrico es 1.
+
 B. El $H_2$ es el reactivo límite porque 4 ÷ 3 < 2 ÷ 1.
+
 C. El $N_2$ y el $H_2$ están en proporción estequiométrica exacta.
+
 D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
 
 
@@ -526,8 +549,11 @@ D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
 *Enunciado:* Si se tienen 4 g de $H_2$ y 32 g de $O_2$, ¿cuál de las siguientes opciones describe correctamente la situación? (Masas molares: $H_2$ = 2 g/mol, $O_2$ = 32 g/mol)
 
 A. El oxígeno es el reactivo límite porque 32 g > 4 g.
+
 B. El hidrógeno es el reactivo límite porque 2 ÷ 2 = 1 y 1 ÷ 1 = 1, están en proporción exacta.
+
 C. El oxígeno es el reactivo límite porque 1 ÷ 1 = 1 y 2 ÷ 2 = 1, ambos están igual.
+
 D. No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
 
 
@@ -538,8 +564,11 @@ D. No hay reactivo límite porque ambos están en la proporción estequiométric
 *Enunciado:* ¿Cuál es la masa máxima de CaO que se puede obtener?
 
 A. 7.0 g
+
 B. 14.0 g
+
 C. 20.0 g
+
 D. 28.0 g
 
 
@@ -550,8 +579,11 @@ D. 28.0 g
 *Enunciado:* ¿Cuál es el rendimiento porcentual de la reacción?
 
 A. 39.1%
+
 B. 68.5%
+
 C. 78.3%
+
 D. 100%
 
 
@@ -562,8 +594,11 @@ D. 100%
 *Enunciado:* ¿Cuál es el porcentaje de pureza del mineral?
 
 A. 50.0%
+
 B. 62.5%
+
 C. 75.0%
+
 D. 87.5%
 
 :::
