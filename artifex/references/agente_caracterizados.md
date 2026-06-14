@@ -33,6 +33,14 @@ encuentra todo lo que necesita en un solo bloque: leer la teoria adaptada
 a su forma de procesar informacion, ver un ejemplo resuelto paso a paso
 en ese mismo formato, y practicar con dos ejercicios.
 
+### Reglas generales de formato
+
+- **Todo valor numérico** en LaTeX inline `$...$`.
+- **Toda unidad química o física** (g, mol, mL, g/mol) debe ir dentro de
+  `\text{}` en LaTeX, con `\,` (thin space) entre el valor y la unidad:
+  `$55.85\,\text{g}$`, `$2\,\text{mol}$`, `$30\,\text{mL}$`.
+- "gramos" y "moles" como unidad se abrevian a `\text{g}` y `\text{mol}`.
+
 ### Los 6 perfiles DUA y sus estrategias
 
 Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
@@ -46,7 +54,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   quimica principal debe ir en display math (`$$...$$`) en linea
   aparte, no inline. **Todo valor numérico** (masas, moles, cocientes,
   resultados) debe ir en LaTeX inline `$...$`, ej:
-  `$55.85 \div 55.85 = 1.00$ mol`.
+  `$\frac{55.85}{55.85} = 1.00$ mol`.
 - **Ejercicios:** Enunciados directos, con los datos claramente listados
   en LaTeX (ej: `$26.98$ g de Al`). Indicar "Sigue los pasos 1-4".
   Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio para
@@ -71,7 +79,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   guiones. Separacion visual entre parrafos.
 - **Ejemplo:** Enunciado en 1-2 oraciones cortas. Cada paso en una linea
   separada con `->` entre calculo y resultado. **Todo valor numérico**
-  en LaTeX inline `$...$` (ej: `$55.85$ g`, `$1.00 \div 1 = 1.00$`).
+   en LaTeX inline `$...$` (ej: `$55.85$ g`, `$\frac{1.00}{1} = 1.00$`).
 - **Ejercicios:** Enunciados cortos, vocabulario simple, datos en formato
   claro con LaTeX (ej: `$24.30$ g de Mg`). Agregar
   `\underline{\hspace{6cm}}` despues de cada ejercicio.
@@ -82,7 +90,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   sobrentendido. Estructura identica siempre.
 - **Ejemplo:** Misma estructura de regla fija + pasos literales. Mostrar
   cada operacion aritmetica con su resultado en LaTeX inline `$...$`
-  (ej: `$55.85 \div 55.85 = 1.00$ mol`).
+   (ej: `$\frac{55.85}{55.85} = 1.00$ mol`).
 - **Ejercicios:** Enunciados literales, estructura predecible. Datos en
   LaTeX (ej: `$26.98$ g de Al`). Pedir que apliquen la regla fija del
   inicio. Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
@@ -94,7 +102,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   hierro)`. **Todo valor numerico** en LaTeX inline `$...$`. No asumir
   que el estudiante ve colores, graficos o esquemas.
 - **Ejemplo:** Describir con palabras cada paso. Incluir la formula
-  LaTeX y la descripcion textual: `$55.85 \div 55.85 = 1.00$ mol
+   LaTeX y la descripcion textual: `$\frac{55.85}{55.85} = 1.00$ mol
   (hierro)`. No usar `[corchetes]` ni formato de solo texto plano.
 - **Ejercicios:** Instrucciones descriptivas con LaTeX y texto
   accesible. Agregar `\underline{\hspace{6cm}}` despues de cada

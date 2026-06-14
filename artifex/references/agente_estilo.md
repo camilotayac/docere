@@ -58,11 +58,18 @@ Reglas:
 - **TODO valor numérico** que forme parte de cálculos, fórmulas,
   cantidades químicas, físicas o matemáticas debe ir en LaTeX:
   - Cantidades: `$55.85$ g`, `$30.0$ mL`, `$2$ moles`
-  - Operaciones: `$55.85 \div 55.85 = 1.00$ mol`, `$1.00 < 1.50$`
-  - Cocientes: `$4 \div 3 < 2 \div 1$`
+   - Operaciones: `$\frac{55.85}{55.85} = 1.00$ mol`, `$1.00 < 1.50$`
+   - Cocientes: `$\frac{4}{3} < \frac{2}{1}$`
   - Opciones ICFES numéricas: `$7.0$ g`, `$39.1\%$`
   - Porcentajes: `$75\%$`, `$78.3\%$`
   - Coeficientes en texto: "se tienen $2$ moles de $N_2$"
+- **Toda unidad química o física** (g, mol, mL, g/mol) debe ir dentro de
+  `\text{}` en LaTeX, con `\,` (thin space) entre el valor numérico y la
+  unidad:
+  - `$55.85$ g` → `$55.85\,\text{g}$`
+  - `$Fe = 55.85$ g/mol` → `$Fe = 55.85\,\text{g/mol}$`
+  - `$30$ mL` → `$30\,\text{mL}$`
+  - `$2$ moles` → `$2\,\text{mol}$`
 - Las **ecuaciones químicas principales** de cada bloque (Teoria,
   Caracterizados, Ejemplos) deben ir en display math `$$...$$` en su
   propia línea, separadas del texto con líneas en blanco.
@@ -75,8 +82,8 @@ Reglas:
   sino en LaTeX display: `$$Fe + S \rightarrow FeS$$`.
 - Prohibido usar flecha Unicode (`→`) dentro de LaTeX; usar
   `\rightarrow`.
-- Prohibido usar división Unicode (`÷`) dentro de LaTeX; usar
-  `\div`.
+- Prohibido usar el símbolo `\div` en LaTeX; usar `\frac{A}{B}` en su
+  lugar para toda operación de división.
 - Las fórmulas enumeradas deben separarse del texto circundante con
   líneas en blanco.
 - **Accesibilidad:** para bloques de accesibilidad, mantener texto
@@ -137,9 +144,10 @@ Ejemplo correcto:
 | ICFES opciones | Línea en blanco antes de `A.` | Opciones pegadas a enunciado |
 | Fórmula importante | `$$...\tag{1}$$` | `$$...$$` sin tag |
 | Fórmula simple | `$...$` inline | `$$...$$` sin tag ni referencia |
-| Valor numérico en texto | `$55.85$ g`, `$2$ moles` | `55.85 g`, `2 moles` |
-| Cálculo paso a paso | `$55.85 \div 55.85 = 1.00$ mol` | `55.85 ÷ 55.85 = 1.00 mol` |
-| División/desigualdad | `\div`, `<`, `>` en LaTeX | `÷`, `<`, `>` fuera de LaTeX |
+| Valor numérico en texto | `$55.85\,\text{g}$`, `$2\,\text{mol}$` | `55.85 g`, `2 moles` |
+| Unidad química/física | `$55.85\,\text{g}$`, `$30\,\text{mL}$` | `$55.85$ g`, `$30$ mL` |
+| Cálculo paso a paso | `$\frac{55.85}{55.85} = 1.00$ mol` | `55.85 ÷ 55.85 = 1.00 mol` |
+| División/desigualdad | `\frac{}{}`, `<`, `>` en LaTeX | `÷`, `<`, `>` fuera de LaTeX |
 | Pasos | `1. **Acción.** Explicación.` | `**1.** a **2.** b **3.** c` |
 | Espacio respuesta | `\underline{\hspace{6cm}}` | Nada |
 | HTML | `**texto**` | `<span> <div> <style>` |

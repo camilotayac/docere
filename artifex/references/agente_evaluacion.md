@@ -340,8 +340,9 @@ D. {...}
 - **Dos saltos de linea** entre preguntas.
 - Numeracion de preguntas del 1 al 5.
 - **Todo valor numerico** en contexto, enunciado y opciones debe ir en
-  LaTeX inline `$...$`: `$10.0$ g de Ca`, `$500$ g de glucosa`,
-  `A. $7.0$ g`, `$4 \div 3 < 2 \div 1$`.
+  LaTeX inline `$...$` con la unidad dentro de `\text{}` y `\,` thin
+  space: `$10.0\,\text{g}$ de Ca`, `$500\,\text{g}$ de glucosa`,
+  `A. $7.0\,\text{g}$`, `$\frac{4}{3} < \frac{2}{1}$`.
 - Los nombres de compuestos quimicos van en LaTeX: `$Ca$`, `$NO_2$`,
   `$FeS_2$`.
 - No incluir respuestas correctas ni claves (va en Socializacion, Paso 8.6).

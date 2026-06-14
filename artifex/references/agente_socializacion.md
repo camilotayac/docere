@@ -47,9 +47,9 @@ Usar `*Campo:* valor` sin espacios extra. El orden es:
 ### Reglas de formato
 
 - **Todo valor numerico y operacion** en la explicacion debe ir en LaTeX
-  inline `$...$`: `$2 \div 1 = 2$`, `$10.0 \div 40.08 = 0.249$ mol`,
-  `$(180 \div 240) \times 100 = 75\%$`.
-- Usar `\div` para division en LaTeX (no `÷`).
+  inline `$...$`: `$\frac{2}{1} = 2$`, `$\frac{10.0}{40.08} = 0.249$ mol`,
+  `$\left(\frac{180}{240}\right) \times 100 = 75\%$`.
+- Prohibido usar `\div` en LaTeX; usar `\frac{A}{B}` en su lugar.
 - Los compuestos quimicos en LaTeX: `$N_2$`, `$H_2$`, `$SO_2$`.
 
 ### Criterios de verificacion

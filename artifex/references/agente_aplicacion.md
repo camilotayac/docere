@@ -43,11 +43,10 @@ Incluir:
 - **Objetivo:** Que se espera observar o demostrar.
 - **Materiales:** Lista de elementos (solo materiales escolares basicos o
   de laboratorio estandar).
-- **Procedimiento:** Pasos numerados para realizar la actividad.
-- **Diagrama de flujo:** Diagrama Mermaid (` ```{mermaid} `) que muestre
-  el flujo del experimento con decisiones, usando `flowchart TD`.
-  Reglas: sin emojis, texto plano (sin LaTeX dentro del diagrama),
-  nodos rectangulares para acciones y romboidales para decisiones.
+- **Procedimiento:** Lista numerada detallada, estilo receta de cocina,
+  subdividida en secciones con encabezados en cursiva (ej. *Preparacion:*,
+  *Ensayo 1 — ...*, *Ensayo 2 — ...*). Cada paso debe ser una accion
+  concreta y medible. Total entre 8-12 pasos.
 - **Resultados:** Tabla o espacio donde los estudiantes registren
   observaciones, mediciones o datos durante el experimento (dejar espacios
   en blanco para que el estudiante complete).
@@ -58,9 +57,14 @@ Incluir:
 
 - **Todo valor numerico** en materiales, procedimiento y tablas debe ir
   en LaTeX inline `$...$`: `$5.0$ g`, `$30$ mL`.
+- **Toda unidad** debe ir dentro de `\text{}` con `\,` thin space:
+  `$5.0\,\text{g}$`, `$30\,\text{mL}$`.
 - Los compuestos quimicos van en LaTeX: `$NaHCO_3$`, `$CH_3COOH$`.
 - Las celdas de tablas de resultados deben tener datos numericos en
   `$...$`.
+- El procedimiento debe subdividirse en secciones con asterisco simple
+  (`*Preparacion:*`, `*Ensayo 1:*`, etc.) para separar fases del
+  experimento. Cada seccion debe tener 2-4 pasos numerados.
 
 ### Criterios de verificacion
 
@@ -68,8 +72,9 @@ Incluir:
   en un ejemplo real encontrado en la web.
 - El experimento de laboratorio es seguro y factible en el aula.
 - Los materiales son accesibles.
-- El procedimiento tiene entre 3-6 pasos.
-- El diagrama de flujo usa ` ```{mermaid} ` con `flowchart TD`.
+- El procedimiento tiene entre 8-12 pasos subdivididos en 2-4 secciones.
+- Los pasos estan escritos como una receta: acciones concretas, verbos en
+  imperativo o presente, y detalles de cantidades.
 - La seccion de Resultados tiene espacio en blanco para que el estudiante
   complete (tabla o lineas).
 - Ambos bloques estan conectados al mismo concepto teorico.
