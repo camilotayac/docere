@@ -1,0 +1,34 @@
+{
+  "tema": "escritura quimica",
+  "materia": "Química",
+  "iteracion": 1,
+  "matches": [
+    {
+      "libro": "Chang - QUÍMICA 12 ED.pdf",
+      "ruta": "Bibliotheca/Química/Español/Raymond Chang, Kenneth A. Goldsby - QUÍMICA 12 ED.-McGRAW-HILL_INTERAMERICANA (2017).pdf",
+      "materia": "Química",
+      "idioma": "Español",
+      "seccion_toc": "3.7 Reacciones químicas y ecuaciones químicas",
+      "contenido_paginas": [120, 121, 122, 123, 124],
+      "preguntas_paginas": [139, 140]
+    },
+    {
+      "libro": "Brown - Chemistry The Central Science 15th.pdf",
+      "ruta": "Bibliotheca/Química/English/Theodore L. Brown, Eugene H. LeMay, Bruce E. Bursten, Catherine - Chemistry_ The Central Science, 15th (aren't they getting bored of this) Global Edition in SI Units Theodore L. Brown, Eugene H (2022, PearSon) - libgen.li.pdf",
+      "materia": "Química",
+      "idioma": "Inglés",
+      "seccion_toc": "3.1 The Conservation of Mass, Chemical Equations, and Stoichiometry",
+      "contenido_paginas": [137, 138, 139, 140],
+      "preguntas_paginas": [171, 172]
+    },
+    {
+      "libro": "Oriakhi - Chemistry in Quantitative Language.pdf",
+      "ruta": "Bibliotheca/Química/English/Christopher O. Oriakhi - Chemistry in Quantitative Language_ Fundamentals of General Chemistry Calculations (2021, Oxford University Press) - libgen.li.pdf",
+      "materia": "Química",
+      "idioma": "Inglés",
+      "seccion_toc": "6.1 Writing Chemical Equations",
+      "contenido_paginas": [60, 61, 62, 63, 64],
+      "preguntas_paginas": [65, 66]
+    }
+  ]
+}
