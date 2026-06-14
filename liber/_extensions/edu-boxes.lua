@@ -83,7 +83,10 @@ function Div(div)
         local collapse_id = 'box-collapse-' .. box_counter
         
         local collapse_attr = div.attributes['collapse']
-        local start_collapsed = (collapse_attr == 'true')
+        local start_collapsed = true
+        if collapse_attr == 'false' then
+          start_collapsed = false
+        end
         
         local heading = make_heading_collapsible(div, cls, box, collapse_id, start_collapsed)
         

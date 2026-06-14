@@ -79,22 +79,7 @@ h3[class*="-box-heading"] {
   padding: 0.9em 1.1em;
 }
 
-.teoria-box            { background-color: #f0f4ff; }
-.ideas-previas-box     { background-color: #fffff0; }
-.sub-ideas-previas-box { background-color: #fffff5; }
-.contexto-box          { background-color: #f0fff0; }
-.sub-contexto-box      { background-color: #f0fff0; }
-.caracterizados-box    { background-color: #f8f0ff; }
-.sub-caracterizados-box{ background-color: #f8f0ff; }
-.retos-box             { background-color: #fff8f0; }
-.socioemocional-box    { background-color: #fff0f5; }
-.ejercicios-box        { background-color: #fff5f5; }
-.aplicacion-box        { background-color: #f8f0ff; }
-.sub-aplicacion-box    { background-color: #faf5ff; }
-.notas-docente-box     { background-color: #f0ffff; }
-.ejemplo-box           { background-color: #f8f8f8; }
-.evaluacion-box        { background-color: #f0faf5; }
-.sub-evaluacion-box    { background-color: #e0f5ee; }
+
 
 /* ---- COLLAPSIBLE BOXES SUPPORT ---- */
 
