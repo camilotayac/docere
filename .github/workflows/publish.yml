@@ -15,7 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
-      - run: quarto render --to html
+        with:
+          tinytex: true
+      - run: quarto render --to html --to pdf --to epub
         working-directory: ./liber
       - uses: actions/upload-pages-artifact@v3
         with:
