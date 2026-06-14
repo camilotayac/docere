@@ -116,9 +116,12 @@ Estructura:
 - **Objetivo:** 1 linea.
 - **Materiales:** Lista de 2-6 materiales simples.
 - **Procedimiento:** 3-6 pasos numerados.
-- **Resultados:** Tabla o espacio en blanco para que el estudiante registre
-  observaciones. Incluir encabezados de columna si hay multiples medidas.
-- **Conclusion:** 1-2 lineas explicando que se espera observar y que significa.
+- **Resultados:** Tabla Markdown o espacio en blanco para que el estudiante
+  registre observaciones. Incluir encabezados de columna si hay multiples
+  medidas. Dejar celdas vacias para que el estudiante complete.
+- **Conclusion:** 1-2 lineas explicando que se espera observar y que
+  significa. Agregar `\underline{\hspace{6cm}}` (3 lineas) para que el
+  estudiante escriba su respuesta.
 
 ### Paso 4 — Verificar
 

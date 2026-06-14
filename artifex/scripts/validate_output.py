@@ -317,9 +317,9 @@ def check_section_order(text: str, path: str) -> dict:
         'teoria-box',
         'ideas-previas-box',
         'contexto-box',
+        'caracterizados-box',
         'ejemplo-box',
         'ejercicios-box',
-        'caracterizados-box',
         'retos-box',
         'aplicacion-box',
         'evaluacion-box',
@@ -337,6 +337,97 @@ def check_section_order(text: str, path: str) -> dict:
         return {"name": "section_order", "passed": True}
     return {"name": "section_order", "passed": False,
             "detail": f"Orden esperado: {expected_filtered}. Obtenido: {found}"}
+
+
+def check_no_html_inline(text: str, path: str) -> dict:
+    """Prohíbe <span>, <div>, <style> HTML inline."""
+    pattern = r'<(span|div|style)[^>]*>'
+    matches = list(re.finditer(pattern, text, re.IGNORECASE))
+    if not matches:
+        return {"name": "no_html_inline", "passed": True}
+    lines = [text[:m.start()].count('\n') + 1 for m in matches]
+    return {"name": "no_html_inline", "passed": False,
+            "detail": f"HTML inline en líneas: {lines}",
+            "failures_by_agent": {"agente_estilo": ["html_inline"]}}
+
+
+def check_no_ascii_boxes(text: str, path: str) -> dict:
+    """Prohíbe caracteres de dibujo de cajas ASCII."""
+    pattern = r'[┌┐└┘├┤┬┴──│┼╭╮╰╯╱╲▌▐▄▀]'
+    matches = list(re.finditer(pattern, text))
+    if not matches:
+        return {"name": "no_ascii_boxes", "passed": True}
+    lines = [text[:m.start()].count('\n') + 1 for m in matches[:20]]
+    return {"name": "no_ascii_boxes", "passed": False,
+            "detail": f"Caracteres ASCII box-drawing en líneas: {lines}",
+            "failures_by_agent": {"agente_estilo": ["ascii_boxes"]}}
+
+
+def check_ejercicios_have_answer_space(text: str, path: str) -> dict:
+    """Verifica que los ejercicios-box tengan \\underline{\\hspace{6cm}}."""
+    boxes = re.findall(
+        r'::: \{\.ejercicios-box[^}]*\}.*?:::', text, re.DOTALL)
+    boxes_missing = []
+    for b in boxes:
+        title_m = re.search(r'title="([^"]+)"', b)
+        title = title_m.group(1) if title_m else "ejercicios-box"
+        # Check if at least one underline hspace exists
+        if not re.search(r'\\underline\{\\hspace\{6cm\}\}', b):
+            boxes_missing.append(title)
+    if not boxes_missing:
+        return {"name": "ejercicios_answer_space", "passed": True}
+    return {"name": "ejercicios_answer_space", "passed": False,
+            "detail": f"Falta espacio de respuesta en: {boxes_missing}",
+            "failures_by_agent": {"agente_ejercicios": ["missing_answer_space"]}}
+
+
+def check_caracterizados_have_answer_space(text: str, path: str) -> dict:
+    """Verifica que los caracterizados-box tengan \\underline{\\hspace{6cm}}."""
+    boxes = re.findall(
+        r'::: \{\.caracterizados-box[^}]*\}.*?:::', text, re.DOTALL)
+    boxes_missing = []
+    for b in boxes:
+        title_m = re.search(r'title="([^"]+)"', b)
+        title = title_m.group(1) if title_m else "caracterizados-box"
+        if not re.search(r'\\underline\{\\hspace\{6cm\}\}', b):
+            boxes_missing.append(title)
+    if not boxes_missing:
+        return {"name": "caracterizados_answer_space", "passed": True}
+    return {"name": "caracterizados_answer_space", "passed": False,
+            "detail": f"Falta espacio de respuesta en: {boxes_missing}",
+            "failures_by_agent": {"agente_caracterizados": ["missing_answer_space"]}}
+
+
+def check_icfes_enunciado_blank_line(text: str, path: str) -> dict:
+    """Verifica que en ICFES haya línea en blanco entre *Enunciado:* y opciones."""
+    evaluacion_match = re.search(
+        r'::: \{\.evaluacion-box[^}]*\}.*?:::', text, re.DOTALL)
+    if not evaluacion_match:
+        return {"name": "icfes_enunciado_blank_line", "passed": True}
+    eval_text = evaluacion_match.group()
+    # Find all *Enunciado:* lines and check each one has a blank line before A.
+    enunciados = list(re.finditer(
+        r'\*Enunciado:\*', eval_text))
+    bad = []
+    for m in enunciados:
+        after = eval_text[m.end():]
+        # Check if the next non-blank line after Enunciado starts with A.
+        next_line_match = re.match(r'(.*?)(\n[ \t]*)([A-D]\.)', after, re.DOTALL)
+        if next_line_match:
+            blank_or_text = next_line_match.group(1)
+            if blank_or_text and not blank_or_text.isspace():
+                # There's text content (no blank line) before A.
+                bad.append(m)
+    # Alternative: look for "no blank line" pattern
+    # *Enunciado:* followed by text on same line, then \n then A. (no blank line in between)
+    no_blank = list(re.finditer(
+        r'\*Enunciado:\*.+?\n[ \t]*A\.', eval_text))
+    if not no_blank:
+        return {"name": "icfes_enunciado_blank_line", "passed": True,
+                "detail": "Línea en blanco presente entre *Enunciado:* y opciones"}
+    return {"name": "icfes_enunciado_blank_line", "passed": False,
+            "detail": f"{len(no_blank)} enunciado(s) sin línea en blanco antes de opciones",
+            "failures_by_agent": {"agente_evaluacion": ["icfes_enunciado_no_blank_line"]}}
 
 
 def check_socioemocional_competencia(text: str, path: str) -> dict:
@@ -411,6 +502,11 @@ ALL_CHECKS = [
     check_socializacion_box_exists,
     check_socializacion_fields,
     check_socioemocional_competencia,
+    check_no_html_inline,
+    check_no_ascii_boxes,
+    check_ejercicios_have_answer_space,
+    check_caracterizados_have_answer_space,
+    check_icfes_enunciado_blank_line,
 ]
 
 # ---------------------------------------------------------------------------

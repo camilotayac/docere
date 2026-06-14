@@ -180,6 +180,11 @@ Crea 1-2 ejercicios que:
 - No incluir las soluciones (el docente las conoce).
 - Total entre 6-8 ejercicios (2-3 + 2-3 + 1-2).
 - No incluir emojis.
+- **Espacios de respuesta:** despues de cada ejercicio agregar
+  `\underline{\hspace{6cm}}` en lineas separadas (indentadas 2 espacios
+  para mantener la estructura markdown de la lista).
+  - Ejercicios cortos: 1-2 lineas de subrayado.
+  - Ejercicios de calculo o analisis: 2-3 lineas de subrayado.
 
 ## Casos Borde
 

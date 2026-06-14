@@ -47,7 +47,7 @@ titles exactos:
 - [ ] Aplicacion - Vida real — `{.aplicacion-box title="Aplicacion - Vida real"}`
 - [ ] Aplicacion - Laboratorio — `{.aplicacion-box title="Aplicacion - Laboratorio"}`
 - [ ] Evaluacion - tipo ICFES — `{.evaluacion-box title="Evaluacion - tipo ICFES"}`
-- [ ] Socializacion — `{.sub-evaluacion-box title="Socializacion"}`
+- [ ] Socializacion — `{.evaluacion-box title="Socializacion"}`
 - [ ] Socioemocional — `{.socioemocional-box title="Socioemocional"}`
 
 #### 2. Formato de boxes
@@ -61,7 +61,7 @@ Verificar que cada seccion usa el tipo de box correcto (11 tipos, 23 boxes total
 - Retos (1): `{.retos-box ...}`
 - Aplicacion (2): `{.aplicacion-box ...}`
 - Evaluacion (1): `{.evaluacion-box ...}`
-- Socializacion (1): `{.sub-evaluacion-box ...}`
+- Socializacion (1): `{.evaluacion-box title="Socializacion"}`
 - Socioemocional (1): `{.socioemocional-box ...}`
 
 #### 3. Titulos de los boxes
@@ -78,6 +78,12 @@ la seccion 1 de este agente. Cada title debe coincidir caracter por caracter.
 - Las formulas estan en LaTeX correcto.
 - No hay bloques markdown rotos (los `:::` abren y cierran).
 - No hay texto fuera de los boxes.
+- No hay HTML inline (`<span>`, `<div>`, `<style>`) en el contenido.
+- No hay tablas ASCII con caracteres de dibujo (`┌ ┐ └ ┘ ├ ┤ ┬ ┴ ─`).
+- Las preguntas y ejercicios tienen espacios de respuesta
+  (`\underline{\hspace{6cm}}`).
+- Los pasos estan en lista numerada vertical, no en parrafo corrido.
+- En ICFES, hay linea en blanco entre `*Enunciado:*` y las opciones `A.`.
 
 #### 6. Calidad pedagogica
 - La seccion de Teoria tiene contenido sustancial (no es placeholder).
@@ -154,6 +160,8 @@ Esto produce un JSON con checks mecanicos:
 - Campos de socializacion (Nivel, Competencia, Afirmacion, Evidencia,
   Respuesta, Explicacion)
 - Competencia de Ley 2503/2025 en Socioemocional
+- **Estilo:** ausencia de HTML inline, tablas ASCII, pasos en parrafo
+  corrido, y presencia de espacios de respuesta en ejercicios
 
 Guarda el resultado del script. Los fallos mecanicos se consideran
 correcciones obligatorias.

@@ -62,13 +62,15 @@ Cada paso debe tener:
 ### Principio de codificacion visual por colores
 
 Cuando un paso involucra coeficientes, subindices o constantes que deben
-mapearse a sus correspondientes elementos/variables, usa colores HTML
-(`<span style="color: ...">`) para emparejar visualmente cada valor con
-su simbolo. Esto reduce la carga cognitiva de mantener la correspondencia
-en la memoria de trabajo.
+mapearse a sus correspondientes elementos/variables, usa **negrita +
+etiqueta textual entre parentesis**: `**(rojo)**`, `**(azul)**`,
+`**(verde)**`. Esto funciona tanto en HTML como en PDF.
 
-- **Quimica:** `N2 -> 1, H2 -> 3, NH3 -> 2` con N2 y 1 del mismo color,
-  H2 y 3 del mismo color, etc.
+Prohibido usar `<span style="color: ...">` — el color HTML no se
+renderiza en PDF desde code blocks y no es accesible.
+
+- **Quimica:** `N2 -> 1, H2 -> 3, NH3 -> 2` con N2 y 1 del mismo color
+  etiquetado, H2 y 3 del mismo color, etc.
 - **Fisica:** `F = m * a` con cada simbolo y su valor en el mismo color.
 - **Matematicas:** `y = 2x + 1` donde 2 y x comparten color, 1 tiene otro.
 
@@ -240,7 +242,10 @@ excepcion o dato a deducir.}
 - No incluir notas entre corchetes `[{...}]` — el razonamiento ya
   cumple esa funcion.
 - Usar LaTeX para formulas (`$...$` o `$$...$$`).
-- Codificacion por colores opcional pero consistente si se usa.
+- Formulas principales (ecuaciones de la reaccion) usar display math
+  con `$$...$$` en linea separada, sin HTML.
+- Codificacion por colores opcional pero consistente si se usa. Usar
+  `**(color)**` no `<span style="color:...">`.
 
 ## Antipatrones
 

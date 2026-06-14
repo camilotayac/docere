@@ -65,6 +65,10 @@ Evita jerga innecesaria.
 - Incluir referencias a conceptos previos cuando sea relevante.
 - Usar negritas (`**texto**`) para terminos clave en su primera aparicion.
 - Las formulas deben ir en LaTeX inline (`$...$`) o display (`$$...$$`).
+- Las formulas importantes que se referencian desde el texto deben usar
+  display math con `\tag{N}` (ej. `$$n = \frac{m}{M}\tag{1}$$`) y
+  referenciarse como "Ecuación 1" o "(1)" en el texto.
+- No usar HTML inline (`<span>`, `<div>`, `<style>`) en ningun caso.
 
 ---
 

@@ -204,13 +204,14 @@ continuidad narrativa si estan disponibles.
 ### Paso 4 — Caracterizados (DUA)
 
 **El agente lee:** `references/agente_caracterizados.md`
-**Entrada:** Bloque de Teoria (Paso 1) + Bloque de Ejemplos (Paso 5) +
-Bloque de Ejercicios (Paso 6)
+**Entrada:** Bloque de Teoria (Paso 1) + Bloque de Contextualizacion Feynman
+(Paso 3)
 **Accion:** Genera 6 miniclases DUA, una por perfil. Cada una contiene:
 (1) texto teorico adaptado al perfil, (2) un ejemplo resuelto paso a
 paso contextualizado, (3) dos ejercicios de practica. Los datos de
 ejemplos y ejercicios DUA deben ser distintos a los de los bloques
-generales (Pasos 5 y 6).
+generales (Pasos 5 y 6). El orden pedagogico es:
+Teoria -> Ideas Previas -> Feynman -> DUA -> Ejemplos -> Ejercicios -> ...
 **Verificacion:** Existen exactamente 6 `{.caracterizados-box}` con
 los titles definidos en `agente_caracterizados.md`. Cada bloque contiene
 las secciones teoria, **Ejemplo:** y **Ejercicios:**.
@@ -452,22 +453,54 @@ El archivo `.qmd` generado sigue esta estructura:
 # {Titulo del tema} - {Grado}
 
 ::: {.teoria-box title="Teoria"}
-{Contenido teorico estructurado}
+{Contenido teorico estructurado. Formulas importantes con $$...\\tag{N}$$.}
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Cuento"}
 {Narrativa de 3-6 lineas}
 - {Pregunta 1: conexion personal referida al cuento}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 2: especulacion referida al cuento}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 3: contraste referido al cuento}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 4: reflexion referida al cuento}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
 - {Pregunta 1: saber previo}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 2: experiencia}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 3: especulacion}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 - {Pregunta 4: curiosidad}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
@@ -476,82 +509,129 @@ hacia la teoria.}
 :::
 
 ::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
-{Explicacion Feynman del concepto}
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
-{Ejemplo simple, 2-4 pasos, nota docente}
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
-{Ejemplo con 2 variables, 3-5 pasos, nota docente}
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
-{Ejemplo complejo, 4-7 pasos, nota docente}
-:::
-
-::: {.ejercicios-box title="Nivel Bajo"}
-{Ejercicios de recuperacion: completar, V/F, identificar}
-:::
-
-::: {.ejercicios-box title="Nivel Medio"}
-{Ejercicios de aplicacion: respuesta corta, aplicacion}
-:::
-
-::: {.ejercicios-box title="Nivel Alto"}
-{Ejercicios de analisis: problema abierto, detectar errores}
+{Explicacion Feynman del concepto. Sin formulas ni procedimientos.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+{Teoria adaptada en pasos numerados verticales + ejemplo resuelto paso a paso
++ 2 ejercicios con \\underline{\\hspace{6cm}} para respuesta.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Visual"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+{Teoria con tabla Markdown y colores **(azul) (rojo) (verde)** + ejemplo con
+tabla y diagrama -> + 2 ejercicios con \\underline{\\hspace{6cm}}.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+{Teoria en oraciones cortas + ejemplo paso a paso + 2 ejercicios
+con \\underline{\\hspace{6cm}}.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+**Regla fija:** {regla} + ejemplo literal + 2 ejercicios
+con \\underline{\\hspace{6cm}}.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+[Formato accesible] + {teoria entre corchetes} + ejemplo + 2 ejercicios
+con \\underline{\\hspace{6cm}}.}
 :::
 
 ::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
-{Teoria adaptada + ejemplo resuelto + 2 ejercicios}
+{Frase de validacion} + {teoria con lenguaje de acompañamiento} + ejemplo
++ 2 ejercicios con \\underline{\\hspace{6cm}}.}
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
+**Enunciado:** ... **Justificacion Teorica:** ... **Ejecucion:**
+**Paso 1:** ... <- (razonamiento) **Resultado:**
+{Fórmulas en $$...$$ display. Colores como **(azul)** si aplica.}
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
+...
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
+...
+:::
+
+::: {.ejercicios-box title="Nivel Bajo"}
+- {Ejercicio de recuperacion}
+
+  \\underline{\\hspace{6cm}}
+- {V/F o identificacion}
+
+  \\underline{\\hspace{6cm}}
+:::
+
+::: {.ejercicios-box title="Nivel Medio"}
+- {Respuesta corta o aplicacion}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
+- {Aplicacion simple}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
+:::
+
+::: {.ejercicios-box title="Nivel Alto"}
+- {Problema abierto o analisis de errores}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
+
+  \\underline{\\hspace{6cm}}
 :::
 
 ::: {.retos-box title="Retos"}
-{Actividad desafiante}
+{Actividad desafiante con 3-5 requisitos}
 :::
 
 ::: {.aplicacion-box title="Aplicacion - Vida real"}
-{Aplicacion cotidiana}
+{Fenomeno cotidiano explicado con el concepto.}
 :::
 
 ::: {.aplicacion-box title="Aplicacion - Laboratorio"}
-{Experimento o demostracion}
+**Objetivo:** ... **Materiales:** ... **Procedimiento:**
+1. ... **Resultados:** {tabla Markdown} **Conclusion:**
+{Pregunta} \\underline{\\hspace{6cm}} \\underline{\\hspace{6cm}}
 :::
 
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
-{5 reactivos ICFES escalonados por dificultad (2 Bajo, 2 Medio, 1 Alto).
-Cada uno: Contexto + Enunciado + opciones A, B, C, D. 1 correcta,
-3 distractores.}
+**Pregunta 1** — Nivel Bajo
+
+*Contexto:* {contexto}
+
+*Enunciado:* {pregunta}
+
+A. {opcion}
+B. {opcion}
+C. {opcion}
+D. {opcion}
+
+
+**Pregunta 2** — Nivel Bajo
+...
+(5 reactivos total: 2 Bajo, 2 Medio, 1 Alto)
+(linea en blanco obligatoria entre *Enunciado:* y A.)
 :::
 
 ::: {.evaluacion-box title="Socializacion"}
-{Clave de respuestas para el docente. Cada pregunta: Nivel (Bajo/Medio/Alto),
-Competencia, Afirmacion, Evidencia, Respuesta correcta, Explicacion.}
+**Pregunta 1** — Nivel Bajo
+*Competencia:* ...
+*Afirmación:* ...
+*Evidencia:* ...
+*Respuesta correcta:* ...
+*Explicación:* ...
 :::
 
 ::: {.socioemocional-box title="Socioemocional"}
 {Reflexion de 3-6 lineas que nombra la competencia de la Ley 2503/2025
-que trabaja y conecta con el tema cientifico}
+que trabaja y conecta con el tema cientifico.}
 :::
 ```

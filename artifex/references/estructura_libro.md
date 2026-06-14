@@ -64,7 +64,7 @@ Cada .qmd contiene bloques educativos secuenciales usando la convención de boxe
 :::
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
 :::
-::: {.sub-evaluacion-box title="Socializacion"}
+::: {.evaluacion-box title="Socializacion"}
 :::
 ::: {.socioemocional-box title="Socioemocional"}
 :::

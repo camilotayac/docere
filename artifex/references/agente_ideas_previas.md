@@ -178,6 +178,9 @@ accion. Termina con una frase-puente hacia la teoria.}
 - El cuento NO debe contener terminologia tecnica del tema.
 - El caso de contextualizacion NO debe contener terminologia tecnica.
 - Cada bloque de preguntas debe ir como lista con `- ` al inicio.
+- **Espacios de respuesta:** despues de cada pregunta agregar
+  `\underline{\hspace{6cm}}` en lineas separadas (indentadas 2 espacios).
+  Cada pregunta debe tener al menos 2 lineas de subrayado.
 - No incluir emojis.
 
 ## Casos Borde

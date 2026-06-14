@@ -38,21 +38,24 @@ en ese mismo formato, y practicar con dos ejercicios.
 Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 
 #### Apoyo Cognitivo y TDAH
-- **Teoria:** Pasos numerados, frases cortas (1-2 lineas por parrafo),
-  conceptos clave en **negrita**, una idea por parrafo.
+- **Teoria:** Pasos como lista numerada vertical (`1. **Acción.** Expl.`),
+  frases cortas (1-2 lineas por parrafo), conceptos clave en **negrita**,
+  una idea por parrafo. NO en parrafo corrido.
 - **Ejemplo:** Enunciado claro, cada paso numerado con su operacion,
   resultado al final. Incluir el calculo en cada paso.
 - **Ejercicios:** Enunciados directos, con los datos claramente listados.
-  Indicar "Sigue los pasos 1-4".
+  Indicar "Sigue los pasos 1-4". Agregar `\underline{\hspace{6cm}}`
+  despues de cada ejercicio para espacio de respuesta.
 
 #### Visual
-- **Teoria:** Organizador grafico en markdown (tabla, diagrama con `->`,
-  mapa conceptual con sangrias). Colores entre parentesis: **(rojo)**,
-  **(azul)**, **(verde)**.
-- **Ejemplo:** Tabla de datos de entrada, diagrama de flujo con `->`
-  para cada paso, resultado en un recuadro ASCII.
-- **Ejercicios:** Tabla con datos dados, espacio para que el estudiante
-  complete el diagrama de flujo.
+- **Teoria:** Organizador grafico en **tabla Markdown** (NUNCA ASCII).
+  Colores como **negrita + (color)**: **(rojo)**, **(azul)**, **(verde)**.
+  Prohibido `<span style="color:...">` o tablas en code blocks.
+- **Ejemplo:** Tabla Markdown de datos de entrada, diagrama de flujo
+  con `->`, resultado final. Prohibido recuadros ASCII (`┌ ┐ └ ┘`).
+- **Ejercicios:** Tabla Markdown con datos dados, espacio para que el
+  estudiante complete. Agregar `\underline{\hspace{6cm}}` despues de
+  cada ejercicio.
 
 #### Dislexia y Dificultades Lectoras
 - **Teoria:** Oraciones de max. 15 palabras, estructura
@@ -61,7 +64,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 - **Ejemplo:** Enunciado en 1-2 oraciones cortas. Cada paso en una linea
   separada con `->` entre calculo y resultado.
 - **Ejercicios:** Enunciados cortos, vocabulario simple, datos en formato
-  claro.
+  claro. Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
 
 #### Autismo y Pensamiento Concreto
 - **Teoria:** Comienza con **Regla fija:** en negrita. Lenguaje 100%
@@ -70,7 +73,8 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 - **Ejemplo:** Misma estructura de regla fija + pasos literales. Mostrar
   cada operacion aritmetica con su resultado.
 - **Ejercicios:** Enunciados literales, estructura predecible. Pedir que
-  apliquen la regla fija del inicio.
+  apliquen la regla fija del inicio. Agregar `\underline{\hspace{6cm}}`
+  despues de cada ejercicio.
 
 #### Accesibilidad Sensorial (Visual/Auditiva)
 - **Teoria:** Descripciones textuales entre `[corchetes]` de cualquier
@@ -81,6 +85,7 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   plano, sin caracteres especiales que el lector de pantalla no
   interprete.
 - **Ejercicios:** Instrucciones descriptivas. Indicar formato accesible.
+  Agregar `\underline{\hspace{6cm}}` despues de cada ejercicio.
 
 #### Socioemocional y Psicosocial
 - **Teoria:** Abre con frase de validacion. Usa "vamos a", "puedes",
@@ -89,7 +94,8 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
 - **Ejemplo:** Validar que el proceso puede parecer largo pero que
   cada paso es sencillo. Mostrar los pasos con lenguaje tranquilizador.
 - **Ejercicios:** Mensaje de animo antes de cada ejercicio: "Intentalo,
-  ya viste como se hace."
+  ya viste como se hace." Agregar `\underline{\hspace{6cm}}` despues
+  de cada ejercicio.
 
 ### Criterios de verificacion
 
@@ -101,6 +107,10 @@ Cada perfil determina COMO se presenta la teoria, el ejemplo y los ejercicios:
   ejemplos generales (Paso 5) o ejercicios generales (Paso 6): deben
   ser variaciones con datos y contextos diferentes.
 - Los ejercicios tienen solucion unica y correcta.
+- Cada ejercicio tiene espacio de respuesta con `\underline{\hspace{6cm}}`.
+- Los pasos estan en lista numerada vertical, no en parrafo corrido.
+- Prohibido HTML inline (`<span>`, `<div>`), tablas ASCII, o tablas
+  dentro de code blocks.
 
 ---
 
@@ -118,6 +128,7 @@ prompt, el agente DEBE:
 ## Entrada
 
 - Bloque de Teoria generado (Paso 1).
+- Bloque de Contextualizacion Feynman (Paso 3) — para inspiracion, NO para copiar.
 - Bloque de Ejemplos generado (Paso 5) — para inspiracion, NO para copiar.
 - Bloque de Ejercicios generado (Paso 6) — para inspiracion, NO para copiar.
 
