@@ -61,6 +61,7 @@ format:
     toc: true
     toc-depth: 3
     toc-location: right
+    include-after-body: _extensions/edu-boxes.js
 
   epub:
     cover-image: Portada.png

@@ -1,0 +1,32 @@
+document.addEventListener("DOMContentLoaded", function () {
+  function expandBoxFromHash() {
+    const hash = window.location.hash;
+    if (hash) {
+      try {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          // Find if this target has a collapsible child or is one itself
+          const collapseEl = targetElement.classList.contains('collapse') 
+            ? targetElement 
+            : targetElement.querySelector('.collapse');
+          
+          if (collapseEl) {
+            // Open it using Bootstrap's collapse instance
+            if (window.bootstrap && bootstrap.Collapse) {
+              const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+              bsCollapse.show();
+            }
+          }
+        }
+      } catch (e) {
+        console.error("Error expanding box from hash:", e);
+      }
+    }
+  }
+
+  // Check on load
+  expandBoxFromHash();
+
+  // Check on hash change (when clicking links in sidebar/TOC)
+  window.addEventListener("hashchange", expandBoxFromHash);
+});
