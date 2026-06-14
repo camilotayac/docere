@@ -44,6 +44,10 @@ Incluir:
 - **Materiales:** Lista de elementos (solo materiales escolares basicos o
   de laboratorio estandar).
 - **Procedimiento:** Pasos numerados para realizar la actividad.
+- **Diagrama de flujo:** Diagrama Mermaid (` ```{mermaid} `) que muestre
+  el flujo del experimento con decisiones, usando `flowchart TD`.
+  Reglas: sin emojis, texto plano (sin LaTeX dentro del diagrama),
+  nodos rectangulares para acciones y romboidales para decisiones.
 - **Resultados:** Tabla o espacio donde los estudiantes registren
   observaciones, mediciones o datos durante el experimento (dejar espacios
   en blanco para que el estudiante complete).
@@ -65,6 +69,7 @@ Incluir:
 - El experimento de laboratorio es seguro y factible en el aula.
 - Los materiales son accesibles.
 - El procedimiento tiene entre 3-6 pasos.
+- El diagrama de flujo usa ` ```{mermaid} ` con `flowchart TD`.
 - La seccion de Resultados tiene espacio en blanco para que el estudiante
   complete (tabla o lineas).
 - Ambos bloques estan conectados al mismo concepto teorico.

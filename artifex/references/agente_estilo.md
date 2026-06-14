@@ -100,8 +100,11 @@ Reglas:
 
 - Toda pregunta y ejercicio debe tener espacio para que el estudiante
   escriba su respuesta.
-- Usar `\underline{\hspace{6cm}}` en líneas separadas después de cada
-  pregunta/ejercicio.
+- Los comandos `\underline` y `\hspace` solo funcionan en LaTeX/PDF.
+  Para que rendericen también en HTML (Quarto/MathJax), deben ir
+  dentro de math mode:
+  - Líneas independientes: `$$\underline{\hspace{6cm}}$$`
+  - En línea dentro de texto: `$\underline{\hspace{3cm}}$`
 - Para ejercicios de cálculo, usar 2-3 líneas de subrayado.
 - Para preguntas abiertas, usar 2-4 líneas.
 - Las preguntas dentro de listas con `- ` o `1. ` deben tener el
@@ -111,9 +114,9 @@ Ejemplo correcto:
 ```markdown
 - ¿Pregunta aquí?
 
-  \underline{\hspace{6cm}}
+  $$\underline{\hspace{6cm}}$$
 
-  \underline{\hspace{6cm}}
+  $$\underline{\hspace{6cm}}$$
 ```
 
 ### 7. Estructura general

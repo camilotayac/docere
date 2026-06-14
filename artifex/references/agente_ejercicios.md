@@ -185,10 +185,14 @@ Crea 1-2 ejercicios que:
 - Total entre 6-8 ejercicios (2-3 + 2-3 + 1-2).
 - No incluir emojis.
 - **Espacios de respuesta:** despues de cada ejercicio agregar
-  `\underline{\hspace{6cm}}` en lineas separadas (indentadas 2 espacios
-  para mantener la estructura markdown de la lista).
+  `$$\underline{\hspace{6cm}}$$` en lineas separadas (indentadas 2
+  espacios para mantener la estructura markdown de la lista). Usar
+  math mode `$$...$$` para que renderice tanto en HTML como PDF.
   - Ejercicios cortos: 1-2 lineas de subrayado.
   - Ejercicios de calculo o analisis: 2-3 lineas de subrayado.
+- Para espacios de respuesta **en linea** (dentro del texto, ej.
+  completar oraciones), usar `$\underline{\hspace{3cm}}$` con math
+  mode inline.
 
 ## Casos Borde
 
