@@ -42,7 +42,7 @@
 /* ---- HEADING ---- */
 h2[class*="-box-heading"],
 h3[class*="-box-heading"] {
-  margin: -0.9em -1.1em 0.9em -1.1em;
+  margin: -0.9em -1.1em 0.9em -1.1em !important;
   padding: 0.5em 1em;
   border-radius: 0;
   border: none;
