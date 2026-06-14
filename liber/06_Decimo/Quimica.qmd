@@ -1,63 +1,360 @@
 ---
-title: Escritura de ecuaciones químicas
+title: "Reactivo límite"
 bibliography: ../references.bib
 ---
 
-::: {.teoria-box title="Teoría"}
-Una **ecuación química** es una representación abreviada (taquigrafía) que describe un cambio o reacción mediante el uso de símbolos de elementos y fórmulas de compuestos en lugar de palabras descriptivas. En este sistema de notación, las sustancias iniciales denominadas **reactivos** se ubican siempre a la izquierda, mientras que las sustancias resultantes llamadas **productos** se posicionan a la derecha, separadas por una flecha ($\rightarrow$) que señala la dirección de la transformación. Para otorgar precisión física al modelo, se añaden subíndices entre paréntesis que indican el **estado de agregación**: (s) para sólidos, (l) para líquidos, (g) para gases y (aq) para soluciones acuosas (sustancias disueltas en agua). En situaciones donde la transformación puede ocurrir en ambos sentidos, se emplea una flecha doble, asegurando que la ecuación refleje fielmente la naturaleza reversible del fenómeno químico estudiado [@oriakhi2021chemistry].
-$$SO_{3}(g) + H_{2}O(l) \rightarrow H_{2}SO_{4}(aq)
-$$
+::: {.teoria-box title="Teoria"}
+
+La **estequiometría** es la rama de la química que estudia las relaciones cuantitativas entre reactivos y productos en una reacción química balanceada. Cuando se lleva a cabo una reacción, los reactivos no siempre están presentes en las proporciones exactas que indica la ecuación balanceada. En tales casos, uno de los reactivos se consume completamente antes que los demás, limitando la cantidad de producto que se puede formar. A este reactivo se le denomina **reactivo límite** (o reactivo limitante), mientras que los reactivos que no se consumen totalmente reciben el nombre de **reactivos en exceso** [@chang2017quimica].
+
+Para identificar el reactivo límite se siguen cuatro pasos: (1) escribir y balancear la ecuación química; (2) convertir las masas de los reactivos a moles usando las masas molares ($n = m / M$); (3) dividir los moles de cada reactivo entre su coeficiente estequiométrico en la ecuación balanceada; y (4) el reactivo con el menor cociente es el reactivo límite. Una vez identificado, se usan sus moles para calcular la cantidad máxima de producto posible, denominada **rendimiento teórico**. El **porcentaje de rendimiento** relaciona el rendimiento real (obtenido experimentalmente) con el rendimiento teórico mediante la expresión:
+
+$$\%\ \text{rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teórico}} \times 100$$
+
+[@brown2022chemistry]
+
 :::
 
-::: {.ideas-previas-box title="Ideas Previas - Cuentos"}
-Imagina que estás en la cocina intentando preparar un pastel, pero la receta está escrita en un idioma que no entiendes. Ves dibujos de huevos, harina y un horno, pero no sabes en qué orden van ni qué sucede cuando se mezclan. Al final, el pastel sale del horno, pero no tienes idea de cómo explicarle a alguien más exactamente qué pasó dentro de ese molde.
+::: {.ideas-previas-box title="Ideas Previas - Cuento"}
+
+Imagina que estás armando emparedados para una fiesta y tienes 12 rebanadas de pan y 8 tajadas de queso. Cada emparedado necesita dos rebanadas de pan y una tajada de queso. Empiezas a armar y, después del octavo emparedado, te das cuenta de que ya no queda queso, pero todavía te sobran rebanadas de pan. El queso determinó cuántos emparedados pudiste hacer.
+
+- **¿Qué crees que pasaría si, en lugar de 8 tajadas de queso, hubieras tenido 15? ¿Habrían cambiado los emparedados que lograste armar?**
+- **¿Puedes imaginar una situación similar en tu casa donde un ingrediente se acabe antes que otro cuando cocinas o preparas algo?**
+- **¿Crees que el ingrediente que "sobra" podría usarse para algo más después de terminar la receta original?**
+- **¿Por qué será importante identificar cuál ingrediente se acaba primero cuando trabajas con cantidades limitadas?**
+
 :::
 
 ::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
-- **¿Cómo podrías dibujar la "receta" del pastel usando solo símbolos para que cualquier persona en el mundo la entienda?**
-- **Si los ingredientes desaparecen al mezclarse, ¿crees que realmente dejaron de existir o solo se transformaron?**
-- **¿Por qué es importante saber si un ingrediente es líquido o sólido antes de empezar?**
-- **¿Qué pasaría si intentas leer la receta al revés, del pastel terminado hacia los ingredientes?**
+
+- **¿Qué crees que significa que algo sea "limitante" en un proceso cotidiano?**
+- **¿Has tenido que racionar algún material en un proyecto porque sabías que no alcanzaba para todos?**
+- **Si tuvieras que explicarle a un compañero qué es un reactivo límite usando solo objetos del salón, ¿qué usarías y cómo lo harías?**
+- **¿Por qué piensas que en química es importante saber cuál reactivo se acaba primero?**
+
 :::
 
-::: {.contexto-box title="Contextualización - Método Richard Feynman"}
-Escribir una ecuación química es como enviar un mensaje de texto ultra rápido sobre lo que sucede en una fiesta de átomos. En lugar de escribir "el gas oxígeno se une con el gas hidrógeno", usamos etiquetas cortas que todo el mundo conoce. Los **reactivos** son como los invitados que llegan a la fiesta (lo que tienes al principio), y los **productos** son los grupos de amigos que se forman al final. La flecha es el "momento del cambio", como cuando suena la música y todos cambian de pareja. Usar letras como (s) o (g) es solo para avisar si los invitados están quietos como estatuas (**sólidos**) o volando por toda la habitación (**gases**). Es un **lenguaje universal** que permite que un científico en China y uno en Colombia entiendan la misma historia sin usar traductores.
+::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
+
+En el municipio de Nemocón (Cundinamarca), las minas de sal han operado durante siglos. Los mineros saben que, para extraer una tonelada de sal, necesitan cierta cantidad de agua y cierta cantidad de energía térmica. Si un día solo tienen suficiente carbón para calentar el agua durante la mitad del tiempo necesario, la producción de ese día estará limitada por el combustible, no por el agua disponible. De manera similar, en una reacción química uno de los reactivos se agota antes y determina cuánto producto se puede obtener.
+
 :::
 
+::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
 
-::: {.caracterizados-box title="Contextualización - Apoyo Cognitivo y TDAH"}
-Tú eres un organizador visual experto. Para entender las ecuaciones, piensa en ellas como una línea de tiempo: antes de la flecha es el "pasado" y después es el "futuro". No intentes leer todo a la vez; enfócate en los símbolos pequeños entre paréntesis que te dicen cómo se siente la materia. **¡Crea tu propia herramienta!** Recorta tarjetas de dos colores: rojas para lo que entra (reactivos) y azules para lo que sale (productos). Dibuja una flecha grande en tu mesa. Mueve las tarjetas de izquierda a derecha siguiendo la flecha para que tu cerebro sienta el movimiento del cambio químico.
+¿Alguna vez has armado un mueble de kit y te has dado cuenta de que te faltan tornillos? Revisas la bolsa de piezas, cuentas los tornillos que tienes, y luego miras el instructivo: cada panel frontal necesita dos tornillos. Resulta que tienes 10 paneles pero solo 12 tornillos. Aunque tengas los 10 paneles listos, solo podrás fijar 6 de ellos porque los tornillos se acaban primero. Pues bien, en química ocurre exactamente lo mismo: los tornillos son uno de los **reactivos**, los paneles son el otro, y el **reactivo límite** son esos tornillos que determinan cuántos muebles completos puedes armar. Pero cuidado: en química no siempre es tan sencillo como contar piezas, porque los reactivos se combinan en proporciones fijas según la ecuación balanceada, y hay que usar moles (no unidades individuales) para hacer los cálculos correctos.
+
 :::
 
-::: {.caracterizados-box title="Contextualización - Neurodivergencia y Accesibilidad"}
-Para ti, el orden es la clave. Las ecuaciones tienen reglas fijas que nunca cambian, lo cual es genial porque siempre puedes confiar en ellas. Si no puedes ver bien los símbolos o te cuesta mover objetos pequeños, usaremos sonidos o texturas. **¡Crea tu propia herramienta!** Usa recipientes con diferentes texturas (arena para sólidos, agua para líquidos). Etiqueta cada uno con letras grandes en relieve. Al leer una ecuación, toca el recipiente que corresponde al estado (s, l o g) para que tu cuerpo asocie el símbolo con la realidad física de la sustancia.
+::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
+
+Para identificar el reactivo límite, sigue estos pasos en orden: **1.** Escribe y balancea la ecuación química. **2.** Convierte las masas de cada reactivo a moles usando $n = m/M$. **3.** Divide los moles de cada reactivo entre su coeficiente estequiométrico. **4.** El reactivo con el cociente más pequeño es el **reactivo límite**. **5.** Usa los moles del reactivo límite para calcular la cantidad de producto. **6.** Determina la masa del reactivo en exceso que sobra. Recuerda: el paso más importante es el paso 3, porque ahí se descubre cuál reactivo se acaba primero.
+
 :::
 
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Básico"}
-- **Justificación Teórica:** Según las reglas de escritura, los nombres de las sustancias deben reemplazarse por sus fórmulas químicas y los estados por sus símbolos correspondientes.
-- **Ejecución:** Traducir "Carbono sólido reacciona con Oxígeno gaseoso para formar Dióxido de Carbono gaseoso":
-$$C(s) + O_{2}(g) \rightarrow CO_{2}(g)
-$$
+::: {.caracterizados-box title="Contextualizacion - Visual"}
+
+```
+REACCIÓN: A + 2B → C
+
+INICIO:
+  A: 5 moles      B: 8 moles
+  Coeficientes: A=1, B=2
+
+PASO 1: Dividir moles ÷ coeficiente
+  A: 5 ÷ 1 = 5          B: 8 ÷ 2 = 4
+  ┌─────────────────────────────────────┐
+  │  Menor cociente → B es reactivo     │
+  │  límite (4 < 5)                     │
+  └─────────────────────────────────────┘
+
+PASO 2: Calcular producto con B
+  8 moles B × (1 mol C / 2 mol B) = 4 moles C
+  ┌─────────────────────────────────────┐
+  │  Reactivo en exceso: A              │
+  │  A sobrante: 5 - (8×1/2) = 1 mol   │
+  └─────────────────────────────────────┘
+```
+
+(azul) cociente de A, (rojo) cociente de B, (verde) producto final
+
 :::
 
-::: {.ejercicios-box title="Ejercicios"}
-- Traduce a ecuación: El magnesio sólido reacciona con el oxígeno gaseoso para formar óxido de magnesio sólido.
-- Identifica los reactivos y productos en: $Zn(s) + 2HCl(aq) \rightarrow ZnCl_{2}(aq) + H_{2}(g)$.
+::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
+
+Una ecuación química es una receta. Los reactivos son los ingredientes. El producto es el pastel. La ecuación balanceada dice cuánto de cada ingrediente se necesita. A veces tienes más de un ingrediente del necesario. El reactivo límite es el ingrediente que se acaba primero. Cuando ese ingrediente se termina, la reacción para. Si tienes 5 tazas de harina y 2 huevos, y la receta pide 1 taza de harina por cada huevo, los huevos se acaban primero. Los huevos son el reactivo límite.
+
 :::
 
-::: {.aplicacion-box title="Aplicación - Vida real"}
-Cuando ves que una bicicleta vieja se llena de óxido marrón, está ocurriendo una reacción que los químicos escriben como una ecuación. El hierro sólido de la bicicleta se une con el oxígeno del aire para crear una sustancia nueva. Sin las ecuaciones, los ingenieros no podrían calcular cuánto metal necesitan para construir puentes que resistan la humedad del ambiente.
+::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
+
+Regla fija: en una reacción química balanceada, los reactivos se combinan siempre en una proporción fija de moles. Si tienes más moles de un reactivo de los que indica la proporción, ese reactivo sobra. Si tienes menos moles, ese reactivo se agota primero y determina cuánto producto se forma. El reactivo que se agota primero se llama reactivo límite. Los reactivos que sobran se llaman reactivos en exceso. Por ejemplo, en la reacción $2H_2 + O_2 \rightarrow 2H_2O$, se necesitan 2 moles de $H_2$ por cada 1 mol de $O_2$. Si tienes 4 moles de $H_2$ y 3 moles de $O_2$, el $H_2$ se agota primero porque 4 ÷ 2 = 2, mientras que 3 ÷ 1 = 3. El $H_2$ es el reactivo límite.
+
 :::
 
-::: {.aplicacion-box title="Aplicación - Laboratorio"}
-**Objetivo:** Observar y representar una reacción química simple.\
-**Materiales:**  - Un vaso de vidrio transparente. - Vinagre blanco. - Bicarbonato de sodio. 
-**Procedimiento:**  - Coloca dos cucharadas de bicarbonato en el vaso. - Vierte lentamente el vinagre. - Observa las burbujas (gas) que se forman. 
-**Conclusión:** Las burbujas indican la formación de $CO_{2}$ gaseoso. La ecuación representa este cambio invisible a nivel atómico. Los residuos líquidos pueden verterse por el desagüe.
+::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
+
+[Texto de la página: una ecuación química con reactivos a la izquierda y productos a la derecha, separados por una flecha. Debajo de cada reactivo hay un número que indica la cantidad en moles. El reactivo con el número más pequeño después de dividir por su coeficiente está marcado como "límite".] [La fórmula del rendimiento teórico se lee como "rendimiento teórico igual a moles del reactivo límite multiplicado por la relación molar del producto sobre el reactivo límite, multiplicado por la masa molar del producto".] [La tabla compara los cocientes de cada reactivo: columna izquierda nombre del reactivo, columna del medio moles disponibles, columna derecha moles divididos por coeficiente.]
+
+:::
+
+::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
+
+Sabemos que enfrentarse a los cálculos químicos puede generar frustración, especialmente cuando hay varios pasos que seguir. Es normal sentirse abrumado al principio. Vamos a abordar el reactivo límite paso a paso, como si armáramos un rompecabezas: cada paso es una pieza, y al final todas encajan. No importa si al principio no sale perfecto; lo importante es intentarlo y pedir ayuda cuando la necesites. Cada intento te acerca más a dominar el concepto.
+
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
+
+**Enunciado:** La síntesis del metanol ($CH_3OH$) a partir de monóxido de carbono e hidrógeno sigue la reacción:
+
+$$CO(g) + 2H_2(g) \rightarrow CH_3OH(g)$$
+
+Si se tienen 4 moles de CO y 6 moles de $H_2$, ¿cuál es el reactivo límite y cuántos moles de $CH_3OH$ se pueden producir?
+
+**Justificacion Teorica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
+
+**Ejecucion:**
+
+**Paso 1: Dividir moles de CO entre su coeficiente**
+$4 \text{ mol CO} \div 1 = 4$ <- (el coeficiente del CO es 1)
+
+**Paso 2: Dividir moles de H$_2$ entre su coeficiente**
+$6 \text{ mol H}_2 \div 2 = 3$ <- (el coeficiente del H$_2$ es 2)
+
+**Paso 3: Comparar cocientes**
+$3 < 4$, por lo tanto el H$_2$ es el **reactivo límite**.
+
+**Paso 4: Calcular moles de producto usando el reactivo límite**
+$6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2} = 3 \text{ mol CH}_3\text{OH}$
+
+**Resultado:** El reactivo límite es el $H_2$ y se producen 3 moles de $CH_3OH$ [@chang2017quimica].
+
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
+
+**Enunciado:** La reacción entre el óxido nítrico y el oxígeno produce dióxido de nitrógeno:
+
+$$2NO(g) + O_2(g) \rightarrow 2NO_2(g)$$
+
+Si se hacen reaccionar 30.0 g de NO con 20.0 g de $O_2$, determine el reactivo límite y la masa de $NO_2$ producida. Masas molares: NO = 30.01 g/mol, $O_2$ = 32.00 g/mol, $NO_2$ = 46.01 g/mol.
+
+**Justificacion Teorica:** Primero se convierten las masas a moles, luego se dividen entre los coeficientes para identificar el reactivo límite. Finalmente se usa la relación molar para calcular la masa de producto.
+
+**Ejecucion:**
+
+**Paso 1: Convertir masa de NO a moles**
+$n_{NO} = \frac{30.0 \text{ g}}{30.01 \text{ g/mol}} = 1.00 \text{ mol NO}$
+
+**Paso 2: Convertir masa de O$_2$ a moles**
+$n_{O_2} = \frac{20.0 \text{ g}}{32.00 \text{ g/mol}} = 0.625 \text{ mol O}_2$
+
+**Paso 3: Dividir cada uno entre su coeficiente**
+NO: $1.00 \div 2 = 0.500$ <- (coeficiente 2)
+O$_2$: $0.625 \div 1 = 0.625$ <- (coeficiente 1)
+
+**Paso 4: Identificar reactivo límite**
+$0.500 < 0.625$, el **NO** es el reactivo límite.
+
+**Paso 5: Calcular masa de NO$_2$ producida**
+$1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times \frac{46.01 \text{ g}}{\text{mol}} = 46.01 \text{ g NO}_2$
+
+**Resultado:** El reactivo límite es el NO y se producen 46.01 g de $NO_2$ [@brown2022chemistry].
+
+:::
+
+::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
+
+**Enunciado:** La urea $[(NH_2)_2CO]$ se prepara a partir de amoníaco y dióxido de carbono:
+
+$$2NH_3(g) + CO_2(g) \rightarrow (NH_2)_2CO(ac) + H_2O(l)$$
+
+En un proceso se hacen reaccionar 637.2 g de $NH_3$ con 1142 g de $CO_2$. Determine: (a) el reactivo límite, (b) la masa de urea que se formará, (c) la masa del reactivo en exceso que queda sin reaccionar. Masas molares: $NH_3$ = 17.03 g/mol, $CO_2$ = 44.01 g/mol, $(NH_2)_2CO$ = 60.06 g/mol.
+
+**Justificacion Teorica:** Se requieren tres etapas: identificar el reactivo límite comparando los moles ajustados por coeficiente; calcular la masa de producto usando el reactivo límite; y determinar cuánto del otro reactivo se consumió para hallar el sobrante.
+
+**Ejecucion:**
+
+**Paso 1: Convertir masas a moles**
+$n_{NH_3} = 637.2 \text{ g} \div 17.03 \text{ g/mol} = 37.42 \text{ mol}$
+$n_{CO_2} = 1142 \text{ g} \div 44.01 \text{ g/mol} = 25.95 \text{ mol}$
+
+**Paso 2: Dividir entre coeficientes**
+$NH_3$: $37.42 \div 2 = 18.71$
+$CO_2$: $25.95 \div 1 = 25.95$
+
+**Paso 3: Identificar reactivo límite**
+$18.71 < 25.95$, el **$NH_3$** es el reactivo límite.
+
+**Paso 4: Calcular masa de urea producida**
+$37.42 \text{ mol NH}_3 \times \frac{1 \text{ mol urea}}{2 \text{ mol NH}_3} \times \frac{60.06 \text{ g}}{\text{mol}} = 1123.7 \text{ g urea}$
+
+**Paso 5: Calcular moles de CO$_2$ consumidos**
+$37.42 \text{ mol NH}_3 \times \frac{1 \text{ mol CO}_2}{2 \text{ mol NH}_3} = 18.71 \text{ mol CO}_2$
+
+**Paso 6: Calcular masa de CO$_2$ sobrante**
+$25.95 - 18.71 = 7.24 \text{ mol CO}_2$ sin reaccionar
+$7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$
+
+**Resultado:** (a) El reactivo límite es el $NH_3$. (b) Se producen 1124 g de urea. (c) Quedan 319 g de $CO_2$ sin reaccionar. [@chang2017quimica]
+
+:::
+
+::: {.ejercicios-box title="Nivel Bajo"}
+
+- Completar: En la reacción $2H_2 + O_2 \rightarrow 2H_2O$, si se tienen 3 moles de $H_2$ y 2 moles de $O_2$, el reactivo límite es el \underline{\hspace{3cm}} porque su cociente de moles dividido entre coeficiente es \underline{\hspace{2cm}}, mientras que el del otro reactivo es \underline{\hspace{2cm}}.
+- V/F: El reactivo en exceso es aquel que se consume completamente durante la reacción. (\hspace{0.5cm})
+- Identificación: En la ecuación $N_2 + 3H_2 \rightarrow 2NH_3$, indica cuál es el reactivo límite si se tienen 2 moles de $N_2$ y 5 moles de $H_2$.
+
+:::
+
+::: {.ejercicios-box title="Nivel Medio"}
+
+- Respuesta corta: Se hacen reaccionar 10.0 g de $Zn$ (masa molar 65.38 g/mol) con 5.0 g de $HCl$ (masa molar 36.46 g/mol) según $Zn + 2HCl \rightarrow ZnCl_2 + H_2$. ¿Cuál es el reactivo límite y cuántos gramos de $ZnCl_2$ se producen?
+- Aplicación simple: En la reacción $2Al + 3Cl_2 \rightarrow 2AlCl_3$, si se tienen 54.0 g de Al y 106.5 g de $Cl_2$, ¿cuántos gramos de $AlCl_3$ se pueden obtener?
+- Clasificación: Dados los siguientes pares de reactivos, identifica en cada caso cuál sería el reactivo límite sin hacer cálculos detallados, solo observando las proporciones: (a) 1 mol $CH_4$ + 3 mol $O_2$ en $CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$; (b) 2 mol $Fe$ + 2 mol $O_2$ en $4Fe + 3O_2 \rightarrow 2Fe_2O_3$.
+
+:::
+
+::: {.ejercicios-box title="Nivel Alto"}
+
+- Problema abierto: El etileno ($C_2H_4$) se puede preparar calentando hexano ($C_6H_{14}$): $C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4$ (sin balancear). Si se calientan 86.0 g de hexano y se obtienen 28.0 g de etileno, calcula el rendimiento porcentual de la reacción. Sugerencia: primero balancea la ecuación.
+- Análisis de errores: Un estudiante afirma que en la reacción $2Mg + O_2 \rightarrow 2MgO$, si se tienen 48.6 g de Mg y 32.0 g de $O_2$, el reactivo límite es el $O_2$ porque hay menos masa de oxígeno. Explica por qué esta conclusión es incorrecta y determina la respuesta correcta.
+
+:::
+
+::: {.retos-box title="Retos"}
+
+El concepto de reactivo límite se aplica en la industria farmacéutica para maximizar la producción de medicamentos usando el principio del reactivo más costoso como límite. Para este reto:
+
+- Diseña un cartel informativo que explique los cuatro pasos para determinar el reactivo límite usando como ejemplo una reacción de tu elección. Incluye los cálculos paso a paso.
+- Construye un modelo físico con materiales reciclables (tapas, fichas, cuentas) que represente los moles de cada reactivo antes y después de la reacción, mostrando claramente cuál es el reactivo límite y cuál está en exceso.
+- Prepara una breve exposición (máximo 3 minutos) explicando por qué es importante identificar el reactivo límite en procesos industriales como la producción de fertilizantes o medicamentos.
+
+:::
+
+::: {.aplicacion-box title="Aplicacion - Vida real"}
+
+En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la de Cartagena (Colombia), el azufre se quema para formar $SO_2$, que luego se oxida a $SO_3$ y finalmente se hidrata. Los ingenieros controlan cuidadosamente las cantidades de reactivos para garantizar que el azufre (el reactivo más costoso y menos abundante) se consuma por completo, mientras que el oxígeno del aire se suministra en exceso. Así se maximiza el rendimiento económico del proceso. La próxima vez que veas una batería de carro o un producto de limpieza, recuerda que el ácido sulfúrico que contienen se fabricó aplicando el concepto de reactivo límite para optimizar su producción.
+
+:::
+
+::: {.aplicacion-box title="Aplicacion - Laboratorio"}
+
+**Objetivo:** Determinar experimentalmente el reactivo límite en la reacción entre bicarbonato de sodio y vinagre.
+
+**Materiales:**
+- Bicarbonato de sodio ($NaHCO_3$)
+- Vinagre blanco (solución de ácido acético $CH_3COOH$ al 5%)
+- Balanza digital
+- 2 vasos desechables pequeños
+- Cuchara plástica
+
+**Procedimiento:**
+1. Mide 5.0 g de bicarbonato de sodio y colócalos en un vaso.
+2. Mide 30 mL de vinagre en el segundo vaso.
+3. Agrega el vinagre al bicarbonato y observa la efervescencia.
+4. Una vez que la reacción se detenga, verifica si quedó bicarbonato sin reaccionar en el fondo (toca con la cuchara).
+5. Repite el experimento invirtiendo las cantidades: 30 g de bicarbonato y 5 mL de vinagre.
+
+**Resultados:**
+
+| Ensayo | $NaHCO_3$ (g) | Vinagre (mL) | ¿Sobró bicarbonato? | Reactivo límite |
+|---|---|---|---|---|
+| 1 | 5.0 | 30 | | |
+| 2 | 30 | 5 | | |
+
+**Conclusion:** Basado en tus observaciones, ¿qué ensayo tuvo el vinagre como reactivo límite? ¿Cómo lo sabes?
+
+:::
+
+::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
+
+**Pregunta 1** — Nivel Bajo
+*Contexto:* En la reacción $N_2 + 3H_2 \rightarrow 2NH_3$, un estudiante dispone de 2 moles de $N_2$ y 4 moles de $H_2$.
+*Enunciado:* De acuerdo con la información anterior, ¿cuál de las siguientes afirmaciones es correcta?
+A. El $N_2$ es el reactivo límite porque su coeficiente estequiométrico es 1.
+B. El $H_2$ es el reactivo límite porque 4 ÷ 3 < 2 ÷ 1.
+C. El $N_2$ y el $H_2$ están en proporción estequiométrica exacta.
+D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
+
+**Pregunta 2** — Nivel Bajo
+*Contexto:* La ecuación $2H_2 + O_2 \rightarrow 2H_2O$ representa la formación de agua.
+*Enunciado:* Si se tienen 4 g de $H_2$ y 32 g de $O_2$, ¿cuál de las siguientes opciones describe correctamente la situación? (Masas molares: $H_2$ = 2 g/mol, $O_2$ = 32 g/mol)
+A. El oxígeno es el reactivo límite porque 32 g > 4 g.
+B. El hidrógeno es el reactivo límite porque 2 ÷ 2 = 1 y 1 ÷ 1 = 1, están en proporción exacta.
+C. El oxígeno es el reactivo límite porque 1 ÷ 1 = 1 y 2 ÷ 2 = 1, ambos están igual.
+D. No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
+
+**Pregunta 3** — Nivel Medio
+*Contexto:* En un laboratorio se hacen reaccionar 10.0 g de calcio (Ca) con 10.0 g de oxígeno ($O_2$) según la ecuación $2Ca + O_2 \rightarrow 2CaO$ (masas molares: Ca = 40.08 g/mol, $O_2$ = 32.00 g/mol, CaO = 56.08 g/mol).
+*Enunciado:* ¿Cuál es la masa máxima de CaO que se puede obtener?
+A. 7.0 g
+B. 14.0 g
+C. 20.0 g
+D. 28.0 g
+
+**Pregunta 4** — Nivel Medio
+*Contexto:* La fermentación de la glucosa produce etanol y dióxido de carbono: $C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2$. Un ingeniero dispone de 500 g de glucosa y obtiene 200 g de etanol (masas molares: glucosa = 180.16 g/mol, etanol = 46.07 g/mol).
+*Enunciado:* ¿Cuál es el rendimiento porcentual de la reacción?
+A. 39.1%
+B. 68.5%
+C. 78.3%
+D. 100%
+
+**Pregunta 5** — Nivel Alto
+*Contexto:* En la tostación de la pirita ($FeS_2$) para producir $SO_2$, la ecuación es $4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2$. Un mineral contiene 240 g de $FeS_2$ con impurezas inertes y se usa oxígeno en exceso, obteniéndose 192 g de $SO_2$ (masas molares: $FeS_2$ = 119.98 g/mol, $SO_2$ = 64.06 g/mol).
+*Enunciado:* ¿Cuál es el porcentaje de pureza del mineral?
+A. 50.0%
+B. 62.5%
+C. 75.0%
+D. 87.5%
+
+:::
+
+::: {.sub-evaluacion-box title="Socializacion"}
+
+**Pregunta 1** — Nivel Bajo
+*Competencia:* Interpretación
+*Afirmacion:* Comprende las relaciones estequiométricas en una ecuación química balanceada.
+*Evidencia:* Identifica correctamente el reactivo límite dividiendo los moles disponibles entre los coeficientes estequiométricos.
+*Respuesta correcta:* B
+*Explicacion:* El cociente para $N_2$ es 2 ÷ 1 = 2, y para $H_2$ es 4 ÷ 3 ≈ 1.33. Como 1.33 < 2, el $H_2$ es el reactivo límite.
+
+**Pregunta 2** — Nivel Bajo
+*Competencia:* Argumentación
+*Afirmacion:* Justifica la identificación del reactivo límite basándose en cálculos estequiométricos.
+*Evidencia:* Reconoce que cuando los cocientes moles ÷ coeficiente son iguales, los reactivos están en proporción estequiométrica exacta y no hay reactivo límite.
+*Respuesta correcta:* D
+*Explicacion:* $H_2$: 2 mol ÷ 2 = 1; $O_2$: 1 mol ÷ 1 = 1. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.
+
+**Pregunta 3** — Nivel Medio
+*Competencia:* Interpretación
+*Afirmacion:* Determina la cantidad de producto a partir del reactivo límite.
+*Evidencia:* Calcula los moles de cada reactivo y del producto usando relaciones estequiométricas.
+*Respuesta correcta:* B
+*Explicacion:* Ca: 10.0 ÷ 40.08 = 0.249 mol, cociente = 0.249 ÷ 2 = 0.1245. $O_2$: 10.0 ÷ 32.00 = 0.3125 mol, cociente = 0.3125 ÷ 1 = 0.3125. El Ca es el reactivo límite. Masa de CaO = 0.249 mol × (2 ÷ 2) × 56.08 g/mol = 14.0 g.
+
+**Pregunta 4** — Nivel Medio
+*Competencia:* Argumentación
+*Afirmacion:* Calcula el rendimiento porcentual de una reacción.
+*Evidencia:* Relaciona el rendimiento real con el rendimiento teórico usando la fórmula del porcentaje de rendimiento.
+*Respuesta correcta:* C
+*Explicacion:* Moles de glucosa = 500 ÷ 180.16 = 2.775 mol. Rendimiento teórico de etanol = 2.775 × 2 × 46.07 = 255.6 g. % rendimiento = (200 ÷ 255.6) × 100 = 78.3%.
+
+**Pregunta 5** — Nivel Alto
+*Competencia:* Proposición
+*Afirmacion:* Propone estrategias para determinar la pureza de un mineral a partir de datos experimentales.
+*Evidencia:* Relaciona la masa de producto obtenida con la masa del reactivo puro necesaria, usando la estequiometría de la reacción.
+*Respuesta correcta:* C
+*Explicacion:* Moles de $SO_2$ = 192 ÷ 64.06 = 3.0 mol. Moles de $FeS_2$ puro = 3.0 × (4 ÷ 8) = 1.5 mol. Masa de $FeS_2$ puro = 1.5 × 119.98 = 180 g. Pureza = (180 ÷ 240) × 100 = 75%.
+
 :::
 
 ::: {.socioemocional-box title="Socioemocional"}
-Tú tienes la capacidad de aprender este nuevo idioma científico. Si al principio los símbolos te parecen confusos, recuerda que cada error es una pista para tu cerebro sobre cómo mejorar. ¡Sigue adelante, estás desbloqueando una nueva forma de ver el mundo!
+
+Al aprender sobre el reactivo límite, es normal sentir que hay muchos pasos y cálculos que recordar. La clave está en la **regulación emocional**: reconocer que la frustración inicial es parte del proceso de aprendizaje y que cada paso resuelto es un logro. Identificar el reactivo límite en química es como identificar aquello que nos limita en la vida: cuando sabemos qué nos está frenando, podemos concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado conceptos difíciles antes; este es solo un escalón más. Respira, organiza tus pasos como organizas los cálculos, y verás que el resultado llega.
+
 :::
-
-

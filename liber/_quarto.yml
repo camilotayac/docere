@@ -2,6 +2,7 @@ project:
   type: book
   resources:
     - Portada.png
+    - Portada.pdf
 
 bibliography: references.bib
 
@@ -9,7 +10,7 @@ book:
   cover-image: Portada.png
   title: "Natura Docens"
   bread-crumbs: false
-  page-footer: "Copyright 2021, Norah Jones"
+  page-footer: "Copyright 2025, Camilo Tayac"
   downloads: [pdf,epub]
   page-navigation: true
   repo-url: https://github.com/camilotayac/docere/
@@ -20,14 +21,32 @@ book:
     collapse-level: 1
 
   chapters:
-    - part: "Introducción"
+    - part: "Generalidades"
       chapters:
         - index.qmd
         - 01_Generalidades/01_Introduccion.qmd
         - 01_Generalidades/02_PlanDeArea.qmd
-    - part: "Décimo - Química"
+    - part: "Sexto"
+      chapters:
+        - 02_Sexto/Biologia.qmd
+    - part: "Séptimo"
+      chapters:
+        - 03_Septimo/Quimica.qmd
+        - 03_Septimo/Fisica.qmd
+    - part: "Octavo"
+      chapters:
+        - 04_Octavo/Quimica.qmd
+        - 04_Octavo/Biologia.qmd
+    - part: "Noveno"
+      chapters:
+        - 05_Noveno/Quimica.qmd
+    - part: "Décimo"
       chapters:
         - 06_Decimo/Quimica.qmd
+        - 06_Decimo/Biologia.qmd
+    - part: "Once"
+      chapters:
+        - 07_Once/QUIMICA.qmd
 
 
   appendices:
@@ -47,7 +66,7 @@ format:
     number-depth: 1
     number-sections: true
     secnumdepth: 2
-    lang: en
+    lang: es
     colorlinks: true
     
   html:

@@ -35,6 +35,8 @@ Cuando el usuario invoque esta Skill (por ejemplo, colocando un archivo en
 `input/` y solicitando generar un plan de clase), el agente **DEBE** seguir
 este protocolo de forma estricta:
 
+0. **Limpiar directorios:** Eliminar `input/texto_teorico.md` y todo
+   `output/*.qmd` generados en la ejecucion anterior.
 1. **Escaneo de Input:** Revisar la carpeta `input/` para identificar
    archivos `.pdf`, `.docx` o `.md` nuevos.
 2. **Presentar Plan:** Listar los pasos a ejecutar y solicitar confirmacion.
@@ -89,6 +91,7 @@ Docere/                              ← Raiz del monorepo
 
 El agente marca cada paso al completarlo.
 
+- [ ] **Paso -1:** Limpiar `input/` y `output/` de archivos generados previamente
 - [ ] **Paso 0:** Convertir input a MD (`scripts/convert_input_to_md.py`)
 - [ ] **Paso 0.5:** Seleccionar bibliografía (`references/bibliografia.md`)
 - [ ] **Paso 1:** Teoria (`references/agente_teoria.md`)
@@ -104,6 +107,7 @@ El agente marca cada paso al completarlo.
 - [ ] **Paso 10:** QA Final — validacion mecanica + semantica (`references/agente_qa.md`)
 - [ ] **Paso 10b:** Bucle de Retroalimentacion (si QA fallo, repetir pasos)
 - [ ] **Paso 11:** Colocar o mejorar en liber/ (`references/estructura_libro.md`)
+- [ ] **Paso 12:** Desplegar — commit, push y verificar GitHub Pages
 
 ---
 
@@ -379,6 +383,49 @@ detallada de errores y el agente responsable de cada uno.
 
 **Salida:** Archivo .qmd colocado o modificado en `liber/`.
 **Verificacion:** El archivo destino existe y QA pasa.
+
+---
+
+### Paso 12 — Desplegar a GitHub Pages
+
+**Entrada:** Archivo .qmd aprobado por QA y colocado en `liber/`.
+
+**Accion:**
+
+1. **Inspeccionar cambios** — Ejecutar para listar archivos modificados:
+   ```bash
+   git diff --name-only
+   ```
+   Esto devuelve la lista de archivos tocados desde el ultimo commit.
+
+2. **Generar mensaje de commit** — El agente DEBE construir un mensaje
+   descriptivo basado en los archivos reales que cambiaron. Ejemplo:
+   ```
+   feat(clase): {tema} - {grado}
+
+   Cambios:
+   - liber/{grado}/{archivo}.qmd: plan de clase completo con 23 cajas
+   - artifex/scripts/validate_output.py: fix emoji regex y opciones
+   - artifex/SKILL.md: agregado Paso 12 (deploy)
+   ```
+
+3. **Commit y push:**
+   ```bash
+   git add -A
+   git commit -m "<mensaje generado>"
+   git push origin main
+   ```
+
+4. **CI/CD automatico:** El workflow `.github/workflows/publish.yml`
+   detecta el push a `main`, renderiza el libro con Quarto y despliega
+   a GitHub Pages automaticamente.
+
+5. **Verificacion:** Sugerir al usuario que revise el sitio en
+   `https://camilotayac.github.io/docere/` y confirme que la nueva
+   clase aparece en el grado correspondiente.
+
+**Salida:** Cambios publicados en GitHub y desplegados en GitHub Pages.
+**Verificacion:** El push se completa sin errores.
 
 ---
 

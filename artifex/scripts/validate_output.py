@@ -87,13 +87,17 @@ def check_no_todas_las_anteriores(text: str, path: str) -> dict:
 def check_no_emojis(text: str, path: str) -> dict:
     """Detecta caracteres Unicode de emoji."""
     emoji_pattern = re.compile(
-        "[" 
-        "\U0001F600-\U0001F64F"  # emoticonos
-        "\U0001F300-\U0001F5FF"  # símbolos varios
-        "\U0001F680-\U0001F6FF"  # transporte
-        "\U0001F1E0-\U0001F1FF"  # banderas
-        "\U00002702-\U000027B0"  # dingbats
-        "\U000024C2-\U0001F251" 
+        "["
+        "\U0001F600-\U0001F64F"  # Emoticons
+        "\U0001F300-\U0001F5FF"  # Misc Symbols and Pictographs
+        "\U0001F680-\U0001F6FF"  # Transport and Map
+        "\U0001F1E0-\U0001F1FF"  # Flags
+        "\U0001F900-\U0001F9FF"  # Supplemental Symbols and Pictographs
+        "\U0001FA00-\U0001FA6F"  # Chess Symbols
+        "\U0001FA70-\U0001FAFF"  # Symbols and Pictographs Extended-A
+        "\U00002702-\U000027B0"  # Dingbats
+        "\U00002600-\U000026FF"  # Misc symbols
+        "\U0000200D"             # Zero Width Joiner
         "]+", re.UNICODE)
     matches = list(emoji_pattern.finditer(text))
     if not matches:
@@ -168,7 +172,7 @@ def check_evaluacion_opciones(text: str, path: str) -> dict:
                 "detail": "FALTA evaluacion-box",
                 "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]}}
     eval_text = evaluacion_match.group()
-    opciones = re.findall(r'[-*]\s*[A-D]\)|[-*]\s*[A-D]\.', eval_text)
+    opciones = re.findall(r'(?:^|[-*])\s*[A-D][\).]', eval_text, re.MULTILINE)
     if len(opciones) >= 20:
         opt_count = len(opciones)
         num_reactivos_esperados = opt_count // 4

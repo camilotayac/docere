@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Convierte PDF, DOCX o MD a Markdown plano para el generador de plan de clase.
+La salida por defecto es input/texto_teorico.md relativo a artifex/.
 
 Uso:
     python3 convert_input_to_md.py input/archivo.pdf -o input/texto_teorico.md
@@ -47,8 +48,9 @@ CONVERTERS = {
 def main():
     parser = argparse.ArgumentParser(description="Convierte PDF/DOCX/MD a Markdown")
     parser.add_argument("input", type=Path, help="Archivo de entrada (.pdf, .docx, .md)")
-    parser.add_argument("-o", "--output", type=Path, default=Path("input/texto_teorico.md"),
-                        help="Ruta de salida (default: input/texto_teorico.md)")
+    default_output = Path(__file__).parent.parent / "input" / "texto_teorico.md"
+    parser.add_argument("-o", "--output", type=Path, default=default_output,
+                        help="Ruta de salida (default: artifex/input/texto_teorico.md)")
     args = parser.parse_args()
 
     if not args.input.exists():
