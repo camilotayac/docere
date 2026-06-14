@@ -51,6 +51,17 @@ h3[class*="-box-heading"] {
   color: #1a1a1a;
 }
 
+/* ---- HEADING SECTION NUMBERS (Light Mode / Default) ---- */
+#quarto-document-content h1 span.header-section-number,
+#quarto-document-content h2 span.header-section-number,
+#quarto-document-content h3 span.header-section-number,
+#quarto-document-content h4 span.header-section-number,
+#quarto-document-content h5 span.header-section-number,
+#quarto-document-content h6 span.header-section-number {
+  color: #1a1a1a !important;
+  opacity: 1 !important;
+}
+
 .teoria-box-heading            { background-color: #d6e4ff; }
 .ideas-previas-box-heading     { background-color: #fff0a0; }
 .sub-ideas-previas-box-heading { background-color: #fff0a0; }
@@ -143,4 +154,30 @@ body.quarto-dark h3[class*="-box-heading"],
 [data-bs-theme="dark"] h2[class*="-box-heading"],
 [data-bs-theme="dark"] h3[class*="-box-heading"] {
   color: #1a1a1a !important; /* Force title text color to stay black in dark mode */
+}
+
+/* Ensure box headings' section numbers remain black in dark mode */
+body.quarto-dark h2[class*="-box-heading"] span.header-section-number,
+body.quarto-dark h3[class*="-box-heading"] span.header-section-number,
+[data-bs-theme="dark"] h2[class*="-box-heading"] span.header-section-number,
+[data-bs-theme="dark"] h3[class*="-box-heading"] span.header-section-number {
+  color: #1a1a1a !important;
+  opacity: 1 !important;
+}
+
+/* Force normal headings' section numbers to be light in dark mode to remain readable */
+body.quarto-dark h1 span.header-section-number,
+body.quarto-dark h2:not([class*="-box-heading"]) span.header-section-number,
+body.quarto-dark h3:not([class*="-box-heading"]) span.header-section-number,
+body.quarto-dark h4 span.header-section-number,
+body.quarto-dark h5 span.header-section-number,
+body.quarto-dark h6 span.header-section-number,
+[data-bs-theme="dark"] h1 span.header-section-number,
+[data-bs-theme="dark"] h2:not([class*="-box-heading"]) span.header-section-number,
+[data-bs-theme="dark"] h3:not([class*="-box-heading"]) span.header-section-number,
+[data-bs-theme="dark"] h4 span.header-section-number,
+[data-bs-theme="dark"] h5 span.header-section-number,
+[data-bs-theme="dark"] h6 span.header-section-number {
+  color: #ffffff !important;
+  opacity: 0.8 !important;
 }
