@@ -79,9 +79,6 @@ def check_no_teacher_notes(text: str, path: str) -> dict:
         "name": "no_teacher_notes",
         "passed": False,
         "detail": f"Se encontraron {len(matches)} notas [{...}] en líneas: {lines}",
-        "failures_by_agent": {
-            "agente_ejemplos": [f"teacher_note_at_line_{line}" for line in lines]
-        },
     }
 
 
@@ -142,20 +139,33 @@ def check_latex_balance(text: str, path: str) -> dict:
     return {"name": "latex_balance", "passed": False, "detail": "; ".join(errors)}
 
 
+def _find_icfes_box(text: str) -> re.Match:
+    """Busca el evaluacion-box que contiene 'Evaluacion' en su title (y no 'Socializacion')."""
+    for m in re.finditer(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL):
+        header = m.group(0).split("\n")[0]
+        if "Evaluacion" in header and "Socializacion" not in header:
+            return m
+    return None
+
+
 def check_evaluacion_reactivos(text: str, path: str) -> dict:
     """Cuenta reactivos en evaluacion-box."""
-    evaluacion_match = re.search(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
-    if not evaluacion_match:
+    eval_match = _find_icfes_box(text)
+    if not eval_match:
         return {
             "name": "evaluacion_reactivos",
             "passed": False,
-            "detail": "FALTA evaluacion-box",
+            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
             "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
         }
-    eval_text = evaluacion_match.group()
+    eval_text = eval_match.group()
 
     # Cuenta líneas en negrita que digan Nivel Bajo/Medio/Alto o Pregunta X
-    reactivos = re.findall(r"\*\*Nivel\s+(?:Bajo|Medio|Alto)\*\*|\*\*Pregunta\s+\d+|Reactivo\s+\d+|(?<=\*\*)\d+(?=\.\s)", eval_text, re.IGNORECASE)
+    reactivos = re.findall(
+        r"^[ \t]*\*\*Pregunta\s+\d+\s*[—–-]\s*Nivel\s+(?:Bajo|Medio|Alto)\*\*[ \t]*$",
+        eval_text,
+        re.MULTILINE | re.IGNORECASE
+    )
     count = len(reactivos)
     if count == 5:
         return {
@@ -163,39 +173,52 @@ def check_evaluacion_reactivos(text: str, path: str) -> dict:
             "passed": True,
             "detail": f"{count} reactivos encontrados",
         }
+    
+    # Fallback to count any Pregunta \d+ at start of line
+    fallback = re.findall(
+        r"^[ \t]*\*\*Pregunta\s+\d+.*$",
+        eval_text,
+        re.MULTILINE | re.IGNORECASE
+    )
+    fallback_count = len(fallback)
+    if fallback_count == 5:
+        return {
+            "name": "evaluacion_reactivos",
+            "passed": True,
+            "detail": f"{fallback_count} reactivos encontrados (con formato alternativo)",
+        }
+        
     return {
         "name": "evaluacion_reactivos",
         "passed": False,
-        "detail": f"Se esperaban 5 reactivos, se encontraron {count}",
+        "detail": f"Se esperaban 5 reactivos, se encontraron {count} (con fallback: {fallback_count})",
         "failures_by_agent": {"agente_evaluacion": ["reactivos_count"]},
     }
 
 
-
 def check_evaluacion_opciones(text: str, path: str) -> dict:
     """Verifica que cada reactivo tenga opciones A, B, C, D."""
-    evaluacion_match = re.search(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
-    if not evaluacion_match:
+    eval_match = _find_icfes_box(text)
+    if not eval_match:
         return {
             "name": "evaluacion_opciones",
             "passed": False,
-            "detail": "FALTA evaluacion-box",
+            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
             "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
         }
-    eval_text = evaluacion_match.group()
-    opciones = re.findall(r"(?:^|[-*])\s*[A-D][\).]", eval_text, re.MULTILINE)
-    if len(opciones) >= 20:
-        opt_count = len(opciones)
-        num_reactivos_esperados = opt_count // 4
+    eval_text = eval_match.group()
+    opciones = re.findall(r"^[ \t]*[A-D]\.", eval_text, re.MULTILINE)
+    count = len(opciones)
+    if count == 20:
         return {
             "name": "evaluacion_opciones",
             "passed": True,
-            "detail": f"{opt_count} opciones (~{num_reactivos_esperados} reactivos)",
+            "detail": "20 opciones A/B/C/D encontradas (4 por cada una de las 5 preguntas)",
         }
     return {
         "name": "evaluacion_opciones",
         "passed": False,
-        "detail": f"Solo {len(opciones)} opciones A/B/C/D encontradas (esperadas ~20)",
+        "detail": f"Se encontraron {count} opciones A/B/C/D (se esperaban exactamente 20)",
         "failures_by_agent": {"agente_evaluacion": ["opciones_faltantes"]},
     }
 
@@ -252,7 +275,7 @@ def check_socializacion_fields(text: str, path: str) -> dict:
         "passed": False,
         "detail": "Campos faltantes: " + ", ".join(missing),
         "failures_by_agent": {
-            "agente_evaluacion": [f"socializacion_falta_{m.lower()}" for m in missing]
+            "agente_socializacion": [f"socializacion_falta_{m.lower()}" for m in missing]
         },
     }
 
@@ -401,8 +424,8 @@ def check_section_order(text: str, path: str) -> dict:
 
 
 def check_no_html_inline(text: str, path: str) -> dict:
-    """Prohíbe <span>, <div>, <style> HTML inline."""
-    pattern = r"<(span|div|style)[^>]*>"
+    """Prohíbe HTML inline como span, div, style, br, table, img, etc."""
+    pattern = r"</?(span|div|style|br|table|img|p|h[1-6]|tr|td|th)\b[^>]*>"
     matches = list(re.finditer(pattern, text, re.IGNORECASE))
     if not matches:
         return {"name": "no_html_inline", "passed": True}
@@ -416,9 +439,9 @@ def check_no_html_inline(text: str, path: str) -> dict:
 
 
 def check_no_ascii_boxes(text: str, path: str) -> dict:
-    """Prohíbe caracteres de dibujo de cajas ASCII."""
-    # ruff: noqa: RUF001
-    pattern = r"[┌┐└┘├┤┬┴──│┼╭╮╰╯╱╲▌▐▄▀]"
+    """Prohíbe caracteres de dibujo de cajas ASCII y Block Elements."""
+    # Cubre el bloque de Unicode de Box Drawing U+2500 a U+257F y Block Elements U+2580 a U+259F
+    pattern = r"[\u2500-\u259F]"
     matches = list(re.finditer(pattern, text))
     if not matches:
         return {"name": "no_ascii_boxes", "passed": True}
@@ -472,10 +495,11 @@ def check_caracterizados_have_answer_space(text: str, path: str) -> dict:
 
 def check_icfes_enunciado_blank_line(text: str, path: str) -> dict:
     """Verifica que en ICFES haya línea en blanco antes de la opción A. (entre el enunciado y las opciones)."""
-    evaluacion_match = re.search(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
+    evaluacion_match = _find_icfes_box(text)
     if not evaluacion_match:
         return {"name": "icfes_enunciado_blank_line", "passed": True}
     eval_text = evaluacion_match.group()
+    eval_start = evaluacion_match.start()
     
     # Buscamos todas las ocurrencias de la opción A. al inicio de línea
     a_options = list(re.finditer(r"^[ \t]*A\.", eval_text, re.MULTILINE))
@@ -484,7 +508,7 @@ def check_icfes_enunciado_blank_line(text: str, path: str) -> dict:
         before = eval_text[:m.start()]
         # Verificamos si termina con dos saltos de línea y opcionales espacios (línea en blanco)
         if not re.search(r"\n[ \t]*\n[ \t]*$", before):
-            line_num = text[:m.start()].count("\n") + 1
+            line_num = text[:eval_start + m.start()].count("\n") + 1
             bad.append(line_num)
             
     if not bad:
@@ -709,55 +733,53 @@ def check_title_has_no_accents(text: str, path: str) -> dict:
 
 def check_evaluacion_distribucion(text: str, path: str) -> dict:
     """Verifica distribucion 2 Bajo + 2 Medio + 1 Alto en evaluacion."""
-    evaluacion_match = re.search(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
-    if not evaluacion_match:
+    eval_match = _find_icfes_box(text)
+    if not eval_match:
         return {
             "name": "evaluacion_distribucion",
             "passed": False,
-            "detail": "FALTA evaluacion-box",
+            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
             "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
         }
-    eval_text = evaluacion_match.group()
+    eval_text = eval_match.group()
+    
     # Buscar patrones de nivel en los titulos de preguntas
-    niveles = []
-    patterns = [
-        r"\*\*Nivel\s+(Bajo|Medio|Alto)\*\*",
-        r"\*\*Pregunta\s+\d+\*\*\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)",
-        r"\*\*Pregunta\s+\d+\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)\*\*"
-    ]
-    for pattern in patterns:
-        for m in re.finditer(pattern, eval_text, re.IGNORECASE):
-            niveles.append(m.group(1))
-
-    if len(niveles) >= 5:
-        bajos = sum(1 for n in niveles if n.lower() == "bajo")
-        medios = sum(1 for n in niveles if n.lower() == "medio")
-        altos = sum(1 for n in niveles if n.lower() == "alto")
-        if bajos >= 2 and medios >= 2 and altos >= 1:
-            return {
-                "name": "evaluacion_distribucion",
-                "passed": True,
-                "detail": f"Bajo={bajos}, Medio={medios}, Alto={altos}",
-            }
-        return {
-            "name": "evaluacion_distribucion",
-            "passed": False,
-            "detail": (
-                f"Distribucion incorrecta: Bajo={bajos}, Medio={medios},"
-                f" Alto={altos}. Esperado 2+2+1"
-            ),
-            "failures_by_agent": {"agente_evaluacion": ["distribucion_niveles"]},
-        }
-    # Fallback: busqueda mas amplia
-    bajos = len(re.findall(r"Nivel\s+Bajo\b", eval_text, re.IGNORECASE))
-    medios = len(re.findall(r"Nivel\s+Medio\b", eval_text, re.IGNORECASE))
-    altos = len(re.findall(r"Nivel\s+Alto\b", eval_text, re.IGNORECASE))
+    headers = re.findall(
+        r"^[ \t]*\*\*Pregunta\s+\d+\s*[—–-]\s*Nivel\s+(Bajo|Medio|Alto)\*\*[ \t]*$",
+        eval_text,
+        re.MULTILINE | re.IGNORECASE
+    )
+    if len(headers) < 5:
+        # Fallback to look for Nivel Bajo/Medio/Alto in headers with other formatting
+        headers = re.findall(
+            r"^[ \t]*\*\*Pregunta\s+\d+.*Nivel\s+(Bajo|Medio|Alto).*",
+            eval_text,
+            re.MULTILINE | re.IGNORECASE
+        )
+    
+    niveles = [m for m in headers]
+    bajos = sum(1 for n in niveles if n.lower() == "bajo")
+    medios = sum(1 for n in niveles if n.lower() == "medio")
+    altos = sum(1 for n in niveles if n.lower() == "alto")
+    
     if bajos >= 2 and medios >= 2 and altos >= 1:
         return {
             "name": "evaluacion_distribucion",
             "passed": True,
             "detail": f"Bajo={bajos}, Medio={medios}, Alto={altos}",
         }
+        
+    # Fallback más amplio
+    bajos_f = len(re.findall(r"Nivel\s+Bajo\b", eval_text, re.IGNORECASE))
+    medios_f = len(re.findall(r"Nivel\s+Medio\b", eval_text, re.IGNORECASE))
+    altos_f = len(re.findall(r"Nivel\s+Alto\b", eval_text, re.IGNORECASE))
+    if bajos_f >= 2 and medios_f >= 2 and altos_f >= 1:
+        return {
+            "name": "evaluacion_distribucion",
+            "passed": True,
+            "detail": f"Bajo={bajos_f}, Medio={medios_f}, Alto={altos_f} (con fallback)",
+        }
+        
     return {
         "name": "evaluacion_distribucion",
         "passed": False,
@@ -769,12 +791,16 @@ def check_evaluacion_distribucion(text: str, path: str) -> dict:
     }
 
 
-
 def check_socioemocional_competencia(text: str, path: str) -> dict:
     """Verifica que la reflexión socioemocional nombre una competencia Ley 2503."""
     socio_match = re.search(r"::: \{\.socioemocional-box[^}]*\}.*?:::", text, re.DOTALL)
     if not socio_match:
-        return {"name": "socioemocional_competencia", "passed": True}
+        return {
+            "name": "socioemocional_competencia",
+            "passed": False,
+            "detail": "FALTA socioemocional-box",
+            "failures_by_agent": {"agente_socioemocional": ["missing_socioemocional-box"]},
+        }
     soc_text = socio_match.group()
     competencias = [
         r"Conciencia\s+Emocional",
@@ -785,7 +811,7 @@ def check_socioemocional_competencia(text: str, path: str) -> dict:
         r"Bienestar",
     ]
     for p in competencias:
-        if re.search(p, soc_text, re.IGNORECASE):
+        if re.search(p, socio_text if 'socio_text' in locals() else soc_text, re.IGNORECASE):
             return {"name": "socioemocional_competencia", "passed": True}
     return {
         "name": "socioemocional_competencia",

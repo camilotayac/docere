@@ -36,7 +36,7 @@ Cada una de las 5 preguntas debe tener:
 Usar `*Campo:* valor` sin espacios extra. El orden es:
 
 ```
-**Pregunta N** — Nivel X
+**Pregunta N — Nivel X**
 *Competencia:* {texto}
 *Afirmación:* {texto}
 *Evidencia:* {texto}
@@ -87,7 +87,7 @@ Lee cada reactivo del bloque de evaluación. Identifica para cada uno:
 Para cada pregunta del 1 al 5, escribe:
 
 ```
-**Pregunta N** — Nivel X
+**Pregunta N — Nivel X**
 *Competencia:* {Interpretación | Argumentación | Proposición}
 *Afirmación:* El estudiante {verbo} que {concepto o relación}.
 *Evidencia:* {Acción observable que demuestra la afirmación.}

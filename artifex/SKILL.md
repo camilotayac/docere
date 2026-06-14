@@ -557,7 +557,7 @@ con $\\underline{\\hspace{6cm}}$.}
 ...
 :::
 
-::: {.ejercicios-box title="Nivel Bajo"}
+::: {.ejercicios-box title="Preguntas: Nivel Bajo"}
 - {Ejercicio de recuperacion}
 
   $\\underline{\\hspace{6cm}}$
@@ -566,7 +566,7 @@ con $\\underline{\\hspace{6cm}}$.}
   $\\underline{\\hspace{6cm}}$
 :::
 
-::: {.ejercicios-box title="Nivel Medio"}
+::: {.ejercicios-box title="Preguntas: Nivel Medio"}
 - {Respuesta corta o aplicacion}
 
   $\\underline{\\hspace{6cm}}$
@@ -579,7 +579,7 @@ con $\\underline{\\hspace{6cm}}$.}
   $\\underline{\\hspace{6cm}}$
 :::
 
-::: {.ejercicios-box title="Nivel Alto"}
+::: {.ejercicios-box title="Preguntas: Nivel Alto"}
 - {Problema abierto o analisis de errores}
 
   $\\underline{\\hspace{6cm}}$
@@ -604,11 +604,11 @@ con $\\underline{\\hspace{6cm}}$.}
 :::
 
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
-**Pregunta 1** — Nivel Bajo
+**Pregunta 1 — Nivel Bajo**
 
-*Contexto:* {contexto}
+{Contexto con situación real o de laboratorio, datos organizados, 3-5 líneas o tabla.}
 
-*Enunciado:* {pregunta}
+{Pregunta o enunciado concreto que exige aplicar la teoría al contexto dado.}
 
 A. {opcion}
 B. {opcion}
@@ -616,10 +616,10 @@ C. {opcion}
 D. {opcion}
 
 
-**Pregunta 2** — Nivel Bajo
+**Pregunta 2 — Nivel Bajo**
 ...
 (5 reactivos total: 2 Bajo, 2 Medio, 1 Alto)
-(linea en blanco obligatoria entre *Enunciado:* y A.)
+(linea en blanco obligatoria antes de A.)
 :::
 
 ::: {.evaluacion-box title="Socializacion"}

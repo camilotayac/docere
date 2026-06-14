@@ -25,7 +25,7 @@ Este archivo define las reglas de formato y estilo que DEBEN seguir todos los ag
 
 Siempre usar math mode para que funcionen en HTML y PDF:
 
-- **Lineas independientes:** `$\underline{\hspace{6cm}}$` (indentadas 2 espacios).
+- **Lineas independientes:** `$$\underline{\hspace{6cm}}$$` (indentadas 2 espacios).
 - **En linea dentro de texto:** `$\underline{\hspace{3cm}}$`.
 
 ## Formato de cajas
