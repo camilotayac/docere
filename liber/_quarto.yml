@@ -32,7 +32,7 @@ book:
     - part: "Décimo - Química"
       chapters:
         - 06_Decimo/reactivo_limite.qmd
-
+        - 06_Decimo/escritura_quimica.qmd
   appendices:
     - bibliografia.qmd
 
