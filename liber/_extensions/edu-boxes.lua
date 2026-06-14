@@ -100,7 +100,9 @@ function Div(div)
           table.insert(body_classes, 'show')
         end
         
-        local body_attr = pandoc.Attr(collapse_id, body_classes, {})
+        local body_attr = pandoc.Attr(collapse_id, body_classes, {
+          ['data-bs-parent'] = '#quarto-document-content'
+        })
         local body_div = pandoc.Div(original_content, body_attr)
         
         div.content = pandoc.List()
