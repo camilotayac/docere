@@ -40,9 +40,9 @@ Cada reactivo ICFES debe tener esta estructura exacta:
 ```
 **Pregunta N** — Nivel X
 
-*Contexto:* {texto del contexto}
+{Texto del contexto, situación o datos de la pregunta}
 
-*Enunciado:* {texto del enunciado}
+{La pregunta o enunciado concreto a responder}
 
 A. {opción A}
 B. {opción B}
@@ -51,11 +51,12 @@ D. {opción D}
 ```
 
 Reglas:
-- **Línea en blanco** entre `*Enunciado:*` y `A.` (las opciones no deben
-  quedar pegadas al enunciado como párrafo continuo).
+- **Línea en blanco** antes de `A.` (las opciones no deben quedar pegadas al enunciado como párrafo continuo).
 - Las opciones `A. B. C. D.` deben estar en **líneas separadas**.
 - Dos líneas en blanco entre reactivos.
 - No usar "Todas las anteriores" ni "Ninguna de las anteriores".
+- **IMPORTANTE (Ortografía en Español):** En todo el contenido de los bloques se DEBE escribir con ortografía perfecta en español (incluyendo todas las tildes y la letra ñ). Los títulos de los bloques (`title="..."`) son la única excepción y nunca deben llevar acentos.
+
 
 ### 4. Fórmulas y valores numéricos
 

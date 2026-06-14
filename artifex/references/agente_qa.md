@@ -83,7 +83,7 @@ la seccion 1 de este agente. Cada title debe coincidir caracter por caracter.
 - Las preguntas y ejercicios tienen espacios de respuesta
   (`$\underline{\hspace{6cm}}$`).
 - Los pasos estan en lista numerada vertical, no en parrafo corrido.
-- En ICFES, hay linea en blanco entre `*Enunciado:*` y las opciones `A.`.
+- En ICFES, hay línea en blanco antes de las opciones `A.` (entre el enunciado y las opciones).
 
 #### 6. Calidad pedagogica
 - La seccion de Teoria tiene contenido sustancial (no es placeholder).
@@ -101,7 +101,7 @@ la seccion 1 de este agente. Cada title debe coincidir caracter por caracter.
 - La reflexion socioemocional nombra la competencia de la Ley 2503/2025 que trabaja.
 - La evaluacion tiene exactamente 5 reactivos.
 - Las 3 competencias ICFES (Interpretacion, Argumentacion, Proposicion) estan cubiertas.
-- Cada reactivo tiene Contexto, Enunciado y opciones A, B, C, D.
+- Cada reactivo tiene párrafo de contexto y párrafo de enunciado (sin etiquetas literales *Contexto:* / *Enunciado:*) y opciones A, B, C, D.
 - Cada reactivo tiene entrada correspondiente en Socializacion.
 - En Socializacion: cada entrada tiene Nivel, Competencia, Afirmacion,
   Evidencia, Respuesta correcta y Explicacion.

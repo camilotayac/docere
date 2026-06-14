@@ -469,38 +469,35 @@ def check_caracterizados_have_answer_space(text: str, path: str) -> dict:
 
 
 def check_icfes_enunciado_blank_line(text: str, path: str) -> dict:
-    """Verifica que en ICFES haya línea en blanco entre *Enunciado:* y opciones."""
+    """Verifica que en ICFES haya línea en blanco antes de la opción A. (entre el enunciado y las opciones)."""
     evaluacion_match = re.search(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
     if not evaluacion_match:
         return {"name": "icfes_enunciado_blank_line", "passed": True}
     eval_text = evaluacion_match.group()
-    # Find all *Enunciado:* lines and check each one has a blank line before A.
-    enunciados = list(re.finditer(r"\*Enunciado:\*", eval_text))
+    
+    # Buscamos todas las ocurrencias de la opción A. al inicio de línea
+    a_options = list(re.finditer(r"^[ \t]*A\.", eval_text, re.MULTILINE))
     bad = []
-    for m in enunciados:
-        after = eval_text[m.end() :]
-        # Check if the next non-blank line after Enunciado starts with A.
-        next_line_match = re.match(r"(.*?)(\n[ \t]*)([A-D]\.)", after, re.DOTALL)
-        if next_line_match:
-            blank_or_text = next_line_match.group(1)
-            if blank_or_text and not blank_or_text.isspace():
-                # There's text content (no blank line) before A.
-                bad.append(m)
-    # Alternative: look for "no blank line" pattern
-    # *Enunciado:* followed by text on same line, then \n then A. (no blank line in between)
-    no_blank = list(re.finditer(r"\*Enunciado:\*.+?\n[ \t]*A\.", eval_text))
-    if not no_blank:
+    for m in a_options:
+        before = eval_text[:m.start()]
+        # Verificamos si termina con dos saltos de línea y opcionales espacios (línea en blanco)
+        if not re.search(r"\n[ \t]*\n[ \t]*$", before):
+            line_num = text[:m.start()].count("\n") + 1
+            bad.append(line_num)
+            
+    if not bad:
         return {
             "name": "icfes_enunciado_blank_line",
             "passed": True,
-            "detail": "Línea en blanco presente entre *Enunciado:* y opciones",
+            "detail": "Línea en blanco presente antes de la opción A.",
         }
     return {
         "name": "icfes_enunciado_blank_line",
         "passed": False,
-        "detail": f"{len(no_blank)} enunciado(s) sin línea en blanco antes de opciones",
+        "detail": f"Falta línea en blanco antes de la opción A. en líneas: {bad}",
         "failures_by_agent": {"agente_evaluacion": ["icfes_enunciado_no_blank_line"]},
     }
+
 
 
 def check_answer_spaces_in_math_mode(text: str, path: str) -> dict:

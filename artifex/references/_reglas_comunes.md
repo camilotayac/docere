@@ -9,6 +9,9 @@ Este archivo define las reglas de formato y estilo que DEBEN seguir todos los ag
 - No usar tablas ASCII (``` ┌ ┐ └ ┘ ```).
 - No usar notas `[{...}]` para el docente intercaladas en el contenido.
 - No usar "Todas las anteriores" ni "Ninguna de las anteriores" en opciones ICFES.
+- No usar las etiquetas literales `*Contexto:*` ni `*Enunciado:*` en preguntas ICFES. Se deben escribir directamente los párrafos de contexto y de pregunta consecutivos y separados por una línea vacía.
+- **Ortografía en Español:** Se DEBE escribir con ortografía perfecta en español (incluyendo todas las tildes y la letra ñ) en todo el contenido de los bloques. Los atributos `title="..."` de las cajas son la única excepción y nunca deben llevar acentos.
+
 
 ## Formato LaTeX
 

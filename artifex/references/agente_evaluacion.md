@@ -73,10 +73,10 @@ Distribucion por nivel en la evaluacion:
 ### Formato visual obligatorio (separacion de opciones)
 
 Cada opcion A, B, C, D DEBE ir en una **linea separada** con un **salto de
-linea en blanco** entre el enunciado y la primera opcion:
+linea en blanco** entre el enunciado de la pregunta y la primera opcion:
 
 ```
-*Enunciado:* {pregunta concreta.}
+{Texto de la pregunta o enunciado concreto.}
 
 A. {Texto de la opcion 1}
 B. {Texto de la opcion 2}
@@ -93,9 +93,9 @@ Entre cada pregunta debe haber **dos saltos de linea en blanco**:
 ```
 **Pregunta 1** — Nivel Bajo
 
-*Contexto:* ...
+{Contexto o planteamiento de la situación...}
 
-*Enunciado:* ...
+{Enunciado o pregunta concreta...}
 
 A. ...
 B. ...
@@ -106,6 +106,7 @@ D. ...
 
 **Pregunta 2** — Nivel Bajo
 ```
+
 
 ### Objetivo
 
@@ -211,23 +212,18 @@ aumento de temperatura en un grafico combinado." (Medio)
 
 Para cada pregunta:
 
-**Contexto** (3-5 lineas o tabla):
-- Presenta una situacion problema del mundo real o de laboratorio con datos
-  organizados (masas, moles, ecuaciones, tablas).
-- Debe sentirse como un examen ICFES real: el estudiante recibe informacion
-  y debe procesarla, no solo recordar una formula.
-- Incluir MASAS MOLARES explicitas si se requieren calculos.
-- Los datos numericos deben ser realistas y coherentes.
-- Separar del enunciado con un salto de linea.
+- **Estructura del texto de la pregunta (sin etiquetas):** No se deben colocar las etiquetas literales `*Contexto:*` ni `*Enunciado:*`. En su lugar, se escribe directamente el párrafo del contexto y, tras una línea en blanco, el párrafo del enunciado/pregunta.
+- **Contexto (3-5 líneas o tabla):**
+  - Presenta una situación problema del mundo real o de laboratorio con datos organizados (masas, moles, ecuaciones, tablas).
+  - Debe sentirse como un examen ICFES real: el estudiante recibe información y debe procesarla, no solo recordar una fórmula.
+  - Incluir MASAS MOLARES explícitas si se requieren cálculos.
+  - Los datos numéricos deben ser realistas y coherentes.
+- **Enunciado/Pregunta:**
+  - La pregunta concreta que el estudiante debe responder APLICANDO la teoría al contexto dado.
+  - NO debe ser una pregunta genérica ("¿Qué es reactivo límite?"); debe remitirse al contexto específico del problema.
+  - Redactado de forma clara y directa.
+  - Debe poder responderse únicamente con la información del contexto + el concepto aprendido.
 
-**Enunciado:**
-- La pregunta concreta que el estudiante debe responder APLICANDO la teoria
-  al contexto dado.
-- NO debe ser una pregunta generica ("¿Que es reactivo limite?"); debe
-  remitirse al contexto especifico del problema.
-- Redactado de forma clara y directa.
-- Debe poder responderse unicamente con la informacion del contexto + el
-  concepto aprendido.
 
 **Opciones A, B, C, D:**
 - Una opcion correcta.
@@ -244,9 +240,7 @@ Para cada pregunta:
 - La distribucion de competencias es 2-2-1?
 - Exactamente 1 opcion correcta por pregunta?
 - Los distractores son plausibles (no absurdos)?
-- No hay "Todas las anteriores" ni "Ninguna de las anteriores"?
-
----
+- No hay---
 
 ## Plantilla de Salida
 
@@ -255,22 +249,22 @@ Para cada pregunta:
 
 **Pregunta 1** — Nivel Bajo
 
-*Contexto:* {Contexto con situacion real o de laboratorio, datos organizados, 3-5 lineas o tabla. Masas molares explicitas si se requieren.}
+{Contexto con situación real o de laboratorio, datos organizados, 3-5 líneas o tabla. Masas molares explícitas si se requieren.}
 
-*Enunciado:* {Pregunta concreta que exige aplicar la teoria al contexto dado.}
+{Pregunta o enunciado concreto que exige aplicar la teoría al contexto dado.}
 
-A. {Opcion 1 — correcta}
-B. {Opcion 2 — distractor basado en error conceptual comun}
-C. {Opcion 3 — distractor}
-D. {Opcion 4 — distractor}
+A. {Opción 1 — correcta}
+B. {Opción 2 — distractor basado en error conceptual común}
+C. {Opción 3 — distractor}
+D. {Opción 4 — distractor}
 
 
 
 **Pregunta 2** — Nivel Bajo
 
-*Contexto:* {...}
+{Párrafo del contexto...}
 
-*Enunciado:* {...}
+{Párrafo del enunciado/pregunta...}
 
 A. {...}
 B. {...}
@@ -281,9 +275,9 @@ D. {...}
 
 **Pregunta 3** — Nivel Medio
 
-*Contexto:* {Contexto con 2+ variables, tabla y/o grafica.}
+{Contexto con 2+ variables, tabla y/o gráfica...}
 
-*Enunciado:* {...}
+{Enunciado/pregunta...}
 
 A. {...}
 B. {...}
@@ -294,9 +288,9 @@ D. {...}
 
 **Pregunta 4** — Nivel Medio
 
-*Contexto:* {Contexto experimental o analitico con datos organizados.}
+{Contexto experimental o analítico con datos organizados...}
 
-*Enunciado:* {...}
+{Enunciado/pregunta...}
 
 A. {...}
 B. {...}
@@ -307,16 +301,14 @@ D. {...}
 
 **Pregunta 5** — Nivel Alto
 
-*Contexto:* {Situacion problema abierta, no rutinaria, multipaso.}
+{Situación problema abierta, no rutinaria, multipaso...}
 
-*Enunciado:* {...}
+{Enunciado/pregunta...}
 
 A. {...}
 B. {...}
 C. {...}
 D. {...}
-
-
 
 :::
 ```
@@ -324,20 +316,14 @@ D. {...}
 ## Restricciones de Formato
 
 - Un bloque: `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
-- Cada pregunta con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego `*Contexto:*`,
-  `*Enunciado:*`, y opciones `A.`, `B.`, `C.`, `D.`.
-- **Salto de linea obligatorio** entre `*Enunciado:*` y la primera opcion `A.`
-  (sin esto Quarto pega las opciones al texto).
-- **Dos saltos de linea** entre preguntas.
-- Numeracion de preguntas del 1 al 5.
-- **Todo valor numerico** en contexto, enunciado y opciones debe ir en
-  LaTeX inline `$...$` con la unidad dentro de `\text{}` y `\,` thin
-  space: `$10.0\,\text{g}$ de Ca`, `$500\,\text{g}$ de glucosa`,
-  `A. $7.0\,\text{g}$`, `$\frac{4}{3} < \frac{2}{1}$`.
-- Los nombres de compuestos quimicos van en LaTeX: `$Ca$`, `$NO_2$`,
-  `$FeS_2$`.
-- No incluir respuestas correctas ni claves (va en Socializacion, Paso 8.6).
-- No incluir emojis.
+- Cada pregunta con `**Pregunta N** — Nivel {Bajo|Medio|Alto}`, luego el párrafo de contexto, después el párrafo del enunciado/pregunta, y finalmente las opciones `A.`, `B.`, `C.`, `D.`.
+- **Prohibido** usar las etiquetas literales `*Contexto:*` o `*Enunciado:*`.
+- **Salto de línea obligatorio** antes de la primera opción `A.` (sin esto Quarto pega las opciones al texto).
+- **Dos saltos de línea** entre preguntas.
+- Numeración de preguntas del 1 al 5.
+- **Todo valor numérico** en contexto, enunciado y opciones debe ir en LaTeX inline `$...$` con la unidad dentro de `\text{}` y `\,` thin space: `$10.0\,\text{g}$ de Ca`, `$500\,\text{g}$ de glucosa`, `A. $7.0\,\text{g}$`, `$\frac{4}{3} < \frac{2}{1}$`.
+- Los nombres de compuestos químicos van en LaTeX: `$Ca$`, `$NO_2$`, `$FeS_2$`.
+- No incluir respuestas correctas ni claves (va en Socialización, Paso 8.6).
 - No incluir "Todas las anteriores" ni "Ninguna de las anteriores".
 - Lenguaje claro y directo, adecuado al grado.
 
