@@ -1,0 +1,95 @@
+/* ============================================================
+   EDU-BOXES — Estilos para cajas educativas (HTML)
+   ============================================================ */
+
+/* ---- La <section> de Quarto actúa como el recuadro unificado ---- */
+/* overflow:hidden + border-radius recorta los fondos del heading y el contenido */
+section:has(> h2[class*="-box-heading"]),
+section:has(> h3[class*="-box-heading"]) {
+  overflow: hidden !important;
+  border-radius: 6px !important;
+  margin-top: 2em !important;
+  padding: 0 !important;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+/* Borde de la sección por tipo de caja */
+section:has(> .teoria-box-heading)             { border-color: #2244aa; }
+section:has(> .ideas-previas-box-heading)      { border-color: #b8a800; }
+section:has(> .sub-ideas-previas-box-heading)  { border-color: #a09000; }
+section:has(> .contexto-box-heading)           { border-color: #1a7a1a; }
+section:has(> .sub-contexto-box-heading)       { border-color: #1a6a1a; }
+section:has(> .caracterizados-box-heading)     { border-color: #6a1a9a; }
+section:has(> .sub-caracterizados-box-heading) { border-color: #5a158a; }
+section:has(> .retos-box-heading)              { border-color: #cc6600; }
+section:has(> .socioemocional-box-heading)     { border-color: #cc3366; }
+section:has(> .ejercicios-box-heading)         { border-color: #aa2222; }
+section:has(> .aplicacion-box-heading)         { border-color: #6a1a8a; }
+section:has(> .sub-aplicacion-box-heading)     { border-color: #5a157a; }
+section:has(> .notas-docente-box-heading)      { border-color: #0088aa; }
+section:has(> .ejemplo-box-heading)            { border-color: #555555; }
+section:has(> .evaluacion-box-heading)        { border-color: #1a7a7a; }
+section:has(> .sub-evaluacion-box-heading)    { border-color: #185a5a; }
+
+/* ---- HEADING: fila superior (título) ---- */
+h2[class*="-box-heading"],
+h3[class*="-box-heading"] {
+  margin: 0 !important;
+  padding: 0.5em 1em !important;
+  border-radius: 0 !important;
+  border: none !important;
+  font-size: 1em !important;
+  font-weight: 700;
+  color: #1a1a1a !important;
+}
+
+/* Fondo pastel del título por tipo */
+.teoria-box-heading            { background-color: #d6e4ff; }
+.ideas-previas-box-heading     { background-color: #fff0a0; }
+.sub-ideas-previas-box-heading { background-color: #fff0a0; }
+.contexto-box-heading          { background-color: #c0f0c0; }
+.sub-contexto-box-heading      { background-color: #c0f0c0; }
+.caracterizados-box-heading    { background-color: #e8d0ff; }
+.sub-caracterizados-box-heading{ background-color: #e8d0ff; }
+.retos-box-heading             { background-color: #ffd8a0; }
+.socioemocional-box-heading    { background-color: #ffd0e0; }
+.ejercicios-box-heading        { background-color: #ffbbbb; }
+.aplicacion-box-heading        { background-color: #ddc8ff; }
+.sub-aplicacion-box-heading    { background-color: #ddc8ff; }
+.notas-docente-box-heading     { background-color: #b0e8ff; }
+.ejemplo-box-heading           { background-color: #d8d8d8; }
+.evaluacion-box-heading        { background-color: #b0e0d0; }
+.sub-evaluacion-box-heading    { background-color: #b0e0d0; }
+
+/* ---- CUADRO DE CONTENIDO: fila inferior ---- */
+.teoria-box, .ideas-previas-box, .sub-ideas-previas-box,
+.contexto-box, .sub-contexto-box,
+.caracterizados-box, .sub-caracterizados-box,
+.retos-box, .socioemocional-box, .ejercicios-box,
+.aplicacion-box, .sub-aplicacion-box,
+.notas-docente-box, .ejemplo-box, .evaluacion-box,
+.sub-evaluacion-box {
+  padding: 0.9em 1.1em;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+/* Fondo claro del contenido por tipo */
+.teoria-box            { background-color: #f0f4ff; }
+.ideas-previas-box     { background-color: #fffff0; }
+.sub-ideas-previas-box { background-color: #fffff5; }
+.contexto-box          { background-color: #f0fff0; }
+.sub-contexto-box      { background-color: #f0fff0; }
+.caracterizados-box    { background-color: #f8f0ff; }
+.sub-caracterizados-box{ background-color: #f8f0ff; }
+.retos-box             { background-color: #fff8f0; }
+.socioemocional-box    { background-color: #fff0f5; }
+.ejercicios-box        { background-color: #fff5f5; }
+.aplicacion-box        { background-color: #f8f0ff; }
+.sub-aplicacion-box    { background-color: #faf5ff; }
+.notas-docente-box     { background-color: #f0ffff; }
+.ejemplo-box           { background-color: #f8f8f8; }
+.evaluacion-box        { background-color: #f0faf5; }
+.sub-evaluacion-box    { background-color: #e0f5ee; }
