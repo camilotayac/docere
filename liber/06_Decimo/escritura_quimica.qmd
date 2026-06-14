@@ -118,6 +118,7 @@ Sigue los pasos $1$ a $4$ para balancear las siguientes ecuaciones quimicas:
 ::: {.caracterizados-box title="Contextualizacion - Visual"}
 
 **Teoria visual de balanceo:**
+
 | Reactivos (izquierda) | Flecha de cambio | Productos (derecha) | Regla del color |
 |---|---|---|---|
 | Sustancias iniciales | Indica que se **(rojo)** produce | Nuevas sustancias | Coeficientes en **(azul)** cambian moles |
@@ -128,6 +129,7 @@ Balancear la combustion de metano ($CH_4$) para producir dioxido de carbono ($CO
 $$CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
 
 1. **Tabla de conteo inicial:**
+
 | Elemento | Reactivos | Productos | Estado |
 |---|---|---|---|
 | Carbono ($C$) | $1$ | $1$ | Balanceado |
@@ -139,6 +141,7 @@ Ajustar $H$ colocando un coeficiente $2$ **(azul)** en $H_2O$ -> Ajustar $O$ col
 $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$
 
 3. **Tabla de conteo final:**
+
 | Elemento | Reactivos | Productos | Estado |
 |---|---|---|---|
 | Carbono ($C$) | $1$ | $1$ | Balanceado |
@@ -378,7 +381,7 @@ $$C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)$$
 Productos: $3 \times 2 = 6$ atomos de $H$. Reactivos: $6$ atomos de $H$. <- (Esto incrementa nuevamente el oxigeno en productos a $2 \times 2 + 3 = 7$ atomos.)
 
 **Paso 4: Ajustar el oxigeno usando un coeficiente fraccionario**
-Como hay $7$ atomos de $O$ en productos and solo un par ($O_2$) en reactivos, colocamos el coeficiente fraccionario $\frac{7}{2}$ **(verde)** en reactivos:
+Como hay $7$ atomos de $O$ en productos y solo un par ($O_2$) en reactivos, colocamos el coeficiente fraccionario $\frac{7}{2}$ **(verde)** en reactivos:
 $$C_2H_6(g) + \frac{7}{2}O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)$$
 Esto nos da $7$ atomos de $O$ a cada lado. <- (Muchos estudiantes terminan aqui, pero las reglas quimicas exigen que los coeficientes sean numeros enteros simples.)
 
@@ -475,6 +478,7 @@ La proxima vez que veas un automovil en la calle, recuerda que su tubo de escape
 - $1$ embudo pequeño de plastico o papel
 
 **Procedimiento:**
+
 *Preparacion:*
 1. **Pesar bicarbonato.** Pesar exactamente $10.0\,\text{g}$ de bicarbonato de sodio ($NaHCO_3$) en la balanza.
 2. **Preparar globo.** Colocar el embudo en la boquilla del globo de latex.
@@ -492,6 +496,7 @@ La proxima vez que veas un automovil en la calle, recuerda que su tubo de escape
 10. **Pesar producto.** Colocar la botella con el globo inflado en la balanza y registrar la masa final.
 
 **Resultados:**
+
 | Variable medida | Masa registrada en gramos | Observaciones visuales |
 |---|---|---|
 | Masa inicial del sistema cerrado | $\underline{\hspace{3cm}}$ | Presencia de reactivos separados |
@@ -516,10 +521,12 @@ La proxima vez que veas un automovil en la calle, recuerda que su tubo de escape
 *Enunciado:* De acuerdo con la ley de la conservacion de la masa, ¿cual es el numero total de atomos de oxigeno presentes en el lado de los reactivos y de los productos, respectivamente?
 
 A. $2$ y $2$
-B. $1$ y $2$
-C. $2$ y $1$
-D. $4$ y $2$
 
+B. $1$ y $2$
+
+C. $2$ y $1$
+
+D. $4$ y $2$
 
 
 **Pregunta 2** — Nivel Bajo
@@ -529,10 +536,12 @@ D. $4$ y $2$
 *Enunciado:* ¿Por que no se deben alterar los subindices al balancear una ecuacion quimica?
 
 A. Porque al cambiar los subindices se cambia la identidad quimica de las sustancias.
-B. Porque al cambiar los subindices se destruye la masa total de los reactivos.
-C. Porque los subindices representan el estado fisico de los reactivos y productos.
-D. Porque los subindices solo pueden ser numeros impares menores que tres.
 
+B. Porque al cambiar los subindices se destruye la masa total de los reactivos.
+
+C. Porque los subindices representan el estado fisico de los reactivos y productos.
+
+D. Porque los subindices solo pueden ser numeros impares menores que tres.
 
 
 **Pregunta 3** — Nivel Medio
@@ -542,10 +551,12 @@ D. Porque los subindices solo pueden ser numeros impares menores que tres.
 *Enunciado:* Al realizar el balanceo de la ecuacion con los coeficientes enteros mas pequeños posibles, ¿cuales son los coeficientes que deben preceder al $K{Cl}O_3$, $K{Cl}$ y $O_2$, respectivamente?
 
 A. $2$, $2$ y $3$
-B. $1$, $1$ y $2$
-C. $2$, $1$ y $3$
-D. $3$, $3$ y $2$
 
+B. $1$, $1$ y $2$
+
+C. $2$, $1$ y $3$
+
+D. $3$, $3$ y $2$
 
 
 **Pregunta 4** — Nivel Medio
@@ -555,10 +566,12 @@ D. $3$, $3$ y $2$
 *Enunciado:* ¿Cual de los siguientes argumentos justifica correctamente que la ecuacion cumple con la ley de la conservacion de la masa?
 
 A. Porque la suma de las masas de los reactivos ($16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}$) es igual a la suma de las masas de los productos ($44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}$).
-B. Porque el numero de moleculas reactivas es exactamente igual al numero de moleculas de productos.
-C. Porque el carbono se transformo en oxigeno gaseoso manteniendo la misma cantidad de moles totales.
-D. Porque la masa molecular de cada sustancia individual permanece constante antes y despues del cambio quimico.
 
+B. Porque el numero de moleculas reactivas es exactamente igual al numero de moleculas de productos.
+
+C. Porque el carbono se transformo en oxigeno gaseoso manteniendo la misma cantidad de moles totales.
+
+D. Porque la masa molecular de cada sustancia individual permanece constante antes y despues del cambio quimico.
 
 
 **Pregunta 5** — Nivel Alto
@@ -568,8 +581,11 @@ D. Porque la masa molecular de cada sustancia individual permanece constante ant
 *Enunciado:* Si se balancea primero el carbono y el hidrogeno colocando coeficientes enteros en los productos, ¿cual es la fraccion adecuada que debe colocarse delante del oxigeno ($O_2$) en los reactivos para balancear la ecuacion antes de multiplicar por dos?
 
 A. $\frac{7}{2}$
+
 B. $\frac{5}{2}$
+
 C. $\frac{9}{2}$
+
 D. $\frac{3}{2}$
 
 :::
