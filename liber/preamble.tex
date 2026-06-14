@@ -5,6 +5,13 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
+% ---- Espaciado entre párrafos y fórmulas ----
+\usepackage{parskip}          % espacio entre párrafos, elimina sangría
+\setlength{\parskip}{0.6em}   % espacio vertical entre párrafos
+\setlength{\parindent}{0pt}   % sin sangría
+
+% Espacio encima y debajo de fórmulas display ($$...$$) — configurado en \AtBeginDocument al final
+
 % ---- Paleta de colores para cajas educativas ----
 % Formato: box-{nombre}-{h=fondo título, f=borde, c=fondo contenido}
 \definecolor{box-teoria-h}{HTML}{d6e4ff}
@@ -68,6 +75,10 @@
 }
 
 \AtBeginDocument{
+  \setlength{\abovedisplayskip}{1em}
+  \setlength{\belowdisplayskip}{1em}
+  \setlength{\abovedisplayshortskip}{0.5em}
+  \setlength{\belowdisplayshortskip}{0.5em}
   \includepdf[pages=-, fitpaper=true]{Portada.pdf}
   \pagestyle{plain}
 }

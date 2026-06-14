@@ -409,9 +409,9 @@ $$CO(g) + 2H_2(g) \rightarrow CH_3OH(g)$$
 
 Si se tienen $4\,\text{mol}$ de CO y $6\,\text{mol}$ de $H_2$, ¿cuál es el reactivo límite y cuántos moles de $CH_3OH$ se pueden producir?
 
-**Justificacion Teorica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
+**Justificación Teórica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
 
-**Ejecucion:**
+**Ejecución:**
 
 **Paso 1: Dividir moles de CO entre su coeficiente** (el coeficiente del CO es 1)
 
@@ -445,7 +445,7 @@ Si se hacen reaccionar $30.0\,\text{g}$ de $NO$ con $20.0\,\text{g}$ de $O_2$, d
 
 **Justificacion Teorica:** Primero se convierten las masas a moles, luego se dividen entre los coeficientes para identificar el reactivo límite. Finalmente se usa la relación molar para calcular la masa de producto.
 
-**Ejecucion:**
+**Ejecución:**
 
 **Paso 1: Convertir masa de NO a moles**
 
@@ -487,9 +487,9 @@ $$2NH_3(g) + CO_2(g) \rightarrow (NH_2)_2CO(ac) + H_2O(l)$$
 
 En un proceso se hacen reaccionar $637.2\,\text{g}$ de $NH_3$ con $1142\,\text{g}$ de $CO_2$. Determine: (a) el reactivo límite, (b) la masa de urea que se formará, (c) la masa del reactivo en exceso que queda sin reaccionar. Masas molares: $NH_3 = 17.03\,\text{g/mol}$, $CO_2 = 44.01\,\text{g/mol}$, $(NH_2)_2CO = 60.06\,\text{g/mol}$.
 
-**Justificacion Teorica:** Se requieren tres etapas: identificar el reactivo límite comparando los moles ajustados por coeficiente; calcular la masa de producto usando el reactivo límite; y determinar cuánto del otro reactivo se consumió para hallar el sobrante.
+**Justificación Teórica:** Se requieren tres etapas: identificar el reactivo límite comparando los moles ajustados por coeficiente; calcular la masa de producto usando el reactivo límite; y determinar cuánto del otro reactivo se consumió para hallar el sobrante.
 
-**Ejecucion:**
+**Ejecución:**
 
 **Paso 1: Convertir masas a moles**
 
@@ -635,7 +635,7 @@ En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la
 | $1$ | $5.0$ | $30$ | | |
 | $2$ | $30$ | $5$ | | |
 
-**Conclusion:** Basado en tus observaciones, ¿qué ensayo tuvo el vinagre como reactivo límite? ¿Cómo lo sabes?
+**Conclusión:** Basado en tus observaciones, ¿qué ensayo tuvo el vinagre como reactivo límite? ¿Cómo lo sabes?
 
 $\underline{\hspace{6cm}}$
 
@@ -727,43 +727,43 @@ D. $87.5\%$
 
 **Pregunta 1** — Nivel Bajo
 *Competencia:* Interpretación
-*Afirmacion:* Comprende las relaciones estequiométricas en una ecuación química balanceada.
+*Afirmación:* Comprende las relaciones estequiométricas en una ecuación química balanceada.
 *Evidencia:* Identifica correctamente el reactivo límite dividiendo los moles disponibles entre los coeficientes estequiométricos.
 *Respuesta correcta:* B
-*Explicacion:* El cociente para $N_2$ es $\frac{2}{1} = 2$, y para $H_2$ es $\frac{4}{3} \approx 1.33$. Como $1.33 < 2$, el $H_2$ es el reactivo límite.
+*Explicación:* El cociente para $N_2$ es $\frac{2}{1} = 2$, y para $H_2$ es $\frac{4}{3} \approx 1.33$. Como $1.33 < 2$, el $H_2$ es el reactivo límite.
 
 **Pregunta 2** — Nivel Bajo
 *Competencia:* Argumentación
-*Afirmacion:* Justifica la identificación del reactivo límite basándose en cálculos estequiométricos.
+*Afirmación:* Justifica la identificación del reactivo límite basándose en cálculos estequiométricos.
 *Evidencia:* Reconoce que cuando los cocientes $\frac{\text{moles}}{\text{coeficiente}}$ son iguales, los reactivos están en proporción estequiométrica exacta y no hay reactivo límite.
 *Respuesta correcta:* D
-*Explicacion:* $H_2: \frac{2 \text{ mol}}{2} = 1$; $O_2: \frac{1 \text{ mol}}{1} = 1$. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.
+*Explicación:* $H_2: \frac{2 \text{ mol}}{2} = 1$; $O_2: \frac{1 \text{ mol}}{1} = 1$. Al ser iguales, ambos reactivos se consumen completamente y no hay reactivo límite.
 
 **Pregunta 3** — Nivel Medio
 *Competencia:* Interpretación
-*Afirmacion:* Determina la cantidad de producto a partir del reactivo límite.
+*Afirmación:* Determina la cantidad de producto a partir del reactivo límite.
 *Evidencia:* Calcula los moles de cada reactivo y del producto usando relaciones estequiométricas.
 *Respuesta correcta:* B
-*Explicacion:* $Ca: \frac{10.0}{40.08} = 0.249\,\text{mol}$, cociente $= \frac{0.249}{2} = 0.1245$. $O_2: \frac{10.0}{32.00} = 0.3125\,\text{mol}$, cociente $= \frac{0.3125}{1} = 0.3125$. El Ca es el reactivo límite. Masa de $CaO = 0.249 \text{ mol} \times (\frac{2}{2}) \times 56.08 \text{ g/mol} = 14.0\,\text{g}$.
+*Explicación:* $Ca: \frac{10.0}{40.08} = 0.249\,\text{mol}$, cociente $= \frac{0.249}{2} = 0.1245$. $O_2: \frac{10.0}{32.00} = 0.3125\,\text{mol}$, cociente $= \frac{0.3125}{1} = 0.3125$. El Ca es el reactivo límite. Masa de $CaO = 0.249 \text{ mol} \times (\frac{2}{2}) \times 56.08 \text{ g/mol} = 14.0\,\text{g}$.
 
 **Pregunta 4** — Nivel Medio
 *Competencia:* Argumentación
-*Afirmacion:* Calcula el rendimiento porcentual de una reacción.
+*Afirmación:* Calcula el rendimiento porcentual de una reacción.
 *Evidencia:* Relaciona el rendimiento real con el rendimiento teórico usando la fórmula del porcentaje de rendimiento.
 *Respuesta correcta:* C
-*Explicacion:* Moles de glucosa $= \frac{500}{180.16} = 2.775\,\text{mol}$. Rendimiento teórico de etanol $= 2.775 \times 2 \times 46.07 = 255.6\,\text{g}$. $\%$ rendimiento $= (\frac{200}{255.6}) \times 100 = 78.3\%$.
+*Explicación:* Moles de glucosa $= \frac{500}{180.16} = 2.775\,\text{mol}$. Rendimiento teórico de etanol $= 2.775 \times 2 \times 46.07 = 255.6\,\text{g}$. $\%$ rendimiento $= (\frac{200}{255.6}) \times 100 = 78.3\%$.
 
 **Pregunta 5** — Nivel Alto
 *Competencia:* Proposición
-*Afirmacion:* Propone estrategias para determinar la pureza de un mineral a partir de datos experimentales.
+*Afirmación:* Propone estrategias para determinar la pureza de un mineral a partir de datos experimentales.
 *Evidencia:* Relaciona la masa de producto obtenida con la masa del reactivo puro necesaria, usando la estequiometría de la reacción.
 *Respuesta correcta:* C
-*Explicacion:* Moles de $SO_2$ $= \frac{192}{64.06} = 3.0\,\text{mol}$. Moles de $FeS_2$ puro $= 3.0 \times (\frac{4}{8}) = 1.5\,\text{mol}$. Masa de $FeS_2$ puro $= 1.5 \times 119.98 = 180\,\text{g}$. Pureza $= (\frac{180}{240}) \times 100 = 75\%$.
+*Explicación:* Moles de $SO_2$ $= \frac{192}{64.06} = 3.0\,\text{mol}$. Moles de $FeS_2$ puro $= 3.0 \times (\frac{4}{8}) = 1.5\,\text{mol}$. Masa de $FeS_2$ puro $= 1.5 \times 119.98 = 180\,\text{g}$. Pureza $= (\frac{180}{240}) \times 100 = 75\%$.
 
 :::
 
 ::: {.socioemocional-box title="Socioemocional"}
 
-Al aprender sobre el reactivo límite, es normal sentir que hay muchos pasos y cálculos que recordar. La clave está en la **regulación emocional**: reconocer que la frustración inicial es parte del proceso de aprendizaje y que cada paso resuelto es un logro. Identificar el reactivo límite en química es como identificar aquello que nos limita en la vida: cuando sabemos qué nos está frenando, podemos concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado conceptos difíciles antes; este es solo un escalón más. Respira, organiza tus pasos como organizas los cálculos, y verás que el resultado llega.
+Al aprender sobre el reactivo límite, es normal sentir que hay muchos pasos y cálculos que recordar. La clave está en la **Regulación Emocional** (Ley 2503 de 2025): reconocer que la frustración inicial es parte del proceso de aprendizaje y que cada paso resuelto es un logro. Identificar el reactivo límite en química es como identificar aquello que nos limita en la vida: cuando sabemos qué nos está frenando, podemos concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado conceptos difíciles antes; este es solo un escalón más. Respira, organiza tus pasos como organizas los cálculos, y verás que el resultado llega.
 
 :::
