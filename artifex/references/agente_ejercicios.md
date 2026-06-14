@@ -75,9 +75,9 @@ Incluir una mezcla de:
 ## Salida
 
 - Tres bloques `::: {.ejercicios-box title="..."}`:
-  1. `"Nivel Bajo"`
-  2. `"Nivel Medio"`
-  3. `"Nivel Alto"`
+  1. `"Preguntas: Nivel Bajo"`
+  2. `"Preguntas: Nivel Medio"`
+  3. `"Preguntas: Nivel Alto"`
 
 ---
 
@@ -135,7 +135,7 @@ Crea 1-2 ejercicios que:
 ## Plantilla de Salida
 
 ```markdown
-::: {.ejercicios-box title="Nivel Bajo"}
+::: {.ejercicios-box title="Preguntas: Nivel Bajo"}
 
 - {Tipo 1}: {Enunciado directo, una idea}.
 - {Tipo 2}: {Enunciado directo, una idea}.
@@ -143,7 +143,7 @@ Crea 1-2 ejercicios que:
 
 :::
 
-::: {.ejercicios-box title="Nivel Medio"}
+::: {.ejercicios-box title="Preguntas: Nivel Medio"}
 
 - {Tipo 1}: {Enunciado con contexto, combina 2 conceptos}.
 - {Tipo 2}: {Enunciado con contexto, combina 2 conceptos}.
@@ -151,7 +151,7 @@ Crea 1-2 ejercicios que:
 
 :::
 
-::: {.ejercicios-box title="Nivel Alto"}
+::: {.ejercicios-box title="Preguntas: Nivel Alto"}
 
 - {Tipo 1}: {Enunciado que requiere analisis o decision}.
 - {Tipo 2}: {Enunciado con error a detectar o justificacion}.
@@ -162,9 +162,9 @@ Crea 1-2 ejercicios que:
 ## Restricciones de Formato
 
 - Exactamente tres bloques `::: {.ejercicios-box ...}` en el orden:
-  1. `"Nivel Bajo"`
-  2. `"Nivel Medio"`
-  3. `"Nivel Alto"`
+  1. `"Preguntas: Nivel Bajo"`
+  2. `"Preguntas: Nivel Medio"`
+  3. `"Preguntas: Nivel Alto"`
 - Cada ejercicio en una linea que comienza con `- `.
 - Usar `(\ \)` para espacios de respuesta en V/F.
 - Usar `\underline{}` para espacios en blanco en completar.

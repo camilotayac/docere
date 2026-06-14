@@ -720,7 +720,12 @@ def check_evaluacion_distribucion(text: str, path: str) -> dict:
     eval_text = evaluacion_match.group()
     # Buscar patrones de nivel en los titulos de preguntas
     niveles = []
-    for pattern in [r"\*\*Nivel\s+(Bajo|Medio|Alto)\*\*", r"\*\*Pregunta\s+\d+\*\*\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)"]:
+    patterns = [
+        r"\*\*Nivel\s+(Bajo|Medio|Alto)\*\*",
+        r"\*\*Pregunta\s+\d+\*\*\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)",
+        r"\*\*Pregunta\s+\d+\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)\*\*"
+    ]
+    for pattern in patterns:
         for m in re.finditer(pattern, eval_text, re.IGNORECASE):
             niveles.append(m.group(1))
 

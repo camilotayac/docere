@@ -40,9 +40,9 @@ titles exactos:
 - [ ] Ejemplo Guiado - Nivel Bajo — `{.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}`
 - [ ] Ejemplo Guiado - Nivel Medio — `{.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}`
 - [ ] Ejemplo Guiado - Nivel Alto — `{.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}`
-- [ ] Ejercicios - Nivel Bajo — `{.ejercicios-box title="Nivel Bajo"}`
-- [ ] Ejercicios - Nivel Medio — `{.ejercicios-box title="Nivel Medio"}`
-- [ ] Ejercicios - Nivel Alto — `{.ejercicios-box title="Nivel Alto"}`
+- [ ] Ejercicios - Nivel Bajo — `{.ejercicios-box title="Preguntas: Nivel Bajo"}`
+- [ ] Ejercicios - Nivel Medio — `{.ejercicios-box title="Preguntas: Nivel Medio"}`
+- [ ] Ejercicios - Nivel Alto — `{.ejercicios-box title="Preguntas: Nivel Alto"}`
 - [ ] Retos — `{.retos-box title="Retos"}`
 - [ ] Aplicacion - Vida real — `{.aplicacion-box title="Aplicacion - Vida real"}`
 - [ ] Aplicacion - Laboratorio — `{.aplicacion-box title="Aplicacion - Laboratorio"}`
