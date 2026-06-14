@@ -154,7 +154,8 @@ def check_evaluacion_reactivos(text: str, path: str) -> dict:
         }
     eval_text = evaluacion_match.group()
 
-    reactivos = re.findall(r"\*\*Pregunta\s+\d+|Reactivo\s+\d+|(?<=\*\*)\d+(?=\.\s)", eval_text)
+    # Cuenta líneas en negrita que digan Nivel Bajo/Medio/Alto o Pregunta X
+    reactivos = re.findall(r"\*\*Nivel\s+(?:Bajo|Medio|Alto)\*\*|\*\*Pregunta\s+\d+|Reactivo\s+\d+|(?<=\*\*)\d+(?=\.\s)", eval_text, re.IGNORECASE)
     count = len(reactivos)
     if count == 5:
         return {
@@ -168,6 +169,7 @@ def check_evaluacion_reactivos(text: str, path: str) -> dict:
         "detail": f"Se esperaban 5 reactivos, se encontraron {count}",
         "failures_by_agent": {"agente_evaluacion": ["reactivos_count"]},
     }
+
 
 
 def check_evaluacion_opciones(text: str, path: str) -> dict:
@@ -717,11 +719,11 @@ def check_evaluacion_distribucion(text: str, path: str) -> dict:
         }
     eval_text = evaluacion_match.group()
     # Buscar patrones de nivel en los titulos de preguntas
-    niveles = re.findall(
-        r"\*\*Pregunta\s+\d+\*\*\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)",
-        eval_text,
-        re.IGNORECASE,
-    )
+    niveles = []
+    for pattern in [r"\*\*Nivel\s+(Bajo|Medio|Alto)\*\*", r"\*\*Pregunta\s+\d+\*\*\s*[—–-]?\s*Nivel\s+(Bajo|Medio|Alto)"]:
+        for m in re.finditer(pattern, eval_text, re.IGNORECASE):
+            niveles.append(m.group(1))
+
     if len(niveles) >= 5:
         bajos = sum(1 for n in niveles if n.lower() == "bajo")
         medios = sum(1 for n in niveles if n.lower() == "medio")
@@ -760,6 +762,7 @@ def check_evaluacion_distribucion(text: str, path: str) -> dict:
         ),
         "failures_by_agent": {"agente_evaluacion": ["distribucion_niveles"]},
     }
+
 
 
 def check_socioemocional_competencia(text: str, path: str) -> dict:
