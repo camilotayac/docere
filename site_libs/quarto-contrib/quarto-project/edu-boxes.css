@@ -186,3 +186,24 @@ body.quarto-dark h6 span.header-section-number,
   color: #ffffff !important;
   opacity: 0.8 !important;
 }
+
+/* ---- Espaciado de párrafos y fórmulas para HTML ---- */
+[class*="-box"] p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+[class*="-box"] p:last-child {
+  margin-bottom: 0;
+}
+
+/* Fórmulas matemáticas en bloque (LaTeX/Quarto) */
+.math.display, 
+.katex-display, 
+.MathJax_Display,
+div.math {
+  margin-top: 1.2em !important;
+  margin-bottom: 1.2em !important;
+  display: block;
+}
+
