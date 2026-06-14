@@ -244,7 +244,7 @@ Para cada pregunta:
 ```markdown
 ::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
 
-**Nivel Bajo**
+**Pregunta 1 — Nivel Bajo**
 
 {Contexto con situación real o de laboratorio, datos organizados, 3-5 líneas o tabla. Masas molares explícitas si se requieren.}
 
@@ -257,7 +257,7 @@ D. {Opción 4 — distractor}
 
 
 
-**Nivel Bajo**
+**Pregunta 2 — Nivel Bajo**
 
 {Párrafo del contexto...}
 
@@ -270,7 +270,7 @@ D. {...}
 
 
 
-**Nivel Medio**
+**Pregunta 3 — Nivel Medio**
 
 {Contexto con 2+ variables, tabla y/o gráfica...}
 
@@ -283,7 +283,7 @@ D. {...}
 
 
 
-**Nivel Medio**
+**Pregunta 4 — Nivel Medio**
 
 {Contexto experimental o analítico con datos organizados...}
 
@@ -296,7 +296,7 @@ D. {...}
 
 
 
-**Nivel Alto**
+**Pregunta 5 — Nivel Alto**
 
 {Situación problema abierta, no rutinaria, multipaso...}
 
@@ -313,8 +313,8 @@ D. {...}
 ## Restricciones de Formato
 
 - Un bloque: `::: {.evaluacion-box title="Evaluacion - tipo ICFES"}`
-- Cada pregunta inicia con `**Nivel {Bajo|Medio|Alto}**` en su propia línea, luego el párrafo de contexto, después el párrafo del enunciado/pregunta, y finalmente las opciones `A.`, `B.`, `C.`, `D.`.
-- **Prohibido** usar las etiquetas literales `*Contexto:*` o `*Enunciado:*` ni números o prefijos de pregunta en los encabezados.
+- Cada pregunta inicia con `**Pregunta N — Nivel {Bajo|Medio|Alto}**` en su propia línea (con números correlativos del 1 al 5), luego el párrafo de contexto, después el párrafo del enunciado/pregunta, y finalmente las opciones `A.`, `B.`, `C.`, `D.`.
+- **Prohibido** usar las etiquetas literales `*Contexto:*` o `*Enunciado:*` en el contenido de las preguntas.
 - **Salto de línea obligatorio** antes de la primera opción `A.` (sin esto Quarto pega las opciones al texto).
 - **Dos saltos de línea** entre preguntas.
 - Distribución exacta: 5 reactivos (2 de Nivel Bajo, 2 de Nivel Medio, 1 de Nivel Alto).
@@ -323,6 +323,7 @@ D. {...}
 - No incluir respuestas correctas ni claves (va en Socialización, Paso 8.6).
 - No incluir "Todas las anteriores" ni "Ninguna de las anteriores".
 - Lenguaje claro y directo, adecuado al grado.
+
 
 
 ## Casos Borde

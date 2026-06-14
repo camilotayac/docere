@@ -98,15 +98,20 @@ h3[class*="-box-heading"] {
 /* Trigger elements (headings) are clickable, have user-select and padding for icon */
 h2[class*="-box-heading"],
 h3[class*="-box-heading"] {
-  cursor: pointer;
   position: relative;
+}
+
+/* Make box headings interactive only when they have collapse triggers (HTML only, hides arrows/cursors in EPUB) */
+h2[class*="-box-heading"][data-bs-toggle="collapse"],
+h3[class*="-box-heading"][data-bs-toggle="collapse"] {
+  cursor: pointer;
   user-select: none;
   padding-right: 2.5em !important; /* Make room for the toggle icon */
 }
 
-/* Toggle icon using a pseudo-element (arrow down) */
-h2[class*="-box-heading"]::after,
-h3[class*="-box-heading"]::after {
+/* Toggle icon using a pseudo-element (arrow down) - only when collapsible */
+h2[class*="-box-heading"][data-bs-toggle="collapse"]::after,
+h3[class*="-box-heading"][data-bs-toggle="collapse"]::after {
   content: "▼";
   position: absolute;
   right: 1.25em;
@@ -117,9 +122,9 @@ h3[class*="-box-heading"]::after {
   font-size: 0.8em;
 }
 
-/* Rotate the icon when collapsed (arrow points right) */
-h2[class*="-box-heading"].collapsed::after,
-h3[class*="-box-heading"].collapsed::after {
+/* Rotate the icon when collapsed (arrow points right) - only when collapsible */
+h2[class*="-box-heading"][data-bs-toggle="collapse"].collapsed::after,
+h3[class*="-box-heading"][data-bs-toggle="collapse"].collapsed::after {
   transform: translateY(-50%) rotate(-90deg);
 }
 

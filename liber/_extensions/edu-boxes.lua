@@ -67,12 +67,13 @@ function Div(div)
       local title = div.attributes['title'] or box.heading or ''
 
       if FORMAT:match('latex') then
+        local env_name = box.sub and 'subeducativebox' or 'educativebox'
         local cmd = string.format(
-          '\\begin{educativebox}[title={%s}]{%s}{%s}',
-          title, box.h, box.f
+          '\\begin{%s}{%s}{%s}{%s}',
+          env_name, title, box.h, box.f
         )
         local begin_raw = pandoc.RawBlock('latex', cmd)
-        local end_raw = pandoc.RawBlock('latex', '\\end{educativebox}')
+        local end_raw = pandoc.RawBlock('latex', '\\end{' .. env_name .. '}')
         div.content:insert(1, begin_raw)
         div.content:insert(end_raw)
         return div.content

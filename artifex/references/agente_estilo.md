@@ -38,7 +38,7 @@ del libro de texto estilo LaTeX book, tanto en su version HTML como PDF.
 Cada reactivo ICFES debe tener esta estructura exacta:
 
 ```
-**Nivel X**
+**Pregunta N — Nivel X**
 
 {Texto del contexto, situación o datos de la pregunta}
 
@@ -51,12 +51,13 @@ D. {opción D}
 ```
 
 Reglas:
-- El encabezado de la pregunta debe indicar únicamente el nivel, por ejemplo: `**Nivel Bajo**`, `**Nivel Medio**` o `**Nivel Alto**`. No se debe incluir el número de pregunta ni el prefijo "Pregunta".
+- El encabezado de la pregunta debe indicar tanto la pregunta como el nivel en negrita, siguiendo el formato: `**Pregunta N — Nivel X**` (ej. `**Pregunta 1 — Nivel Bajo**`).
 - **Línea en blanco** antes de `A.` (las opciones no deben quedar pegadas al enunciado como párrafo continuo).
 - Las opciones `A. B. C. D.` deben estar en **líneas separadas**.
 - Dos líneas en blanco entre reactivos.
 - No usar "Todas las anteriores" ni "Ninguna de las anteriores".
 - **IMPORTANTE (Ortografía en Español):** En todo el contenido de los bloques se DEBE escribir con ortografía perfecta en español (incluyendo todas las tildes y la letra ñ). Los títulos de los bloques (`title="..."`) son la única excepción y nunca deben llevar acentos.
+
 
 
 

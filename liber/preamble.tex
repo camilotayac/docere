@@ -35,17 +35,35 @@
 \definecolor{box-notas-docente-h}{HTML}{b0e8ff}
 \definecolor{box-notas-docente-f}{HTML}{0088aa}
 
-\newtcolorbox{educativebox}[3][]{
+\newtcolorbox{educativebox}[4][]{
   breakable, enhanced, boxrule=0.8pt, arc=2mm,
   left=2mm, right=2mm, top=1.5mm, bottom=1.5mm,
   after skip=5mm,
-  colbacktitle=#2,
-  colframe=#3,
-  colback=#3!12,
+  colbacktitle=#3,
+  colframe=#4,
+  colback=white,
   coltitle=black,
   fonttitle=\bfseries,
   titlerule=1pt,
   titlerule style=black!20,
+  code={\stepcounter{section}},
+  title={\thesection\ #2},
+  #1
+}
+
+\newtcolorbox{subeducativebox}[4][]{
+  breakable, enhanced, boxrule=0.8pt, arc=2mm,
+  left=2mm, right=2mm, top=1.5mm, bottom=1.5mm,
+  after skip=5mm,
+  colbacktitle=#3,
+  colframe=#4,
+  colback=white,
+  coltitle=black,
+  fonttitle=\bfseries,
+  titlerule=1pt,
+  titlerule style=black!20,
+  code={\stepcounter{subsection}},
+  title={\thesubsection\ #2},
   #1
 }
 
