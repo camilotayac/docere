@@ -1,8 +1,7 @@
 /* ---- SECTION (wrapper) ---- */
-/* Dir 2 (Cinta completa): NO outer border, NO overflow, just spacing + tinted background */
+/* Dir 2 (Cinta completa): NO outer border, NO overflow, just spacing */
 [class*="-box-section"] {
   margin-top: 1.5em;
-  border-radius: 6px;
 }
 
 /* ---- HEADING: full-width colored bar, NO negative margins ---- */
@@ -71,26 +70,7 @@ h3[class*="-box-heading"].collapsed {
 /* ---- CONTENT WRAPPER (.box-content) ---- */
 .box-content {
   padding: 0.9em 1.1em;
-  border-radius: 0 0 6px 6px;
 }
-
-/* Per-box-type content background */
-.teoria-box-section             .box-content { background-color: #f0f4ff; }
-.ideas-previas-box-section      .box-content { background-color: #fffff0; }
-.sub-ideas-previas-box-section  .box-content { background-color: #fffff5; }
-.contexto-box-section           .box-content { background-color: #f0fff0; }
-.sub-contexto-box-section       .box-content { background-color: #f0fff0; }
-.caracterizados-box-section     .box-content { background-color: #f8f0ff; }
-.sub-caracterizados-box-section .box-content { background-color: #f8f0ff; }
-.retos-box-section              .box-content { background-color: #fff8f0; }
-.socioemocional-box-section     .box-content { background-color: #fff0f5; }
-.ejercicios-box-section         .box-content { background-color: #fff5f5; }
-.aplicacion-box-section         .box-content { background-color: #f8f0ff; }
-.sub-aplicacion-box-section     .box-content { background-color: #faf5ff; }
-.notas-docente-box-section      .box-content { background-color: #f0ffff; }
-.ejemplo-box-section            .box-content { background-color: #f8f8f8; }
-.evaluacion-box-section         .box-content { background-color: #f0faf5; }
-.sub-evaluacion-box-section     .box-content { background-color: #e0f5ee; }
 
 /* ---- FOCUS VISIBLE ---- */
 h2[class*="-box-heading"][data-bs-toggle="collapse"]:focus-visible,
@@ -101,16 +81,6 @@ h3[class*="-box-heading"][data-bs-toggle="collapse"]:focus-visible {
 }
 
 /* ---- DARK MODE ---- */
-body.quarto-dark [class*="-box-section"],
-[data-bs-theme="dark"] [class*="-box-section"] {
-  background-color: transparent !important;
-}
-
-body.quarto-dark .box-content,
-[data-bs-theme="dark"] .box-content {
-  background-color: transparent !important;
-}
-
 body.quarto-dark h2[class*="-box-heading"],
 body.quarto-dark h3[class*="-box-heading"],
 [data-bs-theme="dark"] h2[class*="-box-heading"],
