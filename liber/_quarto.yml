@@ -45,11 +45,13 @@ format:
     documentclass: scrbook
     classoption: [12pt, oneside, open=any]
     include-in-header: preamble.tex
+    filters:
+      - _filters/color-sections.lua
     toc: true
-    toc-depth: 3
+    toc-depth: 1
     number-depth: 3
     number-sections: true
-    secnumdepth: 3
+    secnumdepth: 1
     lang: es
     colorlinks: true
     linkcolor: docere-link

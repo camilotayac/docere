@@ -92,7 +92,7 @@ Este enfoque organiza los datos en tablas de conteo con codificación cromática
 | Reactivos (izquierda) | Flecha de cambio | Productos (derecha) | Regla del color |
 |---|---|---|---|
 | Sustancias iniciales | Indica que se **(rojo)** produce | Nuevas sustancias | Coeficientes en **(azul)** cambian moles |
-| Coeficientes en **(verde)** indican cantidad | `\rightarrow` | Subíndices en **(negro)** son fijos | No alterar subíndices |
+| Coeficientes en **(verde)** indican cantidad | $\rightarrow$ | Subíndices en **(negro)** son fijos | No alterar subíndices |
 
 **Ejemplo con tabla de conteo:**
 Balancear la combustión de metano ($CH_4$) para producir dióxido de carbono ($CO_2$) y agua ($H_2O$):
@@ -157,28 +157,37 @@ $$H_2(g) + O_2(g) \rightarrow H_2O(l)$$
 **Ejecución:**
 
 **Paso 1: Contar los átomos iniciales de cada elemento**
+
+
 Reactivos: $2$ átomos de $H$ y $2$ átomos de $O$. Productos: $2$ átomos de $H$ y $1$ átomo de $O$.
+
 
 | Elemento | Reactivos | Productos |
 |---|---|---|
 | $H$ **(azul)** | $2$ | $2$ |
 | $O$ **(rojo)** | $2$ | $1$ |
 
+
 **Paso 2: Ajustar el oxígeno colocando un coeficiente en el producto**
+
 Multiplicar el producto por $2$ colocando el coeficiente $2$ delante de $H_2O$:
 $$H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 Esto cambia el conteo de productos a $4$ átomos de $H$ y $2$ átomos de $O$.
 
 **Paso 3: Ajustar el hidrógeno en los reactivos**
+
 Multiplicar el reactivo $H_2$ por $2$ colocando el coeficiente $2$ delante de $H_2$:
 $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 Esto nos da $4$ átomos de $H$ y $2$ átomos de $O$ en reactivos.
 
 **Paso 4: Realizar la verificación final de átomos**
+
+
 | Elemento | Reactivos | Productos |
 |---|---|---|
 | $H$ **(azul)** | $2 \times 2 = 4$ | $2 \times 2 = 4$ |
 | $O$ **(rojo)** | $1 \times 2 = 2$ | $2 \times 1 = 2$ |
+
 
 **Resultado:** La ecuación balanceada es $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 
@@ -401,6 +410,8 @@ C. $2$ y $1$
 
 D. $4$ y $2$
 
+---
+
 **Pregunta 2 — Nivel Bajo**
 
 Al balancear una ecuación química, los químicos colocan números enteros delante de las fórmulas químicas (coeficientes) pero nunca modifican los números pequeños que están dentro de las fórmulas (subíndices).
@@ -414,6 +425,8 @@ B. Porque al cambiar los subíndices se destruye la masa total de los reactivos.
 C. Porque los subíndices representan el estado físico de los reactivos y productos.
 
 D. Porque los subíndices solo pueden ser números impares menores que tres.
+
+---
 
 **Pregunta 3 — Nivel Medio**
 
@@ -429,6 +442,8 @@ C. $2$, $1$ y $3$
 
 D. $3$, $3$ y $2$
 
+---
+
 **Pregunta 4 — Nivel Medio**
 
 Un estudiante quiere balancear la combustión de metano ($CH_4$) y escribe la siguiente ecuación balanceada: $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$. Las masas molares de las sustancias son: $CH_4 = 16.04\,\text{g/mol}$, $O_2 = 32.00\,\text{g/mol}$, $CO_2 = 44.01\,\text{g/mol}$ y $H_2O = 18.02\,\text{g/mol}$.
@@ -442,6 +457,8 @@ B. Porque el número de moléculas reactivas es exactamente igual al número de 
 C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma cantidad de moles totales.
 
 D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico.
+
+---
 
 **Pregunta 5 — Nivel Alto**
 

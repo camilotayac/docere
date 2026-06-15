@@ -16,6 +16,38 @@
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
 
+\usepackage[most]{tcolorbox}
+
+\definecolor{currentsectionbg}{HTML}{e0d8f0}
+\definecolor{currentsectionborder}{HTML}{c8bae0}
+
+\newcommand{\setcolorsection}[2]{%
+  \definecolor{currentsectionbg}{HTML}{#1}%
+  \definecolor{currentsectionborder}{HTML}{#2}%
+}
+
+\addtokomafont{section}{\normalfont\Large\bfseries\color{black}}
+
+\makeatletter
+\renewcommand{\sectionlinesformat}[4]{%
+  \begin{tcolorbox}[
+    colback=currentsectionbg,
+    colframe=currentsectionborder,
+    arc=3pt,
+    boxrule=0.5pt,
+    left=8pt,
+    right=8pt,
+    top=4pt,
+    bottom=4pt,
+    before skip=0pt,
+    after skip=0pt,
+    nobeforeafter,
+    ]
+    #4%
+  \end{tcolorbox}%
+}
+\makeatother
+
 \AtBeginDocument{
   \setlength{\abovedisplayskip}{1em}
   \setlength{\belowdisplayskip}{1em}
@@ -24,5 +56,5 @@
   \pagenumbering{roman}
   \includepdf[pages=-, fitpaper]{Portada.pdf}
   \pagenumbering{arabic}
-  \pagestyle{headings}
+  \pagestyle{plain}
 }
