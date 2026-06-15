@@ -46,29 +46,38 @@ format:
     classoption: [12pt, oneside, open=any]
     include-in-header: preamble.tex
     toc: true
-    toc-depth: 2
-    number-depth: 2
+    toc-depth: 3
+    number-depth: 3
     number-sections: true
-    secnumdepth: 2
+    secnumdepth: 3
     lang: es
     colorlinks: true
+    linkcolor: docere-link
+    citecolor: docere-cite
+    urlcolor: docere-url
+    highlight-style: pygments
+    mermaid-format: svg
 
   html:
-    theme:
-      light: flatly
-      dark: darkly
-    css: _extensions/edu-boxes.css
+    theme: flatly
+    css: _styles/headings.css
     toc: true
     toc-depth: 3
     toc-location: right
-    include-after-body: _extensions/edu-boxes-after.html
+    lang: es
+    include-after-body: _scripts/collapse.html
+
 
   epub:
     cover-image: Portada.png
-    css: _extensions/edu-boxes.css
+    css: _styles/headings.css
     toc: true
     toc-depth: 3
     number-sections: true
+    math-method: webtex
+    meta:
+      dc:creator: "Camilo Tayac"
+      dc:publisher: "Docere"
+      dc:language: es
+      dc:description: "Natura Docens - Ciencias Naturales. Libro interactivo de química para educación media."
 
-filters:
-  - _extensions/edu-boxes.lua

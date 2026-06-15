@@ -3,7 +3,7 @@ title: "Reactivo límite"
 bibliography: ../references.bib
 ---
 
-::: {.teoria-box title="Teoria"}
+## Teoría {.teoria}
 
 La **estequiometría** es la rama de la química que estudia las relaciones cuantitativas entre reactivos y productos en una reacción química balanceada. Cuando se lleva a cabo una reacción, los reactivos no siempre están presentes en las proporciones exactas que indica la ecuación balanceada. En tales casos, uno de los reactivos se consume completamente antes que los demás, limitando la cantidad de producto que se puede formar. A este reactivo se le denomina **reactivo límite** (o reactivo limitante), mientras que los reactivos que no se consumen totalmente reciben el nombre de **reactivos en exceso** [@chang2017quimica].
 
@@ -25,9 +25,7 @@ Donde rendimiento real = masa de producto obtenida experimentalmente (g), rendim
 
 [@brown2022chemistry]
 
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Cuento"}
+## Ideas Previas {.ideas-previas}
 
 Imagina que estás armando emparedados para una fiesta y tienes 12 rebanadas de pan y 8 tajadas de queso. Cada emparedado necesita dos rebanadas de pan y una tajada de queso. Empiezas a armar y, después del octavo emparedado, te das cuenta de que ya no queda queso, pero todavía te sobran rebanadas de pan. El queso determinó cuántos emparedados pudiste hacer.
 
@@ -52,10 +50,6 @@ Imagina que estás armando emparedados para una fiesta y tienes 12 rebanadas de 
 
   $\underline{\hspace{6cm}}$
 
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
-
 - **¿Qué crees que significa que algo sea "limitante" en un proceso cotidiano?**
 
   $\underline{\hspace{6cm}}$
@@ -77,21 +71,15 @@ Imagina que estás armando emparedados para una fiesta y tienes 12 rebanadas de 
 
   $\underline{\hspace{6cm}}$
 
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
-
 En el municipio de Nemocón (Cundinamarca), las minas de sal han operado durante siglos. Los mineros saben que, para extraer una tonelada de sal, necesitan cierta cantidad de agua y cierta cantidad de energía térmica. Si un día solo tienen suficiente carbón para calentar el agua durante la mitad del tiempo necesario, la producción de ese día estará limitada por el combustible, no por el agua disponible. De manera similar, en una reacción química uno de los reactivos se agota antes y determina cuánto producto se puede obtener.
 
-:::
-
-::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
+## Contextualización — Método Feynman {.contexto}
 
 ¿Alguna vez has armado un mueble de kit y te has dado cuenta de que te faltan tornillos? Revisas la bolsa de piezas, cuentas los tornillos que tienes, y luego miras el instructivo: cada panel frontal necesita dos tornillos. Resulta que tienes 10 paneles pero solo 12 tornillos. Aunque tengas los 10 paneles listos, solo podrás fijar 6 de ellos porque los tornillos se acaban primero. Pues bien, en química ocurre exactamente lo mismo: los tornillos son uno de los **reactivos**, los paneles son el otro, y el **reactivo límite** son esos tornillos que determinan cuántos muebles completos puedes armar. Pero cuidado: en química no siempre es tan sencillo como contar piezas, porque los reactivos se combinan en proporciones fijas según la ecuación balanceada, y hay que usar moles (no unidades individuales) para hacer los cálculos correctos.
 
-:::
+## Contextualización — Apoyo Cognitivo y TDAH {.caracterizados}
 
-::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
+Este enfoque estructura el aprendizaje en pasos secuenciales claros y explícitos. Reduce la carga cognitiva al fragmentar el proceso en instrucciones directas, con énfasis en la repetición del algoritmo. Ideal para estudiantes que necesitan rutinas predecibles y pasos bien definidos.
 
 Para identificar el reactivo límite sigue estos pasos en orden:
 
@@ -106,55 +94,9 @@ Para identificar el reactivo límite sigue estos pasos en orden:
 4. El cociente más pequeño es el **reactivo límite**.
 5. Usa sus moles para calcular el producto.
 
-**Ejemplo:** La reacción es:
+## Contextualización — Visual {.caracterizados}
 
-$$Fe + S \rightarrow FeS$$
-
-Se tienen $55.85\,\text{g}$ de Fe y $48.09\,\text{g}$ de S. Masas molares: $Fe = 55.85\,\text{g/mol}$, $S = 32.06\,\text{g/mol}$.
-
-**Paso 1:** Convertir a moles.
-
-$$Fe: \frac{55.85}{55.85} = 1.00 \text{ mol}$$
-
-$$S: \frac{48.09}{32.06} = 1.50 \text{ mol}$$
-
-**Paso 2:** Dividir entre coeficiente.
-
-$$Fe: \frac{1.00}{1} = 1.00$$
-
-$$S: \frac{1.50}{1} = 1.50$$
-
-**Paso 3:** Comparar.
-
-$$1.00 < 1.50$$
-
-El **Fe** es el reactivo límite.
-
-**Paso 4:** Calcular producto.
-
-$$1.00 \text{ mol Fe} \times \frac{1 \text{ mol FeS}}{1 \text{ mol Fe}} = 1.00 \text{ mol FeS} = 87.91 \text{ g}$$
-
-**Ejercicios:**
-
-1. En $2Al + 3S \rightarrow Al_2S_3$ se tienen $26.98\,\text{g}$ de Al y $64.12\,\text{g}$ de S (masas molares: $Al = 26.98\,\text{g/mol}$, $S = 32.06\,\text{g/mol}$). Sigue los 4 pasos para hallar el reactivo límite y los gramos de $Al_2S_3$.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. En $2Mg + O_2 \rightarrow 2MgO$ se tienen $24.30\,\text{g}$ de Mg y $32.00\,\text{g}$ de $O_2$ (masas molares: $Mg = 24.30\,\text{g/mol}$, $O_2 = 32.00\,\text{g/mol}$). ¿Cuál es el reactivo límite y qué masa de MgO se produce?
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Visual"}
+Este enfoque organiza los datos en tablas con codificación cromática (azul para un reactivo, rojo para el otro, verde para el resultado). Transforma los cálculos abstractos en diagramas de flujo visuales que permiten seguir la relación entre masas, moles y coeficientes.
 
 Reacción:
 
@@ -179,229 +121,33 @@ $$S: \frac{1.50}{1} = 1.50$$
 
 Menor cociente $\rightarrow$ Fe es RL **(verde)**
 
-**Ejemplo:** Del diagrama anterior, Fe es el reactivo límite **(verde)**. Calcular producto:
+## Contextualización — Dislexia y Dificultades Lectoras {.caracterizados}
 
-$$1.00 \text{ mol} \times \frac{1}{1} \times 87.91 \text{ g/mol} = 87.91 \text{ g FeS}$$
-
-**Ejercicios:**
-
-1. Completa la tabla para $2Al + 3S \rightarrow Al_2S_3$ con $26.98\,\text{g}$ Al y $64.12\,\text{g}$ S. ¿Qué reactivo está **(azul)** y cuál **(rojo)**? ¿Cuál es **(verde)** el RL?
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. Dibuja el diagrama de flujo para $2Mg + O_2 \rightarrow 2MgO$ con $24.30\,\text{g}$ Mg y $32.00\,\text{g}$ $O_2$. Incluye los cocientes y señala el RL. Usa **(azul)**, **(rojo)** y **(verde)**.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
+Este enfoque utiliza la analogía de una receta de cocina (reactivos = ingredientes, producto = plato final) para hacer tangible el concepto. Emplea lenguaje sencillo, oraciones cortas y vocabulario cotidiano, minimizando la carga textual.
 
 Una ecuación química es una receta. Los reactivos son los ingredientes. El producto es el resultado. La ecuación balanceada dice cuánto necesitas de cada reactivo. El reactivo límite es el ingrediente que se acaba primero.
 
-**Ejemplo:** La reacción es:
+## Autismo y Pensamiento Concreto {.caracterizados}
 
-$$Fe + S \rightarrow FeS$$
-
-Tienes $55.85\,\text{g}$ de Fe y $48.09\,\text{g}$ de S.
-
-1. **Convierte a moles.**
-
-   $$55.85 \text{ g Fe} \rightarrow 1.00 \text{ mol}$$
-
-   $$48.09 \text{ g S} \rightarrow 1.50 \text{ mol}$$
-
-2. **Divide por el coeficiente.**
-
-   $$Fe: \frac{1.00}{1} = 1.00$$
-
-   $$S: \frac{1.50}{1} = 1.50$$
-
-3. **Compara.**
-
-   $$1.00 < 1.50$$
-
-   El Fe se acaba primero.
-
-**Resultado:** El Fe es el reactivo límite. Se forman $87.91\,\text{g}$ de FeS.
-
-**Ejercicios:**
-
-1. En $2Al + 3S \rightarrow Al_2S_3$ tienes $26.98\,\text{g}$ de Al y $64.12\,\text{g}$ de S. Sigue los 3 pasos para hallar el reactivo límite.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. En $2Mg + O_2 \rightarrow 2MgO$ tienes $24.30\,\text{g}$ de Mg y $32.00\,\text{g}$ de $O_2$. ¿Cuál reactivo se acaba primero? Calcula los gramos de MgO.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
+Este enfoque presenta el reactivo límite como una regla fija e invariable. Cada paso sigue una secuencia lógica inquebrantable, sin ambigüedades ni metáforas. Proporciona un algoritmo explícito que el estudiante puede aplicar mecánicamente a cualquier ejercicio.
 
 Regla fija: los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente ($\frac{\text{moles}}{\text{coeficiente}}$) más pequeño se agota primero. Ese es el reactivo límite.
 
-**Ejemplo:** Reacción:
+## Contextualización —Accesibilidad Sensorial {.caracterizados}
 
-$$Fe + S \rightarrow FeS$$
-
-Coeficientes: ambos $1$. Datos: $55.85\,\text{g}$ Fe y $48.09\,\text{g}$ S.
-
-1. **Convertir masa a moles.**
-
-   $$Fe = \frac{55.85}{55.85} = 1.00 \text{ mol}$$
-
-   $$S = \frac{48.09}{32.06} = 1.50 \text{ mol}$$
-
-2. **Calcular el cociente.**
-
-   $$Fe: \frac{1.00}{1} = 1.00$$
-
-3. **Calcular el cociente.**
-
-   $$S: \frac{1.50}{1} = 1.50$$
-
-4. **Aplicar la regla fija.**
-
-   $$1.00 < 1.50$$
-
-   El Fe tiene el cociente más pequeño. El Fe es el reactivo límite.
-
-5. **Calcular el producto.**
-
-   $$1.00 \text{ mol Fe} \times \frac{1 \text{ mol FeS}}{1 \text{ mol Fe}} \times 87.91 \text{ g/mol} = 87.91 \text{ g FeS}$$
-
-**Ejercicios:**
-
-1. Aplica la regla fija a $2Al + 3S \rightarrow Al_2S_3$ con $26.98\,\text{g}$ Al y $64.12\,\text{g}$ S. ¿Cuál es el reactivo límite?
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. Aplica la regla fija a $2Mg + O_2 \rightarrow 2MgO$ con $24.30\,\text{g}$ Mg y $32.00\,\text{g}$ $O_2$. ¿Cuántos gramos de MgO se producen?
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
+Este enfoque acompaña cada símbolo químico con su nombre completo entre paréntesis y desglosa cada operación en pasos independientes con etiquetas claras. Reduce la abstracción al nombrar explícitamente cada sustancia y cada cálculo.
 
 Formato accesible: $Fe + S \rightarrow FeS$ (hierro más azufre produce sulfuro de hierro). Los coeficientes son ambos $1$, lo que significa que un mol de Fe reacciona con exactamente un mol de S.
 
-**Ejemplo:** Se tienen $55.85\,\text{g}$ de Fe (hierro) y $48.09\,\text{g}$ de S (azufre). La masa molar del Fe (hierro) es $55.85\,\text{g/mol}$. La masa molar del S (azufre) es $32.06\,\text{g/mol}$.
+## Contextualización —Socioemocional y Psicosocial {.caracterizados}
 
-1. **Convertir masa a moles (hierro):**
-
-   $$Fe: \frac{55.85}{55.85} = 1.00 \text{ mol}$$
-
-   **Convertir masa a moles (azufre):**
-
-   $$S: \frac{48.09}{32.06} = 1.50 \text{ moles}$$
-
-2. **Dividir moles entre coeficiente (hierro):**
-
-   $$Fe: \frac{1.00}{1} = 1.00$$
-
-   **Dividir moles entre coeficiente (azufre):**
-
-   $$S: \frac{1.50}{1} = 1.50$$
-
-**Resultado:** El cociente de Fe (hierro) es menor que el de S (azufre). Fe (hierro) es el reactivo límite. Se producen $87.91\,\text{g}$ de FeS (sulfuro de hierro).
-
-**Ejercicios:**
-
-1. Reacción: $2Al + 3S \rightarrow Al_2S_3$ (aluminio más azufre produce sulfuro de aluminio). Datos: $26.98\,\text{g}$ de Al (aluminio) y $64.12\,\text{g}$ de S (azufre). Masa molar del Al (aluminio): $26.98\,\text{g/mol}$. Masa molar del S (azufre): $32.06\,\text{g/mol}$. Convierte a moles, divide entre coeficientes e identifica el reactivo límite.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. Reacción: $2Mg + O_2 \rightarrow 2MgO$ (magnesio más oxígeno molecular produce óxido de magnesio). Datos: $24.30\,\text{g}$ de Mg (magnesio) y $32.00\,\text{g}$ de $O_2$ (oxígeno molecular). Masa molar del Mg (magnesio): $24.30\,\text{g/mol}$. Masa molar del $O_2$ (oxígeno molecular): $32.00\,\text{g/mol}$. Determina cuál es el reactivo límite y la masa de MgO (óxido de magnesio) producida.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
+Este enfoque enmarca el aprendizaje en un tono alentador y de acompañamiento. Normaliza la dificultad inicial y celebra cada paso completado como un logro. Integra principios de regulación emocional y autorregulación metacognitiva para reducir la ansiedad.
 
 Sabemos que los cálculos con muchos pasos pueden sentirse difíciles al principio, pero no te preocupes: vamos a hacerlo juntos, paso a paso. Cada paso que completes te acerca a dominar el concepto. Tú puedes hacerlo.
 
-**Ejemplo:** Observa esta reacción:
+## Ejemplo — Nivel Bajo {.ejemplo}
 
-$$Fe + S \rightarrow FeS$$
-
-Vamos a ver si el Fe o el S se acaba primero. Es más sencillo de lo que parece.
-
-1. **Convertimos las masas a moles.**
-
-   $$55.85 \text{ g de Fe} \rightarrow 1.00 \text{ mol}$$
-
-   $$48.09 \text{ g de S} \rightarrow 1.50 \text{ moles}$$
-
-   Bien, ya dimos el primer paso.
-
-2. **Dividimos cada cantidad entre su coeficiente** (los dos son $1$, así que no cambia).
-
-   $$Fe: 1.00$$
-
-   $$S: 1.50$$
-
-3. **Comparamos:**
-
-   $$1.00 < 1.50$$
-
-   El que tiene el número más pequeño es el reactivo límite. ¡El Fe se acaba primero! Es como cuando en un juego el recurso más escaso determina hasta dónde puedes llegar. Tú ya identificaste ese recurso.
-
-**Resultado:** El Fe produce $1.00\,\text{mol}$ de FeS, que son $87.91\,\text{g}$. ¡Lo lograste!
-
-**Ejercicios:**
-
-¡Inténtalo! Ya viste cómo se hace. Vas a descubrir que puedes resolverlo solo.
-
-1. En la reacción $2Al + 3S \rightarrow Al_2S_3$, tienes $26.98\,\text{g}$ de Al y $64.12\,\text{g}$ de S. Sigue los mismos pasos del ejemplo. ¿Cuál es el reactivo límite?
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-2. En $2Mg + O_2 \rightarrow 2MgO$, con $24.30\,\text{g}$ de Mg y $32.00\,\text{g}$ de $O_2$, ¿qué masa de MgO puedes obtener? Confía en tu proceso, paso a paso.
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-   $\underline{\hspace{6cm}}$
-
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
+**Regla fija:** los reactivos se combinan en una proporción fija de moles. El reactivo con el cociente ($\frac{\text{moles}}{\text{coeficiente}}$) más pequeño se agota primero. Ese es el reactivo límite.
 
 **Enunciado:** La síntesis del metanol ($CH_3OH$) a partir de monóxido de carbono e hidrógeno sigue la reacción:
 
@@ -409,9 +155,9 @@ $$CO(g) + 2H_2(g) \rightarrow CH_3OH(g)$$
 
 Si se tienen $4\,\text{mol}$ de CO y $6\,\text{mol}$ de $H_2$, ¿cuál es el reactivo límite y cuántos moles de $CH_3OH$ se pueden producir?
 
-**Justificación Teórica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
+**Justificacion Teorica:** El reactivo límite se identifica dividiendo los moles disponibles de cada reactivo entre su coeficiente estequiométrico. El reactivo con el menor cociente es el límite.
 
-**Ejecución:**
+**Ejecucion:**
 
 **Paso 1: Dividir moles de CO entre su coeficiente** (el coeficiente del CO es 1)
 
@@ -433,9 +179,9 @@ $$6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2}
 
 **Resultado:** El reactivo límite es el $H_2$ y se producen $3\,\text{mol}$ de $CH_3OH$ [@chang2017quimica].
 
-:::
+## Ejemplo — Nivel Medio {.ejemplo}
 
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
+**Analogía:** Una ecuación química es una receta. Los reactivos son los ingredientes. El producto es el resultado. La ecuación balanceada dice cuánto necesitas de cada reactivo. El reactivo límite es el ingrediente que se acaba primero.
 
 **Enunciado:** La reacción entre el óxido nítrico y el oxígeno produce dióxido de nitrógeno:
 
@@ -445,7 +191,7 @@ Si se hacen reaccionar $30.0\,\text{g}$ de $NO$ con $20.0\,\text{g}$ de $O_2$, d
 
 **Justificacion Teorica:** Primero se convierten las masas a moles, luego se dividen entre los coeficientes para identificar el reactivo límite. Finalmente se usa la relación molar para calcular la masa de producto.
 
-**Ejecución:**
+**Ejecucion:**
 
 **Paso 1: Convertir masa de NO a moles**
 
@@ -477,9 +223,9 @@ $$1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times 
 
 **Resultado:** El reactivo límite es el $NO$ y se producen $46.01\,\text{g}$ de $NO_2$ [@brown2022chemistry].
 
-:::
+## Ejemplo — Nivel Alto {.ejemplo}
 
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
+**Formato accesible:** $CO(g) + 2H_2(g) \rightarrow CH_3OH(g)$ (monóxido de carbono gaseoso más hidrógeno gaseoso produce metanol gaseoso). Los coeficientes indican que $1$ mol de CO reacciona con $2$ moles de $H_2$.
 
 **Enunciado:** La urea $[(NH_2)_2CO]$ se prepara a partir de amoníaco y dióxido de carbono:
 
@@ -525,11 +271,17 @@ $$7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$$
 
 **Resultado:** (a) El reactivo límite es el $NH_3$. (b) Se producen $1124\,\text{g}$ de urea. (c) Quedan $319\,\text{g}$ de $CO_2$ sin reaccionar. [@chang2017quimica]
 
-:::
+## Ejercicios — Nivel Bajo {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Bajo"}
+Aplica la **regla fija**: el reactivo con el cociente ($\frac{\text{moles}}{\text{coeficiente}}$) más pequeño se agota primero.
 
 - Completar: En la reacción $2H_2 + O_2 \rightarrow 2H_2O$, si se tienen $3\,\text{mol}$ de $H_2$ y $2\,\text{mol}$ de $O_2$, el reactivo límite es el $\underline{\hspace{3cm}}$ porque su cociente de moles dividido entre coeficiente es $\underline{\hspace{2cm}}$, mientras que el del otro reactivo es $\underline{\hspace{2cm}}$.
+
+  | Reactivo | Moles | Coeficiente | Cociente |
+  |---|---|---|---|
+  | $H_2$ | $3$ | $2$ | $\underline{\hspace{1cm}}$ |
+  | $O_2$ | $2$ | $1$ | $\underline{\hspace{1cm}}$ |
+
 - V/F: El reactivo en exceso es aquel que se consume completamente durante la reacción. ($\hspace{0.5cm}$)
 - Identificación: En la ecuación $N_2 + 3H_2 \rightarrow 2NH_3$, indica cuál es el reactivo límite si se tienen $2\,\text{mol}$ de $N_2$ y $5\,\text{mol}$ de $H_2$.
 
@@ -537,9 +289,14 @@ $$7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$$
 
   $\underline{\hspace{6cm}}$
 
-:::
+## Ejercicios — Nivel Medio {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Medio"}
+**Analogía:** Recuerda que una ecuación química es como una receta: los reactivos son los ingredientes y el producto es el plato final. El reactivo límite es el ingrediente que se acaba primero.
+
+| Reactivo | Masa (g) | M (g/mol) | Moles | Coeficiente | Cociente |
+|---|---|---|---|---|---|
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
 
 - Respuesta corta: Se hacen reaccionar $10.0\,\text{g}$ de $Zn$ (masa molar $65.38\,\text{g/mol}$) con $5.0\,\text{g}$ de $HCl$ (masa molar $36.46\,\text{g/mol}$) según $Zn + 2HCl \rightarrow ZnCl_2 + H_2$. ¿Cuál es el reactivo límite y cuántos gramos de $ZnCl_2$ se producen?
 
@@ -561,9 +318,14 @@ $$7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$$
 
   $\underline{\hspace{6cm}}$
 
-:::
+## Ejercicios — Nivel Alto {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Alto"}
+**Formato accesible:** Cada símbolo químico se acompaña de su nombre para facilitar la identificación. Completa cada tabla de datos antes de resolver.
+
+| Sustancia | Fórmula | Masa (g) | M (g/mol) | Moles | Coeficiente | Cociente |
+|---|---|---|---|---|---|---|
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
 
 - Problema abierto: El etileno ($C_2H_4$) se puede preparar calentando hexano ($C_6H_{14}$): $C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4$ (sin balancear). Si se calientan $86.0\,\text{g}$ de hexano y se obtienen $28.0\,\text{g}$ de etileno, calcula el rendimiento porcentual de la reacción. Sugerencia: primero balancea la ecuación.
 
@@ -580,26 +342,11 @@ $$7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2$$
 
   $\underline{\hspace{6cm}}$
 
-:::
-
-
-::: {.retos-box title="Retos"}
-
-El concepto de reactivo límite se aplica en la industria farmacéutica para maximizar la producción de medicamentos usando el principio del reactivo más costoso como límite. Para este reto:
-
-- Diseña un cartel informativo que explique los cuatro pasos para determinar el reactivo límite usando como ejemplo una reacción de tu elección. Incluye los cálculos paso a paso.
-- Construye un modelo físico con materiales reciclables (tapas, fichas, cuentas) que represente los moles de cada reactivo antes y después de la reacción, mostrando claramente cuál es el reactivo límite y cuál está en exceso.
-- Prepara una breve exposición (máximo 3 minutos) explicando por qué es importante identificar el reactivo límite en procesos industriales como la producción de fertilizantes o medicamentos.
-
-:::
-
-::: {.aplicacion-box title="Aplicacion - Vida real"}
+## Aplicación — Vida real {.aplicacion}
 
 En la producción industrial de ácido sulfúrico ($H_2SO_4$) en plantas como la de Cartagena (Colombia), el azufre se quema para formar $SO_2$, que luego se oxida a $SO_3$ y finalmente se hidrata. Los ingenieros controlan cuidadosamente las cantidades de reactivos para garantizar que el azufre (el reactivo más costoso y menos abundante) se consuma por completo, mientras que el oxígeno del aire se suministra en exceso. Así se maximiza el rendimiento económico del proceso. La próxima vez que veas una batería de carro o un producto de limpieza, recuerda que el ácido sulfúrico que contienen se fabricó aplicando el concepto de reactivo límite para optimizar su producción.
 
-:::
-
-::: {.aplicacion-box title="Aplicacion - Laboratorio"}
+## Aplicación — Laboratorio {.aplicacion}
 
 **Objetivo:** Determinar experimentalmente el reactivo límite en la reacción entre bicarbonato de sodio y vinagre.
 
@@ -643,9 +390,7 @@ $\underline{\hspace{6cm}}$
 
 $\underline{\hspace{6cm}}$
 
-:::
-
-::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
+## Evaluación — Tipo ICFES {.evaluacion}
 
 **Pregunta 1 — Nivel Bajo**
 
@@ -661,7 +406,6 @@ C. El $N_2$ y el $H_2$ están en proporción estequiométrica exacta.
 
 D. El $H_2$ es el reactivo límite porque hay menos moles de $H_2$ que de $N_2$.
 
-
 **Pregunta 2 — Nivel Bajo**
 
 La ecuación $2H_2 + O_2 \rightarrow 2H_2O$ representa la formación de agua.
@@ -675,7 +419,6 @@ B. El hidrógeno es el reactivo límite porque $\frac{2}{2} = 1$ y $\frac{1}{1} 
 C. El oxígeno es el reactivo límite porque $\frac{1}{1} = 1$ y $\frac{2}{2} = 1$, ambos están igual.
 
 D. No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
-
 
 **Pregunta 3 — Nivel Medio**
 
@@ -691,7 +434,6 @@ C. $20.0\,\text{g}$
 
 D. $28.0\,\text{g}$
 
-
 **Pregunta 4 — Nivel Medio**
 
 La fermentación de la glucosa produce etanol y dióxido de carbono: $C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2$. Un ingeniero dispone de $500\,\text{g}$ de glucosa y obtiene $200\,\text{g}$ de etanol (masas molares: glucosa $= 180.16\,\text{g/mol}$, etanol $= 46.07\,\text{g/mol}$).
@@ -705,7 +447,6 @@ B. $68.5\%$
 C. $78.3\%$
 
 D. $100\%$
-
 
 **Pregunta 5 — Nivel Alto**
 
@@ -721,9 +462,7 @@ C. $75.0\%$
 
 D. $87.5\%$
 
-:::
-
-::: {.evaluacion-box title="Socializacion"}
+## Socialización {.evaluacion}
 
 **Pregunta 1** — Nivel Bajo
 *Competencia:* Interpretación
@@ -760,10 +499,14 @@ D. $87.5\%$
 *Respuesta correcta:* C
 *Explicación:* Moles de $SO_2$ $= \frac{192}{64.06} = 3.0\,\text{mol}$. Moles de $FeS_2$ puro $= 3.0 \times (\frac{4}{8}) = 1.5\,\text{mol}$. Masa de $FeS_2$ puro $= 1.5 \times 119.98 = 180\,\text{g}$. Pureza $= (\frac{180}{240}) \times 100 = 75\%$.
 
-:::
+## Retos {.retos}
 
-::: {.socioemocional-box title="Socioemocional"}
+El concepto de reactivo límite se aplica en la industria farmacéutica para maximizar la producción de medicamentos usando el principio del reactivo más costoso como límite. Para este reto:
+
+- Diseña un cartel informativo que explique los cuatro pasos para determinar el reactivo límite usando como ejemplo una reacción de tu elección. Incluye los cálculos paso a paso.
+- Construye un modelo físico con materiales reciclables (tapas, fichas, cuentas) que represente los moles de cada reactivo antes y después de la reacción, mostrando claramente cuál es el reactivo límite y cuál está en exceso.
+- Prepara una breve exposición (máximo 3 minutos) explicando por qué es importante identificar el reactivo límite en procesos industriales como la producción de fertilizantes o medicamentos.
+
+## Socioemocional {.socioemocional}
 
 Al aprender sobre el reactivo límite, es normal sentir que hay muchos pasos y cálculos que recordar. La clave está en la **Regulación Emocional** (Ley 2503 de 2025): reconocer que la frustración inicial es parte del proceso de aprendizaje y que cada paso resuelto es un logro. Identificar el reactivo límite en química es como identificar aquello que nos limita en la vida: cuando sabemos qué nos está frenando, podemos concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado conceptos difíciles antes; este es solo un escalón más. Respira, organiza tus pasos como organizas los cálculos, y verás que el resultado llega.
-
-:::

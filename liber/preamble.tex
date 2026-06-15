@@ -1,88 +1,28 @@
 \usepackage{xcolor}
-\usepackage[many]{tcolorbox}
+\definecolor{docere-link}{HTML}{000080}
+\definecolor{docere-cite}{HTML}{000080}
+\definecolor{docere-url}{HTML}{0000cc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
-% ---- Espaciado entre párrafos y fórmulas ----
-\usepackage{parskip}          % espacio entre párrafos, elimina sangría
-\setlength{\parskip}{0.6em}   % espacio vertical entre párrafos
-\setlength{\parindent}{0pt}   % sin sangría
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{caption}
 
-% Espacio encima y debajo de fórmulas display ($$...$$) — configurado en \AtBeginDocument al final
-
-% ---- Paleta de colores para cajas educativas ----
-% Formato: box-{nombre}-{h=fondo título, f=borde, c=fondo contenido}
-\definecolor{box-teoria-h}{HTML}{d6e4ff}
-\definecolor{box-teoria-f}{HTML}{2244aa}
-\definecolor{box-ideas-previas-h}{HTML}{fff0a0}
-\definecolor{box-ideas-previas-f}{HTML}{b8a800}
-\definecolor{box-sub-ideas-previas-f}{HTML}{a09000}
-\definecolor{box-contexto-h}{HTML}{c0f0c0}
-\definecolor{box-contexto-f}{HTML}{1a7a1a}
-\definecolor{box-sub-contexto-f}{HTML}{1a6a1a}
-\definecolor{box-caracterizados-h}{HTML}{e8d0ff}
-\definecolor{box-caracterizados-f}{HTML}{6a1a9a}
-\definecolor{box-sub-caracterizados-f}{HTML}{5a158a}
-\definecolor{box-retos-h}{HTML}{ffd8a0}
-\definecolor{box-retos-f}{HTML}{cc6600}
-\definecolor{box-socioemocional-h}{HTML}{ffd0e0}
-\definecolor{box-socioemocional-f}{HTML}{cc3366}
-\definecolor{box-ejercicios-h}{HTML}{ffbbbb}
-\definecolor{box-ejercicios-f}{HTML}{aa2222}
-\definecolor{box-aplicacion-h}{HTML}{ddc8ff}
-\definecolor{box-aplicacion-f}{HTML}{6a1a8a}
-\definecolor{box-sub-aplicacion-f}{HTML}{5a157a}
-\definecolor{box-ejemplo-h}{HTML}{d8d8d8}
-\definecolor{box-ejemplo-f}{HTML}{555555}
-\definecolor{box-evaluacion-h}{HTML}{b0e0d0}
-\definecolor{box-evaluacion-f}{HTML}{1a7a7a}
-\definecolor{box-sub-evaluacion-f}{HTML}{185a5a}
-\definecolor{box-notas-docente-h}{HTML}{b0e8ff}
-\definecolor{box-notas-docente-f}{HTML}{0088aa}
-
-\newtcolorbox{educativebox}[4][]{
-  breakable, enhanced, boxrule=0.8pt, arc=2mm,
-  left=4mm, right=4mm, top=3mm, bottom=3mm,
-  grow to left by=8mm, grow to right by=8mm,
-  after skip=5mm,
-  colbacktitle=#3,
-  colframe=#4,
-  colback=white,
-  coltitle=black,
-  fonttitle=\bfseries,
-  titlerule=1pt,
-  titlerule style=black!20,
-  code={\stepcounter{section}},
-  title={\thesection\ #2},
-  before upper={\setlength{\parskip}{0.6em}\setlength{\parindent}{0pt}},
-  #1
-}
-
-\newtcolorbox{subeducativebox}[4][]{
-  breakable, enhanced, boxrule=0.8pt, arc=2mm,
-  left=4mm, right=4mm, top=3mm, bottom=3mm,
-  grow to left by=8mm, grow to right by=8mm,
-  after skip=5mm,
-  colbacktitle=#3,
-  colframe=#4,
-  colback=white,
-  coltitle=black,
-  fonttitle=\bfseries,
-  titlerule=1pt,
-  titlerule style=black!20,
-  code={\stepcounter{subsection}},
-  title={\thesubsection\ #2},
-  before upper={\setlength{\parskip}{0.6em}\setlength{\parindent}{0pt}},
-  #1
-}
+\usepackage{parskip}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
 
 \AtBeginDocument{
   \setlength{\abovedisplayskip}{1em}
   \setlength{\belowdisplayskip}{1em}
   \setlength{\abovedisplayshortskip}{0.5em}
   \setlength{\belowdisplayshortskip}{0.5em}
-  \includepdf[pages=-, fitpaper=true]{Portada.pdf}
-  \pagestyle{plain}
+  \pagenumbering{roman}
+  \includepdf[pages=-, fitpaper]{Portada.pdf}
+  \pagenumbering{arabic}
+  \pagestyle{headings}
 }

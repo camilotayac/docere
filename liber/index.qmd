@@ -8,8 +8,8 @@ para cada tema del área de Ciencias Naturales.
 
 Cada tema está organizado en las siguientes secciones:
 
-::: {.callout-note collapse="true"}
-## Detalles de la Estructura (Clic para expandir)
+
+## Detalles de la Estructura
 - **Teoría** — Contenido conceptual fundamental
 - **Ideas previas** — Cuentos y preguntas para activar conocimientos
 - **Contextualización** — Aplicación del método Richard Feynman
@@ -19,4 +19,4 @@ Cada tema está organizado en las siguientes secciones:
 - **Retos** — Problemas de profundización
 - **Aplicación** — Conexión con la vida real y laboratorio
 - **Socioemocional** — Acompañamiento emocional del aprendizaje
-:::
+

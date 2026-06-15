@@ -1,0 +1,94 @@
+h2.teoria {
+  background-color: #d5ccf5;
+  border: 1.5px solid #bfb0e8;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.ideas-previas {
+  background-color: #f9ebaf;
+  border: 1.5px solid #e8d68a;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.contexto {
+  background-color: #f2c6a0;
+  border: 1.5px solid #e0b088;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.caracterizados {
+  background-color: #d6c7e7;
+  border: 1.5px solid #c0b0d8;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.retos {
+  background-color: #f6d5a8;
+  border: 1.5px solid #e8c490;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.socioemocional {
+  background-color: #f4c8d8;
+  border: 1.5px solid #e0b0c4;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.ejercicios {
+  background-color: #b2e0d8;
+  border: 1.5px solid #98ccc4;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.aplicacion {
+  background-color: #c5e8d8;
+  border: 1.5px solid #a8d4c4;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.ejemplo {
+  background-color: #b3d9f0;
+  border: 1.5px solid #94c4e0;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+h2.evaluacion {
+  background-color: #f0c4b8;
+  border: 1.5px solid #dcb0a4;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+}
+
+.header-section-number {
+  color: #000;
+}
+
+h2.accordion-toggle {
+  position: relative;
+  padding-right: 2.5em;
+  cursor: pointer;
+}
+
+h2.accordion-toggle::after {
+  content: '▲';
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+
+h2.accordion-toggle.collapsed::after {
+  content: '▼';
+}
+

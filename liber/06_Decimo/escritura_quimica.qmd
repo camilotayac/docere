@@ -3,7 +3,7 @@ title: "Escritura de ecuaciones químicas"
 bibliography: ../references.bib
 ---
 
-::: {.teoria-box title="Teoria"}
+## Teoría {.teoria}
 
 La **ecuación química** (representación simbólica de una reacción química) utiliza símbolos químicos para mostrar qué sucede durante un cambio químico. En ella, las sustancias iniciales llamadas **reactivos** (sustancias que reaccionan) se escriben a la izquierda, y las nuevas sustancias llamadas **productos** (sustancias producidas) se escriben a la derecha, separadas por una flecha que indica la dirección de la reacción [@chang2017quimica]. Para que se cumpla la **ley de la conservación de la masa** (principio de que los átomos no se crean ni se destruyen, solo se reordenan), una ecuación debe estar balanceada. El **balanceo** (proceso de igualar el número de átomos de cada elemento en ambos lados de la ecuación) se realiza colocando **coeficientes estequiométricos** (números enteros delante de las fórmulas) sin alterar nunca los subíndices, ya que cambiarlos modificaría la identidad de las sustancias [@brown2022chemistry].
 
@@ -15,9 +15,13 @@ $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\tag{1}$$
 
 Donde los coeficientes indican que $2$ moles de $H_2$ gaseoso reaccionan con $1$ mol de $O_2$ gaseoso para producir $2$ moles de $H_2O$ líquida [@oriakhi2021chemistry].
 
-:::
+**Teoría de balanceo en pasos:**
+1. **Identificar reactivos y productos.** Escribir sus fórmulas. Colocar reactivos a la izquierda y productos a la derecha.
+2. **Contar átomos.** Contar la cantidad de átomos de cada elemento en ambos lados.
+3. **Ajustar coeficientes.** Colocar números enteros delante de las fórmulas para igualar los átomos. No cambiar los subíndices.
+4. **Verificar balanceo.** Confirmar que el número total de átomos es igual en reactivos y productos.
 
-::: {.ideas-previas-box title="Ideas Previas - Cuento"}
+## Ideas Previas {.ideas-previas}
 
 Imagina que trabajas en un taller en Bogotá armando bicicletas. Tienes en tu mesa $8$ llantas, $3$ marcos y $6$ pedales. Para armar una bicicleta completa necesitas exactamente $2$ llantas, $1$ marco y $2$ pedales. Empiezas a ensamblar las bicicletas una por una hasta que te das cuenta de que algunas piezas se agotan antes que otras y no puedes seguir armando más bicicletas completas, sobrando algunas partes sueltas.
 
@@ -42,10 +46,6 @@ Imagina que trabajas en un taller en Bogotá armando bicicletas. Tienes en tu me
   
   $$\underline{\hspace{6cm}}$$
 
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
-
 - ¿Qué sabes sobre cómo representan los científicos los cambios que ocurren en la naturaleza?
   
   $$\underline{\hspace{6cm}}$$
@@ -67,21 +67,15 @@ Imagina que trabajas en un taller en Bogotá armando bicicletas. Tienes en tu me
   
   $$\underline{\hspace{6cm}}$$
 
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
-
 En una panadería tradicional de Cali, don José prepara pan de bono. Para lograr la consistencia perfecta, él mezcla almidón de yuca, queso costeño, huevo y leche en proporciones muy precisas que ha anotado en su cuaderno. Si cambia la cantidad de un solo ingrediente, la masa no hornea correctamente y se pierde el producto. Lo que acabas de observar en la cocina es precisamente lo que estudiaremos hoy al analizar cómo las sustancias se combinan en la naturaleza respetando proporciones fijas en una reacción química.
 
-:::
-
-::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
+## Contextualización — Método Feynman {.contexto}
 
 Explicar cómo escribir y balancear una ecuación química es como organizar las fichas de un juego de construcción de figuras. Imagina que tienes fichas rojas y azules sueltas. Si unes dos fichas rojas con una azul para formar una nave de juguete, al final de la construcción debes tener exactamente el mismo número de fichas rojas y azules con las que iniciaste, solo que ahora están acopladas de una forma diferente. En este juego, las fichas sueltas representan las sustancias que reaccionan y la nave armada representa la nueva sustancia producida. El balanceo de la ecuación consiste en colocar números grandes al inicio de cada grupo de fichas para asegurarnos de que ninguna ficha aparezca de la nada ni desaparezca misteriosamente en el proceso. Cuidado: esta analogía sirve para entender la conservación de las partes, pero los átomos reales no son piezas de plástico que se unen a presión, sino partículas que comparten electrones debido a fuerzas de atracción invisibles.
 
-:::
+## Contextualización — Apoyo Cognitivo y TDAH {.caracterizados}
 
-::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
+Este enfoque estructura el balanceo en pasos secuenciales claros y explícitos. Reduce la carga cognitiva al fragmentar el proceso en instrucciones directas, con énfasis en la repetición del algoritmo. Ideal para estudiantes que necesitan rutinas predecibles y pasos bien definidos.
 
 **Teoría de balanceo en pasos:**
 1. **Identificar reactivos y productos.** Escribir sus fórmulas. Colocar reactivos a la izquierda y productos a la derecha.
@@ -89,33 +83,9 @@ Explicar cómo escribir y balancear una ecuación química es como organizar las
 3. **Ajustar coeficientes.** Colocar números enteros delante de las fórmulas para igualar los átomos. No cambiar los subíndices.
 4. **Verificar balanceo.** Confirmar que el número total de átomos es igual en reactivos y productos.
 
-**Ejemplo:**
-Balancear la reacción entre hidrógeno gaseoso ($H_2$) y cloro gaseoso ($Cl_2$) para producir cloruro de hidrógeno ($HCl$):
-$$H_2(g) + Cl_2(g) \rightarrow H{Cl}(g)$$
+## Contextualización — Visual {.caracterizados}
 
-1. **Paso 1: Contar átomos iniciales.** Reactivos: $2$ átomos de $H$ y $2$ átomos de $Cl$. Productos: $1$ átomo de $H$ y $1$ átomo de $Cl$.
-2. **Paso 2: Ajustar el producto.** Colocar el coeficiente $2$ antes de $HCl$:
-$$H_2(g) + Cl_2(g) \rightarrow 2H{Cl}(g)$$
-3. **Paso 3: Recuento final.** Reactivos: $2$ de $H$ y $2$ de $Cl$. Productos: $2 \times 1 = 2$ de $H$ y $2 \times 1 = 2$ de $Cl$. El balanceo es correcto.
-
-**Ejercicios:**
-Sigue los pasos $1$ a $4$ para balancear las siguientes ecuaciones químicas:
-- Ejercicio 1: Balancear la reacción entre sodio sólido y cloro gaseoso:
-  $$Na(s) + Cl_2(g) \rightarrow Na{Cl}(s)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Balancear la reacción entre magnesio sólido y oxígeno gaseoso:
-  $$Mg(s) + O_2(g) \rightarrow MgO(s)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Visual"}
+Este enfoque organiza los datos en tablas de conteo con codificación cromática (coeficientes en azul, subíndices en negro). Transforma el balanceo abstracto en tablas visuales que permiten seguir la relación entre reactivos y productos elemento por elemento.
 
 **Teoría visual de balanceo:**
 
@@ -124,11 +94,9 @@ Sigue los pasos $1$ a $4$ para balancear las siguientes ecuaciones químicas:
 | Sustancias iniciales | Indica que se **(rojo)** produce | Nuevas sustancias | Coeficientes en **(azul)** cambian moles |
 | Coeficientes en **(verde)** indican cantidad | `\rightarrow` | Subíndices en **(negro)** son fijos | No alterar subíndices |
 
-**Ejemplo:**
+**Ejemplo con tabla de conteo:**
 Balancear la combustión de metano ($CH_4$) para producir dióxido de carbono ($CO_2$) y agua ($H_2O$):
 $$CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
-
-1. **Tabla de conteo inicial:**
 
 | Elemento | Reactivos | Productos | Estado |
 |---|---|---|---|
@@ -136,11 +104,8 @@ $$CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
 | Hidrógeno ($H$) | $4$ | $2$ | Desbalanceado |
 | Oxígeno ($O$) | $2$ | $3$ (de $2$ en $CO_2$ + $1$ en $H_2O$) | Desbalanceado |
 
-2. **Diagrama de flujo de ajuste:**
-Ajustar $H$ colocando un coeficiente $2$ **(azul)** en $H_2O$ -> Ajustar $O$ colocando un coeficiente $2$ **(verde)** en $O_2$.
+Ajustar $H$ colocando un coeficiente $2$ **(azul)** en $H_2O$ → Ajustar $O$ colocando un coeficiente $2$ **(verde)** en $O_2$:
 $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$
-
-3. **Tabla de conteo final:**
 
 | Elemento | Reactivos | Productos | Estado |
 |---|---|---|---|
@@ -150,22 +115,9 @@ $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$
 
 El resultado final está balanceado.
 
-**Ejercicios:**
-Completa las tablas de conteo y balancea las siguientes ecuaciones químicas:
-- Ejercicio 1: Ecuación: $$C(s) + O_2(g) \rightarrow CO(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Ecuación: $$CO(g) + O_2(g) \rightarrow CO_2(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
+## Contextualización — Dislexia y Dificultades Lectoras {.caracterizados}
 
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
+Este enfoque utiliza lenguaje sencillo, oraciones cortas y vocabulario cotidiano. Prioriza la comprensión del proceso sobre la terminología técnica. Cada idea se expresa en una línea independiente para minimizar la carga textual.
 
 **Teoría de balanceo simple:**
 - El hidrógeno ($H$) y el oxígeno ($O$) reaccionan.
@@ -175,132 +127,27 @@ Completa las tablas de conteo y balancea las siguientes ecuaciones químicas:
 - Tú colocas los coeficientes grandes.
 - Los coeficientes igualan los átomos.
 
-**Ejemplo:**
-Balancear la reacción entre hierro ($Fe$) y azufre ($S$):
-$$Fe(s) + S(s) \rightarrow FeS(s)$$
+## Contextualización — Autismo y Pensamiento Concreto {.caracterizados}
 
-- Contar átomos:
-  - Reactivos: $1$ átomo de $Fe$ y $1$ átomo de $S$.
-  - Productos: $1$ átomo de $Fe$ y $1$ átomo de $S$.
-- Comparar cantidades:
-  - El número de átomos es igual en reactivos y productos.
-- Ecuación balanceada:
-  - $$Fe(s) + S(s) \rightarrow FeS(s)$$
-
-**Ejercicios:**
-Balancea las siguientes reacciones químicas cortas:
-- Ejercicio 1: Reacción entre carbón y oxígeno:
-  $$C(s) + O_2(g) \rightarrow CO_2(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Reacción entre hidrógeno y flúor:
-  $$H_2(g) + F_2(g) \rightarrow HF(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
+Este enfoque presenta el balanceo como una regla fija e invariable. Cada paso sigue una secuencia lógica inquebrantable, sin ambigüedades ni metáforas. Proporciona un algoritmo explícito que el estudiante puede aplicar mecánicamente a cualquier ecuación.
 
 **Regla fija:** El número total de átomos de cada elemento químico antes de la reacción química debe ser exactamente igual al número total de átomos después de la reacción química. No se debe modificar ningún subíndice. Solo se deben modificar los coeficientes multiplicadores colocados delante de las fórmulas químicas.
 
-**Ejemplo:**
-Balancear la ecuación de síntesis de agua:
-$$H_2(g) + O_2(g) \rightarrow H_2O(l)$$
+## Contextualización — Accesibilidad Sensorial {.caracterizados}
 
-1. **Contar reactivos.** El reactivo hidrógeno ($H_2$) contiene $2$ átomos de $H$. El reactivo oxígeno ($O_2$) contiene $2$ átomos de $O$.
-2. **Contar productos.** El producto agua ($H_2O$) contiene $2$ átomos de $H$ y $1$ átomo de $O$.
-3. **Identificar desigualdad.** El elemento $O$ no es igual ($2$ reactivos frente a $1$ producto).
-4. **Multiplicar producto.** Colocar coeficiente $2$ antes de $H_2O$:
-$$H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
-Esto da $2 \times 2 = 4$ átomos de $H$ y $2 \times 1 = 2$ átomos de $O$ en productos.
-5. **Multiplicar reactivo.** Colocar coeficiente $2$ antes de $H_2$:
-$$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
-Esto da $2 \times 2 = 4$ átomos de $H$ en reactivos.
-6. **Verificar conteo.** Reactivos: $4$ de $H$ y $2$ de $O$. Productos: $4$ de $H$ y $2$ de $O$. La ecuación está balanceada.
+Este enfoque acompaña cada símbolo químico con su nombre completo y descripción textual. Cada operación se desglosa en pasos independientes con etiquetas claras. Reduce la abstracción al nombrar explícitamente cada sustancia.
 
-**Ejercicios:**
-Aplica la regla fija para balancear las siguientes ecuaciones químicas detallando cada paso:
-- Ejercicio 1: Síntesis de amoniaco:
-  $$N_2(g) + H_2(g) \rightarrow NH_3(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Combustión de monóxido de carbono:
-  $$CO(g) + O_2(g) \rightarrow CO_2(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
+**Estructura accesible de balanceo:** Las ecuaciones químicas describen reacciones. Los reactivos están a la izquierda y los productos a la derecha. El balanceo asegura que la materia se conserve.
 
-:::
+## Contextualización — Socioemocional y Psicosocial {.caracterizados}
 
-::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
-
-[Estructura accesible de balanceo: las ecuaciones químicas describen reacciones. Los reactivos están a la izquierda y los productos a la derecha. El balanceo asegura que la materia se conserve.]
-
-**Ejemplo:**
-Balancear la ecuación de síntesis de amoniaco:
-$$N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)$$
-(una molécula de nitrógeno gaseoso con dos átomos más tres moléculas de hidrógeno gaseoso con dos átomos cada una producen dos moléculas de amoniaco gaseoso, cada una con un átomo de nitrógeno y tres de hidrógeno).
-
-1. **Paso 1: Contar reactivos.** El nitrógeno molecular ($N_2$) aporta $2$ átomos de $N$. Las tres moléculas de hidrógeno ($3H_2$) aportan $3 \times 2 = 6$ átomos de $H$.
-2. **Paso 2: Contar productos.** Las dos moléculas de amoniaco ($2NH_3$) aportan $2 \times 1 = 2$ átomos de $N$ y $2 \times 3 = 6$ átomos de $H$.
-3. **Paso 3: Validar.** Como $2$ de $N$ reactivos es igual a $2$ de $N$ productos, y $6$ de $H$ reactivos es igual a $6$ de $H$ productos, la ecuación está balanceada.
-
-**Ejercicios:**
-Balancea las siguientes reacciones y escribe la descripción textual de los reactivos y productos:
-- Ejercicio 1: Síntesis de cloruro de hidrógeno gaseoso:
-  $$H_2(g) + Cl_2(g) \rightarrow H{Cl}(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Formación de agua:
-  $$H_2(g) + O_2(g) \rightarrow H_2O(l)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
+Este enfoque enmarca el aprendizaje en un tono alentador y de acompañamiento. Normaliza la dificultad inicial y celebra cada balanceo completado como un logro. Integra principios de regulación emocional para reducir la ansiedad.
 
 Al aprender a balancear ecuaciones químicas, es muy común cometer errores en los conteos de átomos o sentirse abrumado por intentar diferentes combinaciones. Esta reflexión aporta a tu competencia de **Autonomía** al recordarte que el error es una parte valiosa del proceso científico y que tu capacidad para resolver problemas complejos se fortalece con cada intento fallido.
 
-**Ejemplo:**
-Balancear paso a paso la reacción entre zinc ($Zn$) y ácido clorhídrico ($HCl$) en medio acuoso para formar cloruro de zinc ($ZnCl_2$) e hidrógeno gaseoso ($H_2$):
-$$Zn(s) + H{Cl}(ac) \rightarrow Zn{Cl}_2(ac) + H_2(g)$$
+## Ejemplo — Nivel Bajo {.ejemplo}
 
-1. **Paso 1: Identificar datos.** Contamos reactivos: $1$ de $Zn$, $1$ de $H$ y $1$ de $Cl$. Contamos productos: $1$ de $Zn$, $2$ de $H$ y $2$ de $Cl$.
-2. **Paso 2: Ensayar coeficiente.** Vemos que necesitamos duplicar $H$ y $Cl$ en reactivos. Colocamos coeficiente $2$ antes de $HCl$:
-$$Zn(s) + 2H{Cl}(ac) \rightarrow Zn{Cl}_2(ac) + H_2(g)$$
-3. **Paso 3: Validar.** Recuento final: $1$ de $Zn$ en ambos lados, $2$ de $H$ en ambos lados y $2$ de $Cl$ en ambos lados. El sistema está balanceado y nos demuestra que la persistencia da resultados correctos.
-
-**Ejercicios:**
-Balancea con paciencia las siguientes ecuaciones químicas y describe brevemente cómo te sentiste durante el proceso:
-- Ejercicio 1: Reacción entre magnesio y ácido clorhídrico:
-  $$Mg(s) + H{Cl}(ac) \rightarrow Mg{Cl}_2(ac) + H_2(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-- Ejercicio 2: Reacción entre hierro y ácido clorhídrico:
-  $$Fe(s) + H{Cl}(ac) \rightarrow Fe{Cl}_2(ac) + H_2(g)$$
-  
-  $$\underline{\hspace{6cm}}$$
-  
-  $$\underline{\hspace{6cm}}$$
-
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
+**Regla fija:** El número total de átomos de cada elemento químico antes de la reacción química debe ser exactamente igual al número total de átomos después de la reacción química. No se modifica ningún subíndice. Solo se modifican los coeficientes.
 
 **Enunciado:** Balancear la ecuación química para la combustión de hidrógeno gaseoso ($H_2$) en presencia de oxígeno ($O_2$) para producir agua líquida ($H_2O$):
 $$H_2(g) + O_2(g) \rightarrow H_2O(l)$$
@@ -310,26 +157,34 @@ $$H_2(g) + O_2(g) \rightarrow H_2O(l)$$
 **Ejecución:**
 
 **Paso 1: Contar los átomos iniciales de cada elemento**
-Reactivos: $2$ átomos de $H$ y $2$ átomos de $O$. Productos: $2$ átomos de $H$ y $1$ átomo de $O$. <- (Muchos estudiantes cometen el error de asumir que la ecuación está balanceada porque el hidrógeno tiene el mismo número, pero debemos revisar todos los elementos, y el oxígeno está desbalanceado.)
+Reactivos: $2$ átomos de $H$ y $2$ átomos de $O$. Productos: $2$ átomos de $H$ y $1$ átomo de $O$.
+
+| Elemento | Reactivos | Productos |
+|---|---|---|
+| $H$ **(azul)** | $2$ | $2$ |
+| $O$ **(rojo)** | $2$ | $1$ |
 
 **Paso 2: Ajustar el oxígeno colocando un coeficiente en el producto**
-Multiplicar el producto por $2$ colocando el coeficiente $2$ **(rojo)** delante de $H_2O$:
+Multiplicar el producto por $2$ colocando el coeficiente $2$ delante de $H_2O$:
 $$H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
-Esto cambia el conteo de productos a $4$ átomos de $H$ y $2$ átomos de $O$. <- (Cuidado: recuerda que nunca debes cambiar los subíndices. No escribas $H_2O_2$ para igualar el oxígeno, pues estarías convirtiendo agua en peróxido de hidrógeno, alterando su identidad.)
+Esto cambia el conteo de productos a $4$ átomos de $H$ y $2$ átomos de $O$.
 
 **Paso 3: Ajustar el hidrógeno en los reactivos**
-Multiplicar el reactivo $H_2$ por $2$ colocando el coeficiente $2$ **(rojo)** delante de $H_2$:
+Multiplicar el reactivo $H_2$ por $2$ colocando el coeficiente $2$ delante de $H_2$:
 $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
-Esto nos da $4$ átomos de $H$ y $2$ átomos de $O$ en reactivos. <- (Al cambiar un coeficiente en reactivos, siempre debemos hacer un recuento final para verificar que no desbalanceamos otro elemento.)
+Esto nos da $4$ átomos de $H$ y $2$ átomos de $O$ en reactivos.
 
 **Paso 4: Realizar la verificación final de átomos**
-Reactivos: $2 \times 2 = 4$ átomos de $H$, $1 \times 2 = 2$ átomos de $O$. Productos: $2 \times 2 = 4$ átomos de $H$, $2 \times 1 = 2$ átomos de $O$. Los átomos están balanceados.
+| Elemento | Reactivos | Productos |
+|---|---|---|
+| $H$ **(azul)** | $2 \times 2 = 4$ | $2 \times 2 = 4$ |
+| $O$ **(rojo)** | $1 \times 2 = 2$ | $2 \times 1 = 2$ |
 
 **Resultado:** La ecuación balanceada es $$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 
-:::
+## Ejemplo — Nivel Medio {.ejemplo}
 
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
+**Analogía:** Una ecuación química es como una receta: los reactivos son los ingredientes. El balanceo consiste en ajustar las cantidades para que ningún átomo aparezca o desaparezca.
 
 **Enunciado:** Balancear la ecuación química de descomposición por calentamiento del clorato de potasio ($KClO_3$) en cloruro de potasio ($KCl$) y oxígeno gaseoso ($O_2$):
 $$K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)$$
@@ -339,26 +194,36 @@ $$K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)$$
 **Ejecución:**
 
 **Paso 1: Contar los átomos iniciales en reactivos y productos**
-Reactivos: $1$ de $K$, $1$ de $Cl$, $3$ de $O$. Productos: $1$ de $K$, $1$ de $Cl$, $2$ de $O$. <- (El oxígeno tiene un número impar a la izquierda y un número par a la derecha. Ojo: para balancear esto más fácil, busca el mínimo común múltiplo entre $3$ y $2$, que es $6$.)
+Reactivos: $1$ de $K$, $1$ de $Cl$, $3$ de $O$. Productos: $1$ de $K$, $1$ de $Cl$, $2$ de $O$.
+
+| Elemento | Reactivos | Productos | Estado |
+|---|---|---|---|
+| $K$ | $1$ | $1$ | Balanceado |
+| $Cl$ | $1$ | $1$ | Balanceado |
+| $O$ **(rojo)** | $3$ | $2$ | Desbalanceado |
 
 **Paso 2: Balancear el oxígeno usando coeficientes en ambos lados**
-Colocar un coeficiente $2$ **(azul)** delante de $K{Cl}O_3$ y un coeficiente $3$ **(azul)** delante de $O_2$ para obtener $6$ átomos de oxígeno en ambos lados:
+Colocar un coeficiente $2$ delante de $K{Cl}O_3$ y un coeficiente $3$ delante de $O_2$ para obtener $6$ átomos de oxígeno en ambos lados:
 $$2K{Cl}O_3(s) \rightarrow K{Cl}(s) + 3O_2(g)$$
-Ahora tenemos en reactivos $2$ de $K$, $2$ de $Cl$ y $6$ de $O$. En productos tenemos $1$ de $K$, $1$ de $Cl$ y $6$ de $O$. <- (Cuidado: al colocar el coeficiente 2 delante del $K{Cl}O_3$, también multiplicamos por 2 al potasio y al cloro, desbalanceándolos temporalmente.)
+Ahora tenemos en reactivos $2$ de $K$, $2$ de $Cl$ y $6$ de $O$. En productos tenemos $1$ de $K$, $1$ de $Cl$ y $6$ de $O$.
 
 **Paso 3: Balancear el potasio y el cloro en los productos**
-Colocar un coeficiente $2$ **(azul)** delante de $K{Cl}$ en los productos:
+Colocar un coeficiente $2$ delante de $K{Cl}$ en los productos:
 $$2K{Cl}O_3(s) \rightarrow 2K{Cl}(s) + 3O_2(g)$$
-Ahora tenemos en productos $2$ de $K$ y $2$ de $Cl$. <- (Esta es la forma de resolver el desbalance provocado en el paso anterior, reajustando los coeficientes de los elementos restantes.)
+Ahora tenemos en productos $2$ de $K$ y $2$ de $Cl$.
 
 **Paso 4: Realizar la verificación final**
-Reactivos: $2$ de $K$, $2$ de $Cl$, $6$ de $O$. Productos: $2$ de $K$, $2$ de $Cl$, $6$ de $O$. El balanceo de la ecuación es correcto.
+| Elemento | Reactivos | Productos |
+|---|---|---|
+| $K$ | $2$ | $2$ |
+| $Cl$ | $2$ | $2$ |
+| $O$ | $6$ | $6$ |
 
 **Resultado:** La ecuación balanceada es $$2K{Cl}O_3(s) \rightarrow 2K{Cl}(s) + 3O_2(g)$$
 
-:::
+## Ejemplo — Nivel Alto {.ejemplo}
 
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
+**Formato accesible:** Cada símbolo químico se acompaña de su descripción para facilitar la identificación: $C_2H_6$ (etano gaseoso), $O_2$ (oxígeno molecular gaseoso), $CO_2$ (dióxido de carbono gaseoso), $H_2O$ (vapor de agua).
 
 **Enunciado:** Balancear la ecuación de combustión completa de etano ($C_2H_6$) con oxígeno molecular ($O_2$) para producir dióxido de carbono ($CO_2$) y vapor de agua ($H_2O$):
 $$C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
@@ -368,42 +233,56 @@ $$C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
 **Ejecución:**
 
 **Paso 1: Contar los átomos iniciales de cada elemento**
-Reactivos: $2$ de $C$, $6$ de $H$ y $2$ de $O$. Productos: $1$ de $C$, $2$ de $H$ y $3$ de $O$. <- (El oxígeno aparece en dos productos distintos, por lo que es mejor dejarlo de último y enfocarse primero en el carbono y el hidrógeno.)
+Reactivos: $2$ de $C$, $6$ de $H$ y $2$ de $O$. Productos: $1$ de $C$, $2$ de $H$ y $3$ de $O$.
+
+| Elemento | Reactivos | Productos | Estado |
+|---|---|---|---|
+| Carbono ($C$) | $2$ | $1$ | Desbalanceado |
+| Hidrógeno ($H$) | $6$ | $2$ | Desbalanceado |
+| Oxígeno ($O$) | $2$ | $3$ | Desbalanceado |
 
 **Paso 2: Balancear los átomos de carbono**
-Colocar un coeficiente $2$ **(verde)** delante de $CO_2$ en los productos para igualar los $2$ carbonos de los reactivos:
+Colocar un coeficiente $2$ delante de $CO_2$ en los productos para igualar los $2$ carbonos de los reactivos:
 $$C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + H_2O(g)$$
-Ahora los productos tienen $2$ carbonos. <- (Cuidado: esto altera los átomos de oxígeno en productos, que ahora suman $2 \times 2 + 1 = 5$ átomos.)
+Ahora los productos tienen $2$ carbonos.
 
 **Paso 3: Balancear los átomos de hidrógeno**
-Colocar un coeficiente $3$ **(verde)** delante de $H_2O$ en los productos para igualar los $6$ hidrógenos de los reactivos:
+Colocar un coeficiente $3$ delante de $H_2O$ en los productos para igualar los $6$ hidrógenos de los reactivos:
 $$C_2H_6(g) + O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)$$
-Productos: $3 \times 2 = 6$ átomos de $H$. Reactivos: $6$ átomos de $H$. <- (Esto incrementa nuevamente el oxígeno en productos a $2 \times 2 + 3 = 7$ átomos.)
+Productos: $3 \times 2 = 6$ átomos de $H$.
 
 **Paso 4: Ajustar el oxígeno usando un coeficiente fraccionario**
-Como hay $7$ átomos de $O$ en productos y solo un par ($O_2$) en reactivos, colocamos el coeficiente fraccionario $\frac{7}{2}$ **(verde)** en reactivos:
+Hay $7$ átomos de $O$ en productos y solo un par ($O_2$) en reactivos. Colocamos el coeficiente fraccionario $\frac{7}{2}$ en reactivos:
 $$C_2H_6(g) + \frac{7}{2}O_2(g) \rightarrow 2CO_2(g) + 3H_2O(g)$$
-Esto nos da $7$ átomos de $O$ a cada lado. <- (Muchos estudiantes terminan aquí, pero las reglas químicas exigen que los coeficientes sean números enteros simples.)
 
 **Paso 5: Multiplicar toda la ecuación por dos para obtener números enteros**
-Multiplicamos todos los coeficientes por $2$ para eliminar el denominador de la fracción:
+Multiplicamos todos los coeficientes por $2$:
 $$2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)$$
-Esto cambia todos los coeficientes a números enteros. <- (No olvides multiplicar TODOS los coeficientes de la ecuación, no solo el de la fracción, de lo contrario desbalancearías de nuevo los carbonos e hidrógenos.)
 
 **Paso 6: Recuento final de átomos**
-Reactivos: $2 \times 2 = 4$ carbonos, $2 \times 6 = 12$ hidrógenos, $7 \times 2 = 14$ oxígenos. Productos: $4 \times 1 = 4$ carbonos, $6 \times 2 = 12$ hidrógenos, $4 \times 2 + 6 \times 1 = 14$ oxígenos. La ecuación está balanceada con los enteros más simples.
+| Elemento | Reactivos | Productos |
+|---|---|---|
+| Carbono ($C$) | $2 \times 2 = 4$ | $4 \times 1 = 4$ |
+| Hidrógeno ($H$) | $2 \times 6 = 12$ | $6 \times 2 = 12$ |
+| Oxígeno ($O$) | $7 \times 2 = 14$ | $4 \times 2 + 6 \times 1 = 14$ |
 
 **Resultado:** La ecuación balanceada es $$2C_2H_6(g) + 7O_2(g) \rightarrow 4CO_2(g) + 6H_2O(g)$$
 
-:::
+## Ejercicios — Nivel Bajo {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Bajo"}
+Aplica la **regla fija**: el número total de átomos de cada elemento debe ser igual en reactivos y productos. No modifiques los subíndices.
 
 - Complete la siguiente frase usando la palabra adecuada en el espacio en blanco:
   
   La ley de la $\underline{\hspace{3cm}}$ de la masa establece que durante un cambio químico los átomos no se crean ni se destruyen.
   
   $$\underline{\hspace{6cm}}$$
+
+| Elemento | Reactivos ($Fe + O_2$) | Productos ($Fe_2O_3$) |
+|---|---|---|
+| $Fe$ | $1$ | $\underline{\hspace{1cm}}$ |
+| $O$ | $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ |
+
 - Balancee la siguiente ecuación química de oxidación del hierro sólido:
   $$Fe(s) + O_2(g) \rightarrow Fe_2O_3(s)$$
   
@@ -411,9 +290,14 @@ Reactivos: $2 \times 2 = 4$ carbonos, $2 \times 6 = 12$ hidrógenos, $7 \times 2
   
   $$\underline{\hspace{6cm}}$$
 
-:::
+## Ejercicios — Nivel Medio {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Medio"}
+**Analogía:** Recuerda que balancear una ecuación es como ajustar las cantidades de una receta: cada ingrediente debe estar en la proporción correcta.
+
+| Ecuación | Elementos desbalanceados | Estrategia |
+|---|---|---|
+| $\underline{\hspace{4cm}}$ | $\underline{\hspace{4cm}}$ | $\underline{\hspace{4cm}}$ |
+| $\underline{\hspace{4cm}}$ | $\underline{\hspace{4cm}}$ | $\underline{\hspace{4cm}}$ |
 
 - Balancee la ecuación de combustión completa de gas propano ($C_3H_8$):
   $$C_3H_8(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
@@ -428,9 +312,15 @@ Reactivos: $2 \times 2 = 4$ carbonos, $2 \times 6 = 12$ hidrógenos, $7 \times 2
   
   $$\underline{\hspace{6cm}}$$
 
-:::
+## Ejercicios — Nivel Alto {.ejercicios}
 
-::: {.ejercicios-box title="Preguntas: Nivel Alto"}
+**Formato accesible:** Cada ecuación incluye la descripción textual de los compuestos para facilitar su identificación. Registra el conteo de cada elemento en la tabla antes de balancear.
+
+| Elemento | Reactivos | Productos |
+|---|---|---|
+| $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ |
+| $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ |
+| $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ | $\underline{\hspace{1cm}}$ |
 
 - Analice el siguiente caso de error: Un estudiante intenta balancear la ecuación de formación de agua escribiendo $$H_2(g) + O_2(g) \rightarrow H_2O_2(l)$$. Explique en detalle qué regla fundamental del balanceo de ecuaciones se ha violado y qué compuesto se formó en su lugar.
   
@@ -446,26 +336,11 @@ Reactivos: $2 \times 2 = 4$ carbonos, $2 \times 6 = 12$ hidrógenos, $7 \times 2
   
   $$\underline{\hspace{6cm}}$$
 
-:::
-
-::: {.retos-box title="Retos"}
-
-En equipos de $3$ personas, diseñarán una infografía analógica en un pliego de cartulina titulada Códigos y Símbolos del Cambio Químico que explique los siguientes requisitos:
-
-- Una representación gráfica a escala molecular (dibujos de esferas de colores) que ilustre la diferencia entre un coeficiente y un subíndice.
-- El balanceo detallado paso a paso de la combustión de un combustible de su elección.
-- Una explicación del significado físico de cada estado de agregación $(s, l, g, ac)$ con un dibujo cotidiano.
-- El tiempo sugerido para completar este reto en el aula es de $1$ sesión de clase de $60$ minutos.
-
-:::
-
-::: {.aplicacion-box title="Aplicacion - Vida real"}
+## Aplicación — Vida real {.aplicacion}
 
 La próxima vez que veas un automóvil en la calle, recuerda que su tubo de escape tiene un dispositivo llamado convertidor catalítico. Este aparato toma gases muy tóxicos como el monóxido de carbono ($CO$) y los óxidos de nitrógeno ($NO$), y los transforma en gases seguros mediante la reacción: $$2CO(g) + 2NO(g) \rightarrow 2CO_2(g) + N_2(g)$$. Esta reacción química balanceada muestra cómo el motor controla de forma estricta el número de átomos que libera a la atmósfera, protegiendo el aire de nuestras ciudades colombianas.
 
-:::
-
-::: {.aplicacion-box title="Aplicacion - Laboratorio"}
+## Aplicación — Laboratorio {.aplicacion}
 
 **Objetivo:** Demostrar la ley de la conservación de la masa mediante el balanceo y la medición de masas en la reacción entre vinagre y bicarbonato de sodio en un sistema cerrado.
 
@@ -510,9 +385,7 @@ La próxima vez que veas un automóvil en la calle, recuerda que su tubo de esca
   
   $$\underline{\hspace{6cm}}$$
 
-:::
-
-::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
+## Evaluación — Tipo ICFES {.evaluacion}
 
 **Pregunta 1 — Nivel Bajo**
 
@@ -528,7 +401,6 @@ C. $2$ y $1$
 
 D. $4$ y $2$
 
-
 **Pregunta 2 — Nivel Bajo**
 
 Al balancear una ecuación química, los químicos colocan números enteros delante de las fórmulas químicas (coeficientes) pero nunca modifican los números pequeños que están dentro de las fórmulas (subíndices).
@@ -542,7 +414,6 @@ B. Porque al cambiar los subíndices se destruye la masa total de los reactivos.
 C. Porque los subíndices representan el estado físico de los reactivos y productos.
 
 D. Porque los subíndices solo pueden ser números impares menores que tres.
-
 
 **Pregunta 3 — Nivel Medio**
 
@@ -558,7 +429,6 @@ C. $2$, $1$ y $3$
 
 D. $3$, $3$ y $2$
 
-
 **Pregunta 4 — Nivel Medio**
 
 Un estudiante quiere balancear la combustión de metano ($CH_4$) y escribe la siguiente ecuación balanceada: $$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$. Las masas molares de las sustancias son: $CH_4 = 16.04\,\text{g/mol}$, $O_2 = 32.00\,\text{g/mol}$, $CO_2 = 44.01\,\text{g/mol}$ y $H_2O = 18.02\,\text{g/mol}$.
@@ -572,7 +442,6 @@ B. Porque el número de moléculas reactivas es exactamente igual al número de 
 C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma cantidad de moles totales.
 
 D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico.
-
 
 **Pregunta 5 — Nivel Alto**
 
@@ -588,9 +457,7 @@ C. $\frac{9}{2}$
 
 D. $\frac{3}{2}$
 
-:::
-
-::: {.evaluacion-box title="Socializacion"}
+## Socialización {.evaluacion}
 
 **Pregunta 1** — Nivel Bajo
 *Competencia:* Interpretación
@@ -627,10 +494,15 @@ D. $\frac{3}{2}$
 *Respuesta correcta:* A
 *Explicación:* Al balancear carbonos ($2CO_2$) e hidrógenos ($3H_2O$), sumamos $2 \times 2 + 3 = 7$ átomos de oxígeno en productos. Para igualarlos con el reactivo $O_2$, se requiere la fracción $\frac{7}{2}$. Por lo tanto, la opción A es la correcta. Las demás opciones no igualan el oxígeno.
 
-:::
+## Retos {.retos}
 
-::: {.socioemocional-box title="Socioemocional"}
+En equipos de $3$ personas, diseñarán una infografía analógica en un pliego de cartulina titulada Códigos y Símbolos del Cambio Químico que explique los siguientes requisitos:
+
+- Una representación gráfica a escala molecular (dibujos de esferas de colores) que ilustre la diferencia entre un coeficiente y un subíndice.
+- El balanceo detallado paso a paso de la combustión de un combustible de su elección.
+- Una explicación del significado físico de cada estado de agregación $(s, l, g, ac)$ con un dibujo cotidiano.
+- El tiempo sugerido para completar este reto en el aula es de $1$ sesión de clase de $60$ minutos.
+
+## Socioemocional {.socioemocional}
 
 Al enfrentarte al balanceo de ecuaciones químicas, es normal sentir frustración si los números no coinciden en el primer intento. Esta reflexión aporta a tu competencia de **Regulación Emocional** (Ley 2503 de 2025) al invitarte a respirar profundo y ver cada desbalance como una señal de que estás aprendiendo a ser más observador, tal como los químicos ensayan y ajustan sus fórmulas con paciencia para entender el orden de la naturaleza.
-
-:::

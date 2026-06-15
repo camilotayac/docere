@@ -1,0 +1,128 @@
+<style id="accordion-fouc">
+section.level2.teoria > :not(h2),
+section.level2.ideas-previas > :not(h2),
+section.level2.contexto > :not(h2),
+section.level2.caracterizados > :not(h2),
+section.level2.retos > :not(h2),
+section.level2.socioemocional > :not(h2),
+section.level2.ejercicios > :not(h2),
+section.level2.aplicacion > :not(h2),
+section.level2.ejemplo > :not(h2),
+section.level2.evaluacion > :not(h2) {
+  display: none;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.getElementById('accordion-body')) return;
+
+  var TARGET = [
+    'teoria', 'ideas-previas', 'contexto', 'caracterizados',
+    'retos', 'socioemocional', 'ejercicios', 'aplicacion',
+    'ejemplo', 'evaluacion'
+  ];
+  var SEL = TARGET.map(function (c) { return 'section.level2.' + c; }).join(',');
+  var sections = document.querySelectorAll(SEL);
+  if (!sections.length) return;
+
+  var parent = sections[0].parentNode;
+  var accordion = document.createElement('div');
+  accordion.id = 'accordion-body';
+  parent.insertBefore(accordion, sections[0]);
+
+  for (var i = sections.length - 1; i >= 0; i--) {
+    var section = sections[i];
+    var heading = section.querySelector('h2');
+    if (!heading) continue;
+
+    var body = document.createElement('div');
+    body.className = 'collapse';
+    body.id = 'acc-section-' + i;
+
+    var children = Array.from(section.children);
+    for (var j = 0; j < children.length; j++) {
+      if (children[j] !== heading) {
+        body.appendChild(children[j]);
+      }
+    }
+
+    section.appendChild(body);
+    heading.classList.add('accordion-toggle', 'collapsed');
+    heading.setAttribute('role', 'button');
+    heading.setAttribute('tabindex', '0');
+    heading.setAttribute('aria-expanded', 'false');
+    heading.setAttribute('aria-controls', body.id);
+    body.setAttribute('role', 'region');
+    body.setAttribute('aria-labelledby', heading.id);
+
+    accordion.insertBefore(section, accordion.firstChild);
+
+    body.style.display = '';
+  }
+
+  var refs = document.getElementById('refs');
+  if (refs) {
+    var refsParent = refs.closest('.collapse');
+    if (refsParent) {
+      accordion.parentNode.insertBefore(refs, accordion.nextSibling);
+    }
+  }
+
+  var foucStyle = document.getElementById('accordion-fouc');
+  if (foucStyle) foucStyle.remove();
+
+  function toggleSection(h2) {
+    var section = h2.closest('section.level2');
+    if (!section) return;
+    var body = section.querySelector('.collapse');
+    if (!body) return;
+
+    var isOpen = body.classList.contains('show');
+
+    accordion.querySelectorAll('.collapse.show').forEach(function (c) {
+      c.classList.remove('show');
+    });
+    accordion.querySelectorAll('.accordion-toggle').forEach(function (t) {
+      t.classList.add('collapsed');
+      t.setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isOpen) {
+      body.classList.add('show');
+      h2.classList.remove('collapsed');
+      h2.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+    document.addEventListener('click', function (e) {
+    var h2 = e.target.closest('.accordion-toggle');
+    if (h2) toggleSection(h2);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var h2 = e.target.closest('.accordion-toggle');
+    if (h2) {
+      e.preventDefault();
+      toggleSection(h2);
+    }
+  });
+
+  var tooltipMap = {
+    'Source Code': 'Código fuente',
+    'Download': 'Descargar',
+    'Share': 'Compartir',
+    'Download PDF': 'Descargar PDF',
+    'Download ePub': 'Descargar ePub'
+  };
+  document.querySelectorAll('.sidebar-tools a[title]').forEach(function (a) {
+    var en = a.getAttribute('title');
+    if (tooltipMap[en]) a.setAttribute('title', tooltipMap[en]);
+    var label = a.getAttribute('aria-label');
+    if (tooltipMap[label]) a.setAttribute('aria-label', tooltipMap[label]);
+  });
+  document.querySelectorAll('.sidebar-tools .menu-text').forEach(function (span) {
+    if (tooltipMap[span.textContent]) span.textContent = tooltipMap[span.textContent];
+  });
+});
+</script>
