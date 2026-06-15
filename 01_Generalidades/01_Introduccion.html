@@ -472,34 +472,33 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function () {
   function expandBoxFromHash() {
-    const hash = window.location.hash;
-    if (hash) {
-      try {
-        const targetElement = document.querySelector(hash);
-        if (targetElement) {
-          // Find if this target has a collapsible child or is one itself
-          const collapseEl = targetElement.classList.contains('collapse') 
-            ? targetElement 
-            : targetElement.querySelector('.collapse');
-          
-          if (collapseEl) {
-            // Open it using Bootstrap's collapse instance
-            if (window.bootstrap && bootstrap.Collapse) {
-              const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
-              bsCollapse.show();
-            }
-          }
+    var hash = window.location.hash;
+    if (!hash) return;
+    try {
+      var target = document.querySelector(hash);
+      if (!target) return;
+
+      // The target is likely a heading; find its sibling .collapse
+      var collapseEl = target.classList.contains('collapse')
+        ? target
+        : target.parentElement && target.parentElement.querySelector('.collapse');
+
+      if (collapseEl && window.bootstrap && bootstrap.Collapse) {
+        var bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+        if (!collapseEl.classList.contains('show')) {
+          bsCollapse.show();
+          // After show completes, ensure heading is visible
+          setTimeout(function () {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 350);
         }
-      } catch (e) {
-        console.error("Error expanding box from hash:", e);
       }
+    } catch (e) {
+      console.error("Error expanding box from hash:", e);
     }
   }
 
-  // Check on load
   expandBoxFromHash();
-
-  // Check on hash change (when clicking links in sidebar/TOC)
   window.addEventListener("hashchange", expandBoxFromHash);
 });
 </script>
