@@ -398,7 +398,7 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td>Coeficientes en <strong>(verde)</strong> indican cantidad</td>
-<td><code>\rightarrow</code></td>
+<td><span class="math inline">\(\rightarrow\)</span></td>
 <td>Subíndices en <strong>(negro)</strong> son fijos</td>
 <td>No alterar subíndices</td>
 </tr>
@@ -500,7 +500,8 @@ window.Quarto = {
 <p><strong>Enunciado:</strong> Balancear la ecuación química para la combustión de hidrógeno gaseoso (<span class="math inline">\(H_2\)</span>) en presencia de oxígeno (<span class="math inline">\(O_2\)</span>) para producir agua líquida (<span class="math inline">\(H_2O\)</span>): <span class="math display">\[H_2(g) + O_2(g) \rightarrow H_2O(l)\]</span></p>
 <p><strong>Justificación Teórica:</strong> Se aplica la ley de la conservación de la masa, la cual exige que el número de átomos de cada elemento sea igual en ambos lados.</p>
 <p><strong>Ejecución:</strong></p>
-<p><strong>Paso 1: Contar los átomos iniciales de cada elemento</strong> Reactivos: <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> átomo de <span class="math inline">\(O\)</span>.</p>
+<p><strong>Paso 1: Contar los átomos iniciales de cada elemento</strong></p>
+<p>Reactivos: <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span>. Productos: <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(1\)</span> átomo de <span class="math inline">\(O\)</span>.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -522,9 +523,32 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p><strong>Paso 2: Ajustar el oxígeno colocando un coeficiente en el producto</strong> Multiplicar el producto por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> delante de <span class="math inline">\(H_2O\)</span>: <span class="math display">\[H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto cambia el conteo de productos a <span class="math inline">\(4\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span>.</p>
-<p><strong>Paso 3: Ajustar el hidrógeno en los reactivos</strong> Multiplicar el reactivo <span class="math inline">\(H_2\)</span> por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> delante de <span class="math inline">\(H_2\)</span>: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto nos da <span class="math inline">\(4\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span> en reactivos.</p>
-<p><strong>Paso 4: Realizar la verificación final de átomos</strong> | Elemento | Reactivos | Productos | |—|—|—| | <span class="math inline">\(H\)</span> <strong>(azul)</strong> | <span class="math inline">\(2 \times 2 = 4\)</span> | <span class="math inline">\(2 \times 2 = 4\)</span> | | <span class="math inline">\(O\)</span> <strong>(rojo)</strong> | <span class="math inline">\(1 \times 2 = 2\)</span> | <span class="math inline">\(2 \times 1 = 2\)</span> |</p>
+<p><strong>Paso 2: Ajustar el oxígeno colocando un coeficiente en el producto</strong></p>
+<p>Multiplicar el producto por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> delante de <span class="math inline">\(H_2O\)</span>: <span class="math display">\[H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto cambia el conteo de productos a <span class="math inline">\(4\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span>.</p>
+<p><strong>Paso 3: Ajustar el hidrógeno en los reactivos</strong></p>
+<p>Multiplicar el reactivo <span class="math inline">\(H_2\)</span> por <span class="math inline">\(2\)</span> colocando el coeficiente <span class="math inline">\(2\)</span> delante de <span class="math inline">\(H_2\)</span>: <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span> Esto nos da <span class="math inline">\(4\)</span> átomos de <span class="math inline">\(H\)</span> y <span class="math inline">\(2\)</span> átomos de <span class="math inline">\(O\)</span> en reactivos.</p>
+<p><strong>Paso 4: Realizar la verificación final de átomos</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Reactivos</th>
+<th>Productos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(H\)</span> <strong>(azul)</strong></td>
+<td><span class="math inline">\(2 \times 2 = 4\)</span></td>
+<td><span class="math inline">\(2 \times 2 = 4\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(O\)</span> <strong>(rojo)</strong></td>
+<td><span class="math inline">\(1 \times 2 = 2\)</span></td>
+<td><span class="math inline">\(2 \times 1 = 2\)</span></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Resultado:</strong> La ecuación balanceada es <span class="math display">\[2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\]</span></p>
 </section>
 <section id="ejemplo-nivel-medio" class="level2 ejemplo" data-number="5.11">
@@ -783,6 +807,7 @@ window.Quarto = {
 <p>B. <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span></p>
 <p>C. <span class="math inline">\(2\)</span> y <span class="math inline">\(1\)</span></p>
 <p>D. <span class="math inline">\(4\)</span> y <span class="math inline">\(2\)</span></p>
+<hr>
 <p><strong>Pregunta 2 — Nivel Bajo</strong></p>
 <p>Al balancear una ecuación química, los químicos colocan números enteros delante de las fórmulas químicas (coeficientes) pero nunca modifican los números pequeños que están dentro de las fórmulas (subíndices).</p>
 <p>¿Por qué no se deben alterar los subíndices al balancear una ecuación química?</p>
@@ -790,6 +815,7 @@ window.Quarto = {
 <p>B. Porque al cambiar los subíndices se destruye la masa total de los reactivos.</p>
 <p>C. Porque los subíndices representan el estado físico de los reactivos y productos.</p>
 <p>D. Porque los subíndices solo pueden ser números impares menores que tres.</p>
+<hr>
 <p><strong>Pregunta 3 — Nivel Medio</strong></p>
 <p>En el laboratorio se calienta clorato de potasio (<span class="math inline">\(K{Cl}O_3\)</span>) para obtener cloruro de potasio (<span class="math inline">\(K{Cl}\)</span>) y oxígeno gaseoso (<span class="math inline">\(O_2\)</span>). La reacción se representa por la siguiente ecuación desbalanceada: <span class="math display">\[K{Cl}O_3(s) \rightarrow K{Cl}(s) + O_2(g)\]</span></p>
 <p>Al realizar el balanceo de la ecuación con los coeficientes enteros más pequeños posibles, ¿cuáles son los coeficientes que deben preceder al <span class="math inline">\(K{Cl}O_3\)</span>, <span class="math inline">\(K{Cl}\)</span> y <span class="math inline">\(O_2\)</span>, respectivamente?</p>
@@ -797,6 +823,7 @@ window.Quarto = {
 <p>B. <span class="math inline">\(1\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span></p>
 <p>C. <span class="math inline">\(2\)</span>, <span class="math inline">\(1\)</span> y <span class="math inline">\(3\)</span></p>
 <p>D. <span class="math inline">\(3\)</span>, <span class="math inline">\(3\)</span> y <span class="math inline">\(2\)</span></p>
+<hr>
 <p><strong>Pregunta 4 — Nivel Medio</strong></p>
 <p>Un estudiante quiere balancear la combustión de metano (<span class="math inline">\(CH_4\)</span>) y escribe la siguiente ecuación balanceada: <span class="math display">\[CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)\]</span>. Las masas molares de las sustancias son: <span class="math inline">\(CH_4 = 16.04\,\text{g/mol}\)</span>, <span class="math inline">\(O_2 = 32.00\,\text{g/mol}\)</span>, <span class="math inline">\(CO_2 = 44.01\,\text{g/mol}\)</span> y <span class="math inline">\(H_2O = 18.02\,\text{g/mol}\)</span>.</p>
 <p>¿Cuál del siguiente argumento justifica correctamente que la ecuación cumple con la ley de la conservación de la masa?</p>
@@ -804,6 +831,7 @@ window.Quarto = {
 <p>B. Porque el número de moléculas reactivas es exactamente igual al número de moléculas de productos.</p>
 <p>C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma cantidad de moles totales.</p>
 <p>D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico.</p>
+<hr>
 <p><strong>Pregunta 5 — Nivel Alto</strong></p>
 <p>La combustión del gas etano se representa por la ecuación: <span class="math display">\[C_2H_6(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)\]</span></p>
 <p>Si se balancea primero el carbono y el hidrógeno colocando coeficientes enteros en los productos, ¿cuál es la fracción adecuada que debe colocarse delante del oxígeno (<span class="math inline">\(O_2\)</span>) en los reactivos para balancear la ecuación antes de multiplicar por dos?</p>
