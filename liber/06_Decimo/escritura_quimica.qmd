@@ -402,13 +402,9 @@ Una ecuación química balanceada muestra las relaciones cuantitativas de los á
 
 De acuerdo con la ley de la conservación de la masa, ¿cuál es el número total de átomos de oxígeno presentes en el lado de los reactivos y de los productos, respectivamente?
 
-A. $2$ y $2$
-
-B. $1$ y $2$
-
-C. $2$ y $1$
-
-D. $4$ y $2$
+| :--- | :--- |
+| A. $2$ y $2$ | B. $1$ y $2$ |
+| C. $2$ y $1$ | D. $4$ y $2$ |
 
 ---
 
@@ -418,13 +414,9 @@ Al balancear una ecuación química, los químicos colocan números enteros dela
 
 ¿Por qué no se deben alterar los subíndices al balancear una ecuación química?
 
-A. Porque al cambiar los subíndices se cambia la identidad química de las sustancias.
-
-B. Porque al cambiar los subíndices se destruye la masa total de los reactivos.
-
-C. Porque los subíndices representan el estado físico de los reactivos y productos.
-
-D. Porque los subíndices solo pueden ser números impares menores que tres.
+| :--- | :--- |
+| A. Porque al cambiar los subíndices se cambia la identidad química de las sustancias. | B. Porque al cambiar los subíndices se destruye la masa total de los reactivos. |
+| C. Porque los subíndices representan el estado físico de los reactivos y productos. | D. Porque los subíndices solo pueden ser números impares menores que tres. |
 
 ---
 
@@ -434,13 +426,9 @@ En el laboratorio se calienta clorato de potasio ($K{Cl}O_3$) para obtener cloru
 
 Al realizar el balanceo de la ecuación con los coeficientes enteros más pequeños posibles, ¿cuáles son los coeficientes que deben preceder al $K{Cl}O_3$, $K{Cl}$ y $O_2$, respectivamente?
 
-A. $2$, $2$ y $3$
-
-B. $1$, $1$ y $2$
-
-C. $2$, $1$ y $3$
-
-D. $3$, $3$ y $2$
+| :--- | :--- |
+| A. $2$, $2$ y $3$ | B. $1$, $1$ y $2$ |
+| C. $2$, $1$ y $3$ | D. $3$, $3$ y $2$ |
 
 ---
 
@@ -450,13 +438,9 @@ Un estudiante quiere balancear la combustión de metano ($CH_4$) y escribe la si
 
 ¿Cuál del siguiente argumento justifica correctamente que la ecuación cumple con la ley de la conservación de la masa?
 
-A. Porque la suma de las masas de los reactivos ($16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}$) es igual a la suma de las masas de los productos ($44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}$).
-
-B. Porque el número de moléculas reactivas es exactamente igual al número de moléculas de productos.
-
-C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma cantidad de moles totales.
-
-D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico.
+| :--- | :--- |
+| A. Porque la suma de las masas de los reactivos ($16.04\,\text{g} + 2 \times 32.00\,\text{g} = 80.04\,\text{g}$) es igual a la suma de las masas de los productos ($44.01\,\text{g} + 2 \times 18.02\,\text{g} = 80.05\,\text{g}$). | B. Porque el número de moléculas reactivas es exactamente igual al número de moléculas de productos. |
+| C. Porque el carbono se transformó en oxígeno gaseoso manteniendo la misma cantidad de moles totales. | D. Porque la masa molecular de cada sustancia individual permanece constante antes y después del cambio químico. |
 
 ---
 
@@ -466,13 +450,9 @@ La combustión del gas etano se representa por la ecuación: $$C_2H_6(g) + O_2(g
 
 Si se balancea primero el carbono y el hidrógeno colocando coeficientes enteros en los productos, ¿cuál es la fracción adecuada que debe colocarse delante del oxígeno ($O_2$) en los reactivos para balancear la ecuación antes de multiplicar por dos?
 
-A. $\frac{7}{2}$
-
-B. $\frac{5}{2}$
-
-C. $\frac{9}{2}$
-
-D. $\frac{3}{2}$
+| :--- | :--- |
+| A. $\frac{7}{2}$ | B. $\frac{5}{2}$ |
+| C. $\frac{9}{2}$ | D. $\frac{3}{2}$ |
 
 ## Socialización {.evaluacion}
 

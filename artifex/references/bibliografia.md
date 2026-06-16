@@ -1,5 +1,7 @@
 # Gestión de Bibliografía — Docere/liber/references.bib
 
+> **Formato de salida:** Leer `_estilo_salida.md` para reglas completas de formato.
+
 El archivo `liber/references.bib` contiene las referencias bibliográficas
 disponibles para todos los planes de clase. Está en formato BibTeX estándar.
 

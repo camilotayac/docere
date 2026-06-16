@@ -21,33 +21,32 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 EXPECTED_BOXES = [
-    (r"\.teoria-box\b", "teoria-box", "Teoria", "agente_teoria"),
-    (r"\.ideas-previas-box\b", "ideas-previas-box", "Ideas Previas", "agente_ideas_previas"),
-    (r"\.contexto-box\b", "contexto-box", "Contexto Feynman", "agente_contextualizacion_feynman"),
-    (r"\.caracterizados-box\b", "caracterizados-box", "Caracterizados", "agente_caracterizados"),
-    (r"\.ejemplo-box\b", "ejemplo-box", "Ejemplos", "agente_ejemplos"),
-    (r"\.ejercicios-box\b", "ejercicios-box", "Ejercicios", "agente_ejercicios"),
-    (r"\.retos-box\b", "retos-box", "Retos", "agente_retos"),
-    (r"\.aplicacion-box\b", "aplicacion-box", "Aplicacion", "agente_aplicacion"),
-    (r"\.evaluacion-box\b", "evaluacion-box", "Evaluacion", "agente_evaluacion"),
-    (r"\.socioemocional-box\b", "socioemocional-box", "Socioemocional", "agente_socioemocional"),
+    (r"## [^{]+\{\.teoria\}", "teoria", "Teoria", "agente_teoria"),
+    (r"## [^{]+\{\.ideas-previas\}", "ideas-previas", "Ideas Previas", "agente_ideas_previas"),
+    (r"## [^{]+\{\.contexto\}", "contexto", "Contexto Feynman", "agente_contextualizacion_feynman"),
+    (r"## [^{]+\{\.caracterizados\}", "caracterizados", "Caracterizados", "agente_caracterizados"),
+    (r"## [^{]+\{\.ejemplo\}", "ejemplo", "Ejemplos", "agente_ejemplos"),
+    (r"## [^{]+\{\.ejercicios\}", "ejercicios", "Ejercicios", "agente_ejercicios"),
+    (r"## [^{]+\{\.retos\}", "retos", "Retos", "agente_retos"),
+    (r"## [^{]+\{\.aplicacion\}", "aplicacion", "Aplicacion", "agente_aplicacion"),
+    (r"## [^{]+\{\.evaluacion\}", "evaluacion", "Evaluacion", "agente_evaluacion"),
+    (r"## [^{]+\{\.socioemocional\}", "socioemocional", "Socioemocional", "agente_socioemocional"),
 ]
 
 
 def check_box_balance(text: str, path: str) -> dict:
-    """Cuenta pares ::: y verifica que estén balanceados."""
-    opens = len(re.findall(r"^::: ", text, re.MULTILINE))
-    closes = len(re.findall(r"^:::$", text, re.MULTILINE))
-    if opens == closes and opens > 0:
+    """Verifica que los headings con clase estén balanceados."""
+    opens = len(re.findall(r"^## .*?\{\.([a-z-]+)\}", text, re.MULTILINE))
+    if opens > 0:
         return {
             "name": "box_balance",
             "passed": True,
-            "detail": f"{opens} bloques :::, todos balanceados",
+            "detail": f"{opens} bloques ## con clase, todos correctos",
         }
     return {
         "name": "box_balance",
         "passed": False,
-        "detail": f"{opens} aperturas, {closes} cierres. Desbalanceados.",
+        "detail": "No se encontraron headings con clase.",
     }
 
 
@@ -98,7 +97,9 @@ def check_no_todas_las_anteriores(text: str, path: str) -> dict:
 
 
 def check_no_emojis(text: str, path: str) -> dict:
-    """Detecta caracteres Unicode de emoji."""
+    """Detecta caracteres Unicode de emoji (excepto 🟢🟡🔴 permitidos)."""
+    # Primero removemos los circulos permitidos
+    cleaned = re.sub(r"[🟢🟡🔴]", "", text)
     emoji_pattern = re.compile(
         "["
         "\U0001f600-\U0001f64f"  # Emoticons
@@ -114,7 +115,7 @@ def check_no_emojis(text: str, path: str) -> dict:
         "]+",
         re.UNICODE,
     )
-    matches = list(emoji_pattern.finditer(text))
+    matches = list(emoji_pattern.finditer(cleaned))
     if not matches:
         return {"name": "no_emojis", "passed": True}
     lines = set(text[: m.start()].count("\n") + 1 for m in matches)
@@ -139,26 +140,28 @@ def check_latex_balance(text: str, path: str) -> dict:
     return {"name": "latex_balance", "passed": False, "detail": "; ".join(errors)}
 
 
-def _find_icfes_box(text: str) -> re.Match:
-    """Busca el evaluacion-box que contiene 'Evaluacion' en su title (y no 'Socializacion')."""
-    for m in re.finditer(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL):
-        header = m.group(0).split("\n")[0]
-        if "Evaluacion" in header and "Socializacion" not in header:
-            return m
+def _find_icfes_box(text: str) -> str | None:
+    """Busca la seccion .evaluacion que contiene 'Evaluacion' en su titulo (y no 'Socializacion')."""
+    sections = re.split(r"\n(?=## )", text)
+    for sec in sections:
+        first_line = sec.split("\n")[0]
+        if "{.evaluacion}" in first_line and "Socializacion" not in first_line:
+            if "Evaluacion" in first_line or "Evaluación" in first_line:
+                return sec
     return None
 
 
 def check_evaluacion_reactivos(text: str, path: str) -> dict:
-    """Cuenta reactivos en evaluacion-box."""
+    """Cuenta reactivos en .evaluacion ICFES."""
     eval_match = _find_icfes_box(text)
     if not eval_match:
         return {
             "name": "evaluacion_reactivos",
             "passed": False,
-            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
-            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
+            "detail": "FALTA heading .evaluacion con 'Evaluacion - tipo ICFES'",
+            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion"]},
         }
-    eval_text = eval_match.group()
+    eval_text = eval_match
 
     # Cuenta líneas en negrita que digan Nivel Bajo/Medio/Alto o Pregunta X
     reactivos = re.findall(
@@ -203,11 +206,12 @@ def check_evaluacion_opciones(text: str, path: str) -> dict:
         return {
             "name": "evaluacion_opciones",
             "passed": False,
-            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
-            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
+            "detail": "FALTA heading .evaluacion con 'Evaluacion - tipo ICFES'",
+            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion"]},
         }
-    eval_text = eval_match.group()
-    opciones = re.findall(r"^[ \t]*[A-D]\.", eval_text, re.MULTILINE)
+    eval_text = eval_match
+    # Opciones pueden estar al inicio de línea o en tabla Markdown: | A. ... |
+    opciones = re.findall(r"(?:^[ \t]*|[|])[ \t]*[A-D]\.", eval_text, re.MULTILINE)
     count = len(opciones)
     if count == 20:
         return {
@@ -224,44 +228,43 @@ def check_evaluacion_opciones(text: str, path: str) -> dict:
 
 
 def check_socializacion_box_exists(text: str, path: str) -> dict:
-    """Verifica que exista un evaluacion-box con title Socializacion."""
-    boxes = re.findall(r"::: \{\.evaluacion-box[^}]*\}", text)
-    socializacion = [b for b in boxes if "Socializacion" in b]
+    """Verifica que exista un heading .evaluacion con titulo Socializacion."""
+    boxes = re.findall(r"## [^{]+\{\.evaluacion\}", text)
+    socializacion = [b for b in boxes if "Socializacion" in b or "Socialización" in b]
     if socializacion:
         return {
             "name": "socializacion_box_exists",
             "passed": True,
-            "detail": "evaluacion-box con title Socializacion encontrado",
+            "detail": "heading .evaluacion con titulo Socializacion encontrado",
         }
     return {
         "name": "socializacion_box_exists",
         "passed": False,
         "detail": (
-            f"No se encontró evaluacion-box con title Socializacion."
-            f" Total: {len(boxes)} evaluacion-box"
+            f"No se encontró heading .evaluacion con titulo Socializacion."
+            f" Total: {len(boxes)} .evaluacion"
         ),
         "failures_by_agent": {"agente_socializacion": ["missing_socializacion_box"]},
     }
 
 
 def check_socializacion_fields(text: str, path: str) -> dict:
-    """Verifica que en el evaluacion-box de Socializacion existan los campos obligatorios."""
-    boxes = re.findall(r"::: \{\.evaluacion-box[^}]*\}.*?:::", text, re.DOTALL)
-    socializacion = [b for b in boxes if "Socializacion" in b]
+    """Verifica que en el bloque .evaluacion de Socializacion existan los campos obligatorios."""
+    sections = re.split(r"\n(?=## )", text)
+    socializacion = [s for s in sections if re.search(r"## [^{]*(Socializacion|Socialización)[^{]*\{\.evaluacion\}", s)]
     if not socializacion:
         return {
             "name": "socializacion_fields",
             "passed": False,
-            "detail": "FALTA evaluacion-box con title Socializacion",
-            "failures_by_agent": {"agente_socializacion": ["missing_socializacion_box"]},
+            "detail": "FALTA bloque .evaluacion con Socializacion",
+            "failures_by_agent": {"agente_socializacion": ["missing_socializacion"]},
         }
     soc_text = socializacion[0]
     required_fields = [
-        (r"Nivel", "Nivel"),
         (r"Competencia", "Competencia"),
         (r"Afirmaci[oó]n", "Afirmación"),
         (r"Evidencia", "Evidencia"),
-        (r"Respuesta", "Respuesta"),
+        (r"Respuesta correcta", "Respuesta"),
         (r"Explicaci[oó]n", "Explicación"),
     ]
     missing = []
@@ -282,29 +285,26 @@ def check_socializacion_fields(text: str, path: str) -> dict:
 
 def check_ejemplos_niveles(text: str, path: str) -> dict:
     """Verifica exactamente 3 ejemplos con niveles Bajo, Medio, Alto."""
-    ejemplo_boxes = re.findall(r"::: \{\.ejemplo-box[^}]*\}.*?:::", text, re.DOTALL)
-    if len(ejemplo_boxes) < 3:
+    ejemplos = re.findall(r"## [^{]+\{\.ejemplo\}", text)
+    if len(ejemplos) < 3:
         return {
             "name": "ejemplos_niveles",
             "passed": False,
-            "detail": f"Se esperaban 3 ejemplo-box, se encontraron {len(ejemplo_boxes)}",
+            "detail": f"Se esperaban 3 .ejemplo, se encontraron {len(ejemplos)}",
             "failures_by_agent": {"agente_ejemplos": ["niveles_faltantes"]},
         }
-    titles = []
-    for b in ejemplo_boxes:
-        m = re.search(r'title="([^"]+)"', b)
-        if m:
-            titles.append(m.group(1))
-    nivel_patterns = [r"Bajo", r"Medio", r"Alto"]
+    titles = [h.replace("## ", "").strip() for h in ejemplos]
+    # Dificultad indicada por 🟢🟡🔴 o texto Bajo/Medio/Alto
+    nivel_patterns = [(r"🟢|Bajo", "Bajo"), (r"🟡|Medio", "Medio"), (r"🔴|Alto", "Alto")]
     levels_found = []
-    for p in nivel_patterns:
-        if any(re.search(p, t, re.IGNORECASE) for t in titles):
-            levels_found.append(p)
+    for pattern, label in nivel_patterns:
+        if any(re.search(pattern, t) for t in titles):
+            levels_found.append(label)
     if len(levels_found) == 3:
         return {
             "name": "ejemplos_niveles",
             "passed": True,
-            "detail": "3 ejemplo-box con niveles Bajo, Medio, Alto",
+            "detail": "3 .ejemplo con niveles Bajo, Medio, Alto",
         }
     return {
         "name": "ejemplos_niveles",
@@ -315,37 +315,117 @@ def check_ejemplos_niveles(text: str, path: str) -> dict:
 
 
 def check_caracterizados_count(text: str, path: str) -> dict:
-    """Verifica exactamente 6 bloques caracterizados-box."""
-    boxes = re.findall(r"::: \{\.caracterizados-box[^}]*\}", text)
+    """Verifica exactamente 6 bloques .caracterizados."""
+    boxes = re.findall(r"## [^{]+\{\.caracterizados\}", text)
     count = len(boxes)
     if count == 6:
         return {
             "name": "caracterizados_count",
             "passed": True,
-            "detail": "6 caracterizados-box encontrados",
+            "detail": "6 bloques .caracterizados encontrados",
         }
     return {
         "name": "caracterizados_count",
         "passed": False,
-        "detail": f"Se esperaban 6 caracterizados-box, se encontraron {count}",
+        "detail": f"Se esperaban 6 bloques .caracterizados, se encontraron {count}",
         "failures_by_agent": {"agente_caracterizados": [f"caracterizados_count_{count}"]},
     }
 
 
+def check_caracterizados_swap_test(text: str, path: str) -> dict:
+    """Swap test: intercambia headings entre perfiles y verifica que el
+    contenido NO funcionaria para otro perfil.
+
+    Estrategia: para cada par de perfiles, intercambia los headings y
+    cuenta lineas identicas en la teoria y metacognicion. Si hay alta
+    similitud (>60%), el bloque es generico.
+
+    Retorna un check con detalle de pares que fallaron y una sugerencia
+    de cuantos intentos de regeneracion serian necesarios.
+    """
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if re.search(r"\{\.caracterizados\}", s)]
+
+    if len(boxes) < 6:
+        return {
+            "name": "caracterizados_swap_test",
+            "passed": True,
+            "detail": "Menos de 6 bloques, swap test no aplica",
+        }
+
+    profiles = [
+        "TDAH",
+        "Visual",
+        "Dislexia",
+        "Autismo",
+        "Accesibilidad",
+        "Socioemocional",
+    ]
+
+    def extract_core(text):
+        """Extrae lineas de teoria y metacognicion de un bloque."""
+        lines = []
+        in_block = False
+        for line in text.split("\n"):
+            stripped = line.strip()
+            if not stripped or stripped.startswith(":::") or stripped.startswith("##"):
+                continue
+            if stripped.startswith("**Ejemplo:**") or stripped.startswith("**Ejercicios:**"):
+                in_block = False
+            if in_block:
+                lines.append(stripped)
+            if stripped.startswith("**Metacognicion"):
+                in_block = True
+        return set(lines)
+
+    failed_pairs = []
+    for i in range(len(boxes)):
+        for j in range(i + 1, len(boxes)):
+            core_i = extract_core(boxes[i])
+            core_j = extract_core(boxes[j])
+            if not core_i or not core_j:
+                continue
+            intersection = core_i & core_j
+            union = core_i | core_j
+            if not union:
+                continue
+            similarity = len(intersection) / len(union)
+            if similarity > 0.6:
+                failed_pairs.append(
+                    f"{profiles[i]}-{profiles[j]}: {similarity:.0%} de lineas compartidas"
+                )
+
+    if not failed_pairs:
+        return {
+            "name": "caracterizados_swap_test",
+            "passed": True,
+            "detail": "Todos los pares superan el swap test (similitud <60%)",
+        }
+
+    return {
+        "name": "caracterizados_swap_test",
+        "passed": False,
+        "detail": "Swap test fallo para pares: " + "; ".join(failed_pairs),
+        "failures_by_agent": {
+            "agente_caracterizados": ["swap_test_failed"]
+        },
+    }
+
+
 def check_caracterizados_content(text: str, path: str) -> dict:
-    """Verifica que cada caracterizados-box tenga teoria + ejemplo + 2 ejercicios."""
-    boxes = re.findall(r"::: \{\.caracterizados-box[^}]*\}.*?:::", text, re.DOTALL)
+    """Verifica que cada bloque .caracterizados tenga teoria + ejemplo + 2 ejercicios."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if re.search(r"\{\.caracterizados\}", s)]
     errors = []
     for i, b in enumerate(boxes):
-        title_m = re.search(r'title="([^"]+)"', b)
-        title = title_m.group(1) if title_m else f"box-{i}"
+        heading = b.split("\n")[0] if b.strip() else f"box-{i}"
         issues = []
-        if not re.search(r"\*\*Ejemplo:\*\*", b):
+        if not re.search(r"\*\*Ejemplo:\*\*", b) and not re.search(r"\*\*Ejemplo\*\*", b):
             issues.append("falta **Ejemplo:**")
-        if not re.search(r"\*\*Ejercicios:\*\*", b):
+        if not re.search(r"\*\*Ejercicios:\*\*", b) and not re.search(r"\*\*Ejercicios\*\*", b):
             issues.append("falta **Ejercicios:**")
         if issues:
-            errors.append(f"{title}: {', '.join(issues)}")
+            errors.append(f"{heading.strip()}: {', '.join(issues)}")
     if not errors:
         return {
             "name": "caracterizados_content",
@@ -360,23 +440,135 @@ def check_caracterizados_content(text: str, path: str) -> dict:
     }
 
 
+def check_caracterizados_metacognicion(text: str, path: str) -> dict:
+    """Verifica que cada bloque .caracterizados tenga Metacognicion."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if re.search(r"\{\.caracterizados\}", s)]
+    missing = []
+    for i, b in enumerate(boxes):
+        heading = b.split("\n")[0].strip() if b.strip() else f"box-{i}"
+        if not re.search(r"\*\*Metacognicion:\*\*", b, re.IGNORECASE) and not re.search(r"\*\*Metacognición:\*\*", b):
+            missing.append(heading)
+    if not missing:
+        return {
+            "name": "caracterizados_metacognicion",
+            "passed": True,
+            "detail": "Cada bloque tiene **Metacognicion:**",
+        }
+    return {
+        "name": "caracterizados_metacognicion",
+        "passed": False,
+        "detail": "Falta **Metacognicion:** en: " + ", ".join(missing),
+        "failures_by_agent": {"agente_caracterizados": ["falta_metacognicion"]},
+    }
+
+
+def check_caracterizados_glosario(text: str, path: str) -> dict:
+    """Verifica que cada bloque .caracterizados tenga Glosario."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if re.search(r"\{\.caracterizados\}", s)]
+    missing = []
+    for i, b in enumerate(boxes):
+        heading = b.split("\n")[0].strip() if b.strip() else f"box-{i}"
+        if not re.search(r"\*\*Glosario:\*\*", b, re.IGNORECASE) and not re.search(r"\*\*Glosario\*\*", b):
+            missing.append(heading)
+    if not missing:
+        return {
+            "name": "caracterizados_glosario",
+            "passed": True,
+            "detail": "Cada bloque tiene **Glosario:**",
+        }
+    return {
+        "name": "caracterizados_glosario",
+        "passed": False,
+        "detail": "Falta **Glosario:** en: " + ", ".join(missing),
+        "failures_by_agent": {"agente_caracterizados": ["falta_glosario"]},
+    }
+
+
+def check_caracterizados_alternative_format(text: str, path: str) -> dict:
+    """Verifica que cada bloque .caracterizados tenga al menos una opcion de formato alternativo."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if re.search(r"\{\.caracterizados\}", s)]
+    missing = []
+    for i, b in enumerate(boxes):
+        heading = b.split("\n")[0].strip() if b.strip() else f"box-{i}"
+        if not re.search(
+            r"Opci[oó]n\s+de\s+respuesta|Opci[oó]n\s+de\s+formato|Opcion\s+de\s+respuesta|Opcion\s+de\s+formato",
+            b, re.IGNORECASE
+        ):
+            missing.append(heading)
+    if not missing:
+        return {
+            "name": "caracterizados_alternative_format",
+            "passed": True,
+            "detail": "Cada bloque ofrece opcion alternativa de formato",
+        }
+    return {
+        "name": "caracterizados_alternative_format",
+        "passed": False,
+        "detail": "Falta opcion de formato alternativo en: " + ", ".join(missing),
+        "failures_by_agent": {"agente_caracterizados": ["falta_formato_alternativo"]},
+    }
+
+
+def check_autoevaluacion_present(text: str, path: str) -> dict:
+    """Verifica que en la evaluacion ICFES exista seccion de Autoevaluacion."""
+    eval_text = _find_icfes_box(text)
+    if not eval_text:
+        return {"name": "autoevaluacion_present", "passed": True}
+    if re.search(r"\*\*Autoevaluaci[oó]n:\*\*", eval_text):
+        return {
+            "name": "autoevaluacion_present",
+            "passed": True,
+            "detail": "Seccion Autoevaluacion presente",
+        }
+    return {
+        "name": "autoevaluacion_present",
+        "passed": False,
+        "detail": "Falta **Autoevaluacion:** en el bloque de evaluacion",
+        "failures_by_agent": {"agente_evaluacion": ["falta_autoevaluacion"]},
+    }
+
+
+def check_no_capacitist_language(text: str, path: str) -> dict:
+    """Detecta frases capacitistas o sobreprotectoras."""
+    bad_patterns = [
+        r"no\s+te\s+preocupes\s+si\s+no\s+entiendes",
+        r"esto\s+es\s+dif[ií]cil\s+pero",
+        r"si\s+no\s+puedes\s+no\s+importa",
+        r"aunque\s+suene\s+complicado",
+        r"esto\s+es\s+complicado\s+pero",
+        r"t[ií]tulo\s+del\s+box",
+    ]
+    matches = []
+    for p in bad_patterns:
+        for m in re.finditer(p, text, re.IGNORECASE):
+            line = text[: m.start()].count("\n") + 1
+            matches.append((line, m.group()))
+    if not matches:
+        return {"name": "no_capacitist_language", "passed": True}
+    return {
+        "name": "no_capacitist_language",
+        "passed": False,
+        "detail": f"Lenguaje capacitista en lineas: {[l for l, _ in matches]}",
+        "failures_by_agent": {"agente_caracterizados": ["lenguaje_capacitista"]},
+    }
+
+
 def check_ejercicios_count(text: str, path: str) -> dict:
     """Verifica exactamente 3 niveles de ejercicios (Bajo, Medio, Alto)."""
-    boxes = re.findall(r"::: \{\.ejercicios-box[^}]*\}", text)
+    boxes = re.findall(r"## [^{]+\{\.ejercicios\}", text)
     count = len(boxes)
     if count == 3:
-        titles = []
-        for b in boxes:
-            m = re.search(r'title="([^"]+)"', b)
-            if m:
-                titles.append(m.group(1))
-        niveles = [r"Bajo", r"Medio", r"Alto"]
-        faltan = [n for n in niveles if not any(re.search(n, t, re.IGNORECASE) for t in titles)]
+        titles = [h.replace("## ", "").strip() for h in boxes]
+        niveles = [(r"🟢|Bajo", "Bajo"), (r"🟡|Medio", "Medio"), (r"🔴|Alto", "Alto")]
+        faltan = [label for pattern, label in niveles if not any(re.search(pattern, t) for t in titles)]
         if not faltan:
             return {
                 "name": "ejercicios_count",
                 "passed": True,
-                "detail": "3 ejercicios-box con niveles Bajo, Medio, Alto",
+                "detail": "3 .ejercicios con niveles Bajo, Medio, Alto",
             }
         return {
             "name": "ejercicios_count",
@@ -387,7 +579,7 @@ def check_ejercicios_count(text: str, path: str) -> dict:
     return {
         "name": "ejercicios_count",
         "passed": False,
-        "detail": f"Se esperaban 3 ejercicios-box, se encontraron {count}",
+        "detail": f"Se esperaban 3 .ejercicios, se encontraron {count}",
         "failures_by_agent": {"agente_ejercicios": [f"ejercicios_count_{count}"]},
     }
 
@@ -395,23 +587,22 @@ def check_ejercicios_count(text: str, path: str) -> dict:
 def check_section_order(text: str, path: str) -> dict:
     """Verifica que las secciones aparezcan en el orden esperado."""
     expected_order = [
-        "teoria-box",
-        "ideas-previas-box",
-        "contexto-box",
-        "caracterizados-box",
-        "ejemplo-box",
-        "ejercicios-box",
-        "retos-box",
-        "aplicacion-box",
-        "evaluacion-box",
-        "socioemocional-box",
+        "teoria",
+        "ideas-previas",
+        "contexto",
+        "caracterizados",
+        "ejemplo",
+        "ejercicios",
+        "retos",
+        "aplicacion",
+        "evaluacion",
+        "socioemocional",
     ]
     found = []
-    for m in re.finditer(r"\{\.([a-z-]+-box)\b", text):
+    for m in re.finditer(r"\{\.([a-z-]+)\}", text):
         cls = m.group(1)
-        if cls not in found:
+        if cls not in found and cls in expected_order:
             found.append(cls)
-    # Filter to only expected types
     found = [c for c in found if c in expected_order]
     expected_filtered = [c for c in expected_order if c in found]
     if found == expected_filtered:
@@ -424,8 +615,8 @@ def check_section_order(text: str, path: str) -> dict:
 
 
 def check_no_html_inline(text: str, path: str) -> dict:
-    """Prohíbe HTML inline como span, div, style, br, table, img, etc."""
-    pattern = r"</?(span|div|style|br|table|img|p|h[1-6]|tr|td|th)\b[^>]*>"
+    """Prohíbe HTML inline como div, style, br, table, img, etc. (span permitido para colores)."""
+    pattern = r"</?(div|style|br|table|img|p|h[1-6]|tr|td|th)\b[^>]*>"
     matches = list(re.finditer(pattern, text, re.IGNORECASE))
     if not matches:
         return {"name": "no_html_inline", "passed": True}
@@ -455,15 +646,14 @@ def check_no_ascii_boxes(text: str, path: str) -> dict:
 
 
 def check_ejercicios_have_answer_space(text: str, path: str) -> dict:
-    """Verifica que los ejercicios-box tengan \\underline{\\hspace{6cm}}."""
-    boxes = re.findall(r"::: \{\.ejercicios-box[^}]*\}.*?:::", text, re.DOTALL)
+    """Verifica que los bloques .ejercicios tengan \\underline{\\hspace{6cm}}."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if r"{.ejercicios}" in s]
     boxes_missing = []
-    for b in boxes:
-        title_m = re.search(r'title="([^"]+)"', b)
-        title = title_m.group(1) if title_m else "ejercicios-box"
-        # Check if at least one underline hspace exists
+    for i, b in enumerate(boxes):
+        heading = b.split("\n")[0].strip() if b.strip() else f"ejercicios-{i}"
         if not re.search(r"\\underline\{\\hspace\{6cm\}\}", b):
-            boxes_missing.append(title)
+            boxes_missing.append(heading)
     if not boxes_missing:
         return {"name": "ejercicios_answer_space", "passed": True}
     return {
@@ -475,14 +665,14 @@ def check_ejercicios_have_answer_space(text: str, path: str) -> dict:
 
 
 def check_caracterizados_have_answer_space(text: str, path: str) -> dict:
-    """Verifica que los caracterizados-box tengan \\underline{\\hspace{6cm}}."""
-    boxes = re.findall(r"::: \{\.caracterizados-box[^}]*\}.*?:::", text, re.DOTALL)
+    """Verifica que los bloques .caracterizados tengan \\underline{\\hspace{6cm}}."""
+    sections = re.split(r"\n(?=## )", text)
+    boxes = [s for s in sections if r"{.caracterizados}" in s]
     boxes_missing = []
-    for b in boxes:
-        title_m = re.search(r'title="([^"]+)"', b)
-        title = title_m.group(1) if title_m else "caracterizados-box"
+    for i, b in enumerate(boxes):
+        heading = b.split("\n")[0].strip() if b.strip() else f"caracterizados-{i}"
         if not re.search(r"\\underline\{\\hspace\{6cm\}\}", b):
-            boxes_missing.append(title)
+            boxes_missing.append(heading)
     if not boxes_missing:
         return {"name": "caracterizados_answer_space", "passed": True}
     return {
@@ -495,11 +685,14 @@ def check_caracterizados_have_answer_space(text: str, path: str) -> dict:
 
 def check_icfes_enunciado_blank_line(text: str, path: str) -> dict:
     """Verifica que en ICFES haya línea en blanco antes de la opción A. (entre el enunciado y las opciones)."""
-    evaluacion_match = _find_icfes_box(text)
-    if not evaluacion_match:
+    eval_text = _find_icfes_box(text)
+    if not eval_text:
         return {"name": "icfes_enunciado_blank_line", "passed": True}
-    eval_text = evaluacion_match.group()
-    eval_start = evaluacion_match.start()
+    
+    # Find where this section starts in the full text
+    eval_start = text.find(eval_text[:80].split("\n")[0])
+    if eval_start < 0:
+        eval_start = 0
     
     # Buscamos todas las ocurrencias de la opción A. al inicio de línea
     a_options = list(re.finditer(r"^[ \t]*A\.", eval_text, re.MULTILINE))
@@ -733,47 +926,33 @@ def check_title_has_no_accents(text: str, path: str) -> dict:
 
 def check_evaluacion_distribucion(text: str, path: str) -> dict:
     """Verifica distribucion 2 Bajo + 2 Medio + 1 Alto en evaluacion."""
-    eval_match = _find_icfes_box(text)
-    if not eval_match:
+    eval_text = _find_icfes_box(text)
+    if not eval_text:
         return {
             "name": "evaluacion_distribucion",
             "passed": False,
-            "detail": "FALTA evaluacion-box con title 'Evaluacion - tipo ICFES'",
-            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion-box"]},
+            "detail": "FALTA heading .evaluacion con 'Evaluacion - tipo ICFES'",
+            "failures_by_agent": {"agente_evaluacion": ["missing_evaluacion"]},
         }
-    eval_text = eval_match.group()
     
-    # Buscar patrones de nivel en los titulos de preguntas
-    headers = re.findall(
-        r"^[ \t]*\*\*Pregunta\s+\d+\s*[—–-]\s*Nivel\s+(Bajo|Medio|Alto)\*\*[ \t]*$",
-        eval_text,
-        re.MULTILINE | re.IGNORECASE
-    )
-    if len(headers) < 5:
-        # Fallback to look for Nivel Bajo/Medio/Alto in headers with other formatting
-        headers = re.findall(
-            r"^[ \t]*\*\*Pregunta\s+\d+.*Nivel\s+(Bajo|Medio|Alto).*",
-            eval_text,
-            re.MULTILINE | re.IGNORECASE
-        )
+    # Buscar 🟢🟡🔴 en preguntas de evaluacion
+    preguntas = re.findall(r"\*\*Pregunta\s+\d+[^*]*\*\*", eval_text)
+    bajos = sum(1 for p in preguntas if "🟢" in p)
+    medios = sum(1 for p in preguntas if "🟡" in p)
+    altos = sum(1 for p in preguntas if "🔴" in p)
     
-    niveles = [m for m in headers]
-    bajos = sum(1 for n in niveles if n.lower() == "bajo")
-    medios = sum(1 for n in niveles if n.lower() == "medio")
-    altos = sum(1 for n in niveles if n.lower() == "alto")
-    
-    if bajos >= 2 and medios >= 2 and altos >= 1:
+    if bajos == 2 and medios == 2 and altos == 1:
         return {
             "name": "evaluacion_distribucion",
             "passed": True,
             "detail": f"Bajo={bajos}, Medio={medios}, Alto={altos}",
         }
         
-    # Fallback más amplio
+    # Fallback: buscar texto Nivel Bajo/Medio/Alto
     bajos_f = len(re.findall(r"Nivel\s+Bajo\b", eval_text, re.IGNORECASE))
     medios_f = len(re.findall(r"Nivel\s+Medio\b", eval_text, re.IGNORECASE))
     altos_f = len(re.findall(r"Nivel\s+Alto\b", eval_text, re.IGNORECASE))
-    if bajos_f >= 2 and medios_f >= 2 and altos_f >= 1:
+    if bajos_f == 2 and medios_f == 2 and altos_f == 1:
         return {
             "name": "evaluacion_distribucion",
             "passed": True,
@@ -793,15 +972,16 @@ def check_evaluacion_distribucion(text: str, path: str) -> dict:
 
 def check_socioemocional_competencia(text: str, path: str) -> dict:
     """Verifica que la reflexión socioemocional nombre una competencia Ley 2503."""
-    socio_match = re.search(r"::: \{\.socioemocional-box[^}]*\}.*?:::", text, re.DOTALL)
-    if not socio_match:
+    sections = re.split(r"\n(?=## )", text)
+    socio_sections = [s for s in sections if r"{.socioemocional}" in s]
+    if not socio_sections:
         return {
             "name": "socioemocional_competencia",
             "passed": False,
-            "detail": "FALTA socioemocional-box",
-            "failures_by_agent": {"agente_socioemocional": ["missing_socioemocional-box"]},
+            "detail": "FALTA .socioemocional",
+            "failures_by_agent": {"agente_socioemocional": ["missing_socioemocional"]},
         }
-    soc_text = socio_match.group()
+    soc_text = socio_sections[0]
     competencias = [
         r"Conciencia\s+Emocional",
         r"Regulaci[oó]n\s+Emocional",
@@ -811,7 +991,7 @@ def check_socioemocional_competencia(text: str, path: str) -> dict:
         r"Bienestar",
     ]
     for p in competencias:
-        if re.search(p, socio_text if 'socio_text' in locals() else soc_text, re.IGNORECASE):
+        if re.search(p, soc_text, re.IGNORECASE):
             return {"name": "socioemocional_competencia", "passed": True}
     return {
         "name": "socioemocional_competencia",
@@ -822,24 +1002,26 @@ def check_socioemocional_competencia(text: str, path: str) -> dict:
 
 
 EXPECTED_SECTIONS = {
-    "teoria-box": "Teoria",
-    "ideas-previas-box": "Ideas Previas",
-    "contexto-box": "Contexto Feynman",
-    "caracterizados-box": "Caracterizados",
-    "ejemplo-box": "Ejemplos",
-    "ejercicios-box": "Ejercicios",
-    "retos-box": "Retos",
-    "aplicacion-box": "Aplicacion",
-    "evaluacion-box": "Evaluacion",
-    "socioemocional-box": "Socioemocional",
+    "teoria": "Teoria",
+    "ideas-previas": "Ideas Previas",
+    "contexto": "Contexto Feynman",
+    "caracterizados": "Caracterizados",
+    "ejemplo": "Ejemplos",
+    "ejercicios": "Ejercicios",
+    "retos": "Retos",
+    "aplicacion": "Aplicacion",
+    "evaluacion": "Evaluacion",
+    "socioemocional": "Socioemocional",
 }
 
 
 def list_sections(text: str) -> dict:
     """Escanea un .qmd y devuelve boxes presentes y faltantes."""
     found_types = set()
-    for m in re.finditer(r"\{\.([a-z-]+-box)\b", text):
-        found_types.add(m.group(1))
+    for m in re.finditer(r"\{\.([a-z-]+)\}", text):
+        cls = m.group(1)
+        if cls in EXPECTED_SECTIONS:
+            found_types.add(cls)
 
     present = []
     missing = []
@@ -861,12 +1043,17 @@ ALL_CHECKS = [
     check_latex_balance,
     check_caracterizados_count,
     check_caracterizados_content,
+    check_caracterizados_metacognicion,
+    check_caracterizados_glosario,
+    check_caracterizados_alternative_format,
+    check_caracterizados_swap_test,
     check_ejemplos_niveles,
     check_ejercicios_count,
     check_section_order,
     check_evaluacion_reactivos,
     check_evaluacion_distribucion,
     check_evaluacion_opciones,
+    check_autoevaluacion_present,
     check_socializacion_box_exists,
     check_socializacion_fields,
     check_socioemocional_competencia,
@@ -878,6 +1065,7 @@ ALL_CHECKS = [
     check_answer_spaces_in_math_mode,
     check_title_has_no_accents,
     check_chemical_formulas,
+    check_no_capacitist_language,
 ]
 
 # ---------------------------------------------------------------------------

@@ -1,5 +1,8 @@
 # Estructura del Libro — Docere/liber/
 
+> **Formato de salida:** Leer `_estilo_salida.md` para reglas completas de
+> formato (LaTeX, headings, colores, ICFES, etc.).
+
 Mapa de grados, archivos .qmd y secciones existentes en el proyecto Quarto.
 
 ## Directorios por grado
@@ -19,13 +22,12 @@ Todos los archivos están en `liber/<carpeta>/<archivo>.qmd` relativo a la raíz
 
 ## Formato de cada archivo
 
-Cada .qmd contiene bloques educativos secuenciales usando la convención de boxes.
+Cada .qmd contiene bloques educativos secuenciales usando headings con clase.
 La lista completa de secciones (23 bloques, 11 tipos) y sus titulos exactos esta
-definida en `agente_qa.md` — **ese es el unico source of truth** para todos los
-agentes del pipeline.
+definida en `_estilo_salida.md` — **ese es el unico source of truth** para el
+formato de todos los agentes del pipeline.
 
-> **Nota:** Las reglas de formato estan en `_reglas_comunes.md`. No todos los
-> archivos .qmd contienen todos los boxes; algunos son parciales.
+> **Nota:** No todos los archivos .qmd contienen todos los bloques; algunos son parciales.
 
 ## Uso en el proceso
 

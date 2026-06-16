@@ -47,6 +47,7 @@ format:
     include-in-header: preamble.tex
     filters:
       - _filters/color-sections.lua
+      - _filters/icfes-tables.lua
     toc: true
     toc-depth: 1
     number-depth: 3
@@ -63,6 +64,8 @@ format:
   html:
     theme: flatly
     css: _styles/headings.css
+    filters:
+      - _filters/icfes-tables.lua
     toc: true
     toc-depth: 3
     toc-location: right
@@ -73,6 +76,8 @@ format:
   epub:
     cover-image: Portada.png
     css: _styles/headings.css
+    filters:
+      - _filters/icfes-tables.lua
     toc: true
     toc-depth: 3
     number-sections: true

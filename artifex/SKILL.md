@@ -117,14 +117,17 @@ El agente marca cada paso al completarlo.
 
 Despues de CADA paso (incluyendo Paso 0), el agente DEBE:
 
-1. **Verificar** que el output contiene el box-type esperado para ese paso
-   (ej: tras Paso 1 debe haber un `{.teoria-box}`, tras Paso 5 deben
-   aparecer 3 `{.ejemplo-box}`).
-2. **Verificar** que el contenido no es placeholder ni esta vacio.
-3. **Si el output no es valido:** re-ejecutar el paso inmediatamente,
+1. **Verificar** que el output contiene el heading con clase esperado
+   (ej: tras Paso 1 debe haber un `## Teoría {.teoria}`, tras Paso 5
+   deben aparecer 3 headings `## Ejemplo 🟢/🟡/🔴 {.ejemplo}`).
+2. **Verificar** que el contenido respeta el formato definido en
+   `_estilo_salida.md` para esa sección (tabla pipe 2×2 para ICFES,
+   estructura de cada perfil caracterizados, etc.).
+3. **Verificar** que el contenido no es placeholder ni esta vacio.
+4. **Si el output no es valido:** re-ejecutar el paso inmediatamente,
    indicando al agente que su output anterior fue rechazado y por que.
    No avanzar al siguiente paso hasta obtener un output valido.
-4. **Maximo 2 reintentos por paso.** Si falla, detener el proceso y
+5. **Maximo 2 reintentos por paso.** Si falla, detener el proceso y
    reportar al usuario que ese paso no pudo completarse.
 
 Esto evita que errores tempranos se propaguen a pasos downstream y
@@ -152,6 +155,7 @@ python3 scripts/convert_input_to_md.py \
 **El agente lee:** `references/bibliografia.md`
 **Entrada:** `liber/references.bib`
 **Accion:**
+
 1. Leer `liber/references.bib` y extraer las referencias disponibles.
 2. Presentar al usuario las referencias en formato legible.
 3. Preguntar cuales desea usar:
@@ -162,112 +166,148 @@ python3 scripts/convert_input_to_md.py \
    como `## Referencias disponibles` al final de cada prompt.
 5. Incluir `bibliography: ../../liber/references.bib` en el YAML del .qmd
    (o la ruta relativa correcta segun destino final).
-**Verificacion:** Las referencias seleccionadas se documentan para los pasos
-siguientes.
+   **Verificacion:** Las referencias seleccionadas se documentan para los pasos
+   siguientes.
 
 ---
 
 ### Paso 1 — Teoria
 
 **El agente lee:** `references/agente_teoria.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.1 para el formato exacto del bloque Teoría.
 **Entrada:** `input/texto_teorico.md`
-**Accion:** Extrae y estructura el contenido teorico en un bloque teoria-box.
-**Verificacion:** Existe exactamente 1 `{.teoria-box}` con contenido no vacio.
+**Accion:** Extrae y estructura el contenido teorico.
+**Verificacion:** Existe exactamente 1 `## Teoría {.teoria}` con contenido no vacio.
 
 ---
 
 ### Paso 2 — Ideas Previas
 
 **El agente lee:** `references/agente_ideas_previas.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.2–10.4 para los formatos de Cuento, Preguntas y Contextualización.
 **Entrada:** `input/texto_teorico.md` + bloque de Teoria generado
 **Accion:** Genera 3 bloques: Cuento con preguntas referidas al cuento,
 Preguntas generativas independientes, y Contextualizacion (caso
 sociocultural colombiano).
-**Verificacion:** Existen exactamente 3 `{.ideas-previas-box}` con
-titles "Ideas Previas - Cuento", "Ideas Previas - Preguntas",
-"Ideas Previas - Contextualizacion".
+**Verificacion:** Existen exactamente 3 headings `## Ideas Previas — {...} {.ideas-previas}`
+con títulos "Cuento", "Preguntas", "Contextualización".
 
 ---
 
 ### Paso 3 — Contextualizacion Feynman
 
 **El agente lee:** `references/agente_contextualizacion_feynman.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.5 para el formato exacto del bloque Feynman.
 **Entrada:** Bloque de Teoria generado (Paso 1) + cuento y contextualizacion
 de Ideas Previas (Paso 2, opcional)
 **Accion:** Aplica el metodo Feynman para explicar el concepto en terminos
 simples. Usa el cuento o la contextualizacion de Ideas Previas para crear
 continuidad narrativa si estan disponibles.
-**Verificacion:** Existe exactamente 1 `{.contexto-box}` con title
-"Contextualizacion - Metodo Richard Feynman".
+**Verificacion:** Existe exactamente 1 `## Contextualización — Método Feynman {.contexto}`.
 
 ---
 
 ### Paso 4 — Caracterizados (DUA)
 
 **El agente lee:** `references/agente_caracterizados.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.6–10.11 para el formato exacto de cada perfil (TDAH, Visual, Dislexia, Autismo, Accesibilidad Sensorial, Socioemocional).
 **Entrada:** Bloque de Teoria (Paso 1) + Bloque de Contextualizacion Feynman
 (Paso 3)
-**Accion:** Genera 6 miniclases DUA, una por perfil. Cada una contiene:
-(1) texto teorico adaptado al perfil, (2) un ejemplo resuelto paso a
-paso contextualizado, (3) dos ejercicios de practica. Los datos de
-ejemplos y ejercicios DUA deben ser distintos a los de los bloques
-generales (Pasos 5 y 6). El orden pedagogico es:
+**Accion:** Genera 6 miniclases DUA, una por perfil. Cada miniclase DEBE
+contener:
+
+1. **Texto teorico adaptado** construido DESDE la barrera cognitiva del
+   perfil (no solo adaptacion de formato).
+2. **Un ejemplo resuelto paso a paso** con **autoinstrucciones ACTIVAS**
+   (el estudiante produce: "tapa y explica", no solo lee dialogo interno).
+3. **Dos ejercicios de practica** con **opcion de formato de respuesta
+   alternativo** (oral, grafico, seleccion, manipulativo).
+4. **Un momento de metacognicion** que verifique comprension CONCEPTUAL
+   (no solo procesal: "explica la relacion entre X e Y").
+5. **Un glosario** de 3-5 terminos clave en lenguaje sencillo.
+
+Ademas, CADA miniclase debe:
+- Activar las **3 redes neuronales** (afectiva, reconocimiento, estrategica).
+- Incluir el **nivel submicro/particulas** de Johnstone (antes o durante
+  la explicacion simbolica, no solo al final).
+- Incluir al menos una **autoinstruccion activa** que requiera produccion
+  del estudiante ("tapa y explica", "reconstruye el diagrama", etc.).
+- La **metacognicion** debe verificar comprension conceptual, no solo
+  reflexion sobre el proceso.
+- Ofrecer al menos una **eleccion** entre 2 opciones en algun ejercicio.
+- Usar **lenguaje que afirma capacidades** (prohibido capacitismo/sobreproteccion).
+- Respetar las estrategias especificas del perfil (ej: 25x5 para TDAH,
+  OpenDyslexic/pictogramas para Dislexia, agenda visual para Autismo,
+  ARASAAC/ATbar para Accesibilidad Sensorial, validacion emocional para
+  Socioemocional).
+- Pasar el **swap test**: cambiar el heading del perfil debe "romper"
+  el contenido (no debe funcionar para otro perfil).
+
+Los datos de ejemplos y ejercicios DUA deben ser distintos a los de los
+bloques generales (Pasos 5 y 6). El orden pedagogico es:
 Teoria -> Ideas Previas -> Feynman -> DUA -> Ejemplos -> Ejercicios -> ...
-**Verificacion:** Existen exactamente 6 `{.caracterizados-box}` con
-los titles definidos en `agente_caracterizados.md`. Cada bloque contiene
-las secciones teoria, **Ejemplo:** y **Ejercicios:**.
+**Verificacion:** Existen exactamente 6 headings `## Contextualización — {perfil} {.caracterizados}`.
+Cada bloque contiene teoria construida desde la barrera, **Ejemplo:** (con
+autoinstrucciones activas), **Ejercicios:** (2, con opcion de formato),
+**Metacognicion conceptual:** y **Glosario:**. Verificar que incluye nivel
+submicro/particulas, que la metacognicion verifica concepto (no solo proceso),
+que las autoinstrucciones son activas (no solo modeladas), y que el bloque
+pasa el swap test.
 
 ---
 
 ### Paso 5 — Ejemplos
 
 **El agente lee:** `references/agente_ejemplos.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.12–10.14 para el formato exacto de los 3 niveles (Bajo 🟢, Medio 🟡, Alto 🔴).
 **Entrada:** Bloque de Teoria generado (Paso 1) + bloque de
 Contextualizacion Feynman (Paso 3)
-**Accion:** Crea 3 ejemplos guiados paso a paso (Nivel Bajo, Medio, Alto).
+**Accion:** Crea 3 ejemplos guiados paso a paso (🟢, 🟡, 🔴).
 Cada nivel con enunciado, justificacion, pasos con razonamiento y resultado.
 Referencia la explicacion de Feynman sin repetir la analogia.
-**Verificacion:** Existen exactamente 3 `{.ejemplo-box}` con titles
-"Ejemplo Guiado - Nivel Bajo", "Ejemplo Guiado - Nivel Medio",
-"Ejemplo Guiado - Nivel Alto".
+**Verificacion:** Existen exactamente 3 headings `## Ejemplo 🟢 {.ejemplo}`,
+`## Ejemplo 🟡 {.ejemplo}`, `## Ejemplo 🔴 {.ejemplo}`.
 
 ---
 
 ### Paso 6 — Ejercicios
 
 **El agente lee:** `references/agente_ejercicios.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.15–10.17 para el formato exacto de los 3 niveles de ejercicios.
 **Entrada:** Bloque de Teoria + Ejemplos generados
-**Accion:** Disena ejercicios organizados en 3 niveles (Bajo, Medio, Alto).
-Nivel Bajo: 2-3 ejercicios de recuperacion. Nivel Medio: 2-3 de aplicacion.
-Nivel Alto: 1-2 de analisis.
-**Verificacion:** Existen exactamente 3 `{.ejercicios-box}` con titles
-"Nivel Bajo", "Nivel Medio", "Nivel Alto".
+**Accion:** Disena ejercicios organizados en 3 niveles (🟢, 🟡, 🔴).
+Nivel 🟢: 2-3 ejercicios de recuperacion. Nivel 🟡: 2-3 de aplicacion.
+Nivel 🔴: 1-2 de analisis.
+**Verificacion:** Existen exactamente 3 headings `## Ejercicios 🟢 {.ejercicios}`,
+`## Ejercicios 🟡 {.ejercicios}`, `## Ejercicios 🔴 {.ejercicios}`.
 
 ---
 
 ### Paso 7 — Retos
 
 **El agente lee:** `references/agente_retos.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.18 para el formato exacto del bloque de retos.
 **Entrada:** Toda la clase construida hasta el momento
 **Accion:** Crea una actividad desafiante.
-**Verificacion:** Existe exactamente 1 `{.retos-box}` con title "Retos"
-y contenido no vacio.
+**Verificacion:** Existe exactamente 1 `## Retos {.retos}` con contenido no vacio.
 
 ---
 
 ### Paso 8 — Aplicacion
 
 **El agente lee:** `references/agente_aplicacion.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.19–10.20 para el formato exacto de Aplicación en vida real y en laboratorio.
 **Entrada:** Bloque de Teoria
 **Accion:** Genera aplicacion en vida real y en laboratorio.
-**Verificacion:** Existen exactamente 2 `{.aplicacion-box}` con titles
-"Aplicacion - Vida real" y "Aplicacion - Laboratorio".
+**Verificacion:** Existen exactamente 2 headings `## Aplicación — Vida real {.aplicacion}`
+y `## Aplicación — Laboratorio {.aplicacion}`.
 
 ---
 
 ### Paso 8.5 — Evaluacion tipo ICFES
 
 **El agente lee:** `references/agente_evaluacion.md`
+**También DEBE leer:** `references/_estilo_salida.md` §9 (Formato ICFES completo: tabla pipe 2×2, distribución 5 reactivos, competencias) y §10.21 para el template exacto del bloque.
 **Entrada:** Bloque de Teoria (Paso 1) + Bloque de Ideas Previas -
 Contextualizacion (Paso 2, opcional) + **Bloque de Ejemplos (Paso 5)** +
 **Bloque de Ejercicios (Paso 6)** — los errores tipicos de estudiantes
@@ -275,37 +315,40 @@ en cada nivel (Bajo/Medio/Alto) sirven como materia prima para los
 distractores.
 **Accion:** Disena 5 reactivos tipo ICFES con opciones A, B, C, D (1
 correcta, 3 distractores) escalonados por nivel de dificultad ICFES:
-2 Bajo, 2 Medio, 1 Alto. Distribucion de competencias: Interpretacion (2),
+2 🟢, 2 🟡, 1 🔴. Distribucion de competencias: Interpretacion (2),
 Argumentacion (2), Proposicion (1). Cada reactivo incluye Contexto,
-Enunciado y opciones. Sin incluir claves de respuesta (va en Paso 8.6).
-**Verificacion:** Existe 1 `{.evaluacion-box}` con title="Evaluacion - tipo ICFES"
-con 5 reactivos (2 Bajo + 2 Medio + 1 Alto).
+Enunciado y opciones en tabla 2×2. Sin incluir claves de respuesta
+(va en Paso 8.6).
+**Verificacion:** Existe 1 `## Evaluación — Tipo ICFES {.evaluacion}`
+con 5 reactivos (2 🟢 + 2 🟡 + 1 🔴).
 
 ---
 
 ### Paso 8.6 — Socializacion
 
 **El agente lee:** `references/agente_socializacion.md`
-**Entrada:** `{.evaluacion-box}` generado en Paso 8.5 (las 5 preguntas ICFES)
-**Accion:** Genera un segundo `{.evaluacion-box}` con title="Socializacion"
+**También DEBE leer:** `references/_estilo_salida.md` §10.22 para el formato exacto del bloque de Socialización (usa clase `.evaluacion`).
+**Entrada:** Bloque `## Evaluación — Tipo ICFES {.evaluacion}` generado en Paso 8.5 (las 5 preguntas ICFES)
+**Accion:** Genera un segundo bloque con heading `## Socialización {.evaluacion}`
 conteniendo las claves de respuesta: para cada pregunta, Competencia,
 Afirmacion, Evidencia, Nivel, Respuesta correcta y Explicacion.
-**Verificacion:** Existe un segundo `{.evaluacion-box}` con title="Socializacion"
-con 5 entradas, cada una con Competencia, Afirmacion, Evidencia, Respuesta
-correcta y Explicacion.
+**Verificacion:** Existe `## Socialización {.evaluacion}` con 5 entradas,
+cada una con Competencia, Afirmacion, Evidencia, Respuesta correcta y
+Explicacion.
 
 ---
 
 ### Paso 9 — Socioemocional
 
 **El agente lee:** `references/agente_socioemocional.md`
+**También DEBE leer:** `references/_estilo_salida.md` §10.23 para el formato exacto del bloque socioemocional.
 **Entrada:** Toda la clase construida
 **Accion:** Redacta una reflexion que trabaje una de las 5 competencias
 de la Catedra de Educacion Emocional (Ley 2503 de 2025): Conciencia
 Emocional, Regulacion Emocional, Autonomia, Inteligencia Interpersonal,
 o Habilidades de Vida y Bienestar.
-**Verificacion:** Existe exactamente 1 `{.socioemocional-box}`. El
-contenido nombra explicitamente una de las 5 competencias de la Ley
+**Verificacion:** Existe exactamente 1 `## Socioemocional {.socioemocional}`.
+El contenido nombra explicitamente una de las 5 competencias de la Ley
 2503/2025.
 
 ---
@@ -315,13 +358,14 @@ contenido nombra explicitamente una de las 5 competencias de la Ley
 **El agente lee:** `references/agente_qa.md`
 **Entrada:** Archivo .qmd completo generado
 **Accion:** 
-1. Ejecuta `scripts/validate_output.py` para checks mecánicos (boxes, emojis,
-   distribución ICFES, etc.)
+
+1. Ejecuta `scripts/validate_output.py` para checks mecánicos (headings, emojis,
+    distribución ICFES, etc.)
 2. Revisión semántica LLM (consistencia conceptual, calidad pedagógica)
 3. Combina ambos reportes en un informe único
-**Salida:** Informe de calidad con estado APROBADO / REQUIERE CORRECCIONES.
-En caso de REQUIERE CORRECCIONES, incluye `## Feedback de QA` con la lista
-detallada de errores y el agente responsable de cada uno.
+   **Salida:** Informe de calidad con estado APROBADO / REQUIERE CORRECCIONES.
+   En caso de REQUIERE CORRECCIONES, incluye `## Feedback de QA` con la lista
+   detallada de errores y el agente responsable de cada uno.
 
 ---
 
@@ -349,6 +393,7 @@ detallada de errores y el agente responsable de cada uno.
    - Preguntar si desea continuar manualmente
 
 **Reglas:**
+
 - En cada iteración, solo re-ejecutar los pasos que tuvieron errores.
 - No re-ejecutar pasos que ya están correctos.
 - El feedback debe adjuntarse textualmente al prompt del agente, no resumido.
@@ -370,6 +415,7 @@ detallada de errores y el agente responsable de cada uno.
 2. **Listar archivos** .qmd existentes en `liber/<carpeta>/`.
 
 3. **Preguntar al usuario:**
+   
    - Si el archivo NO existe: `"¿Qué nombre para el nuevo archivo?"`
      → Copiar el .qmd completo a `liber/<carpeta>/<nombre>.qmd`.
    - Si el archivo SI existe: entrar en modo MEJORA.
@@ -378,23 +424,26 @@ detallada de errores y el agente responsable de cada uno.
    a. Ejecutar `python3 scripts/validate_output.py --sections liber/<ruta>.qmd`
       para detectar boxes presentes vs faltantes.
    b. Mostrar menu al usuario:
-      ```
-      MEJORAR (existentes):    AGREGAR (faltantes):
-        ✓ Teoria                 ✗ Evaluacion ICFES
-        ✓ Ideas Previas          ✗ Socializacion
-        ✓ Ejemplos
-      0. Salir
-      ```
+   
+   ```
+    MEJORAR (existentes):    AGREGAR (faltantes):
+      ✓ Teoría                 ✗ Evaluación ICFES
+      ✓ Ideas Previas          ✗ Socialización
+      ✓ Ejemplos
+   0. Salir
+   ```
+   
    c. Segun la eleccion:
-      - **MEJORAR:** extraer el bloque actual del .qmd + solicitud del
-        usuario → pasar al agente original como
-        `## Entrada de Retroalimentacion — Mejora de seccion`
-      - **AGREGAR:** ejecutar el agente normalmente → insertar en la
-        posicion correcta dentro del archivo
-   d. Reemplazar solo esa seccion en el archivo.
-   e. Ejecutar QA completo (Paso 10) sobre el archivo modificado.
-   f. Preguntar: `"¿Deseas mejorar otra seccion?"`
-      → si si, repetir desde 4a; si no, salir.
+   
+   - **MEJORAR:** extraer el bloque actual del .qmd + solicitud del
+     usuario → pasar al agente original como
+     `## Entrada de Retroalimentacion — Mejora de seccion`
+   - **AGREGAR:** ejecutar el agente normalmente → insertar en la
+     posicion correcta dentro del archivo
+     d. Reemplazar solo esa seccion en el archivo.
+     e. Ejecutar QA completo (Paso 10) sobre el archivo modificado.
+     f. Preguntar: `"¿Deseas mejorar otra seccion?"`
+     → si si, repetir desde 4a; si no, salir.
 
 5. **Confirmar** los cambios y mostrar la ruta final del archivo.
 
@@ -410,16 +459,19 @@ detallada de errores y el agente responsable de cada uno.
 **Accion:**
 
 1. **Inspeccionar cambios** — Ejecutar para listar archivos modificados:
+   
    ```bash
    git diff --name-only
    ```
+   
    Esto devuelve la lista de archivos tocados desde el ultimo commit.
 
 2. **Generar mensaje de commit** — El agente DEBE construir un mensaje
    descriptivo basado en los archivos reales que cambiaron. Ejemplo:
+   
    ```
    feat(clase): {tema} - {grado}
-
+   
    Cambios:
    - liber/{grado}/{archivo}.qmd: plan de clase completo con 23 cajas
    - artifex/scripts/validate_output.py: fix emoji regex y opciones
@@ -427,6 +479,7 @@ detallada de errores y el agente responsable de cada uno.
    ```
 
 3. **Commit y push:**
+   
    ```bash
    git add -A
    git commit -m "<mensaje generado>"
@@ -448,191 +501,17 @@ detallada de errores y el agente responsable de cada uno.
 
 ## Formato de Salida
 
-El archivo `.qmd` generado sigue esta estructura:
+El formato exacto de salida está definido en **`references/_estilo_salida.md`**.
 
-```markdown
-# {Titulo del tema} - {Grado}
+**TODO agente** DEBE leer ese archivo antes de generar cualquier contenido.
+Contiene:
 
-::: {.teoria-box title="Teoria"}
-{Contenido teorico estructurado. Formulas importantes con $$...\\tag{N}$$.}
-:::
+- Reglas de formato LaTeX, colores, tablas y ortografía
+- Formato ICFES (encabezado con 🟢🟡🔴, tabla 2×2 de opciones, distribución)
+- Template completo con los 23 headings, sus clases y títulos exactos
+- Tabla resumen de secciones por tipo (11 clases, 23 bloques)
+- Prohibiciones globales y casos borde
+- Convención de emojis: 🟢 = Bajo, 🟡 = Medio, 🔴 = Alto
 
-::: {.ideas-previas-box title="Ideas Previas - Cuento"}
-{Narrativa de 3-6 lineas}
-- {Pregunta 1: conexion personal referida al cuento}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 2: especulacion referida al cuento}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 3: contraste referido al cuento}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 4: reflexion referida al cuento}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Preguntas"}
-- {Pregunta 1: saber previo}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 2: experiencia}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 3: especulacion}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Pregunta 4: curiosidad}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.ideas-previas-box title="Ideas Previas - Contextualizacion"}
-{Caso sociocultural colombiano de 3-6 lineas. Termina con frase-puente
-hacia la teoria.}
-:::
-
-::: {.contexto-box title="Contextualizacion - Metodo Richard Feynman"}
-{Explicacion Feynman del concepto. Sin formulas ni procedimientos.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Apoyo Cognitivo y TDAH"}
-{Teoria adaptada en pasos numerados verticales + ejemplo resuelto paso a paso
-+ 2 ejercicios con $\\underline{\\hspace{6cm}}$ para respuesta.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Visual"}
-{Teoria con tabla Markdown y colores **(azul) (rojo) (verde)** + ejemplo con
-tabla y diagrama -> + 2 ejercicios con $\\underline{\\hspace{6cm}}$.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Dislexia y Dificultades Lectoras"}
-{Teoria en oraciones cortas + ejemplo paso a paso + 2 ejercicios
-con $\\underline{\\hspace{6cm}}$.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Autismo y Pensamiento Concreto"}
-**Regla fija:** {regla} + ejemplo literal + 2 ejercicios
-con $\\underline{\\hspace{6cm}}$.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Accesibilidad Sensorial"}
-[Formato accesible] + {teoria entre corchetes} + ejemplo + 2 ejercicios
-con $\\underline{\\hspace{6cm}}$.}
-:::
-
-::: {.caracterizados-box title="Contextualizacion - Socioemocional y Psicosocial"}
-{Frase de validacion} + {teoria con lenguaje de acompañamiento} + ejemplo
-+ 2 ejercicios con $\\underline{\\hspace{6cm}}$.}
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Bajo"}
-**Enunciado:** ... **Justificacion Teorica:** ... **Ejecucion:**
-**Paso 1:** ... <- (razonamiento) **Resultado:**
-{Fórmulas en $$...$$ display. Colores como **(azul)** si aplica.}
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Medio"}
-...
-:::
-
-::: {.ejemplo-box title="Ejemplo Guiado - Nivel Alto"}
-...
-:::
-
-::: {.ejercicios-box title="Preguntas: Nivel Bajo"}
-- {Ejercicio de recuperacion}
-
-  $\\underline{\\hspace{6cm}}$
-- {V/F o identificacion}
-
-  $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.ejercicios-box title="Preguntas: Nivel Medio"}
-- {Respuesta corta o aplicacion}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-- {Aplicacion simple}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.ejercicios-box title="Preguntas: Nivel Alto"}
-- {Problema abierto o analisis de errores}
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-
-  $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.retos-box title="Retos"}
-{Actividad desafiante con 3-5 requisitos}
-:::
-
-::: {.aplicacion-box title="Aplicacion - Vida real"}
-{Fenomeno cotidiano explicado con el concepto.}
-:::
-
-::: {.aplicacion-box title="Aplicacion - Laboratorio"}
-**Objetivo:** ... **Materiales:** ... **Procedimiento:**
-1. ... **Resultados:** {tabla Markdown} **Conclusion:**
-{Pregunta} $\\underline{\\hspace{6cm}}$ $\\underline{\\hspace{6cm}}$
-:::
-
-::: {.evaluacion-box title="Evaluacion - tipo ICFES"}
-**Pregunta 1 — Nivel Bajo**
-
-{Contexto con situación real o de laboratorio, datos organizados, 3-5 líneas o tabla.}
-
-{Pregunta o enunciado concreto que exige aplicar la teoría al contexto dado.}
-
-A. {opcion}
-B. {opcion}
-C. {opcion}
-D. {opcion}
-
-
-**Pregunta 2 — Nivel Bajo**
-...
-(5 reactivos total: 2 Bajo, 2 Medio, 1 Alto)
-(linea en blanco obligatoria antes de A.)
-:::
-
-::: {.evaluacion-box title="Socializacion"}
-**Pregunta 1** — Nivel Bajo
-*Competencia:* ...
-*Afirmación:* ...
-*Evidencia:* ...
-*Respuesta correcta:* ...
-*Explicación:* ...
-:::
-
-::: {.socioemocional-box title="Socioemocional"}
-{Reflexion de 3-6 lineas que nombra la competencia de la Ley 2503/2025
-que trabaja y conecta con el tema cientifico.}
-:::
-```
+> Este archivo (`_estilo_salida.md`) es la única fuente de verdad para el
+> formato de salida. Cualquier cambio de estilo debe hacerse allí.
