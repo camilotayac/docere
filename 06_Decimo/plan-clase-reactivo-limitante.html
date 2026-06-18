@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Generalidades – Natura Docens</title>
+<title>6&nbsp; Reactivo limitante: concepto y cálculo – Natura Docens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../01_Generalidades/02_PlanDeArea.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../06_Decimo/plan-clase-ley-de-senos.html" rel="next">
+<link href="../06_Decimo/escritura_quimica.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,7 +72,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../_styles/headings.css">
 </head>
@@ -87,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -150,13 +183,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Generalidades</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link active">
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
   </div>
 </li>
@@ -179,17 +212,47 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Décimo - Química</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../06_Decimo/reactivo_limite.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/escritura_quimica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-reactivo-limitante.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/estilo-mermaid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-proposicion-negacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></span></a>
   </div>
 </li>
       </ul>
@@ -221,19 +284,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#importante---fundamentación" id="toc-importante---fundamentación" class="nav-link active" data-scroll-target="#importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</a></li>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link" data-scroll-target="#prefacio"><span class="header-section-number">2.2</span> Prefacio</a></li>
-  <li><a href="#cómo-está-organizado-este-libro" id="toc-cómo-está-organizado-este-libro" class="nav-link" data-scroll-target="#cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</a></li>
-  <li><a href="#sugerencias-de-uso" id="toc-sugerencias-de-uso" class="nav-link" data-scroll-target="#sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</a></li>
+  <li><a href="#teoría" id="toc-teoría" class="nav-link active" data-scroll-target="#teoría"><span class="header-section-number">6.1</span> Teoría</a></li>
+  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización"><span class="header-section-number">6.2</span> Contextualización</a>
+  <ul class="collapse">
+  <li><a href="#activación" id="toc-activación" class="nav-link" data-scroll-target="#activación"><span class="header-section-number">6.2.1</span> Activación</a></li>
+  <li><a href="#desarrollo" id="toc-desarrollo" class="nav-link" data-scroll-target="#desarrollo"><span class="header-section-number">6.2.2</span> Desarrollo</a></li>
+  <li><a href="#consolidación" id="toc-consolidación" class="nav-link" data-scroll-target="#consolidación"><span class="header-section-number">6.2.3</span> Consolidación</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-reactivo-limitante.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></h1>
 </div>
 
 
@@ -250,48 +316,136 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Este documento presenta un plan de temas por periodos para el <strong>área de Ciencias Naturales</strong> (Biología, Física y Química), dirigido a docentes, como guía de organización y secuenciación de contenidos durante el año escolar.</p>
-<section id="importante---fundamentación" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</h2>
-<p>En fundamentación se establece el contenido teórico específico y concreto. Acá se establece la información respaldada por libros universitarios, enfocada a la temática específica o artículos de revisión o de investigación. El docente que quiera aportar en la forma de explicar el concepto lo puede realizar en conceptualización. Este documento se actualiza de forma colaborativa. Para facilitar el seguimiento, se recomienda registrar aquí quién realizó cada modificación y qué se cambió (por ejemplo: correcciones de redacción, incorporación de secciones, ajuste de figuras o referencias).</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Fecha</th>
-<th>Usuario</th>
-<th>Cambio realizado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>8-Jun-2026</td>
-<td>Camilo Tayac</td>
-<td>Reactivo Limite</td>
-</tr>
-</tbody>
-</table>
+<section id="teoría" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="teoría"><span class="header-section-number">6.1</span> Teoría</h2>
+<p>Cuando se lleva a cabo una reacción química, los reactivos rara vez están presentes en las proporciones exactas que indica la ecuación balanceada. Por razones prácticas —costo, disponibilidad o rendimiento— se suele añadir un exceso de uno de ellos para asegurar que el otro se convierta por completo en producto. Como consecuencia, un reactivo se consume primero y el otro sobra al final.</p>
+<p>El <strong>reactivo limitante</strong> es aquel que se consume por completo durante la reacción. Una vez que se agota, la reacción se detiene y no puede formarse más producto. La cantidad máxima de producto obtenible depende exclusivamente de él. Los reactivos que quedan sin consumir se denominan <strong>reactivos en exceso</strong>.</p>
+<p>Para identificar cuál es el reactivo limitante se sigue un método general de cuatro pasos. Primero, se verifica que la ecuación química esté <strong>balanceada</strong>; sin coeficientes correctos no es posible establecer relaciones válidas entre reactivos. Segundo, se <strong>convierten a moles</strong> las cantidades de cada reactivo usando su masa molar; la ecuación habla en moles, no en gramos ni en litros. Tercero, se <strong>calcula cuántos moles de producto podría generar cada reactivo</strong> si se consumiera por completo, aplicando la relación molar de la ecuación balanceada. Cuarto, se <strong>comparan</strong> esos resultados: el reactivo que produce la menor cantidad de producto es el <strong>limitante</strong>; el otro es el <strong>exceso</strong>.</p>
+<p>Considérese la síntesis del metanol:</p>
+<p><span class="math display">\[\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}\]</span></p>
+<p>Se dispone de <span class="math inline">\(4 \, \text{mol}\)</span> de <span class="math inline">\(\text{CO}\)</span> y <span class="math inline">\(6 \, \text{mol}\)</span> de <span class="math inline">\(\text{H}_2\)</span>. Aplicando el tercer paso: el <span class="math inline">\(\text{CO}\)</span> podría producir <span class="math inline">\(4 \, \text{mol}\)</span> de <span class="math inline">\(\text{CH}_3\text{OH}\)</span> (relación <span class="math inline">\(1:1\)</span>), mientras que el <span class="math inline">\(\text{H}_2\)</span> produciría solo <span class="math inline">\(3 \, \text{mol}\)</span> (relación <span class="math inline">\(2:1\)</span>). El <span class="math inline">\(\text{H}_2\)</span> es el reactivo limitante porque genera menos producto. El <span class="math inline">\(\text{CO}\)</span> está en exceso y sobra <span class="math inline">\(1 \, \text{mol}\)</span> sin reaccionar.</p>
 </section>
-<section id="prefacio" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="prefacio"><span class="header-section-number">2.2</span> Prefacio</h2>
-<p>Este libro de Ciencias Naturales está diseñado para acompañar el proceso de aprendizaje desde grado sexto hasta grado undécimo, integrando Biología, Física y Química en una ruta progresiva. El material prioriza la comprensión conceptual, el razonamiento científico y la aplicación práctica de los contenidos en contextos escolares.</p>
-<p>La organización de cada unidad busca mantener un equilibrio entre precisión académica y lenguaje accesible. Por esa razón, los temas se presentan de lo general a lo específico, con explicaciones estructuradas, ejemplos guiados y actividades que fortalecen habilidades cognitivas como análisis, interpretación y resolución de problemas.</p>
-<p>El enfoque metodológico combina fundamentación teórica, contextualización didáctica y ejercicios de consolidación. De este modo, el texto puede utilizarse tanto en clase como en trabajo autónomo, procesos de nivelación o preparación de evaluaciones.</p>
+<section id="contextualización" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="contextualización"><span class="header-section-number">6.2</span> Contextualización</h2>
+<section id="activación" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="activación"><span class="header-section-number">6.2.1</span> Activación</h3>
+<p>¿Alguna vez preparaste una receta y descubriste que te faltaba justo uno de los ingredientes? O al revés: te sobró mucho de algo y no supiste cómo usarlo.</p>
+<p>En química ocurre exactamente lo mismo. Cuando mezclas reactivos en el laboratorio, casi nunca están en las cantidades exactas que pide la ecuación. Siempre hay uno que se acaba primero. Ese ingrediente es el que decide cuánto producto puedes obtener.</p>
+<p>En esta parte vas a aprender qué es el <strong>reactivo limitante</strong> y cómo identificarlo con un método de cuatro pasos. Pero no solo vas a seguir los pasos — vas a entender <strong>por qué</strong> se hace cada uno.</p>
 </section>
-<section id="cómo-está-organizado-este-libro" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</h2>
-<p>Cada bloque por grado incluye una secuencia de contenidos por periodos académicos y por área. Dentro de cada tema, se mantiene una estructura consistente para facilitar la lectura:</p>
-<ul>
-<li>presentación del concepto central,</li>
-<li>desarrollo explicativo paso a paso,</li>
-<li>ejemplos de aplicación,</li>
-<li>actividades para fortalecer la comprensión.</li>
-</ul>
+<section id="desarrollo" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="desarrollo"><span class="header-section-number">6.2.2</span> Desarrollo</h3>
+<section id="qué-es-el-reactivo-limitante" class="level4" data-number="6.2.2.1">
+<h4 data-number="6.2.2.1" class="anchored" data-anchor-id="qué-es-el-reactivo-limitante"><span class="header-section-number">6.2.2.1</span> ¿Qué es el reactivo limitante?</h4>
+<p>Imagina que cada sándwich necesita dos rebanadas de pan y una loncha de queso. Tienes diez rebanadas de pan y siete lonchas de queso.</p>
+<blockquote class="blockquote">
+<p>💡 Pregunta: ¿cuántos sándwiches puedes hacer?</p>
+</blockquote>
+<p>La respuesta es cinco. El pan se acaba primero. El pan es el limitante. El queso sobra — es el exceso. Cuando el pan se acaba, no importa cuánto queso quede: no puedes hacer más sándwiches.</p>
+<p>En química pasa igual. El <strong>reactivo limitante</strong> es el reactivo que se consume primero. La reacción se detiene cuando él se agota, y la cantidad de producto que se forma depende de él. Los demás reactivos se llaman <strong>reactivos en exceso</strong> porque están en cantidad mayor de la necesaria.</p>
+<blockquote class="blockquote">
+<p>🧠 Este concepto genera confusión al principio. Es completamente normal. La clave está en entender que el limitante no es necesariamente el que menos masa o moles tiene al inicio. Es el que se acaba primero según la proporción de la ecuación balanceada.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Hasta aquí deberías poder explicar con tus palabras qué es el reactivo limitante y dar un ejemplo cotidiano.</p>
+</blockquote>
 </section>
-<section id="sugerencias-de-uso" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</h2>
-<p>Se recomienda trabajar los contenidos en orden, registrar ideas clave y verificar la comprensión con los ejercicios propuestos. Cuando aparezcan dificultades, conviene retomar los ejemplos y relacionarlos con situaciones del entorno cotidiano.</p>
+<section id="cómo-identificar-el-reactivo-limitante-los-cuatro-pasos" class="level4" data-number="6.2.2.2">
+<h4 data-number="6.2.2.2" class="anchored" data-anchor-id="cómo-identificar-el-reactivo-limitante-los-cuatro-pasos"><span class="header-section-number">6.2.2.2</span> Cómo identificar el reactivo limitante — los cuatro pasos</h4>
+<p>Para identificar el reactivo limitante se usan cuatro pasos. Son siempre los mismos, sin importar la reacción.</p>
+<ol type="1">
+<li><p><strong>Paso 1: Verifica que la ecuación esté balanceada.</strong></p>
+<p>¿Por qué se hace? Porque la ecuación balanceada te dice la proporción exacta en que reaccionan los reactivos. Sin esa proporción no puedes comparar nada. Si la ecuación no está balanceada, ajústala primero antes de continuar.</p></li>
+<li><p><strong>Paso 2: Convierte las cantidades a moles.</strong></p>
+<p>¿Por qué se hace? Porque los coeficientes de la ecuación hablan en moles, no en gramos ni en litros. Necesitas que todo esté en la misma unidad para poder aplicar la relación molar.</p>
+<p>Si te dan la masa en gramos, usas la masa molar de cada sustancia:</p>
+<p><span class="math display">\[n = \frac{m}{M} \tag{2}\]</span></p>
+<p>donde <span class="math inline">\(n\)</span> es la cantidad en moles, <span class="math inline">\(m\)</span> la masa en gramos y <span class="math inline">\(M\)</span> la masa molar en <span class="math inline">\(\text{g/mol}\)</span>.</p></li>
+<li><p><strong>Paso 3: Calcula cuánto producto puede formar cada reactivo.</strong></p>
+<p>¿Por qué se hace? La única forma de saber cuál se acaba primero es ver cuál produce menos producto. Tomas cada reactivo por separado, asumes que se consume por completo, y calculas los moles de producto que se formarían usando la relación molar de la ecuación balanceada.</p>
+<p>El cálculo se desglosa así para cada reactivo:</p>
+<p>3.1. Toma la cantidad en moles del reactivo (del paso 2).</p>
+<p>3.2. Identifica la relación molar entre ese reactivo y el producto usando los coeficientes de la ecuación balanceada.</p>
+<p>3.3. ¿Por qué esa relación? Porque los coeficientes indican cuántos moles de reactivo se necesitan para producir cierta cantidad de producto. Por ejemplo, si el coeficiente del reactivo es <span class="math inline">\(2\)</span> y el del producto es <span class="math inline">\(1\)</span>, se necesitan <span class="math inline">\(2 \, \text{mol}\)</span> de reactivo por cada <span class="math inline">\(1 \, \text{mol}\)</span> de producto.</p>
+<p>3.4. Multiplica los moles del reactivo por la relación molar:</p>
+<p><span class="math display">\[n_{\text{producto}} = n_{\text{reactivo}} \times \frac{\text{coeficiente del producto}}{\text{coeficiente del reactivo}} \tag{3}\]</span></p>
+<p>3.5. Desarrolla la operación. Si obtienes una fracción, déjala expresada o conviértela a decimal.</p>
+<p>3.6. El resultado son los moles de producto que ese reactivo puede generar si se consumiera por completo.</p></li>
+<li><p><strong>Paso 4: Compara los resultados.</strong></p>
+<p>¿Por qué se hace? El reactivo que da menos producto es el que se agota primero. Ese es el <strong>reactivo limitante</strong>. El otro está en <strong>exceso</strong>.</p>
+<p>Si ambos dieran exactamente la misma cantidad, significa que están en proporción estequiométrica exacta y no hay limitante ni exceso — ambos se consumen por completo.</p></li>
+</ol>
+<p>El siguiente diagrama resume el proceso completo:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A([Inicio]):::neutro --&gt; B[Verificar ecuación balanceada]:::principal
+    B --&gt; C[Convertir a moles]:::principal
+    C --&gt; D[Calcular moles de producto&lt;br&gt;por cada reactivo]:::principal
+    D --&gt; E{"¿Cuál da&lt;br&gt;menos producto?"}:::decision
+    E --&gt;|Ese reactivo| F([Es el limitante]):::resultado
+    E --&gt;|El otro| G([Es el exceso]):::resultado
+
+    classDef neutro fill:#95A5A6,stroke:#717D7E,color:#fff
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Hasta aquí deberías poder enumerar los cuatro pasos y explicar por qué se hace cada uno.</p>
+</blockquote>
+</section>
+<section id="aplicación-del-método-con-un-ejemplo-numérico" class="level4" data-number="6.2.2.3">
+<h4 data-number="6.2.2.3" class="anchored" data-anchor-id="aplicación-del-método-con-un-ejemplo-numérico"><span class="header-section-number">6.2.2.3</span> Aplicación del método con un ejemplo numérico</h4>
+<p>Apliquemos los cuatro pasos a un caso concreto.</p>
+<p><strong>Reacción:</strong> la síntesis de metanol</p>
+<p><span class="math display">\[\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}\]</span></p>
+<p><strong>Datos iniciales:</strong> se tienen <span class="math inline">\(4 \, \text{mol}\)</span> de <span class="math inline">\(\text{CO}\)</span> y <span class="math inline">\(6 \, \text{mol}\)</span> de <span class="math inline">\(\text{H}_2\)</span>.</p>
+<ol type="1">
+<li><p><strong>Paso 1: Verificar ecuación balanceada.</strong> La ecuación <span class="math inline">\((1)\)</span> ya está balanceada. Hay <span class="math inline">\(1\)</span> átomo de C, <span class="math inline">\(1\)</span> de O y <span class="math inline">\(4\)</span> de H en cada lado. Si no lo estuviera, se balancearía antes de seguir.</p></li>
+<li><p><strong>Paso 2: Convertir a moles.</strong> Ambos reactivos ya están expresados en moles. No es necesario convertir.</p></li>
+<li><p><strong>Paso 3: Calcular producto por cada reactivo.</strong></p>
+<p><strong>Para el <span class="math inline">\(\text{CO}\)</span>:</strong></p>
+<p>3.1. Moles de <span class="math inline">\(\text{CO}\)</span> disponibles: <span class="math inline">\(4 \, \text{mol}\)</span>.</p>
+<p>3.2. Relación molar: según <span class="math inline">\((1)\)</span>, <span class="math inline">\(1 \, \text{mol} \, \text{CO} : 1 \, \text{mol} \, \text{CH}_3\text{OH}\)</span>.</p>
+<p>3.3. ¿Por qué <span class="math inline">\(1:1\)</span>? Porque el coeficiente del <span class="math inline">\(\text{CO}\)</span> y del <span class="math inline">\(\text{CH}_3\text{OH}\)</span> en la ecuación balanceada es <span class="math inline">\(1\)</span> para ambos.</p>
+<p>3.4. Cálculo:</p>
+<p><span class="math display">\[n_{\text{CH}_3\text{OH}} = 4 \, \text{mol CO} \times \frac{1 \, \text{mol CH}_3\text{OH}}{1 \, \text{mol CO}}\]</span></p>
+<p>3.5. Desarrollo: <span class="math inline">\(4 \times 1 / 1 = 4\)</span>.</p>
+<p>3.6. Resultado: <span class="math inline">\(4 \, \text{mol}\)</span> de <span class="math inline">\(\text{CH}_3\text{OH}\)</span>.</p>
+<p><strong>Para el <span class="math inline">\(\text{H}_2\)</span>:</strong></p>
+<p>3.1. Moles de <span class="math inline">\(\text{H}_2\)</span> disponibles: <span class="math inline">\(6 \, \text{mol}\)</span>.</p>
+<p>3.2. Relación molar: según <span class="math inline">\((1)\)</span>, <span class="math inline">\(2 \, \text{mol} \, \text{H}_2 : 1 \, \text{mol} \, \text{CH}_3\text{OH}\)</span>.</p>
+<p>3.3. ¿Por qué <span class="math inline">\(2:1\)</span>? Porque el coeficiente del <span class="math inline">\(\text{H}_2\)</span> es <span class="math inline">\(2\)</span> y el del <span class="math inline">\(\text{CH}_3\text{OH}\)</span> es <span class="math inline">\(1\)</span>. Se necesitan <span class="math inline">\(2\)</span> moles de <span class="math inline">\(\text{H}_2\)</span> por cada mol de metanol.</p>
+<p>3.4. Cálculo:</p>
+<p><span class="math display">\[n_{\text{CH}_3\text{OH}} = 6 \, \text{mol H}_2 \times \frac{1 \, \text{mol CH}_3\text{OH}}{2 \, \text{mol H}_2}\]</span></p>
+<p>3.5. Desarrollo: <span class="math inline">\(6 \times 1 / 2 = 3\)</span>.</p>
+<p>3.6. Resultado: <span class="math inline">\(3 \, \text{mol}\)</span> de <span class="math inline">\(\text{CH}_3\text{OH}\)</span>.</p></li>
+<li><p><strong>Paso 4: Comparar.</strong> El <span class="math inline">\(\text{CO}\)</span> puede producir <span class="math inline">\(4 \, \text{mol}\)</span> de metanol. El <span class="math inline">\(\text{H}_2\)</span> puede producir solo <span class="math inline">\(3 \, \text{mol}\)</span>. El <span class="math inline">\(\text{H}_2\)</span> da menos producto, por lo tanto <strong>el <span class="math inline">\(\text{H}_2\)</span> es el reactivo limitante</strong>. El <span class="math inline">\(\text{CO}\)</span> es el reactivo en exceso y sobra <span class="math inline">\(1 \, \text{mol}\)</span> sin reaccionar.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>⚠️ Error frecuente: pensar que el limitante es el que menos moles tiene al inicio. En este ejemplo hay <span class="math inline">\(4 \, \text{mol}\)</span> de <span class="math inline">\(\text{CO}\)</span> y <span class="math inline">\(6 \, \text{mol}\)</span> de <span class="math inline">\(\text{H}_2\)</span>. El <span class="math inline">\(\text{H}_2\)</span> tiene más moles que el <span class="math inline">\(\text{CO}\)</span>, ¡pero es el limitante! ¿Por qué? Porque la ecuación pide <span class="math inline">\(2\)</span> moles de <span class="math inline">\(\text{H}_2\)</span> por cada mol de <span class="math inline">\(\text{CO}\)</span>, y esa proporción hace que rinda menos producto. Todo depende de los coeficientes, no de las cantidades absolutas.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Hasta aquí deberías poder resolver un problema de reactivo limitante: identificar cuál es, explicar por qué, y determinar cuánto producto se puede formar.</p>
+</blockquote>
+</section>
+</section>
+<section id="consolidación" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="consolidación"><span class="header-section-number">6.2.3</span> Consolidación</h3>
+<p>En esta parte aprendiste que el <strong>reactivo limitante</strong> es el reactivo que se consume primero y determina la cantidad máxima de producto que puede formarse. Para identificarlo usas cuatro pasos: verificar la ecuación, convertir las cantidades a moles, calcular cuánto producto generaría cada reactivo si se consumiera por completo, y comparar los resultados. El que produce menos es el limitante.</p>
+<p>Ahora puedes resolver problemas sencillos de reactivo limitante. Cuando te enfrentes a uno nuevo, recuerda que la clave está en comparar las cantidades de producto que cada reactivo puede generar según la ecuación balanceada — ese es el núcleo del método. Este conocimiento es la base para cálculos posteriores como el rendimiento de una reacción o la determinación del reactivo en exceso sobrante.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -869,13 +1023,13 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Estructura del libro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span>
+      <a href="../06_Decimo/escritura_quimica.html" class="pagination-link" aria-label="Escritura de ecuaciones químicas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../01_Generalidades/02_PlanDeArea.html" class="pagination-link" aria-label="Plan de Área de Ciencias Naturales">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="pagination-link" aria-label="Ley de senos — plan de clase">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -887,7 +1041,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2025, Camilo Tayac</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-reactivo-limitante.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

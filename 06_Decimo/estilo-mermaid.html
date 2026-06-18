@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Generalidades – Natura Docens</title>
+<title>8&nbsp; Estilo diagramas Mermaid – Natura Docens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../01_Generalidades/02_PlanDeArea.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../06_Decimo/plan-clase-proposicion-negacion.html" rel="next">
+<link href="../06_Decimo/plan-clase-ley-de-senos.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,6 +72,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../_styles/headings.css">
@@ -87,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -150,13 +154,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Generalidades</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link active">
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
   </div>
 </li>
@@ -179,17 +183,47 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Décimo - Química</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../06_Decimo/reactivo_limite.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/escritura_quimica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-reactivo-limitante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/estilo-mermaid.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-proposicion-negacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></span></a>
   </div>
 </li>
       </ul>
@@ -221,19 +255,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#importante---fundamentación" id="toc-importante---fundamentación" class="nav-link active" data-scroll-target="#importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</a></li>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link" data-scroll-target="#prefacio"><span class="header-section-number">2.2</span> Prefacio</a></li>
-  <li><a href="#cómo-está-organizado-este-libro" id="toc-cómo-está-organizado-este-libro" class="nav-link" data-scroll-target="#cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</a></li>
-  <li><a href="#sugerencias-de-uso" id="toc-sugerencias-de-uso" class="nav-link" data-scroll-target="#sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</a></li>
+  <li><a href="#cuándo-usar-un-diagrama" id="toc-cuándo-usar-un-diagrama" class="nav-link active" data-scroll-target="#cuándo-usar-un-diagrama"><span class="header-section-number">8.0.1</span> Cuándo usar un diagrama</a></li>
+  <li><a href="#tabla-resumen-todos-los-tipos-disponibles" id="toc-tabla-resumen-todos-los-tipos-disponibles" class="nav-link" data-scroll-target="#tabla-resumen-todos-los-tipos-disponibles"><span class="header-section-number">8.0.2</span> Tabla resumen — todos los tipos disponibles</a></li>
+  <li><a href="#dirección-del-flowchart" id="toc-dirección-del-flowchart" class="nav-link" data-scroll-target="#dirección-del-flowchart"><span class="header-section-number">8.0.3</span> Dirección del flowchart</a></li>
+  <li><a href="#formas-de-nodos-cuándo-usar-cada-una" id="toc-formas-de-nodos-cuándo-usar-cada-una" class="nav-link" data-scroll-target="#formas-de-nodos-cuándo-usar-cada-una"><span class="header-section-number">8.0.4</span> Formas de nodos — cuándo usar cada una</a></li>
+  <li><a href="#tipos-de-conexiones" id="toc-tipos-de-conexiones" class="nav-link" data-scroll-target="#tipos-de-conexiones"><span class="header-section-number">8.0.5</span> Tipos de conexiones</a></li>
+  <li><a href="#longitud-de-conexiones" id="toc-longitud-de-conexiones" class="nav-link" data-scroll-target="#longitud-de-conexiones"><span class="header-section-number">8.0.6</span> Longitud de conexiones</a></li>
+  <li><a href="#subgrafos-agrupar-conceptos-relacionados" id="toc-subgrafos-agrupar-conceptos-relacionados" class="nav-link" data-scroll-target="#subgrafos-agrupar-conceptos-relacionados"><span class="header-section-number">8.0.7</span> Subgrafos — agrupar conceptos relacionados</a></li>
+  <li><a href="#estilos-visuales-con-classdef" id="toc-estilos-visuales-con-classdef" class="nav-link" data-scroll-target="#estilos-visuales-con-classdef"><span class="header-section-number">8.0.8</span> Estilos visuales con classDef</a></li>
+  <li><a href="#patrones-completos-por-tipo-de-contenido" id="toc-patrones-completos-por-tipo-de-contenido" class="nav-link" data-scroll-target="#patrones-completos-por-tipo-de-contenido"><span class="header-section-number">8.0.9</span> Patrones completos por tipo de contenido</a></li>
+  <li><a href="#mindmap-mapa-mental" id="toc-mindmap-mapa-mental" class="nav-link" data-scroll-target="#mindmap-mapa-mental"><span class="header-section-number">8.0.10</span> Mindmap — mapa mental</a></li>
+  <li><a href="#timeline-línea-de-tiempo" id="toc-timeline-línea-de-tiempo" class="nav-link" data-scroll-target="#timeline-línea-de-tiempo"><span class="header-section-number">8.0.11</span> Timeline — línea de tiempo</a></li>
+  <li><a href="#sequence-diagram-interacción-entre-elementos" id="toc-sequence-diagram-interacción-entre-elementos" class="nav-link" data-scroll-target="#sequence-diagram-interacción-entre-elementos"><span class="header-section-number">8.0.12</span> Sequence diagram — interacción entre elementos</a></li>
+  <li><a href="#journey-recorrido-o-experiencia-del-estudiante" id="toc-journey-recorrido-o-experiencia-del-estudiante" class="nav-link" data-scroll-target="#journey-recorrido-o-experiencia-del-estudiante"><span class="header-section-number">8.0.13</span> Journey — recorrido o experiencia del estudiante</a></li>
+  <li><a href="#pie-chart-proporciones-y-porcentajes" id="toc-pie-chart-proporciones-y-porcentajes" class="nav-link" data-scroll-target="#pie-chart-proporciones-y-porcentajes"><span class="header-section-number">8.0.14</span> Pie chart — proporciones y porcentajes</a></li>
+  <li><a href="#quadrant-chart-clasificación-en-cuadrantes" id="toc-quadrant-chart-clasificación-en-cuadrantes" class="nav-link" data-scroll-target="#quadrant-chart-clasificación-en-cuadrantes"><span class="header-section-number">8.0.15</span> Quadrant chart — clasificación en cuadrantes</a></li>
+  <li><a href="#xy-chart-datos-numéricos-con-barras-y-líneas" id="toc-xy-chart-datos-numéricos-con-barras-y-líneas" class="nav-link" data-scroll-target="#xy-chart-datos-numéricos-con-barras-y-líneas"><span class="header-section-number">8.0.16</span> XY Chart — datos numéricos con barras y líneas</a></li>
+  <li><a href="#gitgraph-flujos-con-ramificaciones-o-caminos-alternativos" id="toc-gitgraph-flujos-con-ramificaciones-o-caminos-alternativos" class="nav-link" data-scroll-target="#gitgraph-flujos-con-ramificaciones-o-caminos-alternativos"><span class="header-section-number">8.0.17</span> GitGraph — flujos con ramificaciones o caminos alternativos</a></li>
+  <li><a href="#texto-en-nodos" id="toc-texto-en-nodos" class="nav-link" data-scroll-target="#texto-en-nodos"><span class="header-section-number">8.0.18</span> Texto en nodos</a></li>
+  <li><a href="#gotchas" id="toc-gotchas" class="nav-link" data-scroll-target="#gotchas"><span class="header-section-number">8.0.19</span> Gotchas</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/estilo-mermaid.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></h1>
 </div>
 
 
@@ -250,46 +299,603 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Este documento presenta un plan de temas por periodos para el <strong>área de Ciencias Naturales</strong> (Biología, Física y Química), dirigido a docentes, como guía de organización y secuenciación de contenidos durante el año escolar.</p>
-<section id="importante---fundamentación" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</h2>
-<p>En fundamentación se establece el contenido teórico específico y concreto. Acá se establece la información respaldada por libros universitarios, enfocada a la temática específica o artículos de revisión o de investigación. El docente que quiera aportar en la forma de explicar el concepto lo puede realizar en conceptualización. Este documento se actualiza de forma colaborativa. Para facilitar el seguimiento, se recomienda registrar aquí quién realizó cada modificación y qué se cambió (por ejemplo: correcciones de redacción, incorporación de secciones, ajuste de figuras o referencias).</p>
+<p>En Quarto los diagramas se escriben con <code>```{mermaid}</code> (no <code>```mermaid</code>). Los bloques funcionales renderizan automáticamente; los bloques con <code>eval: false</code> muestran el código sin renderizar (útil para ejemplos de sintaxis).</p>
+<section id="cuándo-usar-un-diagrama" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="cuándo-usar-un-diagrama"><span class="header-section-number">8.0.1</span> Cuándo usar un diagrama</h3>
+<ul>
+<li>El concepto tiene partes que se relacionan entre sí</li>
+<li>Hay un flujo o secuencia de pasos con decisiones</li>
+<li>Hay una jerarquía o clasificación</li>
+<li>El texto solo no logra que el estudiante visualice la idea</li>
+<li>No usar diagramas para decorar — solo cuando aporten comprensión real</li>
+</ul>
+<hr>
+</section>
+<section id="tabla-resumen-todos-los-tipos-disponibles" class="level3" data-number="8.0.2">
+<h3 data-number="8.0.2" class="anchored" data-anchor-id="tabla-resumen-todos-los-tipos-disponibles"><span class="header-section-number">8.0.2</span> Tabla resumen — todos los tipos disponibles</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 30%">
+<col style="width: 55%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Fecha</th>
-<th>Usuario</th>
-<th>Cambio realizado</th>
+<th>Tipo</th>
+<th>Declaración</th>
+<th>Mejor para</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>8-Jun-2026</td>
-<td>Camilo Tayac</td>
-<td>Reactivo Limite</td>
+<td>Flowchart</td>
+<td><code>flowchart TD</code> / <code>LR</code></td>
+<td>Procesos, jerarquías, decisiones</td>
+</tr>
+<tr class="even">
+<td>Mindmap</td>
+<td><code>mindmap</code></td>
+<td>Mapa mental de un concepto</td>
+</tr>
+<tr class="odd">
+<td>Timeline</td>
+<td><code>timeline</code></td>
+<td>Evolución histórica o etapas</td>
+</tr>
+<tr class="even">
+<td>Sequence</td>
+<td><code>sequenceDiagram</code></td>
+<td>Interacción entre partes en el tiempo</td>
+</tr>
+<tr class="odd">
+<td>Journey</td>
+<td><code>journey</code></td>
+<td>Recorrido o experiencia del estudiante</td>
+</tr>
+<tr class="even">
+<td>Pie</td>
+<td><code>pie</code></td>
+<td>Proporciones de un todo</td>
+</tr>
+<tr class="odd">
+<td>Quadrant</td>
+<td><code>quadrantChart</code></td>
+<td>Clasificación en dos dimensiones</td>
+</tr>
+<tr class="even">
+<td>XY Chart</td>
+<td><code>xychart-beta</code></td>
+<td>Datos numéricos con barras y líneas</td>
+</tr>
+<tr class="odd">
+<td>GitGraph</td>
+<td><code>gitGraph</code></td>
+<td>Ramificaciones o caminos alternativos</td>
+</tr>
+<tr class="even">
+<td>State</td>
+<td><code>stateDiagram-v2</code></td>
+<td>Estados y transiciones de un sistema</td>
 </tr>
 </tbody>
 </table>
+<p>Para contenido educativo los más útiles son: <code>flowchart</code>, <code>mindmap</code>, <code>timeline</code>, <code>sequenceDiagram</code>, <code>journey</code>, <code>pie</code> y <code>quadrantChart</code>.</p>
+<hr>
 </section>
-<section id="prefacio" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="prefacio"><span class="header-section-number">2.2</span> Prefacio</h2>
-<p>Este libro de Ciencias Naturales está diseñado para acompañar el proceso de aprendizaje desde grado sexto hasta grado undécimo, integrando Biología, Física y Química en una ruta progresiva. El material prioriza la comprensión conceptual, el razonamiento científico y la aplicación práctica de los contenidos en contextos escolares.</p>
-<p>La organización de cada unidad busca mantener un equilibrio entre precisión académica y lenguaje accesible. Por esa razón, los temas se presentan de lo general a lo específico, con explicaciones estructuradas, ejemplos guiados y actividades que fortalecen habilidades cognitivas como análisis, interpretación y resolución de problemas.</p>
-<p>El enfoque metodológico combina fundamentación teórica, contextualización didáctica y ejercicios de consolidación. De este modo, el texto puede utilizarse tanto en clase como en trabajo autónomo, procesos de nivelación o preparación de evaluaciones.</p>
+<section id="dirección-del-flowchart" class="level3" data-number="8.0.3">
+<h3 data-number="8.0.3" class="anchored" data-anchor-id="dirección-del-flowchart"><span class="header-section-number">8.0.3</span> Dirección del flowchart</h3>
+<div class="cell" data-eval="false" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Regla: usar <code>TD</code> para jerarquías y clasificaciones, <code>LR</code> para procesos y secuencias encadenadas.</p>
+<hr>
 </section>
-<section id="cómo-está-organizado-este-libro" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</h2>
-<p>Cada bloque por grado incluye una secuencia de contenidos por periodos académicos y por área. Dentro de cada tema, se mantiene una estructura consistente para facilitar la lectura:</p>
+<section id="formas-de-nodos-cuándo-usar-cada-una" class="level3" data-number="8.0.4">
+<h3 data-number="8.0.4" class="anchored" data-anchor-id="formas-de-nodos-cuándo-usar-cada-una"><span class="header-section-number">8.0.4</span> Formas de nodos — cuándo usar cada una</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Forma</th>
+<th>Sintaxis</th>
+<th>Usar para</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rectángulo</td>
+<td><code>A[texto]</code></td>
+<td>Proceso o paso general</td>
+</tr>
+<tr class="even">
+<td>Redondeado</td>
+<td><code>A(texto)</code></td>
+<td>Inicio, evento o concepto suave</td>
+</tr>
+<tr class="odd">
+<td>Rombo</td>
+<td><code>A{texto}</code></td>
+<td>Decisión o condición</td>
+</tr>
+<tr class="even">
+<td>Círculo</td>
+<td><code>A((texto))</code></td>
+<td>Punto de inicio o fin</td>
+</tr>
+<tr class="odd">
+<td>Estadio</td>
+<td><code>A([texto])</code></td>
+<td>Terminal o resultado final</td>
+</tr>
+<tr class="even">
+<td>Hexágono</td>
+<td><code>A{{texto}}</code></td>
+<td>Condición de preparación</td>
+</tr>
+<tr class="odd">
+<td>Cilindro</td>
+<td><code>A[(texto)]</code></td>
+<td>Datos o almacenamiento</td>
+</tr>
+<tr class="even">
+<td>Asimétrico</td>
+<td><code>A&gt;texto]</code></td>
+<td>Anotación o aclaración</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="tipos-de-conexiones" class="level3" data-number="8.0.5">
+<h3 data-number="8.0.5" class="anchored" data-anchor-id="tipos-de-conexiones"><span class="header-section-number">8.0.5</span> Tipos de conexiones</h3>
+<div class="cell" data-eval="false" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="longitud-de-conexiones" class="level3" data-number="8.0.6">
+<h3 data-number="8.0.6" class="anchored" data-anchor-id="longitud-de-conexiones"><span class="header-section-number">8.0.6</span> Longitud de conexiones</h3>
+<p>Alargar una conexión para mejorar la legibilidad:</p>
+<div class="cell" data-eval="false" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="subgrafos-agrupar-conceptos-relacionados" class="level3" data-number="8.0.7">
+<h3 data-number="8.0.7" class="anchored" data-anchor-id="subgrafos-agrupar-conceptos-relacionados"><span class="header-section-number">8.0.7</span> Subgrafos — agrupar conceptos relacionados</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    subgraph Fase1[Nombre de la fase]
+        A[Elemento 1]
+        B[Elemento 2]
+    end
+    subgraph Fase2[Nombre de la fase]
+        C[Elemento 3]
+    end
+    Fase1 --&gt; Fase2
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar cuando hay categorías o fases claramente separadas.</p>
+<hr>
+</section>
+<section id="estilos-visuales-con-classdef" class="level3" data-number="8.0.8">
+<h3 data-number="8.0.8" class="anchored" data-anchor-id="estilos-visuales-con-classdef"><span class="header-section-number">8.0.8</span> Estilos visuales con classDef</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Concepto principal]:::principal
+    B[Concepto secundario]:::secundario
+    C{Decisión}:::decision
+    D([Resultado]):::resultado
+
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Paleta recomendada para contenido educativo:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tipo de nodo</th>
+<th>Fill</th>
+<th>Stroke</th>
+<th>Texto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Concepto principal</td>
+<td><code>#4A90D9</code></td>
+<td><code>#2C5F8A</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr class="even">
+<td>Concepto secundario</td>
+<td><code>#7EC8A4</code></td>
+<td><code>#4A9B6F</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr class="odd">
+<td>Decisión / condición</td>
+<td><code>#F5A623</code></td>
+<td><code>#C07D0E</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr class="even">
+<td>Advertencia / error</td>
+<td><code>#E74C3C</code></td>
+<td><code>#A93226</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr class="odd">
+<td>Resultado / conclusión</td>
+<td><code>#9B59B6</code></td>
+<td><code>#6C3483</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr class="even">
+<td>Neutro / apoyo</td>
+<td><code>#95A5A6</code></td>
+<td><code>#717D7E</code></td>
+<td><code>#fff</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="patrones-completos-por-tipo-de-contenido" class="level3" data-number="8.0.9">
+<h3 data-number="8.0.9" class="anchored" data-anchor-id="patrones-completos-por-tipo-de-contenido"><span class="header-section-number">8.0.9</span> Patrones completos por tipo de contenido</h3>
+<p><strong>Jerarquía o clasificación:</strong></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Concepto central]:::principal
+    A --&gt; B[Categoría 1]:::secundario
+    A --&gt; C[Categoría 2]:::secundario
+    B --&gt; D[Elemento]
+    B --&gt; E[Elemento]
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Proceso con decisión:</strong></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A([Inicio]):::neutro --&gt; B[Paso 1]:::principal
+    B --&gt; C[Paso 2]:::principal
+    C --&gt; D{¿Condición?}:::decision
+    D --&gt;|Sí| E([Resultado A]):::resultado
+    D --&gt;|No| F([Resultado B]):::resultado
+    classDef neutro fill:#95A5A6,stroke:#717D7E,color:#fff
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Relación entre conceptos:</strong></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Concepto A]:::principal
+    B[Concepto B]:::principal
+    C[Concepto C]:::secundario
+    A --&gt;|genera| B
+    B --&gt;|depende de| C
+    A -.-&gt;|relacionado con| C
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Proceso cíclico:</strong></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Paso 1]:::principal --&gt; B[Paso 2]:::principal
+    B --&gt; C[Paso 3]:::principal
+    C --&gt; D{¿Completo?}:::decision
+    D --&gt;|No| A
+    D --&gt;|Sí| E([Fin]):::resultado
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="mindmap-mapa-mental" class="level3" data-number="8.0.10">
+<h3 data-number="8.0.10" class="anchored" data-anchor-id="mindmap-mapa-mental"><span class="header-section-number">8.0.10</span> Mindmap — mapa mental</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">mindmap
+  root((Concepto central))
+    Rama 1
+      Subelemento 1
+      Subelemento 2
+    Rama 2
+      Subelemento 3
+    Rama 3
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar la estructura de un tema con sus subtemas. No soporta <code>classDef</code> — usar cuando la estructura importa más que el color.</p>
+<hr>
+</section>
+<section id="timeline-línea-de-tiempo" class="level3" data-number="8.0.11">
+<h3 data-number="8.0.11" class="anchored" data-anchor-id="timeline-línea-de-tiempo"><span class="header-section-number">8.0.11</span> Timeline — línea de tiempo</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">timeline
+    title Historia o evolución del concepto
+    Etapa 1 : Descripción breve
+    Etapa 2 : Descripción breve
+    Etapa 3 : Descripción breve
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar evolución histórica, fases de un proceso o etapas de desarrollo. No soporta <code>classDef</code>.</p>
+<hr>
+</section>
+<section id="sequence-diagram-interacción-entre-elementos" class="level3" data-number="8.0.12">
+<h3 data-number="8.0.12" class="anchored" data-anchor-id="sequence-diagram-interacción-entre-elementos"><span class="header-section-number">8.0.12</span> Sequence diagram — interacción entre elementos</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    actor Estudiante
+    participant Sistema
+    participant Resultado
+
+    Estudiante-&gt;&gt;Sistema: acción o entrada
+    Sistema--&gt;&gt;Estudiante: respuesta
+    Sistema-&gt;&gt;Resultado: produce
+    Resultado--&gt;&gt;Estudiante: entrega
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar cómo interactúan partes de un sistema o los pasos de un proceso con actores.</p>
+<hr>
+</section>
+<section id="journey-recorrido-o-experiencia-del-estudiante" class="level3" data-number="8.0.13">
+<h3 data-number="8.0.13" class="anchored" data-anchor-id="journey-recorrido-o-experiencia-del-estudiante"><span class="header-section-number">8.0.13</span> Journey — recorrido o experiencia del estudiante</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">journey
+    title Recorrido de aprendizaje del concepto
+    section Exploración
+      Lectura inicial: 5: Estudiante
+      Identificar conceptos: 3: Estudiante
+    section Comprensión
+      Relacionar con lo conocido: 4: Estudiante
+      Resolver dudas: 2: Estudiante, Docente
+    section Aplicación
+      Ejercicio práctico: 4: Estudiante
+      Autoevaluación: 5: Estudiante
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>La escala es de 1 a 5 — representa qué tan fácil o satisfactoria es cada etapa para el estudiante. Usar para mostrar el recorrido de aprendizaje de un tema o proceso.</p>
+<hr>
+</section>
+<section id="pie-chart-proporciones-y-porcentajes" class="level3" data-number="8.0.14">
+<h3 data-number="8.0.14" class="anchored" data-anchor-id="pie-chart-proporciones-y-porcentajes"><span class="header-section-number">8.0.14</span> Pie chart — proporciones y porcentajes</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">pie title ¿Qué componentes tiene la fotosíntesis?
+    "Luz solar" : 45
+    "Agua" : 30
+    "CO2" : 25
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar distribución de partes de un todo. El <code>title</code> es obligatorio para que el estudiante entienda qué representa el gráfico.</p>
+<hr>
+</section>
+<section id="quadrant-chart-clasificación-en-cuadrantes" class="level3" data-number="8.0.15">
+<h3 data-number="8.0.15" class="anchored" data-anchor-id="quadrant-chart-clasificación-en-cuadrantes"><span class="header-section-number">8.0.15</span> Quadrant chart — clasificación en cuadrantes</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">quadrantChart
+    title Clasificación de conceptos por complejidad y frecuencia
+    x-axis Baja frecuencia --&gt; Alta frecuencia
+    y-axis Baja complejidad --&gt; Alta complejidad
+    quadrant-1 Dominar primero
+    quadrant-2 Aprender con apoyo
+    quadrant-3 Revisar ocasionalmente
+    quadrant-4 Practicar constantemente
+    Concepto A: [0.3, 0.6]
+    Concepto B: [0.7, 0.8]
+    Concepto C: [0.5, 0.3]
+    Concepto D: [0.8, 0.4]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para comparar elementos según dos dimensiones simultáneamente. Los ejes deben estar claramente etiquetados con términos que el estudiante entienda. Los valores van de 0 a 1 en ambos ejes.</p>
+<hr>
+</section>
+<section id="xy-chart-datos-numéricos-con-barras-y-líneas" class="level3" data-number="8.0.16">
+<h3 data-number="8.0.16" class="anchored" data-anchor-id="xy-chart-datos-numéricos-con-barras-y-líneas"><span class="header-section-number">8.0.16</span> XY Chart — datos numéricos con barras y líneas</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">xychart-beta
+    title "Evolución del rendimiento por período"
+    x-axis [período-1, período-2, período-3, período-4, período-5, período-6]
+    y-axis "Puntaje" 0 --&gt; 100
+    bar [45, 60, 70, 75, 85, 90]
+    line [45, 60, 70, 75, 85, 90]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar evolución de datos numéricos a lo largo del tiempo o fases. La <code>line</code> encima de la <code>bar</code> ayuda a visualizar la tendencia. El <code>title</code> y las etiquetas de los ejes son obligatorios.</p>
+<hr>
+</section>
+<section id="gitgraph-flujos-con-ramificaciones-o-caminos-alternativos" class="level3" data-number="8.0.17">
+<h3 data-number="8.0.17" class="anchored" data-anchor-id="gitgraph-flujos-con-ramificaciones-o-caminos-alternativos"><span class="header-section-number">8.0.17</span> GitGraph — flujos con ramificaciones o caminos alternativos</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">gitGraph:
+    commit "Estado inicial"
+    branch proceso-alternativo
+    checkout proceso-alternativo
+    commit id:"variante-1"
+    commit tag:"punto clave"
+    checkout main
+    commit type: HIGHLIGHT
+    commit
+    merge proceso-alternativo
+    commit
+    branch resultado-final
+    commit
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Usar para mostrar ramificaciones de un proceso, versiones de un concepto o caminos alternativos que luego convergen.</p>
+<p>Tipos de commit disponibles:</p>
 <ul>
-<li>presentación del concepto central,</li>
-<li>desarrollo explicativo paso a paso,</li>
-<li>ejemplos de aplicación,</li>
-<li>actividades para fortalecer la comprensión.</li>
+<li><code>NORMAL</code> — paso estándar (default)</li>
+<li><code>HIGHLIGHT</code> — paso importante o crítico</li>
+<li><code>REVERSE</code> — paso que revierte algo</li>
 </ul>
+<hr>
 </section>
-<section id="sugerencias-de-uso" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</h2>
-<p>Se recomienda trabajar los contenidos en orden, registrar ideas clave y verificar la comprensión con los ejercicios propuestos. Cuando aparezcan dificultades, conviene retomar los ejemplos y relacionarlos con situaciones del entorno cotidiano.</p>
+<section id="texto-en-nodos" class="level3" data-number="8.0.18">
+<h3 data-number="8.0.18" class="anchored" data-anchor-id="texto-en-nodos"><span class="header-section-number">8.0.18</span> Texto en nodos</h3>
+<ul>
+<li>Máximo 5 palabras por nodo</li>
+<li>Sin abreviaciones</li>
+<li>Si el texto es largo usar comillas: <code>A["texto más largo aquí"]</code></li>
+<li>Para caracteres especiales usar comillas: <code>A["¿Qué es la energía?"]</code></li>
+<li>Para negrita en nodo usar markdown strings: <code>A["\</code><strong>texto</strong>`“]`</li>
+</ul>
+<hr>
+</section>
+<section id="gotchas" class="level3" data-number="8.0.19">
+<h3 data-number="8.0.19" class="anchored" data-anchor-id="gotchas"><span class="header-section-number">8.0.19</span> Gotchas</h3>
+<ul>
+<li>No usar <code>end</code> en minúscula dentro de un nodo — rompe el diagrama; usar <code>End</code> o <code>END</code></li>
+<li>No iniciar un nodo con <code>o</code> o <code>x</code> sin espacio previo — genera conexiones circulares o cruzadas no deseadas</li>
+<li>Los comentarios van con <code>%%</code> al inicio de la línea</li>
+<li>No aplicar estilos con CSS externo — usar siempre <code>classDef</code> dentro del diagrama</li>
+<li><code>mindmap</code> y <code>timeline</code> no soportan <code>classDef</code> — usarlos solo cuando la estructura importa más que el color</li>
+<li>Un diagrama por concepto — si se necesitan más, dividir en secciones separadas con texto entre ellas</li>
+<li>El diagrama va siempre después del párrafo que lo introduce, nunca antes</li>
+<li><code>xychart-beta</code> aún es experimental — verificar que el renderizador lo soporte antes de usarlo</li>
+</ul>
 
 
 </section>
@@ -869,13 +1475,13 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Estructura del libro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span>
+      <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="pagination-link" aria-label="Ley de senos — plan de clase">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../01_Generalidades/02_PlanDeArea.html" class="pagination-link" aria-label="Plan de Área de Ciencias Naturales">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../06_Decimo/plan-clase-proposicion-negacion.html" class="pagination-link" aria-label="Proposición y su negación">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -887,7 +1493,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2025, Camilo Tayac</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/estilo-mermaid.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Generalidades – Natura Docens</title>
+<title>7&nbsp; Ley de senos — plan de clase – Natura Docens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../01_Generalidades/02_PlanDeArea.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../06_Decimo/estilo-mermaid.html" rel="next">
+<link href="../06_Decimo/plan-clase-reactivo-limitante.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../_styles/headings.css">
 </head>
@@ -87,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -150,13 +179,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Generalidades</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link active">
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
   </div>
 </li>
@@ -179,17 +208,47 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Décimo - Química</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../06_Decimo/reactivo_limite.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/escritura_quimica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-reactivo-limitante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/estilo-mermaid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-proposicion-negacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></span></a>
   </div>
 </li>
       </ul>
@@ -221,19 +280,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#importante---fundamentación" id="toc-importante---fundamentación" class="nav-link active" data-scroll-target="#importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</a></li>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link" data-scroll-target="#prefacio"><span class="header-section-number">2.2</span> Prefacio</a></li>
-  <li><a href="#cómo-está-organizado-este-libro" id="toc-cómo-está-organizado-este-libro" class="nav-link" data-scroll-target="#cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</a></li>
-  <li><a href="#sugerencias-de-uso" id="toc-sugerencias-de-uso" class="nav-link" data-scroll-target="#sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</a></li>
+  <li><a href="#teoría" id="toc-teoría" class="nav-link active" data-scroll-target="#teoría"><span class="header-section-number">7.1</span> Teoría</a>
+  <ul class="collapse">
+  <li><a href="#caso-ambiguo-seno-y-triángulos-obtusos" id="toc-caso-ambiguo-seno-y-triángulos-obtusos" class="nav-link" data-scroll-target="#caso-ambiguo-seno-y-triángulos-obtusos"><span class="header-section-number">7.1.1</span> Caso ambiguo: seno y triángulos obtusos</a></li>
+  <li><a href="#cálculo-del-ángulo-obtuso" id="toc-cálculo-del-ángulo-obtuso" class="nav-link" data-scroll-target="#cálculo-del-ángulo-obtuso"><span class="header-section-number">7.1.2</span> Cálculo del ángulo obtuso</a></li>
+  </ul></li>
+  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización"><span class="header-section-number">7.2</span> Contextualización</a>
+  <ul class="collapse">
+  <li><a href="#activación" id="toc-activación" class="nav-link" data-scroll-target="#activación"><span class="header-section-number">7.2.1</span> Activación</a></li>
+  <li><a href="#desarrollo" id="toc-desarrollo" class="nav-link" data-scroll-target="#desarrollo"><span class="header-section-number">7.2.2</span> Desarrollo</a></li>
+  <li><a href="#consolidación" id="toc-consolidación" class="nav-link" data-scroll-target="#consolidación"><span class="header-section-number">7.2.3</span> Consolidación</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-ley-de-senos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></h1>
 </div>
 
 
@@ -250,48 +316,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Este documento presenta un plan de temas por periodos para el <strong>área de Ciencias Naturales</strong> (Biología, Física y Química), dirigido a docentes, como guía de organización y secuenciación de contenidos durante el año escolar.</p>
-<section id="importante---fundamentación" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</h2>
-<p>En fundamentación se establece el contenido teórico específico y concreto. Acá se establece la información respaldada por libros universitarios, enfocada a la temática específica o artículos de revisión o de investigación. El docente que quiera aportar en la forma de explicar el concepto lo puede realizar en conceptualización. Este documento se actualiza de forma colaborativa. Para facilitar el seguimiento, se recomienda registrar aquí quién realizó cada modificación y qué se cambió (por ejemplo: correcciones de redacción, incorporación de secciones, ajuste de figuras o referencias).</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Fecha</th>
-<th>Usuario</th>
-<th>Cambio realizado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>8-Jun-2026</td>
-<td>Camilo Tayac</td>
-<td>Reactivo Limite</td>
-</tr>
-</tbody>
-</table>
+<section id="teoría" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="teoría"><span class="header-section-number">7.1</span> Teoría</h2>
+<p>La <strong>ley de senos</strong> es una relación que conecta los lados de un triángulo con los senos de sus ángulos opuestos. Se aplica exclusivamente cuando se conoce al menos un <strong>par ángulo-lado</strong>, es decir, un lado que se encuentra opuesto al ángulo que se conoce. Por ejemplo, si se conocen el ángulo <span class="math inline">\(A\)</span> y los lados <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, la ley de senos es la herramienta adecuada. Esta ley aplica a cualquier <strong>triángulo arbitrario</strong>, que es aquel que no es rectángulo, equilátero ni isósceles.</p>
+<p>La ley de senos se expresa de la siguiente manera:</p>
+<p><span class="math display">\[ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} \tag{1} \]</span></p>
+<p>Cuando se conoce un par ángulo-lado y se necesita encontrar otro ángulo, se despeja el seno del ángulo desconocido y luego se usa la función inversa. Supóngase que se conocen el ángulo <span class="math inline">\(A\)</span> y los lados <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, y se desea encontrar el ángulo <span class="math inline">\(B\)</span>. A partir de la igualdad <span class="math inline">\(\frac{a}{\sin(A)} = \frac{b}{\sin(B)}\)</span> se despeja <span class="math inline">\(\sin(B)\)</span>:</p>
+<p><span class="math display">\[ \sin(B) = \frac{b \cdot \sin(A)}{a} \tag{2} \]</span></p>
+<p>El resultado de esta operación es un número entre <span class="math inline">\(0\)</span> y <span class="math inline">\(1\)</span>, por ejemplo <span class="math inline">\(0{,}866\)</span>. Para obtener el ángulo a partir de ese valor, se aplica la función <strong>arco seno</strong> (<span class="math inline">\(\sin^{-1}\)</span>) en la calculadora:</p>
+<p><span class="math display">\[ \sin^{-1}(0{,}866) = 60^\circ \tag{3} \]</span></p>
+<p>El ángulo es entonces <span class="math inline">\(60\)</span> grados.</p>
+<p>Si en cambio se conocen dos ángulos y solo un lado, también es posible usar la ley de senos. Supóngase que se conocen los ángulos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>, así como el lado <span class="math inline">\(a\)</span>. Se despeja el lado <span class="math inline">\(b\)</span> de la misma igualdad:</p>
+<p><span class="math display">\[ b = \frac{a \cdot \sin(B)}{\sin(A)} \tag{4} \]</span></p>
+<p>Existe una condición de existencia que debe verificarse: si el cálculo produce <span class="math inline">\(\sin(v) &gt; 1\)</span>, no existe solución. Esto significa que el triángulo propuesto no puede construirse con la información disponible.</p>
+<section id="caso-ambiguo-seno-y-triángulos-obtusos" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="caso-ambiguo-seno-y-triángulos-obtusos"><span class="header-section-number">7.1.1</span> Caso ambiguo: seno y triángulos obtusos</h3>
+<p>Cuando se calculan ángulos mediante la ley de senos en un triángulo que resulta ser <strong>obtuso</strong>, aparece una situación especial conocida como <strong>caso ambiguo</strong>. La ley de senos puede producir dos resultados distintos dependiendo de cuánta información se tenga del triángulo.</p>
+<p>Considérese un triángulo con la siguiente información: ángulo <span class="math inline">\(A = 25^\circ\)</span>, lado <span class="math inline">\(a = 3\)</span> y lado <span class="math inline">\(c = 5\)</span>. Con estos datos se calcula el ángulo <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display">\[ \begin{aligned} \frac{a}{\sin(A)} &amp;= \frac{c}{\sin(C)} \\[10pt] \sin(C) &amp;= \frac{c \cdot \sin(A)}{a} \\[10pt] \sin(C) &amp;= \frac{5 \cdot \sin(25^\circ)}{3} \\[10pt] \sin(C) &amp;= 0{,}704 \\[10pt] \sin^{-1}(0{,}704) &amp;= 44{,}78^\circ \end{aligned} \tag{5} \]</span></p>
+<p>El resultado es un triángulo con ángulo <span class="math inline">\(A = 25^\circ\)</span>, ángulo <span class="math inline">\(B = 110{,}22^\circ\)</span> y ángulo <span class="math inline">\(C = 44{,}78^\circ\)</span>. Sin embargo, esta es solo una de las dos posibles soluciones.</p>
 </section>
-<section id="prefacio" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="prefacio"><span class="header-section-number">2.2</span> Prefacio</h2>
-<p>Este libro de Ciencias Naturales está diseñado para acompañar el proceso de aprendizaje desde grado sexto hasta grado undécimo, integrando Biología, Física y Química en una ruta progresiva. El material prioriza la comprensión conceptual, el razonamiento científico y la aplicación práctica de los contenidos en contextos escolares.</p>
-<p>La organización de cada unidad busca mantener un equilibrio entre precisión académica y lenguaje accesible. Por esa razón, los temas se presentan de lo general a lo específico, con explicaciones estructuradas, ejemplos guiados y actividades que fortalecen habilidades cognitivas como análisis, interpretación y resolución de problemas.</p>
-<p>El enfoque metodológico combina fundamentación teórica, contextualización didáctica y ejercicios de consolidación. De este modo, el texto puede utilizarse tanto en clase como en trabajo autónomo, procesos de nivelación o preparación de evaluaciones.</p>
+<section id="cálculo-del-ángulo-obtuso" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="cálculo-del-ángulo-obtuso"><span class="header-section-number">7.1.2</span> Cálculo del ángulo obtuso</h3>
+<p>La ley de senos siempre devuelve la <strong>solución aguda</strong> (entre <span class="math inline">\(0^\circ\)</span> y <span class="math inline">\(90^\circ\)</span>). La posible <strong>solución obtusa</strong> se encuentra restando el ángulo agudo de <span class="math inline">\(180^\circ\)</span>. Con el valor agudo <span class="math inline">\(C_1 = 44{,}78^\circ\)</span>, se calcula el ángulo obtuso <span class="math inline">\(C_2\)</span>:</p>
+<p><span class="math display">\[ C_2 = 180^\circ - C_1 \\[12pt] C_2 = 135{,}22^\circ \tag{6} \]</span></p>
+<p>Conociendo <span class="math inline">\(C\)</span> para ambos triángulos es posible calcular el resto de sus elementos. Esto implica que el lado <span class="math inline">\(b\)</span>, el perímetro, la altura y el área también tienen dos valores distintos. Por esta razón, siempre debe verificarse si la solución encontrada puede tener un ángulo obtuso al usar la ley de senos.</p>
+<p>La regla general es la siguiente: si el ángulo que se calcula con la ley de senos es menor de <span class="math inline">\(90^\circ\)</span>, existen dos soluciones posibles.</p>
 </section>
-<section id="cómo-está-organizado-este-libro" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</h2>
-<p>Cada bloque por grado incluye una secuencia de contenidos por periodos académicos y por área. Dentro de cada tema, se mantiene una estructura consistente para facilitar la lectura:</p>
+</section>
+<section id="contextualización" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="contextualización"><span class="header-section-number">7.2</span> Contextualización</h2>
+<section id="activación" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="activación"><span class="header-section-number">7.2.1</span> Activación</h3>
+<p>¿Alguna vez has intentado construir un triángulo con solo tres datos y te has dado cuenta de que podías hacerlo de dos formas distintas? Algo parecido ocurre con ciertos triángulos que no son rectángulos: aunque tengas suficiente información para resolverlos, a veces hay más de una respuesta. Ya sabes calcular senos y ángulos en triángulos rectángulos. Ahora vas a dar el paso siguiente: usar esa misma herramienta en triángulos que no tienen un ángulo recto. En esta sección vas a entender cómo hacerlo y, lo más importante, cuándo hay una sola respuesta y cuándo hay dos.</p>
+</section>
+<section id="desarrollo" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="desarrollo"><span class="header-section-number">7.2.2</span> Desarrollo</h3>
+<section id="la-ley-de-senos-y-cuándo-usarla" class="level4" data-number="7.2.2.1">
+<h4 data-number="7.2.2.1" class="anchored" data-anchor-id="la-ley-de-senos-y-cuándo-usarla"><span class="header-section-number">7.2.2.1</span> La ley de senos y cuándo usarla</h4>
+<p>Imagina que tienes un triángulo cualquiera —no importa su forma— y conoces un lado y el ángulo que está justo enfrente de ese lado. Ese par de datos, un lado y su ángulo opuesto, es la llave que abre la puerta de la <strong>ley de senos</strong>.</p>
+<p>La ley de senos dice que en cualquier triángulo, el cociente entre un lado y el seno de su ángulo opuesto es el mismo para los tres lados. En otras palabras, todos esos cocientes son iguales entre sí.</p>
+<blockquote class="blockquote">
+<p>🖼️ <strong>Imagen sugerida:</strong> Triángulo arbitrario etiquetado con vértices <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, <span class="math inline">\(C\)</span> y lados opuestos <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span> <strong>Tipo:</strong> Esquema etiquetado <strong>Qué debe destacar:</strong> La correspondencia entre cada vértice y su lado opuesto (el lado <span class="math inline">\(a\)</span> está frente al ángulo <span class="math inline">\(A\)</span>) <strong>Texto alternativo sugerido:</strong> Triángulo escaleno con vértices A, B, C y sus lados opuestos a, b, c</p>
+</blockquote>
+<p>Mira la fórmula con calma:</p>
+<p><span class="math display">\[ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} \tag{1} \]</span></p>
+<p>El lado <span class="math inline">\(a\)</span> está relacionado con el seno del ángulo <span class="math inline">\(A\)</span>, el lado <span class="math inline">\(b\)</span> con el seno del ángulo <span class="math inline">\(B\)</span>, y así sucesivamente. Si conoces tres de estas seis cantidades —siempre que una de ellas sea un par ángulo-lado— puedes encontrar las otras tres.</p>
+<blockquote class="blockquote">
+<p>💡 La clave para usar la ley de senos es tener al menos un lado y el ángulo que tiene enfrente.</p>
+</blockquote>
+<p>Hasta aquí deberías poder identificar si un problema se resuelve con la ley de senos: busca un par ángulo-lado.</p>
+</section>
+<section id="calcular-un-ángulo-cuando-conoces-un-lado-y-su-ángulo-opuesto" class="level4" data-number="7.2.2.2">
+<h4 data-number="7.2.2.2" class="anchored" data-anchor-id="calcular-un-ángulo-cuando-conoces-un-lado-y-su-ángulo-opuesto"><span class="header-section-number">7.2.2.2</span> Calcular un ángulo cuando conoces un lado y su ángulo opuesto</h4>
+<p>Supón que conoces el ángulo <span class="math inline">\(A\)</span> y los lados <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>. Quieres encontrar el ángulo <span class="math inline">\(B\)</span>. La ley de senos te da una igualdad entre dos de los cocientes:</p>
+<p><span class="math display">\[ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} \]</span></p>
+<p>🧠 Este es el momento donde muchos estudiantes se pierden. Es normal. Vamos paso a paso.</p>
+<ol type="1">
+<li><strong>Despeja <span class="math inline">\(\sin(B)\)</span>.</strong> Multiplica ambos lados por <span class="math inline">\(\sin(B)\)</span> y luego divide por <span class="math inline">\(a\)</span>:</li>
+</ol>
+<p><span class="math display">\[ \sin(B) = \frac{b \cdot \sin(A)}{a} \tag{2} \]</span></p>
+<p>Este paso se hace porque el <span class="math inline">\(\sin(B)\)</span> está en el denominador y queremos dejarlo solo. Al despejarlo, obtenemos un número.</p>
+<ol start="2" type="1">
+<li><p><strong>Calcula el valor numérico.</strong> Introduce los números que conoces. El resultado será un decimal entre <span class="math inline">\(0\)</span> y <span class="math inline">\(1\)</span>, por ejemplo <span class="math inline">\(0{,}866\)</span>.</p></li>
+<li><p><strong>Aplica la función inversa.</strong> Para pasar del seno al ángulo, usa <span class="math inline">\(\sin^{-1}\)</span> en tu calculadora, también llamada <strong>arco seno</strong>:</p></li>
+</ol>
+<p><span class="math display">\[ \sin^{-1}(0{,}866) = 60^\circ \tag{3} \]</span></p>
+<blockquote class="blockquote">
+<p>⚠️ Error frecuente: olvidar que <span class="math inline">\(\sin^{-1}\)</span> no es lo mismo que <span class="math inline">\(1/\sin\)</span>. <span class="math inline">\(\sin^{-1}\)</span> significa “¿qué ángulo tiene este seno?”, no “uno sobre el seno”.</p>
+</blockquote>
+<p>El ángulo <span class="math inline">\(B\)</span> es entonces <span class="math inline">\(60^\circ\)</span>. Ya tienes tu primer resultado usando la ley de senos.</p>
+<p>Hasta aquí deberías poder calcular un ángulo desconocido cuando conoces un par ángulo-lado y otro lado.</p>
+</section>
+<section id="calcular-un-lado-cuando-conoces-dos-ángulos" class="level4" data-number="7.2.2.3">
+<h4 data-number="7.2.2.3" class="anchored" data-anchor-id="calcular-un-lado-cuando-conoces-dos-ángulos"><span class="header-section-number">7.2.2.3</span> Calcular un lado cuando conoces dos ángulos</h4>
+<p>Ahora imagina que conoces los ángulos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>, y también el lado <span class="math inline">\(a\)</span>. Quieres encontrar el lado <span class="math inline">\(b\)</span>. El proceso es similar, pero ahora despejas el lado en lugar del ángulo.</p>
+<p>Partes de la misma igualdad:</p>
+<p><span class="math display">\[ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} \]</span></p>
+<ol type="1">
+<li><strong>Despeja <span class="math inline">\(b\)</span>.</strong> Multiplica ambos lados por <span class="math inline">\(\sin(B)\)</span>:</li>
+</ol>
+<p><span class="math display">\[ b = \frac{a \cdot \sin(B)}{\sin(A)} \tag{4} \]</span></p>
+<ol start="2" type="1">
+<li><strong>Calcula.</strong> Introduce los valores y obtienes el lado <span class="math inline">\(b\)</span> directamente. No necesitas usar <span class="math inline">\(\sin^{-1}\)</span> aquí porque no estás buscando un ángulo, sino un lado.</li>
+</ol>
+<p>Hasta aquí deberías poder calcular un lado desconocido cuando conoces dos ángulos y un lado.</p>
+</section>
+<section id="cuándo-no-hay-solución" class="level4" data-number="7.2.2.4">
+<h4 data-number="7.2.2.4" class="anchored" data-anchor-id="cuándo-no-hay-solución"><span class="header-section-number">7.2.2.4</span> Cuándo no hay solución</h4>
+<p>Hay un caso en el que la ley de senos no produce un resultado válido. Si al despejar <span class="math inline">\(\sin(B)\)</span> obtienes un número mayor que <span class="math inline">\(1\)</span>, detente. El seno de cualquier ángulo está siempre entre <span class="math inline">\(0\)</span> y <span class="math inline">\(1\)</span>. Si el resultado supera <span class="math inline">\(1\)</span>, significa que el triángulo que intentas construir es imposible con los datos que tienes. No hay error en tu cálculo — simplemente esos datos no corresponden a ningún triángulo real.</p>
+<blockquote class="blockquote">
+<p>💡 <span class="math inline">\(\sin(v) &gt; 1\)</span> significa “este triángulo no existe”.</p>
+</blockquote>
+<p>Hasta aquí deberías poder determinar si un triángulo existe o no antes de seguir calculando.</p>
+</section>
+<section id="el-caso-ambiguo-cuando-hay-dos-triángulos-posibles" class="level4" data-number="7.2.2.5">
+<h4 data-number="7.2.2.5" class="anchored" data-anchor-id="el-caso-ambiguo-cuando-hay-dos-triángulos-posibles"><span class="header-section-number">7.2.2.5</span> El caso ambiguo: cuando hay dos triángulos posibles</h4>
+<p>Ahora viene la parte que más sorprende. A veces, con la misma información, puedes construir dos triángulos diferentes. Esto se llama el <strong>caso ambiguo</strong> y ocurre cuando trabajas con triángulos obtusos.</p>
+<p>🧠 Este concepto suele ser confuso al principio. Léelo con calma. Vale la pena entenderlo porque es lo que diferencia a alguien que sabe usar la ley de senos de alguien que solo sabe apretar botones en la calculadora.</p>
+<p>Supón que tienes esta información:</p>
 <ul>
-<li>presentación del concepto central,</li>
-<li>desarrollo explicativo paso a paso,</li>
-<li>ejemplos de aplicación,</li>
-<li>actividades para fortalecer la comprensión.</li>
+<li>Ángulo <span class="math inline">\(A = 25^\circ\)</span></li>
+<li>Lado <span class="math inline">\(a = 3\)</span></li>
+<li>Lado <span class="math inline">\(c = 5\)</span></li>
 </ul>
+<p>Observa que tienes un par ángulo-lado: <span class="math inline">\(A\)</span> con <span class="math inline">\(a\)</span>. El otro lado conocido, <span class="math inline">\(c\)</span>, está opuesto al ángulo <span class="math inline">\(C\)</span>, que es el que quieres encontrar. Usa la ley de senos:</p>
+<p><span class="math display">\[ \begin{aligned} \frac{a}{\sin(A)} &amp;= \frac{c}{\sin(C)} \\[10pt] \sin(C) &amp;= \frac{c \cdot \sin(A)}{a} \\[10pt] \sin(C) &amp;= \frac{5 \cdot \sin(25^\circ)}{3} \\[10pt] \sin(C) &amp;= 0{,}704 \\[10pt] \sin^{-1}(0{,}704) &amp;= 44{,}78^\circ \end{aligned} \tag{5} \]</span></p>
+<p>Has encontrado que <span class="math inline">\(C = 44{,}78^\circ\)</span>. Como la suma de los ángulos internos de un triángulo es <span class="math inline">\(180^\circ\)</span>, puedes calcular <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[ B = 180^\circ - 25^\circ - 44{,}78^\circ = 110{,}22^\circ \]</span></p>
+<blockquote class="blockquote">
+<p>🖼️ <strong>Imagen sugerida:</strong> Triángulo con ángulo A = 25° a la izquierda, ángulo C = 44,78° arriba, ángulo B = 110,22° a la derecha; lado a = 3 opuesto a A, lado c = 5 opuesto a C <strong>Tipo:</strong> Esquema etiquetado <strong>Qué debe destacar:</strong> La posición de cada ángulo y lado, y que el ángulo B es obtuso (&gt;90°) <strong>Texto alternativo sugerido:</strong> Primer triángulo solución con ángulos 25°, 110,22° y 44,78°</p>
+</blockquote>
+<p>Este es un triángulo válido. Pero no es el único.</p>
 </section>
-<section id="sugerencias-de-uso" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</h2>
-<p>Se recomienda trabajar los contenidos en orden, registrar ideas clave y verificar la comprensión con los ejercicios propuestos. Cuando aparezcan dificultades, conviene retomar los ejemplos y relacionarlos con situaciones del entorno cotidiano.</p>
+<section id="la-segunda-solución" class="level4" data-number="7.2.2.6">
+<h4 data-number="7.2.2.6" class="anchored" data-anchor-id="la-segunda-solución"><span class="header-section-number">7.2.2.6</span> La segunda solución</h4>
+<p>La ley de senos siempre devuelve el ángulo agudo (menor de <span class="math inline">\(90^\circ\)</span>) como primera respuesta. Sin embargo, existe otra posibilidad. Para encontrarla, resta el ángulo agudo de <span class="math inline">\(180^\circ\)</span>:</p>
+<p><span class="math display">\[ C_2 = 180^\circ - 44{,}78^\circ = 135{,}22^\circ \tag{6} \]</span></p>
+<p>Este nuevo ángulo <span class="math inline">\(C_2 = 135{,}22^\circ\)</span> también es válido. Con él puedes construir otro triángulo completamente distinto con los mismos datos iniciales.</p>
+<blockquote class="blockquote">
+<p>🖼️ <strong>Imagen sugerida:</strong> Segundo triángulo con los mismos datos A = 25°, a = 3, c = 5, pero con ángulo C = 135,22° (obtuso) y ángulo B mucho más pequeño <strong>Tipo:</strong> Esquema etiquetado <strong>Qué debe destacar:</strong> Cómo cambia la forma del triángulo al usar el ángulo obtuso — el lado b se alarga y el triángulo se “abre” <strong>Texto alternativo sugerido:</strong> Segundo triángulo solución con ángulo obtuso C = 135,22°</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>🧠 ¿Por qué pasa esto? Porque dos ángulos diferentes pueden tener el mismo seno. Por ejemplo, <span class="math inline">\(\sin(44{,}78^\circ)\)</span> y <span class="math inline">\(\sin(135{,}22^\circ)\)</span> dan el mismo valor (<span class="math inline">\(0{,}704\)</span>). La calculadora solo te muestra uno, el agudo. El otro debes calcularlo tú.</p>
+</blockquote>
+<p>Tener dos soluciones significa que el lado <span class="math inline">\(b\)</span>, el perímetro, la altura y el área tendrán dos valores distintos. Por eso es fundamental preguntarse siempre, después de usar la ley de senos: ¿puede haber un ángulo obtuso aquí?</p>
+<p>La regla para saberlo es simple: <strong>si el ángulo que calculaste con la ley de senos es menor de <span class="math inline">\(90^\circ\)</span>, hay dos soluciones posibles.</strong></p>
+<p>Hasta aquí deberías poder identificar cuándo hay una solución y cuándo hay dos, y calcular ambas cuando sea necesario.</p>
+</section>
+</section>
+<section id="consolidación" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="consolidación"><span class="header-section-number">7.2.3</span> Consolidación</h3>
+<p>Has aprendido que la <strong>ley de senos</strong> relaciona cada lado de un triángulo con el seno de su ángulo opuesto, y que funciona en cualquier triángulo, no solo en los rectángulos. Descubriste que puedes usarla para encontrar ángulos (con <span class="math inline">\(\sin^{-1}\)</span>) o lados (despejando directamente), y que no todos los conjuntos de datos producen un triángulo válido. También viste que el <strong>caso ambiguo</strong> aparece cuando el ángulo calculado es agudo, abriendo la posibilidad de una segunda solución obtusa. Con esto ya puedes resolver triángulos arbitrarios con confianza, sabiendo no solo qué calcular, sino también cuándo hay más de una respuesta.</p>
+<blockquote class="blockquote">
+<p>🎯 <strong>Alternativa pedagógica:</strong> Rutina de pensamiento “Antes pensaba… Ahora pienso…” <strong>Objetivo:</strong> Que el estudiante reflexione sobre cómo cambió su comprensión de la ley de senos, especialmente frente al caso ambiguo. <strong>Cómo hacerlo:</strong> Al iniciar la clase, cada estudiante escribe “Antes pensaba que la ley de senos…”. Al finalizar, escribe “Ahora pienso que la ley de senos…” y comparte con un compañero. <strong>Tiempo estimado:</strong> 10 minutos <strong>Materiales:</strong> Cuaderno o una hoja de papel</p>
+</blockquote>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -869,13 +1031,13 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Estructura del libro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span>
+      <a href="../06_Decimo/plan-clase-reactivo-limitante.html" class="pagination-link" aria-label="Reactivo limitante: concepto y cálculo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../01_Generalidades/02_PlanDeArea.html" class="pagination-link" aria-label="Plan de Área de Ciencias Naturales">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../06_Decimo/estilo-mermaid.html" class="pagination-link" aria-label="Estilo diagramas Mermaid">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -887,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2025, Camilo Tayac</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-ley-de-senos.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

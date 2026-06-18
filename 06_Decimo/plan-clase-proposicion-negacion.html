@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Generalidades – Natura Docens</title>
+<title>9&nbsp; Proposición y su negación – Natura Docens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../01_Generalidades/02_PlanDeArea.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../bibliografia.html" rel="next">
+<link href="../06_Decimo/estilo-mermaid.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,7 +72,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../_styles/headings.css">
 </head>
@@ -87,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -150,13 +183,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Generalidades</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
@@ -165,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link active">
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
   </div>
 </li>
@@ -179,17 +212,47 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Décimo - Química</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../06_Decimo/reactivo_limite.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reactivo límite</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/escritura_quimica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Escritura de ecuaciones químicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-reactivo-limitante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reactivo limitante: concepto y cálculo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-ley-de-senos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ley de senos — plan de clase</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/estilo-mermaid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/plan-clase-proposicion-negacion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></span></a>
   </div>
 </li>
       </ul>
@@ -221,19 +284,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#importante---fundamentación" id="toc-importante---fundamentación" class="nav-link active" data-scroll-target="#importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</a></li>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link" data-scroll-target="#prefacio"><span class="header-section-number">2.2</span> Prefacio</a></li>
-  <li><a href="#cómo-está-organizado-este-libro" id="toc-cómo-está-organizado-este-libro" class="nav-link" data-scroll-target="#cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</a></li>
-  <li><a href="#sugerencias-de-uso" id="toc-sugerencias-de-uso" class="nav-link" data-scroll-target="#sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</a></li>
+  <li><a href="#teoría" id="toc-teoría" class="nav-link active" data-scroll-target="#teoría"><span class="header-section-number">9.1</span> Teoría</a></li>
+  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización"><span class="header-section-number">9.2</span> Contextualización</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-proposicion-negacion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Proposición y su negación</span></h1>
 </div>
 
 
@@ -250,46 +311,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Este documento presenta un plan de temas por periodos para el <strong>área de Ciencias Naturales</strong> (Biología, Física y Química), dirigido a docentes, como guía de organización y secuenciación de contenidos durante el año escolar.</p>
-<section id="importante---fundamentación" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="importante---fundamentación"><span class="header-section-number">2.1</span> Importante - Fundamentación</h2>
-<p>En fundamentación se establece el contenido teórico específico y concreto. Acá se establece la información respaldada por libros universitarios, enfocada a la temática específica o artículos de revisión o de investigación. El docente que quiera aportar en la forma de explicar el concepto lo puede realizar en conceptualización. Este documento se actualiza de forma colaborativa. Para facilitar el seguimiento, se recomienda registrar aquí quién realizó cada modificación y qué se cambió (por ejemplo: correcciones de redacción, incorporación de secciones, ajuste de figuras o referencias).</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Fecha</th>
-<th>Usuario</th>
-<th>Cambio realizado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>8-Jun-2026</td>
-<td>Camilo Tayac</td>
-<td>Reactivo Limite</td>
-</tr>
-</tbody>
-</table>
+<section id="teoría" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="teoría"><span class="header-section-number">9.1</span> Teoría</h2>
+<p>Mediante la unión de dos o más palabras se crea una oración o enunciado. Cuando un enunciado puede ser verdadero (V) o falso (F), se obtiene una <strong>proposición</strong> (cf.&nbsp;<em>Introducción a la teoría de conjuntos</em>). Mediante la lógica se determina si un enunciado es V o F. Si esto se dificulta, se convierte el enunciado en una pregunta; si esta puede responderse con un sí o con un no, entonces se trata de una proposición.</p>
+<p>Por ejemplo, el enunciado “La química es la ciencia que estudia la materia ordinaria” se transforma en la pregunta “¿La química es la ciencia que estudia la materia ordinaria?” Dicha pregunta puede contestarse con un sí o con un no, lo que indica que el enunciado original es una proposición.</p>
+<p>Existen enunciados que no son proposiciones. Por ejemplo, “Hola, ¿cómo estás?” no puede determinarse como V o F, dado que se trata de una expresión de saludo.</p>
+<p>La proposición del ejemplo anterior puede etiquetarse con una letra; en este caso se usa la letra <span class="math inline">\(P\)</span>. Toda proposición tiene una <strong>negación</strong>, representada con el signo <span class="math inline">\(\neg\)</span>. La negación de <span class="math inline">\(P\)</span> se escribe <span class="math inline">\(\neg P\)</span> y se lee como “no <span class="math inline">\(P\)</span>” o “la negación de <span class="math inline">\(P\)</span>” (cf.&nbsp;<em>Introducción a la teoría de conjuntos</em>). Para el ejemplo anterior, la negación es “La química <strong>no</strong> es la ciencia que estudia la materia ordinaria”.</p>
+<p>Las proposiciones <span class="math inline">\(P\)</span> y <span class="math inline">\(\neg P\)</span> pueden valorarse como V o F. Si <span class="math inline">\(P\)</span> es V, entonces <span class="math inline">\(\neg P\)</span> es F; y si <span class="math inline">\(P\)</span> es F, entonces <span class="math inline">\(\neg P\)</span> es V. Esta relación se representa mediante una <strong>tabla de verdad</strong> (cf.&nbsp;<em>Introducción a la teoría de conjuntos</em>):</p>
+<p><span class="math display">\[
+\begin{array}{c|c}
+P &amp; \neg P \\ \hline
+V &amp; F \\
+F &amp; V
+\end{array} \tag{1}
+\]</span></p>
 </section>
-<section id="prefacio" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="prefacio"><span class="header-section-number">2.2</span> Prefacio</h2>
-<p>Este libro de Ciencias Naturales está diseñado para acompañar el proceso de aprendizaje desde grado sexto hasta grado undécimo, integrando Biología, Física y Química en una ruta progresiva. El material prioriza la comprensión conceptual, el razonamiento científico y la aplicación práctica de los contenidos en contextos escolares.</p>
-<p>La organización de cada unidad busca mantener un equilibrio entre precisión académica y lenguaje accesible. Por esa razón, los temas se presentan de lo general a lo específico, con explicaciones estructuradas, ejemplos guiados y actividades que fortalecen habilidades cognitivas como análisis, interpretación y resolución de problemas.</p>
-<p>El enfoque metodológico combina fundamentación teórica, contextualización didáctica y ejercicios de consolidación. De este modo, el texto puede utilizarse tanto en clase como en trabajo autónomo, procesos de nivelación o preparación de evaluaciones.</p>
-</section>
-<section id="cómo-está-organizado-este-libro" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="cómo-está-organizado-este-libro"><span class="header-section-number">2.3</span> Cómo está organizado este libro</h2>
-<p>Cada bloque por grado incluye una secuencia de contenidos por periodos académicos y por área. Dentro de cada tema, se mantiene una estructura consistente para facilitar la lectura:</p>
-<ul>
-<li>presentación del concepto central,</li>
-<li>desarrollo explicativo paso a paso,</li>
-<li>ejemplos de aplicación,</li>
-<li>actividades para fortalecer la comprensión.</li>
-</ul>
-</section>
-<section id="sugerencias-de-uso" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="sugerencias-de-uso"><span class="header-section-number">2.4</span> Sugerencias de uso</h2>
-<p>Se recomienda trabajar los contenidos en orden, registrar ideas clave y verificar la comprensión con los ejercicios propuestos. Cuando aparezcan dificultades, conviene retomar los ejemplos y relacionarlos con situaciones del entorno cotidiano.</p>
+<section id="contextualización" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="contextualización"><span class="header-section-number">9.2</span> Contextualización</h2>
+<p>Imagina que estás en un juego con un amigo. Tu amigo dice algo y tú tienes que decidir si es verdad o mentira. No hay término medio: o es cierto o no lo es. Cuando un enunciado puede clasificarse así, estamos frente a una <strong>proposición</strong>.</p>
+<p>Pero no todo lo que se dice entra en ese juego. Si alguien te saluda y te pregunta “¿cómo estás?”, no puedes decir que es verdadero o falso. Es simplemente un saludo. Aprender a distinguir entre lo que es una proposición y lo que no lo es es el primer paso en lógica.</p>
+<blockquote class="blockquote">
+<p>💡 Solo los enunciados que pueden ser verdaderos o falsos son proposiciones.</p>
+</blockquote>
+<p>Para identificar una proposición hay un método sencillo: convertir el enunciado en una pregunta. Si la pregunta se responde con un sí o con un no, el enunciado original es una proposición. Por ejemplo, “La química estudia la materia ordinaria” se convierte en “¿La química estudia la materia ordinaria?” La respuesta es sí o no. Entonces, es una proposición.</p>
+<p>El siguiente diagrama resume el proceso para identificar proposiciones y aplicar la negación:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Enunciado] --&gt; B{¿Puede ser V o F?}
+    B --&gt;|Sí| C[Es una proposición]
+    B --&gt;|No| D[No es proposición&lt;br&gt;ej: saludo]
+    C --&gt; E{Tiene negación}
+    E --&gt;|Sí| F[¬P: valor opuesto]
+    F --&gt; G[Tabla de verdad]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Una vez que tienes una proposición, puedes <strong>negarla</strong>. La negación es como un interruptor: lo que era verdadero se vuelve falso, y lo que era falso se vuelve verdadero. En lógica, la negación se representa con el símbolo <span class="math inline">\(\neg\)</span>. Si llamamos <span class="math inline">\(P\)</span> a la proposición “La química estudia la materia ordinaria”, entonces <span class="math inline">\(\neg P\)</span> es “La química <strong>no</strong> estudia la materia ordinaria”.</p>
+<blockquote class="blockquote">
+<p>⚠️ Error frecuente: confundir la negación lógica con un simple “decir lo contrario”. La negación no es una opinión — es una operación que siempre produce el valor de verdad opuesto al original.</p>
+</blockquote>
+<p>Si <span class="math inline">\(P\)</span> es V, <span class="math inline">\(\neg P\)</span> es F. Si <span class="math inline">\(P\)</span> es F, <span class="math inline">\(\neg P\)</span> es V. Esta relación se organiza en una <strong>tabla de verdad</strong>, que muestra de un vistazo qué pasa con la verdad cuando negamos.</p>
+<p><span class="math display">\[
+\begin{array}{c|c}
+P &amp; \neg P \\ \hline
+V &amp; F \\
+F &amp; V
+\end{array} \tag{2}
+\]</span></p>
+<p><strong>Síntesis.</strong> En esta clase se presentó la proposición como un enunciado valorable en V o F, el método de identificación mediante pregunta de sí/no, la negación (<span class="math inline">\(\neg\)</span>) como operador que invierte el valor de verdad, y la tabla de verdad como herramienta de representación. Estas nociones constituyen la base de la lógica proposicional.</p>
 
 
 </section>
@@ -869,13 +945,13 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Estructura del libro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span>
+      <a href="../06_Decimo/estilo-mermaid.html" class="pagination-link" aria-label="Estilo diagramas Mermaid">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Estilo diagramas Mermaid</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../01_Generalidades/02_PlanDeArea.html" class="pagination-link" aria-label="Plan de Área de Ciencias Naturales">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../bibliografia.html" class="pagination-link" aria-label="Referencias">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -887,7 +963,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2025, Camilo Tayac</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/01_Generalidades/01_Introduccion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/plan-clase-proposicion-negacion.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
