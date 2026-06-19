@@ -1,0 +1,409 @@
+## Estilo diagramas Mermaid
+
+En Quarto los diagramas se escriben con ` ```{mermaid} ` (no ` ```mermaid `).
+Los bloques funcionales renderizan automáticamente; los bloques con `eval: false`
+muestran el código sin renderizar (útil para ejemplos de sintaxis).
+
+### Cuándo usar un diagrama
+
+- El concepto tiene partes que se relacionan entre sí
+- Hay un flujo o secuencia de pasos con decisiones
+- Hay una jerarquía o clasificación
+- El texto solo no logra que el estudiante visualice la idea
+- No usar diagramas para decorar — solo cuando aporten comprensión real
+
+---
+
+### Tabla resumen — todos los tipos disponibles
+
+| Tipo      | Declaración           | Mejor para                             |
+| --------- | --------------------- | -------------------------------------- |
+| Flowchart | `flowchart TD` / `LR` | Procesos, jerarquías, decisiones       |
+| Mindmap   | `mindmap`             | Mapa mental de un concepto             |
+| Timeline  | `timeline`            | Evolución histórica o etapas           |
+| Sequence  | `sequenceDiagram`     | Interacción entre partes en el tiempo  |
+| Journey   | `journey`             | Recorrido o experiencia del estudiante |
+| Pie       | `pie`                 | Proporciones de un todo                |
+| Quadrant  | `quadrantChart`       | Clasificación en dos dimensiones       |
+| XY Chart  | `xychart-beta`        | Datos numéricos con barras y líneas    |
+| GitGraph  | `gitGraph`            | Ramificaciones o caminos alternativos  |
+| State     | `stateDiagram-v2`     | Estados y transiciones de un sistema   |
+
+Para contenido educativo los más útiles son:
+`flowchart`, `mindmap`, `timeline`, `sequenceDiagram`,
+`journey`, `pie` y `quadrantChart`.
+
+---
+
+### Dirección del flowchart
+
+```{mermaid}
+%%| eval: false
+flowchart TD   %% top-down — jerarquías y procesos verticales
+flowchart LR   %% left-right — secuencias y flujos horizontales
+flowchart BT   %% bottom-top — construcción desde base
+flowchart RL   %% right-left — reversión de procesos
+```
+
+Regla: usar `TD` para jerarquías y clasificaciones,
+`LR` para procesos y secuencias encadenadas.
+
+---
+
+### Formas de nodos — cuándo usar cada una
+
+| Forma      | Sintaxis     | Usar para                       |
+| ---------- | ------------ | ------------------------------- |
+| Rectángulo | `A[texto]`   | Proceso o paso general          |
+| Redondeado | `A(texto)`   | Inicio, evento o concepto suave |
+| Rombo      | `A{texto}`   | Decisión o condición            |
+| Círculo    | `A((texto))` | Punto de inicio o fin           |
+| Estadio    | `A([texto])` | Terminal o resultado final      |
+| Hexágono   | `A{{texto}}` | Condición de preparación        |
+| Cilindro   | `A[(texto)]` | Datos o almacenamiento          |
+| Asimétrico | `A>texto]`   | Anotación o aclaración          |
+
+---
+
+### Tipos de conexiones
+
+```{mermaid}
+%%| eval: false
+%% flecha simple — relación directa o secuencia
+A --> B
+
+%% flecha con etiqueta — relación nombrada
+A -->|condición o nombre| B
+
+%% línea sin flecha — asociación
+A --- B
+
+%% línea punteada — relación débil u opcional
+A -.-> B
+
+%% línea punteada con etiqueta
+A -. texto .-> B
+
+%% línea gruesa — relación principal o crítica
+A ==> B
+
+%% línea gruesa con etiqueta
+A == texto ==> B
+```
+
+---
+
+### Longitud de conexiones
+
+Alargar una conexión para mejorar la legibilidad:
+
+```{mermaid}
+%%| eval: false
+%% normal
+A --> B
+
+%% más larga (2 rangos)
+A ---> B
+
+%% aún más larga (3 rangos)
+A ----> B
+```
+
+---
+
+### Subgrafos — agrupar conceptos relacionados
+
+```{mermaid}
+flowchart TD
+    subgraph Fase1[Nombre de la fase]
+        A[Elemento 1]
+        B[Elemento 2]
+    end
+    subgraph Fase2[Nombre de la fase]
+        C[Elemento 3]
+    end
+    Fase1 --> Fase2
+```
+
+Usar cuando hay categorías o fases claramente separadas.
+
+---
+
+### Estilos visuales con classDef
+
+```{mermaid}
+flowchart TD
+    A[Concepto principal]:::principal
+    B[Concepto secundario]:::secundario
+    C{Decisión}:::decision
+    D([Resultado]):::resultado
+
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+```
+
+**Paleta recomendada para contenido educativo:**
+
+| Tipo de nodo           | Fill      | Stroke    | Texto  |
+| ---------------------- | --------- | --------- | ------ |
+| Concepto principal     | `#4A90D9` | `#2C5F8A` | `#fff` |
+| Concepto secundario    | `#7EC8A4` | `#4A9B6F` | `#fff` |
+| Decisión / condición   | `#F5A623` | `#C07D0E` | `#fff` |
+| Advertencia / error    | `#E74C3C` | `#A93226` | `#fff` |
+| Resultado / conclusión | `#9B59B6` | `#6C3483` | `#fff` |
+| Neutro / apoyo         | `#95A5A6` | `#717D7E` | `#fff` |
+
+---
+
+### Patrones completos por tipo de contenido
+
+**Jerarquía o clasificación:**
+
+```{mermaid}
+flowchart TD
+    A[Concepto central]:::principal
+    A --> B[Categoría 1]:::secundario
+    A --> C[Categoría 2]:::secundario
+    B --> D[Elemento]
+    B --> E[Elemento]
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+```
+
+**Proceso con decisión:**
+
+```{mermaid}
+flowchart LR
+    A([Inicio]):::neutro --> B[Paso 1]:::principal
+    B --> C[Paso 2]:::principal
+    C --> D{¿Condición?}:::decision
+    D -->|Sí| E([Resultado A]):::resultado
+    D -->|No| F([Resultado B]):::resultado
+    classDef neutro fill:#95A5A6,stroke:#717D7E,color:#fff
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+```
+
+**Relación entre conceptos:**
+
+```{mermaid}
+flowchart TD
+    A[Concepto A]:::principal
+    B[Concepto B]:::principal
+    C[Concepto C]:::secundario
+    A -->|genera| B
+    B -->|depende de| C
+    A -.->|relacionado con| C
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef secundario fill:#7EC8A4,stroke:#4A9B6F,color:#fff
+```
+
+**Proceso cíclico:**
+
+```{mermaid}
+flowchart LR
+    A[Paso 1]:::principal --> B[Paso 2]:::principal
+    B --> C[Paso 3]:::principal
+    C --> D{¿Completo?}:::decision
+    D -->|No| A
+    D -->|Sí| E([Fin]):::resultado
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+```
+
+---
+
+### Mindmap — mapa mental
+
+```{mermaid}
+mindmap
+  root((Concepto central))
+    Rama 1
+      Subelemento 1
+      Subelemento 2
+    Rama 2
+      Subelemento 3
+    Rama 3
+```
+
+Usar para mostrar la estructura de un tema con sus subtemas.
+No soporta `classDef` — usar cuando la estructura
+importa más que el color.
+
+---
+
+### Timeline — línea de tiempo
+
+```{mermaid}
+timeline
+    title Historia o evolución del concepto
+    Etapa 1 : Descripción breve
+    Etapa 2 : Descripción breve
+    Etapa 3 : Descripción breve
+```
+
+Usar para mostrar evolución histórica, fases de un proceso
+o etapas de desarrollo. No soporta `classDef`.
+
+---
+
+### Sequence diagram — interacción entre elementos
+
+```{mermaid}
+sequenceDiagram
+    actor Estudiante
+    participant Sistema
+    participant Resultado
+
+    Estudiante->>Sistema: acción o entrada
+    Sistema-->>Estudiante: respuesta
+    Sistema->>Resultado: produce
+    Resultado-->>Estudiante: entrega
+```
+
+Usar para mostrar cómo interactúan partes de un sistema
+o los pasos de un proceso con actores.
+
+---
+
+### Journey — recorrido o experiencia del estudiante
+
+```{mermaid}
+journey
+    title Recorrido de aprendizaje del concepto
+    section Exploración
+      Lectura inicial: 5: Estudiante
+      Identificar conceptos: 3: Estudiante
+    section Comprensión
+      Relacionar con lo conocido: 4: Estudiante
+      Resolver dudas: 2: Estudiante, Docente
+    section Aplicación
+      Ejercicio práctico: 4: Estudiante
+      Autoevaluación: 5: Estudiante
+```
+
+La escala es de 1 a 5 — representa qué tan fácil
+o satisfactoria es cada etapa para el estudiante.
+Usar para mostrar el recorrido de aprendizaje de
+un tema o proceso.
+
+---
+
+### Pie chart — proporciones y porcentajes
+
+```{mermaid}
+pie title ¿Qué componentes tiene la fotosíntesis?
+    "Luz solar" : 45
+    "Agua" : 30
+    "CO2" : 25
+```
+
+Usar para mostrar distribución de partes de un todo.
+El `title` es obligatorio para que el estudiante entienda
+qué representa el gráfico.
+
+---
+
+### Quadrant chart — clasificación en cuadrantes
+
+```{mermaid}
+quadrantChart
+    title Clasificación de conceptos por complejidad y frecuencia
+    x-axis Baja frecuencia --> Alta frecuencia
+    y-axis Baja complejidad --> Alta complejidad
+    quadrant-1 Dominar primero
+    quadrant-2 Aprender con apoyo
+    quadrant-3 Revisar ocasionalmente
+    quadrant-4 Practicar constantemente
+    Concepto A: [0.3, 0.6]
+    Concepto B: [0.7, 0.8]
+    Concepto C: [0.5, 0.3]
+    Concepto D: [0.8, 0.4]
+```
+
+Usar para comparar elementos según dos dimensiones
+simultáneamente. Los ejes deben estar claramente
+etiquetados con términos que el estudiante entienda.
+Los valores van de 0 a 1 en ambos ejes.
+
+---
+
+### XY Chart — datos numéricos con barras y líneas
+
+```{mermaid}
+xychart-beta
+    title "Evolución del rendimiento por período"
+    x-axis [período-1, período-2, período-3, período-4, período-5, período-6]
+    y-axis "Puntaje" 0 --> 100
+    bar [45, 60, 70, 75, 85, 90]
+    line [45, 60, 70, 75, 85, 90]
+```
+
+Usar para mostrar evolución de datos numéricos a lo largo
+del tiempo o fases. La `line` encima de la `bar` ayuda
+a visualizar la tendencia. El `title` y las etiquetas
+de los ejes son obligatorios.
+
+---
+
+### GitGraph — flujos con ramificaciones o caminos alternativos
+
+```{mermaid}
+gitGraph:
+    commit "Estado inicial"
+    branch proceso-alternativo
+    checkout proceso-alternativo
+    commit id:"variante-1"
+    commit tag:"punto clave"
+    checkout main
+    commit type: HIGHLIGHT
+    commit
+    merge proceso-alternativo
+    commit
+    branch resultado-final
+    commit
+```
+
+Usar para mostrar ramificaciones de un proceso,
+versiones de un concepto o caminos alternativos
+que luego convergen.
+
+Tipos de commit disponibles:
+
+- `NORMAL` — paso estándar (default)
+- `HIGHLIGHT` — paso importante o crítico
+- `REVERSE` — paso que revierte algo
+
+---
+
+### Texto en nodos
+
+- Máximo 5 palabras por nodo
+- Sin abreviaciones
+- Si el texto es largo usar comillas: `A["texto más largo aquí"]`
+- Para caracteres especiales usar comillas: `A["¿Qué es la energía?"]`
+- Para negrita en nodo usar markdown strings: `A["\`**texto**\`"]`
+
+---
+
+### Gotchas
+
+- No usar `end` en minúscula dentro de un nodo —
+  rompe el diagrama; usar `End` o `END`
+- No iniciar un nodo con `o` o `x` sin espacio previo —
+  genera conexiones circulares o cruzadas no deseadas
+- Los comentarios van con `%%` al inicio de la línea
+- No aplicar estilos con CSS externo —
+  usar siempre `classDef` dentro del diagrama
+- `mindmap` y `timeline` no soportan `classDef` —
+  usarlos solo cuando la estructura importa más que el color
+- Un diagrama por concepto — si se necesitan más,
+  dividir en secciones separadas con texto entre ellas
+- El diagrama va siempre después del párrafo que lo introduce,
+  nunca antes
+- `xychart-beta` aún es experimental —
+  verificar que el renderizador lo soporte antes de usarlo

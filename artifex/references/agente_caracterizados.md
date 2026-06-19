@@ -17,10 +17,25 @@ estudiante lee y usa directamente.
 
 Cada bloque contiene exactamente:
 
-1. **Un parrafo explicativo en segunda persona** (5-8 lineas) que arranca
-   desde la barrera cognitiva del perfil sin nombrarla, incluye los 3
-   niveles de Johnstone (submicro → simbolico → macro), y tiene
-   auto-instrucciones activas integradas en negrita.
+1. **3-5 parrafos cortos** (max 2 lineas c/u, sin párrafo corrido).
+   Arrancan desde la barrera cognitiva del perfil sin nombrarla.
+   Cada parrafo dice UNA idea. Formulas en display math `$$...$$`
+   (nunca inline para las principales). Codigo de color fijo:
+   <span style="color:blue">azul</span> = primer dato / variable A,
+   <span style="color:red">rojo</span> = segundo dato / variable B,
+   <span style="color:green">verde</span> = resultado final.
+   En HTML: `<span style="color:blue">texto</span>`.
+   En LaTeX dentro de `$$`: `\color{blue}texto`.
+   Auto-instrucciones activas en negrita, UNA por linea.
+
+   **Mapeo por dominio (elegir segun la materia):**
+
+   | Dominio | <span style="color:blue">Azul (A)</span> | <span style="color:red">Rojo (B)</span> | <span style="color:green">Verde</span> | Relacion |
+   |---------|:----:|:----:|:----:|:--------:|
+   | Quimica | Reactivo A (CO) | Reactivo B (H₂) | Producto | Coeficientes |
+   | Fisica  | Masa (kg) | Aceleracion (m/s²) | Fuerza (N) | F = m × a |
+   | Biologia| CO₂ | H₂O | Glucosa + O₂ | 6 : 6 → 1 |
+   | Matematicas | Primer termino | Segundo termino | Solucion (x) | Proporcion |
 2. **`**Ejemplo:**`** con auto-instruccion activa en negrita.
 3. **`**Ejercicios:**`** (un ejercicio) con opcion de formato alternativo
    en corchetes: `**[Opcional:** ... **]**`.
@@ -226,9 +241,9 @@ secuencia numerica, y opcion de usar calculadora.
   vez. La explicacion debe frenarlo activamente. Incluir el **nivel
   submicro/particulas** (Johnstone) como punto de partida: antes de
   cualquier numero, el estudiante debe visualizar lo que pasa entre las
-  particulas (ej: "cada molecula de $O_2$ necesita 2 de $H_2$, como cada
-  sandwich necesita 2 panes"). Despues pasar al nivel simbolico (formula,
-  ecuacion) y finalmente al macroscopico (gramos, volumen). Pasos como
+   particulas (ej: "cada unidad de A necesita 2 de B, como cada
+   sandwich necesita 2 panes"). Despues pasar al nivel simbolico (formula,
+   ecuacion) y finalmente al macroscopico (unidad concreta). Pasos como
   lista numerada vertical (`1. **Acción.** Expl.`), frases cortas (1-2
   lineas por parrafo), una idea por parrafo. Incluir temporizador
   sugerido: "Tiempo estimado: 25 min". Microestructura 25x5.
@@ -504,15 +519,17 @@ debe ser contenido para el estudiante, escrito en segunda persona.
 
 Estructura exacta:
 
-1. **Parrafo explicativo (5-8 lineas):** Arranca desde la barrera
-   (impulsividad, saturacion de memoria de trabajo) como un juego de
-   pasos secuenciales. Usa el **nivel submicro/particulas** de Johnstone
-   primero (analogia concreta: moleculas como objetos que se emparejan),
-   luego nivel simbolico (formulas con numeros), luego macroscopico
-   (lo que se observa). Incluye auto-instrucciones activas integradas
-   en el parrafo: "**Movimiento 1:** anota la ecuacion... Has ganado
-   esta ronda." Incluir "tapa y explica" en negrita dentro del parrafo.
-   Voz directa tipo entrenador.
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (impulsividad, saturacion de memoria de trabajo). Cada parrafo dice
+   UNA idea. Nivel submicro primero (analogia concreta), luego display
+   math con colores, luego nivel macro. Voz directa tipo entrenador.
+   Codigo de color: <span style="color:blue">azul</span> = variable A,
+   <span style="color:red">rojo</span> = variable B. Formula principal
+   en `$$...$$`. Auto-instrucciones en negrita, UNA por linea:
+   "**Movimiento 1:** anota la ecuacion."
+   **Elige el dominio** (quimica, fisica, biologia, matematicas) y
+   genera 4 sub-bloques de teoria, uno por dominio, igual que en
+   la seccion 10.6 de `_estilo_salida.md`.
 
 2. **`**Ejemplo:**`** (3-5 lineas): Caso resuelto con los mismos
    pasos. Incluir auto-instruccion activa en negrita: "**Ahora tapa
@@ -523,7 +540,7 @@ Estructura exacta:
    pasos en vez de escribirlos.]**"
 
 4. **`**Metacognicion:**`** (3 preguntas numeradas):
-   - Pregunta 1: relacion entre coeficientes y moleculas
+   - Pregunta 1: relacion entre A y B
    - Pregunta 2: que pasaria si cambiara una condicion
    - Pregunta 3: reflexion sobre el proceso personal
 
@@ -539,14 +556,14 @@ Estructura exacta:
 Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 Todo el bloque es contenido directo para el estudiante.
 
-1. **Parrafo explicativo:** Arranca desde la barrera (saturacion por
-   texto denso sin representacion grafica). Usa lenguaje visual desde
-   la primera linea: "Observa esta relacion...". Incluye **nivel
-   submicro/particulas** como descripcion visual (circulos de colores,
-   barras, diagramas), luego nivel simbolico (tabla con datos), luego
-   macro. Incluir tabla Markdown con datos. Auto-instruccion activa:
-   "**Ahora cubre los valores de la tabla y reconstruye el diagrama
-   de flujo de memoria.**"
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (saturacion por texto denso). Lenguaje visual desde la primera linea:
+   "Observa esta relacion...". Nivel submicro como descripcion visual
+   con colores. Tabla Markdown con datos. Display math con `\color{}`.
+   Codigo: <span style="color:blue">azul</span> = variable A,
+   <span style="color:red">rojo</span> = variable B.
+   **Elige el dominio** (quimica, fisica, biologia, matematicas) y
+   genera 4 sub-bloques de teoria, uno por dominio.
 
 2. **Ejemplo:** Tabla de datos + diagrama de flujo conceptual.
 
@@ -568,15 +585,13 @@ Todo el bloque es contenido directo para el estudiante.
 
 Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
-1. **Parrafo explicativo:** Arranca desde la barrera (densidad de
-   simbolos quimicos que se confunden visualmente). Usa vocabulario
-   minimo, oraciones cortas (max 15 palabras), sin metaforas ni
-   lenguaje figurado. Incluye **nivel submicro/particulas** primero
-   ("cuenta cuantas veces puedes repetir la receta"), luego nivel
-   simbolico (escritura de calculos sin acentos en
-   palabras/instrucciones), luego nivel macro. Incluir auto-instruccion
-   activa: "**Ahora tapa los pasos y dime en voz alta cual fue el
-   primer paso.**"
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (densidad de simbolos quimicos). Vocabulario minimo, oraciones de
+   max 15 palabras, S+V+O. Nivel submicro primero con vocabulario
+   simple. Display math con `\color{}`. Codigo:
+   <span style="color:blue">azul</span> = variable A,
+   <span style="color:red">rojo</span> = variable B. Auto-instruccion
+   activa al final: "**Ahora tapa los pasos y explica el primero.**"
 
 2. **Ejemplo:** Enunciado corto, pasos separados con `->` o lineas
    simples. Incluir: "**Sin mirar la solucion, explicale a un amigo
@@ -587,7 +602,7 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
    escribirlo.]**
 
 4. **Metacognicion:** 3 preguntas sin exigir lectura densa.
-   Relacion coeficientes-moleculas, causa del resultado, dificultad
+   Relacion entre A y B, causa del resultado, dificultad
    personal.
 
 5. **Opcion de respuesta:** Incluir "grabando un audio" como opcion.
@@ -600,15 +615,13 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
 Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
-1. **Parrafo explicativo:** Arranca desde la barrera (pensamiento
-   literal: "limitante" suena a restriccion arbitraria, no a
-   consecuencia matematica). Abre con "**Regla fija:**" en negrita.
-   Incluye **nivel submicro/particulas** como parte de la regla ("cada
-   molecula de CO necesita exactamente 2 moleculas de H₂"), luego
-   nivel simbolico (algoritmo numerado), luego nivel macro. Presentar
-   el ALGORITMO como lista numerada explicita. Auto-instruccion activa:
-   "**Ahora aplica el algoritmo al reves: si el H₂ es el limitante,
-   ¿cuantas moles de CO se consumen?**"
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (pensamiento literal). Abre con "**Regla fija:**" en negrita.
+   Nivel submicro como parte de la regla con colores
+   (<span style="color:blue">azul</span> = variable A,
+   <span style="color:red">rojo</span> = variable B).
+   Display math con `\color{}`. Algoritmo como lista numerada.
+   Auto-instruccion activa al final.
 
 2. **Ejemplo:** Regla fija + algoritmo paso a paso.
 
@@ -630,15 +643,13 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
 Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
-1. **Parrafo explicativo:** Arranca desde la barrera (dependencia de
-   un unico canal sensorial). Usa lenguaje multi-canal desde la primera
-   linea: "Imagina que tienes 4 fichas rugosas (CO) y 6 fichas suaves
-   (H₂)... Cierra los ojos y describe en voz alta." Incluye **nivel
-   submicro/particulas** como experiencia tactil/kinestesica (fichas,
-   texturas, objetos), luego nivel simbolico (escritura de calculos),
-   luego nivel macro. Auto-instruccion activa: "**Cierra los ojos y
-   traza la formula con el dedo mientras repites los pasos en voz
-   alta.**"
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (dependencia de un unico canal sensorial). Lenguaje multi-canal:
+   descripcion textual + kinestesica + auditiva.
+   <span style="color:blue">Azul</span> = variable A,
+   <span style="color:red">rojo</span> = variable B.
+   Colores dentro de `$$` con `\color{}`. Display math para formulas.
+   Auto-instruccion activa multi-canal al final.
 
 2. **Ejemplo:** Pasos con referencias multisensoriales (tacto, vista,
    calculo, resultado).
@@ -660,15 +671,13 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
 Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 
-1. **Parrafo explicativo:** Arranca desde la barrera (desconexion
-   emocional: "¿y esto para que sirve?"). Usa una metafora de la vida
-   real o comunidad colombiana (cooperativa, cocina comunitaria, vereda).
-   Incluye **nivel submicro/particulas** como una historia accesible
-   ("imagina personas en una fila..."), luego nivel simbolico, luego
-   nivel macro. Incluir ejercicio de regulacion integrado: "**Antes de
-   seguir, respira profundo 3 veces.**" Auto-instruccion activa:
-   "**Ahora explica en voz alta el paso que entendiste mejor. No
-   importa si no es perfecto — estas aprendiendo, y cada paso cuenta.**"
+1. **3-5 parrafos cortos (max 2 lineas c/u).** Arranca desde la barrera
+   (desconexion emocional: "¿y esto para que sirve?"). Metafora de la
+   vida real o comunidad colombiana. Nivel submicro como historia
+   accesible con colores (<span style="color:blue">azul</span> =
+   variable A, <span style="color:red">rojo</span> = variable B).
+   Display math con `\color{}`. Ejercicio de regulacion integrado.
+   Auto-instruccion activa convalidante al final.
 
 2. **Ejemplo:** Conexion con la metafora comunitaria. Validar proceso.
 
@@ -678,7 +687,7 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
    ¿como te sentiste al resolverlo?"
 
 4. **Metacognicion:** 3 preguntas con tono de acompanamiento.
-   Relacion coeficientes-moleculas, aplicacion a la comunidad,
+   Relacion entre A y B, aplicacion a la comunidad,
    estrategia usada.
 
 5. **Opcion de respuesta:** misma formula.
@@ -695,18 +704,26 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 - **No hay** `### Principio de construccion desde la barrera cognitiva`,
   `### Teoria construida desde la barrera`, ni
   `### Actividad con auto-instrucciones activas`?
-- **El parrafo arranca desde la barrera cognitiva del perfil** sin
+- **Los parrafos son cortos (max 2 lineas c/u)** y cada uno dice una idea?
+- **Los parrafos arrancan desde la barrera cognitiva del perfil** sin
   nombrarla? (No "la barrera es X", sino que el texto mismo parte
   del obstaculo.)
 - **Incluye el nivel submicro/particulas de Johnstone** como punto de
   partida?
+- **Usa codigo de color fijo:** <span style="color:blue">azul</span>
+  variable A, <span style="color:red">rojo</span> variable B?
+- **La formula principal esta en display math** `$$...$$` (no inline)?
+- **Usa `\color{}` dentro de `$$`** para que los colores se vean en PDF?
 - **Las autoinstrucciones son ACTIVAS** en negrita dentro del texto?
   ("**Ahora tapa y explica**")
 - **La metacognicion verifica comprension CONCEPTUAL**? (Relacion entre
-  coeficientes y moleculas, no solo "?que paso fue facil?")
-- Cada bloque tiene: parrafo + **Ejemplo:** + **Ejercicios:** +
-  **Metacognicion:** (3 preguntas) + **Opcion de respuesta:** +
-  **Glosario:** + `$\underline{\hspace{6cm}}$`?
+  A y B, no solo "?que paso fue facil?")
+- **El dominio (quimica, fisica, biologia, matematicas) esta correctamente
+  mapeado** con A/B segun la tabla de colores?
+- Cada bloque tiene: 3-5 parrafos cortos (4 dominios) + **Ejemplo:** +
+  **Ejercicios:** + **Metacognicion:** (3 preguntas) +
+  **Opcion de respuesta:** + **Glosario:** +
+  `$\underline{\hspace{6cm}}$`?
 - El ejercicio ofrece opcion de formato alternativo? (`**[Opcional:** ... **]**`)
 - El glosario cubre 3-4 terminos?
 - Los datos NO son copia exacta de los ejemplos/ejercicios generales?
@@ -722,11 +739,36 @@ Misma estructura exacta que Paso 2. **NO incluyas meta-comentario.**
 ```markdown
 ## Caracterizados — TDAH {.caracterizados}
 
-{Parrafo explicativo de 5-8 lineas en segunda persona. Arranca desde la
-barrera (impulsividad) sin nombrarla: "Identificar el reactivo limitante
-es un juego de 4 movimientos..." Incluye nivel submicro/particulas,
-simbolico y macro. Auto-instrucciones activas en negrita integradas:
-"**Movimiento 1:** anota... Has ganado esta ronda."}
+--- Quimica ---
+<span style="color:blue">CO</span> y <span style="color:red">H₂</span> se emparejan.
+Cada CO necesita 2 de H₂. Tienes 4 CO y 6 H₂. ¿Cuantos pares armas?
+$${\color{blue}n_{CO}} = 4\ \text{mol},\quad {\color{red}n_{H_2}} = 6\ \text{mol}$$
+$${\color{blue}4} \div {\color{blue}1} = 4,\quad {\color{red}6} \div {\color{red}2} = 3$$
+<span style="color:red">H₂</span> da 3. Es el limitante.
+**Movimiento 1:** anota la ecuacion. **Mov 2:** convierte a moles.
+**Mov 3:** divide entre coeficientes. **Mov 4:** el menor es el limitante.
+
+--- Fisica ---
+<span style="color:blue">Masa</span> y <span style="color:red">aceleracion</span>
+se multiplican. Masa = 4 kg, aceleracion = 3 m/s².
+$${\color{blue}m} = 4\ \text{kg},\quad {\color{red}a} = 3\ \text{m/s}^2$$
+$${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+**Mov 1:** anota F = m × a. **Mov 2:** identifica los datos.
+**Mov 3:** multiplica. **Mov 4:** revisa la unidad (N).
+
+--- Biologia ---
+<span style="color:blue">CO₂</span> y <span style="color:red">H₂O</span>
+se combinan con luz. 6 de cada uno producen glucosa.
+$$6{\color{blue}CO_2} + 6{\color{red}H_2O} \rightarrow {\color{green}C_6H_{12}O_6} + 6O_2$$
+**Mov 1:** anota la ecuacion. **Mov 2:** identifica coeficientes.
+**Mov 3:** usa la proporcion 6:6:1. **Mov 4:** convierte segun lo que pidan.
+
+--- Matematicas ---
+<span style="color:blue">2</span> es a <span style="color:red">3</span>
+como x es a 6. Multiplica en cruz.
+$$\frac{\color{blue}2}{\color{red}3} = \frac{x}{6},\quad {\color{green}x} = 4$$
+**Mov 1:** escribe la proporcion. **Mov 2:** iguala las fracciones.
+**Mov 3:** multiplica en cruz. **Mov 4:** despeja x.
 
 **Ejemplo:** {Caso resuelto. Incluir auto-instruccion activa en negrita:
 "**Ahora tapa el calculo y explica en voz alta por que dividiste...**"}
@@ -735,7 +777,7 @@ simbolico y macro. Auto-instrucciones activas en negrita integradas:
 en voz alta los pasos en vez de escribirlos.]**"}
 
 **Metacognicion:**
-1. {Pregunta sobre relacion entre coeficientes y moleculas}
+1. {Pregunta sobre relacion entre A y B}
 2. {Pregunta sobre cambio de condicion}
 3. {Pregunta sobre proceso personal}
 
@@ -751,10 +793,38 @@ $\underline{\hspace{6cm}}$
 
 ## Caracterizados — Visual {.caracterizados}
 
-{Parrafo explicativo visual. Arranca con "Observa esta relacion..."
-Incluye tabla Markdown con colores. Auto-instruccion: "**Ahora cubre
-los valores de la tabla y reconstruye el diagrama de flujo de
-memoria.**"}
+--- Quimica ---
+| Dato | Cantidad | Valor |
+|:-----|:--------:|:-----:|
+| <span style="color:blue">CO (A)</span> | 4 mol | 4÷1=4 |
+| <span style="color:red">H₂ (B)</span> | 6 mol | 6÷2=3 |
+<span style="color:green">H₂ es el limitante.</span>
+$${\color{blue}4} \div {\color{blue}1} = 4,\quad {\color{red}6} \div {\color{red}2} = 3$$
+
+--- Fisica ---
+| Dato | Cantidad | Formula |
+|:-----|:--------:|:-------:|
+| <span style="color:blue">Masa (m)</span> | 4 kg | — |
+| <span style="color:red">Aceleracion (a)</span> | 3 m/s² | — |
+<span style="color:green">F = 12 N.</span>
+$${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+
+--- Biologia ---
+| Reactivo | Cantidad | Coef |
+|:---------|:--------:|:----:|
+| <span style="color:blue">CO₂</span> | 6 | 6 |
+| <span style="color:red">H₂O</span> | 6 | 6 |
+<span style="color:green">1 glucosa.</span>
+$$6{\color{blue}CO_2} + 6{\color{red}H_2O} \rightarrow {\color{green}C_6H_{12}O_6} + 6O_2$$
+
+--- Matematicas ---
+| Dato | Valor |
+|:-----|:-----:|
+| <span style="color:blue">A</span> | 2 |
+| <span style="color:red">B</span> | 3 |
+| <span style="color:green">x</span> | ? |
+<span style="color:green">x = 4.</span>
+$$\frac{\color{blue}2}{\color{red}3} = \frac{x}{6},\quad x = {\color{green}4}$$
 
 **Ejemplo:** {Tabla de datos + diagrama de flujo conceptual}
 
@@ -778,10 +848,28 @@ $\underline{\hspace{6cm}}$
 
 ## Caracterizados — Dislexia {.caracterizados}
 
-{Parrafo explicativo con vocabulario minimo, oraciones cortas, sin
-metaforas. Arranca desde la barrera de densidad simbolica. Incluye
-auto-instruccion: "**Ahora tapa los pasos y dime en voz alta cual
-fue el primer paso.**"}
+--- Quimica ---
+Azul es <span style="color:blue">CO</span>. Rojo es <span style="color:red">H₂</span>.
+La proporcion es 1 a 2. El que se acaba primero es la respuesta.
+$${\color{blue}n_{CO}} = 4,\quad {\color{red}n_{H_2}} = 6$$
+$${\color{blue}4} \div {\color{blue}1} = 4,\quad {\color{red}6} \div {\color{red}2} = 3$$
+
+--- Fisica ---
+<span style="color:blue">Masa</span> es kg.
+<span style="color:red">Aceleracion</span> es m/s².
+Se multiplican y dan <span style="color:green">fuerza</span>.
+$${\color{blue}m} = 4\ \text{kg},\quad {\color{red}a} = 3\ \text{m/s}^2$$
+$${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+
+--- Biologia ---
+<span style="color:blue">CO₂</span> y <span style="color:red">H₂O</span>
+se combinan con luz. Dan <span style="color:green">glucosa</span>.
+$$6{\color{blue}CO_2} + 6{\color{red}H_2O} \rightarrow {\color{green}C_6H_{12}O_6} + 6O_2$$
+
+--- Matematicas ---
+<span style="color:blue">2</span> es a <span style="color:red">3</span>
+como x es a 6. Multiplica cruzado.
+$$\frac{\color{blue}2}{\color{red}3} = \frac{x}{6},\quad {\color{green}x} = 4$$
 
 **Ejemplo:** {Enunciado corto, pasos simples. Incluir: "**Sin mirar la
 solucion, explicale a un amigo de 10 años como llegaste.**"}
@@ -790,7 +878,7 @@ solucion, explicale a un amigo de 10 años como llegaste.**"}
 explicando el procedimiento en vez de escribirlo.]**"}
 
 **Metacognicion:**
-1. {Pregunta sobre relacion coeficientes-moleculas}
+1. {Pregunta sobre relacion A-B}
 2. {Pregunta sobre causa del resultado}
 3. {Pregunta sobre dificultad personal}
 
@@ -806,10 +894,32 @@ $\underline{\hspace{6cm}}$
 
 ## Caracterizados — Autismo {.caracterizados}
 
-**Regla fija:** {La regla en negrita. Incluye nivel submicro como parte
-de la regla. Sigue algoritmo numerado. Auto-instruccion: "**Ahora aplica
-el algoritmo al reves: si el H₂ es el limitante, ¿cuantas moles de CO
-se consumen?**"}
+--- Quimica ---
+**Regla fija:** compara moles entre reactivos.
+<span style="color:blue">CO</span> + 2<span style="color:red">H₂</span>.
+<span style="color:blue">4</span> y <span style="color:red">6</span>.
+$${\color{blue}n_{CO}} = 4,\quad {\color{red}n_{H_2}} = 6$$
+$$\frac{\color{blue}4}{\color{blue}1} = 4,\quad \frac{\color{red}6}{\color{red}2} = 3$$
+<span style="color:red">H₂</span> da 3. Es el limitante.
+
+--- Fisica ---
+**Regla fija:** F = m × a.
+<span style="color:blue">Masa</span> = 4 kg.
+<span style="color:red">Aceleracion</span> = 3 m/s².
+$${\color{blue}m} = 4,\quad {\color{red}a} = 3$$
+$${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+
+--- Biologia ---
+**Regla fija:** 6CO₂ + 6H₂O → 1 glucosa.
+<span style="color:blue">12 CO₂</span>, <span style="color:red">18 H₂O</span>.
+$${\color{blue}n_{CO_2}} = 12,\quad {\color{red}n_{H_2O}} = 18$$
+$$\frac{\color{blue}12}{6} = 2,\quad \frac{\color{red}18}{6} = 3$$
+<span style="color:blue">CO₂</span> da 2. Es el limitante.
+
+--- Matematicas ---
+**Regla fija:** a/b = c/x → x = (b×c)/a.
+<span style="color:blue">a=2</span>, <span style="color:red">b=4</span>, <span style="color:green">c=5</span>.
+$$x = \frac{{\color{red}4} \times {\color{green}5}}{\color{blue}2} = {\color{green}10}$$
 
 **Ejemplo:** {Regla fija + algoritmo paso a paso}
 
@@ -834,10 +944,30 @@ $\underline{\hspace{6cm}}$
 
 ## Caracterizados — Accesibilidad Sensorial {.caracterizados}
 
-{Parrafo explicativo multi-canal. Arranca con experiencia sensorial:
-"Imagina que tienes 4 fichas rugosas (CO) y 6 fichas suaves (H₂)..."
-Auto-instruccion: "**Cierra los ojos y traza la formula con el dedo
-mientras repites los pasos en voz alta.**"}
+--- Quimica ---
+Fichas rugosas <span style="color:blue">azules</span> (CO).
+Fichas suaves <span style="color:red">rojas</span> (H₂).
+4 azules, 6 rojas. Arma pares: 1 azul + 2 rojas.
+Las rojas se acaban primero. Señala el numero menor.
+$${\color{blue}4} \div {\color{blue}1} = 4,\quad {\color{red}6} \div {\color{red}2} = 3$$
+
+--- Fisica ---
+Fichas <span style="color:blue">pesadas</span> = masa (4 kg).
+Fichas <span style="color:red">ligeras</span> = aceleracion (3 m/s²).
+Empuja ambas. La fuerza es el empujon total.
+$${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+
+--- Biologia ---
+Burbujas <span style="color:blue">azules</span> de CO₂.
+Gotas <span style="color:red">rojas</span> de H₂O.
+6 y 6 se mezclan con luz. Tocá la glucosa verde.
+$$6{\color{blue}CO_2} + 6{\color{red}H_2O} \rightarrow {\color{green}C_6H_{12}O_6} + 6O_2$$
+
+--- Matematicas ---
+Fichas <span style="color:blue">rayadas</span> (2).
+Fichas <span style="color:red">punteadas</span> (3).
+2 es a 3 como x es a 6. Toca cada par mientras contas.
+$$\frac{\color{blue}2}{\color{red}3} = \frac{x}{6},\quad {\color{green}x} = 4$$
 
 **Ejemplo:** {Pasos con referencias multisensoriales}
 
@@ -861,11 +991,32 @@ $\underline{\hspace{6cm}}$
 
 ## Caracterizados — Socioemocional {.caracterizados}
 
-{Parrafo explicativo con metafora comunitaria. Incluye ejercicio de
-regulacion: "**Antes de seguir, respira profundo 3 veces.**"
-Auto-instruccion: "**Ahora explica en voz alta el paso que entendiste
-mejor. No importa si no es perfecto — estas aprendiendo, y cada paso
-cuenta.**"}
+--- Quimica ---
+Vamos juntos. <span style="color:blue">CO</span> y <span style="color:red">H₂</span>
+son como harina y huevos. 4 de CO, 6 de H₂. El que se acaba primero es la respuesta.
+Respira hondo. $${\color{blue}4} \div {\color{blue}1} = 4,\quad {\color{red}6} \div {\color{red}2} = 3$$
+<span style="color:red">H₂</span> da 3. Lo lograste. Cada problema te fortalece.
+
+--- Fisica ---
+En comunidad empujan un carro.
+<span style="color:blue">Masa</span> (4 kg) y <span style="color:red">aceleracion</span> (3 m/s²).
+La fuerza es el empujon de todos juntos.
+Respira. $${\color{green}F} = {\color{blue}4} \times {\color{red}3} = 12\ \text{N}$$
+Todas las personas suman. Tu conocimiento tambien crece.
+
+--- Biologia ---
+La planta recibe <span style="color:blue">CO₂</span> y <span style="color:red">agua</span>,
+y con luz produce <span style="color:green">glucosa</span> y oxigeno.
+Todo esta conectado. El aire que tomas viene de las plantas.
+$$6{\color{blue}CO_2} + 6{\color{red}H_2O} \rightarrow {\color{green}C_6H_{12}O_6} + 6O_2$$
+Asi como la planta crece, tu conocimiento brota. Sigue asi.
+
+--- Matematicas ---
+En tu comunidad, 2 lapices por cada 3 hojas. 6 lapices ¿cuantas hojas?
+<span style="color:blue">2</span> es a <span style="color:red">3</span>
+como 6 es a x. Respiramos juntos.
+$$\frac{\color{blue}2}{\color{red}3} = \frac{6}{\color{green}x},\quad {\color{green}x} = 9$$
+9 hojas. El reparto justo. Lo hiciste muy bien.
 
 **Ejemplo:** {Conexion con la metafora comunitaria}
 
@@ -874,7 +1025,7 @@ con un companero.]**" Incluir: "Al terminar, en una escala del 1 al 5,
 ¿como te sentiste al resolverlo?"}
 
 **Metacognicion:**
-1. {Pregunta sobre relacion coeficientes-moleculas}
+1. {Pregunta sobre relacion A-B}
 2. {Pregunta sobre aplicacion a la comunidad}
 3. {Pregunta sobre estrategia usada}
 
@@ -905,18 +1056,22 @@ $\underline{\hspace{6cm}}$
   `### Actividad con auto-instrucciones activas`.
 - **NO incluir meta-comentario ni analisis sobre el perfil.** Todo el
   bloque es contenido directo para el estudiante.
-- Cada bloque DEBE contener: parrafo explicativo + **Ejemplo:** +
-  **Ejercicios:** + **Metacognicion:** (3 preguntas) +
+- Cada bloque DEBE contener: 3-5 parrafos cortos (max 2 lineas c/u) +
+  **Ejemplo:** + **Ejercicios:** + **Metacognicion:** (3 preguntas) +
   **Opcion de respuesta:** + **Glosario:** (3-4 terminos) +
   `$\underline{\hspace{6cm}}$`.
-- **El parrafo debe construirse DESDE la barrera cognitiva del perfil**
+- **Los parrafos deben construirse DESDE la barrera cognitiva del perfil**
   sin nombrarla — el texto parte del obstaculo, no lo describe.
-- **Debe incluir el nivel submicro/particulas de Johnstone** como punto
-  de partida, luego nivel simbolico, luego nivel macro.
+- **Codigo de color fijo:** <span style="color:blue">azul</span> =
+  variable A, <span style="color:red">rojo</span> = variable B,
+  <span style="color:green">verde</span> = resultado final.
+  En HTML: `<span style="color:blue">texto</span>`.
+  En `$$`: `\color{blue}texto`.
+- **La formula principal debe estar en display math** `$$...$$`, no inline.
 - **Las autoinstrucciones deben ser ACTIVAS** en negrita dentro del
   texto ("**Ahora tapa y explica**").
 - **La metacognicion debe verificar comprension CONCEPTUAL**: relacion
-  entre coeficientes y moleculas, no solo proceso.
+  entre A y B, no solo proceso.
 - **Swap test obligatorio:** cambiar el heading de perfil debe "romper"
   el contenido. Si funciona para otro perfil, esta generico.
 - El ejercicio debe ofrecer opcion alternativa de formato de respuesta
@@ -936,7 +1091,7 @@ $\underline{\hspace{6cm}}$
 |:----------------------------------------------- |:--------------------------------------------------------------- |
 | Concepto abstracto                              | En Visual, usar mapa conceptual con sangrias en vez de diagrama |
 | Concepto con procedimiento                      | En Visual, usar diagrama de flujo con `->`                      |
-| Dificultad para crear variaciones de ejercicios | Cambiar los numeros, las unidades, o la reaccion quimica        |
+| Dificultad para crear variaciones de ejercicios | Cambiar los numeros, las unidades, o el contexto del tema       |
 | Perfil con restriccion de longitud              | Priorizar el ejemplo resuelto sobre la teoria si es necesario   |
 | El ejemplo requiere muchos pasos                | Incluir solo los pasos esenciales (max. 5 pasos)                |
 | Estudiante no puede escribir                    | Usar opcion de respuesta por voz o seleccion                    |

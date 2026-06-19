@@ -1,0 +1,874 @@
+---
+title: "Teorema del seno"
+bibliography: ../references.bib
+---
+
+## Teoría {.teoria}
+
+La **trigonometría** es la rama de las matemáticas que estudia las relaciones entre los lados y los ángulos de los triángulos. El **teorema del seno** (o ley de senos) establece una proporción constante entre la longitud de cada lado de un triángulo y el seno del ángulo opuesto a dicho lado. Para cualquier triángulo $ABC$ con lados $a$, $b$ y $c$ opuestos a los vértices $A$, $B$ y $C$ respectivamente, se cumple:
+
+$$ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R \tag{1} $$
+
+Donde $R$ es el radio de la **circunferencia circunscrita** (círculo que pasa por los tres vértices del triángulo) [@stewart2015precalculo].
+
+El teorema del seno es particularmente útil para resolver triángulos oblicuángulos (triángulos que no tienen un ángulo recto) cuando se conocen:
+
+- **Dos ángulos y un lado (AAL o ALA):** se encuentra el tercer ángulo usando la suma $A + B + C = 180^\circ$ y luego se aplica la ley de senos para hallar los lados restantes.
+- **Dos lados y un ángulo no comprendido (LLA):** conocido como el **caso ambiguo**, puede producir cero, una o dos soluciones posibles dependiendo de las longitudes relativas.
+
+**Caso ambiguo (LLA):** Dados dos lados $a$, $b$ y el ángulo $A$ opuesto al lado $a$:
+
+- Si $a < b\sin A$: no hay solución.
+- Si $a = b\sin A$: una solución (triángulo rectángulo).
+- Si $b\sin A < a < b$: dos soluciones (dos triángulos posibles).
+- Si $a \geq b$: una solución.
+
+La constante $2R$ también permite calcular el área del triángulo mediante:
+
+$$ \text{Área} = \frac{abc}{4R} \tag{2} $$
+
+::: {.content-visible when-format="html"}
+
+```{=html}
+<style>
+.sim-seno {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  max-width: 100%;
+  margin: 1.5em 0;
+  padding: 1.8em;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f5f7fa);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid #e0e4e8;
+}
+.sim-seno h3 {
+  margin: 0 0 0.4em 0;
+  font-size: 1.25em;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5em;
+  display: inline-block;
+}
+.sim-seno .sim-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+  align-items: end;
+}
+.sim-seno .sim-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.sim-seno .sim-field label {
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.sim-seno .sim-field input,
+.sim-seno .sim-field select {
+  padding: 0.5em 0.7em;
+  font-size: 1em;
+  border: 2px solid #dce1e8;
+  border-radius: 8px;
+  width: 110px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+.sim-seno .sim-field input:focus,
+.sim-seno .sim-field select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.15);
+}
+.sim-seno .sim-btn {
+  padding: 0.55em 1.4em;
+  font-size: 0.95em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s, transform 0.1s;
+}
+.sim-seno .sim-btn:hover { background: #2980b9; }
+.sim-seno .sim-btn:active { transform: scale(0.97); }
+.sim-seno .sim-btn.sec {
+  background: #95a5a6;
+}
+.sim-seno .sim-btn.sec:hover { background: #7f8c8d; }
+.sim-seno .sim-result {
+  margin-top: 1.2em;
+  padding: 1.2em;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  white-space: pre-wrap;
+  font-size: 0.95em;
+  line-height: 1.7;
+  min-height: 2em;
+}
+.sim-seno .sim-result .ok {
+  display: inline-block;
+  background: #e8f8f0;
+  color: #1a7a3a;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  border-radius: 4px;
+}
+.sim-seno .sim-result .err {
+  display: inline-block;
+  background: #fde8e8;
+  color: #c0392b;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  border-radius: 4px;
+}
+.sim-seno .sim-result .hl  { color: #2c3e50; font-weight: 700; }
+.sim-seno .sim-info {
+  font-size: 0.88em;
+  color: #666;
+  margin-bottom: 1.2em;
+  padding: 0.6em 0.8em;
+  background: #f0f4f9;
+  border-radius: 6px;
+}
+.sim-seno .sim-tabla {
+  margin-top: 0.6em;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+.sim-seno .sim-tabla td {
+  padding: 0.25em 1em 0.25em 0;
+  border: none;
+}
+.sim-seno .sim-tabla .label { color: #888; font-weight: 600; }
+.sim-seno .sim-tabla .val { font-weight: 600; color: #2c3e50; }
+.sim-seno .sim-k {
+  display: inline-block;
+  margin-top: 0.6em;
+  padding: 0.5em 1em;
+  background: #eef4fb;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #2980b9;
+  border-left: 4px solid #3498db;
+}
+.sol-box {
+  margin: 0.5em 0;
+  padding: 0.6em 1em;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+}
+.sol-box .sol-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.3em;
+}
+</style>
+<div class="sim-seno" id="sim-seno-app">
+  <h3>Calculadora - Teorema del seno</h3>
+  <div class="sim-info">Ingresa los datos del tri&aacute;ngulo. El simulador calcular&aacute; los lados y &aacute;ngulos faltantes usando <i>a</i>/sen <i>A</i> = <i>b</i>/sen <i>B</i> = <i>c</i>/sen <i>C</i>.</div>
+  <div class="sim-row">
+    <div class="sim-field">
+      <label for="sim-modo">Modo</label>
+      <select id="sim-modo">
+        <option value="AAL">Dos &aacute;ngulos + un lado (AAL)</option>
+        <option value="LLA">Dos lados + &aacute;ngulo no comprendido (LLA)</option>
+      </select>
+    </div>
+  </div>
+  <div class="sim-row" id="sim-inputs-AAL">
+    <div class="sim-field"><label>A (&deg;)</label><input type="number" id="sim-aal-A" value="40" step="any"></div>
+    <div class="sim-field"><label>B (&deg;)</label><input type="number" id="sim-aal-B" value="60" step="any"></div>
+    <div class="sim-field"><label>a</label><input type="number" id="sim-aal-a" value="10" step="any"></div>
+  </div>
+  <div class="sim-row" id="sim-inputs-LLA" style="display:none">
+    <div class="sim-field"><label>a</label><input type="number" id="sim-lla-a" value="12" step="any"></div>
+    <div class="sim-field"><label>b</label><input type="number" id="sim-lla-b" value="8" step="any"></div>
+    <div class="sim-field"><label>A (&deg;)</label><input type="number" id="sim-lla-A" value="35" step="any"></div>
+  </div>
+  <div class="sim-row">
+    <button class="sim-btn" id="sim-calcular">Calcular</button>
+    <button class="sim-btn sec" id="sim-limpiar">Limpiar</button>
+  </div>
+  <div class="sim-result" id="sim-resultado">Presiona <b>Calcular</b> para resolver el tri&aacute;ngulo.</div>
+</div>
+<script>
+(function() {
+  var app = document.getElementById('sim-seno-app');
+  if (!app) return;
+  var modo = document.getElementById('sim-modo');
+  var aal = document.getElementById('sim-inputs-AAL');
+  var lla = document.getElementById('sim-inputs-LLA');
+  var resultado = document.getElementById('sim-resultado');
+  var btnCalc = document.getElementById('sim-calcular');
+  var btnLimpiar = document.getElementById('sim-limpiar');
+  function mostrarInputs() {
+    var m = modo.value;
+    aal.style.display = m === 'AAL' ? '' : 'none';
+    lla.style.display = m === 'LLA' ? '' : 'none';
+  }
+  modo.addEventListener('change', mostrarInputs);
+  mostrarInputs();
+  function g(id) { return parseFloat(document.getElementById(id).value); }
+  function fmt(v) {
+    if (isNaN(v)) return '&mdash;';
+    var s = v.toFixed(3);
+    if (s.indexOf('.') > -1) s = s.replace(/\.?0+$/, '');
+    return s;
+  }
+  function resolverAAL() {
+    var A = g('sim-aal-A'), B = g('sim-aal-B'), a = g('sim-aal-a');
+    if (isNaN(A) || isNaN(B) || isNaN(a)) return { error: 'Ingresa valores num&eacute;ricos v&aacute;lidos.' };
+    if (A <= 0 || B <= 0) return { error: 'Los &aacute;ngulos deben ser positivos.' };
+    if (A + B >= 180) return { error: 'La suma A + B debe ser menor a 180&deg;.' };
+    var C = 180 - A - B;
+    if (C <= 0) return { error: 'El &aacute;ngulo C debe ser positivo. Revisa A y B.' };
+    var rad = Math.PI / 180;
+    var senA = Math.sin(A * rad), senB = Math.sin(B * rad), senC = Math.sin(C * rad);
+    var k = a / senA;
+    var b = k * senB, c = k * senC;
+    var R = k / 2;
+    return { A: A, B: B, C: C, a: a, b: b, c: c, k: k, R: R, senA: senA, senB: senB, senC: senC };
+  }
+  function resolverLLA() {
+    var a = g('sim-lla-a'), b = g('sim-lla-b'), A = g('sim-lla-A');
+    if (isNaN(a) || isNaN(b) || isNaN(A)) return { error: 'Ingresa valores num&eacute;ricos v&aacute;lidos.' };
+    if (a <= 0 || b <= 0) return { error: 'Los lados deben ser positivos.' };
+    if (A <= 0 || A >= 180) return { error: 'El &aacute;ngulo A debe estar entre 0&deg; y 180&deg;.' };
+    var rad = Math.PI / 180;
+    var senA = Math.sin(A * rad);
+    var k = a / senA;
+    var senB = (b * senA) / a;
+    if (senB > 1.0001) return { error: 'No hay soluci&oacute;n: sen B &gt; 1. Intenta con otros valores.' };
+    if (senB > 1) senB = 1;
+    var B1 = Math.asin(senB) / rad;
+    var B2 = 180 - B1;
+    var sols = [];
+    var casos = [];
+    if (a < b * senA - 1e-9) {
+      return { error: 'No hay soluci&oacute;n: a &lt; b &middot; sen A.' };
+    } else if (Math.abs(a - b * senA) < 1e-9) {
+      casos = [B1];
+    } else if (a < b - 1e-9) {
+      casos = [B1, B2];
+    } else {
+      casos = [B1];
+    }
+    for (var i = 0; i < casos.length; i++) {
+      var B = casos[i];
+      if (B <= 0 || B >= 180) continue;
+      var C = 180 - A - B;
+      if (C <= 0 || C >= 180) continue;
+      var senC = Math.sin(C * rad);
+      var c = k * senC;
+      sols.push({ A: A, B: B, C: C, a: a, b: b, c: c, k: k, R: k/2, senA: senA, senB: Math.sin(B * rad), senC: senC });
+    }
+    return { sols: sols };
+  }
+  function mostrar(res) {
+    var h = '';
+    if (res.error) {
+      h = '<span class="err">' + res.error + '</span>';
+    } else if (res.sols !== undefined) {
+      if (res.sols.length === 0) {
+        h = '<span class="err">No hay soluci&oacute;n v&aacute;lida para los datos dados.</span>';
+      } else {
+        h += '<span class="hl" style="font-size:1.05em">' + res.sols.length + ' soluci&oacute;n(es) posible(s)</span>';
+        for (var i = 0; i < res.sols.length; i++) {
+          var s = res.sols[i];
+          h += '<div class="sol-box"><div class="sol-title">Soluci&oacute;n ' + (i+1) + '</div>';
+          h += '<table class="sim-tabla"><tr><td class="label">Angulos:</td><td class="val">A = ' + fmt(s.A) + '&deg;</td><td class="val">B = ' + fmt(s.B) + '&deg;</td><td class="val">C = ' + fmt(s.C) + '&deg;</td></tr>';
+          h += '<tr><td class="label">Lados:</td><td class="val">a = ' + fmt(s.a) + '</td><td class="val">b = ' + fmt(s.b) + '</td><td class="val">c = ' + fmt(s.c) + '</td></tr>';
+          h += '</table><div class="sim-k">\\( \\displaystyle \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = ' + fmt(s.k) + ' \\) &nbsp;|&nbsp; \\( 2R = ' + fmt(s.k) + ' \\) &nbsp;|&nbsp; \\( R = ' + fmt(s.R) + ' \\)</div></div>';
+        }
+      }
+    } else {
+      h = '<span class="ok">Tri&aacute;ngulo resuelto</span>';
+      h += '<table class="sim-tabla"><tr><td class="label">Angulos:</td><td class="val">A = ' + fmt(res.A) + '&deg;</td><td class="val">B = ' + fmt(res.B) + '&deg;</td><td class="val">C = ' + fmt(res.C) + '&deg;</td></tr>';
+      h += '<tr><td class="label">Lados:</td><td class="val">a = ' + fmt(res.a) + '</td><td class="val">b = ' + fmt(res.b) + '</td><td class="val">c = ' + fmt(res.c) + '</td></tr>';
+      h += '</table>';
+      h += '<div class="sim-k">\\( \\displaystyle \\frac{a}{\\sin A} = \\frac{' + fmt(res.a) + '}{' + fmt(res.senA) + '} = ' + fmt(res.k) + ' \\)<br>';
+      h += '\\( \\displaystyle \\frac{b}{\\sin B} = \\frac{' + fmt(res.b) + '}{' + fmt(res.senB) + '} = ' + fmt(res.k) + ' \\)<br>';
+      h += '\\( \\displaystyle \\frac{c}{\\sin C} = \\frac{' + fmt(res.c) + '}{' + fmt(res.senC) + '} = ' + fmt(res.k) + ' \\)<br>';
+      h += '\\( \\displaystyle 2R = ' + fmt(res.k) + ' \\Rightarrow R = ' + fmt(res.R) + ' \\)</div>';
+    }
+    resultado.innerHTML = h;
+    try { if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([resultado]); } catch(e) {}
+  }
+  btnCalc.addEventListener('click', function() {
+    var m = modo.value;
+    var r = m === 'AAL' ? resolverAAL() : resolverLLA();
+    mostrar(r);
+  });
+  btnLimpiar.addEventListener('click', function() {
+    if (modo.value === 'AAL') {
+      document.getElementById('sim-aal-A').value = '';
+      document.getElementById('sim-aal-B').value = '';
+      document.getElementById('sim-aal-a').value = '';
+    } else {
+      document.getElementById('sim-lla-a').value = '';
+      document.getElementById('sim-lla-b').value = '';
+      document.getElementById('sim-lla-A').value = '';
+    }
+    resultado.innerHTML = 'Valores limpiados. Ingresa nuevos datos y presiona <b>Calcular</b>.';
+  });
+  app.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') btnCalc.click();
+  });
+})();
+</script>
+```
+
+:::
+
+## Ideas Previas {.ideas-previas}
+
+Imagina que estás en el Parque Arqueológico de San Agustín (Huila) y encuentras dos estatuas precolombinas separadas por una quebrada. No puedes cruzar directamente, pero puedes medir la distancia desde donde estás hasta cada estatua y el ángulo entre esas dos líneas de visión. Con esa información, un arqueólogo podría determinar la distancia exacta entre las dos estatuas.
+
+- **¿Qué crees que necesitas saber para calcular la distancia entre dos puntos que no puedes medir directamente?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **¿Recuerdas qué es el seno de un ángulo en un triángulo rectángulo? ¿Cómo se define?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **Si conoces dos ángulos de un triángulo, ¿puedes determinar el tercero? ¿Cómo?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **¿En qué situaciones de la vida cotidiana crees que es necesario medir distancias sin poder usar una cinta métrica directamente?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **¿Qué relación crees que existe entre el tamaño de un lado de un triángulo y el ángulo que está frente a ese lado?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **¿Has visto algún instrumento que usen los topógrafos o constructores para medir ángulos en el terreno?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **Si tuvieras que encontrar la altura de un cerro sin escalarlo, ¿qué datos necesitarías?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- **¿Por qué piensas que es importante para un ingeniero conocer la distancia exacta entre dos puntos separados por un obstáculo?**
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+En el municipio de Monguí (Boyacá), los topógrafos del Instituto Geográfico Agustín Codazzi (IGAC) miden regularmente las montañas usando triangulación. Se colocan en dos puntos conocidos y miden ángulos hacia un tercer punto inaccesible (como la cima de una montaña). Con esos datos y el teorema del seno, calculan distancias y alturas sin necesidad de escalar el terreno. Este mismo principio se usó en el siglo XVIII para medir el meridiano terrestre en la Misión Geodésica Francesa que pasó por territorio colombiano.
+
+## Contextualización — Método Feynman {.contexto}
+
+Imagina que estás en la Plaza de Bolívar de Bogotá y quieres saber la distancia entre la estatua de Bolívar y la entrada de la Catedral Primada, pero hay una fuente de por medio que te impide medir directamente. Te colocas en un punto cualquiera, mides tu distancia a la estatua (digamos $20$ m), mides tu distancia a la catedral ($25$ m), y con un transportador mides el ángulo entre esas dos líneas ($40^\circ$). Ahora tienes un triángulo donde conoces dos lados y el ángulo entre ellos. ¿Y si en lugar de eso conocieras un lado y dos ángulos? El teorema del seno te permite resolver cualquier triángulo oblicuángulo con esa información. La clave está en que la razón entre un lado y el seno de su ángulo opuesto es constante para los tres pares lado-ángulo. Es como si cada lado "gritara" su propia longitud dividida por el seno de su ángulo opuesto, y todos gritaran el mismo número. Cuidado: el teorema del seno no es directamente aplicable a triángulos rectángulos como una novedad — en esos casos se sigue usando el teorema de Pitágoras y las razones trigonométricas básicas, aunque el teorema del seno también funciona.
+
+## Caracterizados — TDAH {.caracterizados}
+
+Resolver un triángulo con el teorema del seno es un juego de $3$ movimientos. Antes de empezar, visualiza esto: tienes un triángulo con tres ángulos ($A$, $B$, $C$) y tres lados ($a$, $b$, $c$). El teorema del seno dice que $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$. Es como una balanza de tres platillos que siempre está equilibrada. **Movimiento 1:** identifica qué datos te dan y qué necesitas encontrar. **Movimiento 2:** elige la proporción que relaciona tus datos conocidos con la incógnita. **Movimiento 3:** despeja la incógnita y calcula. Si te dan dos ángulos, primero calcula el tercero restando de $180^\circ$ — ese es el **Movimiento 0**.
+
+**Ejemplo:** En un triángulo $ABC$, $A = 40^\circ$, $B = 60^\circ$, $a = 10$ cm. Encuentra $b$. Movimiento 0: $C = 180^\circ - 40^\circ - 60^\circ = 80^\circ$. Movimiento 1: conozco $A$, $B$, $a$; quiero $b$. Movimiento 2: uso $\frac{a}{\sin A} = \frac{b}{\sin B}$. Movimiento 3: $b = \frac{a \cdot \sin B}{\sin A} = \frac{10 \cdot \sin 60^\circ}{\sin 40^\circ} = \frac{10 \cdot 0.8660}{0.6428} \approx 13.47$ cm. **Ahora tapa el cálculo y explica en voz alta por qué elegiste esa proporción y no otra.**
+
+**Ejercicios:** En un triángulo $ABC$, $A = 30^\circ$, $C = 70^\circ$, $b = 15$ cm. Aplica los 3 movimientos para hallar $a$ y $c$. **[Opcional: explica en voz alta los pasos en vez de escribirlos.]**
+
+**Metacognición:**
+1. Si conoces dos ángulos y un lado, ¿siempre puedes encontrar los otros dos lados? ¿Por qué?
+2. ¿Qué movimiento se te hizo más fácil? ¿Cuál más difícil?
+3. ¿Cómo sabes qué proporción usar si tienes $a$, $b$ y $A$ pero no $B$?
+
+**Opción de respuesta:** Puedes responder escribiendo, dibujando o explicándoselo a un compañero.
+
+**Glosario:**
+- **Seno:** función trigonométrica que relaciona un ángulo con la razón entre el cateto opuesto y la hipotenusa en un triángulo rectángulo.
+- **Triángulo oblicuángulo:** triángulo que no tiene ningún ángulo recto.
+- **Resolver un triángulo:** encontrar todos los lados y ángulos desconocidos.
+- **Circunferencia circunscrita:** círculo que pasa por los tres vértices del triángulo.
+
+$\underline{\hspace{6cm}}$
+
+## Caracterizados — Visual {.caracterizados}
+
+Observa esta relación: en cualquier triángulo, la razón entre un lado y el seno del ángulo opuesto es constante. Esto significa que si dibujas un triángulo y prolongas sus lados hasta formar una circunferencia circunscrita, el diámetro de esa circunferencia es exactamente $2R = \frac{a}{\sin A}$. Visualmente, lado más grande $\rightarrow$ seno de ángulo opuesto más grande $\rightarrow$ ángulo más grande. Ahora tradúcelo a números en esta tabla:
+
+| Relación | Lado | Ángulo opuesto | Seno del ángulo | $\frac{\text{lado}}{\sin\text{ángulo}}$ |
+|:---------|:----:|:--------------:|:---------------:|:---------------------------------------:|
+| $a$ | $10$ | $40^\circ$ | $\sin 40^\circ \approx 0.6428$ | $\frac{10}{0.6428} \approx 15.56$ |
+| $b$ | $13.47$ | $60^\circ$ | $\sin 60^\circ \approx 0.8660$ | $\frac{13.47}{0.8660} \approx 15.56$ |
+| $c$ | $?$ | $80^\circ$ | $\sin 80^\circ \approx 0.9848$ | $\frac{c}{0.9848} = 15.56$ |
+
+La constante $15.56$ es el diámetro $2R$ de la circunferencia circunscrita. **Ahora cubre los valores de la tabla y reconstruye el diagrama de flujo de memoria: identificar datos $\rightarrow$ elegir proporción $\rightarrow$ despejar $\rightarrow$ calcular.**
+
+**Ejemplo:** Para un triángulo con $a = 7$ cm, $b = 9$ cm, $A = 35^\circ$, dibuja el triángulo a escala aproximada. El lado $a$ es más pequeño que $b$, y el ángulo $A$ también debe ser menor que $B$. Aplica $\frac{a}{\sin A} = \frac{b}{\sin B}$ para hallar $\sin B = \frac{b\sin A}{a}$.
+
+**Ejercicios:** En un triángulo $ABC$, $a = 12$ cm, $b = 15$ cm, $\sin A = 0.4$. Completa una tabla como la de arriba para hallar $\sin B$. **[Opcional: dibuja el triángulo a escala en lugar de la tabla.]**
+
+**Metacognición:**
+1. Dibuja un triángulo y la circunferencia que pasa por sus tres vértices. ¿Dónde está el diámetro $2R$?
+2. ¿Qué relación visual observas entre el lado más largo y el ángulo más grande?
+3. Si el lado $b$ es el doble de $a$, ¿el seno de $B$ será el doble del seno de $A$?
+
+**Opción de respuesta:** Puedes responder escribiendo, dibujando o explicándoselo a un compañero.
+
+**Glosario:**
+- **Circunferencia circunscrita:** el círculo que rodea al triángulo pasando por sus tres vértices.
+- **Diámetro:** segmento que pasa por el centro de la circunferencia y la divide en dos partes iguales.
+- **Razón constante:** el valor que no cambia en las tres proporciones del teorema del seno.
+
+$\underline{\hspace{6cm}}$
+
+## Caracterizados — Dislexia {.caracterizados}
+
+El teorema del seno dice que en cualquier triangulo, el lado partido por el seno de su angulo opuesto da el mismo resultado para los tres lados. Es como una regla de tres: si sabes que $\frac{a}{\sin A} = \frac{b}{\sin B}$, entonces puedes despejar $b = \frac{a \cdot \sin B}{\sin A}$. Solo tienes que asegurarte de que el lado y el angulo esten opuestos. **Ahora tapa los pasos y dime en voz alta cual fue el primer paso: ¿que tenias que identificar primero?**
+
+**Ejemplo:** En un triangulo $ABC$, $A = 50^\circ$, $B = 70^\circ$, $a = 8$ cm. Primero calculas $C = 180^\circ - 50^\circ - 70^\circ = 60^\circ$. Despues usas $\frac{a}{\sin A} = \frac{b}{\sin B}$ para hallar $b$: $b = \frac{8 \cdot \sin 70^\circ}{\sin 50^\circ} = \frac{8 \cdot 0.9397}{0.7660} \approx 9.81$ cm. Para hallar $c$ usas $\frac{a}{\sin A} = \frac{c}{\sin C}$: $c = \frac{8 \cdot \sin 60^\circ}{\sin 50^\circ} = \frac{8 \cdot 0.8660}{0.7660} \approx 9.05$ cm. **Sin mirar la solucion, explicale a un amigo de 10 años como resolviste esto.**
+
+**Ejercicios:** En un triangulo $ABC$, $A = 45^\circ$, $B = 65^\circ$, $a = 10$ cm. Halla $b$ y $c$. **[Opcional: graba un audio explicando el procedimiento en vez de escribirlo.]**
+
+**Metacognición:**
+1. Sin leer la teoria otra vez, explica con tus palabras que dice el teorema del seno.
+2. ¿Que pasa si no encuentras el angulo $C$ primero? ¿Puedes resolver el triangulo de todas formas?
+3. ¿Hay algun paso donde te hayas trabado? ¿Que harías para que ese paso sea mas facil la proxima vez?
+
+**Opción de respuesta:** Puedes responder escribiendo, grabando un audio o explicándoselo a un compañero.
+
+**Glosario:**
+- **Teorema del seno:** regla que dice que el lado dividido por el seno del angulo opuesto da el mismo numero para los tres lados.
+- **Angulo opuesto:** el angulo que esta enfrente de un lado, sin tocarlo.
+- **Seno:** numero que resulta de dividir el cateto opuesto entre la hipotenusa en un triangulo rectangulo.
+
+$\underline{\hspace{6cm}}$
+
+## Caracterizados — Autismo {.caracterizados}
+
+**Regla fija:** En cualquier triángulo $ABC$ se cumple que $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$, donde $a$ es el lado opuesto al vértice $A$, $b$ es el lado opuesto al vértice $B$, y $c$ es el lado opuesto al vértice $C$. Esta igualdad no es una aproximación ni depende del tipo de triángulo: es una propiedad exacta demostrada geométricamente. La constante $2R$ se obtiene al trazar la circunferencia circunscrita: el diámetro de esta circunferencia es exactamente igual a $\frac{a}{\sin A}$.
+
+ALGORITMO (caso AAL - dos ángulos y un lado):
+1. Calcula el tercer ángulo: $C = 180^\circ - A - B$.
+2. Selecciona la proporción que relaciona el lado conocido con el lado buscado: $\frac{a}{\sin A} = \frac{b}{\sin B}$.
+3. Despeja la incógnita: $b = \frac{a \cdot \sin B}{\sin A}$.
+4. Verifica que el resultado sea consistente: el lado más grande debe estar opuesto al ángulo más grande.
+
+ALGORITMO (caso LLA - dos lados y ángulo no comprendido):
+1. Calcula $\sin B = \frac{b \cdot \sin A}{a}$.
+2. Si $\sin B > 1$, no hay solución.
+3. Si $\sin B = 1$, $B = 90^\circ$ (una solución).
+4. Si $\sin B < 1$, hay dos posibles ángulos: $B_1 = \sin^{-1}(\sin B)$ y $B_2 = 180^\circ - B_1$.
+5. Para cada $B$ válido, calcula $C = 180^\circ - A - B$ y luego $c$.
+
+**Ejemplo:** $a = 10$, $b = 8$, $A = 30^\circ$. Paso 1: $\sin B = \frac{8 \cdot \sin 30^\circ}{10} = \frac{8 \cdot 0.5}{10} = 0.4$. Paso 2: $\sin B = 0.4 < 1$. Paso 3: $B_1 = \sin^{-1}(0.4) \approx 23.58^\circ$, $B_2 = 180^\circ - 23.58^\circ = 156.42^\circ$. Paso 4: Para $B_1$, $C = 180^\circ - 30^\circ - 23.58^\circ = 126.42^\circ$. Para $B_2$, $C = 180^\circ - 30^\circ - 156.42^\circ = -6.42^\circ$ (invalido). Solucion: $B = 23.58^\circ$. **Ahora aplica el algoritmo para verificar que $B_2$ no es valido.**
+
+**Ejercicios:** En un triángulo $ABC$, $a = 15$ cm, $b = 10$ cm, $A = 40^\circ$. Aplica el algoritmo paso a paso. **[Opcion A: resuelve por escrito. Opcion B: empareja cada paso del algoritmo con su resultado.]** ¿Aplica la regla fija? SI / NO.
+
+**Metacognición:**
+1. Sin mirar el bloque, escribe la regla fija con tus palabras.
+2. ¿Seguiste los pasos del algoritmo en orden? ¿En que paso tuviste duda?
+3. Si $a = 5$ cm, $b = 10$ cm y $A = 30^\circ$, ¿cuántas soluciones tiene el triángulo? Aplica el algoritmo.
+
+**Opción de respuesta:** Puedes responder escribiendo, dibujando o explicándoselo a un compañero.
+
+**Glosario:**
+- **Teorema del seno:** igualdad exacta que relaciona los lados de un triángulo con los senos de sus ángulos opuestos.
+- **Caso ambiguo:** situación donde los datos dados pueden corresponder a cero, uno o dos triángulos distintos.
+- **Arcoseno ($\sin^{-1}$):** función inversa del seno que devuelve el ángulo cuyo seno es un número dado.
+
+$\underline{\hspace{6cm}}$
+
+## Caracterizados — Accesibilidad Sensorial {.caracterizados}
+
+Imagina que tienes tres varillas de longitudes $a$, $b$, $c$ y quieres formar un triángulo. El teorema del seno te dice que si doblas cada varilla en la misma proporción respecto al ángulo que tiene enfrente, todas dan el mismo número. Construye mentalmente un triángulo con tus dedos: pulgar e índice forman un ángulo, y la distancia entre sus puntas es el lado opuesto. Agranda el ángulo: la distancia entre las puntas aumenta. Así funciona el teorema: a mayor ángulo, mayor lado opuesto, en una proporción fija. **Cierra los ojos y describe en voz alta el paso que sigue. Después, señala con el dedo donde escribiste el resultado.**
+
+**Ejemplo:** Para un triángulo con $A = 35^\circ$, $B = 55^\circ$, $a = 6$ cm:
+1. **Tacto:** forma un triángulo con tus dedos donde el ángulo $A$ sea pequeño ($35^\circ$) y $B$ mediano ($55^\circ$).
+2. **Vista:** escribe $A = 35^\circ$, $B = 55^\circ$, $a = 6$ cm.
+3. **Cálculo:** $C = 180^\circ - 35^\circ - 55^\circ = 90^\circ$, $b = \frac{6 \cdot \sin 55^\circ}{\sin 35^\circ} \approx 8.57$ cm.
+4. **Resultado:** el triángulo tiene un ángulo recto en $C$.
+**Ahora cierra los ojos y traza la fórmula con el dedo mientras repites los pasos en voz alta.**
+
+**Ejercicios:** En un triángulo $ABC$, $A = 25^\circ$, $C = 85^\circ$, $a = 4$ cm. Halla $c$ usando tus dedos para visualizar. **[Opcional: responde por voz en vez de escribir.]**
+
+**Metacognición:**
+1. Describe con una imagen mental: ¿cómo se ve, se oye o se siente que el lado crece cuando el ángulo crece?
+2. Si cerraras los ojos y solo usaras el tacto, ¿cómo sabrías qué lado es el más largo?
+3. La fórmula dice $\frac{a}{\sin A} = \frac{b}{\sin B}$. Si cambia $A$, ¿cómo cambia la sensación del triángulo?
+
+**Opción de respuesta:** Puedes responder escribiendo, grabando un audio o explicándoselo a un compañero.
+
+**Glosario:**
+- **Seno:** valor numérico que crece cuando el ángulo crece (de $0$ a $1$ entre $0^\circ$ y $90^\circ$).
+- **Ángulo opuesto:** el ángulo que está frente al lado, como el vértice de un triángulo de papel.
+- **Resolver:** encontrar los valores faltantes del triángulo usando las reglas.
+
+$\underline{\hspace{6cm}}$
+
+## Caracterizados — Socioemocional {.caracterizados}
+
+Imagina que estás en un grupo de trabajo en la Institución Educativa San José de Sincelejo y deben medir el ancho del patio escolar sin usar cinta métrica. Cada persona del grupo propone un método diferente. Al principio hay confusión, pero luego alguien recuerda que con un transportador y el teorema del seno pueden hacerlo. En matemáticas, como en el trabajo en equipo, hay múltiples caminos para llegar a la misma respuesta, y la clave está en encontrar la relación correcta entre lo que sabes y lo que necesitas descubrir. El teorema del seno te da esa relación constante: no importa qué par de datos tengas, siempre puedes encontrar los que faltan si sigues la proporción. **Antes de seguir, respira profundo 3 veces. Ya tienes esto.**
+
+**Ejemplo:** En un triángulo $ABC$, $A = 42^\circ$, $C = 73^\circ$, $b = 11$ cm. Primero $B = 180^\circ - 42^\circ - 73^\circ = 65^\circ$. Luego $a = \frac{11 \cdot \sin 42^\circ}{\sin 65^\circ} \approx 8.12$ cm y $c = \frac{11 \cdot \sin 73^\circ}{\sin 65^\circ} \approx 11.69$ cm. Es como si en el grupo cada quien aportara su dato y juntos encontraran la respuesta. **Ahora explica en voz alta el paso que entendiste mejor. No importa si no es perfecto — estás aprendiendo, y cada paso cuenta.**
+
+**Ejercicios:** En un triángulo $ABC$, $B = 50^\circ$, $C = 60^\circ$, $a = 7$ cm. Halla $b$ y $c$. **[Opcional: resuelve en pareja con un compañero.]** Al terminar, en una escala del 1 al 5, ¿cómo te sentiste al resolverlo?
+
+**Metacognición:**
+1. Explica con tus palabras y sin apuro: ¿por qué el teorema del seno funciona para cualquier triángulo? Si no te sale perfecto, está bien.
+2. ¿Cómo se aplica el concepto de proporción constante a situaciones de tu vida donde hay algo que siempre se mantiene igual aunque todo lo demás cambie?
+3. ¿Qué estrategia usaste cuando algo se ponía difícil? ¿Funcionó?
+
+**Opción de respuesta:** Puedes responder escribiendo, dibujando o explicándoselo a un compañero.
+
+**Glosario:**
+- **Proporción constante:** relación que no cambia, como la confianza en un equipo de trabajo bien coordinado.
+- **Resolver:** encontrar soluciones paso a paso, como en la vida, donde cada problema tiene una solución si encuentras la relación correcta.
+- **Triángulo:** figura de tres lados, como tres personas trabajando juntas.
+
+$\underline{\hspace{6cm}}$
+
+## Ejemplo — Nivel Bajo {.ejemplo}
+
+**Regla fija:** En cualquier triángulo $ABC$ se cumple que $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$.
+
+**Enunciado:** En un triángulo $ABC$, se conocen los ángulos $A = 30^\circ$, $B = 45^\circ$ y el lado $a = 10$ cm. Halla el lado $b$.
+
+**Justificación Teórica:** Como conocemos dos ángulos y un lado (AAL), primero encontramos el tercer ángulo y luego aplicamos el teorema del seno usando la proporción que relaciona los lados $a$ y $b$ con sus ángulos opuestos.
+
+**Ejecución:**
+
+**Paso 1: Calcular el ángulo $C$**
+
+$$C = 180^\circ - A - B = 180^\circ - 30^\circ - 45^\circ = 105^\circ$$
+
+**Paso 2: Aplicar el teorema del seno para hallar $b$**
+
+$$\frac{a}{\sin A} = \frac{b}{\sin B} \quad\Rightarrow\quad b = \frac{a \cdot \sin B}{\sin A}$$
+
+$$b = \frac{10 \cdot \sin 45^\circ}{\sin 30^\circ} = \frac{10 \cdot \frac{\sqrt{2}}{2}}{\frac{1}{2}} = 10\sqrt{2} \approx 14.14\ \text{cm}$$
+
+**Paso 3: Verificar coherencia**
+
+El ángulo $B = 45^\circ$ es mayor que $A = 30^\circ$, y el lado $b \approx 14.14$ cm es mayor que $a = 10$ cm. Esto es consistente: a mayor ángulo, mayor lado opuesto.
+
+**Resultado:** El lado $b$ mide aproximadamente $14.14$ cm [@stewart2015precalculo].
+
+## Ejemplo — Nivel Medio {.ejemplo}
+
+**Analogía:** El teorema del seno es como una balanza de tres platillos: los tres lados, cada uno dividido por el seno de su ángulo opuesto, pesan lo mismo.
+
+**Enunciado:** Desde la cima de una montaña en el Parque Nacional Natural Cocuy (Boyacá), un excursionista mide los ángulos de depresión hacia dos refugios en el valle. El ángulo hacia el refugio A es $38^\circ$ y hacia el refugio B es $52^\circ$. La distancia entre los dos refugios es de $1.2$ km. ¿A qué distancia está el excursionista del refugio A?
+
+**Justificación Teórica:** Se forma un triángulo donde la cima es el vértice $C$ y los refugios son $A$ y $B$. El lado $c = 1.2$ km es la distancia entre refugios, opuesto al vértice $C$. Los ángulos en $A$ y $B$ son los ángulos de depresión desde la cima.
+
+**Ejecución:**
+
+**Paso 1: Identificar los ángulos del triángulo**
+
+$$C = 180^\circ - 38^\circ - 52^\circ = 90^\circ$$
+
+**Paso 2: Aplicar el teorema del seno para hallar $a$ (distancia del refugio A a la cima)**
+
+$$\frac{a}{\sin A} = \frac{c}{\sin C} \quad\Rightarrow\quad a = \frac{c \cdot \sin A}{\sin C}$$
+
+$$a = \frac{1.2 \cdot \sin 38^\circ}{\sin 90^\circ} = \frac{1.2 \cdot 0.6157}{1} \approx 0.739\ \text{km}$$
+
+**Paso 3: Verificar coherencia**
+
+El triángulo es rectángulo en $C$, y la distancia $a \approx 0.74$ km es menor que $c = 1.2$ km porque el ángulo $A = 38^\circ$ es menor que $B = 52^\circ$.
+
+**Resultado:** El excursionista está a aproximadamente $0.74$ km del refugio A [@young2018fisica].
+
+## Ejemplo — Nivel Alto {.ejemplo}
+
+**Formato accesible:** En un triángulo $ABC$, $a$ es el lado opuesto al vértice $A$, $b$ al vértice $B$, $c$ al vértice $C$. El teorema del seno relaciona cada lado con el seno de su ángulo opuesto.
+
+**Enunciado:** En un triángulo $ABC$ se conocen los lados $a = 12$ cm, $b = 8$ cm y el ángulo $A = 35^\circ$. Determina: (a) el ángulo $B$, (b) el ángulo $C$, (c) el lado $c$. Considera el caso ambiguo.
+
+**Justificación Teórica:** Este es el caso LLA (dos lados y un ángulo no comprendido). Se calcula $\sin B$ a partir de la proporción y se evalúa si hay una, dos o ninguna solución.
+
+**Ejecución:**
+
+**Paso 1: Aplicar el teorema del seno para hallar $\sin B$**
+
+$$\frac{a}{\sin A} = \frac{b}{\sin B} \quad\Rightarrow\quad \sin B = \frac{b \cdot \sin A}{a}$$
+
+$$\sin B = \frac{8 \cdot \sin 35^\circ}{12} = \frac{8 \cdot 0.5736}{12} \approx 0.3824$$
+
+**Paso 2: Evaluar el caso ambiguo**
+
+$\sin B = 0.3824 < 1$ y $b = 8 < a = 12$ ($a \geq b$), por lo tanto hay una única solución.
+
+$$B = \sin^{-1}(0.3824) \approx 22.48^\circ$$
+
+**Paso 3: Calcular $C$ y $c$**
+
+$$C = 180^\circ - A - B = 180^\circ - 35^\circ - 22.48^\circ = 122.52^\circ$$
+
+$$\frac{a}{\sin A} = \frac{c}{\sin C} \quad\Rightarrow\quad c = \frac{a \cdot \sin C}{\sin A}$$
+
+$$c = \frac{12 \cdot \sin 122.52^\circ}{\sin 35^\circ} = \frac{12 \cdot 0.8435}{0.5736} \approx 17.65\ \text{cm}$$
+
+**Paso 4: Verificar coherencia**
+
+El lado $b = 8$ cm es menor que $a = 12$ cm, y el ángulo $B \approx 22.48^\circ$ es menor que $A = 35^\circ$. Consistente. $C$ es el ángulo más grande y $c$ es el lado más grande.
+
+**Resultado:** (a) $B \approx 22.48^\circ$, (b) $C \approx 122.52^\circ$, (c) $c \approx 17.65$ cm. Hay una única solución [@stewart2015precalculo].
+
+## Ejercicios — Nivel Bajo {.ejercicios}
+
+Aplica la **regla fija**: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$.
+
+- Completar: En el triángulo $ABC$, si $A = 40^\circ$, $B = 70^\circ$ y $a = 8$ cm, entonces $C = \underline{\hspace{2cm}}$ y $b = \frac{\underline{\hspace{2cm}} \cdot \sin \underline{\hspace{2cm}}}{\sin \underline{\hspace{2cm}}}$.
+
+  | Dato | Valor | Fórmula |
+  |:---|:----:|:--------|
+  | $A$ | $\underline{\hspace{1cm}}$ | |
+  | $B$ | $\underline{\hspace{1cm}}$ | $b = \frac{a \cdot \sin B}{\sin A}$ |
+  | $a$ | $\underline{\hspace{1cm}}$ | |
+
+- V/F: El teorema del seno solo se aplica a triángulos rectángulos. ($\hspace{0.5cm}$)
+- Identificación: En un triángulo $ABC$, $A = 50^\circ$, $C = 60^\circ$, $b = 10$ cm. ¿Cuál es el valor de $B$ y del lado $a$?
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+## Ejercicios — Nivel Medio {.ejercicios}
+
+**Analogía:** Recuerda que el teorema del seno es como una balanza de tres platillos: los tres lados divididos por el seno de sus ángulos opuestos siempre se equilibran.
+
+| Dato conocido | Dato buscado | Proporción a usar |
+|:---|---:|:---|
+| $a$, $A$, $B$ | $b$ | $\underline{\hspace{4cm}}$ |
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{4cm}}$ |
+| $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{4cm}}$ |
+
+- Respuesta corta: En un triángulo $ABC$, $A = 55^\circ$, $C = 35^\circ$, $b = 20$ cm. Halla $a$ y $c$.
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- Aplicación simple: Un topógrafo en el municipio de Sopó (Cundinamarca) necesita medir el ancho de un río. Se coloca en un punto $A$, camina $30$ m paralelo al río hasta un punto $B$, y mide los ángulos $A = 70^\circ$ y $B = 55^\circ$ hacia un árbol al otro lado del río. ¿Cuál es el ancho del río desde $A$ hasta el árbol?
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- Clasificación: Dados los siguientes triángulos, determina si el caso LLA tiene 0, 1 o 2 soluciones posibles: (a) $a = 10$, $b = 6$, $A = 30^\circ$; (b) $a = 5$, $b = 8$, $A = 30^\circ$; (c) $a = 4$, $b = 4$, $A = 30^\circ$.
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+## Ejercicios — Nivel Alto {.ejercicios}
+
+**Formato accesible:** Cada lado y ángulo se nombra explícitamente. Completa la tabla de datos antes de resolver.
+
+| Lado | Valor | Ángulo opuesto | Valor del ángulo |
+|:---|---:|:---|---:|
+| $a$ | $\underline{\hspace{2cm}}$ | $A$ | $\underline{\hspace{2cm}}$ |
+| $b$ | $\underline{\hspace{2cm}}$ | $B$ | $\underline{\hspace{2cm}}$ |
+| $c$ | $\underline{\hspace{2cm}}$ | $C$ | $\underline{\hspace{2cm}}$ |
+
+- Problema abierto: En un triángulo $ABC$, $a = 15$ cm, $b = 12$ cm y $A = 42^\circ$. Determina si existe solución y encuentra todos los lados y ángulos posibles. Considera el caso ambiguo.
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+- Análisis de errores: Un estudiante afirma que en un triángulo $ABC$ con $A = 60^\circ$, $B = 50^\circ$ y $a = 10$ cm, el lado $b$ se calcula como $b = \frac{10 \cdot \sin 60^\circ}{\sin 50^\circ}$. ¿Es correcto su planteamiento? Si no, explica el error y proporciona la solución correcta.
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+  $\underline{\hspace{6cm}}$
+
+## Retos {.retos}
+
+El teorema del seno se aplica en la navegación marítima, la topografía, la astronomía y la ingeniería civil. Para este reto:
+
+- Diseña un cartel informativo que explique el teorema del seno, incluyendo el caso ambiguo (LLA), con un ejemplo paso a paso de un triángulo de tu elección. Usa colores para identificar los lados y sus ángulos opuestos.
+- Construye un modelo físico con pitillos o palitos de balso y un transportador que represente un triángulo oblicuángulo. Mide los lados y ángulos, y verifica experimentalmente que se cumple el teorema del seno.
+- Prepara una breve exposición (máximo 3 minutos) explicando cómo los topógrafos del IGAC usan la triangulación y el teorema del seno para medir distancias inaccesibles en el territorio colombiano.
+
+## Aplicación — Vida real {.aplicacion}
+
+En la construcción del viaducto del Chirajara (Meta), los ingenieros utilizaron triangulación con el teorema del seno para calcular distancias entre puntos de anclaje separados por cañones profundos. La topografía en regiones montañosas como la Cordillera de los Andes colombiana requiere constantemente el uso del teorema del seno: los topógrafos miden dos ángulos desde una línea base conocida y calculan distancias a puntos inaccesibles como el otro lado de un cañón, la cima de una montaña o la altura de un edificio. La próxima vez que veas un mapa del IGAC o uses Google Maps, recuerda que debajo de esas mediciones hay cientos de triángulos resueltos con el teorema del seno.
+
+## Aplicación — Laboratorio {.aplicacion}
+
+**Objetivo:** Verificar experimentalmente el teorema del seno midiendo los lados y ángulos de un triángulo construido físicamente.
+
+**Materiales:**
+- Regla de $30$ cm
+- Transportador
+- $3$ pitillos rectos
+- Pegamento o cinta adhesiva
+- Hoja de papel blanco
+- Lápiz
+
+**Procedimiento:**
+
+*Preparación:*
+1. Corta los pitillos en tres longitudes diferentes: $a = 12$ cm, $b = 9$ cm, $c = 7$ cm.
+2. Une los extremos con pegamento o cinta para formar un triángulo.
+3. Coloca el triángulo sobre la hoja de papel y calca su contorno con lápiz.
+
+*Medición:*
+4. Con el transportador, mide los tres ángulos del triángulo ($A$, $B$, $C$) con la mayor precisión posible.
+5. Registra las medidas en la tabla.
+
+*Verificación:*
+6. Calcula $\frac{a}{\sin A}$, $\frac{b}{\sin B}$ y $\frac{c}{\sin C}$ usando los valores medidos.
+7. Compara los tres resultados.
+
+**Resultados:**
+
+| Lado | Longitud (cm) | Ángulo opuesto | $\sin$ del ángulo | $\frac{\text{lado}}{\sin\text{ángulo}}$ |
+|:---|:---:|:---:|:---:|:---:|
+| $a$ | $12$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
+| $b$ | $9$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
+| $c$ | $7$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ | $\underline{\hspace{2cm}}$ |
+
+**Conclusión:** ¿Los tres cocientes fueron aproximadamente iguales? Explica las posibles fuentes de error.
+
+$\underline{\hspace{6cm}}$
+
+$\underline{\hspace{6cm}}$
+
+$\underline{\hspace{6cm}}$
+
+## Evaluación — Tipo ICFES {.evaluacion}
+
+**Pregunta 1 🟢**
+
+En el Instituto Geográfico Agustín Codazzi (IGAC) se realiza una medición topográfica. Desde un punto $A$ se mide un ángulo de $40^\circ$ hacia un punto $B$, y desde $B$ se mide un ángulo de $70^\circ$ hacia el punto $C$. La distancia entre $A$ y $B$ es de $50$ m. ¿Cuál es la distancia entre $B$ y $C$?
+
+| :--- | :--- |
+| A. $50 \cdot \frac{\sin 40^\circ}{\sin 70^\circ}$ m | B. $50 \cdot \frac{\sin 70^\circ}{\sin 40^\circ}$ m |
+| C. $50 \cdot \frac{\sin 50^\circ}{\sin 70^\circ}$ m | D. $50 \cdot \frac{\sin 40^\circ}{\sin 50^\circ}$ m |
+
+---
+
+**Pregunta 2 🟢**
+
+En un triángulo $ABC$, se cumple que $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$. Si se duplica la longitud del lado $a$ sin cambiar el ángulo $A$, ¿qué ocurre con la constante $\frac{a}{\sin A}$?
+
+| :--- | :--- |
+| A. Se duplica, porque el lado $a$ es el numerador de la fracción | B. Se reduce a la mitad, porque la relación debe mantenerse constante |
+| C. Permanece igual, porque $\sin A$ también se duplica | D. Se cuadruplica, porque la relación es directamente proporcional al cuadrado del lado |
+
+---
+
+**Pregunta 3 🟡**
+
+En la Sierra Nevada de Santa Marta, un biólogo quiere medir la distancia entre dos árboles $A$ y $B$ separados por una quebrada. Se coloca en un punto $C$ y mide: $AC = 25$ m, $BC = 30$ m y el ángulo $C = 50^\circ$ (ángulo comprendido entre $AC$ y $BC$). ¿Qué afirmación es correcta sobre la distancia $AB$?
+
+| :--- | :--- |
+| A. Se puede calcular directamente con el teorema del seno porque se conocen dos lados y el ángulo comprendido | B. No se puede calcular porque el problema tiene demasiados datos |
+| C. Se calcula con el teorema del seno usando $AB = \frac{25 \cdot \sin 50^\circ}{\sin B}$ | D. No se puede calcular directamente con el teorema del seno porque no se conoce ningún lado con su ángulo opuesto |
+
+---
+
+**Pregunta 4 🟡**
+
+Dado un triángulo $ABC$ con $a = 8$ cm, $b = 10$ cm y $A = 30^\circ$, un estudiante calcula $\sin B = \frac{10 \cdot \sin 30^\circ}{8} = 0.625$. ¿Cuántas soluciones tiene este triángulo?
+
+| :--- | :--- |
+| A. Una solución, porque $a < b$ implica una única posibilidad | B. Dos soluciones, porque $a < b$ y $\sin B < 1$ |
+| C. Ninguna solución, porque $a < b$ y no se cumple la condición | D. Una solución, porque $B = \sin^{-1}(0.625) \approx 38.68^\circ$ es la única posibilidad |
+
+---
+
+**Pregunta 5 🔴**
+
+En el Cañón del Chicamocha (Santander), un ingeniero civil diseña un puente colgante. Desde un punto $P$ en una montaña mide un ángulo de $25^\circ$ hacia la torre del puente $T$, y desde un punto $Q$ a $200$ m de $P$ sobre la misma montaña mide un ángulo de $42^\circ$ hacia la misma torre. Con estos datos se forma el triángulo $PQT$, donde el ángulo en $T$ es $113^\circ$.
+
+¿Cuál expresión permite calcular la distancia $PT$ entre el punto $P$ y la torre $T$?
+
+| :--- | :--- |
+| A. $200 \cdot \frac{\sin 42^\circ}{\sin 113^\circ}$ m | B. $200 \cdot \frac{\sin 42^\circ}{\sin 25^\circ}$ m |
+| C. $200 \cdot \frac{\sin 25^\circ}{\sin 42^\circ}$ m | D. $200 \cdot \frac{\sin 113^\circ}{\sin 42^\circ}$ m |
+
+---
+
+**Autoevaluación:**
+
+1. ¿Qué pregunta te resultó más fácil? ¿Por qué?
+2. ¿Qué pregunta te resultó más difícil? ¿Qué harías diferente?
+3. En una escala del 1 al 5, ¿qué tan seguro te sientes aplicando el teorema del seno?
+
+## Socialización {.evaluacion}
+
+**Pregunta 1 🟢**
+*Competencia:* Interpretación
+*Afirmación:* Identifica la proporción correcta del teorema del seno para resolver un triángulo AAL.
+*Evidencia:* Reconoce que dados dos ángulos y el lado entre ellos, se aplica la proporción adecuada del teorema del seno.
+*Respuesta correcta:* A
+*Explicación:* En el triángulo $ABC$, el ángulo en $C$ es $180^\circ - 40^\circ - 70^\circ = 70^\circ$. $AB = 50$ m está opuesto a $C = 70^\circ$; $BC$ es opuesto a $A = 40^\circ$. Aplicando el teorema del seno: $\frac{BC}{\sin 40^\circ} = \frac{50}{\sin 70^\circ} \Rightarrow BC = 50 \cdot \frac{\sin 40^\circ}{\sin 70^\circ}$ m. La opción A es la correcta. Las opciones B y D invierten la proporción, y C usa el ángulo equivocado.
+*Fuente:* IGAC. "Métodos de triangulación topográfica". https://www.igac.gov.co/
+
+**Pregunta 2 🟢**
+*Competencia:* Argumentación
+*Afirmación:* Comprende que la constante del teorema del seno es $2R$ y depende de la circunferencia circunscrita.
+*Evidencia:* Analiza cómo el cambio en un lado afecta la proporción, reconociendo que $\sin A$ no cambia a menos que el ángulo cambie.
+*Respuesta correcta:* A
+*Explicación:* Si se duplica $a$ pero el ángulo $A$ permanece igual, entonces $\frac{a}{\sin A}$ se duplica porque $a$ es el numerador y $\sin A$ no cambia. La constante $2R$ cambia porque el triángulo cambia de tamaño. Las opciones B y C son incorrectas porque $\sin A$ no cambia al duplicar $a$, y D es incorrecta porque la relación no involucra cuadrados.
+*Fuente:* Stewart, J. (2015). Precálculo. Cengage Learning.
+
+**Pregunta 3 🟡**
+*Competencia:* Interpretación
+*Afirmación:* Reconoce las limitaciones del teorema del seno y cuándo se requiere el teorema del coseno.
+*Evidencia:* Identifica que el teorema del seno requiere un lado y su ángulo opuesto, no cualquier par de lados y ángulo.
+*Respuesta correcta:* D
+*Explicación:* Con dos lados ($AC$ y $BC$) y el ángulo comprendido $C = 50^\circ$, no se puede aplicar directamente el teorema del seno porque no se conoce ningún lado con su ángulo opuesto. Para aplicar el teorema del seno se necesita un par lado-ángulo opuesto. En este caso, primero debe hallarse $AB$ usando el teorema del coseno. Las opciones A y C son incorrectas porque asumen que el teorema del seno se puede aplicar directamente.
+*Fuente:* IGAC. "Cartografía básica colombiana". https://www.igac.gov.co/
+
+**Pregunta 4 🟡**
+*Competencia:* Proposición
+*Afirmación:* Determina el número de soluciones en el caso ambiguo (LLA) del teorema del seno.
+*Evidencia:* Aplica los criterios del caso ambiguo para determinar si hay 0, 1 o 2 soluciones.
+*Respuesta correcta:* B
+*Explicación:* $a = 8 < b = 10$, por lo tanto $a < b$. $\sin B = 0.625 < 1$. Dado que $a < b$ y $\sin B < 1$, se cumple $b\sin A < a < b$, que es la condición para dos soluciones: $B_1 \approx 38.68^\circ$ y $B_2 \approx 141.32^\circ$. Verificando: para $B_1$, $C = 111.32^\circ$ (válido); para $B_2$, $C = 8.68^\circ$ (válido, $C > 0$). Ambas son soluciones válidas.
+*Fuente:* Stewart, J. (2015). Precálculo. Cengage Learning.
+
+**Pregunta 5 🔴**
+*Competencia:* Argumentación
+*Afirmación:* Evalúa argumentos geométricos usando el teorema del seno en un contexto real de ingeniería.
+*Evidencia:* Construye el modelo geométrico del problema, identificando correctamente los ángulos del triángulo y aplicando la proporción adecuada.
+*Respuesta correcta:* A
+*Explicación:* En el triángulo $PQT$, $PQ = 200$ m está opuesto a $T = 113^\circ$; $PT$ está opuesto a $Q = 42^\circ$. Aplicando el teorema del seno: $\frac{PT}{\sin 42^\circ} = \frac{200}{\sin 113^\circ} \Rightarrow PT = 200 \cdot \frac{\sin 42^\circ}{\sin 113^\circ}$ m. La opción A es la correcta. Las opciones B y C usan ángulos incorrectos, y la opción D invierte la proporción.
+*Fuente:* INVIAS. "Manual de diseño de puentes en Colombia". https://www.invias.gov.co/
+
+## Socioemocional {.socioemocional}
+
+Al aprender el teorema del seno, es normal sentirse abrumado por las fórmulas, los casos ambiguos y las comprobaciones. La clave está en la **Regulación Emocional** (Ley 2503 de 2025): reconocer que la confusión inicial es parte del proceso y que cada triángulo resuelto fortalece tu pensamiento lógico. El teorema del seno nos enseña que, aunque no conozcamos todos los datos de una situación, siempre hay una relación constante que nos permite encontrar lo que falta. Así como en la vida, cuando identificamos lo que sabemos y lo relacionamos correctamente con lo que queremos saber, podemos resolver cualquier problema. Respira, organiza tus datos como organizas los lados y ángulos, y verás que la solución llega.

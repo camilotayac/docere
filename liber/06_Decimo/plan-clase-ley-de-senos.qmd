@@ -1,0 +1,182 @@
+# Ley de senos — plan de clase
+
+## Teoría
+
+La **ley de senos** es una relación que conecta los lados de un triángulo con los senos de sus ángulos opuestos. Se aplica exclusivamente cuando se conoce al menos un **par ángulo-lado**, es decir, un lado que se encuentra opuesto al ángulo que se conoce. Por ejemplo, si se conocen el ángulo $A$ y los lados $a$ y $b$, la ley de senos es la herramienta adecuada. Esta ley aplica a cualquier **triángulo arbitrario**, que es aquel que no es rectángulo, equilátero ni isósceles.
+
+La ley de senos se expresa de la siguiente manera:
+
+$$ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} \tag{1} $$
+
+Cuando se conoce un par ángulo-lado y se necesita encontrar otro ángulo, se despeja el seno del ángulo desconocido y luego se usa la función inversa. Supóngase que se conocen el ángulo $A$ y los lados $a$ y $b$, y se desea encontrar el ángulo $B$. A partir de la igualdad $\frac{a}{\sin(A)} = \frac{b}{\sin(B)}$ se despeja $\sin(B)$:
+
+$$ \sin(B) = \frac{b \cdot \sin(A)}{a} \tag{2} $$
+
+El resultado de esta operación es un número entre $0$ y $1$, por ejemplo $0{,}866$. Para obtener el ángulo a partir de ese valor, se aplica la función **arco seno** ($\sin^{-1}$) en la calculadora:
+
+$$ \sin^{-1}(0{,}866) = 60^\circ \tag{3} $$
+
+El ángulo es entonces $60$ grados.
+
+Si en cambio se conocen dos ángulos y solo un lado, también es posible usar la ley de senos. Supóngase que se conocen los ángulos $A$ y $B$, así como el lado $a$. Se despeja el lado $b$ de la misma igualdad:
+
+$$ b = \frac{a \cdot \sin(B)}{\sin(A)} \tag{4} $$
+
+Existe una condición de existencia que debe verificarse: si el cálculo produce $\sin(v) > 1$, no existe solución. Esto significa que el triángulo propuesto no puede construirse con la información disponible.
+
+### Caso ambiguo: seno y triángulos obtusos
+
+Cuando se calculan ángulos mediante la ley de senos en un triángulo que resulta ser **obtuso**, aparece una situación especial conocida como **caso ambiguo**. La ley de senos puede producir dos resultados distintos dependiendo de cuánta información se tenga del triángulo.
+
+Considérese un triángulo con la siguiente información: ángulo $A = 25^\circ$, lado $a = 3$ y lado $c = 5$. Con estos datos se calcula el ángulo $C$:
+
+$$ \begin{aligned} \frac{a}{\sin(A)} &= \frac{c}{\sin(C)} \\[10pt] \sin(C) &= \frac{c \cdot \sin(A)}{a} \\[10pt] \sin(C) &= \frac{5 \cdot \sin(25^\circ)}{3} \\[10pt] \sin(C) &= 0{,}704 \\[10pt] \sin^{-1}(0{,}704) &= 44{,}78^\circ \end{aligned} \tag{5} $$
+
+El resultado es un triángulo con ángulo $A = 25^\circ$, ángulo $B = 110{,}22^\circ$ y ángulo $C = 44{,}78^\circ$. Sin embargo, esta es solo una de las dos posibles soluciones.
+
+### Cálculo del ángulo obtuso
+
+La ley de senos siempre devuelve la **solución aguda** (entre $0^\circ$ y $90^\circ$). La posible **solución obtusa** se encuentra restando el ángulo agudo de $180^\circ$. Con el valor agudo $C_1 = 44{,}78^\circ$, se calcula el ángulo obtuso $C_2$:
+
+$$ C_2 = 180^\circ - C_1 \\[12pt] C_2 = 135{,}22^\circ \tag{6} $$
+
+Conociendo $C$ para ambos triángulos es posible calcular el resto de sus elementos. Esto implica que el lado $b$, el perímetro, la altura y el área también tienen dos valores distintos. Por esta razón, siempre debe verificarse si la solución encontrada puede tener un ángulo obtuso al usar la ley de senos.
+
+La regla general es la siguiente: si el ángulo que se calcula con la ley de senos es menor de $90^\circ$, existen dos soluciones posibles.
+
+## Contextualización
+
+### Activación
+
+¿Alguna vez has intentado construir un triángulo con solo tres datos y te has dado cuenta de que podías hacerlo de dos formas distintas? Algo parecido ocurre con ciertos triángulos que no son rectángulos: aunque tengas suficiente información para resolverlos, a veces hay más de una respuesta. Ya sabes calcular senos y ángulos en triángulos rectángulos. Ahora vas a dar el paso siguiente: usar esa misma herramienta en triángulos que no tienen un ángulo recto. En esta sección vas a entender cómo hacerlo y, lo más importante, cuándo hay una sola respuesta y cuándo hay dos.
+
+### Desarrollo
+
+#### La ley de senos y cuándo usarla
+
+Imagina que tienes un triángulo cualquiera —no importa su forma— y conoces un lado y el ángulo que está justo enfrente de ese lado. Ese par de datos, un lado y su ángulo opuesto, es la llave que abre la puerta de la **ley de senos**.
+
+La ley de senos dice que en cualquier triángulo, el cociente entre un lado y el seno de su ángulo opuesto es el mismo para los tres lados. En otras palabras, todos esos cocientes son iguales entre sí.
+
+> 🖼️ **Imagen sugerida:** Triángulo arbitrario etiquetado con vértices $A$, $B$, $C$ y lados opuestos $a$, $b$, $c$
+> **Tipo:** Esquema etiquetado
+> **Qué debe destacar:** La correspondencia entre cada vértice y su lado opuesto (el lado $a$ está frente al ángulo $A$)
+> **Texto alternativo sugerido:** Triángulo escaleno con vértices A, B, C y sus lados opuestos a, b, c
+
+Mira la fórmula con calma:
+
+$$ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)} \tag{1} $$
+
+El lado $a$ está relacionado con el seno del ángulo $A$, el lado $b$ con el seno del ángulo $B$, y así sucesivamente. Si conoces tres de estas seis cantidades —siempre que una de ellas sea un par ángulo-lado— puedes encontrar las otras tres.
+
+> 💡 La clave para usar la ley de senos es tener al menos un lado y el ángulo que tiene enfrente.
+
+Hasta aquí deberías poder identificar si un problema se resuelve con la ley de senos: busca un par ángulo-lado.
+
+#### Calcular un ángulo cuando conoces un lado y su ángulo opuesto
+
+Supón que conoces el ángulo $A$ y los lados $a$ y $b$. Quieres encontrar el ángulo $B$. La ley de senos te da una igualdad entre dos de los cocientes:
+
+$$ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} $$
+
+🧠 Este es el momento donde muchos estudiantes se pierden. Es normal. Vamos paso a paso.
+
+1. **Despeja $\sin(B)$.** Multiplica ambos lados por $\sin(B)$ y luego divide por $a$:
+
+$$ \sin(B) = \frac{b \cdot \sin(A)}{a} \tag{2} $$
+
+   Este paso se hace porque el $\sin(B)$ está en el denominador y queremos dejarlo solo. Al despejarlo, obtenemos un número.
+
+2. **Calcula el valor numérico.** Introduce los números que conoces. El resultado será un decimal entre $0$ y $1$, por ejemplo $0{,}866$.
+
+3. **Aplica la función inversa.** Para pasar del seno al ángulo, usa $\sin^{-1}$ en tu calculadora, también llamada **arco seno**:
+
+$$ \sin^{-1}(0{,}866) = 60^\circ \tag{3} $$
+
+> ⚠️ Error frecuente: olvidar que $\sin^{-1}$ no es lo mismo que $1/\sin$. $\sin^{-1}$ significa "¿qué ángulo tiene este seno?", no "uno sobre el seno".
+
+El ángulo $B$ es entonces $60^\circ$. Ya tienes tu primer resultado usando la ley de senos.
+
+Hasta aquí deberías poder calcular un ángulo desconocido cuando conoces un par ángulo-lado y otro lado.
+
+#### Calcular un lado cuando conoces dos ángulos
+
+Ahora imagina que conoces los ángulos $A$ y $B$, y también el lado $a$. Quieres encontrar el lado $b$. El proceso es similar, pero ahora despejas el lado en lugar del ángulo.
+
+Partes de la misma igualdad:
+
+$$ \frac{a}{\sin(A)} = \frac{b}{\sin(B)} $$
+
+1. **Despeja $b$.** Multiplica ambos lados por $\sin(B)$:
+
+$$ b = \frac{a \cdot \sin(B)}{\sin(A)} \tag{4} $$
+
+2. **Calcula.** Introduce los valores y obtienes el lado $b$ directamente. No necesitas usar $\sin^{-1}$ aquí porque no estás buscando un ángulo, sino un lado.
+
+Hasta aquí deberías poder calcular un lado desconocido cuando conoces dos ángulos y un lado.
+
+#### Cuándo no hay solución
+
+Hay un caso en el que la ley de senos no produce un resultado válido. Si al despejar $\sin(B)$ obtienes un número mayor que $1$, detente. El seno de cualquier ángulo está siempre entre $0$ y $1$. Si el resultado supera $1$, significa que el triángulo que intentas construir es imposible con los datos que tienes. No hay error en tu cálculo — simplemente esos datos no corresponden a ningún triángulo real.
+
+> 💡 $\sin(v) > 1$ significa "este triángulo no existe".
+
+Hasta aquí deberías poder determinar si un triángulo existe o no antes de seguir calculando.
+
+#### El caso ambiguo: cuando hay dos triángulos posibles
+
+Ahora viene la parte que más sorprende. A veces, con la misma información, puedes construir dos triángulos diferentes. Esto se llama el **caso ambiguo** y ocurre cuando trabajas con triángulos obtusos.
+
+🧠 Este concepto suele ser confuso al principio. Léelo con calma. Vale la pena entenderlo porque es lo que diferencia a alguien que sabe usar la ley de senos de alguien que solo sabe apretar botones en la calculadora.
+
+Supón que tienes esta información:
+
+- Ángulo $A = 25^\circ$
+- Lado $a = 3$
+- Lado $c = 5$
+
+Observa que tienes un par ángulo-lado: $A$ con $a$. El otro lado conocido, $c$, está opuesto al ángulo $C$, que es el que quieres encontrar. Usa la ley de senos:
+
+$$ \begin{aligned} \frac{a}{\sin(A)} &= \frac{c}{\sin(C)} \\[10pt] \sin(C) &= \frac{c \cdot \sin(A)}{a} \\[10pt] \sin(C) &= \frac{5 \cdot \sin(25^\circ)}{3} \\[10pt] \sin(C) &= 0{,}704 \\[10pt] \sin^{-1}(0{,}704) &= 44{,}78^\circ \end{aligned} \tag{5} $$
+
+Has encontrado que $C = 44{,}78^\circ$. Como la suma de los ángulos internos de un triángulo es $180^\circ$, puedes calcular $B$:
+
+$$ B = 180^\circ - 25^\circ - 44{,}78^\circ = 110{,}22^\circ $$
+
+> 🖼️ **Imagen sugerida:** Triángulo con ángulo A = 25° a la izquierda, ángulo C = 44,78° arriba, ángulo B = 110,22° a la derecha; lado a = 3 opuesto a A, lado c = 5 opuesto a C
+> **Tipo:** Esquema etiquetado
+> **Qué debe destacar:** La posición de cada ángulo y lado, y que el ángulo B es obtuso (>90°)
+> **Texto alternativo sugerido:** Primer triángulo solución con ángulos 25°, 110,22° y 44,78°
+
+Este es un triángulo válido. Pero no es el único.
+
+#### La segunda solución
+
+La ley de senos siempre devuelve el ángulo agudo (menor de $90^\circ$) como primera respuesta. Sin embargo, existe otra posibilidad. Para encontrarla, resta el ángulo agudo de $180^\circ$:
+
+$$ C_2 = 180^\circ - 44{,}78^\circ = 135{,}22^\circ \tag{6} $$
+
+Este nuevo ángulo $C_2 = 135{,}22^\circ$ también es válido. Con él puedes construir otro triángulo completamente distinto con los mismos datos iniciales.
+
+> 🖼️ **Imagen sugerida:** Segundo triángulo con los mismos datos A = 25°, a = 3, c = 5, pero con ángulo C = 135,22° (obtuso) y ángulo B mucho más pequeño
+> **Tipo:** Esquema etiquetado
+> **Qué debe destacar:** Cómo cambia la forma del triángulo al usar el ángulo obtuso — el lado b se alarga y el triángulo se "abre"
+> **Texto alternativo sugerido:** Segundo triángulo solución con ángulo obtuso C = 135,22°
+
+> 🧠 ¿Por qué pasa esto? Porque dos ángulos diferentes pueden tener el mismo seno. Por ejemplo, $\sin(44{,}78^\circ)$ y $\sin(135{,}22^\circ)$ dan el mismo valor ($0{,}704$). La calculadora solo te muestra uno, el agudo. El otro debes calcularlo tú.
+
+Tener dos soluciones significa que el lado $b$, el perímetro, la altura y el área tendrán dos valores distintos. Por eso es fundamental preguntarse siempre, después de usar la ley de senos: ¿puede haber un ángulo obtuso aquí?
+
+La regla para saberlo es simple: **si el ángulo que calculaste con la ley de senos es menor de $90^\circ$, hay dos soluciones posibles.**
+
+Hasta aquí deberías poder identificar cuándo hay una solución y cuándo hay dos, y calcular ambas cuando sea necesario.
+
+### Consolidación
+
+Has aprendido que la **ley de senos** relaciona cada lado de un triángulo con el seno de su ángulo opuesto, y que funciona en cualquier triángulo, no solo en los rectángulos. Descubriste que puedes usarla para encontrar ángulos (con $\sin^{-1}$) o lados (despejando directamente), y que no todos los conjuntos de datos producen un triángulo válido. También viste que el **caso ambiguo** aparece cuando el ángulo calculado es agudo, abriendo la posibilidad de una segunda solución obtusa. Con esto ya puedes resolver triángulos arbitrarios con confianza, sabiendo no solo qué calcular, sino también cuándo hay más de una respuesta.
+
+> 🎯 **Alternativa pedagógica:** Rutina de pensamiento "Antes pensaba… Ahora pienso…"
+> **Objetivo:** Que el estudiante reflexione sobre cómo cambió su comprensión de la ley de senos, especialmente frente al caso ambiguo.
+> **Cómo hacerlo:** Al iniciar la clase, cada estudiante escribe "Antes pensaba que la ley de senos…". Al finalizar, escribe "Ahora pienso que la ley de senos…" y comparte con un compañero.
+> **Tiempo estimado:** 10 minutos
+> **Materiales:** Cuaderno o una hoja de papel

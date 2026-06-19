@@ -75,77 +75,343 @@ Explicar cómo escribir y balancear una ecuación química es como organizar las
 
 ## Contextualización — Apoyo Cognitivo y TDAH {.caracterizados}
 
-Este enfoque estructura el balanceo en pasos secuenciales claros y explícitos. Reduce la carga cognitiva al fragmentar el proceso en instrucciones directas, con énfasis en la repetición del algoritmo. Ideal para estudiantes que necesitan rutinas predecibles y pasos bien definidos.
+Balancear es seguir 4 pasos en orden. Uno a la vez.
 
-**Teoría de balanceo en pasos:**
-1. **Identificar reactivos y productos.** Escribir sus fórmulas. Colocar reactivos a la izquierda y productos a la derecha.
-2. **Contar átomos.** Contar la cantidad de átomos de cada elemento en ambos lados.
-3. **Ajustar coeficientes.** Colocar números enteros delante de las fórmulas para igualar los átomos. No cambiar los subíndices.
-4. **Verificar balanceo.** Confirmar que el número total de átomos es igual en reactivos y productos.
+**Paso 1:** Escribe <span style="color:blue">reactivos</span> a la izquierda y <span style="color:red">productos</span> a la derecha.
+
+$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+
+**Paso 2:** Cuenta los átomos de cada <span style="color:green">elemento</span> en ambos lados.
+
+**Paso 3:** Ajusta los <span style="color:blue">coeficientes</span> para igualarlos. No cambies los subíndices.
+
+**Paso 4:** Verifica que todo esté igual.
+
+$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+
+**Listo. Respira, repite el algoritmo y avanza.**
+
+**Ejemplo:**
+Balancea ${\color{blue}H_2} + {\color{green}O_2} \rightarrow {\color{red}H_2O}$
+
+Paso 1: Reactivos H₂ y O₂ → producto H₂O.
+Paso 2: H=2 y 2, O=2 y 1 — el O no cuadra.
+Paso 3: Pon 2 en H₂O, luego 2 en H₂.
+
+$${\color{blue}2H_2} + {\color{green}O_2} \rightarrow {\color{red}2H_2O}$$
+
+Paso 4: H=4 y 4, O=2 y 2. **Balanceado.**
+
+**Ahora repite los 4 pasos en voz alta sin mirar.**
+
+**Ejercicios:**
+Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ aplicando los 4 pasos. **[Opcional: di cada paso en voz alta.]**
+
+**Metacognición:**
+1. ¿En qué paso te diste cuenta de que los átomos no igualaban?
+2. ¿Qué harías si solo hicieras 2 de los 4 pasos?
+
+**Opción de respuesta:**
+Puedes responder escribiendo o grabando un audio.
+
+**Glosario:**
+
+- **Balancear:** igualar el número de átomos de cada elemento en ambos lados.
+
+- **Coeficiente:** número grande delante de la fórmula que multiplica la cantidad.
+
+- **Subíndice:** número pequeño dentro de la fórmula. No se cambia nunca.
+
+- **Ecuación balanceada:** cuando hay los mismos átomos de cada elemento a ambos lados.
 
 ## Contextualización — Visual {.caracterizados}
 
-Este enfoque organiza los datos en tablas de conteo con codificación cromática (coeficientes en azul, subíndices en negro). Transforma el balanceo abstracto en tablas visuales que permiten seguir la relación entre reactivos y productos elemento por elemento.
+Mira la ecuación como una balanza de dos platillos.
 
-**Teoría visual de balanceo:**
+<span style="color:blue">Reactivos</span> a la izquierda, <span style="color:red">productos</span> a la derecha.
+Los <span style="color:blue">coeficientes</span> cambian, los subíndices no.
 
-| Reactivos (izquierda) | Flecha de cambio | Productos (derecha) | Regla del color |
-|---|---|---|---|
-| Sustancias iniciales | Indica que se **(rojo)** produce | Nuevas sustancias | Coeficientes en **(azul)** cambian moles |
-| Coeficientes en **(verde)** indican cantidad | $\rightarrow$ | Subíndices en **(negro)** son fijos | No alterar subíndices |
+**Ejemplo:** combustión de metano:
 
-**Ejemplo con tabla de conteo:**
-Balancear la combustión de metano ($CH_4$) para producir dióxido de carbono ($CO_2$) y agua ($H_2O$):
-$$CH_4(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
+$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
 
-| Elemento | Reactivos | Productos | Estado |
-|---|---|---|---|
-| Carbono ($C$) | $1$ | $1$ | Balanceado |
-| Hidrógeno ($H$) | $4$ | $2$ | Desbalanceado |
-| Oxígeno ($O$) | $2$ | $3$ (de $2$ en $CO_2$ + $1$ en $H_2O$) | Desbalanceado |
+| Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
+|:---------|:---------:|:---------:|:------:|
+| <span style="color:blue">C</span> | 1 | 1 | ✅ |
+| <span style="color:red">H</span> | 4 | 2 | ❌ |
+| <span style="color:green">O</span> | 2 | 3 | ❌ |
 
-Ajustar $H$ colocando un coeficiente $2$ **(azul)** en $H_2O$ → Ajustar $O$ colocando un coeficiente $2$ **(verde)** en $O_2$:
-$$CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$$
+Ajusta con coeficientes: <span style="color:blue">2</span> en H₂O, <span style="color:green">2</span> en O₂.
 
-| Elemento | Reactivos | Productos | Estado |
-|---|---|---|---|
-| Carbono ($C$) | $1$ | $1$ | Balanceado |
-| Hidrógeno ($H$) | $4$ | $2 \times 2 = 4$ | Balanceado |
-| Oxígeno ($O$) | $2 \times 2 = 4$ | $2$ + $2 = 4$ | Balanceado |
+$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
 
-El resultado final está balanceado.
+| Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
+|:---------|:---------:|:---------:|:------:|
+| <span style="color:blue">C</span> | 1 | 1 | ✅ |
+| <span style="color:red">H</span> | 4 | 4 | ✅ |
+| <span style="color:green">O</span> | 4 | 4 | ✅ |
+
+**Balanceado. Cubre la tabla y reconstruye el conteo de memoria.**
+
+**Ejercicios:**
+Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ usando una tabla de conteo como la de arriba.
+
+| Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
+|:---------|:---------:|:---------:|:------:|
+| <span style="color:blue">N</span> | 2 | 1 | ❌ |
+| <span style="color:red">H</span> | 2 | 3 | ❌ |
+
+Ajusta los coeficientes hasta que todo esté en ✅. **[Opcional: dibuja el diagrama de barras en vez de la tabla.]**
+
+**Metacognición:**
+1. ¿Qué elemento se balanceó primero? ¿Por qué?
+2. Dibuja la ecuación balanceada con círculos de colores. ¿Cómo se ve?
+
+**Opción de respuesta:**
+Puedes responder escribiendo, dibujando la tabla o explicándoselo a un compañero.
+
+**Glosario:**
+
+- **Tabla de conteo:** tabla que compara átomos de cada elemento en reactivos y productos.
+
+- **Coeficiente:** número que se ajusta para balancear. Se ve como número grande delante de la fórmula.
+
+- **Subíndice:** número pequeño dentro de la fórmula. No se toca.
+
+- **Balanceo visual:** método que usa tablas y colores para igualar átomos.
 
 ## Contextualización — Dislexia y Dificultades Lectoras {.caracterizados}
 
-Este enfoque utiliza lenguaje sencillo, oraciones cortas y vocabulario cotidiano. Prioriza la comprensión del proceso sobre la terminología técnica. Cada idea se expresa en una línea independiente para minimizar la carga textual.
+Balancear es contar y ajustar. Simple.
 
-**Teoría de balanceo simple:**
-- El hidrógeno ($H$) y el oxígeno ($O$) reaccionan.
-- Ellos forman agua ($H_2O$).
-- Los átomos se conservan siempre.
-- Tú no cambias los subíndices.
-- Tú colocas los coeficientes grandes.
-- Los coeficientes igualan los átomos.
+<span style="color:blue">H</span> y <span style="color:red">O</span> reaccionan y forman <span style="color:green">H₂O</span>.
+
+Los atomos se conservan siempre.
+Tu no cambias los subindices.
+Tu colocas los coeficientes grandes.
+
+$${\color{blue}H_2} + {\color{red}O_2} \rightarrow {\color{green}H_2O}$$
+
+<span style="color:blue">H</span>: 2 a la izquierda, 2 a la derecha — ✅
+<span style="color:red">O</span>: 2 a la izquierda, 1 a la derecha — ❌
+
+Ajusta:
+
+$${\color{blue}2H_2} + {\color{red}O_2} \rightarrow {\color{green}2H_2O}$$
+
+<span style="color:blue">H</span>: 4 y 4 — ✅
+<span style="color:red">O</span>: 2 y 2 — ✅
+
+**Listo. Lee cada linea una vez. No necesitas mas.**
+
+**Ejemplo:**
+<span style="color:blue">N₂</span> y <span style="color:red">H₂</span> forman <span style="color:green">NH₃</span>.
+
+$${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$$
+
+<span style="color:blue">N</span>: 2 y 1 — no igual.
+<span style="color:red">H</span>: 2 y 3 — no igual.
+
+Pon <span style="color:blue">2</span> en NH₃. Pon <span style="color:red">3</span> en H₂.
+
+$${\color{blue}N_2} + {\color{red}3H_2} \rightarrow {\color{green}2NH_3}$$
+
+<span style="color:blue">N</span>: 2 y 2 — igual. <span style="color:red">H</span>: 6 y 6 — igual.
+
+**Balanceado. Paso a paso.**
+
+**Ejercicios:**
+Balancea <span style="color:blue">Fe</span> + <span style="color:red">O₂</span> → <span style="color:green">Fe₂O₃</span>. **[Opcional: di los pasos en voz alta mientras escribes.]**
+
+**Metacognición:**
+1. ¿Cual fue el primer elemento que ajustaste? ¿Por que?
+2. Sin leer, explica con tus palabras: ¿que significa balancear?
+
+**Opción de respuesta:**
+Puedes responder escribiendo, grabando un audio o explicándoselo a un compañero.
+
+**Glosario:**
+
+- **Balancear:** hacer que los atomos de cada elemento sean iguales a ambos lados.
+
+- **Ajustar:** cambiar el coeficiente hasta que los numeros cuadren.
+
+- **Coeficiente:** el numero grande que pones delante de la formula.
+
+- **Subindice:** el numero pequeño dentro de la formula. No se toca.
 
 ## Contextualización — Autismo y Pensamiento Concreto {.caracterizados}
 
-Este enfoque presenta el balanceo como una regla fija e invariable. Cada paso sigue una secuencia lógica inquebrantable, sin ambigüedades ni metáforas. Proporciona un algoritmo explícito que el estudiante puede aplicar mecánicamente a cualquier ecuación.
+**Regla fija:** El numero total de atomos de cada <span style="color:blue">elemento</span> antes de la reaccion debe ser EXACTAMENTE IGUAL al numero total despues de la reaccion.
 
-**Regla fija:** El número total de átomos de cada elemento químico antes de la reacción química debe ser exactamente igual al número total de átomos después de la reacción química. No se debe modificar ningún subíndice. Solo se deben modificar los coeficientes multiplicadores colocados delante de las fórmulas químicas.
+No se modifican los <span style="color:red">subindices</span>.
+Solo se modifican los <span style="color:green">coeficientes</span> delante de las formulas.
+
+$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+
+Aplica la regla:
+
+| Elemento | <span style="color:blue">Antes</span> | <span style="color:red">Despues</span> | ¿Cumple? |
+|:---------|:---------:|:---------:|:--------:|
+| <span style="color:blue">C</span> | 1 | 1 | ✅ |
+| <span style="color:red">H</span> | 4 | 2 | ❌ |
+| <span style="color:green">O</span> | 2 | 3 | ❌ |
+
+Ajusta para cumplir la regla:
+
+$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+
+| Elemento | <span style="color:blue">Antes</span> | <span style="color:red">Despues</span> | ¿Cumple? |
+|:---------|:---------:|:---------:|:--------:|
+| <span style="color:blue">C</span> | 1 | 1 | ✅ |
+| <span style="color:red">H</span> | 4 | 4 | ✅ |
+| <span style="color:green">O</span> | 4 | 4 | ✅ |
+
+**La regla se cumple. Ecuación balanceada. Aplica el mismo algoritmo a cualquier ecuación.**
+
+**Ejemplo:**
+Aplica la regla fija a ${\color{blue}H_2} + {\color{green}O_2} \rightarrow {\color{red}H_2O}$
+
+Paso A: Cuenta átomos antes y después.
+Paso B: Si no cumplen la regla, ajusta coeficientes.
+Paso C: Verifica que la regla se cumpla para todos los elementos.
+
+$${\color{blue}2H_2} + {\color{green}O_2} \rightarrow {\color{red}2H_2O}$$
+
+| Elemento | <span style="color:blue">Antes</span> | <span style="color:red">Despues</span> | ¿Cumple? |
+|:---------|:---------:|:---------:|:--------:|
+| <span style="color:blue">H</span> | 4 | 4 | ✅ |
+| <span style="color:red">O</span> | 2 | 2 | ✅ |
+
+**Regla cumplida. El algoritmo funciona siempre.**
+
+**Ejercicios:**
+Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ aplicando la regla fija. **[Opcion A: escribe los pasos. Opcion B: completa la tabla de antes/despues.]** ¿Se cumple la regla? SI / NO.
+
+**Metacognición:**
+1. Sin mirar, escribe la regla fija con tus palabras. ¿La recordaste completa?
+2. ¿En qué paso la regla no se cumplía? ¿Cómo la corregiste?
+
+**Opción de respuesta:**
+Puedes responder escribiendo o completando la tabla.
+
+**Glosario:**
+
+- **Regla fija:** el número de átomos de cada elemento debe ser igual antes y después.
+
+- **Coeficiente:** entero que multiplica la fórmula para cumplir la regla.
+
+- **Subíndice:** número fijo dentro de la fórmula que nunca se modifica.
+
+- **Verificación:** paso final que confirma que la regla se cumple.
 
 ## Contextualización — Accesibilidad Sensorial {.caracterizados}
 
-Este enfoque acompaña cada símbolo químico con su nombre completo y descripción textual. Cada operación se desglosa en pasos independientes con etiquetas claras. Reduce la abstracción al nombrar explícitamente cada sustancia.
+Las ecuaciones quimicas describen reacciones.
 
-**Estructura accesible de balanceo:** Las ecuaciones químicas describen reacciones. Los reactivos están a la izquierda y los productos a la derecha. El balanceo asegura que la materia se conserve.
+Los <span style="color:blue">reactivos</span> estan a la izquierda.
+Los <span style="color:red">productos</span> estan a la derecha.
+El balanceo asegura que la materia se conserve.
+
+**Escucha la proporcion:**
+Metano (<span style="color:blue">CH₄</span>) y oxigeno (<span style="color:green">O₂</span>) forman dioxido de carbono (<span style="color:blue">CO₂</span>) y agua (<span style="color:red">H₂O</span>).
+
+$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+
+**Tacto:** Cuenta los atomos con los dedos.
+<span style="color:blue">C: 1 y 1</span> — iguales.
+<span style="color:red">H: 4 y 2</span> — diferentes.
+<span style="color:green">O: 2 y 3</span> — diferentes.
+
+**Ajuste:** Pon <span style="color:blue">2</span> en agua y <span style="color:green">2</span> en oxigeno.
+
+$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+
+**Ahora cierra los ojos y traza la ecuacion con el dedo mientras dices los nombres en voz alta.**
+
+**Ejemplo:**
+<span style="color:blue">H₂</span> (hidrogeno) y <span style="color:red">O₂</span> (oxigeno) forman <span style="color:green">H₂O</span> (agua).
+
+$${\color{blue}H_2} + {\color{red}O_2} \rightarrow {\color{green}H_2O}$$
+
+**Tacto:** Cuenta con los dedos. H: 2 y 2. O: 2 y 1.
+**Oido:** Di "hidrogeno: 2 y 2 — bien. Oxigeno: 2 y 1 — mal."
+**Ajuste:** Pon 2 en agua y 2 en hidrogeno.
+
+$${\color{blue}2H_2} + {\color{red}O_2} \rightarrow {\color{green}2H_2O}$$
+
+**Traza la ecuacion final con el dedo. Siente como los numeros ahora cuadran.**
+
+**Ejercicios:**
+Balancea <span style="color:blue">N₂</span> (nitrogeno) + <span style="color:red">H₂</span> (hidrogeno) → <span style="color:green">NH₃</span> (amoniaco) usando fichas imaginarias. **[Opcional: responde por voz en vez de escribir.]**
+
+**Metacognición:**
+1. Cierra los ojos y describe: ¿como suena una ecuacion balanceada?
+2. ¿Que textura imaginaste para cada elemento? ¿Te ayudo a recordar?
+
+**Opción de respuesta:**
+Puedes responder escribiendo, grabando un audio o trazando la ecuacion con el dedo.
+
+**Glosario:**
+
+- **Ecuacion quimica:** descripcion escrita de una reaccion, con nombres y simbolos.
+
+- **Balancear:** ajustar los coeficientes para que los atomos se conserven.
+
+- **Coeficiente:** numero que indica cuantas moleculas participan.
+
+- **Subindice:** numero que indica cuantos atomos hay en una molecula. No cambia.
 
 ## Contextualización — Socioemocional y Psicosocial {.caracterizados}
 
-Este enfoque enmarca el aprendizaje en un tono alentador y de acompañamiento. Normaliza la dificultad inicial y celebra cada balanceo completado como un logro. Integra principios de regulación emocional para reducir la ansiedad.
+Balancear ecuaciones no siempre sale al primer intento. Es normal.
 
-Al aprender a balancear ecuaciones químicas, es muy común cometer errores en los conteos de átomos o sentirse abrumado por intentar diferentes combinaciones. Esta reflexión aporta a tu competencia de **Autonomía** al recordarte que el error es una parte valiosa del proceso científico y que tu capacidad para resolver problemas complejos se fortalece con cada intento fallido.
+Cometer errores en los conteos o sentirse abrumado es parte del proceso.
+Cada intento fallido te ensena algo nuevo.
 
-## Ejemplo — Nivel Bajo {.ejemplo}
+**Empieza con calma:**
+
+Escribe la ecuacion, cuenta los atomos, ajusta los coeficientes.
+
+$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+
+**Respira profundo. Revisa cada elemento uno por uno.**
+Si algo no cuadra, vuelve al paso anterior y prueba otra vez.
+
+<span style="color:blue">C</span>: 1 y 1 — bien. <span style="color:red">H</span>: 4 y 4 — bien. <span style="color:green">O</span>: 4 y 4 — bien.
+
+**Lograste balancearla. Cada ecuacion que completas fortalece tu capacidad de resolver problemas. Sigue asi.**
+
+**Ejemplo:**
+Intenta balancear ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$
+
+No pasa nada si no sale al primer intento. Respira.
+
+Prueba con 2 en NH₃ y 3 en H₂:
+
+$${\color{blue}N_2} + {\color{red}3H_2} \rightarrow {\color{green}2NH_3}$$
+
+**Revisa con calma:** N: 2 y 2. H: 6 y 6. **Lo lograste.**
+
+**Ejercicios:**
+Balancea ${\color{blue}Fe} + {\color{green}O_2} \rightarrow {\color{red}Fe_2O_3}$ sin apuro. **[Opcional: resuelve en pareja con un compañero.]** Al terminar, ¿como te sentiste del 1 al 5?
+
+**Metacognición:**
+1. ¿En que momento sentiste que no iba a salir? ¿Que hiciste para seguir?
+2. ¿Como aplicas la paciencia del balanceo a otras areas de tu vida?
+
+**Opción de respuesta:**
+Puedes responder escribiendo, dibujando o explicándoselo a un compañero. No importa el formato, importa que lo intentes.
+
+**Glosario:**
+
+- **Balancear:** un proceso que requiere paciencia. Cada intento te acerca mas.
+
+- **Error:** parte natural del aprendizaje. Cada error te ensena algo nuevo.
+
+- **Coeficiente:** el numero que ajustas hasta que todo cuadra.
+
+- **Logro:** cada ecuacion balanceada es un paso adelante, sin importar cuantos intentos tomo.
 
 **Regla fija:** El número total de átomos de cada elemento químico antes de la reacción química debe ser exactamente igual al número total de átomos después de la reacción química. No se modifica ningún subíndice. Solo se modifican los coeficientes.
 

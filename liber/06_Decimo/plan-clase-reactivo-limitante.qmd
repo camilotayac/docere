@@ -1,0 +1,164 @@
+# Reactivo limitante: concepto y cálculo
+
+## Teoría
+
+Cuando se lleva a cabo una reacción química, los reactivos rara vez están presentes en las proporciones exactas que indica la ecuación balanceada. Por razones prácticas —costo, disponibilidad o rendimiento— se suele añadir un exceso de uno de ellos para asegurar que el otro se convierta por completo en producto. Como consecuencia, un reactivo se consume primero y el otro sobra al final.
+
+El **reactivo limitante** es aquel que se consume por completo durante la reacción. Una vez que se agota, la reacción se detiene y no puede formarse más producto. La cantidad máxima de producto obtenible depende exclusivamente de él. Los reactivos que quedan sin consumir se denominan **reactivos en exceso**.
+
+Para identificar cuál es el reactivo limitante se sigue un método general de cuatro pasos. Primero, se verifica que la ecuación química esté **balanceada**; sin coeficientes correctos no es posible establecer relaciones válidas entre reactivos. Segundo, se **convierten a moles** las cantidades de cada reactivo usando su masa molar; la ecuación habla en moles, no en gramos ni en litros. Tercero, se **calcula cuántos moles de producto podría generar cada reactivo** si se consumiera por completo, aplicando la relación molar de la ecuación balanceada. Cuarto, se **comparan** esos resultados: el reactivo que produce la menor cantidad de producto es el **limitante**; el otro es el **exceso**.
+
+Considérese la síntesis del metanol:
+
+$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}$$
+
+Se dispone de $4 \, \text{mol}$ de $\text{CO}$ y $6 \, \text{mol}$ de $\text{H}_2$. Aplicando el tercer paso: el $\text{CO}$ podría producir $4 \, \text{mol}$ de $\text{CH}_3\text{OH}$ (relación $1:1$), mientras que el $\text{H}_2$ produciría solo $3 \, \text{mol}$ (relación $2:1$). El $\text{H}_2$ es el reactivo limitante porque genera menos producto. El $\text{CO}$ está en exceso y sobra $1 \, \text{mol}$ sin reaccionar.
+
+## Contextualización
+
+### Activación
+
+¿Alguna vez preparaste una receta y descubriste que te faltaba justo uno de los ingredientes? O al revés: te sobró mucho de algo y no supiste cómo usarlo.
+
+En química ocurre exactamente lo mismo. Cuando mezclas reactivos en el laboratorio, casi nunca están en las cantidades exactas que pide la ecuación. Siempre hay uno que se acaba primero. Ese ingrediente es el que decide cuánto producto puedes obtener.
+
+En esta parte vas a aprender qué es el **reactivo limitante** y cómo identificarlo con un método de cuatro pasos. Pero no solo vas a seguir los pasos — vas a entender **por qué** se hace cada uno.
+
+### Desarrollo
+
+#### ¿Qué es el reactivo limitante?
+
+Imagina que cada sándwich necesita dos rebanadas de pan y una loncha de queso. Tienes diez rebanadas de pan y siete lonchas de queso.
+
+> 💡 Pregunta: ¿cuántos sándwiches puedes hacer?
+
+La respuesta es cinco. El pan se acaba primero. El pan es el limitante. El queso sobra — es el exceso. Cuando el pan se acaba, no importa cuánto queso quede: no puedes hacer más sándwiches.
+
+En química pasa igual. El **reactivo limitante** es el reactivo que se consume primero. La reacción se detiene cuando él se agota, y la cantidad de producto que se forma depende de él. Los demás reactivos se llaman **reactivos en exceso** porque están en cantidad mayor de la necesaria.
+
+> 🧠 Este concepto genera confusión al principio. Es completamente normal. La clave está en entender que el limitante no es necesariamente el que menos masa o moles tiene al inicio. Es el que se acaba primero según la proporción de la ecuación balanceada.
+
+> Hasta aquí deberías poder explicar con tus palabras qué es el reactivo limitante y dar un ejemplo cotidiano.
+
+#### Cómo identificar el reactivo limitante — los cuatro pasos
+
+Para identificar el reactivo limitante se usan cuatro pasos. Son siempre los mismos, sin importar la reacción.
+
+1. **Paso 1: Verifica que la ecuación esté balanceada.**
+
+   ¿Por qué se hace? Porque la ecuación balanceada te dice la proporción exacta en que reaccionan los reactivos. Sin esa proporción no puedes comparar nada. Si la ecuación no está balanceada, ajústala primero antes de continuar.
+
+2. **Paso 2: Convierte las cantidades a moles.**
+
+   ¿Por qué se hace? Porque los coeficientes de la ecuación hablan en moles, no en gramos ni en litros. Necesitas que todo esté en la misma unidad para poder aplicar la relación molar.
+
+   Si te dan la masa en gramos, usas la masa molar de cada sustancia:
+
+   $$n = \frac{m}{M} \tag{2}$$
+
+   donde $n$ es la cantidad en moles, $m$ la masa en gramos y $M$ la masa molar en $\text{g/mol}$.
+
+3. **Paso 3: Calcula cuánto producto puede formar cada reactivo.**
+
+   ¿Por qué se hace? La única forma de saber cuál se acaba primero es ver cuál produce menos producto. Tomas cada reactivo por separado, asumes que se consume por completo, y calculas los moles de producto que se formarían usando la relación molar de la ecuación balanceada.
+
+   El cálculo se desglosa así para cada reactivo:
+
+   3.1. Toma la cantidad en moles del reactivo (del paso 2).
+
+   3.2. Identifica la relación molar entre ese reactivo y el producto usando los coeficientes de la ecuación balanceada.
+
+   3.3. ¿Por qué esa relación? Porque los coeficientes indican cuántos moles de reactivo se necesitan para producir cierta cantidad de producto. Por ejemplo, si el coeficiente del reactivo es $2$ y el del producto es $1$, se necesitan $2 \, \text{mol}$ de reactivo por cada $1 \, \text{mol}$ de producto.
+
+   3.4. Multiplica los moles del reactivo por la relación molar:
+
+   $$n_{\text{producto}} = n_{\text{reactivo}} \times \frac{\text{coeficiente del producto}}{\text{coeficiente del reactivo}} \tag{3}$$
+
+   3.5. Desarrolla la operación. Si obtienes una fracción, déjala expresada o conviértela a decimal.
+
+   3.6. El resultado son los moles de producto que ese reactivo puede generar si se consumiera por completo.
+
+4. **Paso 4: Compara los resultados.**
+
+   ¿Por qué se hace? El reactivo que da menos producto es el que se agota primero. Ese es el **reactivo limitante**. El otro está en **exceso**.
+
+   Si ambos dieran exactamente la misma cantidad, significa que están en proporción estequiométrica exacta y no hay limitante ni exceso — ambos se consumen por completo.
+
+El siguiente diagrama resume el proceso completo:
+
+```{mermaid}
+flowchart LR
+    A([Inicio]):::neutro --> B[Verificar ecuación balanceada]:::principal
+    B --> C[Convertir a moles]:::principal
+    C --> D[Calcular moles de producto<br>por cada reactivo]:::principal
+    D --> E{"¿Cuál da<br>menos producto?"}:::decision
+    E -->|Ese reactivo| F([Es el limitante]):::resultado
+    E -->|El otro| G([Es el exceso]):::resultado
+
+    classDef neutro fill:#95A5A6,stroke:#717D7E,color:#fff
+    classDef principal fill:#4A90D9,stroke:#2C5F8A,color:#fff
+    classDef decision fill:#F5A623,stroke:#C07D0E,color:#fff
+    classDef resultado fill:#9B59B6,stroke:#6C3483,color:#fff
+```
+
+> Hasta aquí deberías poder enumerar los cuatro pasos y explicar por qué se hace cada uno.
+
+#### Aplicación del método con un ejemplo numérico
+
+Apliquemos los cuatro pasos a un caso concreto.
+
+**Reacción:** la síntesis de metanol
+
+$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}$$
+
+**Datos iniciales:** se tienen $4 \, \text{mol}$ de $\text{CO}$ y $6 \, \text{mol}$ de $\text{H}_2$.
+
+1. **Paso 1: Verificar ecuación balanceada.** La ecuación $(1)$ ya está balanceada. Hay $1$ átomo de C, $1$ de O y $4$ de H en cada lado. Si no lo estuviera, se balancearía antes de seguir.
+
+2. **Paso 2: Convertir a moles.** Ambos reactivos ya están expresados en moles. No es necesario convertir.
+
+3. **Paso 3: Calcular producto por cada reactivo.**
+
+   **Para el $\text{CO}$:**
+
+   3.1. Moles de $\text{CO}$ disponibles: $4 \, \text{mol}$.
+
+   3.2. Relación molar: según $(1)$, $1 \, \text{mol} \, \text{CO} : 1 \, \text{mol} \, \text{CH}_3\text{OH}$.
+
+   3.3. ¿Por qué $1:1$? Porque el coeficiente del $\text{CO}$ y del $\text{CH}_3\text{OH}$ en la ecuación balanceada es $1$ para ambos.
+
+   3.4. Cálculo:
+
+   $$n_{\text{CH}_3\text{OH}} = 4 \, \text{mol CO} \times \frac{1 \, \text{mol CH}_3\text{OH}}{1 \, \text{mol CO}}$$
+
+   3.5. Desarrollo: $4 \times 1 / 1 = 4$.
+
+   3.6. Resultado: $4 \, \text{mol}$ de $\text{CH}_3\text{OH}$.
+
+   **Para el $\text{H}_2$:**
+
+   3.1. Moles de $\text{H}_2$ disponibles: $6 \, \text{mol}$.
+
+   3.2. Relación molar: según $(1)$, $2 \, \text{mol} \, \text{H}_2 : 1 \, \text{mol} \, \text{CH}_3\text{OH}$.
+
+   3.3. ¿Por qué $2:1$? Porque el coeficiente del $\text{H}_2$ es $2$ y el del $\text{CH}_3\text{OH}$ es $1$. Se necesitan $2$ moles de $\text{H}_2$ por cada mol de metanol.
+
+   3.4. Cálculo:
+
+   $$n_{\text{CH}_3\text{OH}} = 6 \, \text{mol H}_2 \times \frac{1 \, \text{mol CH}_3\text{OH}}{2 \, \text{mol H}_2}$$
+
+   3.5. Desarrollo: $6 \times 1 / 2 = 3$.
+
+   3.6. Resultado: $3 \, \text{mol}$ de $\text{CH}_3\text{OH}$.
+
+4. **Paso 4: Comparar.** El $\text{CO}$ puede producir $4 \, \text{mol}$ de metanol. El $\text{H}_2$ puede producir solo $3 \, \text{mol}$. El $\text{H}_2$ da menos producto, por lo tanto **el $\text{H}_2$ es el reactivo limitante**. El $\text{CO}$ es el reactivo en exceso y sobra $1 \, \text{mol}$ sin reaccionar.
+
+> ⚠️ Error frecuente: pensar que el limitante es el que menos moles tiene al inicio. En este ejemplo hay $4 \, \text{mol}$ de $\text{CO}$ y $6 \, \text{mol}$ de $\text{H}_2$. El $\text{H}_2$ tiene más moles que el $\text{CO}$, ¡pero es el limitante! ¿Por qué? Porque la ecuación pide $2$ moles de $\text{H}_2$ por cada mol de $\text{CO}$, y esa proporción hace que rinda menos producto. Todo depende de los coeficientes, no de las cantidades absolutas.
+
+> Hasta aquí deberías poder resolver un problema de reactivo limitante: identificar cuál es, explicar por qué, y determinar cuánto producto se puede formar.
+
+### Consolidación
+
+En esta parte aprendiste que el **reactivo limitante** es el reactivo que se consume primero y determina la cantidad máxima de producto que puede formarse. Para identificarlo usas cuatro pasos: verificar la ecuación, convertir las cantidades a moles, calcular cuánto producto generaría cada reactivo si se consumiera por completo, y comparar los resultados. El que produce menos es el limitante.
+
+Ahora puedes resolver problemas sencillos de reactivo limitante. Cuando te enfrentes a uno nuevo, recuerda que la clave está en comparar las cantidades de producto que cada reactivo puede generar según la ecuación balanceada — ese es el núcleo del método. Este conocimiento es la base para cálculos posteriores como el rendimiento de una reacción o la determinación del reactivo en exceso sobrante.

@@ -32,7 +32,6 @@ book:
     - part: "Décimo - Química"
       chapters:
         - 06_Decimo/reactivo_limite.qmd
-        - 06_Decimo/escritura_quimica.qmd
   appendices:
     - bibliografia.qmd
 
@@ -71,6 +70,8 @@ format:
     toc-location: right
     lang: es
     include-after-body: _scripts/collapse.html
+    mermaid:
+      theme: neutral
 
 
   epub:
@@ -82,6 +83,7 @@ format:
     toc-depth: 3
     number-sections: true
     math-method: webtex
+    mermaid-format: png
     meta:
       dc:creator: "Camilo Tayac"
       dc:publisher: "Docere"

@@ -1,0 +1,59 @@
+# Proposición y su negación
+
+## Teoría
+
+Mediante la unión de dos o más palabras se crea una oración o enunciado. Cuando un enunciado puede ser verdadero (V) o falso (F), se obtiene una **proposición** (cf. *Introducción a la teoría de conjuntos*). Mediante la lógica se determina si un enunciado es V o F. Si esto se dificulta, se convierte el enunciado en una pregunta; si esta puede responderse con un sí o con un no, entonces se trata de una proposición.
+
+Por ejemplo, el enunciado "La química es la ciencia que estudia la materia ordinaria" se transforma en la pregunta "¿La química es la ciencia que estudia la materia ordinaria?" Dicha pregunta puede contestarse con un sí o con un no, lo que indica que el enunciado original es una proposición.
+
+Existen enunciados que no son proposiciones. Por ejemplo, "Hola, ¿cómo estás?" no puede determinarse como V o F, dado que se trata de una expresión de saludo.
+
+La proposición del ejemplo anterior puede etiquetarse con una letra; en este caso se usa la letra $P$. Toda proposición tiene una **negación**, representada con el signo $\neg$. La negación de $P$ se escribe $\neg P$ y se lee como "no $P$" o "la negación de $P$" (cf. *Introducción a la teoría de conjuntos*). Para el ejemplo anterior, la negación es "La química **no** es la ciencia que estudia la materia ordinaria".
+
+Las proposiciones $P$ y $\neg P$ pueden valorarse como V o F. Si $P$ es V, entonces $\neg P$ es F; y si $P$ es F, entonces $\neg P$ es V. Esta relación se representa mediante una **tabla de verdad** (cf. *Introducción a la teoría de conjuntos*):
+
+$$
+\begin{array}{c|c}
+P & \neg P \\ \hline
+V & F \\
+F & V
+\end{array} \tag{1}
+$$
+
+## Contextualización
+
+Imagina que estás en un juego con un amigo. Tu amigo dice algo y tú tienes que decidir si es verdad o mentira. No hay término medio: o es cierto o no lo es. Cuando un enunciado puede clasificarse así, estamos frente a una **proposición**.
+
+Pero no todo lo que se dice entra en ese juego. Si alguien te saluda y te pregunta "¿cómo estás?", no puedes decir que es verdadero o falso. Es simplemente un saludo. Aprender a distinguir entre lo que es una proposición y lo que no lo es es el primer paso en lógica.
+
+> 💡 Solo los enunciados que pueden ser verdaderos o falsos son proposiciones.
+
+Para identificar una proposición hay un método sencillo: convertir el enunciado en una pregunta. Si la pregunta se responde con un sí o con un no, el enunciado original es una proposición. Por ejemplo, "La química estudia la materia ordinaria" se convierte en "¿La química estudia la materia ordinaria?" La respuesta es sí o no. Entonces, es una proposición.
+
+El siguiente diagrama resume el proceso para identificar proposiciones y aplicar la negación:
+
+```{mermaid}
+flowchart TD
+    A[Enunciado] --> B{¿Puede ser V o F?}
+    B -->|Sí| C[Es una proposición]
+    B -->|No| D[No es proposición<br>ej: saludo]
+    C --> E{Tiene negación}
+    E -->|Sí| F[¬P: valor opuesto]
+    F --> G[Tabla de verdad]
+```
+
+Una vez que tienes una proposición, puedes **negarla**. La negación es como un interruptor: lo que era verdadero se vuelve falso, y lo que era falso se vuelve verdadero. En lógica, la negación se representa con el símbolo $\neg$. Si llamamos $P$ a la proposición "La química estudia la materia ordinaria", entonces $\neg P$ es "La química **no** estudia la materia ordinaria".
+
+> ⚠️ Error frecuente: confundir la negación lógica con un simple "decir lo contrario". La negación no es una opinión — es una operación que siempre produce el valor de verdad opuesto al original.
+
+Si $P$ es V, $\neg P$ es F. Si $P$ es F, $\neg P$ es V. Esta relación se organiza en una **tabla de verdad**, que muestra de un vistazo qué pasa con la verdad cuando negamos.
+
+$$
+\begin{array}{c|c}
+P & \neg P \\ \hline
+V & F \\
+F & V
+\end{array} \tag{2}
+$$
+
+**Síntesis.** En esta clase se presentó la proposición como un enunciado valorable en V o F, el método de identificación mediante pregunta de sí/no, la negación ($\neg$) como operador que invierte el valor de verdad, y la tabla de verdad como herramienta de representación. Estas nociones constituyen la base de la lógica proposicional.

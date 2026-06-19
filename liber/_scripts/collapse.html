@@ -13,6 +13,17 @@ section.level2.evaluacion > :not(h2) {
 }
 </style>
 <script>
+(function () {
+  var pres = document.querySelectorAll('pre.mermaid');
+  for (var i = 0; i < pres.length; i++) {
+    var code = pres[i].querySelector('code');
+    if (code) {
+      pres[i].setAttribute('data-mermaid-src', code.textContent);
+    }
+  }
+})();
+</script>
+<script>
 document.addEventListener('DOMContentLoaded', function () {
   if (document.getElementById('accordion-body')) return;
 
@@ -71,6 +82,27 @@ document.addEventListener('DOMContentLoaded', function () {
   var foucStyle = document.getElementById('accordion-fouc');
   if (foucStyle) foucStyle.remove();
 
+  function renderMermaidInSection(container) {
+    if (typeof mermaid === 'undefined' || !mermaid.run) return;
+    var pres = container.querySelectorAll('pre.mermaid');
+    pres.forEach(function (pre) {
+      var code = pre.querySelector('code');
+      if (code) {
+        mermaid.run({ nodes: [code] });
+      } else {
+        var svg = pre.querySelector('svg');
+        if (svg && svg.getBoundingClientRect().height === 0) {
+          var src = pre.getAttribute('data-mermaid-src');
+          if (src) {
+            pre.innerHTML = '<code>' + src.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code>';
+            pre.classList.add('mermaid');
+            mermaid.run({ nodes: [pre] });
+          }
+        }
+      }
+    });
+  }
+
   function toggleSection(h2) {
     var section = h2.closest('section.level2');
     if (!section) return;
@@ -91,10 +123,11 @@ document.addEventListener('DOMContentLoaded', function () {
       body.classList.add('show');
       h2.classList.remove('collapsed');
       h2.setAttribute('aria-expanded', 'true');
+      renderMermaidInSection(body);
     }
   }
 
-    document.addEventListener('click', function (e) {
+  document.addEventListener('click', function (e) {
     var h2 = e.target.closest('.accordion-toggle');
     if (h2) toggleSection(h2);
   });
@@ -107,6 +140,17 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleSection(h2);
     }
   });
+
+  var firstBody = accordion.querySelector('.collapse');
+  if (firstBody) {
+    firstBody.classList.add('show');
+    var firstH2 = accordion.querySelector('.accordion-toggle');
+    if (firstH2) {
+      firstH2.classList.remove('collapsed');
+      firstH2.setAttribute('aria-expanded', 'true');
+    }
+    renderMermaidInSection(firstBody);
+  }
 
   var tooltipMap = {
     'Source Code': 'Código fuente',
