@@ -136,3 +136,16 @@ h2.accordion-toggle.collapsed::after {
   flex: 1;
 }
 
+/* Responsive curriculum tables (8 columns, long text) */
+section.level2 table {
+  width: 100%;
+  font-size: 0.85em;
+}
+
+@media screen {
+  section.level2 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
