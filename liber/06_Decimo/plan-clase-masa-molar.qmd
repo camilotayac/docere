@@ -6,11 +6,11 @@ La **masa molar**, representada con la letra **M**, es la masa que tiene un mol 
 
 Para calcular la masa molar de un elemento se toma su masa atómica de la tabla periódica y se expresa en $\text{g/mol}$. Para calcular la masa molar de un compuesto se suman las masas atómicas de todos los átomos presentes en su fórmula química, multiplicando cada una por el número de veces que aparece ese elemento. La masa molar del ácido sulfúrico ($\text{H}_2\text{SO}_4$) se calcula así:
 
-$$M(\text{H}_2\text{SO}_4) = (2 \times 1.008) + (1 \times 32.06) + (4 \times 16.00) = 98.076 \, \text{g/mol} \tag{1}$$
+$$M(\text{H}_2\text{SO}_4) = (2 \times 1.008) + (1 \times 32.06) + (4 \times 16.00) = 98.076 \, \text{g/mol}$$
 
 La masa molar permite convertir entre la masa de una sustancia, medible en una balanza, y la cantidad de sustancia en moles. La relación se expresa con la fórmula:
 
-$$n = \frac{m}{M} \tag{2}$$
+$$n = \frac{m}{M}$$
 
 donde $n$ es la cantidad en moles, $m$ la masa en gramos y $M$ la masa molar en $\text{g/mol}$. Si se tienen $36$ gramos de agua y su masa molar es $18.016 \, \text{g/mol}$, la cantidad de moles es $n = 36 / 18.016 = 2.0$ moles. Si se tienen $3$ moles de $\text{CO}_2$, cuya masa molar es $44.01 \, \text{g/mol}$, la masa correspondiente es $m = 3 \times 44.01 = 132.03$ gramos.
 
@@ -82,7 +82,7 @@ Ahora imagina dos bolsas de 30 caramelos cada una. Una tiene solo caramelos de m
 
 Ahora imagina una bolsa que trae 12 caramelos de menta y 18 de fruta. Cada caramelo de menta pesa $5$ gramos. Cada caramelo de fruta pesa $3$ gramos. Para saber cuánto pesa la bolsa completa, multiplicas los 12 de menta por $5$ gramos y los 18 de fruta por $3$ gramos. Luego sumas: $12 \times 5 = 60$, $18 \times 3 = 54$, $60 + 54 = 114$ gramos por bolsa. En química se hace exactamente igual para calcular la masa molar de un compuesto. Se toman los átomos de cada elemento, se multiplica su peso por la cantidad que aparece en la fórmula, y se suman. Por ejemplo, en el agua ($\text{H}_2\text{O}$) hay dos átomos de hidrógeno y uno de oxígeno:
 
-$$(2 \times 1.008) + (1 \times 16.00) = 18.016 \, \text{g/mol} \tag{3}$$
+$$(2 \times 1.008) + (1 \times 16.00) = 18.016 \, \text{g/mol}$$
 
 ---
 

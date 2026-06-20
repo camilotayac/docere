@@ -17,7 +17,7 @@ $$
 P & \neg P \\ \hline
 V & F \\
 F & V
-\end{array} \tag{1}
+\end{array}
 $$
 
 ## Contextualización
@@ -53,7 +53,7 @@ $$
 P & \neg P \\ \hline
 V & F \\
 F & V
-\end{array} \tag{2}
+\end{array}
 $$
 
 **Síntesis.** En esta clase se presentó la proposición como un enunciado valorable en V o F, el método de identificación mediante pregunta de sí/no, la negación ($\neg$) como operador que invierte el valor de verdad, y la tabla de verdad como herramienta de representación. Estas nociones constituyen la base de la lógica proposicional.

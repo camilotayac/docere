@@ -11,7 +11,7 @@ Para identificar el reactivo límite se siguen cuatro pasos: (1) escribir y bala
 
 **Fórmula (1):**
 
-$$ n = \frac{m}{M} \tag{1} $$
+$$ n = \frac{m}{M} $$
 
 Donde $n$ = cantidad de sustancia (mol), $m$ = masa del reactivo (g), $M$ = masa molar (g/mol).
 
@@ -19,7 +19,7 @@ El **porcentaje de rendimiento** relaciona el rendimiento real (obtenido experim
 
 **Fórmula (2):**
 
-$$ \% \text{ rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teórico}} \times 100 \tag{2} $$
+$$ \% \text{ rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teórico}} \times 100 $$
 
 Donde rendimiento real = masa de producto obtenida experimentalmente (g), rendimiento teórico = masa máxima calculada a partir del reactivo límite (g).
 
@@ -87,13 +87,13 @@ Tienes <span style="color:blue">4 de CO</span> y <span style="color:red">6 de H�
 
 Tradúcelo a números:
 
-$$n_{\color{blue}CO} = 4\ \text{mol},\quad n_{\color{red}H_2} = 6\ \text{mol}$$
+$n_{CO} = 4\ \text{mol},\quad n_{H_2} = 6\ \text{mol}$
 
 Usa los coeficientes para ver cuánto da cada uno:
 
-$${\color{blue}\text{CO: }} 4 \times \frac{1}{1} = 4\ \text{mol de metanol}$$
+$$\text{CO: } 4 \times \frac{1}{1} = 4\ \text{mol de metanol}$$
 
-$${\color{red}\text{H}_2\text{: }} 6 \times \frac{1}{2} = 3\ \text{mol de metanol}$$
+$$\text{H}_2\text{: } 6 \times \frac{1}{2} = 3\ \text{mol de metanol}$$
 
 <span style="color:red">H₂</span> da menos — es el **reactivo limitante**.
 
@@ -146,12 +146,12 @@ Míralo en la tabla:
 
 | Reactivo | Moles | Coeficiente | Moles de metanol que produce |
 |:---------|:----:|:-----------:|:----------------------------:|
-| <span style="color:blue">CO (azul)</span> | ${\color{blue}4}$ | $1$ | ${\color{blue}4 \times \frac{1}{1} = 4}$ |
-| <span style="color:red">H₂ (rojo)</span> | ${\color{red}6}$ | $2$ | ${\color{red}6 \times \frac{1}{2} = 3}$ |
+| <span style="color:blue">CO (azul)</span> | $4$ | $1$ | $4 \times \frac{1}{1} = 4$ |
+| <span style="color:red">H₂ (rojo)</span> | $6$ | $2$ | $6 \times \frac{1}{2} = 3$ |
 
 <span style="color:red">H₂</span> da solo 3 mol → es el **limitante**.
 
-$${\color{red}3} < {\color{blue}4} \Rightarrow \text{el limitante es el } {\color{red}\text{H}_2}$$
+$$3 < 4 \Rightarrow \text{el limitante es el } \text{H}_2$$
 
 **Ahora cubre la tabla y reconstruye el diagrama de memoria: datos → moles → producto por reactivo → limitante.**
 
@@ -204,9 +204,9 @@ El que da para menos veces es el **limitante**: el <span style="color:red">H₂<
 
 Escríbelo así:
 
-$${\color{blue}4} \div 1 = {\color{blue}4},\qquad {\color{red}6} \div 2 = {\color{red}3}$$
+$$4 \div 1 = 4,\qquad 6 \div 2 = 3$$
 
-$${\color{red}3} < {\color{blue}4} \Rightarrow \text{el limitante es } {\color{red}\text{H}_2}$$
+$3 < 4 \Rightarrow \text{el limitante es } \text{H}_2$
 
 **Ahora tapa los pasos y dime en voz alta: ¿que tenias que hacer primero?**
 
@@ -257,9 +257,9 @@ Con <span style="color:blue">4 CO</span> y <span style="color:red">6 H₂</span>
 
 A nivel simbolico:
 
-$${\color{blue}\text{CO: }} 4 \times \frac{1}{1} = {\color{blue}4},\qquad {\color{red}\text{H}_2\text{: }} 6 \times \frac{1}{2} = {\color{red}3}$$
+$$\text{CO: } 4 \times \frac{1}{1} = 4,\qquad \text{H}_2\text{: } 6 \times \frac{1}{2} = 3$$
 
-$${\color{red}3} < {\color{blue}4} \Rightarrow \text{el limitante es } {\color{red}\text{H}_2}$$
+$3 < 4 \Rightarrow \text{el limitante es } \text{H}_2$
 
 El resultado es el mismo siempre: el <span style="color:red">H₂</span> es el **limitante**.
 
@@ -314,11 +314,11 @@ Las <span style="color:red">fichas suaves (H₂)</span> se acaban primero — so
 
 En numeros:
 
-$$n_{\color{blue}CO} = 4,\quad n_{\color{red}H_2} = 6$$
+$$n_{CO} = 4,\quad n_{H_2} = 6$$
 
-$${\color{blue}\text{CO da }} 4 \text{ mol},\qquad {\color{red}\text{H}_2\text{ da }} 3 \text{ mol}$$
+$\text{CO da } 4 \text{ mol},\qquad \text{H}_2\text{ da } 3 \text{ mol}$
 
-$${\color{red}3} < {\color{blue}4} \Rightarrow \text{el limitante es } {\color{red}\text{H}_2}$$
+$3 < 4 \Rightarrow \text{el limitante es } \text{H}_2$
 
 En el laboratorio, el recipiente de <span style="color:red">H₂</span> queda vacio al tacto.
 
@@ -371,11 +371,11 @@ Cada <span style="color:blue">CO</span> necesita <span style="color:red">2 H₂<
 
 En numeros:
 
-$$n_{\color{blue}CO} = 4\ \text{mol},\quad n_{\color{red}H_2} = 6\ \text{mol}$$
+$n_{CO} = 4\ \text{mol},\quad n_{H_2} = 6\ \text{mol}$
 
-$${\color{blue}\text{CO da }} 4 \text{ mol},\qquad {\color{red}\text{H}_2\text{ da }} 3 \text{ mol}$$
+$\text{CO da } 4 \text{ mol},\qquad \text{H}_2\text{ da } 3 \text{ mol}$
 
-$${\color{red}\text{H}_2} \text{ es el limitante}$$
+$$\text{H}_2 \text{ es el limitante}$$
 
 **Antes de seguir, respira profundo 3 veces. Ya tienes esto.**
 

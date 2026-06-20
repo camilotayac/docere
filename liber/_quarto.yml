@@ -43,11 +43,13 @@ book:
 format:
   pdf:
     documentclass: scrbook
-    classoption: [12pt, oneside, open=any]
+    classoption: [12pt, oneside, open=any, DIV=15]
+    keep-tex: true
     include-in-header: preamble.tex
     filters:
       - _filters/color-sections.lua
       - _filters/icfes-tables.lua
+      - _filters/wide-tables.lua
     toc: true
     toc-depth: 1
     number-depth: 3
@@ -66,6 +68,7 @@ format:
     css: _styles/headings.css
     filters:
       - _filters/icfes-tables.lua
+      - _filters/wide-tables.lua
     toc: true
     toc-depth: 3
     toc-location: right
@@ -77,14 +80,13 @@ format:
 
   epub:
     cover-image: Portada.png
-    css: _styles/headings.css
     filters:
       - _filters/icfes-tables.lua
+      - _filters/wide-tables.lua
     toc: true
     toc-depth: 3
     number-sections: true
-    math-method: webtex
-    mermaid-format: png
+    math-method: mathml
     meta:
       dc:creator: "Camilo Tayac"
       dc:publisher: "Docere"

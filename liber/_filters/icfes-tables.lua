@@ -157,13 +157,19 @@ end
 
 -- ── HTML/EPUB: Div grid ───────────────────────
 
+local grid_style = "display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 1em 0;"
+local opcion_style = "display: flex; align-items: center; gap: 8px; padding: 8px 10px; border: 0.6pt solid #000000; border-radius: 4px; background: white;"
+local letra_style = "display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border: 1.5px solid #000000; border-radius: 50%; font-weight: bold; font-size: 0.9em; color: #000000; flex-shrink: 0;"
+local texto_style = "flex: 1;"
+
 local function html_grid(tbl)
-  local grid = pandoc.Div({}, {class = "icfes-grid"})
+  local grid_attrs = {class = "icfes-grid", style = grid_style}
+  local grid = pandoc.Div({}, grid_attrs)
   each_cell(tbl, function(content)
     local letter, rest = extract_letter(content)
-    local opcion = pandoc.Div({}, {class = "icfes-opcion"})
+    local opcion = pandoc.Div({}, {class = "icfes-opcion", style = opcion_style})
     if letter then
-      local letra = pandoc.Span({pandoc.Str(letter)}, {class = "icfes-letra"})
+      local letra = pandoc.Span({pandoc.Str(letter)}, {class = "icfes-letra", style = letra_style})
       local rest_inlines = {}
       for _, b in ipairs(rest) do
         if b.content then
@@ -172,7 +178,7 @@ local function html_grid(tbl)
           end
         end
       end
-      local texto = pandoc.Span(rest_inlines, {class = "icfes-texto"})
+      local texto = pandoc.Span(rest_inlines, {class = "icfes-texto", style = texto_style})
       opcion.content = {letra, texto}
     else
       for _, b in ipairs(content) do
@@ -265,13 +271,13 @@ end
 
 local function html_grid_from_lineblock(el)
   local cells = parse_lineblock_cells(el)
-  local grid = pandoc.Div({}, {class = "icfes-grid"})
+  local grid = pandoc.Div({}, {class = "icfes-grid", style = grid_style})
   for _, cinlines in ipairs(cells) do
     local blocks = {pandoc.Plain(cinlines)}
     local letter, rest = extract_letter(blocks)
-    local opcion = pandoc.Div({}, {class = "icfes-opcion"})
+    local opcion = pandoc.Div({}, {class = "icfes-opcion", style = opcion_style})
     if letter then
-      local letra = pandoc.Span({pandoc.Str(letter)}, {class = "icfes-letra"})
+      local letra = pandoc.Span({pandoc.Str(letter)}, {class = "icfes-letra", style = letra_style})
       local rest_inlines = {}
       for _, b in ipairs(rest) do
         if b.content then
@@ -280,7 +286,7 @@ local function html_grid_from_lineblock(el)
           end
         end
       end
-      local texto = pandoc.Span(rest_inlines, {class = "icfes-texto"})
+      local texto = pandoc.Span(rest_inlines, {class = "icfes-texto", style = texto_style})
       opcion.content = {letra, texto}
     else
       for _, b in ipairs(blocks) do

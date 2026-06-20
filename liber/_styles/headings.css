@@ -140,6 +140,12 @@ h2.accordion-toggle.collapsed::after {
 section.level2 table {
   width: 100%;
   font-size: 0.85em;
+  table-layout: fixed;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen {

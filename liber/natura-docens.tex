@@ -1,0 +1,2989 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  letterpaper,
+  12pt,
+  oneside,
+  open=any,
+  DIV=15]{scrbook}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{3}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{xcolor}
+\definecolor{docere-link}{HTML}{000080}
+\definecolor{docere-cite}{HTML}{000080}
+\definecolor{docere-url}{HTML}{0000cc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\usepackage{parskip}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\usepackage[most]{tcolorbox}
+
+\definecolor{icfesletra}{HTML}{000000}
+\newcommand{\circletter}[1]{\textcircled{#1}}
+
+\definecolor{currentsectionbg}{HTML}{e0d8f0}
+\definecolor{currentsectionborder}{HTML}{c8bae0}
+
+\newcommand{\setcolorsection}[2]{%
+  \definecolor{currentsectionbg}{HTML}{#1}%
+  \definecolor{currentsectionborder}{HTML}{#2}%
+}
+
+\addtokomafont{section}{\normalfont\Large\bfseries\color{black}}
+
+\makeatletter
+\renewcommand{\sectionlinesformat}[4]{%
+  \begin{tcolorbox}[
+    colback=currentsectionbg,
+    colframe=currentsectionborder,
+    arc=3pt,
+    boxrule=0.5pt,
+    left=8pt,
+    right=8pt,
+    top=4pt,
+    bottom=4pt,
+    before skip=0pt,
+    after skip=0pt,
+    nobeforeafter,
+    ]
+    #4%
+  \end{tcolorbox}%
+}
+\makeatother
+
+\AtBeginDocument{
+  \setlength{\abovedisplayskip}{1em}
+  \setlength{\belowdisplayskip}{1em}
+  \setlength{\abovedisplayshortskip}{0.5em}
+  \setlength{\belowdisplayshortskip}{0.5em}
+  \pagenumbering{roman}
+  \includepdf[pages=-, fitpaper]{Portada.pdf}
+  \pagenumbering{arabic}
+  \pagestyle{plain}
+}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Contenido}
+\else
+  \newcommand\contentsname{Contenido}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{pdflscape}{}{\usepackage{pdflscape}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Natura Docens},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={docere-link},
+  filecolor={Maroon},
+  citecolor={docere-cite},
+  urlcolor={docere-url},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Natura Docens}
+\author{}
+\date{}
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Contenido}
+{
+\setcounter{tocdepth}{0}
+\tableofcontents
+}
+
+\mainmatter
+\chapter{Estructura del libro}\label{estructura-del-libro}
+
+\textbf{Guía didáctica para grados 6° a 11° con enfoque pedagógico
+inclusivo.}
+
+Este libro reúne planes de clase estructurados con teoría, ideas
+previas, contextualización, ejercicios, retos, aplicación y componente
+socioemocional para cada tema del área de Ciencias Naturales.
+
+Cada tema está organizado en las siguientes secciones:
+
+\section{Detalles de la Estructura}\label{detalles-de-la-estructura}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Teoría} --- Contenido conceptual fundamental
+\item
+  \textbf{Ideas previas} --- Cuentos y preguntas para activar
+  conocimientos
+\item
+  \textbf{Contextualización} --- Aplicación del método Richard Feynman
+\item
+  \textbf{Contextualización para caracterizados} --- Estrategias
+  diferenciadas (cognitivo, TDAH, TEA, accesibilidad visual, motora)
+\item
+  \textbf{Ejemplo} --- Casos guiados en niveles básico, intermedio y
+  avanzado
+\item
+  \textbf{Ejercicios} --- Práctica estructurada
+\item
+  \textbf{Retos} --- Problemas de profundización
+\item
+  \textbf{Aplicación} --- Conexión con la vida real y laboratorio
+\item
+  \textbf{Socioemocional} --- Acompañamiento emocional del aprendizaje
+\end{itemize}
+
+\part{Generalidades}
+
+\chapter{Generalidades}\label{generalidades-1}
+
+Este documento presenta un plan de temas por periodos para el
+\textbf{área de Ciencias Naturales} (Biología, Física y Química),
+dirigido a docentes, como guía de organización y secuenciación de
+contenidos durante el año escolar.
+
+\section{Importante -
+Fundamentación}\label{importante---fundamentaciuxf3n}
+
+En fundamentación se establece el contenido teórico específico y
+concreto. Acá se establece la información respaldada por libros
+universitarios, enfocada a la temática específica o artículos de
+revisión o de investigación. El docente que quiera aportar en la forma
+de explicar el concepto lo puede realizar en conceptualización. Este
+documento se actualiza de forma colaborativa. Para facilitar el
+seguimiento, se recomienda registrar aquí quién realizó cada
+modificación y qué se cambió (por ejemplo: correcciones de redacción,
+incorporación de secciones, ajuste de figuras o referencias).
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Fecha & Usuario & Cambio realizado \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+8-Jun-2026 & Camilo Tayac & Reactivo Limite \\
+\end{longtable}
+}
+
+\section{Prefacio}\label{prefacio}
+
+Este libro de Ciencias Naturales está diseñado para acompañar el proceso
+de aprendizaje desde grado sexto hasta grado undécimo, integrando
+Biología, Física y Química en una ruta progresiva. El material prioriza
+la comprensión conceptual, el razonamiento científico y la aplicación
+práctica de los contenidos en contextos escolares.
+
+La organización de cada unidad busca mantener un equilibrio entre
+precisión académica y lenguaje accesible. Por esa razón, los temas se
+presentan de lo general a lo específico, con explicaciones
+estructuradas, ejemplos guiados y actividades que fortalecen habilidades
+cognitivas como análisis, interpretación y resolución de problemas.
+
+El enfoque metodológico combina fundamentación teórica,
+contextualización didáctica y ejercicios de consolidación. De este modo,
+el texto puede utilizarse tanto en clase como en trabajo autónomo,
+procesos de nivelación o preparación de evaluaciones.
+
+\section{Cómo está organizado este
+libro}\label{cuxf3mo-estuxe1-organizado-este-libro}
+
+Cada bloque por grado incluye una secuencia de contenidos por periodos
+académicos y por área. Dentro de cada tema, se mantiene una estructura
+consistente para facilitar la lectura:
+
+\begin{itemize}
+\tightlist
+\item
+  presentación del concepto central,
+\item
+  desarrollo explicativo paso a paso,
+\item
+  ejemplos de aplicación,
+\item
+  actividades para fortalecer la comprensión.
+\end{itemize}
+
+\section{Sugerencias de uso}\label{sugerencias-de-uso}
+
+Se recomienda trabajar los contenidos en orden, registrar ideas clave y
+verificar la comprensión con los ejercicios propuestos. Cuando aparezcan
+dificultades, conviene retomar los ejemplos y relacionarlos con
+situaciones del entorno cotidiano.
+
+\chapter{Plan de Área de Ciencias
+Naturales}\label{plan-de-uxe1rea-de-ciencias-naturales}
+
+\section{Biología}\label{biologuxeda}
+
+\begin{quote}
+\textbf{Nota sobre DBA:} Los DBA provienen del documento oficial
+\emph{Derechos Básicos de Aprendizaje --- Ciencias Naturales}
+(Ministerio de Educación Nacional). Cuando el DBA pertenece a un grado
+diferente al de la fila, se indica explícitamente entre paréntesis, ej.
+\texttt{DBA\ 3\ (Grado\ 7°)}. Esto se debe a que la secuencia de temas
+sigue una progresión lógica de dificultad ascendente que no siempre
+coincide con el grado asignado originalmente en el documento oficial.
+\end{quote}
+
+\begin{landscape}
+\centering
+\small
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable*}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Grado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Periodo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Eje Temático
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DBA Alineado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estándares de Competencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pre-requisito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Capítulo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nombre del libro
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1° & I & ¿Cómo son las personas que quiero y el lugar donde vivo? & DBA
+5 (Sociales): Reconoce su individualidad y su pertenencia a los
+diferentes grupos sociales. & --- & Distingue entre conocidos,
+compañeros y personas que quiere. & Guía 1, 2, 3 y 4 & Biología: Juego y
+me comunico \\
+1° & II & ¡Comuniquemos nuestras ideas! & DBA 8 (Lenguaje): Escribe
+palabras que le permiten comunicar sus ideas, preferencias y
+aprendizajes. & --- & Reconoce que lo que piensa o siente, tiene valor y
+merece ser escuchado. & Guía 5, 6, 7, 8 y 9 & Biología: Juego y me
+comunico \\
+1° & III & ¡Hagamos preguntas! & DBA 7 (Lenguaje): Enuncia textos orales
+de diferente índole sobre temas de su interés o sugeridos por otros. &
+--- & Conoce la diferencia entre una frase afirmativa y una
+interrogativa. & Guía 10, 11, 12, 13 y 14 & Biología: Juego y me
+comunico \\
+1° & IV & ¿Qué sabemos sobre los animales y las plantas? & DBA 3:
+Comprende que los seres vivos (plantas y animales) tienen
+características comunes (se alimentan, respiran, tienen un ciclo de
+vida, responden al entorno) y los diferencia de los objetos inertes. &
+Describo características de seres vivos y objetos inertes, establezco
+semejanzas y diferencias entre ellos y los clasifico. (Est. 1°-3°,
+Entorno vivo) & Diferencia claramente un animal o planta real de un
+juguete. & Guía 15, 16, 17 y 18 & Biología: Juego y me comunico \\
+& & & & & & & \\
+2° & I & Los seres vivos habitan en diferentes medios según sus
+características & DBA 3: Comprende la relación entre las características
+físicas de plantas y animales con los ambientes en donde viven, teniendo
+en cuenta sus necesidades básicas (luz, agua, aire, suelo, nutrientes,
+desplazamiento y protección). & Identifico y describo la flora, la
+fauna, el agua y el suelo de mi entorno. / Describo características de
+seres vivos y objetos inertes, establezco semejanzas y diferencias entre
+ellos y los clasifico. (Est. 1°-3°, Entorno vivo) & Noción del ser vivo
+vs.~ser inerte. & Guía 1, 2, 3, 4, 5 y 6 & Ciencias Naturales y
+Educación Ambiental 2 \\
+2° & II & Los seres vivos se desarrollan y sufren cambios & DBA 4:
+Explica los procesos de cambios físicos que ocurren en el ciclo de vida
+de plantas y animales de su entorno, en un período de tiempo
+determinado. & Propongo y verifico necesidades de los seres vivos. /
+Reconozco que los hijos y las hijas se parecen a sus padres y describo
+algunas características que se heredan. (Est. 1°-3°, Entorno vivo) &
+Reconoce el ciclo vital de los seres vivos: nacer, crecer, reproducirse
+y morir. & Guía 7, 8, 9, 10, 11 y 12 & Ciencias Naturales y Educación
+Ambiental 2 \\
+2° & III & Estudiemos la energía, la fuerza y el movimiento & DBA 1
+(Grado 1°): Comprende que una acción mecánica (fuerza) puede producir
+distintas deformaciones en un objeto, y que este resiste a las fuerzas
+de diferente modo, de acuerdo con el material del que está hecho. &
+Reconozco en el entorno fenómenos físicos que me afectan y desarrollo
+habilidades para aproximarme a ellos. (Est. 1°-3°, Entorno físico) &
+Noción de cuerpo, objeto y materia, además la posición, localización y
+fuentes de energía. & Guía 13, 14, 15, 16, 17 y 18 & Ciencias Naturales
+y Educación Ambiental 2 \\
+2° & IV & Estudiemos la materia y sus propiedades & DBA 2 (Grado 1°):
+Comprende que las sustancias pueden encontrarse en distintos estados
+(sólido, líquido y gaseoso). & Clasifico y comparo objetos según sus
+usos. / Diferencio objetos naturales de objetos creados por el ser
+humano. (Est. 1°-3°, Entorno físico) & Identifica los estados físicos de
+la naturaleza. & Guía 19, 20, 21, 22, 23 y 24 & Ciencias Naturales y
+Educación Ambiental 2 \\
+& & & & & & & \\
+3° & I & ¿Cómo son los seres de mi entorno? / Guías 1-4: Características
+de los seres vivos, diferencias con objetos inertes, clasificación
+elemental, ciclo de vida. & DBA 3 (Grado 1°): Comprende que los seres
+vivos (plantas y animales) tienen características comunes (se alimentan,
+respiran, tienen un ciclo de vida, responden al entorno) y los
+diferencia de los objetos inertes. & Describo características de seres
+vivos y objetos inertes, establezco semejanzas y diferencias entre ellos
+y los clasifico. (Est. 1°-3°, Entorno vivo) & Diferenciación entre seres
+vivos y objetos inertes (Grado 2°). & Guía 1, 2, 3 y 4 & Ciencias
+Naturales y Educación Ambiental 3 \\
+3° & II & ¿Dónde viven y cómo se adaptan los seres vivos? / Guías 5-8:
+Ecosistemas, factores bióticos/abióticos, hábitats, adaptaciones,
+cadenas tróficas. & DBA 5: Explica la influencia de los factores
+abióticos (luz, temperatura, suelo y aire) en el desarrollo de los
+factores bióticos (fauna y flora) de un ecosistema. & Diferencio tipos
+de plantas y animales según sus estructuras externas y sus respuestas de
+adaptación al medio ambiente. / Explico la dinámica de un ecosistema
+considerando las necesidades de energía y nutrientes de sus seres vivos.
+(Est. 1°-3°, Entorno vivo) & Noción de ciclo de vida y necesidades
+básicas de los seres vivos (Grado 2°). & Guía 5, 6, 7 y 8 & Ciencias
+Naturales y Educación Ambiental 3 \\
+3° & III & ¿De qué están hechas las cosas? / Guías 9-12: Propiedades de
+la materia (masa, peso, volumen), propiedades organolépticas, estados
+físicos, cambios de estado. & DBA 4: Comprende la influencia de la
+variación de la temperatura en los cambios de estado de la materia,
+considerando como ejemplo el caso del agua. & Reconozco que los objetos
+y la materia que me rodea tienen propiedades particulares y cambian ante
+ciertos estímulos. / Clasifico materiales de uso cotidiano de acuerdo
+con sus propiedades físicas y su utilidad. (Est. 1°-3°, Entorno físico)
+& Identificación de propiedades de la materia y sus estados (Grado 2°).
+& Guía 9, 10, 11 y 12 & Ciencias Naturales y Educación Ambiental 3 \\
+3° & IV & ¿Por qué se mueven y cambian las cosas? / Guías 13-16:
+Movimiento, fuerza y sus efectos, fuerzas por contacto y a distancia,
+formas de energía (luz, sonido, calor). & DBA 1: Comprende que la
+magnitud y la dirección en que se aplica una fuerza puede producir
+cambios en la forma como se mueve un objeto (dirección y rapidez). &
+Identifico tipos de fuerza que actúan sobre los objetos y su capacidad
+para modificar el movimiento de los cuerpos. / Reconozco el Sol como la
+fuente fundamental de luz y calor, y su relevancia para la vida. (Est.
+1°-3°, Entorno físico y CTS) & Noción de fuerza, movimiento y energía
+(Grado 2°). & Guía 13, 14, 15 y 16 & Ciencias Naturales y Educación
+Ambiental 3 \\
+& & & & & & & \\
+4° & I & El Universo y el Sistema Solar. & DBA 6 (Grado 4°): Comprende
+que el Sistema Solar está compuesto por el Sol, los planetas y otros
+cuerpos celestes, y que la Tierra realiza movimientos que determinan la
+duración del día, la noche y las estaciones del año. & Reconozco
+características de los cuerpos celestes que integran nuestro Sistema
+Solar y establezco relaciones con las condiciones de vida en la Tierra.
+/ Explico cómo los movimientos de la Tierra generan fenómenos
+astronómicos cotidianos. (Est. 4°-5°, Entorno Físico / CTS) & Noción de
+día, noche y estaciones (Grado 3°). & Unidad 1 & Cartillas de Escuela
+Activa \\
+4° & II & Ecosistemas, relaciones y flujo de energía. & DBA 1 (Grado
+4°): Analiza las relaciones que se establecen entre las poblaciones de
+un ecosistema (competencia, mutualismo, parasitismo, depredación) y el
+flujo de energía a través de redes tróficas. & Identifico adaptaciones
+de los seres vivos para preservar el equilibrio en los ecosistemas y
+represento estas relaciones mediante cadenas alimenticias. / Predigo las
+consecuencias de la alteración o desaparición de un eslabón dentro de
+una red trófica local. (Est. 4°-5°, Entorno Vivo) & Factores bióticos y
+abióticos (Grado 3°). & Unidad 2 & Cartillas de Escuela Activa \\
+4° & III & Sustancias químicas y propiedades de la materia. & DBA 2
+(Grado 4°): Comprende que existen distintos tipos de mezclas (homogéneas
+y heterogéneas) que se pueden separar utilizando diferentes métodos
+físicos basados en las propiedades particulares de sus componentes. &
+Verifico de forma práctica y experimental diferentes métodos de
+separación de mezclas en entornos cotidianos y de laboratorio. /
+Clasifico los materiales del entorno según sean sustancias puras o
+combinaciones físicas comunes. (Est. 4°-5°, Entorno Físico) &
+Propiedades generales de la materia (Grado 3°). & Unidad 3 & Cartillas
+de Escuela Activa \\
+4° & IV & Las fuerzas y el movimiento. & DBA 5 (Grado 4°): Comprende los
+efectos de la fuerza de gravedad y la fuerza de fricción en el
+movimiento de los cuerpos, y cómo el diseño de máquinas simples facilita
+y optimiza el trabajo humano. & Identifico la utilidad e historia de las
+máquinas simples y las aplico de manera dirigida para resolver problemas
+de esfuerzo práctico. / Registro variaciones en el movimiento y
+velocidad de un cuerpo debido a la resistencia de fricción superficial.
+(Est. 4°-5°, Entorno Físico / CTS) & Noción de fuerza y movimiento
+(Grado 3°). & Unidad 4 & Cartillas de Escuela Activa \\
+& & & & & & & \\
+5° & I & Organización interna de los seres vivos: célula y tejidos. &
+DBA 3 (Grado 5°): Comprende que los sistemas de órganos en los seres
+vivos se componen de tejidos de células especializadas que cooperan en
+la ejecución de funciones vitales y metabólicas complejas. & Explico la
+estructura y función de la célula como unidad biológica básica y su
+organización en tejidos diferenciados. / Clasifico organismos en
+diferentes dominios y reinos taxonómicos a partir de sus sistemas
+celulares internos. (Est. 4°-5°, Entorno Vivo) & Características de los
+seres vivos y su clasificación (Grado 3°). & Unidad 1 & Cartillas de
+Escuela Activa \\
+5° & II & Sistemas y aparatos del ser humano. & DBA 4 (Grado 5°):
+Comprende el camino que siguen los alimentos en el organismo y los
+cambios que sufren durante el proceso de digestión, así como la
+interrelación obligatoria con los sistemas circulatorio y respiratorio.
+& Represento e identifico los principales sistemas de órganos del ser
+humano y explico sus funciones e interdependencias vitales. / Establezco
+relaciones de causa y efecto entre los hábitos de vida y el estado
+funcional de los aparatos corporales. (Est. 4°-5°, Entorno Vivo) &
+Organización celular y tejidos (Periodo 1). & Unidad 2 & Cartillas de
+Escuela Activa \\
+5° & III & Sustancias químicas y sus propiedades. & DBA 2 (Grado 5°):
+Comprende que la materia está formada por partículas y que las
+propiedades específicas de las sustancias permiten diferenciar elementos
+de compuestos, así como transformaciones químicas de las físicas. &
+Diferencio los cambios físicos de los químicos en objetos del entorno
+mediante el diseño experimental directo. / Clasifico sustancias puras
+comunes e identifico variables que modifican la solubilidad o densidad
+de una solución. (Est. 4°-5°, Entorno Físico) & Mezclas y métodos de
+separación (Grado 4°). & Unidad 3 & Cartillas de Escuela Activa \\
+5° & IV & La electricidad y sus funciones en la vida diaria. & DBA 5
+(Grado 5°): Comprende que la energía eléctrica puede transitar a través
+de canales conductores dentro de un circuito cerrado y transformarse en
+otros tipos de energía (lumínica, térmica, mecánica). & Construyo
+circuitos eléctricos simples funcionales utilizando diferentes
+materiales conductores y aislantes del medio. / Explico la importancia
+de la energía eléctrica en el desarrollo de actividades cotidianas y
+propongo acciones individuales de ahorro. (Est. 4°-5°, Entorno Físico /
+CTS) & Fuerzas, movimiento y energía (Grado 4°). & Unidad 4 & Cartillas
+de Escuela Activa \\
+& & & & & & & \\
+6° & I & Introducción a la vida. Átomos, moléculas y vida. & DBA 3
+(Grado 6°): Comprende la clasificación de los materiales a partir de
+grupos de sustancias (elementos y compuestos) y mezclas (homogéneas y
+heterogéneas). & Explico la estructura de la célula y las funciones
+básicas de sus componentes. (Est. 6°-7°, Entorno vivo) & Conocimientos
+básicos sobre seres vivos y materia (Grado 3°). & 1, 2 y 3 &
+\emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+6° & II & Moléculas biológicas. & DBA 3 (Grado 6°): Comprende la
+clasificación de los materiales a partir de grupos de sustancias
+(elementos y compuestos) y mezclas (homogéneas y heterogéneas). &
+Clasifico y verifico las propiedades de la materia. (Est. 6°-7°, Entorno
+físico) & Introducción a átomos y moléculas (Periodo 1). & 3 &
+\emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+6° & III & Estructura y función celular. & DBA 4 (Grado 6°): Comprende
+algunas de las funciones básicas de la célula (transporte de membrana,
+obtención de energía y división celular) a partir del análisis de su
+estructura. & Explico la estructura de la célula y las funciones básicas
+de sus componentes. (Est. 6°-7°, Entorno vivo) & Moléculas biológicas
+(Periodo 2). & 4 & \emph{Biología: la vida en la Tierra con Fisiología}
+(Audesirk et al., 2017) \\
+6° & IV & Membrana celular y transporte. & DBA 4 (Grado 6°): Comprende
+algunas de las funciones básicas de la célula (transporte de membrana,
+obtención de energía y división celular) a partir del análisis de su
+estructura. & Verifico y explico los procesos de ósmosis y difusión.
+(Est. 6°-7°, Entorno vivo) & Estructura y función celular (Periodo 3). &
+5 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et
+al., 2017) \\
+& & & & & & & \\
+7° & I & Flujo de energía en la célula. & DBA 3 (Grado 7°): Comprende
+que en las cadenas y redes tróficas existen flujos de materia y energía,
+y los relaciona con procesos de nutrición, fotosíntesis y respiración
+celular. & Comparo mecanismos de obtención de energía en los seres
+vivos. (Est. 6°-7°, Entorno vivo) & Estructura y transporte en la
+membrana (Grado 6). & 6 & \emph{Biología: la vida en la Tierra con
+Fisiología} (Audesirk et al., 2017) \\
+7° & II & Fotosíntesis: captura de energía solar. & DBA 3 (Grado 7°):
+Comprende que en las cadenas y redes tróficas existen flujos de materia
+y energía, y los relaciona con procesos de nutrición, fotosíntesis y
+respiración celular. & Argumento la importancia de la fotosíntesis como
+un proceso de conversión de energía necesaria para organismos aerobios.
+(Est. 6°-7° y 10°-11°, Entorno vivo) & Flujo de energía celular (Periodo
+1). & 7 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk
+et al., 2017) \\
+7° & III & Respiración celular: cosecha de energía. & DBA 3 (Grado 7°):
+Comprende que en las cadenas y redes tróficas existen flujos de materia
+y energía, y los relaciona con procesos de nutrición, fotosíntesis y
+respiración celular. & Comparo mecanismos de obtención de energía en los
+seres vivos. (Est. 6°-7°, Entorno vivo) & Fotosíntesis (Periodo 2). & 8
+& \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+7° & IV & Reproducción celular: mitosis y meiosis. & DBA 4 (Grado 6°):
+Comprende algunas de las funciones básicas de la célula (transporte de
+membrana, obtención de energía y división celular) a partir del análisis
+de su estructura. & Comparo sistemas de división celular y argumento su
+importancia en la generación de nuevos organismos y tejidos. (Est.
+6°-7°, Entorno vivo) & Respiración celular (Periodo 3). & 9 y 10 &
+\emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+& & & & & & & \\
+8° & I & Patrones de herencia: genética mendeliana. & DBA 4 (Grado 9°):
+Comprende la forma en que los principios genéticos mendelianos y
+post-mendelianos explican la herencia y el mejoramiento de las especies
+existentes. & Reconozco la importancia del modelo de la doble hélice
+para la explicación del almacenamiento y transmisión del material
+hereditario. (Est. 8°-9°, Entorno vivo) & Mitosis y meiosis (Grado 7). &
+11 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et
+al., 2017) \\
+8° & II & ADN: la molécula de la herencia. & DBA 5 (Grado 9°): Explica
+la forma como se expresa la información genética contenida en el
+--ADN--, relacionando su expresión con los fenotipos de los organismos y
+reconoce su capacidad de modificación a lo largo del tiempo (por
+mutaciones y otros cambios), como un factor determinante en la
+generación de diversidad del planeta y en la evolución de las especies.
+& Establezco relaciones entre los genes, las proteínas y las funciones
+celulares. (Est. 8°-9°, Entorno vivo) & Genética mendeliana (Periodo 1).
+& 12 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et
+al., 2017) \\
+8° & III & Expresión génica y síntesis de proteínas. & DBA 5 (Grado 9°):
+Explica la forma como se expresa la información genética contenida en el
+--ADN--, relacionando su expresión con los fenotipos de los organismos y
+reconoce su capacidad de modificación a lo largo del tiempo (por
+mutaciones y otros cambios), como un factor determinante en la
+generación de diversidad del planeta y en la evolución de las especies.
+& Establezco relaciones entre los genes, las proteínas y las funciones
+celulares. (Est. 8°-9°, Entorno vivo) & Estructura del ADN (Periodo 2).
+& 13 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et
+al., 2017) \\
+8° & IV & Biotecnología y sus aplicaciones. & DBA 4 (Grado 10°):
+Comprende que la biotecnología conlleva el uso y manipulación de la
+información genética a través de distintas técnicas (fertilización
+asistida, clonación reproductiva y terapéutica, modificación genética,
+terapias génicas), y que tiene implicaciones sociales, bioéticas y
+ambientales. & Argumento las ventajas y desventajas de la manipulación
+genética. (Est. 8°-9°, CTS) & Expresión génica (Periodo 3). & 14 &
+\emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+& & & & & & & \\
+9° & I & Principios de evolución y selección natural. & DBA 6 (Grado
+9°): Analiza teorías científicas sobre el origen de las especies
+(selección natural y ancestro común) como modelos científicos que
+sustentan sus explicaciones desde diferentes evidencias y
+argumentaciones. & Establezco relaciones entre mutación, selección
+natural y herencia. (Est. 8°-9° y 10°-11°, Entorno vivo) & Genética y
+expresión génica (Grado 8). & 15 y 16 & \emph{Biología: la vida en la
+Tierra con Fisiología} (Audesirk et al., 2017) \\
+9° & II & Origen de las especies e historia de la vida. & DBA 6 (Grado
+9°): Analiza teorías científicas sobre el origen de las especies
+(selección natural y ancestro común) como modelos científicos que
+sustentan sus explicaciones desde diferentes evidencias y
+argumentaciones. & Comparo diferentes teorías sobre el origen de las
+especies. (Est. 8°-9°, Entorno vivo) & Selección natural (Periodo 1). &
+17 y 18 & \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk
+et al., 2017) \\
+9° & III & Sistemática y diversidad de los seres vivos. & DBA 5 (Grado
+6°): Comprende la clasificación de los organismos en grupos taxonómicos,
+de acuerdo con el tipo de células que poseen y reconoce la diversidad de
+especies que constituyen nuestro planeta y las relaciones de parentesco
+entre ellas. & Clasifico organismos en grupos taxonómicos de acuerdo con
+las características de sus células. (Est. 6°-7° y 8°-9°) & Historia de
+la vida (Periodo 2). & 19, 20, 21 y 22 & \emph{Biología: la vida en la
+Tierra con Fisiología} (Audesirk et al., 2017) \\
+9° & IV & Diversidad animal: invertebrados y vertebrados. & DBA 5 (Grado
+6°): Comprende la clasificación de los organismos en grupos taxonómicos,
+de acuerdo con el tipo de células que poseen y reconoce la diversidad de
+especies que constituyen nuestro planeta y las relaciones de parentesco
+entre ellas. & Clasifico organismos en grupos taxonómicos de acuerdo con
+las características de sus células. (Est. 6°-7° y 8°-9°) & Sistemática
+(Periodo 3). & 23, 24 y 25 & \emph{Biología: la vida en la Tierra con
+Fisiología} (Audesirk et al., 2017) \\
+& & & & & & & \\
+10° & I & Comportamiento animal. & DBA 6 (Grado 3°): Comprende las
+relaciones de los seres vivos con otros organismos de su entorno (intra
+e interespecíficas) y las explica como esenciales para su supervivencia
+en un ambiente determinado. & Explico diversos tipos de relaciones entre
+especies en los ecosistemas. (Est. 10°-11°, Entorno vivo) & Diversidad
+animal (Grado 9). & 26 & \emph{Biología: la vida en la Tierra con
+Fisiología} (Audesirk et al., 2017) \\
+10° & II & Crecimiento poblacional e interacciones comunitarias. & DBA 3
+(Grado 7°): Comprende que en las cadenas y redes tróficas existen flujos
+de materia y energía, y los relaciona con procesos de nutrición,
+fotosíntesis y respiración celular. & Explico las relaciones entre
+materia y energía en las cadenas alimentarias. (Est. 10°-11°, Entorno
+vivo) & Ecología del comportamiento (Periodo 1). & 27 y 28 &
+\emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+10° & III & Flujo de energía y ciclos biogeoquímicos. & DBA 4 (Grado
+7°): Comprende la relación entre los ciclos del carbono, el nitrógeno y
+del agua, explicando su importancia en el mantenimiento de los
+ecosistemas. & Describo y relaciono los ciclos del agua, de algunos
+elementos y de la energía en los ecosistemas. (Est. 6°-7° y 10°-11°) &
+Poblaciones y comunidades (Periodo 2). & 29 & \emph{Biología: la vida en
+la Tierra con Fisiología} (Audesirk et al., 2017) \\
+10° & IV & Ecosistemas y conservación de la biodiversidad. & DBA 4
+(Grado 7°): Comprende la relación entre los ciclos del carbono, el
+nitrógeno y del agua, explicando su importancia en el mantenimiento de
+los ecosistemas. & Establezco relaciones entre individuo, población,
+comunidad y ecosistema. (Est. 10°-11°, Entorno vivo) & Ciclos
+biogeoquímicos (Periodo 3). & 30 y 31 & \emph{Biología: la vida en la
+Tierra con Fisiología} (Audesirk et al., 2017) \\
+& & & & & & & \\
+11° & I & Homeostasis y organización del cuerpo animal. & DBA 4 (Grado
+8°): Analiza relaciones entre sistemas de órganos (excretor, inmune,
+nervioso, endocrino, óseo y muscular) con los procesos de regulación de
+las funciones en los seres vivos. & Explico las funciones de los seres
+vivos a partir de las relaciones entre diferentes sistemas de órganos.
+(Est. 6°-7°, Entorno vivo) & Ecosistemas y conservación (Grado 10). & 32
+& \emph{Biología: la vida en la Tierra con Fisiología} (Audesirk et al.,
+2017) \\
+11° & II & Sistemas: circulación, respiración y digestión. & DBA 4
+(Grado 8°): Analiza relaciones entre sistemas de órganos (excretor,
+inmune, nervioso, endocrino, óseo y muscular) con los procesos de
+regulación de las funciones en los seres vivos. & Explico las funciones
+de los seres vivos a partir de las relaciones entre diferentes sistemas
+de órganos. (Est. 6°-7°, Entorno vivo) & Homeostasis y organización
+corporal (Periodo 1). & 33, 34 y 35 & \emph{Biología: la vida en la
+Tierra con Fisiología} (Audesirk et al., 2017) \\
+11° & III & Sistemas: nervioso, endocrino e inmune. & DBA 4 (Grado 8°):
+Analiza relaciones entre sistemas de órganos (excretor, inmune,
+nervioso, endocrino, óseo y muscular) con los procesos de regulación de
+las funciones en los seres vivos. & Explico el funcionamiento de
+neuronas a partir de modelos químicos y eléctricos. (Est. 10°-11°,
+Entorno vivo) & Sistemas de circulación, respiración y digestión
+(Periodo 2). & 37, 38 y 39 & \emph{Biología: la vida en la Tierra con
+Fisiología} (Audesirk et al., 2017) \\
+11° & IV & Reproducción, desarrollo animal y fisiología vegetal. & DBA 5
+(Grado 8°): Analiza la reproducción (asexual, sexual) de distintos
+grupos de seres vivos y su importancia para la preservación de la vida
+en el planeta. & Comparo diferentes sistemas de reproducción. / Explico
+la relación entre el ADN, el ambiente y la diversidad de los seres
+vivos. (Est. 8°-9° y 10°-11°) & Sistemas de regulación (Periodo 3). &
+42, 43, 44, 45 y 46 & \emph{Biología: la vida en la Tierra con
+Fisiología} (Audesirk et al., 2017) \\
+\end{longtable*}
+}\normalsize
+\end{landscape}
+
+\section{Química}\label{quuxedmica}
+
+\begin{quote}
+\textbf{Nota sobre DBA:} Ídem sección Biología.
+\end{quote}
+
+\begin{landscape}
+\centering
+\small
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable*}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Grado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Periodo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Eje Temático
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DBA Alineado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estándares de Competencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pre-requisito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Capítulo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nombre del libro
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+6° & I & La materia y sus propiedades generales. & DBA 2 (Grado 1°):
+Comprende que las sustancias pueden encontrarse en distintos estados
+(sólido, líquido y gaseoso). & Clasifico y verifico las propiedades de
+la materia. (Est. 6°-7°, Entorno físico) & Propiedades generales de la
+materia (Grado 3°). & Ch 1 (Chang); Ch 1 (Oriakhi) & \emph{Química}
+(Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative Language}
+(Oriakhi, 2021) \\
+6° & II & Clases de materia: sustancias puras y mezclas. & DBA 3 (Grado
+6°): Comprende la clasificación de los materiales a partir de grupos de
+sustancias (elementos y compuestos) y mezclas (homogéneas y
+heterogéneas). & Clasifico materiales en sustancias puras o mezclas.
+(Est. 6°-7°, Entorno físico) & Propiedades de la materia (Periodo 1). &
+Ch 1 (Chang); Ch 1 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+6° & III & Mezclas y técnicas de separación. & DBA 3 (Grado 6°):
+Comprende la clasificación de los materiales a partir de grupos de
+sustancias (elementos y compuestos) y mezclas (homogéneas y
+heterogéneas). & Verifico diferentes métodos de separación de mezclas.
+(Est. 6°-7°, Entorno físico) & Clases de materia (Periodo 2). & Ch 1
+(Chang); --- (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+6° & IV & Átomos, moléculas e iones. & DBA 2 (Grado 7°): Explica cómo
+las sustancias se forman a partir de la interacción de los elementos y
+que estos se encuentran agrupados en un sistema periódico. & Describo el
+desarrollo de modelos que explican la estructura de la materia. (Est.
+6°-7°, Entorno físico) & Técnicas de separación (Periodo 3). & Ch 2
+(Chang); Ch 1 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+& & & & & & & \\
+7° & I & Estructura atómica y modelos atómicos. & DBA 2 (Grado 8°):
+Comprende que en una reacción química se recombinan los átomos de las
+moléculas de los reactivos para generar productos nuevos, y que dichos
+productos se forman a partir de fuerzas intramoleculares (enlaces
+iónicos y covalentes). & Describo el desarrollo de modelos que explican
+la estructura de la materia. (Est. 6°-7°, Entorno físico) & Átomos,
+moléculas e iones (Grado 6). & Ch 2 (Chang); Ch 8 (Oriakhi) &
+\emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative
+Language} (Oriakhi, 2021) \\
+7° & II & Tabla periódica: organización y propiedades periódicas. & DBA
+2 (Grado 7°): Explica cómo las sustancias se forman a partir de la
+interacción de los elementos y que estos se encuentran agrupados en un
+sistema periódico. & Explico el desarrollo de modelos de organización de
+los elementos químicos. (Est. 6°-7°, Entorno físico) & Modelos atómicos
+(Periodo 1). & Ch 8 (Chang); Ch 8 (Oriakhi) & \emph{Química} (Chang \&
+Goldsby, 2017); \emph{Chemistry in Quantitative Language} (Oriakhi,
+2021) \\
+7° & III & Enlace químico I: iónico y covalente. & DBA 2 (Grado 8°):
+Comprende que en una reacción química se recombinan los átomos de las
+moléculas de los reactivos para generar productos nuevos, y que dichos
+productos se forman a partir de fuerzas intramoleculares (enlaces
+iónicos y covalentes). & Explico la formación de moléculas y los estados
+de la materia a partir de fuerzas electrostáticas. (Est. 6°-7°, Entorno
+físico) & Tabla periódica (Periodo 2). & Ch 9 (Chang); Ch 9 (Oriakhi) &
+\emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative
+Language} (Oriakhi, 2021) \\
+7° & IV & Nomenclatura inorgánica y enlace químico II. & DBA 2 (Grado
+8°): Comprende que en una reacción química se recombinan los átomos de
+las moléculas de los reactivos para generar productos nuevos, y que
+dichos productos se forman a partir de fuerzas intramoleculares (enlaces
+iónicos y covalentes). & Explico y utilizo la tabla periódica como
+herramienta para predecir procesos químicos. (Est. 6°-7°, Entorno
+físico) & Enlace iónico y covalente (Periodo 3). & Ch 10, 2.7-2.8
+(Chang); Ch 5, 10 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+& & & & & & & \\
+8° & I & Relaciones de masa y estequiometría. & DBA 3 (Grado 9°):
+Analiza las relaciones cuantitativas entre solutos y solventes, así como
+los factores que afectan la formación de soluciones. & Realizo cálculos
+cuantitativos en cambios químicos. (Est. 10°-11°, Entorno físico) &
+Nomenclatura y enlaces (Grado 7). & Ch 3 (Chang); Ch 3, 7 (Oriakhi) &
+\emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative
+Language} (Oriakhi, 2021) \\
+8° & II & Reacciones en disolución acuosa. & DBA 2 (Grado 9°): Comprende
+que la acidez y la basicidad son propiedades químicas de algunas
+sustancias y las relaciona con su importancia biológica y su uso
+cotidiano e industrial. & Verifico las diferencias entre cambios
+químicos y mezclas. (Est. 6°-7°, Entorno físico) & Estequiometría
+(Periodo 1). & Ch 4 (Chang); Ch 6, 7 (Oriakhi) & \emph{Química} (Chang
+\& Goldsby, 2017); \emph{Chemistry in Quantitative Language} (Oriakhi,
+2021) \\
+8° & III & Gases: leyes y propiedades. & DBA 3 (Grado 8°): Comprende que
+el comportamiento de un gas ideal está determinado por las relaciones
+entre Temperatura (T), Presión (P), Volumen (V) y Cantidad de sustancia
+(n). & Comparo los modelos que explican el comportamiento de gases
+ideales y reales. (Est. 8°-9°, Entorno físico) & Reacciones en
+disolución (Periodo 2). & Ch 5 (Chang); Ch 11 (Oriakhi) & \emph{Química}
+(Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative Language}
+(Oriakhi, 2021) \\
+8° & IV & Termoquímica: energía en las reacciones. & DBA 1 (Grado 8°):
+Comprende el funcionamiento de máquinas térmicas (motores de combustión,
+refrigeración) por medio de las leyes de la termodinámica (primera y
+segunda ley). & Verifico el efecto de presión y temperatura en los
+cambios químicos. (Est. 10°-11°, Entorno físico) & Gases ideales
+(Periodo 3). & Ch 6 (Chang); Ch 12 (Oriakhi) & \emph{Química} (Chang \&
+Goldsby, 2017); \emph{Chemistry in Quantitative Language} (Oriakhi,
+2021) \\
+& & & & & & & \\
+9° & I & Teoría cuántica y estructura electrónica. & DBA 2 (Grado 7°):
+Explica cómo las sustancias se forman a partir de la interacción de los
+elementos y que estos se encuentran agrupados en un sistema periódico. &
+Explico el desarrollo de modelos de organización de los elementos
+químicos. (Est. 6°-7°, Entorno físico) & Termoquímica (Grado 8). & Ch 7
+(Chang); Ch 8, 10 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+9° & II & Propiedades físicas de las disoluciones. & DBA 3: Analiza las
+relaciones cuantitativas entre solutos y solventes, así como los
+factores que afectan la formación de soluciones. & Establezco relaciones
+cuantitativas entre los componentes de una solución. (Est. 8°-9°,
+Entorno físico) & Estructura electrónica (Periodo 1). & Ch 12 (Chang);
+Ch 13 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+9° & III & Ácidos y bases: propiedades y reacciones. & DBA 2 (Grado 9°):
+Comprende que la acidez y la basicidad son propiedades químicas de
+algunas sustancias y las relaciona con su importancia biológica y su uso
+cotidiano e industrial. & Caracterizo cambios químicos en condiciones de
+equilibrio. (Est. 10°-11°, Entorno físico) & Disoluciones y
+concentración (Periodo 2). & Ch 15 (Chang); Ch 14, 15 (Oriakhi) &
+\emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative
+Language} (Oriakhi, 2021) \\
+9° & IV & Química orgánica: introducción al carbono. & DBA 4 (Grado
+11°): Comprende que los diferentes mecanismos de reacción química
+(oxido-reducción, homólisis, heterólisis y pericíclicas) posibilitan la
+formación de distintos tipos de compuestos orgánicos. & Relaciono la
+estructura del carbono con la formación de moléculas orgánicas. (Est.
+10°-11°, Entorno físico) & Ácidos y bases (Periodo 3). & Ch 24 (Chang);
+--- (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry
+in Quantitative Language} (Oriakhi, 2021) \\
+& & & & & & & \\
+10° & I & Fuerzas intermoleculares, líquidos y sólidos. & DBA 3 (Grado
+9°): Analiza las relaciones cuantitativas entre solutos y solventes, así
+como los factores que afectan la formación de soluciones. & Explico la
+formación de moléculas y los estados de la materia a partir de fuerzas
+electrostáticas. (Est. 6°-7°, Entorno físico) & Estructura electrónica y
+enlaces (Grados 7-9). & Ch 11 (Chang); --- (Oriakhi) & \emph{Química}
+(Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative Language}
+(Oriakhi, 2021) \\
+10° & II & Cinética química: velocidad de reacción. & DBA 4 (Grado 11°):
+Comprende que los diferentes mecanismos de reacción química
+(oxido-reducción, homólisis, heterólisis y pericíclicas) posibilitan la
+formación de distintos tipos de compuestos orgánicos. & Identifico
+condiciones para controlar la velocidad de cambios químicos. (Est.
+10°-11°, Entorno físico) & Termoquímica y estados de la materia (Grado
+8). & Ch 13 (Chang); Ch 16 (Oriakhi) & \emph{Química} (Chang \& Goldsby,
+2017); \emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+10° & III & Equilibrio químico. & DBA 2 (Grado 9°): Comprende que la
+acidez y la basicidad son propiedades químicas de algunas sustancias y
+las relaciona con su importancia biológica y su uso cotidiano e
+industrial. & Caracterizo cambios químicos en condiciones de equilibrio.
+(Est. 10°-11°, Entorno físico) & Cinética química (Periodo 2). & Ch 14
+(Chang); Ch 17 (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+10° & IV & Electroquímica: celdas y pilas. & DBA 3 (Grado 10°):
+Comprende que los diferentes mecanismos de reacción química
+(oxido-reducción, descomposición, neutralización y precipitación)
+posibilitan la formación de compuestos inorgánicos. & Verifico la acción
+de fuerzas electrostáticas y magnéticas y explico su relación con la
+carga eléctrica. (Est. 6°-7°, Entorno físico) & Equilibrio químico
+(Periodo 3). & Ch 18 (Chang); Ch 18 (Oriakhi) & \emph{Química} (Chang \&
+Goldsby, 2017); \emph{Chemistry in Quantitative Language} (Oriakhi,
+2021) \\
+& & & & & & & \\
+11° & I & Equilibrios ácido-base y pH. & DBA 2 (Grado 9°): Comprende que
+la acidez y la basicidad son propiedades químicas de algunas sustancias
+y las relaciona con su importancia biológica y su uso cotidiano e
+industrial. & Caracterizo cambios químicos en condiciones de equilibrio.
+(Est. 10°-11°, Entorno físico) & Ácidos, bases y equilibrio (Grados
+9-10). & Ch 16 (Chang); Ch 15 (Oriakhi) & \emph{Química} (Chang \&
+Goldsby, 2017); \emph{Chemistry in Quantitative Language} (Oriakhi,
+2021) \\
+11° & II & Termodinámica química. & DBA 1 (Grado 8°): Comprende el
+funcionamiento de máquinas térmicas (motores de combustión,
+refrigeración) por medio de las leyes de la termodinámica (primera y
+segunda ley). & Verifico el efecto de presión y temperatura en los
+cambios químicos. (Est. 10°-11°, Entorno físico) & Equilibrios
+ácido-base (Periodo 1). & Ch 17 (Chang); Ch 12 (Oriakhi) &
+\emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in Quantitative
+Language} (Oriakhi, 2021) \\
+11° & III & Química nuclear y ambiental. & DBA 5: Analiza cuestiones
+ambientales actuales, como el calentamiento global, contaminación, tala
+de bosques y minería, desde una visión sistémica (económico, social,
+ambiental y cultural). & Explico la obtención de energía nuclear a
+partir de la alteración de la estructura del átomo. (Est. 10°-11°,
+Entorno físico) & Termodinámica química (Periodo 2). & Ch 20, 21
+(Chang); --- (Oriakhi) & \emph{Química} (Chang \& Goldsby, 2017);
+\emph{Chemistry in Quantitative Language} (Oriakhi, 2021) \\
+11° & IV & Polímeros y biomoléculas. & DBA 4: Comprende que los
+diferentes mecanismos de reacción química (oxido-reducción, homólisis,
+heterólisis y pericíclicas) posibilitan la formación de distintos tipos
+de compuestos orgánicos. & Relaciono grupos funcionales con las
+propiedades físicas y químicas de las sustancias. (Est. 10°-11°, Entorno
+físico) & Química orgánica (Grado 9). & Ch 24, 25 (Chang); --- (Oriakhi)
+& \emph{Química} (Chang \& Goldsby, 2017); \emph{Chemistry in
+Quantitative Language} (Oriakhi, 2021) \\
+\end{longtable*}
+}\normalsize
+\end{landscape}
+
+\section{Física}\label{fuxedsica}
+
+\begin{quote}
+\textbf{Nota sobre DBA:} Ídem sección Biología.
+\end{quote}
+
+\begin{landscape}
+\centering
+\small
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable*}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.2400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.0600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 14\tabcolsep) * \real{0.1000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Grado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Periodo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Eje Temático
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DBA Alineado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estándares de Competencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pre-requisito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Capítulo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nombre del libro
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+6° & I & Unidades, medición y vectores. & DBA 1 (Grado 10°): Comprende,
+que el reposo o el movimiento rectilíneo uniforme, se presentan cuando
+las fuerzas aplicadas sobre el sistema se anulan entre ellas, y que en
+presencia de fuerzas resultantes no nulas se producen cambios de
+velocidad. & Relaciono energía y movimiento. (Est. 6°-7°, Entorno
+físico) & Conceptos básicos de materia y energía (Grado 5°). & Ch 1
+(Vol. 1); Ch 1 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \&
+Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+6° & II & Cinemática en una dimensión. & DBA 1 (Grado 10°): Comprende,
+que el reposo o el movimiento rectilíneo uniforme, se presentan cuando
+las fuerzas aplicadas sobre el sistema se anulan entre ellas, y que en
+presencia de fuerzas resultantes no nulas se producen cambios de
+velocidad. & Verifico relaciones entre distancia recorrida, velocidad y
+fuerza involucrada en diversos tipos de movimiento. (Est. 6°-7°, Entorno
+físico) & Vectores y medición (Periodo 1). & Ch 2 (Vol. 1); Ch 2
+(Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+6° & III & Cinemática en dos y tres dimensiones. & DBA 1 (Grado 10°):
+Comprende, que el reposo o el movimiento rectilíneo uniforme, se
+presentan cuando las fuerzas aplicadas sobre el sistema se anulan entre
+ellas, y que en presencia de fuerzas resultantes no nulas se producen
+cambios de velocidad. & Verifico relaciones entre distancia recorrida,
+velocidad y fuerza involucrada en diversos tipos de movimiento. (Est.
+6°-7°, Entorno físico) & Cinemática 1D (Periodo 2). & Ch 3 (Vol. 1); Ch
+2 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman,
+2018); \emph{Física Universitaria Vol. 2} (Young et al., 2018);
+\emph{Física Conceptual} (Hewitt, 2007) \\
+6° & IV & Leyes de Newton del movimiento. & DBA 1 (Grado 10°):
+Comprende, que el reposo o el movimiento rectilíneo uniforme, se
+presentan cuando las fuerzas aplicadas sobre el sistema se anulan entre
+ellas, y que en presencia de fuerzas resultantes no nulas se producen
+cambios de velocidad. & Verifico relaciones entre distancia recorrida,
+velocidad y fuerza involucrada en diversos tipos de movimiento. (Est.
+6°-7°, Entorno físico) & Cinemática 2D/3D (Periodo 3). & Ch 4 (Vol. 1);
+Ch 4, 5 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \&
+Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+& & & & & & & \\
+7° & I & Aplicaciones de las leyes de Newton y rozamiento. & DBA 1
+(Grado 10°): Comprende, que el reposo o el movimiento rectilíneo
+uniforme, se presentan cuando las fuerzas aplicadas sobre el sistema se
+anulan entre ellas, y que en presencia de fuerzas resultantes no nulas
+se producen cambios de velocidad. & Verifico relaciones entre distancia
+recorrida, velocidad y fuerza involucrada en diversos tipos de
+movimiento. (Est. 6°-7°, Entorno físico) & Leyes de Newton (Grado 6). &
+Ch 5 (Vol. 1); Ch 6 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young
+\& Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+7° & II & Trabajo y energía cinética. & DBA 1 (Grado 7°): Comprende las
+formas y las transformaciones de energía en un sistema mecánico y la
+manera como, en los casos reales, la energía se disipa en el medio
+(calor, sonido). & Relaciono energía y movimiento. (Est. 6°-7°, Entorno
+físico) & Leyes de Newton y rozamiento (Periodo 1). & Ch 6 (Vol. 1); Ch
+7 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman,
+2018); \emph{Física Universitaria Vol. 2} (Young et al., 2018);
+\emph{Física Conceptual} (Hewitt, 2007) \\
+7° & III & Energía potencial y conservación de la energía. & DBA 2
+(Grado 10°): Comprende la conservación de la energía mecánica como un
+principio que permite cuantificar y explicar diferentes fenómenos
+mecánicos: choques entre cuerpos, movimiento pendular, caída libre,
+deformación de un sistema masa-resorte. & Relaciono energía y
+movimiento. (Est. 6°-7°, Entorno físico) & Trabajo y energía cinética
+(Periodo 2). & Ch 7 (Vol. 1); Ch 7 (Hewitt) & \emph{Física Universitaria
+Vol. 1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2}
+(Young et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+7° & IV & Cantidad de movimiento y rotación. & DBA 2 (Grado 10°):
+Comprende la conservación de la energía mecánica como un principio que
+permite cuantificar y explicar diferentes fenómenos mecánicos: choques
+entre cuerpos, movimiento pendular, caída libre, deformación de un
+sistema masa-resorte. & Relaciono energía y movimiento. (Est. 6°-7°,
+Entorno físico) & Conservación de la energía (Periodo 3). & Ch 8, 9
+(Vol. 1); Ch 8, 9 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young
+\& Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+& & & & & & & \\
+8° & I & Equilibrio y elasticidad. & DBA 1 (Grado 10°): Comprende, que
+el reposo o el movimiento rectilíneo uniforme, se presentan cuando las
+fuerzas aplicadas sobre el sistema se anulan entre ellas, y que en
+presencia de fuerzas resultantes no nulas se producen cambios de
+velocidad. & Comparo masa, peso y densidad de diferentes materiales
+mediante experimentos. (Est. 6°-7°, Entorno físico) & Rotación y momento
+(Grado 7). & Ch 11 (Vol. 1); Ch 12 (Hewitt) & \emph{Física Universitaria
+Vol. 1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2}
+(Young et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+8° & II & Mecánica de fluidos: densidad, presión, Arquímedes y Pascal. &
+DBA 3 (Grado 8°): Comprende que el comportamiento de un gas ideal está
+determinado por las relaciones entre Temperatura (T), Presión (P),
+Volumen (V) y Cantidad de sustancia (n). & Comparo masa, peso y densidad
+de diferentes materiales mediante experimentos. (Est. 6°-7°, Entorno
+físico) & Equilibrio y elasticidad (Periodo 1). & Ch 12 (Vol. 1); Ch 13
+(Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+8° & III & Temperatura, calor y escalas termométricas. & DBA 4 (Grado
+3°): Comprende la influencia de la variación de la temperatura en los
+cambios de estado de la materia, considerando como ejemplo el caso del
+agua. & Verifico el efecto de presión y temperatura en los cambios
+químicos. (Est. 10°-11°, Entorno físico) & Mecánica de fluidos (Periodo
+2). & Ch 17 (Vol. 1); Ch 15 (Hewitt) & \emph{Física Universitaria Vol.
+1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young
+et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+8° & IV & Termodinámica: leyes y procesos. & DBA 1 (Grado 8°): Comprende
+el funcionamiento de máquinas térmicas (motores de combustión,
+refrigeración) por medio de las leyes de la termodinámica (primera y
+segunda ley). & Relaciono las diversas formas de transferencia de
+energía térmica con la formación de vientos. (Est. 8°-9°, Entorno
+físico) & Temperatura y calor (Periodo 3). & Ch 19, 20 (Vol. 1); Ch 17,
+18 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman,
+2018); \emph{Física Universitaria Vol. 2} (Young et al., 2018);
+\emph{Física Conceptual} (Hewitt, 2007) \\
+& & & & & & & \\
+9° & I & Movimiento periódico y MAS. & DBA 2 (Grado 10°): Comprende la
+conservación de la energía mecánica como un principio que permite
+cuantificar y explicar diferentes fenómenos mecánicos: choques entre
+cuerpos, movimiento pendular, caída libre, deformación de un sistema
+masa-resorte. & Establezco relaciones entre frecuencia, amplitud,
+velocidad de propagación y longitud de onda en diversos tipos de ondas
+mecánicas. (Est. 8°-9°, Entorno físico) & Dinámica y energía (Grados
+6-7). & Ch 14 (Vol. 1); Ch 19 (Hewitt) & \emph{Física Universitaria Vol.
+1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young
+et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+9° & II & Ondas mecánicas y fenómenos ondulatorios. & DBA 1 (Grado 11°):
+Comprende la naturaleza de la propagación del sonido y de la luz como
+fenómenos ondulatorios (ondas mecánicas y electromagnéticas,
+respectivamente). & Establezco relaciones entre frecuencia, amplitud,
+velocidad de propagación y longitud de onda en diversos tipos de ondas
+mecánicas. (Est. 8°-9°, Entorno físico) & Movimiento periódico (Periodo
+1). & Ch 15 (Vol. 1); Ch 19 (Hewitt) & \emph{Física Universitaria Vol.
+1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young
+et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+9° & III & Sonido y acústica. & DBA 1 (Grado 11°): Comprende la
+naturaleza de la propagación del sonido y de la luz como fenómenos
+ondulatorios (ondas mecánicas y electromagnéticas, respectivamente). &
+Explico el principio de conservación de la energía en ondas que cambian
+de medio de propagación. (Est. 8°-9°, Entorno físico) & Ondas mecánicas
+(Periodo 2). & Ch 16 (Vol. 1); Ch 20, 21 (Hewitt) & \emph{Física
+Universitaria Vol. 1} (Young \& Freedman, 2018); \emph{Física
+Universitaria Vol. 2} (Young et al., 2018); \emph{Física Conceptual}
+(Hewitt, 2007) \\
+9° & IV & Óptica geométrica: reflexión y refracción. & DBA 1 (Grado
+11°): Comprende la naturaleza de la propagación del sonido y de la luz
+como fenómenos ondulatorios (ondas mecánicas y electromagnéticas,
+respectivamente). & Reconozco y diferencio modelos para explicar la
+naturaleza y el comportamiento de la luz. (Est. 8°-9°, Entorno físico) &
+Sonido y acústica (Periodo 3). & Ch 33, 34 (Vol. 2); --- (Hewitt) &
+\emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+& & & & & & & \\
+10° & I & Carga eléctrica y campo eléctrico. & DBA 2 (Grado 11°):
+Comprende que la interacción de las cargas en reposo genera fuerzas
+eléctricas y que cuando las cargas están en movimiento genera fuerzas
+magnéticas. & Verifico la acción de fuerzas electrostáticas y magnéticas
+y explico su relación con la carga eléctrica. (Est. 6°-7°, Entorno
+físico) & Estructura de la materia y átomo (Grados 6-7). & Ch 21 (Vol.
+2); Ch 22 (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \&
+Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+10° & II & Potencial eléctrico y capacitancia. & DBA 2 (Grado 11°):
+Comprende que la interacción de las cargas en reposo genera fuerzas
+eléctricas y que cuando las cargas están en movimiento genera fuerzas
+magnéticas. & Verifico la acción de fuerzas electrostáticas y magnéticas
+y explico su relación con la carga eléctrica. (Est. 6°-7°, Entorno
+físico) & Campo eléctrico (Periodo 1). & Ch 23, 24 (Vol. 2); Ch 22
+(Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+10° & III & Corriente eléctrica y circuitos DC. & DBA 3 (Grado 11°):
+Comprende las relaciones entre corriente y voltaje en circuitos
+resistivos sencillos en serie, en paralelo y mixtos. & Relaciono energía
+y movimiento. (Est. 6°-7°, Entorno físico) & Potencial y capacitancia
+(Periodo 2). & Ch 25, 26 (Vol. 2); Ch 23 (Hewitt) & \emph{Física
+Universitaria Vol. 1} (Young \& Freedman, 2018); \emph{Física
+Universitaria Vol. 2} (Young et al., 2018); \emph{Física Conceptual}
+(Hewitt, 2007) \\
+10° & IV & Ondas electromagnéticas. & DBA 1 (Grado 11°): Comprende la
+naturaleza de la propagación del sonido y de la luz como fenómenos
+ondulatorios (ondas mecánicas y electromagnéticas, respectivamente). &
+Explico el principio de conservación de la energía en ondas que cambian
+de medio de propagación. (Est. 8°-9°, Entorno físico) & Circuitos DC
+(Periodo 3). & Ch 32 (Vol. 2); Ch 25 (Hewitt) & \emph{Física
+Universitaria Vol. 1} (Young \& Freedman, 2018); \emph{Física
+Universitaria Vol. 2} (Young et al., 2018); \emph{Física Conceptual}
+(Hewitt, 2007) \\
+& & & & & & & \\
+11° & I & Relatividad especial. & DBA 1 (Grado 11°): Comprende la
+naturaleza de la propagación del sonido y de la luz como fenómenos
+ondulatorios (ondas mecánicas y electromagnéticas, respectivamente). &
+Explico el origen del universo y de la vida a partir de varias teorías.
+(Est. 6°-7°, Entorno vivo) & Ondas electromagnéticas (Grado 10). & Ch 37
+(Vol. 2); --- (Hewitt) & \emph{Física Universitaria Vol. 1} (Young \&
+Freedman, 2018); \emph{Física Universitaria Vol. 2} (Young et al.,
+2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+11° & II & Naturaleza cuántica de la luz. & DBA 1 (Grado 11°): Comprende
+la naturaleza de la propagación del sonido y de la luz como fenómenos
+ondulatorios (ondas mecánicas y electromagnéticas, respectivamente). &
+Reconozco y diferencio modelos para explicar la naturaleza y el
+comportamiento de la luz. (Est. 8°-9°, Entorno físico) & Relatividad
+(Periodo 1). & Ch 38 (Vol. 2); --- (Hewitt) & \emph{Física Universitaria
+Vol. 1} (Young \& Freedman, 2018); \emph{Física Universitaria Vol. 2}
+(Young et al., 2018); \emph{Física Conceptual} (Hewitt, 2007) \\
+11° & III & Mecánica cuántica y estructura atómica. & DBA 1 (Grado 7°):
+Comprende las formas y las transformaciones de energía en un sistema
+mecánico y la manera como, en los casos reales, la energía se disipa en
+el medio (calor, sonido). & Describo el desarrollo de modelos que
+explican la estructura de la materia. (Est. 10°-11°, Entorno físico) &
+Naturaleza cuántica de la luz (Periodo 2). & Ch 40, 42 (Vol. 2); ---
+(Hewitt) & \emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+11° & IV & Física nuclear y de partículas. & DBA 1 (Grado 7°): Comprende
+las formas y las transformaciones de energía en un sistema mecánico y la
+manera como, en los casos reales, la energía se disipa en el medio
+(calor, sonido). & Explico la obtención de energía nuclear a partir de
+la alteración de la estructura del átomo. (Est. 10°-11°, Entorno físico)
+& Mecánica cuántica (Periodo 3). & Ch 43, 44 (Vol. 2); Ch 24 (Hewitt) &
+\emph{Física Universitaria Vol. 1} (Young \& Freedman, 2018);
+\emph{Física Universitaria Vol. 2} (Young et al., 2018); \emph{Física
+Conceptual} (Hewitt, 2007) \\
+\end{longtable*}
+}\normalsize
+\end{landscape}
+
+\part{Décimo - Química}
+
+\chapter{Reactivo límite}\label{reactivo-luxedmite}
+
+\setcolorsection{e8e8e8}{d0d0d0}
+
+\section{Teoría}\label{teoruxeda}
+
+La \textbf{estequiometría} es la rama de la química que estudia las
+relaciones cuantitativas entre reactivos y productos en una reacción
+química balanceada. Cuando se lleva a cabo una reacción, los reactivos
+no siempre están presentes en las proporciones exactas que indica la
+ecuación balanceada. En tales casos, uno de los reactivos se consume
+completamente antes que los demás, limitando la cantidad de producto que
+se puede formar. A este reactivo se le denomina \textbf{reactivo límite}
+(o reactivo limitante), mientras que los reactivos que no se consumen
+totalmente reciben el nombre de \textbf{reactivos en exceso} (Chang y
+Goldsby 2017).
+
+Para identificar el reactivo límite se siguen cuatro pasos: (1) escribir
+y balancear la ecuación química; (2) convertir las masas de los
+reactivos a moles usando las masas molares; (3) dividir los moles de
+cada reactivo entre su coeficiente estequiométrico en la ecuación
+balanceada; y (4) el reactivo con el menor cociente es el reactivo
+límite. Una vez identificado, se usan sus moles para calcular la
+cantidad máxima de producto posible, denominada \textbf{rendimiento
+teórico}.
+
+\textbf{Fórmula (1):}
+
+\[ n = \frac{m}{M} \]
+
+Donde \(n\) = cantidad de sustancia (mol), \(m\) = masa del reactivo
+(g), \(M\) = masa molar (g/mol).
+
+El \textbf{porcentaje de rendimiento} relaciona el rendimiento real
+(obtenido experimentalmente) con el rendimiento teórico:
+
+\textbf{Fórmula (2):}
+
+\[ \% \text{ rendimiento} = \frac{\text{rendimiento real}}{\text{rendimiento teórico}} \times 100 \]
+
+Donde rendimiento real = masa de producto obtenida experimentalmente
+(g), rendimiento teórico = masa máxima calculada a partir del reactivo
+límite (g).
+
+(Brown et~al. 2022)
+
+\setcolorsection{f9ebaf}{e8d68a}
+
+\section{Ideas Previas}\label{ideas-previas}
+
+Imagina que estás armando emparedados para una fiesta y tienes 12
+rebanadas de pan y 8 tajadas de queso. Cada emparedado necesita dos
+rebanadas de pan y una tajada de queso. Empiezas a armar y, después del
+octavo emparedado, te das cuenta de que ya no queda queso, pero todavía
+te sobran rebanadas de pan. El queso determinó cuántos emparedados
+pudiste hacer.
+
+\begin{itemize}
+\item
+  \textbf{¿Qué crees que pasaría si, en lugar de 8 tajadas de queso,
+  hubieras tenido 15? ¿Habrían cambiado los emparedados que lograste
+  armar?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Puedes imaginar una situación similar en tu casa donde un
+  ingrediente se acabe antes que otro cuando cocinas o preparas algo?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Crees que el ingrediente que ``sobra'' podría usarse para
+  algo más después de terminar la receta original?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Por qué será importante identificar cuál ingrediente se acaba
+  primero cuando trabajas con cantidades limitadas?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Qué crees que significa que algo sea ``limitante'' en un
+  proceso cotidiano?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Has tenido que racionar algún material en un proyecto porque
+  sabías que no alcanzaba para todos?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{Si tuvieras que explicarle a un compañero qué es un reactivo
+  límite usando solo objetos del salón, ¿qué usarías y cómo lo harías?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  \textbf{¿Por qué piensas que en química es importante saber cuál
+  reactivo se acaba primero?}
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\end{itemize}
+
+En el municipio de Nemocón (Cundinamarca), las minas de sal han operado
+durante siglos. Los mineros saben que, para extraer una tonelada de sal,
+necesitan cierta cantidad de agua y cierta cantidad de energía térmica.
+Si un día solo tienen suficiente carbón para calentar el agua durante la
+mitad del tiempo necesario, la producción de ese día estará limitada por
+el combustible, no por el agua disponible. De manera similar, en una
+reacción química uno de los reactivos se agota antes y determina cuánto
+producto se puede obtener.
+
+\setcolorsection{f2c6a0}{e0b088}
+
+\section{Contextualización --- Método
+Feynman}\label{contextualizaciuxf3n-muxe9todo-feynman}
+
+¿Alguna vez has armado un mueble de kit y te has dado cuenta de que te
+faltan tornillos? Revisas la bolsa de piezas, cuentas los tornillos que
+tienes, y luego miras el instructivo: cada panel frontal necesita dos
+tornillos. Resulta que tienes 10 paneles pero solo 12 tornillos. Aunque
+tengas los 10 paneles listos, solo podrás fijar 6 de ellos porque los
+tornillos se acaban primero. Pues bien, en química ocurre exactamente lo
+mismo: los tornillos son uno de los \textbf{reactivos}, los paneles son
+el otro, y el \textbf{reactivo límite} son esos tornillos que determinan
+cuántos muebles completos puedes armar. Pero cuidado: en química no
+siempre es tan sencillo como contar piezas, porque los reactivos se
+combinan en proporciones fijas según la ecuación balanceada, y hay que
+usar moles (no unidades individuales) para hacer los cálculos correctos.
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados --- TDAH}\label{caracterizados-tdah}
+
+Cada {CO} necesita 2 de {H₂}. Como un sándwich necesita 2 panes.
+
+Tienes {4 de CO} y {6 de H₂}. ¿Cuántos sándwiches armas? El que se acaba
+primero es el limitante.
+
+Tradúcelo a números:
+
+\(n_{CO} = 4\ \text{mol},\quad n_{H_2} = 6\ \text{mol}\)
+
+Usa los coeficientes para ver cuánto da cada uno:
+
+\[\text{CO: } 4 \times \frac{1}{1} = 4\ \text{mol de metanol}\]
+
+\[\text{H}_2\text{: } 6 \times \frac{1}{2} = 3\ \text{mol de metanol}\]
+
+{H₂} da menos --- es el \textbf{reactivo limitante}.
+
+\textbf{Movimiento 1:} Anota la ecuación balanceada. \textbf{Movimiento
+2:} Convierte los datos a moles. \textbf{Movimiento 3:} Calcula el
+producto de cada reactivo. \textbf{Movimiento 4:} El que produce menos
+es el limitante. Márcalo con ⭐.
+
+\textbf{Ejemplo:} En
+\(\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}\), tienes
+\(4\) mol de CO y \(6\) mol de H₂.
+
+Movimiento 3: CO produce \(4\) mol de metanol; H₂ produce \(3\) mol.
+
+Movimiento 4: el H₂ da menos → es el limitante.
+
+\textbf{Ahora tapa el cálculo y explica en voz alta por qué dividiste
+los moles de H₂ entre 2.}
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\), con \(2\) mol de
+N₂ y \(6\) mol de H₂, aplica los 4 movimientos. Identifica el limitante
+y márcalo en tu cuaderno. \textbf{{[}Opcional: explica en voz alta los
+pasos en vez de escribirlos.{]}}
+
+\textbf{Metacognición:} 1. Si el H₂ produce \(3\) mol de metanol y el CO
+produce \(4\) mol, el limitante es el H₂. ¿Por qué el reactivo que da
+MENOS producto es el que determina cuánto se forma? 2. ¿Qué pasaría si
+añadieras más H₂ después de que el CO ya se consumió? ¿El limitante
+seguiría siendo el mismo? 3. ¿Qué movimiento del juego se te hizo más
+difícil? ¿Cómo harías ese movimiento más fácil la próxima vez?
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, dibujando o
+explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el reactivo que se acaba primero, como el
+  jugador que pierde todas sus vidas antes.
+\item
+  \textbf{Exceso:} el reactivo que sobra porque el otro se terminó.
+\item
+  \textbf{Coeficiente:} el número que dice cuántas moléculas de cada
+  tipo participan, como las piezas que necesita cada sándwich.
+\item
+  \textbf{Estequiometría:} la receta del juego que relaciona las
+  cantidades de reactivos y productos.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados --- Visual}\label{caracterizados-visual}
+
+{Cada CO} necesita {2 H₂}. Piénsalo como círculos: {azul} con {rojo}.
+
+Con {4 azules} y {6 rojos}, el que se acaba primero manda. Cada azul
+gasta 2 rojos --- los rojos se terminan.
+
+Míralo en la tabla:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1695}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1017}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2203}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.5085}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Reactivo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Moles
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Coeficiente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Moles de metanol que produce
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+{CO (azul)} & \(4\) & \(1\) & \(4 \times \frac{1}{1} = 4\) \\
+{H₂ (rojo)} & \(6\) & \(2\) & \(6 \times \frac{1}{2} = 3\) \\
+\end{longtable}
+}
+
+{H₂} da solo 3 mol → es el \textbf{limitante}.
+
+\[3 < 4 \Rightarrow \text{el limitante es el } \text{H}_2\]
+
+\textbf{Ahora cubre la tabla y reconstruye el diagrama de memoria: datos
+→ moles → producto por reactivo → limitante.}
+
+\textbf{Ejemplo:} Para
+\(2\text{Al} + \text{Fe}_2\text{O}_3 \rightarrow \text{Al}_2\text{O}_3 + 2\text{Fe}\)
+con \(54\) g de Al y \(160\) g de Fe₂O₃.
+
+Dibuja la proporción como barras: Al (gris) \(2\) mol, Fe₂O₃ (café)
+\(1\) mol.
+
+Cada Al produce \(1\) mol de Al₂O₃; Fe₂O₃ produce \(1\) mol.
+
+Ambos producen igual → no hay limitante.
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\) con \(2\) mol de
+N₂ y \(6\) mol de H₂, completa una tabla como la de arriba.
+\textbf{{[}Opcional: dibuja el diagrama de barras en lugar de la
+tabla.{]}}
+
+\textbf{Metacognición:} 1. Dibuja lo que pasa a nivel de partículas
+cuando el H₂ es el limitante. ¿Cómo se ven las moléculas de CO y H₂
+antes y después de la reacción? 2. ¿Qué relación visual hay entre los
+coeficientes de la ecuación y la altura de las barras en tu diagrama? 3.
+Si el coeficiente del H₂ fuera \(3\) en vez de \(2\), ¿cómo cambiaría el
+diagrama de barras?
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, dibujando o
+explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el reactivo cuya barra (o círculo) se
+  acaba primero; visualmente el que tiene menos producto.
+\item
+  \textbf{Coeficiente:} el número que multiplica la altura de la barra
+  de cada reactivo.
+\item
+  \textbf{Exceso:} la parte de la barra del reactivo que sobra, como una
+  barra más larga que no se usó.
+\item
+  \textbf{Ecuación balanceada:} el mapa visual que muestra cuántos
+  círculos de cada color se necesitan.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados --- Dislexia}\label{caracterizados-dislexia}
+
+Es como una receta de cocina.
+
+Por cada {1 de CO} usas {2 de H₂}. La receta dice: 1 CO + 2 H₂ → 1
+metanol.
+
+Tienes {4 de CO} y {6 de H₂}. ¿Cuantas veces puedes repetir la receta?
+
+{CO} da para 4 veces: tienes 4, necesitas 1 cada vez. {H₂} da para 3
+veces: tienes 6, necesitas 2 cada vez.
+
+El que da para menos veces es el \textbf{limitante}: el {H₂}.
+
+Escríbelo así:
+
+\[4 \div 1 = 4,\qquad 6 \div 2 = 3\]
+
+\(3 < 4 \Rightarrow \text{el limitante es } \text{H}_2\)
+
+\textbf{Ahora tapa los pasos y dime en voz alta: ¿que tenias que hacer
+primero?}
+
+\textbf{Ejemplo:} En
+\(2\text{Al} + \text{Fe}_2\text{O}_3 \rightarrow \text{Al}_2\text{O}_3 + 2\text{Fe}\),
+tienes \(54\) g de Al y \(160\) g de Fe₂O₃.
+
+Primero pasas a moles: \(54 \div 27 = 2\) mol de Al,
+\(160 \div 160 = 1\) mol de Fe₂O₃.
+
+Despues usas la receta (coeficientes): cada 2 de Al dan 1 de Al₂O₃.
+
+El Al da \(2 \times \frac{1}{2} = 1\) mol. El Fe₂O₃ da
+\(1 \times \frac{1}{1} = 1\) mol.
+
+Los dos dan igual → no hay limitante.
+
+\textbf{Sin mirar la solucion, explicale a un amigo de 10 años como
+llegaste a ese resultado.}
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\), con \(2\) mol de
+N₂ y \(6\) mol de H₂, identifica el limitante. \textbf{{[}Opcional:
+graba un audio explicando el procedimiento en vez de escribirlo.{]}}
+
+\textbf{Metacognición:} 1. Sin leer la teoria otra vez, explica cual es
+la relacion entre los coeficientes (los numeros grandes de la ecuacion)
+y las moleculas. 2. ¿El CO da 4 y el H₂ da 3. El limitante es el H₂
+porque da menos. ¿Por que el menor es el que manda? 3. ¿Hay algun paso
+donde te hayas trabado? ¿Que harías para que ese paso sea mas facil la
+proxima vez?
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, grabando un
+audio o explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el reactivo que se acaba primero, el que
+  da para menos veces la receta.
+\item
+  \textbf{Exceso:} el reactivo que sobra porque el otro se termino.
+\item
+  \textbf{Mol:} una cantidad fija de moleculas, como una docena de
+  huevos pero mucho mas grande.
+\item
+  \textbf{Coeficiente:} el numero grande que dice cuantas moleculas de
+  cada tipo participan en la reaccion.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados --- Autismo}\label{caracterizados-autismo}
+
+\textbf{Regla fija:} El reactivo limitante produce la menor cantidad de
+producto al aplicar la ecuacion balanceada. No es opinion: es el
+resultado de un algoritmo exacto.
+
+La ecuacion {1 CO} + {2 H₂} → {1 CH₃OH} dice: cada molecula de {CO}
+necesita exactamente 2 de {H₂}.
+
+Con {4 CO} y {6 H₂}, las moleculas de {H₂} se acaban primero --- cada
+una se empareja con una de CO hasta agotarse.
+
+A nivel simbolico:
+
+\[\text{CO: } 4 \times \frac{1}{1} = 4,\qquad \text{H}_2\text{: } 6 \times \frac{1}{2} = 3\]
+
+\(3 < 4 \Rightarrow \text{el limitante es } \text{H}_2\)
+
+El resultado es el mismo siempre: el {H₂} es el \textbf{limitante}.
+
+\textbf{ALGORITMO:} 1. Identifica los reactivos y sus cantidades en
+moles. 2. Para cada reactivo calcula: moles de producto = moles del
+reactivo
+\(\times \frac{\text{coeficiente del producto}}{\text{coeficiente del reactivo}}\).
+3. Compara los resultados. El menor es el limitante. 4. Verifica
+aplicando el paso 2 al reves.
+
+\textbf{Ejemplo:} En
+\(\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}\), \(4\) mol
+de CO y \(6\) mol de H₂.
+
+Paso 2: CO → \(4 \times \frac{1}{1} = 4\) mol; H₂ →
+\(6 \times \frac{1}{2} = 3\) mol.
+
+Paso 3: \(3 < 4\), el H₂ es el limitante.
+
+\textbf{Ahora aplica el algoritmo al reves: si el H₂ es el limitante,
+¿cuantas moles de CO se consumen?}
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\) con \(2\) mol de
+N₂ y \(6\) mol de H₂, aplica el algoritmo paso a paso. \textbf{{[}Opcion
+A: resuelve por escrito. Opcion B: empareja cada paso del algoritmo con
+su resultado.{]}} ¿Aplica la regla fija? SI / NO.
+
+\textbf{Metacognición:} 1. Sin mirar el bloque, escribe la regla fija
+con tus palabras. ¿Que dice sobre la relacion entre los coeficientes y
+las moleculas? 2. ¿Seguiste los pasos del algoritmo en orden? ¿En que
+paso tuviste duda? 3. Si las cantidades fueran \(3\) mol de N₂ y \(6\)
+mol de H₂, ¿cambiaria el limitante? Aplica el algoritmo para
+verificarlo.
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, dibujando o
+explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el reactivo que produce la menor cantidad
+  de producto segun el algoritmo. Se identifica por comparacion
+  numerica.
+\item
+  \textbf{Ecuacion balanceada:} una igualdad que muestra la proporcion
+  exacta en que se combinan los reactivos.
+\item
+  \textbf{Coeficiente:} el numero entero que precede a cada formula.
+  Indica cuantas moleculas (o moles) participan.
+\item
+  \textbf{Exceso:} la cantidad de un reactivo que sobra despues de que
+  el limitante se consume por completo.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados --- Accesibilidad
+Sensorial}\label{caracterizados-accesibilidad-sensorial}
+
+Imagina {4 fichas rugosas (CO)} y {6 fichas suaves (H₂)}.
+
+La regla: cada rugosa necesita 2 suaves para formar 1 de algodon
+(metanol).
+
+Empieza a emparejar: toma una rugosa, toma dos suaves, juntalas. Repite
+hasta que no puedas hacer mas pares.
+
+Las {fichas suaves (H₂)} se acaban primero --- son el \textbf{reactivo
+limitante}.
+
+En numeros:
+
+\[n_{CO} = 4,\quad n_{H_2} = 6\]
+
+\(\text{CO da } 4 \text{ mol},\qquad \text{H}_2\text{ da } 3 \text{ mol}\)
+
+\(3 < 4 \Rightarrow \text{el limitante es } \text{H}_2\)
+
+En el laboratorio, el recipiente de {H₂} queda vacio al tacto.
+
+\textbf{Cierra los ojos y describe en voz alta el siguiente paso.
+Despues señala con el dedo donde escribiste el resultado.}
+
+\textbf{Ejemplo:} Para
+\(\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}\) con \(4\)
+mol de CO y \(6\) mol de H₂:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Tacto:} cuenta 4 fichas rugosas y 6 suaves.
+\item
+  \textbf{Vista:} escribe \(n_{CO} = 4\), \(n_{H_2} = 6\).
+\item
+  \textbf{Calculo:} CO da \(4\) mol, H₂ da \(3\) mol.
+\item
+  \textbf{Resultado:} el H₂ (textura suave) es el limitante.
+\end{enumerate}
+
+\textbf{Ahora cierra los ojos y traza la formula con el dedo mientras
+repites los pasos en voz alta.}
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\) con \(2\) mol de
+N₂ y \(6\) mol de H₂, identifica el limitante usando fichas imaginarias
+(2 de una textura, 6 de otra). \textbf{{[}Opcional: responde por voz en
+vez de escribir.{]}}
+
+\textbf{Metacognición:} 1. Describe con una imagen mental: ¿como se ve,
+se oye o se siente que un reactivo se acaba? 2. Si cerraras los ojos y
+solo usaras el tacto, ¿como sabrias cual reactivo es el limitante? 3. La
+ecuacion dice que por cada pieza de CO necesitas 2 de H₂. Si cambiara el
+2 por un 3, ¿como cambiaria la experiencia tactil de emparejar las
+piezas?
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, grabando un
+audio o explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el material (textura, color, sonido) que
+  se acaba primero al emparejar las piezas de la reaccion.
+\item
+  \textbf{Mol:} una cantidad especifica de un material, como un monton
+  de fichas de la misma textura.
+\item
+  \textbf{Coeficiente:} el numero que dice cuantas piezas de cada
+  textura se necesitan para formar el producto.
+\item
+  \textbf{Exceso:} las fichas de la textura que sobraron cuando la otra
+  textura se termino.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{d6c7e7}{c0b0d8}
+
+\section{Caracterizados ---
+Socioemocional}\label{caracterizados-socioemocional}
+
+En una cooperativa preparando limonada: cada 3 limones y 1 litro de agua
+dan 10 limonadas. Tienes 9 limones pero solo 2 litros de agua.
+
+El {agua} es tu recurso limitante: aunque sobren limones, solo haces 20
+limonadas.
+
+En quimica pasa igual. El {reactivo limitante} es el recurso que se
+acaba primero. No es un error: es la naturaleza de las proporciones.
+Como en la vida.
+
+Cada {CO} necesita {2 H₂}. Cuando se acaba el H₂, la reaccion se
+detiene.
+
+En numeros:
+
+\(n_{CO} = 4\ \text{mol},\quad n_{H_2} = 6\ \text{mol}\)
+
+\(\text{CO da } 4 \text{ mol},\qquad \text{H}_2\text{ da } 3 \text{ mol}\)
+
+\[\text{H}_2 \text{ es el limitante}\]
+
+\textbf{Antes de seguir, respira profundo 3 veces. Ya tienes esto.}
+
+\textbf{Ejemplo:} Para
+\(\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}\) con \(4\)
+mol de CO y \(6\) mol de H₂.
+
+CO da \(4\) mol de metanol; H₂ da \(3\) mol.
+
+El H₂ es el limitante. Es como si en la cooperativa tuvieras recursos
+para 4 jarras por el CO pero solo para 3 por el H₂.
+
+El que da menos es el que manda.
+
+\textbf{Ahora explica en voz alta el paso que entendiste mejor. No
+importa si no es perfecto --- estas aprendiendo, y cada paso cuenta.}
+
+\textbf{Ejercicios:} Para
+\(\text{N}_2 + 3\text{H}_2 \rightarrow 2\text{NH}_3\) con \(2\) mol de
+N₂ y \(6\) mol de H₂, identifica el limitante. \textbf{{[}Opcional:
+resuelve en pareja con un compañero.{]}} Al terminar, en una escala del
+1 al 5, ¿como te sentiste al resolverlo?
+
+\textbf{Metacognición:} 1. Explica con tus palabras y sin apuro: ¿que
+relacion hay entre los coeficientes de la ecuacion y la cantidad de
+moleculas que reaccionan? Si no te sale perfecto, esta bien. 2. ¿Como se
+aplica el concepto de reactivo limitante a la distribucion de recursos
+en tu comunidad? Piensa en un recurso que se acabe primero y limite lo
+que se puede producir. 3. ¿Que estrategia usaste cuando algo se ponia
+dificil? ¿Funciono?
+
+\textbf{Opción de respuesta:} Puedes responder escribiendo, dibujando o
+explicándoselo a un compañero.
+
+\textbf{Glosario:}
+
+\begin{itemize}
+\item
+  \textbf{Reactivo limitante:} el recurso que se acaba primero y
+  determina cuanto se puede producir, como la harina en una cocina
+  comunitaria.
+\item
+  \textbf{Exceso:} el recurso que sobra porque el otro se acabo primero.
+\item
+  \textbf{Estequiometria:} la proporcion justa de recursos necesarios
+  para producir algo, como la receta de una cooperativa.
+\item
+  \textbf{Rendimiento:} la cantidad real de producto que se obtiene dado
+  el recurso limitante.
+\end{itemize}
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{b3d9f0}{94c4e0}
+
+\section{Ejemplo --- Nivel Bajo}\label{ejemplo-nivel-bajo}
+
+\textbf{Regla fija:} los reactivos se combinan en una proporción fija de
+moles. El reactivo con el cociente
+(\(\frac{\text{moles}}{\text{coeficiente}}\)) más pequeño se agota
+primero. Ese es el reactivo límite.
+
+\textbf{Enunciado:} La síntesis del metanol (\(CH_3OH\)) a partir de
+monóxido de carbono e hidrógeno sigue la reacción:
+
+\[CO(g) + 2H_2(g) \rightarrow CH_3OH(g)\]
+
+Si se tienen \(4\,\text{mol}\) de CO y \(6\,\text{mol}\) de \(H_2\),
+¿cuál es el reactivo límite y cuántos moles de \(CH_3OH\) se pueden
+producir?
+
+\textbf{Justificacion Teorica:} El reactivo límite se identifica
+dividiendo los moles disponibles de cada reactivo entre su coeficiente
+estequiométrico. El reactivo con el menor cociente es el límite.
+
+\textbf{Ejecucion:}
+
+\textbf{Paso 1: Dividir moles de CO entre su coeficiente} (el
+coeficiente del CO es 1)
+
+\[\frac{4 \text{ mol CO}}{1} = 4\]
+
+\textbf{Paso 2: Dividir moles de H\(_2\) entre su coeficiente} (el
+coeficiente del H\(_2\) es 2)
+
+\[\frac{6 \text{ mol H}_2}{2} = 3\]
+
+\textbf{Paso 3: Comparar cocientes}
+
+\[3 < 4\]
+
+Por lo tanto el H\(_2\) es el \textbf{reactivo límite}.
+
+\textbf{Paso 4: Calcular moles de producto usando el reactivo límite}
+
+\[6 \text{ mol H}_2 \times \frac{1 \text{ mol CH}_3\text{OH}}{2 \text{ mol H}_2} = 3 \text{ mol CH}_3\text{OH}\]
+
+\textbf{Resultado:} El reactivo límite es el \(H_2\) y se producen
+\(3\,\text{mol}\) de \(CH_3OH\) (Chang y Goldsby 2017).
+
+\setcolorsection{b3d9f0}{94c4e0}
+
+\section{Ejemplo --- Nivel Medio}\label{ejemplo-nivel-medio}
+
+\textbf{Analogía:} Una ecuación química es una receta. Los reactivos son
+los ingredientes. El producto es el resultado. La ecuación balanceada
+dice cuánto necesitas de cada reactivo. El reactivo límite es el
+ingrediente que se acaba primero.
+
+\textbf{Enunciado:} La reacción entre el óxido nítrico y el oxígeno
+produce dióxido de nitrógeno:
+
+\[2NO(g) + O_2(g) \rightarrow 2NO_2(g)\]
+
+Si se hacen reaccionar \(30.0\,\text{g}\) de \(NO\) con
+\(20.0\,\text{g}\) de \(O_2\), determine el reactivo límite y la masa de
+\(NO_2\) producida. Masas molares: \(NO = 30.01\,\text{g/mol}\),
+\(O_2 = 32.00\,\text{g/mol}\), \(NO_2 = 46.01\,\text{g/mol}\).
+
+\textbf{Justificacion Teorica:} Primero se convierten las masas a moles,
+luego se dividen entre los coeficientes para identificar el reactivo
+límite. Finalmente se usa la relación molar para calcular la masa de
+producto.
+
+\textbf{Ejecucion:}
+
+\textbf{Paso 1: Convertir masa de NO a moles}
+
+\[n_{NO} = \frac{30.0 \text{ g}}{30.01 \text{ g/mol}} = 1.00 \text{ mol NO}\]
+
+\textbf{Paso 2: Convertir masa de O\(_2\) a moles}
+
+\[n_{O_2} = \frac{20.0 \text{ g}}{32.00 \text{ g/mol}} = 0.625 \text{ mol O}_2\]
+
+\textbf{Paso 3: Dividir cada uno entre su coeficiente}
+
+NO (coeficiente 2):
+
+\[\frac{1.00}{2} = 0.500\]
+
+O\(_2\) (coeficiente 1):
+
+\[\frac{0.625}{1} = 0.625\]
+
+\textbf{Paso 4: Identificar reactivo límite}
+
+\[0.500 < 0.625\]
+
+El \textbf{NO} es el reactivo límite.
+
+\textbf{Paso 5: Calcular masa de NO\(_2\) producida}
+
+\[1.00 \text{ mol NO} \times \frac{2 \text{ mol NO}_2}{2 \text{ mol NO}} \times \frac{46.01 \text{ g}}{\text{mol}} = 46.01 \text{ g NO}_2\]
+
+\textbf{Resultado:} El reactivo límite es el \(NO\) y se producen
+\(46.01\,\text{g}\) de \(NO_2\) (Brown et~al. 2022).
+
+\setcolorsection{b3d9f0}{94c4e0}
+
+\section{Ejemplo --- Nivel Alto}\label{ejemplo-nivel-alto}
+
+\textbf{Formato accesible:} \(CO(g) + 2H_2(g) \rightarrow CH_3OH(g)\)
+(monóxido de carbono gaseoso más hidrógeno gaseoso produce metanol
+gaseoso). Los coeficientes indican que \(1\) mol de CO reacciona con
+\(2\) moles de \(H_2\).
+
+\textbf{Enunciado:} La urea \([(NH_2)_2CO]\) se prepara a partir de
+amoníaco y dióxido de carbono:
+
+\[2NH_3(g) + CO_2(g) \rightarrow (NH_2)_2CO(ac) + H_2O(l)\]
+
+En un proceso se hacen reaccionar \(637.2\,\text{g}\) de \(NH_3\) con
+\(1142\,\text{g}\) de \(CO_2\). Determine: (a) el reactivo límite, (b)
+la masa de urea que se formará, (c) la masa del reactivo en exceso que
+queda sin reaccionar. Masas molares: \(NH_3 = 17.03\,\text{g/mol}\),
+\(CO_2 = 44.01\,\text{g/mol}\), \((NH_2)_2CO = 60.06\,\text{g/mol}\).
+
+\textbf{Justificación Teórica:} Se requieren tres etapas: identificar el
+reactivo límite comparando los moles ajustados por coeficiente; calcular
+la masa de producto usando el reactivo límite; y determinar cuánto del
+otro reactivo se consumió para hallar el sobrante.
+
+\textbf{Ejecución:}
+
+\textbf{Paso 1: Convertir masas a moles}
+
+\[n_{NH_3} = \frac{637.2 \text{ g}}{17.03 \text{ g/mol}} = 37.42 \text{ mol}\]
+
+\[n_{CO_2} = \frac{1142 \text{ g}}{44.01 \text{ g/mol}} = 25.95 \text{ mol}\]
+
+\textbf{Paso 2: Dividir entre coeficientes}
+
+\[NH_3: \frac{37.42}{2} = 18.71\]
+
+\[CO_2: \frac{25.95}{1} = 25.95\]
+
+\textbf{Paso 3: Identificar reactivo límite}
+
+\[18.71 < 25.95\]
+
+El \textbf{\(NH_3\)} es el reactivo límite.
+
+\textbf{Paso 4: Calcular masa de urea producida}
+
+\[37.42 \text{ mol NH}_3 \times \frac{1 \text{ mol urea}}{2 \text{ mol NH}_3} \times \frac{60.06 \text{ g}}{\text{mol}} = 1123.7 \text{ g urea}\]
+
+\textbf{Paso 5: Calcular moles de CO\(_2\) consumidos}
+
+\[37.42 \text{ mol NH}_3 \times \frac{1 \text{ mol CO}_2}{2 \text{ mol NH}_3} = 18.71 \text{ mol CO}_2\]
+
+\textbf{Paso 6: Calcular masa de CO\(_2\) sobrante}
+
+\[25.95 - 18.71 = 7.24 \text{ mol CO}_2\]
+
+\[7.24 \text{ mol} \times 44.01 \text{ g/mol} = 318.6 \text{ g CO}_2\]
+
+\textbf{Resultado:} (a) El reactivo límite es el \(NH_3\). (b) Se
+producen \(1124\,\text{g}\) de urea. (c) Quedan \(319\,\text{g}\) de
+\(CO_2\) sin reaccionar. (Chang y Goldsby 2017)
+
+\setcolorsection{b2e0d8}{98ccc4}
+
+\section{Ejercicios --- Nivel Bajo}\label{ejercicios-nivel-bajo}
+
+Aplica la \textbf{regla fija}: el reactivo con el cociente
+(\(\frac{\text{moles}}{\text{coeficiente}}\)) más pequeño se agota
+primero.
+
+\begin{itemize}
+\item
+  Completar: En la reacción \(2H_2 + O_2 \rightarrow 2H_2O\), si se
+  tienen \(3\,\text{mol}\) de \(H_2\) y \(2\,\text{mol}\) de \(O_2\), el
+  reactivo límite es el \(\underline{\hspace{3cm}}\) porque su cociente
+  de moles dividido entre coeficiente es \(\underline{\hspace{2cm}}\),
+  mientras que el del otro reactivo es \(\underline{\hspace{2cm}}\).
+
+  {\def\LTcaptype{none} % do not increment counter
+  \begin{longtable}[]{@{}llll@{}}
+  \toprule\noalign{}
+  Reactivo & Moles & Coeficiente & Cociente \\
+  \midrule\noalign{}
+  \endhead
+  \bottomrule\noalign{}
+  \endlastfoot
+  \(H_2\) & \(3\) & \(2\) & \(\underline{\hspace{1cm}}\) \\
+  \(O_2\) & \(2\) & \(1\) & \(\underline{\hspace{1cm}}\) \\
+  \end{longtable}
+  }
+\item
+  V/F: El reactivo en exceso es aquel que se consume completamente
+  durante la reacción. (\(\hspace{0.5cm}\))
+\item
+  Identificación: En la ecuación \(N_2 + 3H_2 \rightarrow 2NH_3\),
+  indica cuál es el reactivo límite si se tienen \(2\,\text{mol}\) de
+  \(N_2\) y \(5\,\text{mol}\) de \(H_2\).
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\end{itemize}
+
+\setcolorsection{b2e0d8}{98ccc4}
+
+\section{Ejercicios --- Nivel Medio}\label{ejercicios-nivel-medio}
+
+\textbf{Analogía:} Recuerda que una ecuación química es como una receta:
+los reactivos son los ingredientes y el producto es el plato final. El
+reactivo límite es el ingrediente que se acaba primero.
+
+\begin{landscape}
+\centering
+\small
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable*}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Reactivo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Masa (g)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+M (g/mol)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Moles
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Coeficiente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cociente
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) \\
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) \\
+\end{longtable*}
+}\normalsize
+\end{landscape}
+
+\begin{itemize}
+\item
+  Respuesta corta: Se hacen reaccionar \(10.0\,\text{g}\) de \(Zn\)
+  (masa molar \(65.38\,\text{g/mol}\)) con \(5.0\,\text{g}\) de \(HCl\)
+  (masa molar \(36.46\,\text{g/mol}\)) según
+  \(Zn + 2HCl \rightarrow ZnCl_2 + H_2\). ¿Cuál es el reactivo límite y
+  cuántos gramos de \(ZnCl_2\) se producen?
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  Aplicación simple: En la reacción \(2Al + 3Cl_2 \rightarrow 2AlCl_3\),
+  si se tienen \(54.0\,\text{g}\) de \(Al\) y \(106.5\,\text{g}\) de
+  \(Cl_2\), ¿cuántos gramos de \(AlCl_3\) se pueden obtener?
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  Clasificación: Dados los siguientes pares de reactivos, identifica en
+  cada caso cuál sería el reactivo límite sin hacer cálculos detallados,
+  solo observando las proporciones: (a) \(1\,\text{mol}\) \(CH_4\) +
+  \(3\,\text{mol}\) \(O_2\) en \(CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O\);
+  (b) \(2\,\text{mol}\) \(Fe\) + \(2\,\text{mol}\) \(O_2\) en
+  \(4Fe + 3O_2 \rightarrow 2Fe_2O_3\).
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\end{itemize}
+
+\setcolorsection{b2e0d8}{98ccc4}
+
+\section{Ejercicios --- Nivel Alto}\label{ejercicios-nivel-alto}
+
+\textbf{Formato accesible:} Cada símbolo químico se acompaña de su
+nombre para facilitar la identificación. Completa cada tabla de datos
+antes de resolver.
+
+\begin{landscape}
+\centering
+\small
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable*}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1429}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Sustancia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fórmula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Masa (g)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+M (g/mol)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Moles
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Coeficiente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cociente
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) \\
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) & \(\underline{\hspace{2cm}}\) &
+\(\underline{\hspace{2cm}}\) \\
+\end{longtable*}
+}\normalsize
+\end{landscape}
+
+\begin{itemize}
+\item
+  Problema abierto: El etileno (\(C_2H_4\)) se puede preparar calentando
+  hexano (\(C_6H_{14}\)):
+  \(C_6H_{14} \rightarrow C_2H_4 + C_4H_{10} + CH_4\) (sin balancear).
+  Si se calientan \(86.0\,\text{g}\) de hexano y se obtienen
+  \(28.0\,\text{g}\) de etileno, calcula el rendimiento porcentual de la
+  reacción. Sugerencia: primero balancea la ecuación.
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\item
+  Análisis de errores: Un estudiante afirma que en la reacción
+  \(2Mg + O_2 \rightarrow 2MgO\), si se tienen \(48.6\,\text{g}\) de
+  \(Mg\) y \(32.0\,\text{g}\) de \(O_2\), el reactivo límite es el
+  \(O_2\) porque hay menos masa de oxígeno. Explica por qué esta
+  conclusión es incorrecta y determina la respuesta correcta.
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+
+  \(\underline{\hspace{6cm}}\)
+\end{itemize}
+
+\setcolorsection{f6d5a8}{e8c490}
+
+\section{Retos}\label{retos}
+
+El concepto de reactivo límite se aplica en la industria farmacéutica
+para maximizar la producción de medicamentos usando el principio del
+reactivo más costoso como límite. Para este reto:
+
+\begin{itemize}
+\tightlist
+\item
+  Diseña un cartel informativo que explique los cuatro pasos para
+  determinar el reactivo límite usando como ejemplo una reacción de tu
+  elección. Incluye los cálculos paso a paso.
+\item
+  Construye un modelo físico con materiales reciclables (tapas, fichas,
+  cuentas) que represente los moles de cada reactivo antes y después de
+  la reacción, mostrando claramente cuál es el reactivo límite y cuál
+  está en exceso.
+\item
+  Prepara una breve exposición (máximo 3 minutos) explicando por qué es
+  importante identificar el reactivo límite en procesos industriales
+  como la producción de fertilizantes o medicamentos.
+\end{itemize}
+
+\setcolorsection{c5e8d8}{a8d4c4}
+
+\section{Aplicación --- Vida real}\label{aplicaciuxf3n-vida-real}
+
+En la producción industrial de ácido sulfúrico (\(H_2SO_4\)) en plantas
+como la de Cartagena (Colombia), el azufre se quema para formar
+\(SO_2\), que luego se oxida a \(SO_3\) y finalmente se hidrata. Los
+ingenieros controlan cuidadosamente las cantidades de reactivos para
+garantizar que el azufre (el reactivo más costoso y menos abundante) se
+consuma por completo, mientras que el oxígeno del aire se suministra en
+exceso. Así se maximiza el rendimiento económico del proceso. La próxima
+vez que veas una batería de carro o un producto de limpieza, recuerda
+que el ácido sulfúrico que contienen se fabricó aplicando el concepto de
+reactivo límite para optimizar su producción.
+
+\setcolorsection{c5e8d8}{a8d4c4}
+
+\section{Aplicación --- Laboratorio}\label{aplicaciuxf3n-laboratorio}
+
+\textbf{Objetivo:} Determinar experimentalmente el reactivo límite en la
+reacción entre bicarbonato de sodio y vinagre.
+
+\textbf{Materiales:} - Bicarbonato de sodio (\(NaHCO_3\)) - Vinagre
+blanco (solución de ácido acético \(CH_3COOH\) al \(5\%\)) - Balanza
+digital - \(2\) vasos desechables pequeños - Cuchara plástica
+
+\textbf{Procedimiento:}
+
+\emph{Preparación:} 1. Pesa \(5.0\,\text{g}\) de bicarbonato de sodio
+(\(NaHCO_3\)) en la balanza digital y colócalos en el vaso 1. 2. Mide
+\(30\,\text{mL}\) de vinagre (\(CH_3COOH\) al \(5\%\)) con la probeta y
+viértelos en el vaso 2.
+
+\emph{Ensayo 1 --- vinagre en exceso:} 3. Vierte el vinagre del vaso 2
+sobre el bicarbonato del vaso 1. Observa la efervescencia. 4. Espera a
+que la reacción se detenga por completo (sin burbujas). 5. Revisa el
+fondo del vaso con la cuchara: ¿quedó bicarbonato sin reaccionar? 6.
+Registra en la tabla si sobró bicarbonato.
+
+\emph{Ensayo 2 --- bicarbonato en exceso:} 7. Repite la preparación con
+cantidades invertidas: \(30\,\text{g}\) de bicarbonato en el vaso 1 y
+\(5\,\text{mL}\) de vinagre en el vaso 2. 8. Vierte el vinagre sobre el
+bicarbonato y observa. 9. Al detenerse la reacción, verifica con la
+cuchara si quedó bicarbonato sin reaccionar. 10. Compara los resultados
+de ambos ensayos: ¿en cuál sobró bicarbonato? ¿Cuál fue el reactivo
+límite en cada caso?
+
+\textbf{Resultados:}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Ensayo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(NaHCO_3\) (g)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Vinagre (mL)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+¿Sobró bicarbonato?
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reactivo límite
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(1\) & \(5.0\) & \(30\) & & \\
+\(2\) & \(30\) & \(5\) & & \\
+\end{longtable}
+}
+
+\textbf{Conclusión:} Basado en tus observaciones, ¿qué ensayo tuvo el
+vinagre como reactivo límite? ¿Cómo lo sabes?
+
+\(\underline{\hspace{6cm}}\)
+
+\(\underline{\hspace{6cm}}\)
+
+\(\underline{\hspace{6cm}}\)
+
+\setcolorsection{f0c4b8}{dcb0a4}
+
+\section{Evaluación --- Tipo ICFES}\label{evaluaciuxf3n-tipo-icfes}
+
+\textbf{Pregunta 1 --- Nivel Bajo}
+
+En la reacción \(N_2 + 3H_2 \rightarrow 2NH_3\), un estudiante dispone
+de \(2\,\text{mol}\) de \(N_2\) y \(4\,\text{mol}\) de \(H_2\).
+
+De acuerdo con la información anterior, ¿cuál de las siguientes
+afirmaciones es correcta?
+
+\begin{tcbraster}[raster columns=2, raster equal height, raster column skip=6pt, raster row skip=6pt]
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{A} El N$_2$ es el reactivo límite porque su coeficiente estequiométrico es $1$.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{B} El H$_2$ es el reactivo límite porque $\frac{4}{3} < \frac{2}{1}$.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{C} El N$_2$ y el H$_2$ están en proporción estequiométrica exacta.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{D} El H$_2$ es el reactivo límite porque hay menos moles de H$_2$ que de N$_2$.
+  \end{tcolorbox}
+\end{tcbraster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta 2 --- Nivel Bajo}
+
+La ecuación \(2H_2 + O_2 \rightarrow 2H_2O\) representa la formación de
+agua.
+
+Si se tienen \(4\,\text{g}\) de \(H_2\) y \(32\,\text{g}\) de \(O_2\),
+¿cuál de las siguientes opciones describe correctamente la situación?
+(Masas molares: \(H_2 = 2\,\text{g/mol}\), \(O_2 = 32\,\text{g/mol}\))
+
+\begin{tcbraster}[raster columns=2, raster equal height, raster column skip=6pt, raster row skip=6pt]
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{A} El oxígeno es el reactivo límite porque $32\,\text{g}$ $> 4\,\text{g}$.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{B} El hidrógeno es el reactivo límite porque $\frac{2}{2} = 1$ y $\frac{1}{1} = 1$, están en proporción exacta.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{C} El oxígeno es el reactivo límite porque $\frac{1}{1} = 1$ y $\frac{2}{2} = 1$, ambos están igual.
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{D} No hay reactivo límite porque ambos están en la proporción estequiométrica correcta.
+  \end{tcolorbox}
+\end{tcbraster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta 3 --- Nivel Medio}
+
+En un laboratorio se hacen reaccionar \(10.0\,\text{g}\) de calcio
+(\(Ca\)) con \(10.0\,\text{g}\) de oxígeno (\(O_2\)) según la ecuación
+\(2Ca + O_2 \rightarrow 2CaO\) (masas molares:
+\(Ca = 40.08\,\text{g/mol}\), \(O_2 = 32.00\,\text{g/mol}\),
+\(CaO = 56.08\,\text{g/mol}\)).
+
+¿Cuál es la masa máxima de CaO que se puede obtener?
+
+\begin{tcbraster}[raster columns=2, raster equal height, raster column skip=6pt, raster row skip=6pt]
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{A} $7.0$ g
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{B} $14.0$ g
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{C} $20.0$ g
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{D} $28.0$ g
+  \end{tcolorbox}
+\end{tcbraster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta 4 --- Nivel Medio}
+
+La fermentación de la glucosa produce etanol y dióxido de carbono:
+\(C_6H_{12}O_6 \rightarrow 2C_2H_5OH + 2CO_2\). Un ingeniero dispone de
+\(500\,\text{g}\) de glucosa y obtiene \(200\,\text{g}\) de etanol
+(masas molares: glucosa \(= 180.16\,\text{g/mol}\), etanol
+\(= 46.07\,\text{g/mol}\)).
+
+¿Cuál es el rendimiento porcentual de la reacción?
+
+\begin{tcbraster}[raster columns=2, raster equal height, raster column skip=6pt, raster row skip=6pt]
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{A} $39.1\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{B} $68.5\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{C} $78.3\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{D} $100\%$
+  \end{tcolorbox}
+\end{tcbraster}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta 5 --- Nivel Alto}
+
+En la tostación de la pirita (\(FeS_2\)) para producir \(SO_2\), la
+ecuación es \(4FeS_2 + 11O_2 \rightarrow 2Fe_2O_3 + 8SO_2\). Un mineral
+contiene \(240\,\text{g}\) de \(FeS_2\) con impurezas inertes y se usa
+oxígeno en exceso, obteniéndose \(192\,\text{g}\) de \(SO_2\) (masas
+molares: \(FeS_2 = 119.98\,\text{g/mol}\),
+\(SO_2 = 64.06\,\text{g/mol}\)).
+
+¿Cuál es el porcentaje de pureza del mineral?
+
+\begin{tcbraster}[raster columns=2, raster equal height, raster column skip=6pt, raster row skip=6pt]
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{A} $50.0\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{B} $62.5\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{C} $75.0\%$
+  \end{tcolorbox}
+  \begin{tcolorbox}[colback=white, colframe=icfesletra, arc=4pt, boxrule=0.6pt, left=8pt, right=8pt, top=6pt, bottom=6pt, valign=center]
+    \circletter{D} $87.5\%$
+  \end{tcolorbox}
+\end{tcbraster}
+
+\textbf{Autoevaluación:} Reflexiona sobre tu desempeño en esta
+evaluación. ¿En qué nivel te sentiste más seguro? ¿Qué concepto
+necesitas repasar?
+
+\setcolorsection{f0c4b8}{dcb0a4}
+
+\section{Socialización}\label{socializaciuxf3n}
+
+\textbf{Pregunta 1} --- Nivel Bajo \emph{Competencia:} Interpretación
+\emph{Afirmación:} Comprende las relaciones estequiométricas en una
+ecuación química balanceada. \emph{Evidencia:} Identifica correctamente
+el reactivo límite dividiendo los moles disponibles entre los
+coeficientes estequiométricos. \emph{Respuesta correcta:} B
+\emph{Explicación:} El cociente para \(N_2\) es \(\frac{2}{1} = 2\), y
+para \(H_2\) es \(\frac{4}{3} \approx 1.33\). Como \(1.33 < 2\), el
+\(H_2\) es el reactivo límite.
+
+\textbf{Pregunta 2} --- Nivel Bajo \emph{Competencia:} Argumentación
+\emph{Afirmación:} Justifica la identificación del reactivo límite
+basándose en cálculos estequiométricos. \emph{Evidencia:} Reconoce que
+cuando los cocientes \(\frac{\text{moles}}{\text{coeficiente}}\) son
+iguales, los reactivos están en proporción estequiométrica exacta y no
+hay reactivo límite. \emph{Respuesta correcta:} D \emph{Explicación:}
+\(H_2: \frac{2 \text{ mol}}{2} = 1\);
+\(O_2: \frac{1 \text{ mol}}{1} = 1\). Al ser iguales, ambos reactivos se
+consumen completamente y no hay reactivo límite.
+
+\textbf{Pregunta 3} --- Nivel Medio \emph{Competencia:} Interpretación
+\emph{Afirmación:} Determina la cantidad de producto a partir del
+reactivo límite. \emph{Evidencia:} Calcula los moles de cada reactivo y
+del producto usando relaciones estequiométricas. \emph{Respuesta
+correcta:} B \emph{Explicación:}
+\(Ca: \frac{10.0}{40.08} = 0.249\,\text{mol}\), cociente
+\(= \frac{0.249}{2} = 0.1245\).
+\(O_2: \frac{10.0}{32.00} = 0.3125\,\text{mol}\), cociente
+\(= \frac{0.3125}{1} = 0.3125\). El Ca es el reactivo límite. Masa de
+\(CaO = 0.249 \text{ mol} \times (\frac{2}{2}) \times 56.08 \text{ g/mol} = 14.0\,\text{g}\).
+
+\textbf{Pregunta 4} --- Nivel Medio \emph{Competencia:} Argumentación
+\emph{Afirmación:} Calcula el rendimiento porcentual de una reacción.
+\emph{Evidencia:} Relaciona el rendimiento real con el rendimiento
+teórico usando la fórmula del porcentaje de rendimiento. \emph{Respuesta
+correcta:} C \emph{Explicación:} Moles de glucosa
+\(= \frac{500}{180.16} = 2.775\,\text{mol}\). Rendimiento teórico de
+etanol \(= 2.775 \times 2 \times 46.07 = 255.6\,\text{g}\). \(\%\)
+rendimiento \(= (\frac{200}{255.6}) \times 100 = 78.3\%\).
+
+\textbf{Pregunta 5} --- Nivel Alto \emph{Competencia:} Proposición
+\emph{Afirmación:} Propone estrategias para determinar la pureza de un
+mineral a partir de datos experimentales. \emph{Evidencia:} Relaciona la
+masa de producto obtenida con la masa del reactivo puro necesaria,
+usando la estequiometría de la reacción. \emph{Respuesta correcta:} C
+\emph{Explicación:} Moles de \(SO_2\)
+\(= \frac{192}{64.06} = 3.0\,\text{mol}\). Moles de \(FeS_2\) puro
+\(= 3.0 \times (\frac{4}{8}) = 1.5\,\text{mol}\). Masa de \(FeS_2\) puro
+\(= 1.5 \times 119.98 = 180\,\text{g}\). Pureza
+\(= (\frac{180}{240}) \times 100 = 75\%\).
+
+\setcolorsection{f4c8d8}{e0b0c4}
+
+\section{Socioemocional}\label{socioemocional}
+
+Al aprender sobre el reactivo límite, es normal sentir que hay muchos
+pasos y cálculos que recordar. La clave está en la \textbf{Regulación
+Emocional} (Ley 2503 de 2025): reconocer que la frustración inicial es
+parte del proceso de aprendizaje y que cada paso resuelto es un logro.
+Identificar el reactivo límite en química es como identificar aquello
+que nos limita en la vida: cuando sabemos qué nos está frenando, podemos
+concentrar nuestros esfuerzos en eso y avanzar. Tú ya has superado
+conceptos difíciles antes; este es solo un escalón más. Respira,
+organiza tus pasos como organizas los cálculos, y verás que el resultado
+llega.
+
+\chapter{Masa molar}\label{masa-molar}
+
+\setcolorsection{e8e8e8}{d0d0d0}
+
+\section{Teoría}\label{teoruxeda-1}
+
+La \textbf{masa molar}, representada con la letra \textbf{M}, es la masa
+que tiene un mol de cualquier sustancia. Un \textbf{mol} es una cantidad
+fija de partículas: exactamente \(6.022 \times 10^{23}\) unidades, cifra
+conocida como \textbf{número de Avogadro}. Estas partículas pueden ser
+átomos, moléculas, iones o cualquier otra entidad química. La masa molar
+se expresa en gramos por mol (\(\text{g/mol}\)) y su valor numérico
+coincide con el peso atómico o el peso molecular de la sustancia, pero
+expresado en gramos en lugar de unidades de masa atómica. Por ejemplo,
+el carbono tiene un peso atómico de \(12.01 \, \text{u}\), por lo que su
+masa molar es \(12.01 \, \text{g/mol}\). El agua tiene un peso molecular
+de \(18.015 \, \text{u}\), por lo que su masa molar es
+\(18.015 \, \text{g/mol}\).
+
+Para calcular la masa molar de un elemento se toma su masa atómica de la
+tabla periódica y se expresa en \(\text{g/mol}\). Para calcular la masa
+molar de un compuesto se suman las masas atómicas de todos los átomos
+presentes en su fórmula química, multiplicando cada una por el número de
+veces que aparece ese elemento. La masa molar del ácido sulfúrico
+(\(\text{H}_2\text{SO}_4\)) se calcula así:
+
+\[M(\text{H}_2\text{SO}_4) = (2 \times 1.008) + (1 \times 32.06) + (4 \times 16.00) = 98.076 \, \text{g/mol}\]
+
+La masa molar permite convertir entre la masa de una sustancia, medible
+en una balanza, y la cantidad de sustancia en moles. La relación se
+expresa con la fórmula:
+
+\[n = \frac{m}{M}\]
+
+donde \(n\) es la cantidad en moles, \(m\) la masa en gramos y \(M\) la
+masa molar en \(\text{g/mol}\). Si se tienen \(36\) gramos de agua y su
+masa molar es \(18.016 \, \text{g/mol}\), la cantidad de moles es
+\(n = 36 / 18.016 = 2.0\) moles. Si se tienen \(3\) moles de
+\(\text{CO}_2\), cuya masa molar es \(44.01 \, \text{g/mol}\), la masa
+correspondiente es \(m = 3 \times 44.01 = 132.03\) gramos.
+
+La masa molar es fundamental en \textbf{estequiometría}, la rama de la
+química que estudia las proporciones en las reacciones químicas. Permite
+preparar disoluciones con concentraciones específicas y calcular las
+cantidades de reactivos y productos. Sin ella no sería posible
+relacionar lo que se mide en el laboratorio con lo que ocurre a nivel de
+partículas.
+
+\setcolorsection{f2c6a0}{e0b088}
+
+\section{Contextualización}\label{contextualizaciuxf3n}
+
+\subsection{1. La bolsa de caramelos}\label{la-bolsa-de-caramelos}
+
+Imagina que vas a una dulcería y compras una bolsa de caramelos. La
+bolsa siempre trae 30 caramelos, sin importar si son de menta o de
+fruta. Treinta es la cantidad fija por bolsa. En química existe una
+cantidad fija parecida, pero muchísimo más grande:
+\(6.022 \times 10^{23}\). A esa cantidad se le llama \textbf{mol}. Un
+mol es como la bolsa de caramelos: siempre trae el mismo número de
+partículas, sin importar de qué sustancia sean.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta de comprensión:} Si tienes un mol de átomos de carbono
+y un mol de moléculas de agua, ¿cuál de los dos tiene más partículas?
+
+\textbf{Pregunta socioemocional:} ¿Te imaginabas que los científicos
+usaran un número tan grande para contar partículas? ¿Cómo te hace sentir
+eso?
+
+\emph{Tómate un momento para responder las dos antes de seguir.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Respuesta esperada (pregunta de comprensión):} \textgreater{}
+Los dos tienen la misma cantidad de partículas. Un mol siempre tiene
+\(6.022 \times 10^{23}\) partículas, igual que una bolsa de caramelos
+siempre tiene 30 caramelos sin importar el sabor.
+
+\textbf{Sobre la pregunta socioemocional:} \textgreater{} Qué hacer con
+la respuesta: Cualquier respuesta es válida. Se puede comentar que por
+eso los átomos son tan pequeños: hacen falta 602 mil millones de
+billones para tener algo que se pueda pesar.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Si respondió bien la pregunta de comprensión:} → Continuar al
+siguiente micro-bloque.
+
+\textbf{Si no respondió bien:} → No avanzar. Releer el micro-bloque con
+otras palabras dentro de la misma analogía, luego volver a preguntar.
+
+\subsection{2. Caramelos de menta y caramelos de
+fruta}\label{caramelos-de-menta-y-caramelos-de-fruta}
+
+Ahora imagina dos bolsas de 30 caramelos cada una. Una tiene solo
+caramelos de menta y la otra solo de fruta. Cada caramelo de menta pesa
+\(5\) gramos. Cada caramelo de fruta pesa \(3\) gramos. La bolsa de
+menta pesa \(150\) gramos. La bolsa de fruta pesa \(90\) gramos. Las dos
+tienen la misma cantidad de caramelos, pero pesan distinto porque cada
+caramelo individual pesa diferente. En química pasa igual. Un mol de
+átomos de carbono y un mol de átomos de oxígeno tienen la misma cantidad
+de átomos, pero el mol de oxígeno pesa más porque cada átomo de oxígeno
+es más pesado. El peso de un mol de cualquier sustancia se llama
+\textbf{masa molar} y se mide en gramos por mol (\(\text{g/mol}\)).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta de comprensión:} ¿Por qué la masa molar del oxígeno
+(\(16.00 \, \text{g/mol}\)) es mayor que la del carbono
+(\(12.01 \, \text{g/mol}\)) si las dos son un mol?
+
+\textbf{Pregunta socioemocional:} ¿Te ha pasado algo parecido en la vida
+real, donde dos cosas tengan la misma cantidad pero pesos diferentes?
+Cuéntalo.
+
+\emph{Tómate un momento para responder las dos antes de seguir.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Respuesta esperada (pregunta de comprensión):} \textgreater{}
+Porque cada átomo de oxígeno pesa más que cada átomo de carbono. Es como
+dos bolsas de 30 caramelos: la de menta pesa más que la de fruta aunque
+las dos tengan 30 caramelos. Lo que cambia es el peso de cada unidad, no
+la cantidad de unidades.
+
+\textbf{Sobre la pregunta socioemocional:} \textgreater{} Qué hacer con
+la respuesta: Cualquier respuesta es válida. Ayuda a conectar el
+concepto con la experiencia cotidiana de la persona.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Si respondió bien la pregunta de comprensión:} → Continuar al
+siguiente micro-bloque.
+
+\textbf{Si no respondió bien:} → No avanzar. Releer el micro-bloque con
+otras palabras dentro de la misma analogía, luego volver a preguntar.
+
+\subsection{3. Caramelos mezclados en una misma
+bolsa}\label{caramelos-mezclados-en-una-misma-bolsa}
+
+Ahora imagina una bolsa que trae 12 caramelos de menta y 18 de fruta.
+Cada caramelo de menta pesa \(5\) gramos. Cada caramelo de fruta pesa
+\(3\) gramos. Para saber cuánto pesa la bolsa completa, multiplicas los
+12 de menta por \(5\) gramos y los 18 de fruta por \(3\) gramos. Luego
+sumas: \(12 \times 5 = 60\), \(18 \times 3 = 54\), \(60 + 54 = 114\)
+gramos por bolsa. En química se hace exactamente igual para calcular la
+masa molar de un compuesto. Se toman los átomos de cada elemento, se
+multiplica su peso por la cantidad que aparece en la fórmula, y se
+suman. Por ejemplo, en el agua (\(\text{H}_2\text{O}\)) hay dos átomos
+de hidrógeno y uno de oxígeno:
+
+\[(2 \times 1.008) + (1 \times 16.00) = 18.016 \, \text{g/mol}\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta de comprensión:} Si el carbono pesa
+\(12.01 \, \text{g/mol}\) y el oxígeno pesa \(16.00 \, \text{g/mol}\),
+¿cómo le harías para calcular la masa molar del \(\text{CO}_2\)? Puedes
+explicarlo con palabras o con números.
+
+\textbf{Pregunta socioemocional:} ¿Qué parte de esta cuenta te parece
+más fácil de recordar?
+
+\emph{Tómate un momento para responder las dos antes de seguir.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Respuesta esperada (pregunta de comprensión):} \textgreater{} Se
+suma el peso del carbono (\(12.01\)) más el peso de dos oxígenos
+(\(2 \times 16.00 = 32.00\)). Da
+\(12.01 + 32.00 = 44.01 \, \text{g/mol}\). O también se puede decir que
+se multiplica el peso de cada átomo por la cantidad de veces que aparece
+y se suman los resultados, como con los caramelos de menta y fruta.
+
+\textbf{Sobre la pregunta socioemocional:} \textgreater{} Qué hacer con
+la respuesta: Cualquier respuesta es válida. Se puede reforzar que lo
+importante es contar bien los átomos de cada elemento en la fórmula.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Si respondió bien la pregunta de comprensión:} → Continuar al
+siguiente micro-bloque.
+
+\textbf{Si no respondió bien:} → No avanzar. Releer el micro-bloque con
+otras palabras dentro de la misma analogía, luego volver a preguntar.
+
+\subsection{4. Del peso de los caramelos a cuántas bolsas
+tienes}\label{del-peso-de-los-caramelos-a-cuuxe1ntas-bolsas-tienes}
+
+Imagina que tienes una bolsa grande que pesa \(500\) gramos de caramelos
+surtidos. Ya sabes que cada bolsa individual de esa mezcla pesa \(114\)
+gramos. Para saber cuántas bolsas tienes, divides el peso total entre el
+peso de cada bolsa: \(500 / 114 \approx 4.4\) bolsas. En química se hace
+la misma operación con esta fórmula:
+
+\[n = \frac{m}{M}\]
+
+Aquí \(n\) son los moles. Son como las bolsas de caramelos. \(m\) es la
+masa total en gramos. Es como el peso de la bolsa grande de \(500\)
+gramos. \(M\) es la masa molar en \(\text{g/mol}\). Es como el peso de
+cada bolsa individual (\(114\) gramos). Por ejemplo, si tienes \(36\)
+gramos de agua y cada mol de agua pesa \(18.016\) gramos, entonces
+tienes \(36 / 18.016 \approx 2\) moles.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta de comprensión:} Si tienes \(88\) gramos de
+\(\text{CO}_2\) y cada mol de \(\text{CO}_2\) pesa \(44.01\) gramos,
+¿cuántos moles tienes? Puedes dar el número o explicar cómo se calcula.
+
+\textbf{Pregunta socioemocional:} Imagina que eres el dueño de la
+dulcería. ¿Cómo usarías esta misma cuenta en tu tienda?
+
+\emph{Tómate un momento para responder las dos antes de seguir.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Respuesta esperada (pregunta de comprensión):} \textgreater{}
+\(88 / 44.01 = 2\) moles de \(\text{CO}_2\). O también se puede explicar
+así: se divide la masa total (\(88\) gramos) entre lo que pesa un mol
+(\(44.01\) gramos) y el resultado es \(2\) moles. Es como tener \(88\)
+gramos de caramelos donde cada bolsa pesa \(44.01\) gramos: al dividir
+te da \(2\) bolsas.
+
+\textbf{Sobre la pregunta socioemocional:} \textgreater{} Qué hacer con
+la respuesta: Cualquier respuesta es válida. Ayuda a aplicar el concepto
+a un rol imaginario y refuerza la lógica de la fórmula.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Si respondió bien la pregunta de comprensión:} → Continuar al
+siguiente micro-bloque.
+
+\textbf{Si no respondió bien:} → No avanzar. Releer el micro-bloque con
+otras palabras dentro de la misma analogía, luego volver a preguntar.
+
+\subsection{5. Para qué sirve saber el peso de una
+bolsa}\label{para-quuxe9-sirve-saber-el-peso-de-una-bolsa}
+
+Cuando trabajas en la dulcería, saber cuánto pesa cada bolsa de
+caramelos te permite planificar. Si un cliente pide \(350\) gramos de
+caramelos surtidos, sabes cuántas bolsas abrir. Si tienes \(10\) bolsas
+en el estante, sabes cuánto pesan en total. Los químicos usan la masa
+molar exactamente para eso: para calcular cuánto necesitan de una
+sustancia y cuánto van a obtener en una reacción. Sin la masa molar, no
+podrían pasar de lo que ven en la balanza a lo que ocurre con los átomos
+y las moléculas.
+
+\begin{quote}
+💡 Si solo te quedas con una cosa, que sea esta: la masa molar es el
+peso de un mol de cualquier sustancia, y sirve para convertir entre
+gramos y moles usando \(n = m / M\). Es como saber el peso de una bolsa
+de caramelos para calcular cuántas bolsas tienes.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Pregunta de comprensión (la más importante):} Explica con tus
+propias palabras qué es la masa molar y para qué sirve. Puedes usar el
+ejemplo de los caramelos si quieres.
+
+\textbf{Pregunta socioemocional:} ¿Qué fue lo que más te gustó de
+aprender esto?
+
+\emph{Tómate un momento para responder las dos antes de seguir.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Respuesta esperada (pregunta de comprensión):} \textgreater{} La
+masa molar es el peso de un mol de una sustancia, expresado en
+\(\text{g/mol}\). Sirve para convertir entre gramos y moles usando
+\(n = m/M\). Es como el peso de una bolsa de caramelos: si sabes cuánto
+pesa una bolsa, puedes saber cuántas bolsas tienes a partir del peso
+total, o cuánto pesan varias bolsas.
+
+\textbf{Sobre la pregunta socioemocional:} \textgreater{} Qué hacer con
+la respuesta: Cualquier respuesta es válida. Se puede reforzar lo que
+más le llamó la atención.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Para terminar}\label{para-terminar}
+
+La masa molar es como el peso de una bolsa de caramelos que siempre trae
+\(6.022 \times 10^{23}\) caramelos. Cada sustancia tiene su propia masa
+molar porque sus partículas pesan diferente. Con ella puedes convertir
+gramos a moles y moles a gramos, y eso es lo que permite a los químicos
+medir y calcular las cantidades en el laboratorio.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Última pregunta --- la más importante:} Si tuvieras que
+explicarle qué es la masa molar a un compañero que no vino a clase, ¿qué
+le dirías?
+
+\begin{quote}
+Respuesta esperada: La masa molar es el peso de un mol. El mol es una
+cantidad fija de \(6.022 \times 10^{23}\) partículas. La masa molar
+sirve para convertir gramos a moles (dividiendo) o moles a gramos
+(multiplicando). Es como el peso de una bolsa de caramelos: si sabes
+cuánto pesa una bolsa, puedes saber cuántas bolsas tienes a partir del
+peso total.
+\end{quote}
+
+\textbf{Última pregunta socioemocional:} ¿Qué fue lo que más te gustó de
+aprender esto?
+
+\begin{quote}
+Qué hacer con la respuesta: Cualquier respuesta es válida.
+\end{quote}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Apéndices}
+\appendix
+
+\chapter{Referencias}\label{referencias}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-brown2022chemistry}
+Brown, Theodore L., H. Eugene LeMay, Bruce E. Bursten, Catherine J.
+Murphy, Patrick M. Woodward, y Matthew W. Stoltzfus. 2022.
+\emph{Chemistry: The Central Science}. 15.ª ed. Pearson.
+
+\bibitem[\citeproctext]{ref-chang2017quimica}
+Chang, Raymond, y Kenneth A. Goldsby. 2017. \emph{Química}. 12.ª ed.
+McGraw-Hill Interamericana.
+
+\end{CSLReferences}
+
+
+\backmatter
+
+
+\end{document}

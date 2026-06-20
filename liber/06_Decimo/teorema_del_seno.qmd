@@ -7,7 +7,7 @@ bibliography: ../references.bib
 
 La **trigonometría** es la rama de las matemáticas que estudia las relaciones entre los lados y los ángulos de los triángulos. El **teorema del seno** (o ley de senos) establece una proporción constante entre la longitud de cada lado de un triángulo y el seno del ángulo opuesto a dicho lado. Para cualquier triángulo $ABC$ con lados $a$, $b$ y $c$ opuestos a los vértices $A$, $B$ y $C$ respectivamente, se cumple:
 
-$$ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R \tag{1} $$
+$$ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R $$
 
 Donde $R$ es el radio de la **circunferencia circunscrita** (círculo que pasa por los tres vértices del triángulo) [@stewart2015precalculo].
 
@@ -25,7 +25,7 @@ El teorema del seno es particularmente útil para resolver triángulos oblicuán
 
 La constante $2R$ también permite calcular el área del triángulo mediante:
 
-$$ \text{Área} = \frac{abc}{4R} \tag{2} $$
+$$ \text{Área} = \frac{abc}{4R} $$
 
 ::: {.content-visible when-format="html"}
 

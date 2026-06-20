@@ -11,7 +11,7 @@ Para proporcionar información adicional, se indica el estado físico de los com
 
 **Fórmula (1):**
 
-$$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)\tag{1}$$
+$$2H_2(g) + O_2(g) \rightarrow 2H_2O(l)$$
 
 Donde los coeficientes indican que $2$ moles de $H_2$ gaseoso reaccionan con $1$ mol de $O_2$ gaseoso para producir $2$ moles de $H_2O$ líquida [@oriakhi2021chemistry].
 
@@ -79,7 +79,7 @@ Balancear es seguir 4 pasos en orden. Uno a la vez.
 
 **Paso 1:** Escribe <span style="color:blue">reactivos</span> a la izquierda y <span style="color:red">productos</span> a la derecha.
 
-$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+$CH_4 + O_2 \rightarrow CO_2 + H_2O$
 
 **Paso 2:** Cuenta los átomos de cada <span style="color:green">elemento</span> en ambos lados.
 
@@ -87,25 +87,25 @@ $${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\col
 
 **Paso 4:** Verifica que todo esté igual.
 
-$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$
 
 **Listo. Respira, repite el algoritmo y avanza.**
 
 **Ejemplo:**
-Balancea ${\color{blue}H_2} + {\color{green}O_2} \rightarrow {\color{red}H_2O}$
+Balancea $H_2 + O_2 \rightarrow H_2O$
 
 Paso 1: Reactivos H₂ y O₂ → producto H₂O.
 Paso 2: H=2 y 2, O=2 y 1 — el O no cuadra.
 Paso 3: Pon 2 en H₂O, luego 2 en H₂.
 
-$${\color{blue}2H_2} + {\color{green}O_2} \rightarrow {\color{red}2H_2O}$$
+$2H_2 + O_2 \rightarrow 2H_2O$
 
 Paso 4: H=4 y 4, O=2 y 2. **Balanceado.**
 
 **Ahora repite los 4 pasos en voz alta sin mirar.**
 
 **Ejercicios:**
-Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ aplicando los 4 pasos. **[Opcional: di cada paso en voz alta.]**
+Balancea $N_2 + H_2 \rightarrow NH_3$ aplicando los 4 pasos. **[Opcional: di cada paso en voz alta.]**
 
 **Metacognición:**
 1. ¿En qué paso te diste cuenta de que los átomos no igualaban?
@@ -133,7 +133,7 @@ Los <span style="color:blue">coeficientes</span> cambian, los subíndices no.
 
 **Ejemplo:** combustión de metano:
 
-$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+$CH_4 + O_2 \rightarrow CO_2 + H_2O$
 
 | Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
 |:---------|:---------:|:---------:|:------:|
@@ -143,7 +143,7 @@ $${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\col
 
 Ajusta con coeficientes: <span style="color:blue">2</span> en H₂O, <span style="color:green">2</span> en O₂.
 
-$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$
 
 | Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
 |:---------|:---------:|:---------:|:------:|
@@ -154,7 +154,7 @@ $${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\co
 **Balanceado. Cubre la tabla y reconstruye el conteo de memoria.**
 
 **Ejercicios:**
-Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ usando una tabla de conteo como la de arriba.
+Balancea $N_2 + H_2 \rightarrow NH_3$ usando una tabla de conteo como la de arriba.
 
 | Elemento | <span style="color:blue">Reactivos</span> | <span style="color:red">Productos</span> | Estado |
 |:---------|:---------:|:---------:|:------:|
@@ -190,14 +190,14 @@ Los atomos se conservan siempre.
 Tu no cambias los subindices.
 Tu colocas los coeficientes grandes.
 
-$${\color{blue}H_2} + {\color{red}O_2} \rightarrow {\color{green}H_2O}$$
+$H_2 + O_2 \rightarrow H_2O$
 
 <span style="color:blue">H</span>: 2 a la izquierda, 2 a la derecha — ✅
 <span style="color:red">O</span>: 2 a la izquierda, 1 a la derecha — ❌
 
 Ajusta:
 
-$${\color{blue}2H_2} + {\color{red}O_2} \rightarrow {\color{green}2H_2O}$$
+$2H_2 + O_2 \rightarrow 2H_2O$
 
 <span style="color:blue">H</span>: 4 y 4 — ✅
 <span style="color:red">O</span>: 2 y 2 — ✅
@@ -207,14 +207,14 @@ $${\color{blue}2H_2} + {\color{red}O_2} \rightarrow {\color{green}2H_2O}$$
 **Ejemplo:**
 <span style="color:blue">N₂</span> y <span style="color:red">H₂</span> forman <span style="color:green">NH₃</span>.
 
-$${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$$
+$$N_2 + H_2 \rightarrow NH_3$$
 
 <span style="color:blue">N</span>: 2 y 1 — no igual.
 <span style="color:red">H</span>: 2 y 3 — no igual.
 
 Pon <span style="color:blue">2</span> en NH₃. Pon <span style="color:red">3</span> en H₂.
 
-$${\color{blue}N_2} + {\color{red}3H_2} \rightarrow {\color{green}2NH_3}$$
+$N_2 + 3H_2 \rightarrow 2NH_3$
 
 <span style="color:blue">N</span>: 2 y 2 — igual. <span style="color:red">H</span>: 6 y 6 — igual.
 
@@ -247,7 +247,7 @@ Puedes responder escribiendo, grabando un audio o explicándoselo a un compañer
 No se modifican los <span style="color:red">subindices</span>.
 Solo se modifican los <span style="color:green">coeficientes</span> delante de las formulas.
 
-$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+$CH_4 + O_2 \rightarrow CO_2 + H_2O$
 
 Aplica la regla:
 
@@ -259,7 +259,7 @@ Aplica la regla:
 
 Ajusta para cumplir la regla:
 
-$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$
 
 | Elemento | <span style="color:blue">Antes</span> | <span style="color:red">Despues</span> | ¿Cumple? |
 |:---------|:---------:|:---------:|:--------:|
@@ -270,13 +270,13 @@ $${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\co
 **La regla se cumple. Ecuación balanceada. Aplica el mismo algoritmo a cualquier ecuación.**
 
 **Ejemplo:**
-Aplica la regla fija a ${\color{blue}H_2} + {\color{green}O_2} \rightarrow {\color{red}H_2O}$
+Aplica la regla fija a $H_2 + O_2 \rightarrow H_2O$
 
 Paso A: Cuenta átomos antes y después.
 Paso B: Si no cumplen la regla, ajusta coeficientes.
 Paso C: Verifica que la regla se cumpla para todos los elementos.
 
-$${\color{blue}2H_2} + {\color{green}O_2} \rightarrow {\color{red}2H_2O}$$
+$2H_2 + O_2 \rightarrow 2H_2O$
 
 | Elemento | <span style="color:blue">Antes</span> | <span style="color:red">Despues</span> | ¿Cumple? |
 |:---------|:---------:|:---------:|:--------:|
@@ -286,7 +286,7 @@ $${\color{blue}2H_2} + {\color{green}O_2} \rightarrow {\color{red}2H_2O}$$
 **Regla cumplida. El algoritmo funciona siempre.**
 
 **Ejercicios:**
-Balancea ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$ aplicando la regla fija. **[Opcion A: escribe los pasos. Opcion B: completa la tabla de antes/despues.]** ¿Se cumple la regla? SI / NO.
+Balancea $N_2 + H_2 \rightarrow NH_3$ aplicando la regla fija. **[Opcion A: escribe los pasos. Opcion B: completa la tabla de antes/despues.]** ¿Se cumple la regla? SI / NO.
 
 **Metacognición:**
 1. Sin mirar, escribe la regla fija con tus palabras. ¿La recordaste completa?
@@ -316,7 +316,7 @@ El balanceo asegura que la materia se conserve.
 **Escucha la proporcion:**
 Metano (<span style="color:blue">CH₄</span>) y oxigeno (<span style="color:green">O₂</span>) forman dioxido de carbono (<span style="color:blue">CO₂</span>) y agua (<span style="color:red">H₂O</span>).
 
-$${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\color{red}H_2O}$$
+$CH_4 + O_2 \rightarrow CO_2 + H_2O$
 
 **Tacto:** Cuenta los atomos con los dedos.
 <span style="color:blue">C: 1 y 1</span> — iguales.
@@ -325,20 +325,20 @@ $${\color{blue}CH_4} + {\color{green}O_2} \rightarrow {\color{blue}CO_2} + {\col
 
 **Ajuste:** Pon <span style="color:blue">2</span> en agua y <span style="color:green">2</span> en oxigeno.
 
-$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$
 
 **Ahora cierra los ojos y traza la ecuacion con el dedo mientras dices los nombres en voz alta.**
 
 **Ejemplo:**
 <span style="color:blue">H₂</span> (hidrogeno) y <span style="color:red">O₂</span> (oxigeno) forman <span style="color:green">H₂O</span> (agua).
 
-$${\color{blue}H_2} + {\color{red}O_2} \rightarrow {\color{green}H_2O}$$
+$H_2 + O_2 \rightarrow H_2O$
 
 **Tacto:** Cuenta con los dedos. H: 2 y 2. O: 2 y 1.
 **Oido:** Di "hidrogeno: 2 y 2 — bien. Oxigeno: 2 y 1 — mal."
 **Ajuste:** Pon 2 en agua y 2 en hidrogeno.
 
-$${\color{blue}2H_2} + {\color{red}O_2} \rightarrow {\color{green}2H_2O}$$
+$2H_2 + O_2 \rightarrow 2H_2O$
 
 **Traza la ecuacion final con el dedo. Siente como los numeros ahora cuadran.**
 
@@ -373,7 +373,7 @@ Cada intento fallido te ensena algo nuevo.
 
 Escribe la ecuacion, cuenta los atomos, ajusta los coeficientes.
 
-$${\color{blue}CH_4} + {\color{green}2O_2} \rightarrow {\color{blue}CO_2} + {\color{red}2H_2O}$$
+$CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O$
 
 **Respira profundo. Revisa cada elemento uno por uno.**
 Si algo no cuadra, vuelve al paso anterior y prueba otra vez.
@@ -383,18 +383,18 @@ Si algo no cuadra, vuelve al paso anterior y prueba otra vez.
 **Lograste balancearla. Cada ecuacion que completas fortalece tu capacidad de resolver problemas. Sigue asi.**
 
 **Ejemplo:**
-Intenta balancear ${\color{blue}N_2} + {\color{red}H_2} \rightarrow {\color{green}NH_3}$
+Intenta balancear $N_2 + H_2 \rightarrow NH_3$
 
 No pasa nada si no sale al primer intento. Respira.
 
 Prueba con 2 en NH₃ y 3 en H₂:
 
-$${\color{blue}N_2} + {\color{red}3H_2} \rightarrow {\color{green}2NH_3}$$
+$N_2 + 3H_2 \rightarrow 2NH_3$
 
 **Revisa con calma:** N: 2 y 2. H: 6 y 6. **Lo lograste.**
 
 **Ejercicios:**
-Balancea ${\color{blue}Fe} + {\color{green}O_2} \rightarrow {\color{red}Fe_2O_3}$ sin apuro. **[Opcional: resuelve en pareja con un compañero.]** Al terminar, ¿como te sentiste del 1 al 5?
+Balancea $Fe + O_2 \rightarrow Fe_2O_3$ sin apuro. **[Opcional: resuelve en pareja con un compañero.]** Al terminar, ¿como te sentiste del 1 al 5?
 
 **Metacognición:**
 1. ¿En que momento sentiste que no iba a salir? ¿Que hiciste para seguir?

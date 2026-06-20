@@ -10,7 +10,7 @@ Para identificar cuál es el reactivo limitante se sigue un método general de c
 
 Considérese la síntesis del metanol:
 
-$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}$$
+$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}$$
 
 Se dispone de $4 \, \text{mol}$ de $\text{CO}$ y $6 \, \text{mol}$ de $\text{H}_2$. Aplicando el tercer paso: el $\text{CO}$ podría producir $4 \, \text{mol}$ de $\text{CH}_3\text{OH}$ (relación $1:1$), mientras que el $\text{H}_2$ produciría solo $3 \, \text{mol}$ (relación $2:1$). El $\text{H}_2$ es el reactivo limitante porque genera menos producto. El $\text{CO}$ está en exceso y sobra $1 \, \text{mol}$ sin reaccionar.
 
@@ -54,7 +54,7 @@ Para identificar el reactivo limitante se usan cuatro pasos. Son siempre los mis
 
    Si te dan la masa en gramos, usas la masa molar de cada sustancia:
 
-   $$n = \frac{m}{M} \tag{2}$$
+   $$n = \frac{m}{M}$$
 
    donde $n$ es la cantidad en moles, $m$ la masa en gramos y $M$ la masa molar en $\text{g/mol}$.
 
@@ -72,7 +72,7 @@ Para identificar el reactivo limitante se usan cuatro pasos. Son siempre los mis
 
    3.4. Multiplica los moles del reactivo por la relación molar:
 
-   $$n_{\text{producto}} = n_{\text{reactivo}} \times \frac{\text{coeficiente del producto}}{\text{coeficiente del reactivo}} \tag{3}$$
+   $$n_{\text{producto}} = n_{\text{reactivo}} \times \frac{\text{coeficiente del producto}}{\text{coeficiente del reactivo}}$$
 
    3.5. Desarrolla la operación. Si obtienes una fracción, déjala expresada o conviértela a decimal.
 
@@ -109,7 +109,7 @@ Apliquemos los cuatro pasos a un caso concreto.
 
 **Reacción:** la síntesis de metanol
 
-$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH} \tag{1}$$
+$$\text{CO} + 2\text{H}_2 \rightarrow \text{CH}_3\text{OH}$$
 
 **Datos iniciales:** se tienen $4 \, \text{mol}$ de $\text{CO}$ y $6 \, \text{mol}$ de $\text{H}_2$.
 
