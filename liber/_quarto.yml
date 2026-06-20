@@ -32,6 +32,7 @@ book:
     - part: "Décimo - Química"
       chapters:
         - 06_Decimo/reactivo_limite.qmd
+        - 06_Decimo/plan-clase-masa-molar.qmd
   appendices:
     - bibliografia.qmd
 
