@@ -60,10 +60,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c875dbb4c9335aca9cc352e974a4ec92.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3949d0d2357c2c3dc95b1a1cd02c4615.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -91,6 +91,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -987,17 +988,6 @@ section.level2.evaluacion > :not(h2) {
 }
 </style>
 <script>
-(function () {
-  var pres = document.querySelectorAll('pre.mermaid');
-  for (var i = 0; i < pres.length; i++) {
-    var code = pres[i].querySelector('code');
-    if (code) {
-      pres[i].setAttribute('data-mermaid-src', code.textContent);
-    }
-  }
-})();
-</script>
-<script>
 document.addEventListener('DOMContentLoaded', function () {
   if (document.getElementById('accordion-body')) return;
 
@@ -1125,23 +1115,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     renderMermaidInSection(firstBody);
   }
-
-  var tooltipMap = {
-    'Source Code': 'Código fuente',
-    'Download': 'Descargar',
-    'Share': 'Compartir',
-    'Download PDF': 'Descargar PDF',
-    'Download ePub': 'Descargar ePub'
-  };
-  document.querySelectorAll('.sidebar-tools a[title]').forEach(function (a) {
-    var en = a.getAttribute('title');
-    if (tooltipMap[en]) a.setAttribute('title', tooltipMap[en]);
-    var label = a.getAttribute('aria-label');
-    if (tooltipMap[label]) a.setAttribute('aria-label', tooltipMap[label]);
-  });
-  document.querySelectorAll('.sidebar-tools .menu-text').forEach(function (span) {
-    if (tooltipMap[span.textContent]) span.textContent = tooltipMap[span.textContent];
-  });
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1574,4 +1547,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

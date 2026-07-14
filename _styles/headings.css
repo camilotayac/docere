@@ -155,3 +155,10 @@ section.level2 table {
   }
 }
 
+/* Responsive ICFES grid - mobile */
+@media (max-width: 576px) {
+  .icfes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
