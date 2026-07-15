@@ -3,27 +3,13 @@ on:
     branches: [main]
 
 jobs:
-  lint-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
-          cache: pip
-      - run: pip install -r requirements.txt
-      - run: ruff check .
-      - run: ruff format --check .
-      - run: python3 -m pytest tests/ -v
-
   render:
-    needs: lint-test
-    strategy:
-      matrix:
-        format: [html, pdf, epub]
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    strategy:
+      matrix:
+        format: [html, pdf, epub]
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2

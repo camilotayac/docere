@@ -126,12 +126,46 @@ end
 
 -- ── Iterate all cells from a Table ─────────────
 
+local function cell_content(cell)
+  if cell.contents then return cell.contents end
+  if cell.content then return cell.content end
+  return cell
+end
+
+local function row_cells(row)
+  if row.cells then return row.cells end
+  return row
+end
+
+local function body_rows(body)
+  -- Pandoc 3.x: body.body contains rows
+  -- Pandoc 2.x: body.rows contains rows
+  return body.body or body.rows or {}
+end
+
 local function each_cell(tbl, fn)
-  local rows = tbl.body and tbl.body.rows or tbl.rows
-  for _, row in ipairs(rows) do
-    local cs = row.cells or row
-    for _, cell in ipairs(cs) do
-      fn(cell.content or cell)
+  if tbl.bodies then
+    -- Pandoc 3.x: bodies is a list of TableBody objects
+    for _, body in ipairs(tbl.bodies) do
+      for _, row in ipairs(body_rows(body)) do
+        for _, cell in ipairs(row_cells(row)) do
+          fn(cell_content(cell))
+        end
+      end
+    end
+  elseif tbl.body and tbl.body.rows then
+    -- Pandoc 2.x: body is a single object with rows
+    for _, row in ipairs(tbl.body.rows) do
+      for _, cell in ipairs(row_cells(row)) do
+        fn(cell_content(cell))
+      end
+    end
+  elseif tbl.rows then
+    -- Pandoc 2.x fallback: rows directly on table
+    for _, row in ipairs(tbl.rows) do
+      for _, cell in ipairs(row_cells(row)) do
+        fn(cell_content(cell))
+      end
     end
   end
 end
@@ -302,12 +336,12 @@ end
 
 function Table(el)
   if not in_evaluacion then return el end
-  if FORMAT == "latex" then return latex_grid(el)
+  if quarto.doc.is_format("latex") then return latex_grid(el)
   else return html_grid(el) end
 end
 
 function LineBlock(el)
   if not in_evaluacion then return el end
-  if FORMAT == "latex" then return latex_grid_from_lineblock(el)
+  if quarto.doc.is_format("latex") then return latex_grid_from_lineblock(el)
   else return html_grid_from_lineblock(el) end
 end

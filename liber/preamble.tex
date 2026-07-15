@@ -4,6 +4,7 @@
 \definecolor{docere-url}{HTML}{0000cc}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[version=4]{mhchem}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
@@ -18,7 +19,8 @@
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
 
-\usepackage[most]{tcolorbox}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, raster}
 
 \definecolor{icfesletra}{HTML}{000000}
 \newcommand{\circletter}[1]{\textcircled{#1}}
@@ -58,8 +60,8 @@
   \setlength{\belowdisplayskip}{1em}
   \setlength{\abovedisplayshortskip}{0.5em}
   \setlength{\belowdisplayshortskip}{0.5em}
-  \pagenumbering{roman}
+  \frontmatter
   \includepdf[pages=-, fitpaper]{Portada.pdf}
-  \pagenumbering{arabic}
+  \mainmatter
   \pagestyle{plain}
 }

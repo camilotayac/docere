@@ -29,10 +29,9 @@ book:
         - index.qmd
         - 01_Generalidades/01_Introduccion.qmd
         - 01_Generalidades/02_PlanDeArea.qmd
-    - part: "Décimo - Química"
-      chapters:
-        - 06_Decimo/reactivo_limite.qmd
-        - 06_Decimo/plan-clase-masa-molar.qmd
+    # - part: "Décimo - Química"
+    #   chapters:
+    #     - 06_Decimo/
   appendices:
     - bibliografia.qmd
 

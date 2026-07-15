@@ -13,17 +13,6 @@ section.level2.evaluacion > :not(h2) {
 }
 </style>
 <script>
-(function () {
-  var pres = document.querySelectorAll('pre.mermaid');
-  for (var i = 0; i < pres.length; i++) {
-    var code = pres[i].querySelector('code');
-    if (code) {
-      pres[i].setAttribute('data-mermaid-src', code.textContent);
-    }
-  }
-})();
-</script>
-<script>
 document.addEventListener('DOMContentLoaded', function () {
   if (document.getElementById('accordion-body')) return;
 
@@ -151,22 +140,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     renderMermaidInSection(firstBody);
   }
-
-  var tooltipMap = {
-    'Source Code': 'Código fuente',
-    'Download': 'Descargar',
-    'Share': 'Compartir',
-    'Download PDF': 'Descargar PDF',
-    'Download ePub': 'Descargar ePub'
-  };
-  document.querySelectorAll('.sidebar-tools a[title]').forEach(function (a) {
-    var en = a.getAttribute('title');
-    if (tooltipMap[en]) a.setAttribute('title', tooltipMap[en]);
-    var label = a.getAttribute('aria-label');
-    if (tooltipMap[label]) a.setAttribute('aria-label', tooltipMap[label]);
-  });
-  document.querySelectorAll('.sidebar-tools .menu-text').forEach(function (span) {
-    if (tooltipMap[span.textContent]) span.textContent = tooltipMap[span.textContent];
-  });
 });
 </script>
