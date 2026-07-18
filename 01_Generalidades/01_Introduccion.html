@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e32115f3dd58062eca9dea6b3a38b2e0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b9eaee60a963b5d74e9d33cc267de6a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6dd35f2e0c9a06afe838f292fc81ffdd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../_styles/headings.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -180,12 +179,29 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Apéndices</span></a>
+ <span class="menu-text">Décimo - Química</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/cinematica-quimica-clase-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cinética Química</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
@@ -299,6 +315,24 @@ section.level2.evaluacion > :not(h2) {
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   if (document.getElementById('accordion-body')) return;
+
+  // Close any open icfes-respuesta details tags
+  // The Lua filter only emits <details> opening before clave-respuestas.
+  // We restructure the DOM so <details> only wraps clave-respuestas content,
+  // and question sections become siblings after it.
+  var openDetails = document.querySelectorAll('details.icfes-respuesta');
+  openDetails.forEach(function (d) {
+    var parent = d.parentNode;
+    var children = Array.from(d.children);
+    var insertBefore = d.nextSibling;
+    for (var k = children.length - 1; k >= 0; k--) {
+      var child = children[k];
+      if (child.tagName === 'SECTION' && !child.classList.contains('clave-respuestas')) {
+        parent.insertBefore(child, insertBefore);
+        insertBefore = child;
+      }
+    }
+  });
 
   var TARGET = [
     'teoria', 'ideas-previas', 'contexto', 'caracterizados',
@@ -425,6 +459,718 @@ document.addEventListener('DOMContentLoaded', function () {
     renderMermaidInSection(firstBody);
   }
 });
+</script>
+<noscript>
+<style id="accordion-noscript">
+section.level2.teoria > :not(h2),
+section.level2.ideas-previas > :not(h2),
+section.level2.contexto > :not(h2),
+section.level2.caracterizados > :not(h2),
+section.level2.retos > :not(h2),
+section.level2.socioemocional > :not(h2),
+section.level2.ejercicios > :not(h2),
+section.level2.aplicacion > :not(h2),
+section.level2.ejemplo > :not(h2),
+section.level2.evaluacion > :not(h2) {
+  display: block !important;
+}
+</style>
+</noscript>
+<style id="a11y-toolbar-style">
+#a11y-toolbar {
+  position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+  display: flex; flex-direction: column; gap: 6px;
+  font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+#a11y-toolbar button {
+  width: 44px; height: 44px; border: 2px solid #a06050; border-radius: 50%;
+  background: #fdf5f2; color: #503020; font-size: 18px; font-weight: bold;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.1s; line-height: 1;
+}
+#a11y-toolbar button:hover { background: #f0ddd4; transform: scale(1.08); }
+#a11y-toolbar button:active { transform: scale(0.95); }
+#a11y-toolbar button.active { background: #a06050; color: #fff; }
+#a11y-toolbar .a11y-label {
+  position: absolute; right: 52px; background: #503020; color: #fff;
+  padding: 4px 10px; border-radius: 4px; font-size: 13px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+#a11y-toolbar button:hover .a11y-label { opacity: 1; }
+#a11y-toolbar .a11y-separator { width: 28px; height: 2px; background: #c08070; margin: 2px auto; border-radius: 1px; }
+#a11y-fontsize-display, #a11y-tts-status {
+  position: fixed; bottom: 20px; right: 76px; background: #503020; color: #fff;
+  padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: bold;
+  opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999;
+}
+#a11y-fontsize-display.show, #a11y-tts-status.show { opacity: 1; }
+@media (forced-colors: active) { #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; } }
+#a11y-tts-speed-wrap { position: relative; }
+#a11y-tts-slider {
+  position: absolute; right: 52px; bottom: 0; background: #503020;
+  padding: 8px 12px; border-radius: 8px; display: flex; align-items: center;
+  gap: 8px; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#a11y-tts-range {
+  width: 100px; height: 6px; -webkit-appearance: none; appearance: none;
+  background: #c08070; border-radius: 3px; outline: none; cursor: pointer;
+}
+#a11y-tts-range::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
+  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+}
+#a11y-tts-range::-moz-range-thumb {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+}
+#a11y-tts-speed-val { color: #fff; font-size: 13px; font-weight: bold; min-width: 30px; text-align: center; }
+@media (prefers-reduced-motion: reduce) { #a11y-toolbar button { transition: none; } }
+</style>
+
+<div id="a11y-toolbar" role="toolbar" aria-label="Controles de accesibilidad">
+  <button id="a11y-font-plus" aria-label="Aumentar tamaño de texto" title="Aumentar texto">
+    <span aria-hidden="true">T+</span><span class="a11y-label">Aumentar texto</span>
+  </button>
+  <button id="a11y-font-minus" aria-label="Disminuir tamaño de texto" title="Disminuir texto">
+    <span aria-hidden="true">T-</span><span class="a11y-label">Disminuir texto</span>
+  </button>
+  <button id="a11y-font-reset" aria-label="Restablecer tamaño de texto" title="Restablecer">
+    <span aria-hidden="true">1x</span><span class="a11y-label">Restablecer tamaño</span>
+  </button>
+  <div class="a11y-separator" aria-hidden="true"></div>
+  <button id="a11y-tts-play" aria-label="Leer texto en voz alta" title="Leer texto">
+    <span aria-hidden="true">▶</span><span class="a11y-label">Leer texto</span>
+  </button>
+  <button id="a11y-tts-pause" aria-label="Pausar lectura" title="Pausar" style="display:none;">
+    <span aria-hidden="true" class="icon-pause">❚❚</span>
+    <span aria-hidden="true" class="icon-play" style="display:none;">▶</span>
+    <span class="a11y-label label-pause">Pausar</span>
+    <span class="a11y-label label-play" style="display:none;">Reanudar</span>
+  </button>
+  <button id="a11y-tts-stop" aria-label="Detener lectura" title="Detener" style="display:none;">
+    <span aria-hidden="true">■</span><span class="a11y-label">Detener</span>
+  </button>
+  <div id="a11y-tts-speed-wrap">
+    <button id="a11y-tts-speed-btn" aria-label="Velocidad de lectura" title="Velocidad">
+      <span aria-hidden="true">⚙</span><span class="a11y-label">Velocidad</span>
+    </button>
+    <div id="a11y-tts-slider" style="display:none;">
+      <input type="range" id="a11y-tts-range" min="0.5" max="2" step="0.25" value="1" aria-label="Velocidad de lectura">
+      <span id="a11y-tts-speed-val">1x</span>
+    </div>
+  </div>
+  <button id="a11y-tts-voice" aria-label="Voz femenina" title="Voz: Femenina">
+    <span aria-hidden="true">♀</span><span class="a11y-label">Voz: Femenina</span>
+  </button>
+</div>
+
+<div id="a11y-fontsize-display" aria-live="polite"></div>
+<div id="a11y-tts-status" aria-live="assertive"></div>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ═══════════════════════════════════════════════════════════════
+     FONT SIZE
+     ═══════════════════════════════════════════════════════════════ */
+  var MAIN_CONTENT = document.getElementById('quarto-document-content');
+  var STORAGE_KEY = 'natura-docens-fontsize';
+  var BASE_SIZE = 1.25, STEP = 0.125, MIN = 0.875, MAX = 2.5;
+  var HEADING_SCALES = { h1: 2.0, h2: 1.5, h3: 1.25, h4: 1.1, h5: 1.0, h6: 1.0 };
+
+  function getCurrentSize() {
+    var v = localStorage.getItem(STORAGE_KEY);
+    if (!v) return BASE_SIZE;
+    var n = parseFloat(v);
+    // Migrate old px values (>10 means it was stored as px)
+    if (n > 10) { n = n / 16; localStorage.setItem(STORAGE_KEY, n); }
+    return n;
+  }
+  function applySize(rem) {
+    if (MAIN_CONTENT) {
+      MAIN_CONTENT.style.fontSize = rem + 'rem';
+      MAIN_CONTENT.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function(h) {
+        h.style.fontSize = (rem * (HEADING_SCALES[h.tagName.toLowerCase()] || 1.0)) + 'rem';
+      });
+    }
+    localStorage.setItem(STORAGE_KEY, rem);
+    var el = document.getElementById('a11y-fontsize-display');
+    el.textContent = 'Tamaño: ' + Math.round(rem * 16) + 'px'; el.classList.add('show');
+    clearTimeout(el._t); el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+  }
+  document.getElementById('a11y-font-plus').onclick = function() { applySize(Math.min(getCurrentSize() + STEP, MAX)); };
+  document.getElementById('a11y-font-minus').onclick = function() { applySize(Math.max(getCurrentSize() - STEP, MIN)); };
+  document.getElementById('a11y-font-reset').onclick = function() { applySize(BASE_SIZE); };
+  var savedSize = getCurrentSize(); if (savedSize !== BASE_SIZE) applySize(savedSize);
+
+  /* ═══════════════════════════════════════════════════════════════
+     TTS
+     ═══════════════════════════════════════════════════════════════ */
+  var synth = window.speechSynthesis;
+  if (!synth) { document.getElementById('a11y-toolbar').style.display = 'none'; return; }
+
+  var TTS_PLAY = document.getElementById('a11y-tts-play');
+  var TTS_PAUSE = document.getElementById('a11y-tts-pause');
+  var TTS_STOP = document.getElementById('a11y-tts-stop');
+  var TTS_STATUS = document.getElementById('a11y-tts-status');
+  var TTS_VOICE_BTN = document.getElementById('a11y-tts-voice');
+  var VOICE_KEY = 'natura-docens-ttsvoice';
+  var voiceGender = 'female';
+  var BEST_FEMALE = ['Paulina', 'Sandy', 'Shelley', 'Flo', 'Monica'];
+  var BEST_MALE = ['Eddy', 'Reed', 'Rocko', 'Grandpa'];
+
+  function findBestVoice(voices, names) {
+    for (var i = 0; i < names.length; i++) {
+      var f = voices.filter(function(v) { return v.name && v.name.indexOf(names[i]) !== -1; })[0];
+      if (f) return f;
+    }
+    return null;
+  }
+  function getSpanishVoice() {
+    var voices = synth.getVoices();
+    var es = voices.filter(function(v) { return v.lang && v.lang.indexOf('es') === 0; });
+    if (!es.length) return null;
+    var best = findBestVoice(es, voiceGender === 'female' ? BEST_FEMALE : BEST_MALE);
+    if (best) return best;
+    var mx = es.filter(function(v) { return v.lang === 'es-MX'; })[0]; if (mx) return mx;
+    var sp = es.filter(function(v) { return v.lang === 'es-ES'; })[0]; if (sp) return sp;
+    return es[0] || null;
+  }
+  function updateVoiceButton() {
+    var icon = TTS_VOICE_BTN.querySelector('span:first-child');
+    var label = TTS_VOICE_BTN.querySelector('.a11y-label');
+    icon.textContent = voiceGender === 'female' ? '\u2640' : '\u2642';
+    label.textContent = 'Voz: ' + (voiceGender === 'female' ? 'Femenina' : 'Masculina');
+    TTS_VOICE_BTN.setAttribute('aria-label', 'Voz ' + (voiceGender === 'female' ? 'femenina' : 'masculina'));
+  }
+  var savedVoice = localStorage.getItem(VOICE_KEY); if (savedVoice) voiceGender = savedVoice; updateVoiceButton();
+
+  function showStatus(msg) { TTS_STATUS.textContent = msg; TTS_STATUS.classList.add('show'); }
+  function hideStatus() { TTS_STATUS.classList.remove('show'); }
+
+  var isPaused = false;
+  function updateButtons(speaking) {
+    TTS_PLAY.style.display = speaking ? 'none' : '';
+    TTS_PAUSE.style.display = speaking ? '' : 'none';
+    TTS_STOP.style.display = speaking ? '' : 'none';
+    if (speaking) { TTS_PLAY.classList.add('active'); updatePauseBtn(false); }
+    else { TTS_PLAY.classList.remove('active'); TTS_PAUSE.style.display = 'none'; TTS_STOP.style.display = 'none'; updatePauseBtn(false); }
+  }
+  function updatePauseBtn(paused) {
+    isPaused = paused;
+    var ip = TTS_PAUSE.querySelector('.icon-pause'), il = TTS_PAUSE.querySelector('.icon-play');
+    var lp = TTS_PAUSE.querySelector('.label-pause'), ll = TTS_PAUSE.querySelector('.label-play');
+    ip.style.display = paused ? 'none' : ''; il.style.display = paused ? '' : 'none';
+    lp.style.display = paused ? 'none' : ''; ll.style.display = paused ? '' : 'none';
+    TTS_PAUSE.setAttribute('aria-label', paused ? 'Reanudar lectura' : 'Pausar lectura');
+    TTS_PAUSE.setAttribute('title', paused ? 'Reanudar' : 'Pausar');
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     DOM FILTERING
+     ═══════════════════════════════════════════════════════════════ */
+  var SKIP = { SCRIPT:1, STYLE:1, NOSCRIPT:1, SVG:1, MATH:1, MQ:1, PRE:1, CODE:1, KBD:1, SAMP:1, VAR:1, NAV:1, FOOTER:1, HEADER:1, ASIDE:1, IFRAME:1, CANVAS:1, TEMPLATE:1 };
+  var SKIP_SEL = ['.cell-code','.sourceCode','.code-block','pre','code','.callout-caption','.quarto-btn-toggle','.sidebar','.quarto-sidebar','[aria-hidden="true"]','.toc-title','.page-navigation','.back-to-top','.section-nav','.doc-footer'];
+  var INLINE_TAGS = { STRONG:1, B:1, EM:1, I:1, U:1, S:1, MARK:1, SMALL:1, SUP:1, SUB:1, ABBR:1, CITE:1, Q:1, A:1, SPAN:1, TIME:1, CODE:1 };
+
+  function isHidden(el) {
+    if (el.nodeType !== 1) return false;
+    var s = window.getComputedStyle(el);
+    return s.display === 'none' || s.visibility === 'hidden' || (el.offsetHeight === 0 && el.offsetWidth === 0);
+  }
+  function isSkipped(el) {
+    if (!el || el.nodeType !== 1) return false;
+    if (SKIP[el.tagName]) return true;
+    for (var i = 0; i < SKIP_SEL.length; i++) {
+      if (el.matches && el.matches(SKIP_SEL[i])) return true;
+      if (el.closest && el.closest(SKIP_SEL[i])) return true;
+    }
+    return false;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     STRUCTURAL TEXT EXTRACTION
+     ═══════════════════════════════════════════════════════════════ */
+  function extractInline(el) {
+    var parts = [];
+    for (var i = 0; i < el.childNodes.length; i++) {
+      var c = el.childNodes[i];
+      if (c.nodeType === 3) { if (c.textContent.length > 0) parts.push({ text: c.textContent, node: c }); }
+      else if (c.nodeType === 1) {
+        if (isSkipped(c) || isHidden(c)) continue;
+        if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
+        if (INLINE_TAGS[c.tagName]) { var inner = extractInline(c); for (var j = 0; j < inner.length; j++) parts.push(inner[j]); }
+      }
+    }
+    return parts;
+  }
+
+  function extractContentParts(el) {
+    var parts = [];
+    for (var i = 0; i < el.childNodes.length; i++) {
+      var c = el.childNodes[i];
+      if (c.nodeType === 3) { if (c.textContent.length > 0) parts.push({ text: c.textContent, node: c }); }
+      else if (c.nodeType === 1) {
+        if (isSkipped(c) || isHidden(c)) continue;
+        if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
+        if (INLINE_TAGS[c.tagName]) { var inner = extractInline(c); for (var j = 0; j < inner.length; j++) parts.push(inner[j]); }
+        else { var nested = extractContentParts(c); for (var k = 0; k < nested.length; k++) parts.push(nested[k]); }
+      }
+    }
+    return parts;
+  }
+
+  function extractStructural(root) {
+    var spans = [];
+    function addSpan(text, type, node) { if (text && text.length > 0) spans.push({ text: text, type: type, node: node }); }
+    function addContent(el) {
+      var parts = extractContentParts(el);
+      for (var i = 0; i < parts.length; i++) addSpan(parts[i].text, 'content', parts[i].node);
+    }
+
+    function processElement(el) {
+      if (isSkipped(el) || isHidden(el)) return;
+      var tag = el.tagName;
+
+      if (tag === 'H1' || tag === 'H2' || tag === 'H3' || tag === 'H4' || tag === 'H5' || tag === 'H6') {
+        var level = parseInt(tag[1]);
+        addSpan(level === 1 ? 'Título. ' : level === 2 ? 'Subtítulo. ' : 'Sección. ', 'marker', null);
+        addContent(el);
+        addSpan('. ', 'pause', null);
+        return;
+      }
+
+      if (tag === 'P') {
+        addContent(el);
+        addSpan('. ', 'pause', null);
+        return;
+      }
+
+      if (tag === 'LI') {
+        addSpan('Ítem. ', 'marker', null);
+        addContent(el);
+        addSpan('. ', 'pause', null);
+        for (var j = 0; j < el.children.length; j++) {
+          var child = el.children[j];
+          if (child.tagName === 'UL' || child.tagName === 'OL') processElement(child);
+        }
+        return;
+      }
+
+      if (tag === 'UL' || tag === 'OL') {
+        for (var i = 0; i < el.children.length; i++) {
+          if (el.children[i].tagName === 'LI') processElement(el.children[i]);
+        }
+        return;
+      }
+
+      if (tag === 'BLOCKQUOTE') {
+        addSpan('Cita. ', 'marker', null);
+        for (var i = 0; i < el.children.length; i++) processElement(el.children[i]);
+        return;
+      }
+
+      // ── TABLES ──
+      if (tag === 'TABLE') {
+        // Read caption first if present
+        var cap = el.querySelector('caption');
+        if (cap) { addSpan('Tabla. ', 'marker', null); addContent(cap); addSpan('. ', 'pause', null); }
+        // Read header cells directly (THEAD is in skip list)
+        var thead = el.querySelector('thead');
+        if (thead) {
+          addSpan('Encabezados: ', 'marker', null);
+          var headerCells = thead.querySelectorAll('th, td');
+          for (var hi = 0; hi < headerCells.length; hi++) {
+            addContent(headerCells[hi]);
+            if (hi < headerCells.length - 1) addSpan(', ', 'pause', null);
+          }
+          addSpan('. ', 'pause', null);
+        }
+        // Read body rows
+        var tbody = el.querySelector('tbody');
+        var rows = tbody ? tbody.querySelectorAll('tr') : [];
+        for (var ri = 0; ri < rows.length; ri++) {
+          var cells = rows[ri].querySelectorAll('td, th');
+          if (cells.length === 0) continue;
+          addSpan('Fila ' + (ri + 1) + '. ', 'marker', null);
+          for (var ci = 0; ci < cells.length; ci++) {
+            addContent(cells[ci]);
+            if (ci < cells.length - 1) addSpan(', ', 'pause', null);
+          }
+          addSpan('. ', 'pause', null);
+        }
+        return;
+      }
+
+      // Skip thead/tbody/tr individually — TABLE handler above processes them
+      if (tag === 'THEAD' || tag === 'TBODY' || tag === 'TFOOT' || tag === 'TR' || tag === 'TD' || tag === 'TH' || tag === 'CAPTION') {
+        return;
+      }
+
+      // ── ICFES MULTIPLE CHOICE OPTIONS ──
+      if (tag === 'DIV' && el.classList.contains('icfes-opciones')) {
+        var opts = el.querySelectorAll('.icfes-opcion');
+        for (var oi = 0; oi < opts.length; oi++) {
+          addSpan('Opción ' + String.fromCharCode(65 + oi) + '. ', 'marker', null);
+          addSpan(' ', 'pause', null);
+          addContent(opts[oi]);
+          addSpan('. ', 'pause', null);
+        }
+        return;
+      }
+
+      for (var i = 0; i < el.children.length; i++) processElement(el.children[i]);
+    }
+
+    for (var i = 0; i < root.children.length; i++) processElement(root.children[i]);
+    return spans;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     TTS CORE — Chunked Queue
+     ═══════════════════════════════════════════════════════════════ */
+  var ttsText = '';
+  var ttsTextNodes = [];
+  var ttsChunks = [];       // {text, start, end} — full-text offsets
+  var ttsIsActive = false;
+  var ttsSession = 0;
+  var ttsMainEl = null;
+  var ttsCurrentChar = 0;
+  var ttsHighlightEl = null;
+  var ttsFallbackTimer = null;
+  var ttsWatchdog = null;
+  var ttsPrepared = false;
+
+  function ensureHighlightEl() {
+    if (ttsHighlightEl) return;
+    ttsHighlightEl = document.createElement('div');
+    ttsHighlightEl.style.cssText = 'position:absolute;display:none;pointer-events:none;background:rgba(160,96,80,0.25);border:2px solid rgba(160,96,80,0.6);border-radius:4px;z-index:9998;transition:none;';
+    document.body.appendChild(ttsHighlightEl);
+  }
+
+  function prepareTTS() {
+    ttsMainEl = document.getElementById('quarto-document-content');
+    if (!ttsMainEl) return false;
+    ttsTextNodes = [];
+    ttsChunks = [];
+    var spans = extractStructural(ttsMainEl);
+
+    // Build full text + text node map + chunks
+    var text = '';
+    var chunkStart = 0;
+    var hasContent = false;
+
+    for (var i = 0; i < spans.length; i++) {
+      var span = spans[i];
+      var startPos = text.length;
+      text += span.text;
+      if (span.type === 'content' && span.node) {
+        ttsTextNodes.push({ node: span.node, start: startPos, text: span.text });
+        hasContent = true;
+      }
+      // Create chunk at pause points (paragraph breaks, heading ends, etc.)
+      if (span.type === 'pause') {
+        var chunkText = text.substring(chunkStart);
+        if (chunkText.trim().length > 0) {
+          ttsChunks.push({ text: chunkText, start: chunkStart, end: text.length });
+        }
+        chunkStart = text.length;
+      }
+    }
+    // Final chunk (content after last pause)
+    if (chunkStart < text.length) {
+      var chunkText = text.substring(chunkStart);
+      if (chunkText.trim().length > 0) {
+        ttsChunks.push({ text: chunkText, start: chunkStart, end: text.length });
+      }
+    }
+
+    ttsText = text;
+    ttsPrepared = hasContent && ttsChunks.length > 0;
+    ensureHighlightEl();
+    return ttsPrepared;
+  }
+
+  function invalidateTTS() {
+    ttsPrepared = false;
+    ttsText = '';
+    ttsTextNodes = [];
+    ttsChunks = [];
+  }
+
+  function showHighlight(absIdx) {
+    if (!ttsHighlightEl || !ttsTextNodes.length) return;
+    if (absIdx < 0 || absIdx >= ttsText.length) return;
+
+    var ws = absIdx, we = absIdx;
+    while (ws > 0 && /\S/.test(ttsText[ws - 1])) ws--;
+    while (we < ttsText.length && /\S/.test(ttsText[we])) we++;
+    if (we <= ws) return;
+
+    var sn = null, so = 0, en = null, eo = 0;
+    for (var i = 0; i < ttsTextNodes.length; i++) {
+      var tn = ttsTextNodes[i];
+      var tnEnd = tn.start + tn.text.length;
+      if (!sn && tnEnd > ws) { sn = tn.node; so = ws - tn.start; }
+      if (tnEnd >= we) { en = tn.node; eo = we - tn.start; break; }
+    }
+    if (!sn || !en) return;
+
+    try {
+      var r = document.createRange();
+      var soC = Math.max(0, Math.min(so, sn.textContent.length));
+      var eoC = Math.max(0, Math.min(eo, en.textContent.length));
+      if (soC >= sn.textContent.length && eoC >= en.textContent.length) return;
+      r.setStart(sn, soC);
+      r.setEnd(en, eoC);
+
+      var rects = r.getClientRects();
+      if (!rects || rects.length === 0) return;
+      var rect = rects[0];
+      if (!rect.width || !rect.height) return;
+
+      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      var scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+
+      ttsHighlightEl.style.display = 'block';
+      ttsHighlightEl.style.left = (rect.left + scrollX - 3) + 'px';
+      ttsHighlightEl.style.top = (rect.top + scrollY - 3) + 'px';
+      ttsHighlightEl.style.width = (rect.width + 6) + 'px';
+      ttsHighlightEl.style.height = (rect.height + 6) + 'px';
+
+      var visTop = scrollY, visBot = scrollY + window.innerHeight;
+      if (rect.top < visTop + 80 || rect.bottom > visBot - 80) {
+        window.scrollTo({ top: Math.max(0, rect.top + scrollY - window.innerHeight / 3), behavior: 'smooth' });
+      }
+    } catch(e) {}
+  }
+
+  function hideHighlight() { if (ttsHighlightEl) ttsHighlightEl.style.display = 'none'; }
+
+  function clearTimers() {
+    if (ttsFallbackTimer) { clearInterval(ttsFallbackTimer); ttsFallbackTimer = null; }
+  }
+  function startWatchdog() {
+    stopWatchdog();
+    ttsWatchdog = setInterval(function() { if (synth.speaking && !synth.paused) synth.resume(); }, 10000);
+  }
+  function stopWatchdog() { if (ttsWatchdog) { clearInterval(ttsWatchdog); ttsWatchdog = null; } }
+
+  // Find which chunk contains a given absolute char index
+  function findChunkForChar(absChar) {
+    for (var i = 0; i < ttsChunks.length; i++) {
+      if (absChar >= ttsChunks[i].start && absChar < ttsChunks[i].end) return i;
+    }
+    // If at exact end of last chunk, return last chunk
+    if (ttsChunks.length > 0 && absChar >= ttsChunks[ttsChunks.length - 1].start) return ttsChunks.length - 1;
+    return 0;
+  }
+
+  function speakFrom(startChar) {
+    clearTimers();
+    synth.cancel();
+    hideHighlight();
+
+    if (!ttsText.trim() || ttsChunks.length === 0) {
+      ttsIsActive = false; updateButtons(false); hideStatus(); return;
+    }
+
+    ttsIsActive = true;
+    ttsCurrentChar = startChar;
+    var session = ttsSession;
+    var voice = getSpanishVoice();
+    var startChunkIdx = findChunkForChar(startChar);
+
+    // Sequential chunk speaker
+    function speakChunk(chunkIdx) {
+      if (chunkIdx >= ttsChunks.length || ttsSession !== session || !ttsIsActive) {
+        // All done
+        hideHighlight();
+        ttsIsActive = false;
+        ttsCurrentChar = 0;
+        updateButtons(false);
+        hideStatus();
+        stopWatchdog();
+        clearTimers();
+        return;
+      }
+
+      var chunk = ttsChunks[chunkIdx];
+      var text = chunk.text;
+      if (!text.trim()) { speakChunk(chunkIdx + 1); return; }
+
+      var utt = new SpeechSynthesisUtterance(text);
+      utt.lang = 'es-CO';
+      utt.rate = currentRate;
+      if (voice) utt.voice = voice;
+
+      var gotBoundary = false;
+      var lastHL = 0;
+
+      utt.onboundary = function(e) {
+        if (e.name !== 'word' || ttsSession !== session) return;
+        gotBoundary = true;
+        var now = Date.now();
+        if (now - lastHL < 30) return;
+        lastHL = now;
+        var abs = chunk.start + e.charIndex;
+        ttsCurrentChar = abs;
+        showHighlight(abs);
+      };
+
+      utt.onend = function() {
+        if (ttsSession !== session || !ttsIsActive) return;
+        // Natural pause between chunks: 400ms
+        setTimeout(function() {
+          if (ttsSession !== session || !ttsIsActive) return;
+          speakChunk(chunkIdx + 1);
+        }, 400);
+      };
+
+      utt.onerror = function(e) {
+        if (e.error !== 'canceled' && ttsSession === session) {
+          clearTimers(); hideHighlight(); ttsIsActive = false;
+          updateButtons(false); hideStatus(); stopWatchdog();
+        }
+      };
+
+      synth.speak(utt);
+      startWatchdog();
+
+      // Fallback timer for voices without boundary events
+      setTimeout(function() {
+        if (gotBoundary || ttsSession !== session || !ttsIsActive) return;
+        var words = text.split(/(\s+)/);
+        var wIdx = 0, charPos = 0, wordList = [];
+        for (var i = 0; i < words.length; i++) {
+          if (/\S/.test(words[i])) wordList.push(chunk.start + charPos);
+          charPos += words[i].length;
+        }
+        var interval = Math.round(700 / currentRate);
+        ttsFallbackTimer = setInterval(function() {
+          if (ttsSession !== session || !ttsIsActive) { clearTimers(); return; }
+          if (wIdx < wordList.length) { showHighlight(wordList[wIdx]); ttsCurrentChar = wordList[wIdx]; wIdx++; }
+          else clearTimers();
+        }, interval);
+      }, 800);
+    }
+
+    speakChunk(startChunkIdx);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     CLICK-TO-READ
+     ═══════════════════════════════════════════════════════════════ */
+  function getCharAtPoint(cx, cy) {
+    var r = null;
+    if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(cx, cy);
+    else if (document.caretPositionFromPoint) {
+      var p = document.caretPositionFromPoint(cx, cy);
+      if (p) { r = document.createRange(); r.setStart(p.offsetNode, p.offset); r.setEnd(p.offsetNode, p.offset); }
+    }
+    if (!r || !ttsMainEl || !ttsMainEl.contains(r.startContainer)) return -1;
+    for (var i = 0; i < ttsTextNodes.length; i++) {
+      if (ttsTextNodes[i].node === r.startContainer) return ttsTextNodes[i].start + r.startOffset;
+    }
+    return -1;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     EVENTS
+     ═══════════════════════════════════════════════════════════════ */
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('#a11y-tts-speed-wrap')) {
+      var sl = document.getElementById('a11y-tts-slider'); if (sl) sl.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!ttsPrepared) return;
+    var main = document.getElementById('quarto-document-content');
+    if (!main || !main.contains(e.target)) return;
+    if (e.target.closest('a, button, input, select, textarea, .cell-code, pre, code')) return;
+    var idx = getCharAtPoint(e.clientX, e.clientY);
+    if (idx < 0) return;
+    while (idx > 0 && /\S/.test(ttsText[idx - 1])) idx--;
+    ttsSession++; ttsCurrentChar = idx;
+    updateButtons(true); showStatus('Leyendo desde aquí...');
+    speakFrom(idx);
+  });
+
+  TTS_PLAY.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (ttsIsActive) return;
+    if (!ttsPrepared && !prepareTTS()) { showStatus('No hay contenido para leer'); setTimeout(hideStatus, 2000); return; }
+    ttsSession++; updateButtons(true); showStatus('Leyendo...');
+    speakFrom(ttsCurrentChar);
+  });
+
+  TTS_PAUSE.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (isPaused) { synth.resume(); updatePauseBtn(false); showStatus('Reanudando...'); setTimeout(hideStatus, 1200); }
+    else { synth.pause(); updatePauseBtn(true); showStatus('Pausado'); }
+  });
+
+  TTS_STOP.addEventListener('click', function(e) {
+    e.stopPropagation();
+    ttsIsActive = false; ttsSession++; synth.cancel(); clearTimers(); stopWatchdog();
+    hideHighlight(); updateButtons(false); hideStatus(); ttsCurrentChar = 0;
+  });
+
+  TTS_VOICE_BTN.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var wasActive = ttsIsActive;
+    voiceGender = voiceGender === 'female' ? 'male' : 'female';
+    localStorage.setItem(VOICE_KEY, voiceGender); updateVoiceButton();
+    var v = getSpanishVoice(); var name = v ? v.name : 'No disponible';
+    if (wasActive) {
+      showStatus('Voz cambiada, continuando...'); setTimeout(hideStatus, 1500);
+      ttsSession++; speakFrom(ttsCurrentChar);
+    } else {
+      showStatus('Voz: ' + (voiceGender === 'female' ? 'Femenina' : 'Masculina') + ' (' + name + ')');
+      setTimeout(hideStatus, 2000);
+    }
+  });
+
+  /* ═══════════════════════════════════════════════════════════════
+     SPEED
+     ═══════════════════════════════════════════════════════════════ */
+  var TTS_SPEED_BTN = document.getElementById('a11y-tts-speed-btn');
+  var TTS_SLIDER = document.getElementById('a11y-tts-slider');
+  var TTS_RANGE = document.getElementById('a11y-tts-range');
+  var TTS_SPEED_VAL = document.getElementById('a11y-tts-speed-val');
+  var SPEED_KEY = 'natura-docens-ttsspeed';
+  var currentRate = 1;
+
+  function applySpeed(rate) {
+    currentRate = rate; localStorage.setItem(SPEED_KEY, rate);
+    TTS_RANGE.value = rate; TTS_SPEED_VAL.textContent = rate + 'x';
+  }
+  TTS_SPEED_BTN.addEventListener('click', function(e) {
+    e.stopPropagation();
+    TTS_SLIDER.style.display = TTS_SLIDER.style.display === 'none' ? 'flex' : 'none';
+  });
+  var speedDebounce = null;
+  TTS_RANGE.addEventListener('input', function() {
+    var newRate = parseFloat(this.value); applySpeed(newRate);
+    if (ttsIsActive && ttsText) {
+      showStatus('Velocidad: ' + newRate + 'x');
+      clearTimeout(speedDebounce);
+      speedDebounce = setTimeout(function() { ttsSession++; speakFrom(ttsCurrentChar); }, 300);
+    }
+  });
+  var savedSpeed = localStorage.getItem(SPEED_KEY);
+  if (savedSpeed) currentRate = parseFloat(savedSpeed);
+  applySpeed(currentRate);
+
+  if (synth.onvoiceschanged !== undefined) { synth.onvoiceschanged = function() { getSpanishVoice(); }; }
+
+  var mutTimer = null;
+  var observer = new MutationObserver(function() { clearTimeout(mutTimer); mutTimer = setTimeout(invalidateTTS, 1000); });
+  if (MAIN_CONTENT) observer.observe(MAIN_CONTENT, { childList: true, subtree: true });
+
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
