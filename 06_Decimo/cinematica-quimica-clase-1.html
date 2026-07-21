@@ -8,7 +8,7 @@
 
 <meta name="author" content="Camilo Tayac">
 
-<title>4&nbsp; Cinética Química – Natura Docens</title>
+<title>Cinética Química – Natura Docens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,10 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e32115f3dd58062eca9dea6b3a38b2e0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-27fd94ca9aa44b9240e1e48a9b19eda0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6dd35f2e0c9a06afe838f292fc81ffdd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b74d03431a34d80dccffb63ca65268fe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-cba0dcfa6e04600f052c1a79ff43cec4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b74d03431a34d80dccffb63ca65268fe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +77,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Natura Docens">
+<meta name="theme-color" content="#fdf5f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2b2b2b" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="Portada.png">
+<link rel="apple-touch-icon" href="Portada.png">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -104,9 +117,189 @@ window.Quarto = {
 };
 </script>
 
+<meta property="og:title" content="Natura Docens">
+<meta property="og:description" content="Ciencias Naturales - Libro interactivo de química para educación media.">
+<meta property="og:image" content="https://camilotayac.github.io/docere/06_Decimo/Portada.png">
+<meta property="og:site_name" content="Natura Docens">
+<meta name="twitter:title" content="Cinética Química – Natura Docens">
+<meta name="twitter:description" content="">
+<meta name="twitter:creator" content="camilotayac">
+<meta name="twitter:site" content="camilotayac">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,7 +309,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cinética Química</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Cinética Química</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -165,8 +358,15 @@ window.Quarto = {
             Facebook
             </a>
           </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
       </ul>
     </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -188,20 +388,17 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Estructura del libro</span></span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inicio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalidades</span></span></a>
+  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generalidades</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/02_PlanDeArea.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span></a>
+  <a href="../01_Generalidades/02_PlanDeArea.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Plan de Área de Ciencias Naturales</span></a>
   </div>
 </li>
       </ul>
@@ -217,8 +414,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../06_Decimo/cinematica-quimica-clase-1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cinética Química</span></span></a>
+  <a href="../06_Decimo/cinematica-quimica-clase-1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cinética Química</span></a>
   </div>
 </li>
       </ul>
@@ -235,7 +431,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
+ <span class="menu-text">Bibliografía</span></a>
   </div>
 </li>
       </ul>
@@ -250,48 +446,41 @@ window.Quarto = {
     <h2 id="toc-title">Contenido</h2>
    
   <ul>
-  <li><a href="#ideas-previas" id="toc-ideas-previas" class="nav-link active" data-scroll-target="#ideas-previas"><span class="header-section-number">4.1</span> Ideas previas</a>
+  <li><a href="#ideas-previas" id="toc-ideas-previas" class="nav-link active" data-scroll-target="#ideas-previas">Ideas previas</a>
   <ul class="collapse">
-  <li><a href="#contexto" id="toc-contexto" class="nav-link" data-scroll-target="#contexto"><span class="header-section-number">4.1.1</span> 1. Contexto</a></li>
-  <li><a href="#comprensión-lectora" id="toc-comprensión-lectora" class="nav-link" data-scroll-target="#comprensión-lectora"><span class="header-section-number">4.1.2</span> 2. Comprensión lectora</a></li>
-  <li><a href="#ámbitos-de-aplicación" id="toc-ámbitos-de-aplicación" class="nav-link" data-scroll-target="#ámbitos-de-aplicación"><span class="header-section-number">4.1.3</span> 3. Ámbitos de aplicación</a></li>
-  <li><a href="#preguntas-sobre-ámbitos-de-aplicación" id="toc-preguntas-sobre-ámbitos-de-aplicación" class="nav-link" data-scroll-target="#preguntas-sobre-ámbitos-de-aplicación"><span class="header-section-number">4.1.4</span> 4. Preguntas sobre ámbitos de aplicación</a></li>
-  <li><a href="#lo-que-necesitas-saber-antes-de-empezar" id="toc-lo-que-necesitas-saber-antes-de-empezar" class="nav-link" data-scroll-target="#lo-que-necesitas-saber-antes-de-empezar"><span class="header-section-number">4.1.5</span> 5. Lo que necesitas saber antes de empezar</a></li>
+  <li><a href="#contexto" id="toc-contexto" class="nav-link" data-scroll-target="#contexto">Contexto</a></li>
+  <li><a href="#ámbitos-de-aplicación" id="toc-ámbitos-de-aplicación" class="nav-link" data-scroll-target="#ámbitos-de-aplicación">Ámbitos de aplicación</a></li>
   </ul></li>
-  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización"><span class="header-section-number">4.2</span> Contextualización</a>
+  <li><a href="#contextualización" id="toc-contextualización" class="nav-link" data-scroll-target="#contextualización">Contextualización</a>
   <ul class="collapse">
-  <li><a href="#qué-significa-estudiar-cómo-ocurren-las-cosas" id="toc-qué-significa-estudiar-cómo-ocurren-las-cosas" class="nav-link" data-scroll-target="#qué-significa-estudiar-cómo-ocurren-las-cosas"><span class="header-section-number">4.2.1</span> 1. Qué significa estudiar cómo ocurren las cosas</a></li>
-  <li><a href="#por-qué-no-todo-choque-produce-un-cambio" id="toc-por-qué-no-todo-choque-produce-un-cambio" class="nav-link" data-scroll-target="#por-qué-no-todo-choque-produce-un-cambio"><span class="header-section-number">4.2.2</span> 2. Por qué no todo choque produce un cambio</a></li>
-  <li><a href="#cómo-las-bolas-se-parecen-a-las-partículas" id="toc-cómo-las-bolas-se-parecen-a-las-partículas" class="nav-link" data-scroll-target="#cómo-las-bolas-se-parecen-a-las-partículas"><span class="header-section-number">4.2.3</span> 3. Cómo las bolas se parecen a las partículas</a></li>
-  <li><a href="#la-velocidad-depende-de-las-condiciones" id="toc-la-velocidad-depende-de-las-condiciones" class="nav-link" data-scroll-target="#la-velocidad-depende-de-las-condiciones"><span class="header-section-number">4.2.4</span> 4. La velocidad depende de las condiciones</a></li>
-  <li><a href="#cuánto-importa-estar-dividido-el-estado-físico" id="toc-cuánto-importa-estar-dividido-el-estado-físico" class="nav-link" data-scroll-target="#cuánto-importa-estar-dividido-el-estado-físico"><span class="header-section-number">4.2.5</span> 5. Cuánto importa estar dividido: el estado físico</a></li>
-  <li><a href="#cuántas-partículas-hay-la-concentración" id="toc-cuántas-partículas-hay-la-concentración" class="nav-link" data-scroll-target="#cuántas-partículas-hay-la-concentración"><span class="header-section-number">4.2.6</span> 6. Cuántas partículas hay: la concentración</a></li>
-  <li><a href="#cuánto-se-mueven-la-temperatura" id="toc-cuánto-se-mueven-la-temperatura" class="nav-link" data-scroll-target="#cuánto-se-mueven-la-temperatura"><span class="header-section-number">4.2.7</span> 7. Cuánto se mueven: la temperatura</a></li>
-  <li><a href="#un-secreto-de-abuela-el-catalizador" id="toc-un-secreto-de-abuela-el-catalizador" class="nav-link" data-scroll-target="#un-secreto-de-abuela-el-catalizador"><span class="header-section-number">4.2.8</span> 8. Un secreto de abuela: el catalizador</a></li>
-  <li><a href="#cómo-se-mide-la-velocidad" id="toc-cómo-se-mide-la-velocidad" class="nav-link" data-scroll-target="#cómo-se-mide-la-velocidad"><span class="header-section-number">4.2.9</span> 9. Cómo se mide la velocidad</a></li>
-  <li><a href="#velocidad-de-aparición-y-desaparición" id="toc-velocidad-de-aparición-y-desaparición" class="nav-link" data-scroll-target="#velocidad-de-aparición-y-desaparición"><span class="header-section-number">4.2.10</span> 10. Velocidad de aparición y desaparición</a></li>
-  <li><a href="#para-terminar" id="toc-para-terminar" class="nav-link" data-scroll-target="#para-terminar"><span class="header-section-number">4.2.11</span> Para terminar</a></li>
+  <li><a href="#qué-significa-estudiar-cómo-ocurren-las-cosas" id="toc-qué-significa-estudiar-cómo-ocurren-las-cosas" class="nav-link" data-scroll-target="#qué-significa-estudiar-cómo-ocurren-las-cosas">Qué significa estudiar cómo ocurren las cosas</a></li>
+  <li><a href="#por-qué-no-todo-choque-produce-un-cambio" id="toc-por-qué-no-todo-choque-produce-un-cambio" class="nav-link" data-scroll-target="#por-qué-no-todo-choque-produce-un-cambio">Por qué no todo choque produce un cambio</a></li>
+  <li><a href="#la-velocidad-depende-de-las-condiciones" id="toc-la-velocidad-depende-de-las-condiciones" class="nav-link" data-scroll-target="#la-velocidad-depende-de-las-condiciones">La velocidad depende de las condiciones</a></li>
+  <li><a href="#cuánto-importa-estar-dividido-el-estado-físico" id="toc-cuánto-importa-estar-dividido-el-estado-físico" class="nav-link" data-scroll-target="#cuánto-importa-estar-dividido-el-estado-físico">Cuánto importa estar dividido: el estado físico</a></li>
+  <li><a href="#cuántas-partículas-hay-la-concentración" id="toc-cuántas-partículas-hay-la-concentración" class="nav-link" data-scroll-target="#cuántas-partículas-hay-la-concentración">Cuántas partículas hay: la concentración</a></li>
+  <li><a href="#cuánto-se-mueven-la-temperatura" id="toc-cuánto-se-mueven-la-temperatura" class="nav-link" data-scroll-target="#cuánto-se-mueven-la-temperatura">Cuánto se mueven: la temperatura</a></li>
+  <li><a href="#un-secreto-de-abuela-el-catalizador" id="toc-un-secreto-de-abuela-el-catalizador" class="nav-link" data-scroll-target="#un-secreto-de-abuela-el-catalizador">Un secreto de abuela: el catalizador</a></li>
+  <li><a href="#cómo-se-mide-la-velocidad" id="toc-cómo-se-mide-la-velocidad" class="nav-link" data-scroll-target="#cómo-se-mide-la-velocidad">Cómo se mide la velocidad</a></li>
   </ul></li>
-  <li><a href="#ejemplos-resueltos" id="toc-ejemplos-resueltos" class="nav-link" data-scroll-target="#ejemplos-resueltos"><span class="header-section-number">4.3</span> Ejemplos resueltos</a>
+  <li><a href="#ejemplos-resueltos" id="toc-ejemplos-resueltos" class="nav-link" data-scroll-target="#ejemplos-resueltos">Ejemplos resueltos</a>
   <ul class="collapse">
-  <li><a href="#nivel-básico" id="toc-nivel-básico" class="nav-link" data-scroll-target="#nivel-básico"><span class="header-section-number">4.3.1</span> Nivel básico</a></li>
-  <li><a href="#nivel-medio" id="toc-nivel-medio" class="nav-link" data-scroll-target="#nivel-medio"><span class="header-section-number">4.3.2</span> Nivel medio</a></li>
-  <li><a href="#nivel-alto" id="toc-nivel-alto" class="nav-link" data-scroll-target="#nivel-alto"><span class="header-section-number">4.3.3</span> Nivel alto</a></li>
+  <li><a href="#ejemplo-1-básico" id="toc-ejemplo-1-básico" class="nav-link" data-scroll-target="#ejemplo-1-básico">Ejemplo 1 (Básico)</a></li>
+  <li><a href="#ejemplo-2-medio" id="toc-ejemplo-2-medio" class="nav-link" data-scroll-target="#ejemplo-2-medio">Ejemplo 2 (Medio)</a></li>
+  <li><a href="#ejemplo-3-alto" id="toc-ejemplo-3-alto" class="nav-link" data-scroll-target="#ejemplo-3-alto">Ejemplo 3 (Alto)</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">4.4</span> Ejercicios</a>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios">Ejercicios</a>
   <ul class="collapse">
-  <li><a href="#nivel-básico-1" id="toc-nivel-básico-1" class="nav-link" data-scroll-target="#nivel-básico-1"><span class="header-section-number">4.4.1</span> Nivel básico</a></li>
-  <li><a href="#nivel-medio-1" id="toc-nivel-medio-1" class="nav-link" data-scroll-target="#nivel-medio-1"><span class="header-section-number">4.4.2</span> Nivel medio</a></li>
-  <li><a href="#nivel-alto-1" id="toc-nivel-alto-1" class="nav-link" data-scroll-target="#nivel-alto-1"><span class="header-section-number">4.4.3</span> Nivel alto</a></li>
+  <li><a href="#ejercicio-1-básico" id="toc-ejercicio-1-básico" class="nav-link" data-scroll-target="#ejercicio-1-básico">Ejercicio 1 (Básico)</a></li>
+  <li><a href="#ejercicio-2-medio" id="toc-ejercicio-2-medio" class="nav-link" data-scroll-target="#ejercicio-2-medio">Ejercicio 2 (Medio)</a></li>
+  <li><a href="#ejercicio-3-alto" id="toc-ejercicio-3-alto" class="nav-link" data-scroll-target="#ejercicio-3-alto">Ejercicio 3 (Alto)</a></li>
   </ul></li>
-  <li><a href="#evaluación-tipo-icfes" id="toc-evaluación-tipo-icfes" class="nav-link" data-scroll-target="#evaluación-tipo-icfes"><span class="header-section-number">4.5</span> Evaluación — tipo ICFES</a>
+  <li><a href="#evaluación-tipo-icfes" id="toc-evaluación-tipo-icfes" class="nav-link" data-scroll-target="#evaluación-tipo-icfes">Evaluación — tipo ICFES</a>
   <ul class="collapse">
-  <li><a href="#clave-de-respuestas" id="toc-clave-de-respuestas" class="nav-link" data-scroll-target="#clave-de-respuestas"><span class="header-section-number">4.5.1</span> Clave de respuestas</a></li>
-  <li><a href="#pregunta-1-nivel-básico" id="toc-pregunta-1-nivel-básico" class="nav-link" data-scroll-target="#pregunta-1-nivel-básico"><span class="header-section-number">4.5.2</span> Pregunta 1 — Nivel Básico</a></li>
-  <li><a href="#pregunta-2-nivel-básico" id="toc-pregunta-2-nivel-básico" class="nav-link" data-scroll-target="#pregunta-2-nivel-básico"><span class="header-section-number">4.5.3</span> Pregunta 2 — Nivel Básico</a></li>
-  <li><a href="#pregunta-3-nivel-medio" id="toc-pregunta-3-nivel-medio" class="nav-link" data-scroll-target="#pregunta-3-nivel-medio"><span class="header-section-number">4.5.4</span> Pregunta 3 — Nivel Medio</a></li>
-  <li><a href="#pregunta-4-nivel-medio" id="toc-pregunta-4-nivel-medio" class="nav-link" data-scroll-target="#pregunta-4-nivel-medio"><span class="header-section-number">4.5.5</span> Pregunta 4 — Nivel Medio</a></li>
-  <li><a href="#pregunta-5-nivel-alto" id="toc-pregunta-5-nivel-alto" class="nav-link" data-scroll-target="#pregunta-5-nivel-alto"><span class="header-section-number">4.5.6</span> Pregunta 5 — Nivel Alto</a></li>
+  <li><a href="#pregunta-1-nivel-básico" id="toc-pregunta-1-nivel-básico" class="nav-link" data-scroll-target="#pregunta-1-nivel-básico">Pregunta 1 — Nivel Básico</a></li>
+  <li><a href="#pregunta-2-nivel-básico" id="toc-pregunta-2-nivel-básico" class="nav-link" data-scroll-target="#pregunta-2-nivel-básico">Pregunta 2 — Nivel Básico</a></li>
+  <li><a href="#pregunta-3-nivel-medio" id="toc-pregunta-3-nivel-medio" class="nav-link" data-scroll-target="#pregunta-3-nivel-medio">Pregunta 3 — Nivel Medio</a></li>
+  <li><a href="#pregunta-4-nivel-medio" id="toc-pregunta-4-nivel-medio" class="nav-link" data-scroll-target="#pregunta-4-nivel-medio">Pregunta 4 — Nivel Medio</a></li>
+  <li><a href="#pregunta-5-nivel-alto" id="toc-pregunta-5-nivel-alto" class="nav-link" data-scroll-target="#pregunta-5-nivel-alto">Pregunta 5 — Nivel Alto</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/camilotayac/docere/edit/main/06_Decimo/cinematica-quimica-clase-1.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
@@ -299,9 +488,10 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cinética Química</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-title">Cinética Química</span></h1>
 </div>
 
 
@@ -318,7 +508,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de julio de 2026</p>
+      <p class="date">20 de julio de 2026</p>
     </div>
   </div>
   
@@ -334,385 +524,443 @@ window.Quarto = {
 .wide-table table thead th{position:sticky;top:0;background:var(--quarto-body-bg,#fff);z-index:1}
 #TOC .header-section-number{display:none}
 </style>
-<section id="ideas-previas" class="level2 ideas-previas" data-number="4.1">
-<h2 class="ideas-previas anchored" data-number="4.1" data-anchor-id="ideas-previas"><span class="header-section-number">4.1</span> Ideas previas</h2>
-<section id="contexto" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="contexto"><span class="header-section-number">4.1.1</span> 1. Contexto</h3>
-<p>¿Alguna vez has visto cómo prenden un fogón de gas y el agua tarda un rato en hervir, pero cuando lo pones a fuego alto casi de inmediato empieza a burbujear? Pedro, un estudiante de Barranquilla, se dio cuenta de algo parecido cuando intentó hacer chocolate caliente. Primero puso el agua a fuego bajo y tuvo que esperar varios minutos. Luego, con el fuego más fuerte, el agua hirvió mucho más rápido. Pedro se preguntó por qué el cambio de temperatura hacía tanta diferencia. No lo sabía, pero estaba observando algo que los químicos estudian desde hace mucho tiempo: cómo ciertos factores hacen que las cosas reaccionen más rápido o más lento.</p>
-</section>
-<section id="comprensión-lectora" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="comprensión-lectora"><span class="header-section-number">4.1.2</span> 2. Comprensión lectora</h3>
-<p><strong>1.</strong> ¿Qué cambió Pedro al hacer el chocolate caliente? <strong>2.</strong> ¿Por qué crees que el cambio de temperatura hizo tanta diferencia? <strong>3.</strong> ¿Cómo llamarías a la idea de que “ciertas condiciones hacen que las cosas ocurran más rápido”?</p>
-</section>
-<section id="ámbitos-de-aplicación" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="ámbitos-de-aplicación"><span class="header-section-number">4.1.3</span> 3. Ámbitos de aplicación</h3>
-<p>En Colombia, la industria farmacéutica como Tecnoquímicas y Laboratorios Lafrancol estudian cuánto tarda un medicamento en disolverse y hacer efecto en el cuerpo. En las fincas cafeteras del Quindío, los agricultores saben que el café se tuesta más rápido a mayor temperatura. En las plantas de Ecopetrol, los ingenieros controlan la velocidad de procesos químicos para producir combustible de forma segura y eficiente. Te afecta a ti cuando tomas un paracetamol y necesitas que haga efecto rápido, o cuando cocinas y quieres que el arroz quede listo sin quemarse.</p>
-</section>
-<section id="preguntas-sobre-ámbitos-de-aplicación" class="level3" data-number="4.1.4">
-<h3 data-number="4.1.4" class="anchored" data-anchor-id="preguntas-sobre-ámbitos-de-aplicación"><span class="header-section-number">4.1.4</span> 4. Preguntas sobre ámbitos de aplicación</h3>
-<p><strong>1.</strong> ¿En cuál de los sectores mencionados crees que es más importante controlar la velocidad de los procesos? <strong>2.</strong> ¿Has notado en tu casa o barrio alguna situación donde algo “se hace” más rápido o más lento dependiendo de cómo lo preparas?</p>
-</section>
-<section id="lo-que-necesitas-saber-antes-de-empezar" class="level3" data-number="4.1.5">
-<h3 data-number="4.1.5" class="anchored" data-anchor-id="lo-que-necesitas-saber-antes-de-empezar"><span class="header-section-number">4.1.5</span> 5. Lo que necesitas saber antes de empezar</h3>
+<section id="ideas-previas" class="level2 ideas-previas">
+<h2 class="ideas-previas anchored" data-anchor-id="ideas-previas">Ideas previas</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Anclaje Cognitivo (Prerrequisitos)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Anclaje Cognitivo (Prerrequisitos)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para iniciar esta clase, debes recordar qué es una reacción química, qué significa concentración y qué es la temperatura.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Apoyo Procedimental (Vocabulario Clave)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Apoyo Procedimental (Vocabulario Clave)
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>Reacción química:</strong> Cuando una o más sustancias (reactivos) se transforman en otras sustancias nuevas (productos). Ejemplo: el hierro reacciona con el oxígeno y forma óxido.</li>
-<li><strong>Concentración:</strong> Cantidad de una sustancia disuelta en un volumen determinado. Más concentración significa más partículas en el mismo espacio.</li>
-<li><strong>Temperatura:</strong> Nivel de calor o frío de un cuerpo. Se mide en grados Celsius (°C) y afecta la velocidad del movimiento de las partículas.</li>
+<li><strong>Reacción química:</strong> Cuando una o más sustancias (reactivos) se transforman en otras nuevas (productos).</li>
+<li><strong>Concentración:</strong> Cantidad de sustancia en un volumen determinado.</li>
+<li><strong>Temperatura:</strong> Nivel de calor o frío, afecta el movimiento de partículas.</li>
 </ul>
-</section>
-</section>
-<section id="contextualización" class="level2 contexto" data-number="4.2">
-<h2 class="contexto anchored" data-number="4.2" data-anchor-id="contextualización"><span class="header-section-number">4.2</span> Contextualización</h2>
-<section id="qué-significa-estudiar-cómo-ocurren-las-cosas" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="qué-significa-estudiar-cómo-ocurren-las-cosas"><span class="header-section-number">4.2.1</span> 1. Qué significa estudiar cómo ocurren las cosas</h3>
-<p>Imagina que estás jugando billar con un amigo. Tienes la bola blanca y hay varias bolas de colores repartidas por la mesa. Tu objetivo es que la bola blanca golpee una de color y esta caiga en una tronera. Eso es una <strong>reacción</strong>: una bola que estaba en la mesa termina dentro de la tronera.</p>
-<p>Ahora, ¿qué tiene que ver esto con la química? En el mundo de las partículas, las moléculas son como las bolas. Cuando dos moléculas chocan entre sí, pueden reorganizarse y formar algo nuevo. Ese cambio es la <strong>reacción química</strong>. La <strong>cinética química</strong> estudia cuán rápido ocurren estos cambios.</p>
-<blockquote class="blockquote">
-<p><em>¿Por qué crees que algunos billaristas son más rápidos que otros para hacer sus tiros?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> En tu propia palabras, ¿qué estudia la cinética química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>La cinética química estudia la velocidad de las reacciones químicas, es decir, cuán rápido se convierten los reactivos en productos.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> Cuando piensas en algo que cambia de velocidad según cómo lo haces, ¿se te ocurre una actividad cotidiana donde eso pase?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante menciona cocinar, deportes o cualquier actividad: Perfecto, esa intuición es la base de lo que vamos a estudiar. La velocidad siempre depende de condiciones específicas.</p>
-</blockquote>
-</section>
-<section id="por-qué-no-todo-choque-produce-un-cambio" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="por-qué-no-todo-choque-produce-un-cambio"><span class="header-section-number">4.2.2</span> 2. Por qué no todo choque produce un cambio</h3>
-<p>Volvamos al billar. No cualquier golpe hace que una bola caiga en la tronera. Si golpeas la bola blanca muy suave, la bola golpeada no tiene fuerza para llegar hasta la tronera. Si la golpeas en un ángulo incorrecto, la bola se va por otro lado y no entra.</p>
-<p>En la química pasa lo mismo. Las partículas chocan constantemente, pero no todo choque genera una reacción. La colisión debe cumplir dos condiciones: la <strong>posición correcta</strong> (como el ángulo del tiro) y la <strong>energía suficiente</strong> (como la fuerza del golpe). Si alguna de las dos falla, la reacción no ocurre.</p>
-<blockquote class="blockquote">
-<p><em>¿Qué pasaría si en billar todas las bolas estuvieran pegadas unas con otras? ¿Sería más fácil o más difícil que caigan en las troneras?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Por qué no toda colisión entre partículas produce una reacción química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Porque necesitan chocar en la posición correcta y con suficiente energía. Si falta una de las dos condiciones, la reacción no ocurre.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez intentaste hacer algo que dependía de dos condiciones al mismo tiempo y no salió porque fallaste en una de las dos?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que le costó: Es útil identificar exactamente cuál de las dos condiciones falló. Eso te ayuda a entender que la química no es azar — es entender qué cambia. Si dice que fue fácil: Aprovecha esa habilidad de analizar condiciones para los temas más avanzados que vienen.</p>
-</blockquote>
-</section>
-<section id="cómo-las-bolas-se-parecen-a-las-partículas" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="cómo-las-bolas-se-parecen-a-las-partículas"><span class="header-section-number">4.2.3</span> 3. Cómo las bolas se parecen a las partículas</h3>
-<p>En la mesa de billar, las bolas están quietas hasta que tú das el primer tiro. Pero en el mundo químico, las partículas nunca están quietas. Se mueven todo el tiempo, como si la mesa estuviera vibrando. Esta vibración provoca que las partículas choquen entre sí sin que nadie las golpee.</p>
-<p>Cuando dos partículas chocan en la posición correcta y con suficiente energía, se produce la reacción. Si chocan mal o con poca fuerza, simplemente rebotan y siguen moviéndose. La <strong>velocidad de reacción</strong> depende de cuántos choques exitosos ocurren por segundo.</p>
-<blockquote class="blockquote">
-<p><em>Si las partículas se mueven solas, ¿qué crees que pasaría si las hicieras mover más rápido?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué diferencia hay entre las bolas de billar y las partículas químicas en cuanto a su movimiento?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Las bolas de billar están quietas hasta que alguien las golpea, pero las partículas químicas se mueven solas todo el tiempo por efecto de la temperatura.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> Si pudieras hacer que las partículas se movieran más rápido o más lento, ¿qué crees que pasaría con la reacción?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que la reacción se aceleraría: Correcto. Esa es justamente una de las ideas principales de la cinética química. Si tiene dudas: Piensa en el billar — si las bolas estuvieran moviéndose solas, los tiros serían más fáciles de hacer.</p>
-</blockquote>
-</section>
-<section id="la-velocidad-depende-de-las-condiciones" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="la-velocidad-depende-de-las-condiciones"><span class="header-section-number">4.2.4</span> 4. La velocidad depende de las condiciones</h3>
-<p>Un buen jugador de billar sabe que puede cambiar el resultado del juego dependiendo de cómo golpee la bola. Si golpea con más fuerza, la bola se mueve más rápido. Si cambia el ángulo, la bola va hacia otro lado.</p>
-<p>En la química, la velocidad de la reacción cambia según ciertas condiciones. Si cambias la cantidad de partículas, la temperatura o el tipo de sustancias, la reacción se acelera o se frena. Los científicos estudian estas condiciones para controlar qué tan rápido ocurren los procesos químicos, igual que un billarista controla sus tiros para ganar la partida.</p>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Cómo se relacionan las condiciones de un tiro en billar con las condiciones que afectan una reacción química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Las condiciones del tiro (ángulo y fuerza) determinan si la bola cae en la tronera. Así mismo, las condiciones de la reacción (posición y energía) determinan si ocurre el cambio químico.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Crees que entender cómo funcionan estas condiciones te podría servir en tu vida diaria, más allá de la clase de química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que sí: Excelente. Entender cómo funcionan las condiciones te da control sobre los procesos, tanto en la cocina como en un laboratorio. Si dice que no le ve utilidad: Es normal al principio. Pero cuando veas cómo se usan estos conceptos en la industria o la medicina, verás que son herramientas poderosas para entender el mundo.</p>
-</blockquote>
-</section>
-<section id="cuánto-importa-estar-dividido-el-estado-físico" class="level3" data-number="4.2.5">
-<h3 data-number="4.2.5" class="anchored" data-anchor-id="cuánto-importa-estar-dividido-el-estado-físico"><span class="header-section-number">4.2.5</span> 5. Cuánto importa estar dividido: el estado físico</h3>
-<p>Piensa en cómo preparas tinto. Si usas café en grano entero, el agua tarda mucho en extraer el sabor porque solo toca la superficie del grano. Pero si el café está molido fino, el agua toca mucha más superficie y el sabor se extrae rápido.</p>
-<p>En química pasa igual. Cuando los reactivos están muy divididos —como el café molido— tienen <strong>más superficie de contacto</strong> para chocar entre sí. Más superficie significa más colisiones, y más colisiones significan una reacción más rápida. Cuando los reactivos están en grandes bloques —como el café en grano— solo la superficie exterior puede reaccionar, y el proceso es lento.</p>
-<p>La regla es simple: <strong>más dividido = más rápido</strong>. Por eso los medicamentos en polvo hacen efecto más rápido que los comprimidos sólidos, y por eso los químicos siempre muelen los sólidos antes de usarlos en una reacción.</p>
-<blockquote class="blockquote">
-<p><em>¿Por qué crees que el café de máquina (molido fino) tiene más sabor que el café en grano sin moler?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué pasaría si intentaras hacer tinto con café en grano sin moler? ¿Qué tan diferente sería el resultado?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>El café en grano solo tiene la superficie exterior en contacto con el agua. El molido fino tiene mucha más superficie, así que el agua extrae el sabor mucho más rápido.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Qué diferencia hay entre algo que está “dividido” y algo que está “entero” cuando se trata de reaccionar con otro elemento?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que algo dividido reacciona más rápido: Correcto. Esa es la diferencia entre tener poca y mucha superficie de contacto.</p>
-</blockquote>
-</section>
-<section id="cuántas-partículas-hay-la-concentración" class="level3" data-number="4.2.6">
-<h3 data-number="4.2.6" class="anchored" data-anchor-id="cuántas-partículas-hay-la-concentración"><span class="header-section-number">4.2.6</span> 6. Cuántas partículas hay: la concentración</h3>
-<p>Imagina un cuarto grande con solo dos personas adentro. Ambas caminan al azar, pero el espacio es tan amplio que probablemente no se encuentren pronto. Ahora imagina el mismo cuarto con mil personas. En ese caso, las personas chocarán constantemente entre sí.</p>
-<p>En la química pasa lo mismo. La <strong>concentración</strong> de los reactivos determina cuántas partículas hay en un espacio dado. A mayor concentración, más partículas ocupan el mismo volumen. Si hay más partículas moviéndose en un espacio reducido, la probabilidad de que choquen entre sí aumenta. Más colisiones significan mayor velocidad de reacción.</p>
-<blockquote class="blockquote">
-<p><em>Si tuvieras que hacer tinto para diez personas con la misma cantidad de café que usas para una, ¿qué cambiarías para que no quedara aguado?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> Si pones más café en la misma cantidad de agua, ¿qué pasa con la concentración y con la velocidad de extracción del sabor?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Al poner más café, aumentas la concentración. Con más partículas de café en el mismo volumen de agua, hay más contacto entre el café y el agua, lo que acelera la extracción del sabor.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Has notado que cuando hay más personas en un espacio, es más fácil que choquen entre sí? ¿Cómo se relaciona eso con la concentración?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante hace la conexión con personas en un espacio: Exactamente. Más personas significan más encuentros, igual que más partículas significan más colisiones.</p>
-</blockquote>
-</section>
-<section id="cuánto-se-mueven-la-temperatura" class="level3" data-number="4.2.7">
-<h3 data-number="4.2.7" class="anchored" data-anchor-id="cuánto-se-mueven-la-temperatura"><span class="header-section-number">4.2.7</span> 7. Cuánto se mueven: la temperatura</h3>
-<p>Si preparas el tinto con agua fría, el café tarda mucho en soltar su sabor. El agua fría no tiene suficiente energía para disolver las partículas del café rápidamente. Pero si usas agua hirviendo, el sabor sale en segundos.</p>
-<p>La <strong>temperatura</strong> mide cuán rápido se mueven las partículas. Cuando calientas algo, las partículas se mueven más rápido. Cuando lo enfrías, se mueven más lento. Esto produce dos efectos en una reacción química:</p>
+</div>
+</div>
+<section id="contexto" class="level3">
+<h3 class="anchored" data-anchor-id="contexto">Contexto</h3>
+<p>¿Alguna vez has visto cómo prenden un fogón de gas y el agua tarda un rato en hervir, pero cuando lo pones a fuego alto casi de inmediato empieza a burbujear? Pedro, un estudiante de Barranquilla, se dio cuenta de algo parecido cuando intentó hacer chocolate caliente. Primero puso el agua a fuego bajo y tuvo que esperar varios minutos. Luego, con el fuego más fuerte, el agua hirvió mucho más rápido. Pedro se preguntó por qué el cambio de temperatura hacía tanta diferencia. No lo sabía, pero estaba observando algo que los químicos estudian desde hace mucho tiempo: cómo ciertos factores hacen que las cosas reaccionen más rápido o más lento.</p>
+<div class="pregunta-basica callout callout-style-default callout-note callout-titled" title="Reflexiona y Conecta (Preguntas de Comprensión)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Reflexiona y Conecta (Preguntas de Comprensión)
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li><p><strong>Más choques</strong>: las partículas se mueven más rápido, así que chocan más veces por segundo. Es como si en una fiesta hubiera más personas caminando — es más probable que se choquen.</p></li>
-<li><p><strong>Choques más fuertes</strong>: cada choque tiene más energía. Para que una reacción ocurra, las partículas necesitan chocar con suficiente energía para romper los enlaces existentes y formar los nuevos.</p></li>
+<li>¿Qué cambió Pedro al hacer el chocolate caliente?</li>
+<li>¿Por qué crees que el cambio de temperatura hizo tanta diferencia?</li>
+<li>¿Cómo llamarías a la idea de que “ciertas condiciones hacen que las cosas ocurran más rápido”?</li>
 </ol>
-<p>La <strong>barrera de energía</strong> es la cantidad mínima de energía que necesitan las partículas para que la reacción ocurra. Si un choque tiene menos energía que la barrera, la reacción no pasa — las partículas simplemente rebotan. Si tiene más energía, la reacción ocurre. La temperatura sube la probabilidad de que los choques superen esa barrera.</p>
-<blockquote class="blockquote">
-<p><em>¿Por qué crees que la abuela siempre usa agua hirviendo para el tinto y no agua del grifo?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Por qué el agua hirviendo extrae el sabor del café más rápido que el agua fría?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>El agua hirviendo tiene más energía cinética. Las moléculas de agua se mueven más rápido y chocan con más fuerza contra las partículas del café, disolviéndolas más rápido.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez notaste que al calentar algo, el proceso se acelera? ¿En qué situación?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante menciona cocinar o cualquier otro proceso: Bien. La temperatura acelera muchos procesos cotidianos, no solo la química.</p>
-</blockquote>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Apoyo Procedimental (Pista)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Apoyo Procedimental (Pista)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Piensa en qué pasaba con el agua cuando estaba a fuego bajo versus cuando estaba a fuego alto. ¿La energía tiene algo que ver?</p>
+</div>
+</div>
 </section>
-<section id="un-secreto-de-abuela-el-catalizador" class="level3" data-number="4.2.8">
-<h3 data-number="4.2.8" class="anchored" data-anchor-id="un-secreto-de-abuela-el-catalizador"><span class="header-section-number">4.2.8</span> 8. Un secreto de abuela: el catalizador</h3>
-<p>Tu abuela tiene un truco secreto: antes de hacer el tinto, siempre deja reposar el café molido en un poquito de agua caliente durante un minuto. Ella dice que así “se despierta el sabor”. En realidad, está haciendo que las partículas del café se abran y estén listas para mezclarse con el resto del agua más rápido.</p>
-<p>En la química, ese truco se parece a lo que hace un <strong>catalizador</strong>. Un catalizador es una sustancia que acelera una reacción sin consumirse. Piensa en un catalizador como un mediador en una discusión — no participa en la pelea, pero ayuda a que las partes se pongan de acuerdo más rápido.</p>
-<p>¿Cómo funciona? Sin catalizador, las partículas necesitan mucha energía para reaccionar — tienen que superar una barrera alta. El catalizador <strong>baja esa barrera</strong>. No le da más energía a las partículas; simplemente les facilita el camino. Es como si en lugar de tener que saltar un muro, pudieras pasar por una puerta. Después de la reacción, el catalizador se recupera intacto. No se gasta ni se transforma. Los <strong>enzimas</strong> en tu cuerpo son catalizadores naturales: aceleran miles de reacciones sin consumirse.</p>
-<blockquote class="blockquote">
-<p><em>¿Se te ocurre algo en tu casa que funcione como un catalizador, algo que hace que las cosas pasen más rápido sin ser el ingrediente principal?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué diferencia hay entre un ingrediente principal y un catalizador en una reacción?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Un ingrediente principal es parte esencial del resultado final (como el café y el agua). Un catalizador ayuda a que la reacción ocurra más rápido pero no se consume ni se convierte en parte del producto final.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Se te ocurre algo en tu vida diaria que funcione como un catalizador, algo que hace las cosas más rápido sin ser el ingrediente principal?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante menciona cocinar o cualquier otro proceso: Bien. Hay catalizadores en todas partes, no solo en la química.</p>
-</blockquote>
-</section>
-<section id="cómo-se-mide-la-velocidad" class="level3" data-number="4.2.9">
-<h3 data-number="4.2.9" class="anchored" data-anchor-id="cómo-se-mide-la-velocidad"><span class="header-section-number">4.2.9</span> 9. Cómo se mide la velocidad</h3>
-<p>Imagina que quieres saber qué tan rápido se enfría un café. Si al inicio está a 80°C y a los 5 minutos ya está a 40°C, puedes decir: “el café perdió 40 grados en 5 minutos”. Eso es una velocidad: cuánto cambia algo en un tiempo dado.</p>
-<p>En química pasa igual, pero en vez de medir grados, medimos <strong>concentración</strong> — cuánta sustancia hay disuelta en un litro de solución. La <strong>concentración</strong> se mide en <strong>molaridad</strong> (M), que significa moles de sustancia por litro. Si disuelves 1 mol de azúcar en 1 litro de agua, la concentración es 1 M.</p>
-<p>La <strong>velocidad de reacción</strong> es entonces: cuánto cambia la concentración de un reactivo o producto en un tiempo determinado. Se mide en <strong>M/s</strong> (molar por segundo). Si la concentración cambia 2 M en 4 segundos, la velocidad es 2 ÷ 4 = 0.5 M/s.</p>
-<blockquote class="blockquote">
-<p><em>Si un corredor recorre 100 metros en 12 segundos, su velocidad promedio es 100 ÷ 12 = 8.3 m/s. ¿Cómo calcularías algo parecido para una reacción química?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué necesitas medir para calcular la velocidad de una reacción química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Necesitas medir cuánto cambió la concentración (en molaridad, M) y cuánto tiempo tardó (en segundos, s). La velocidad es el cambio de concentración dividido entre el cambio de tiempo.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> Si pudieras medir cuánto cambia algo en tu vida cada segundo, ¿qué elegirías medir?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante menciona cualquier cosa que cambie con el tiempo: Bien. La velocidad está en todas partes, no solo en la química.</p>
-</blockquote>
-</section>
-<section id="velocidad-de-aparición-y-desaparición" class="level3" data-number="4.2.10">
-<h3 data-number="4.2.10" class="anchored" data-anchor-id="velocidad-de-aparición-y-desaparición"><span class="header-section-number">4.2.10</span> 10. Velocidad de aparición y desaparición</h3>
-<p>Ahora piensa en una carrera. Si un corredor recorre 100 metros en 12 segundos, su velocidad promedio es 100 ÷ 12 = 8.3 m/s. No importa si en los primeros 3 segundos corrió más rápido y en los últimos más lento — lo que calculas es el promedio de todo el recorrido.</p>
-<p>En una reacción química pasa lo mismo. Puedes medir la concentración al inicio y al final de un intervalo de tiempo, y calcular la <strong>velocidad promedio</strong>. Hay dos casos:</p>
-<p><strong>Velocidad de aparición</strong> — cuando un producto se está formando. La concentración del producto <strong>aumenta</strong> con el tiempo. Si al inicio hay 0 M de producto y después de 4 segundos hay 2 M, el producto apareció a razón de 2 M ÷ 4 s = 0.5 M/s:</p>
-<p><span class="math display">\[\text{Velocidad de aparición de B} = \frac{[B]_{\text{final}}-[B]_{\text{inicial}}}{t_{\text{final}}-t_{\text{inicial}}}\]</span></p>
-<p><strong>Velocidad de desaparición</strong> — cuando un reactivo se está consumiendo. La concentración del reactivo <strong>disminuye</strong> con el tiempo. Si al inicio hay 4 M de reactivo y después de 4 segundos hay 1 M, el reactivo desapareció a razón de 3 M ÷ 4 s = 0.75 M/s. Pero como la concentración <strong>disminuye</strong>, el cambio es negativo. Por eso ponemos un signo negativo para que la velocidad sea positiva: -(-0.75) = 0.75 M/s:</p>
-<p><span class="math display">\[\text{Velocidad de desaparición de A} = -\frac{[A]_{\text{final}}-[A]_{\text{inicial}}}{t_{\text{final}}-t_{\text{inicial}}}\]</span></p>
-<p>¿Por qué el signo negativo? Porque si un reactivo empieza en 4 M y termina en 1 M, el cambio es 1 - 4 = -3 M. Sin el signo negativo, la velocidad sería -3 M/s, lo cual es confuso — la velocidad siempre se expresa como positiva. El signo negativo corrige eso: -(-3) = 3 M/s.</p>
-<blockquote class="blockquote">
-<p><em>Si un reactivo desaparece a 2 M/s, ¿qué tan rápido aparece el producto? ¿Es la misma velocidad o diferente?</em></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué diferencia hay entre la velocidad de aparición de un producto y la velocidad de desaparición de un reactivo?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>La velocidad de aparición mide cuánto aumenta la concentración del producto (es positiva). La velocidad de desaparición mide cuánto disminuye la concentración del reactivo (se pone negativa para que sea positiva). Ambas miden la misma reacción, pero desde lados opuestos.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez notaste que algo desaparece de un lugar mientras aparece en otro? ¿Cómo se relaciona eso con las reacciones químicas?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante menciona cualquier proceso de transformación: Bien. Eso es exactamente lo que pasa en una reacción química: algo desaparece de un lado y aparece en otro.</p>
-</blockquote>
-</section>
-<section id="para-terminar" class="level3" data-number="4.2.11">
-<h3 data-number="4.2.11" class="anchored" data-anchor-id="para-terminar"><span class="header-section-number">4.2.11</span> Para terminar</h3>
-<p>En billar, tu habilidad para hacer que las bolas caigan en las troneras depende de dos cosas: el ángulo de tu tiro y la fuerza que le des. En la química, las partículas también necesitan chocar en la posición correcta y con suficiente energía para que la reacción ocurra. La <strong>cinética química</strong> estudia todo esto: qué tan rápido cambian las cosas a nivel molecular. La velocidad se mide en M/s, y siempre es positiva — cuando un reactivo desaparece, usamos un signo negativo para que el resultado sea positivo.</p>
+<section id="ámbitos-de-aplicación" class="level3">
+<h3 class="anchored" data-anchor-id="ámbitos-de-aplicación">Ámbitos de aplicación</h3>
+<p>En Colombia, la industria farmacéutica estudia cuánto tarda un medicamento en disolverse. En las fincas cafeteras, los agricultores saben que el café se tuesta más rápido a mayor temperatura. En Ecopetrol, los ingenieros controlan la velocidad de procesos químicos para producir combustible de forma segura. Te afecta a ti cuando tomas un paracetamol y necesitas que haga efecto rápido, o cuando cocinas y quieres que el arroz quede listo sin quemarse.</p>
+<div class="pregunta-media callout callout-style-default callout-note callout-titled" title="Conexión con el Mundo Real">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Conexión con el Mundo Real
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>¿En cuál de los sectores mencionados crees que es más importante controlar la velocidad de los procesos?</li>
+<li>¿Has notado en tu casa alguna situación donde algo “se hace” más rápido o más lento dependiendo de cómo lo preparas?</li>
+</ol>
+</div>
+</div>
 </section>
 </section>
-<section id="ejemplos-resueltos" class="level2 ejemplo" data-number="4.3">
-<h2 class="ejemplo anchored" data-number="4.3" data-anchor-id="ejemplos-resueltos"><span class="header-section-number">4.3</span> Ejemplos resueltos</h2>
-<p><em>Para el nivel básico, usaremos la analogía del billar que vimos en la contextualización.</em></p>
-<section id="nivel-básico" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="nivel-básico"><span class="header-section-number">4.3.1</span> Nivel básico</h3>
-<p><strong>Enunciado:</strong> En una partida de billar, la bola blanca golpea a una bola roja. La bola roja se mueve hacia la tronera pero se detiene antes de llegar. Según la teoría de colisiones, ¿qué falló para que la “reacción” (que la bola caiga en la tronera) no ocurra?</p>
-<p><strong>Paso 1: Identificar qué condiciones necesita un tiro exitoso</strong></p>
-<p>En billar, para que una bola caiga en la tronera necesitas dos cosas: el ángulo correcto del tiro y la fuerza adecuada. Si cualquiera de las dos falla, la bola no entra.</p>
-<p>La bola roja se movió hacia la tronera, lo que indica que el ángulo estaba bien. Pero se detuvo antes de llegar. Eso significa que la <strong>fuerza</strong> no fue suficiente.</p>
-<blockquote class="blockquote">
-<p><em>¿Qué parte de la colisión entre partículas se parece a la “fuerza” del tiro en billar?</em></p>
-</blockquote>
-<p>En la química, las partículas también necesitan <strong>energía suficiente</strong> para que la reacción ocurra. Si chocan con poca energía, rebotan pero no generan el cambio.</p>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> ¿Qué relación hay entre la fuerza de un tiro en billar y la energía de una colisión química?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>La fuerza del tiro es como la energía de la colisión: si no es suficiente, la reacción no ocurre aunque el ángulo sea correcto.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez sentiste que “casi” lograste algo pero te faltó un poco de fuerza o empuje?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que le costó identificar la relación: Piensa en cuando pateas un balón y va lento. La pelota va en la dirección correcta pero no llega. Eso es exactamente lo que pasó con la bola roja. Si dice que fue fácil: Qué bien. Esa capacidad de ver paralelos entre cosas distintas te va a servir mucho en química.</p>
-</blockquote>
-<p><strong>Si respondió bien:</strong> → Continuar al siguiente ejercicio.</p>
-<p><strong>Si no respondió bien:</strong> → Pista conceptual: Piensa en qué parte del tiro determina si la bola tiene “velocidad” para llegar a la tronera. → Pista dirigida: ¿Qué pasaría si golpeas la bola blanca muy suave pero con el ángulo perfecto?</p>
+<section id="contextualización" class="level2 contexto">
+<h2 class="contexto anchored" data-anchor-id="contextualización">Contextualización</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Conceptos Clave (Objetivos de Aprendizaje)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Conceptos Clave (Objetivos de Aprendizaje)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Al finalizar esta sección comprenderás: - Qué estudia la cinética química. - La teoría de colisiones y por qué no todo choque produce una reacción. - Cómo la temperatura, concentración, estado físico y catalizadores afectan la velocidad de reacción. - Cómo se calcula la velocidad de aparición y desaparición de sustancias.</p>
+</div>
+</div>
+<section id="qué-significa-estudiar-cómo-ocurren-las-cosas" class="level3">
+<h3 class="anchored" data-anchor-id="qué-significa-estudiar-cómo-ocurren-las-cosas">Qué significa estudiar cómo ocurren las cosas</h3>
+<p>Imagina que estás jugando billar con un amigo. Tienes la bola blanca y hay varias bolas de colores repartidas por la mesa. Tu objetivo es que la bola blanca golpee una de color y esta caiga en una tronera. Eso es una <strong>reacción</strong>: una bola que estaba en la mesa termina dentro de la tronera.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Apoyo Visual">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Apoyo Visual
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La analogía del billar es ideal para que logres imaginar y visualizar cómo ocurren las colisiones moleculares en la vida real.</p>
+</div>
+</div>
+<p>En el mundo de las partículas, las moléculas son como las bolas. Cuando dos moléculas chocan entre sí, pueden reorganizarse y formar algo nuevo. Ese cambio es la <strong>reacción química</strong>. La <strong>cinética química</strong> estudia cuán rápido ocurren estos cambios.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Reflexiona">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Reflexiona
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>¿Por qué crees que algunos billaristas son más rápidos que otros para hacer sus tiros?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Apoyo Procedimental (Comprobación)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Apoyo Procedimental (Comprobación)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En tus propias palabras, ¿qué estudia la cinética química? <em>(Pista: Tiene que ver con cuán rápido se convierten los reactivos en productos).</em></p>
+</div>
+</div>
 </section>
-<section id="nivel-medio" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="nivel-medio"><span class="header-section-number">4.3.2</span> Nivel medio</h3>
-<p><strong>Enunciado:</strong> Una reacción química ocurre cuando dos sustancias se mezclan. Un investigador nota que al subir la temperatura, la reacción se acelera. Explica por qué la temperatura afecta la velocidad de reacción usando el concepto de colisiones.</p>
-<p><strong>Paso 1: Identificar qué representa la temperatura a nivel de partículas</strong></p>
-<p>La temperatura se relaciona con la <strong>energía cinética</strong>, que es la energía del movimiento. Cuando la temperatura sube, las partículas se mueven más rápido.</p>
-<blockquote class="blockquote">
-<p><em>¿Qué pasa con las colisiones cuando las partículas se mueven más rápido?</em></p>
-</blockquote>
-<p>Las partículas se mueven más rápido, chocan con mayor frecuencia y cada colisión tiene más energía.</p>
-<p><strong>Paso 2: Conectar el movimiento con la velocidad de reacción</strong></p>
-<p>Más frecuencia de choques significa más oportunidades para que ocurra la reacción. Más energía en cada choque significa que es más probable que superen la <strong>barrera de energía</strong> necesaria.</p>
-<p><strong>Paso 3: Concluir con la respuesta completa</strong></p>
-<p>La temperatura afecta la velocidad de reacción porque modifica dos cosas: la <strong>frecuencia</strong> de las colisiones (más choques) y la <strong>energía</strong> de las colisiones (choques más fuertes). Ambos efectos aceleran la reacción.</p>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> Si bajas la temperatura de una reacción, ¿qué pasaría con la frecuencia y la energía de las colisiones?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Al bajar la temperatura, las partículas se mueven más lento. Esto reduce tanto la frecuencia de choques como la energía de cada colisión, por lo que la reacción se hace más lenta.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Te ha pasado que entiendes un concepto pero te cuesta explicarlo con tus propias palabras?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que le costó explicar: Es normal. Entender y explicar son dos habilidades distintas. Practica diciendo en voz alta lo que acabas de leer, como si se lo explicaras a un amigo. Si dice que fue fácil: Aprovecha esa habilidad. Cuando puedas explicar algo con tus propias palabras, es que realmente lo entendiste.</p>
-</blockquote>
-<p><strong>Si respondió bien:</strong> → Continuar al siguiente ejercicio.</p>
-<p><strong>Si no respondió bien:</strong> → Pista conceptual: Piensa en qué le pasa a una bola de billar cuando la haces vibrar más rápido. → Pista dirigida: Si las partículas se mueven más rápido, ¿chocan más veces o menos veces por segundo?</p>
+<section id="por-qué-no-todo-choque-produce-un-cambio" class="level3">
+<h3 class="anchored" data-anchor-id="por-qué-no-todo-choque-produce-un-cambio">Por qué no todo choque produce un cambio</h3>
+<p>En la química, las partículas chocan constantemente, pero no todo choque genera una reacción. La colisión debe cumplir dos condiciones: la <strong>posición correcta</strong> (como el ángulo del tiro en el billar) y la <strong>energía suficiente</strong> (como la fuerza del golpe). Si alguna de las dos falla, la reacción no ocurre.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Regla de Oro (Concepto Clave)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Regla de Oro (Concepto Clave)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>¡Ambas condiciones (posición correcta y energía suficiente) deben cumplirse simultáneamente para que haya una reacción!</p>
+</div>
+</div>
 </section>
-<section id="nivel-alto" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="nivel-alto"><span class="header-section-number">4.3.3</span> Nivel alto</h3>
-<p><strong>Enunciado:</strong> Un científico observa que una reacción química ocurre más rápido cuando agita la mezcla de reactivos. Sin embargo, al agregar un catalizador, la reacción se acelera aún más sin necesidad de agitar. Explica por qué el catalizador logra algo que la agitación no puede lograr por sí sola.</p>
-<p><strong>Paso 1: Analizar qué hace la agitación</strong></p>
-<p>La agitación mueve las partículas más rápido, lo que aumenta la frecuencia de colisiones. Es como sacudir una mesa de billar para que las bolas choquen más veces entre sí.</p>
-<blockquote class="blockquote">
-<p><em>Si la agitación solo aumenta la frecuencia de choques, ¿qué le falta para que la reacción sea más rápida?</em></p>
-</blockquote>
-<p>La agitación aumenta la frecuencia pero no cambia la <strong>energía</strong> necesaria para que la reacción ocurra. Las partículas chocan más veces, pero cada choque sigue teniendo la misma energía.</p>
-<p><strong>Paso 2: Analizar qué hace el catalizador</strong></p>
-<p>El catalizador funciona diferente. No mueve las partículas más rápido. En vez de eso, <strong>cambia el mecanismo</strong> de la reacción. Reduce la <strong>barrera de energía</strong> que las partículas necesitan superar.</p>
-<p>Es como si en billar apareciera una rampa que facilita que la bola llegue a la tronera sin necesidad de golpearla más fuerte.</p>
-<p><strong>Paso 3: Comparar ambos efectos</strong></p>
-<p>La agitación aumenta la cantidad de choques. El catalizador reduce la energía que cada choque necesita. Por eso el catalizador es más efectivo: ataca directamente la barrera de energía, no solo la frecuencia de choques.</p>
-<p><strong>Paso 4: Conectar con la respuesta completa</strong></p>
-<p>El catalizador logra algo que la agitación no puede porque <strong>modifica el mecanismo de reacción</strong>, reduciendo la energía necesaria. La agitación solo aumenta la frecuencia de choques, pero no cambia cuánta energía se necesita para que la reacción ocurra.</p>
-<blockquote class="blockquote">
-<p><strong>Pregunta de comprensión:</strong> Si un catalizador reduce la energía necesaria para que ocurra una reacción, ¿por qué no se usa siempre en lugar de calentar la mezcla?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Porque no todos los catalizadores funcionan para todas las reacciones, y algunos son costosos o difíciles de conseguir. Además, en algunos casos calentar la mezcla es más práctico o económico que buscar un catalizador adecuado.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez tuviste que resolver un problema de dos maneras distintas y descubriste que una era más efectiva que la otra? ¿Qué aprendiste de esa experiencia?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Si el estudiante dice que le costó comparar: Es un ejercicio de razonamiento avanzado. Lo importante es que identifiques que la agitación y el catalizador atacan problemas distintos: frecuencia vs.&nbsp;energía. Si dice que fue fácil: Esa capacidad de comparar estrategias es fundamental en la ciencia. Los investigadores siempre evalúan qué enfoque es más efectivo para cada situación.</p>
-</blockquote>
-<p><strong>Si respondió bien:</strong> → Has completado los ejemplos resueltos de la Clase 1. Pasa a los ejercicios de práctica.</p>
-<p><strong>Si no respondió bien:</strong> → Pista conceptual: Piensa en qué diferencia hay entre “hacer algo más veces” y “hacer algo más fácil cada vez que lo intentas”. → Pista dirigida: ¿La agitación cambia cuánta energía tiene cada choque, o solo cambia cuántas veces chocan las partículas?</p>
+<section id="la-velocidad-depende-de-las-condiciones" class="level3">
+<h3 class="anchored" data-anchor-id="la-velocidad-depende-de-las-condiciones">La velocidad depende de las condiciones</h3>
+<p>La <strong>velocidad de reacción</strong> depende de cuántos choques exitosos ocurren por segundo. En la química, la velocidad de la reacción cambia según ciertas condiciones. Si cambias la cantidad de partículas, la temperatura o el tipo de sustancias, la reacción se acelera o se frena.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Apoyo Procedimental (Factores principales)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Apoyo Procedimental (Factores principales)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Recuerda siempre estos 4 factores que afectan la velocidad: 1. Estado físico (Superficie de contacto) 2. Concentración 3. Temperatura 4. Catalizadores</p>
+</div>
+</div>
+</section>
+<section id="cuánto-importa-estar-dividido-el-estado-físico" class="level3">
+<h3 class="anchored" data-anchor-id="cuánto-importa-estar-dividido-el-estado-físico">Cuánto importa estar dividido: el estado físico</h3>
+<p>La regla es simple: <strong>más dividido = más rápido</strong>. Cuando los reactivos están muy divididos (ej. polvo en vez de bloques sólidos) tienen <strong>más superficie de contacto</strong> para chocar entre sí.</p>
+</section>
+<section id="cuántas-partículas-hay-la-concentración" class="level3">
+<h3 class="anchored" data-anchor-id="cuántas-partículas-hay-la-concentración">Cuántas partículas hay: la concentración</h3>
+<p>La <strong>concentración</strong> determina cuántas partículas hay en un espacio dado. A mayor concentración, hay más partículas moviéndose en un espacio reducido. Más colisiones significan mayor velocidad de reacción.</p>
+</section>
+<section id="cuánto-se-mueven-la-temperatura" class="level3">
+<h3 class="anchored" data-anchor-id="cuánto-se-mueven-la-temperatura">Cuánto se mueven: la temperatura</h3>
+<p>La <strong>temperatura</strong> mide cuán rápido se mueven las partículas. Cuando calientas algo, se mueven más rápido. Esto produce dos efectos: 1. <strong>Más choques</strong>: chocan más veces por segundo. 2. <strong>Choques más fuertes</strong>: cada choque tiene más energía y supera más fácilmente la <strong>barrera de energía</strong> (energía de activación).</p>
+</section>
+<section id="un-secreto-de-abuela-el-catalizador" class="level3">
+<h3 class="anchored" data-anchor-id="un-secreto-de-abuela-el-catalizador">Un secreto de abuela: el catalizador</h3>
+<p>Un catalizador es una sustancia que acelera una reacción sin consumirse. Funciona <strong>bajando la barrera de energía</strong>. No le da más energía a las partículas; simplemente les facilita el camino.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Conexión Biológica">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Conexión Biológica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>¿Sabías que tu cuerpo está lleno de catalizadores? Las enzimas que te ayudan a hacer la digestión son catalizadores biológicos. Sin ellas, tardarías años en digerir una sola comida.</p>
+</div>
+</div>
+</section>
+<section id="cómo-se-mide-la-velocidad" class="level3">
+<h3 class="anchored" data-anchor-id="cómo-se-mide-la-velocidad">Cómo se mide la velocidad</h3>
+<p>La <strong>velocidad de reacción</strong> es cuánto cambia la concentración de un reactivo o producto en un tiempo determinado. Se mide en <strong>M/s</strong> (molaridad por segundo). Para calcularlo, puedes revisar cómo se forman los productos en la <a href="#eq-velocidad-aparicion" class="quarto-xref">Ecuación&nbsp;<span>4.1</span></a> o cómo se agotan los reactivos en la <a href="#eq-velocidad-desaparicion" class="quarto-xref">Ecuación&nbsp;<span>4.2</span></a>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Ecuación de Aparición (Productos)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Ecuación de Aparición (Productos)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span id="eq-velocidad-aparicion"><span class="math display">\[
+\text{Velocidad de aparición de B} = \frac{[B]_{\text{final}}-[B]_{\text{inicial}}}{t_{\text{final}}-t_{\text{inicial}}}
+\tag{4.1}\]</span></span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Ecuación de Desaparición (Reactivos)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Ecuación de Desaparición (Reactivos)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span id="eq-velocidad-desaparicion"><span class="math display">\[
+\text{Velocidad de desaparición de A} = -\frac{[A]_{\text{final}}-[A]_{\text{inicial}}}{t_{\text{final}}-t_{\text{inicial}}}
+\tag{4.2}\]</span></span></p>
+</div>
+</div>
 </section>
 </section>
-<section id="ejercicios" class="level2 ejercicios" data-number="4.4">
-<h2 class="ejercicios anchored" data-number="4.4" data-anchor-id="ejercicios"><span class="header-section-number">4.4</span> Ejercicios</h2>
-<p><em>Practica lo que aprendiste. Las respuestas están al final para que puedas autoevaluarte.</em></p>
-<section id="nivel-básico-1" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="nivel-básico-1"><span class="header-section-number">4.4.1</span> Nivel básico</h3>
-<section id="problema-1" class="level4" data-number="4.4.1.1">
-<h4 data-number="4.4.1.1" class="anchored" data-anchor-id="problema-1"><span class="header-section-number">4.4.1.1</span> Problema 1</h4>
-<p><strong>Enunciado:</strong> En una mesa de billar, hay 5 bolas muy separadas entre sí y otras 5 bolas muy juntas. Si un jugador da el mismo tiro a las dos grupos, ¿en cuál grupo crees que habrá más colisiones entre bolas? ¿Por qué?</p>
-<p><strong>Pregunta de comprensión:</strong> ¿Qué relación hay entre la distancia entre las bolas y la cantidad de choques que pueden ocurrir?</p>
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez notaste que cuando hay mucha gente en un espacio pequeño, es más fácil que choquen entre sí?</p>
+<section id="ejemplos-resueltos" class="level2 ejemplo">
+<h2 class="ejemplo anchored" data-anchor-id="ejemplos-resueltos">Ejemplos resueltos</h2>
+<p><em>A continuación, verás ejemplos resueltos utilizando la analogía del billar y la teoría de colisiones.</em></p>
+<section id="ejemplo-1-básico" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-1-básico">Ejemplo 1 (Básico)</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 1: Problema">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 1: Problema
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En una partida de billar, la bola blanca golpea a una bola roja. La bola roja se mueve hacia la tronera pero se detiene antes de llegar. Según la teoría de colisiones, ¿qué falló para que la “reacción” no ocurra?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 2: Análisis del Billar">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 2: Análisis del Billar
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En el billar, necesitas dos cosas: el ángulo correcto del tiro y la fuerza adecuada. La bola roja se movió hacia la tronera, lo que indica que el ángulo (la <strong>posición</strong>) estaba bien. Pero se detuvo antes de llegar, lo que significa que la <strong>fuerza (energía)</strong> no fue suficiente.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 3: Conclusión Química">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 3: Conclusión Química
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la química, las partículas también necesitan <strong>energía suficiente</strong> (energía de activación). Si chocan con muy poca energía, simplemente rebotan pero no generan el cambio químico esperado.</p>
+</div>
+</div>
+</section>
+<section id="ejemplo-2-medio" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-2-medio">Ejemplo 2 (Medio)</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 1: Problema">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 1: Problema
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Una reacción química ocurre cuando dos sustancias se mezclan. Un investigador nota que al subir la temperatura, la reacción se acelera. Explica por qué la temperatura afecta la velocidad de reacción usando el concepto de colisiones.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 2: Principio Físico">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 2: Principio Físico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La temperatura se relaciona directamente con la energía cinética. Al subir la temperatura, las partículas adquieren más energía y se mueven mucho más rápido.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 3: El Doble Efecto">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 3: El Doble Efecto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este aumento de velocidad causa dos cosas simultáneas: 1. Las partículas chocan con <strong>mayor frecuencia</strong>. 2. Cada colisión tiene <strong>más energía</strong>, por lo que un mayor porcentaje de choques logra superar la barrera de energía.</p>
+<p>Ambos efectos sumados aceleran drásticamente la reacción.</p>
+</div>
+</div>
+</section>
+<section id="ejemplo-3-alto" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-3-alto">Ejemplo 3 (Alto)</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 1: Problema">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 1: Problema
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un científico observa que una reacción ocurre más rápido al agitar la mezcla. Sin embargo, al agregar un catalizador, la reacción se acelera aún más sin agitar. Explica por qué el catalizador logra algo que la agitación no puede lograr.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 2: Efecto de la Agitación">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 2: Efecto de la Agitación
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La agitación física obliga a las partículas a moverse y encontrarse, lo que aumenta la <strong>frecuencia</strong> de las colisiones. Sin embargo, la agitación <strong>no</strong> cambia la energía interna de cada choque ni altera la energía mínima necesaria para reaccionar.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Paso 3: El Poder del Catalizador">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Paso 3: El Poder del Catalizador
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El catalizador es un “atajo”. <strong>Cambia el mecanismo</strong> de la reacción, <strong>reduciendo la barrera de energía</strong> necesaria. Es más efectivo porque no depende de chocar más veces, sino que hace que los choques que ya ocurren sean exitosos con menos esfuerzo.</p>
+</div>
+</div>
 </section>
 </section>
-<section id="nivel-medio-1" class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="nivel-medio-1"><span class="header-section-number">4.4.2</span> Nivel medio</h3>
-<section id="problema-1-1" class="level4" data-number="4.4.2.1">
-<h4 data-number="4.4.2.1" class="anchored" data-anchor-id="problema-1-1"><span class="header-section-number">4.4.2.1</span> Problema 1</h4>
-<p><strong>Enunciado:</strong> Un investigador realiza una reacción química a 25°C y mide que se produce cierta cantidad de producto en 10 minutos. Luego repite la misma reacción a 50°C. Según la teoría de colisiones, ¿qué esperaría que pasara con la cantidad de producto formada en los mismos 10 minutos? Explica tu razonamiento.</p>
-<p><strong>Pregunta de comprensión:</strong> ¿Por qué la temperatura no solo afecta la frecuencia de choques sino también la energía de cada choque?</p>
-<p><strong>Pregunta socioemocional:</strong> ¿Te ha pasado que entiendes una idea pero te cuesta explicar por qué funciona de esa manera?</p>
+<section id="ejercicios" class="level2 ejercicios">
+<h2 class="ejercicios anchored" data-anchor-id="ejercicios">Ejercicios</h2>
+<p><em>Practica lo que aprendiste. Intenta resolver los problemas justificando cada uno de tus pasos.</em></p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Prevención de Errores (Cuidado)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Precaución</span>Prevención de Errores (Cuidado)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Error Frecuente:</strong> Al justificar tus respuestas, no te limites a decir “porque choca más”. Debes especificar si aumenta la <strong>frecuencia</strong> de las colisiones o si aumenta la <strong>energía</strong> de las mismas.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Apoyo Socioemocional">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Apoyo Socioemocional
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Tranquilo/a:</strong> Si te equivocas en el primer intento, es completamente normal. El aprendizaje en ciencias se construye analizando precisamente por qué una respuesta inicial no funcionó. ¡Adelante!</p>
+</div>
+</div>
+<section id="ejercicio-1-básico" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-1-básico">Ejercicio 1 (Básico)</h3>
+<p>En una mesa de billar, hay 5 bolas muy separadas entre sí y otras 5 bolas muy juntas. Si un jugador da el mismo tiro a los dos grupos, ¿en cuál grupo crees que habrá más colisiones entre bolas? ¿Por qué?</p>
+</section>
+<section id="ejercicio-2-medio" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-2-medio">Ejercicio 2 (Medio)</h3>
+<p>Un investigador realiza una reacción química a 25°C y mide que se produce cierta cantidad de producto en 10 minutos. Luego repite la misma reacción a 50°C. Según la teoría de colisiones, ¿qué esperaría que pasara con la cantidad de producto formada en los mismos 10 minutos? Explica tu razonamiento.</p>
+</section>
+<section id="ejercicio-3-alto" class="level3">
+<h3 class="anchored" data-anchor-id="ejercicio-3-alto">Ejercicio 3 (Alto)</h3>
+<p>Una empresa farmacéutica quiere que un medicamento se disuelva rápidamente en el estómago. El equipo propone dos estrategias: (1) reducir el tamaño de las partículas del medicamento, o (2) agregar un catalizador que acelere la disolución. Analiza cuál estrategia ataca directamente la frecuencia de colisiones y cuál modifica la energía necesaria para que ocurra la reacción.</p>
 </section>
 </section>
-<section id="nivel-alto-1" class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="nivel-alto-1"><span class="header-section-number">4.4.3</span> Nivel alto</h3>
-<section id="problema-1-2" class="level4" data-number="4.4.3.1">
-<h4 data-number="4.4.3.1" class="anchored" data-anchor-id="problema-1-2"><span class="header-section-number">4.4.3.1</span> Problema 1</h4>
-<p><strong>Enunciado:</strong> Una empresa farmacéutica quiere que un medicamento se disuelva rápidamente en el estómago. El equipo de investigación propone dos estrategias: (1) reducir el tamaño de las partículas del medicamento, o (2) agregar un catalizador que acelere la disolución. Analiza cuál estrategia ataca directamente la frecuencia de colisiones y cuál modifica la energía necesaria para que ocurra la reacción.</p>
-<p><strong>Pregunta de comprensión:</strong> Si ambas estrategias aceleran la reacción, ¿por qué es importante entender la diferencia entre ellas para tomar una decisión de diseño?</p>
-<p><strong>Pregunta socioemocional:</strong> ¿Alguna vez tuviste que elegir entre dos opciones que parecían resolver el mismo problema pero funcionaban de manera distinta?</p>
-<hr>
-</section>
-</section>
-</section>
-<section id="evaluación-tipo-icfes" class="level2 evaluacion" data-number="4.5">
-<h2 class="evaluacion anchored" data-number="4.5" data-anchor-id="evaluación-tipo-icfes"><span class="header-section-number">4.5</span> Evaluación — tipo ICFES</h2>
-<details class="icfes-respuesta"><summary>Ver clave de respuestas</summary>
-<section id="clave-de-respuestas" class="level3 clave-respuestas" data-number="4.5.1">
-<h3 class="clave-respuestas anchored" data-number="4.5.1" data-anchor-id="clave-de-respuestas"><span class="header-section-number">4.5.1</span> Clave de respuestas</h3>
-<p><strong>Nivel básico — Problema 1:</strong> El grupo de bolas juntas tendrá más colisiones porque las bolas están más cerca unas de otras, lo que aumenta la probabilidad de que choquen. Esto se relaciona con la concentración: a mayor concentración (más partículas en el mismo espacio), más colisiones ocurren.</p>
-<p><strong>Nivel medio — Problema 1:</strong> Se esperaría que a 50°C se produzca <strong>más producto</strong> en los mismos 10 minutos. Al subir la temperatura, las partículas se mueven más rápido, lo que provoca que choquen con mayor frecuencia y con más energía. Ambos efectos aceleran la reacción, permitiendo que se forme más producto en el mismo tiempo.</p>
-<p><strong>Nivel alto — Problema 1:</strong> La estrategia (1) — reducir el tamaño de las partículas — <strong>aumenta la frecuencia de colisiones</strong> al incrementar el área superficial de contacto. La estrategia (2) — agregar un catalizador — <strong>modifica la energía necesaria</strong> para que la reacción ocurra, reduciendo la barrera de energía. Entender esta diferencia es importante porque la primera estrategia depende de la disponibilidad de espacio y contacto, mientras que la segunda depende de la disponibilidad y compatibilidad del catalizador con el medicamento.</p>
-</section>
-<section id="pregunta-1-nivel-básico" class="level3" data-number="4.5.2">
-<h3 data-number="4.5.2" class="anchored" data-anchor-id="pregunta-1-nivel-básico"><span class="header-section-number">4.5.2</span> Pregunta 1 — Nivel Básico</h3>
-<p>Una estudiante observa que al dejar caer una canica de acero sobre una lámina de aluminio, la canica rebota sin hacer ningún cambio visible en la lámina. Sin embargo, cuando la canica cae desde mayor altura, la lámina queda con una marca.</p>
-<p>Según la teoría de colisiones, ¿qué explica que la canica desde mayor altura sí produzca un cambio en la lámina?</p>
+<section id="evaluación-tipo-icfes" class="level2 evaluacion">
+<h2 class="evaluacion anchored" data-anchor-id="evaluación-tipo-icfes">Evaluación — tipo ICFES</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Autoevaluación
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Intenta responder estas preguntas sin mirar las respuestas. Esto te ayudará a prepararte para las pruebas.</p>
+</div>
+</div>
+<section id="pregunta-1-nivel-básico" class="level3">
+<h3 class="anchored" data-anchor-id="pregunta-1-nivel-básico">Pregunta 1 — Nivel Básico</h3>
+<p>Una estudiante observa que al dejar caer una canica de acero sobre una lámina de aluminio, la canica rebota sin hacer ningún cambio visible. Sin embargo, cuando la canica cae desde mayor altura, la lámina queda con una marca. Según la teoría de colisiones, ¿qué explica que la canica desde mayor altura sí produzca un cambio en la lámina?</p>
 <div class="icfes-opciones">
-<div class="icfes-grid" role="group" aria-label="Opciones de respuesta" data-question-id="q-1">
+<div class="icfes-grid" aria-label="Opciones de respuesta" data-question-id="q-1" role="group">
 <div class="icfes-opcion" aria-label="Opción A">
 <span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">La canica tiene mayor masa al caer desde más alto</span>
 </div>
@@ -728,13 +976,13 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="pregunta-2-nivel-básico" class="level3" data-number="4.5.3">
-<h3 data-number="4.5.3" class="anchored" data-anchor-id="pregunta-2-nivel-básico"><span class="header-section-number">4.5.3</span> Pregunta 2 — Nivel Básico</h3>
-<p>En una partido de billar, un jugador golpea la bola blanca con mucha fuerza hacia una bola negra. La bola negra se mueve rápidamente hacia la tronera pero pasa al lado sin caer. Según la teoría de colisiones, ¿qué combinación de condiciones debe cumplirse para que la “reacción” (que la bola caiga en la tronera) ocurra?</p>
+<section id="pregunta-2-nivel-básico" class="level3">
+<h3 class="anchored" data-anchor-id="pregunta-2-nivel-básico">Pregunta 2 — Nivel Básico</h3>
+<p>En una partido de billar, un jugador golpea la bola blanca con mucha fuerza hacia una bola negra. La bola negra se mueve rápidamente hacia la tronera pero pasa al lado sin caer. Según la teoría de colisiones, ¿qué combinación de condiciones debe cumplirse para que la “reacción” ocurra?</p>
 <div class="icfes-opciones">
-<div class="icfes-grid" role="group" aria-label="Opciones de respuesta" data-question-id="q-2">
+<div class="icfes-grid" aria-label="Opciones de respuesta" data-question-id="q-2" role="group">
 <div class="icfes-opcion" aria-label="Opción A">
-<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">La bola debe tener la masa adecuada y el taco debe estar bien alineado</span>
+<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">La bola debe tener la masa adecuada y el taco bien alineado</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción B">
 <span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">El ángulo del tiro debe ser correcto y la fuerza debe ser suficiente</span>
@@ -743,289 +991,185 @@ window.Quarto = {
 <span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">La bola debe estar quieta y la tronera debe estar despejada</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción D">
-<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">La velocidad de la bola debe ser constante y el piso debe estar liso</span>
+<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">La velocidad de la bola debe ser constante y el piso liso</span>
 </div>
 </div>
 </div>
 </section>
-<section id="pregunta-3-nivel-medio" class="level3" data-number="4.5.4">
-<h3 data-number="4.5.4" class="anchored" data-anchor-id="pregunta-3-nivel-medio"><span class="header-section-number">4.5.4</span> Pregunta 3 — Nivel Medio</h3>
-<p>Un grupo de investigadores realizó una reacción química entre dos sustancias a diferentes temperaturas. Los resultados se muestran en la tabla:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Temperatura (°C)</th>
-<th style="text-align: center;">Tiempo para completar la reacción (min)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">15</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">40</td>
-<td style="text-align: center;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">1</td>
-</tr>
-</tbody>
-</table>
-<p>¿Qué relación se puede inferir entre la temperatura y la velocidad de reacción con base en estos datos?</p>
+<section id="pregunta-3-nivel-medio" class="level3">
+<h3 class="anchored" data-anchor-id="pregunta-3-nivel-medio">Pregunta 3 — Nivel Medio</h3>
+<p>Un grupo de investigadores realizó una reacción química a diferentes temperaturas: - 20°C: 15 min - 40°C: 8 min - 60°C: 3 min - 80°C: 1 min</p>
+<p>¿Qué relación se puede inferir entre la temperatura y la velocidad de reacción?</p>
 <div class="icfes-opciones">
-<div class="icfes-grid" role="group" aria-label="Opciones de respuesta" data-question-id="q-3">
+<div class="icfes-grid" aria-label="Opciones de respuesta" data-question-id="q-3" role="group">
 <div class="icfes-opcion" aria-label="Opción A">
-<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">A mayor temperatura, la reacción tarda más porque las partículas se mueven más lento</span>
+<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">A mayor temperatura, la reacción tarda más</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción B">
-<span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">La temperatura no afecta la velocidad de reacción porque el tiempo siempre es el mismo</span>
+<span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">La temperatura no afecta la velocidad de reacción</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción C">
 <span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">A mayor temperatura, la reacción es más rápida porque las partículas chocan con más frecuencia y energía</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción D">
-<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">La relación no es clara porque los datos muestran resultados inconsistentes</span>
+<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">La relación no es clara</span>
 </div>
 </div>
 </div>
 </section>
-<section id="pregunta-4-nivel-medio" class="level3" data-number="4.5.5">
-<h3 data-number="4.5.5" class="anchored" data-anchor-id="pregunta-4-nivel-medio"><span class="header-section-number">4.5.5</span> Pregunta 4 — Nivel Medio</h3>
-<p>Un estudiante realizó un experimento donde mezcló dos líquidos a temperatura ambiente y observó que la reacción se completó en 5 minutos. Luego repitió el experimento a la misma temperatura pero con los líquidos más concentrados. La reacción se completó en 3 minutos.</p>
-<p>El estudiante concluyó que “la concentración afecta la velocidad de reacción porque aumenta la energía de las colisiones”. ¿Es válida esta conclusión?</p>
+<section id="pregunta-4-nivel-medio" class="level3">
+<h3 class="anchored" data-anchor-id="pregunta-4-nivel-medio">Pregunta 4 — Nivel Medio</h3>
+<p>Un estudiante observó que al usar líquidos más concentrados, la reacción se completó más rápido. Concluyó que “la concentración afecta la velocidad de reacción porque aumenta la energía de las colisiones”. ¿Es válida esta conclusión?</p>
 <div class="icfes-opciones">
-<div class="icfes-grid" role="group" aria-label="Opciones de respuesta" data-question-id="q-4">
+<div class="icfes-grid" aria-label="Opciones de respuesta" data-question-id="q-4" role="group">
 <div class="icfes-opcion" aria-label="Opción A">
-<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">Sí, porque a mayor concentración las partículas tienen más energía para chocar</span>
+<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">Sí, porque a mayor concentración tienen más energía</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción B">
 <span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">No, porque la concentración afecta la frecuencia de colisiones, no su energía</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción C">
-<span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">Sí, porque la concentración y la temperatura producen el mismo efecto en las colisiones</span>
+<span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">Sí, porque concentración y temperatura hacen lo mismo</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción D">
-<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">No, porque la concentración no tiene ningún efecto sobre las colisiones entre partículas</span>
+<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">No, porque la concentración no afecta las colisiones</span>
 </div>
 </div>
 </div>
 </section>
-<section id="pregunta-5-nivel-alto" class="level3" data-number="4.5.6">
-<h3 data-number="4.5.6" class="anchored" data-anchor-id="pregunta-5-nivel-alto"><span class="header-section-number">4.5.6</span> Pregunta 5 — Nivel Alto</h3>
-<p>Una empresa de alimentos quiere que su producto en polvo se disuelva rápidamente en agua fría. El equipo de investigación tiene tres opciones: (1) aumentar la temperatura del agua, (2) reducir el tamaño de las partículas del polvo, o (3) agregar un catalizador alimenticio que acelere la disolución.</p>
-<p>Si la empresa NO puede modificar la temperatura del agua porque el producto debe disolverse en agua fría, y el catalizador tiene un costo alto, ¿qué estrategia sería más efectiva y por qué?</p>
+<section id="pregunta-5-nivel-alto" class="level3">
+<h3 class="anchored" data-anchor-id="pregunta-5-nivel-alto">Pregunta 5 — Nivel Alto</h3>
+<p>Una empresa quiere que un polvo se disuelva rápidamente en agua fría. NO pueden modificar la temperatura del agua y un catalizador tiene un costo alto. ¿Qué estrategia sería más efectiva?</p>
 <div class="icfes-opciones">
-<div class="icfes-grid" role="group" aria-label="Opciones de respuesta" data-question-id="q-5">
+<div class="icfes-grid" aria-label="Opciones de respuesta" data-question-id="q-5" role="group">
 <div class="icfes-opcion" aria-label="Opción A">
-<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">Reducir el tamaño de las partículas, porque aumenta el área superficial y la frecuencia de colisiones sin necesidad de cambiar la temperatura</span>
+<span class="icfes-letra" aria-hidden="true">A</span><span class="icfes-texto">Reducir el tamaño de las partículas, porque aumenta el área superficial y frecuencia de colisiones</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción B">
-<span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">Agregar el catalizador aunque sea costoso, porque es la única estrategia que modifica la energía de las colisiones</span>
+<span class="icfes-letra" aria-hidden="true">B</span><span class="icfes-texto">Agregar el catalizador porque es la única estrategia que modifica la energía</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción C">
-<span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">Aumentar la temperatura del agua, porque es la estrategia más efectiva para acelerar cualquier reacción</span>
+<span class="icfes-letra" aria-hidden="true">C</span><span class="icfes-texto">Aumentar la temperatura del agua de todos modos</span>
 </div>
 <div class="icfes-opcion" aria-label="Opción D">
-<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">No hacer nada, porque en agua fría ninguna estrategia puede acelerar la disolución significativamente</span>
+<span class="icfes-letra" aria-hidden="true">D</span><span class="icfes-texto">No hacer nada</span>
 </div>
 </div>
 </div>
-<p><strong>Autoevaluación:</strong></p>
-<ol type="1">
-<li>¿Qué pregunta te resultó más fácil? ¿Por qué?</li>
-<li>¿Qué pregunta te resultó más difícil? ¿Qué harías diferente?</li>
-<li>En una escala del 1 al 5, ¿qué tan seguro te sientes con este tema?</li>
-</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Reflexión Final:</strong> 1. ¿Qué pregunta te resultó más fácil y por qué? 2. En una escala del 1 al 5, ¿qué tan seguro te sientes con este tema?</p>
+</div>
+</div>
 
 
 </section>
-</details></section>
+</section>
 
 </main> <!-- /main -->
-<style id="accordion-fouc">
-section.level2.teoria > :not(h2),
-section.level2.ideas-previas > :not(h2),
-section.level2.contexto > :not(h2),
-section.level2.caracterizados > :not(h2),
-section.level2.retos > :not(h2),
-section.level2.socioemocional > :not(h2),
-section.level2.ejercicios > :not(h2),
-section.level2.aplicacion > :not(h2),
-section.level2.ejemplo > :not(h2),
-section.level2.evaluacion > :not(h2) {
-  display: none;
+<style>
+#docere-progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: var(--table-bg, #FAFAF8);
+  z-index: 999999 !important;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+#docere-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #5A7BA8, #4A9B6B);
+  transition: width 0.1s ease-out;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 </style>
+<div id="docere-progress-container" aria-hidden="true">
+  <div id="docere-progress-bar"></div>
+</div>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  if (document.getElementById('accordion-body')) return;
+(function() {
+  'use strict';
 
-  // Close any open icfes-respuesta details tags
-  // The Lua filter only emits <details> opening before clave-respuestas.
-  // We restructure the DOM so <details> only wraps clave-respuestas content,
-  // and question sections become siblings after it.
-  var openDetails = document.querySelectorAll('details.icfes-respuesta');
-  openDetails.forEach(function (d) {
-    var parent = d.parentNode;
-    var children = Array.from(d.children);
-    var insertBefore = d.nextSibling;
-    for (var k = children.length - 1; k >= 0; k--) {
-      var child = children[k];
-      if (child.tagName === 'SECTION' && !child.classList.contains('clave-respuestas')) {
-        parent.insertBefore(child, insertBefore);
-        insertBefore = child;
-      }
-    }
-  });
-
-  var TARGET = [
-    'teoria', 'ideas-previas', 'contexto', 'caracterizados',
-    'retos', 'socioemocional', 'ejercicios', 'aplicacion',
-    'ejemplo', 'evaluacion'
-  ];
-  var SEL = TARGET.map(function (c) { return 'section.level2.' + c; }).join(',');
-  var sections = document.querySelectorAll(SEL);
-  if (!sections.length) return;
-
-  var parent = sections[0].parentNode;
-  var accordion = document.createElement('div');
-  accordion.id = 'accordion-body';
-  parent.insertBefore(accordion, sections[0]);
-
-  for (var i = sections.length - 1; i >= 0; i--) {
-    var section = sections[i];
-    var heading = section.querySelector('h2');
-    if (!heading) continue;
-
-    var body = document.createElement('div');
-    body.className = 'collapse';
-    body.id = 'acc-section-' + i;
-
-    var children = Array.from(section.children);
-    for (var j = 0; j < children.length; j++) {
-      if (children[j] !== heading) {
-        body.appendChild(children[j]);
-      }
-    }
-
-    section.appendChild(body);
-    heading.classList.add('accordion-toggle', 'collapsed');
-    heading.setAttribute('role', 'button');
-    heading.setAttribute('tabindex', '0');
-    heading.setAttribute('aria-expanded', 'false');
-    heading.setAttribute('aria-controls', body.id);
-    body.setAttribute('role', 'region');
-    body.setAttribute('aria-labelledby', heading.id);
-
-    accordion.insertBefore(section, accordion.firstChild);
-
-    body.style.display = '';
-  }
-
-  var refs = document.getElementById('refs');
-  if (refs) {
-    var refsParent = refs.closest('.collapse');
-    if (refsParent) {
-      accordion.parentNode.insertBefore(refs, accordion.nextSibling);
-    }
-  }
-
-  var foucStyle = document.getElementById('accordion-fouc');
-  if (foucStyle) foucStyle.remove();
-
-  function renderMermaidInSection(container) {
-    if (typeof mermaid === 'undefined' || !mermaid.run) return;
-    var pres = container.querySelectorAll('pre.mermaid');
-    pres.forEach(function (pre) {
-      var code = pre.querySelector('code');
-      if (code) {
-        mermaid.run({ nodes: [code] });
-      } else {
-        var svg = pre.querySelector('svg');
-        if (svg && svg.getBoundingClientRect().height === 0) {
-          var src = pre.getAttribute('data-mermaid-src');
-          if (src) {
-            pre.innerHTML = '<code>' + src.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code>';
-            pre.classList.add('mermaid');
-            mermaid.run({ nodes: [pre] });
-          }
+  // Helper: DOM Manipulation for details (ICFES restructuring)
+  function restructureDetails() {
+    const openDetails = document.querySelectorAll('details.icfes-respuesta');
+    openDetails.forEach(d => {
+      const parent = d.parentNode;
+      const children = Array.from(d.children);
+      let insertBefore = d.nextSibling;
+      for (let k = children.length - 1; k >= 0; k--) {
+        const child = children[k];
+        if (child.tagName === 'SECTION' && !child.classList.contains('clave-respuestas')) {
+          parent.insertBefore(child, insertBefore);
+          insertBefore = child;
         }
       }
     });
   }
 
-  function toggleSection(h2) {
-    var section = h2.closest('section.level2');
-    if (!section) return;
-    var body = section.querySelector('.collapse');
-    if (!body) return;
+  // Helper: Scroll Progress Bar
+  function initProgressBar() {
+    const progressBar = document.getElementById('docere-progress-bar');
+    if (!progressBar) return;
 
-    var isOpen = body.classList.contains('show');
-
-    accordion.querySelectorAll('.collapse.show').forEach(function (c) {
-      c.classList.remove('show');
-    });
-    accordion.querySelectorAll('.accordion-toggle').forEach(function (t) {
-      t.classList.add('collapsed');
-      t.setAttribute('aria-expanded', 'false');
-    });
-
-    if (!isOpen) {
-      body.classList.add('show');
-      h2.classList.remove('collapsed');
-      h2.setAttribute('aria-expanded', 'true');
-      renderMermaidInSection(body);
+    function updateProgress() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      
+      if (scrollHeight <= 0) {
+        progressBar.style.width = '0%';
+        return;
+      }
+      
+      const scrolled = (scrollTop / scrollHeight) * 100;
+      // Clamp between 0 and 100
+      progressBar.style.width = Math.min(100, Math.max(0, scrolled)) + '%';
     }
+
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(updateProgress);
+    }, { passive: true, capture: true }); // Capture true to catch scroll on any element just in case
+    
+    // Fallback: also listen on body
+    document.body.addEventListener('scroll', () => {
+      requestAnimationFrame(updateProgress);
+    }, { passive: true, capture: true });
+    
+    // Initial call
+    updateProgress();
+    console.log("Natura Docens: Progress bar initialized.");
   }
 
-  document.addEventListener('click', function (e) {
-    var h2 = e.target.closest('.accordion-toggle');
-    if (h2) toggleSection(h2);
+  document.addEventListener('DOMContentLoaded', () => {
+    restructureDetails();
+    initProgressBar();
   });
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    var h2 = e.target.closest('.accordion-toggle');
-    if (h2) {
-      e.preventDefault();
-      toggleSection(h2);
-    }
-  });
-
-  var firstBody = accordion.querySelector('.collapse');
-  if (firstBody) {
-    firstBody.classList.add('show');
-    var firstH2 = accordion.querySelector('.accordion-toggle');
-    if (firstH2) {
-      firstH2.classList.remove('collapsed');
-      firstH2.setAttribute('aria-expanded', 'true');
-    }
-    renderMermaidInSection(firstBody);
-  }
-});
+})();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;display=swap" media="print" onload="this.media='all'">
+<link rel="preload" as="style" href="https://fonts.cdnfonts.com/css/opendyslexic">
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/opendyslexic" media="print" onload="this.media='all'">
 <noscript>
-<style id="accordion-noscript">
-section.level2.teoria > :not(h2),
-section.level2.ideas-previas > :not(h2),
-section.level2.contexto > :not(h2),
-section.level2.caracterizados > :not(h2),
-section.level2.retos > :not(h2),
-section.level2.socioemocional > :not(h2),
-section.level2.ejercicios > :not(h2),
-section.level2.aplicacion > :not(h2),
-section.level2.ejemplo > :not(h2),
-section.level2.evaluacion > :not(h2) {
-  display: block !important;
-}
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
 </noscript>
+
 <style id="a11y-toolbar-style">
 #a11y-toolbar {
   position: fixed; bottom: 20px; right: 20px; z-index: 9999;
@@ -1033,7 +1177,7 @@ section.level2.evaluacion > :not(h2) {
   font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
 }
 #a11y-toolbar button {
-  width: 44px; height: 44px; border: 2px solid #a06050; border-radius: 50%;
+  width: 44px; height: 44px; border: 2px solid #a06050; border-radius: 8px;
   background: #fdf5f2; color: #503020; font-size: 18px; font-weight: bold;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.1s; line-height: 1;
@@ -1047,13 +1191,18 @@ section.level2.evaluacion > :not(h2) {
   opacity: 0; pointer-events: none; transition: opacity 0.2s;
 }
 #a11y-toolbar button:hover .a11y-label { opacity: 1; }
+#a11y-toolbar button:focus .a11y-label { opacity: 1; }
 #a11y-toolbar .a11y-separator { width: 28px; height: 2px; background: #c08070; margin: 2px auto; border-radius: 1px; }
-#a11y-fontsize-display, #a11y-tts-status {
+#a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
   position: fixed; bottom: 20px; right: 76px; background: #503020; color: #fff;
   padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: bold;
   opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999;
 }
-#a11y-fontsize-display.show, #a11y-tts-status.show { opacity: 1; }
+#a11y-fontsize-display.show, #a11y-tts-status.show, #a11y-mode-status.show { opacity: 1; }
+#a11y-toolbar button:focus-visible {
+  outline: 3px solid #0077BB;
+  outline-offset: 2px;
+}
 @media (forced-colors: active) { #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; } }
 #a11y-tts-speed-wrap { position: relative; }
 #a11y-tts-slider {
@@ -1075,655 +1224,914 @@ section.level2.evaluacion > :not(h2) {
 }
 #a11y-tts-speed-val { color: #fff; font-size: 13px; font-weight: bold; min-width: 30px; text-align: center; }
 @media (prefers-reduced-motion: reduce) { #a11y-toolbar button { transition: none; } }
+#quarto-document-content {
+  font-family: var(--body-font) !important;
+  font-size: var(--body-font-size) !important;
+  line-height: var(--body-line-height) !important;
+  letter-spacing: var(--body-letter-spacing) !important;
+  word-spacing: var(--body-word-spacing) !important;
+}
+
+/* Toolbar móvil: compacto horizontal en la parte inferior */
+@media (max-width: 480px) {
+  #a11y-toolbar {
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    right: 12px;
+    gap: 4px;
+  }
+  #a11y-toolbar button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  #a11y-tts-slider {
+    right: auto;
+    left: 0;
+    bottom: 48px;
+    min-width: 200px;
+  }
+  #a11y-fontsize-display,
+  #a11y-tts-status,
+  #a11y-mode-status {
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    right: 80px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 768px) {
+  #a11y-toolbar {
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    right: 16px;
+  }
+  #a11y-tts-slider {
+    right: auto;
+    left: 0;
+    bottom: 52px;
+  }
+}
+
+/* Toggle móvil */
+#a11y-toggle-btn {
+  display: none;
+}
+@media (max-width: 480px) {
+  #a11y-toggle-btn {
+    display: flex;
+    position: fixed;
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #a06050;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    z-index: 10000;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  #a11y-toolbar {
+    bottom: max(68px, calc(env(safe-area-inset-bottom, 16px) + 60px));
+    right: 8px;
+    gap: 4px;
+    /* Colapsado por defecto en móvil */
+    display: none;
+  }
+  #a11y-toolbar.mobile-open {
+    display: flex;
+  }
+  /* Toolbar visible automáticamente cuando TTS está activo */
+  #a11y-toolbar.tts-active {
+    display: flex !important;
+  }
+  #a11y-toolbar button {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+  #a11y-tts-slider {
+    right: auto;
+    left: 0;
+    bottom: 48px;
+    min-width: 180px;
+    max-width: 260px;
+  }
+  #a11y-fontsize-display,
+  #a11y-tts-status,
+  #a11y-mode-status {
+    bottom: max(70px, calc(env(safe-area-inset-bottom, 16px) + 62px));
+    right: 60px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
 </style>
 
+<button id="a11y-toggle-btn" aria-label="Abrir controles de accesibilidad" aria-expanded="false" aria-controls="a11y-toolbar">
+  <svg aria-hidden="true" class="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+  <circle cx="12" cy="12" r="3"></circle>
+</svg>
+
+</button>
 <div id="a11y-toolbar" role="toolbar" aria-label="Controles de accesibilidad">
   <button id="a11y-font-plus" aria-label="Aumentar tamaño de texto" title="Aumentar texto">
-    <span aria-hidden="true">T+</span><span class="a11y-label">Aumentar texto</span>
+    <svg aria-hidden="true" class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="11" cy="11" r="8"></circle>
+  <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+  <line x1="11" x2="11" y1="8" y2="14"></line>
+  <line x1="8" x2="14" y1="11" y2="11"></line>
+</svg>
+<span class="a11y-label">Aumentar texto</span>
   </button>
   <button id="a11y-font-minus" aria-label="Disminuir tamaño de texto" title="Disminuir texto">
-    <span aria-hidden="true">T-</span><span class="a11y-label">Disminuir texto</span>
+    <svg aria-hidden="true" class="lucide lucide-zoom-out" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="11" cy="11" r="8"></circle>
+  <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+  <line x1="8" x2="14" y1="11" y2="11"></line>
+</svg>
+<span class="a11y-label">Disminuir texto</span>
   </button>
   <button id="a11y-font-reset" aria-label="Restablecer tamaño de texto" title="Restablecer">
-    <span aria-hidden="true">1x</span><span class="a11y-label">Restablecer tamaño</span>
+    <svg aria-hidden="true" class="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+  <path d="M3 3v5h5"></path>
+</svg>
+<span class="a11y-label">Restablecer tamaño</span>
   </button>
   <div class="a11y-separator" aria-hidden="true"></div>
   <button id="a11y-tts-play" aria-label="Leer texto en voz alta" title="Leer texto">
-    <span aria-hidden="true">▶</span><span class="a11y-label">Leer texto</span>
+    <svg aria-hidden="true" class="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+</svg>
+<span class="a11y-label">Leer texto</span>
   </button>
   <button id="a11y-tts-pause" aria-label="Pausar lectura" title="Pausar" style="display:none;">
-    <span aria-hidden="true" class="icon-pause">❚❚</span>
-    <span aria-hidden="true" class="icon-play" style="display:none;">▶</span>
+    <i class="bi bi-pause-circle icon-pause" aria-hidden="true"></i>
+    <i class="bi bi-play-circle icon-play" aria-hidden="true" style="display:none;"></i>
     <span class="a11y-label label-pause">Pausar</span>
     <span class="a11y-label label-play" style="display:none;">Reanudar</span>
   </button>
   <button id="a11y-tts-stop" aria-label="Detener lectura" title="Detener" style="display:none;">
-    <span aria-hidden="true">■</span><span class="a11y-label">Detener</span>
+    <svg aria-hidden="true" class="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+</svg>
+<span class="a11y-label">Detener</span>
   </button>
   <div id="a11y-tts-speed-wrap">
     <button id="a11y-tts-speed-btn" aria-label="Velocidad de lectura" title="Velocidad">
-      <span aria-hidden="true">⚙</span><span class="a11y-label">Velocidad</span>
+      <svg aria-hidden="true" class="lucide lucide-gauge" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m12 14 4-4"></path>
+  <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+</svg>
+<span class="a11y-label">Velocidad</span>
     </button>
     <div id="a11y-tts-slider" style="display:none;">
       <input type="range" id="a11y-tts-range" min="0.5" max="2" step="0.25" value="1" aria-label="Velocidad de lectura">
       <span id="a11y-tts-speed-val">1x</span>
     </div>
   </div>
-  <button id="a11y-tts-voice" aria-label="Voz femenina" title="Voz: Femenina">
-    <span aria-hidden="true">♀</span><span class="a11y-label">Voz: Femenina</span>
+  <div class="a11y-separator" aria-hidden="true"></div>
+  <button id="a11y-mode-normal" aria-label="Restablecer modos de accesibilidad" title="Restablecer">
+    <svg aria-hidden="true" class="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+  <path d="M3 3v5h5"></path>
+</svg>
+<span class="a11y-label">Restablecer</span>
+  </button>
+  <button id="a11y-mode-daltonismo" aria-label="Colores para daltonismo" title="Daltonismo" aria-pressed="false">
+    <svg aria-hidden="true" class="lucide lucide-palette" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+</svg>
+<span class="a11y-label">Daltonismo</span>
+  </button>
+  <button id="a11y-mode-dislexia" aria-label="Fuente para dislexia" title="Dislexia" aria-pressed="false">
+    <svg aria-hidden="true" class="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+</svg>
+<span class="a11y-label">Dislexia</span>
   </button>
 </div>
 
 <div id="a11y-fontsize-display" aria-live="polite"></div>
 <div id="a11y-tts-status" aria-live="assertive"></div>
+<div id="a11y-mode-status" aria-live="polite"></div>
 
 <script>
 (function() {
   'use strict';
 
   /* ═══════════════════════════════════════════════════════════════
+     MODE SYSTEM — 2 independent toggles
+     ═══════════════════════════════════════════════════════════════ */
+  var COLOR_KEY = 'natura-docens-colorblind';
+  var DYSLEXIA_KEY = 'natura-docens-dyslexia';
+  var COLOR_VERSION_KEY = 'natura-docens-cb-version';
+
+  var DYSLEXIA_FONT = '"OpenDyslexic", "Atkinson Hyperlegible", system-ui, sans-serif';
+  var DEFAULT_FONT = '"Atkinson Hyperlegible", system-ui, sans-serif';
+
+  function showModeStatus(msg) {
+    var el = document.getElementById('a11y-mode-status');
+    if (!el) return;
+    el.textContent = msg; el.classList.add('show');
+    clearTimeout(el._t); el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+  }
+
+  function updateModeStatus() {
+    var modes = [];
+    if (document.body.classList.contains('theme-colorblind')) modes.push('Daltonismo');
+    if (document.body.classList.contains('overlay-cream')) modes.push('Dislexia');
+    showModeStatus(modes.length ? 'Modos: ' + modes.join(' + ') : 'Modo: Normal');
+  }
+
+  function toggleBtn(id, on) {
+    var btn = document.getElementById(id);
+    if (btn) {
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
+  function applyColors(on) {
+    document.body.classList.toggle('theme-colorblind', on);
+    localStorage.setItem(COLOR_KEY, on ? '1' : '0');
+    toggleBtn('a11y-mode-daltonismo', on);
+  }
+
+  function applyDyslexia(on) {
+    var root = document.documentElement;
+    if (on) {
+      document.body.classList.add('overlay-cream');
+      root.style.setProperty('--body-font', DYSLEXIA_FONT);
+      root.style.setProperty('--body-line-height', '1.8');
+      root.style.setProperty('--body-letter-spacing', '0.04em');
+      root.style.setProperty('--body-word-spacing', '0.16em');
+    } else {
+      document.body.classList.remove('overlay-cream');
+      root.style.setProperty('--body-font', DEFAULT_FONT);
+      root.style.setProperty('--body-line-height', '1.5');
+      root.style.setProperty('--body-letter-spacing', 'normal');
+      root.style.setProperty('--body-word-spacing', 'normal');
+    }
+    localStorage.setItem(DYSLEXIA_KEY, on ? '1' : '0');
+    toggleBtn('a11y-mode-dislexia', on);
+  }
+
+  function resetModes() {
+    applyColors(false);
+    applyDyslexia(false);
+    updateModeStatus();
+  }
+
+  document.getElementById('a11y-mode-normal').onclick = resetModes;
+  document.getElementById('a11y-mode-daltonismo').onclick = function() {
+    applyColors(!document.body.classList.contains('theme-colorblind'));
+    updateModeStatus();
+  };
+  document.getElementById('a11y-mode-dislexia').onclick = function() {
+    applyDyslexia(!document.body.classList.contains('overlay-cream'));
+    updateModeStatus();
+  };
+
+  /* Restore from localStorage — clear stale values from previous buggy versions */
+  if (localStorage.getItem(COLOR_VERSION_KEY) !== '2') {
+    localStorage.removeItem(COLOR_KEY);
+    localStorage.setItem(COLOR_VERSION_KEY, '2');
+  }
+  applyColors(localStorage.getItem(COLOR_KEY) === '1');
+  applyDyslexia(localStorage.getItem(DYSLEXIA_KEY) === '1');
+  updateModeStatus();
+
+  /* ═══════════════════════════════════════════════════════════════
      FONT SIZE
      ═══════════════════════════════════════════════════════════════ */
-  var MAIN_CONTENT = document.getElementById('quarto-document-content');
   var STORAGE_KEY = 'natura-docens-fontsize';
-  var BASE_SIZE = 1.25, STEP = 0.125, MIN = 0.875, MAX = 2.5;
-  var HEADING_SCALES = { h1: 2.0, h2: 1.5, h3: 1.25, h4: 1.1, h5: 1.0, h6: 1.0 };
+  var BASE_SIZE = 1.0, STEP = 0.125, MIN = 0.75, MAX = 2.0;
 
   function getCurrentSize() {
     var v = localStorage.getItem(STORAGE_KEY);
     if (!v) return BASE_SIZE;
     var n = parseFloat(v);
-    // Migrate old px values (>10 means it was stored as px)
-    if (n > 10) { n = n / 16; localStorage.setItem(STORAGE_KEY, n); }
+    var validSizes = [0.75, 0.875, 1.0, 1.125, 1.25, 1.375, 1.5, 1.625, 1.75, 1.875, 2.0];
+    if (!validSizes.includes(n)) {
+      localStorage.removeItem(STORAGE_KEY);
+      return BASE_SIZE;
+    }
     return n;
   }
+  
   function applySize(rem) {
-    if (MAIN_CONTENT) {
-      MAIN_CONTENT.style.fontSize = rem + 'rem';
-      MAIN_CONTENT.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function(h) {
-        h.style.fontSize = (rem * (HEADING_SCALES[h.tagName.toLowerCase()] || 1.0)) + 'rem';
-      });
-    }
+    document.documentElement.style.setProperty('--a11y-base-size', rem + 'rem');
     localStorage.setItem(STORAGE_KEY, rem);
     var el = document.getElementById('a11y-fontsize-display');
-    el.textContent = 'Tamaño: ' + Math.round(rem * 16) + 'px'; el.classList.add('show');
-    clearTimeout(el._t); el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+    if (el) {
+      el.textContent = 'Tamaño: ' + Math.round(rem * 20) + 'px'; 
+      el.classList.add('show');
+      clearTimeout(el._t); 
+      el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+    }
   }
+
   document.getElementById('a11y-font-plus').onclick = function() { applySize(Math.min(getCurrentSize() + STEP, MAX)); };
   document.getElementById('a11y-font-minus').onclick = function() { applySize(Math.max(getCurrentSize() - STEP, MIN)); };
-  document.getElementById('a11y-font-reset').onclick = function() { applySize(BASE_SIZE); };
-  var savedSize = getCurrentSize(); if (savedSize !== BASE_SIZE) applySize(savedSize);
+  document.getElementById('a11y-font-reset').onclick = function() {
+    localStorage.removeItem(STORAGE_KEY);
+    applySize(BASE_SIZE);
+  };
+  
+  var savedSize = getCurrentSize();
+  if (savedSize !== BASE_SIZE) applySize(savedSize);
 
   /* ═══════════════════════════════════════════════════════════════
-     TTS
+     TTS ENGINE — v3
      ═══════════════════════════════════════════════════════════════ */
-  var synth = window.speechSynthesis;
-  if (!synth) { document.getElementById('a11y-toolbar').style.display = 'none'; return; }
-
-  var TTS_PLAY = document.getElementById('a11y-tts-play');
-  var TTS_PAUSE = document.getElementById('a11y-tts-pause');
-  var TTS_STOP = document.getElementById('a11y-tts-stop');
-  var TTS_STATUS = document.getElementById('a11y-tts-status');
-  var TTS_VOICE_BTN = document.getElementById('a11y-tts-voice');
-  var VOICE_KEY = 'natura-docens-ttsvoice';
-  var voiceGender = 'female';
-  var BEST_FEMALE = ['Paulina', 'Sandy', 'Shelley', 'Flo', 'Monica'];
-  var BEST_MALE = ['Eddy', 'Reed', 'Rocko', 'Grandpa'];
-
-  function findBestVoice(voices, names) {
-    for (var i = 0; i < names.length; i++) {
-      var f = voices.filter(function(v) { return v.name && v.name.indexOf(names[i]) !== -1; })[0];
-      if (f) return f;
-    }
-    return null;
-  }
-  function getSpanishVoice() {
-    var voices = synth.getVoices();
-    var es = voices.filter(function(v) { return v.lang && v.lang.indexOf('es') === 0; });
-    if (!es.length) return null;
-    var best = findBestVoice(es, voiceGender === 'female' ? BEST_FEMALE : BEST_MALE);
-    if (best) return best;
-    var mx = es.filter(function(v) { return v.lang === 'es-MX'; })[0]; if (mx) return mx;
-    var sp = es.filter(function(v) { return v.lang === 'es-ES'; })[0]; if (sp) return sp;
-    return es[0] || null;
-  }
-  function updateVoiceButton() {
-    var icon = TTS_VOICE_BTN.querySelector('span:first-child');
-    var label = TTS_VOICE_BTN.querySelector('.a11y-label');
-    icon.textContent = voiceGender === 'female' ? '\u2640' : '\u2642';
-    label.textContent = 'Voz: ' + (voiceGender === 'female' ? 'Femenina' : 'Masculina');
-    TTS_VOICE_BTN.setAttribute('aria-label', 'Voz ' + (voiceGender === 'female' ? 'femenina' : 'masculina'));
-  }
-  var savedVoice = localStorage.getItem(VOICE_KEY); if (savedVoice) voiceGender = savedVoice; updateVoiceButton();
-
-  function showStatus(msg) { TTS_STATUS.textContent = msg; TTS_STATUS.classList.add('show'); }
-  function hideStatus() { TTS_STATUS.classList.remove('show'); }
-
-  var isPaused = false;
-  function updateButtons(speaking) {
-    TTS_PLAY.style.display = speaking ? 'none' : '';
-    TTS_PAUSE.style.display = speaking ? '' : 'none';
-    TTS_STOP.style.display = speaking ? '' : 'none';
-    if (speaking) { TTS_PLAY.classList.add('active'); updatePauseBtn(false); }
-    else { TTS_PLAY.classList.remove('active'); TTS_PAUSE.style.display = 'none'; TTS_STOP.style.display = 'none'; updatePauseBtn(false); }
-  }
-  function updatePauseBtn(paused) {
-    isPaused = paused;
-    var ip = TTS_PAUSE.querySelector('.icon-pause'), il = TTS_PAUSE.querySelector('.icon-play');
-    var lp = TTS_PAUSE.querySelector('.label-pause'), ll = TTS_PAUSE.querySelector('.label-play');
-    ip.style.display = paused ? 'none' : ''; il.style.display = paused ? '' : 'none';
-    lp.style.display = paused ? 'none' : ''; ll.style.display = paused ? '' : 'none';
-    TTS_PAUSE.setAttribute('aria-label', paused ? 'Reanudar lectura' : 'Pausar lectura');
-    TTS_PAUSE.setAttribute('title', paused ? 'Reanudar' : 'Pausar');
-  }
-
   /* ═══════════════════════════════════════════════════════════════
-     DOM FILTERING
+     TTS ENGINE — REFACTORED (CLEAN CODE & OOP)
      ═══════════════════════════════════════════════════════════════ */
-  var SKIP = { SCRIPT:1, STYLE:1, NOSCRIPT:1, SVG:1, MATH:1, MQ:1, PRE:1, CODE:1, KBD:1, SAMP:1, VAR:1, NAV:1, FOOTER:1, HEADER:1, ASIDE:1, IFRAME:1, CANVAS:1, TEMPLATE:1 };
-  var SKIP_SEL = ['.cell-code','.sourceCode','.code-block','pre','code','.callout-caption','.quarto-btn-toggle','.sidebar','.quarto-sidebar','[aria-hidden="true"]','.toc-title','.page-navigation','.back-to-top','.section-nav','.doc-footer'];
-  var INLINE_TAGS = { STRONG:1, B:1, EM:1, I:1, U:1, S:1, MARK:1, SMALL:1, SUP:1, SUB:1, ABBR:1, CITE:1, Q:1, A:1, SPAN:1, TIME:1, CODE:1 };
+  const DocereTTS = (function() {
+    const synth = window.speechSynthesis;
+    
+    const CONFIG = {
+      MAX_CHUNK_LENGTH: 200,
+      SKIP_TAGS: { SCRIPT:1, STYLE:1, NOSCRIPT:1, SVG:1, MATH:1, PRE:1, CODE:1, NAV:1, FOOTER:1, HEADER:1, ASIDE:1, IFRAME:1, TEMPLATE:1 },
+      SKIP_SELS: ['.cell-code','.sourceCode','.code-block','pre','code','.callout-caption','.quarto-btn-toggle','.sidebar','.quarto-sidebar','[aria-hidden="true"]','.toc-title','.page-navigation','.back-to-top','.section-nav','.doc-footer'],
+      STORAGE_SPEED: 'natura-docens-ttsspeed'
+    };
+    
+    const STATE = { IDLE: 0, SPEAKING: 1, PAUSED: 2 };
 
-  function isHidden(el) {
-    if (el.nodeType !== 1) return false;
-    var s = window.getComputedStyle(el);
-    return s.display === 'none' || s.visibility === 'hidden' || (el.offsetHeight === 0 && el.offsetWidth === 0);
-  }
-  function isSkipped(el) {
-    if (!el || el.nodeType !== 1) return false;
-    if (SKIP[el.tagName]) return true;
-    for (var i = 0; i < SKIP_SEL.length; i++) {
-      if (el.matches && el.matches(SKIP_SEL[i])) return true;
-      if (el.closest && el.closest(SKIP_SEL[i])) return true;
-    }
-    return false;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════
-     STRUCTURAL TEXT EXTRACTION
-     ═══════════════════════════════════════════════════════════════ */
-  function extractInline(el) {
-    var parts = [];
-    for (var i = 0; i < el.childNodes.length; i++) {
-      var c = el.childNodes[i];
-      if (c.nodeType === 3) { if (c.textContent.length > 0) parts.push({ text: c.textContent, node: c }); }
-      else if (c.nodeType === 1) {
-        if (isSkipped(c) || isHidden(c)) continue;
-        if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
-        if (INLINE_TAGS[c.tagName]) { var inner = extractInline(c); for (var j = 0; j < inner.length; j++) parts.push(inner[j]); }
+    class DOMExtractor {
+      static isHidden(el) {
+        if (el.nodeType !== 1) return false;
+        const s = window.getComputedStyle(el);
+        return s.display === 'none' || s.visibility === 'hidden' || (el.offsetHeight === 0 && el.offsetWidth === 0);
       }
-    }
-    return parts;
-  }
-
-  function extractContentParts(el) {
-    var parts = [];
-    for (var i = 0; i < el.childNodes.length; i++) {
-      var c = el.childNodes[i];
-      if (c.nodeType === 3) { if (c.textContent.length > 0) parts.push({ text: c.textContent, node: c }); }
-      else if (c.nodeType === 1) {
-        if (isSkipped(c) || isHidden(c)) continue;
-        if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
-        if (INLINE_TAGS[c.tagName]) { var inner = extractInline(c); for (var j = 0; j < inner.length; j++) parts.push(inner[j]); }
-        else { var nested = extractContentParts(c); for (var k = 0; k < nested.length; k++) parts.push(nested[k]); }
-      }
-    }
-    return parts;
-  }
-
-  function extractStructural(root) {
-    var spans = [];
-    function addSpan(text, type, node) { if (text && text.length > 0) spans.push({ text: text, type: type, node: node }); }
-    function addContent(el) {
-      var parts = extractContentParts(el);
-      for (var i = 0; i < parts.length; i++) addSpan(parts[i].text, 'content', parts[i].node);
-    }
-
-    function processElement(el) {
-      if (isSkipped(el) || isHidden(el)) return;
-      var tag = el.tagName;
-
-      if (tag === 'H1' || tag === 'H2' || tag === 'H3' || tag === 'H4' || tag === 'H5' || tag === 'H6') {
-        var level = parseInt(tag[1]);
-        addSpan(level === 1 ? 'Título. ' : level === 2 ? 'Subtítulo. ' : 'Sección. ', 'marker', null);
-        addContent(el);
-        addSpan('. ', 'pause', null);
-        return;
-      }
-
-      if (tag === 'P') {
-        addContent(el);
-        addSpan('. ', 'pause', null);
-        return;
-      }
-
-      if (tag === 'LI') {
-        addSpan('Ítem. ', 'marker', null);
-        addContent(el);
-        addSpan('. ', 'pause', null);
-        for (var j = 0; j < el.children.length; j++) {
-          var child = el.children[j];
-          if (child.tagName === 'UL' || child.tagName === 'OL') processElement(child);
+      
+      static isSkipped(el) {
+        if (!el || el.nodeType !== 1) return false;
+        if (CONFIG.SKIP_TAGS[el.tagName]) return true;
+        for (let sel of CONFIG.SKIP_SELS) {
+          if (el.matches && el.matches(sel)) return true;
+          if (el.closest && el.closest(sel)) return true;
         }
-        return;
+        return false;
       }
 
-      if (tag === 'UL' || tag === 'OL') {
-        for (var i = 0; i < el.children.length; i++) {
-          if (el.children[i].tagName === 'LI') processElement(el.children[i]);
-        }
-        return;
-      }
-
-      if (tag === 'BLOCKQUOTE') {
-        addSpan('Cita. ', 'marker', null);
-        for (var i = 0; i < el.children.length; i++) processElement(el.children[i]);
-        return;
-      }
-
-      // ── TABLES ──
-      if (tag === 'TABLE') {
-        // Read caption first if present
-        var cap = el.querySelector('caption');
-        if (cap) { addSpan('Tabla. ', 'marker', null); addContent(cap); addSpan('. ', 'pause', null); }
-        // Read header cells directly (THEAD is in skip list)
-        var thead = el.querySelector('thead');
-        if (thead) {
-          addSpan('Encabezados: ', 'marker', null);
-          var headerCells = thead.querySelectorAll('th, td');
-          for (var hi = 0; hi < headerCells.length; hi++) {
-            addContent(headerCells[hi]);
-            if (hi < headerCells.length - 1) addSpan(', ', 'pause', null);
+      static extractContent(el) {
+        let parts = [];
+        for (let c of el.childNodes) {
+          if (c.nodeType === 3 && c.textContent.trim().length > 0) {
+            parts.push({ text: c.textContent, node: c });
+          } else if (c.nodeType === 1) {
+            if (this.isSkipped(c) || this.isHidden(c)) continue;
+            if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
+            parts.push(...this.extractContent(c));
           }
-          addSpan('. ', 'pause', null);
         }
-        // Read body rows
-        var tbody = el.querySelector('tbody');
-        var rows = tbody ? tbody.querySelectorAll('tr') : [];
-        for (var ri = 0; ri < rows.length; ri++) {
-          var cells = rows[ri].querySelectorAll('td, th');
-          if (cells.length === 0) continue;
-          addSpan('Fila ' + (ri + 1) + '. ', 'marker', null);
-          for (var ci = 0; ci < cells.length; ci++) {
-            addContent(cells[ci]);
-            if (ci < cells.length - 1) addSpan(', ', 'pause', null);
+        return parts;
+      }
+
+      static extractStructural(root) {
+        let spans = [];
+        const addSpan = (text, type, node = null) => { if (text) spans.push({ text, type, node }); };
+        const processElement = (el) => {
+          if (this.isSkipped(el) || this.isHidden(el)) return;
+          const tag = el.tagName;
+
+          if (/^H[1-6]$/.test(tag)) {
+            const lvl = parseInt(tag[1]);
+            addSpan(lvl === 1 ? 'Título. ' : lvl === 2 ? 'Subtítulo. ' : 'Sección. ', 'marker');
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            return;
           }
-          addSpan('. ', 'pause', null);
+          if (tag === 'P') {
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            return;
+          }
+          if (tag === 'LI') {
+            addSpan('Ítem. ', 'marker');
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            Array.from(el.children).filter(c => c.tagName === 'UL' || c.tagName === 'OL').forEach(processElement);
+            return;
+          }
+          if (tag === 'UL' || tag === 'OL' || tag === 'BLOCKQUOTE') {
+            if (tag === 'BLOCKQUOTE') addSpan('Cita. ', 'marker');
+            Array.from(el.children).forEach(processElement);
+            return;
+          }
+          if (tag === 'TABLE') {
+             const cap = el.querySelector('caption');
+             if(cap) { addSpan('Tabla. ', 'marker'); this.extractContent(cap).forEach(p => addSpan(p.text, 'content', p.node)); addSpan('. ', 'pause'); }
+             Array.from(el.querySelectorAll('tr')).forEach((tr, i) => {
+                const cells = tr.querySelectorAll('th, td');
+                if(!cells.length) return;
+                addSpan(`Fila ${i+1}. `, 'marker');
+                Array.from(cells).forEach(cell => {
+                   this.extractContent(cell).forEach(p => addSpan(p.text, 'content', p.node));
+                   addSpan(', ', 'pause');
+                });
+                addSpan('. ', 'pause');
+             });
+             return;
+          }
+          if (['THEAD', 'TBODY', 'TFOOT', 'TR', 'TD', 'TH', 'CAPTION'].includes(tag)) return;
+          
+          for (let c of el.childNodes) {
+            if (c.nodeType === 1) processElement(c);
+            else if (c.nodeType === 3 && c.textContent.trim()) addSpan(c.textContent, 'content', c);
+          }
+        };
+
+        for (let c of root.childNodes) {
+          if (c.nodeType === 1) processElement(c);
+          else if (c.nodeType === 3 && c.textContent.trim()) addSpan(c.textContent, 'content', c);
         }
-        return;
+        return spans;
       }
-
-      // Skip thead/tbody/tr individually — TABLE handler above processes them
-      if (tag === 'THEAD' || tag === 'TBODY' || tag === 'TFOOT' || tag === 'TR' || tag === 'TD' || tag === 'TH' || tag === 'CAPTION') {
-        return;
-      }
-
-      // ── ICFES MULTIPLE CHOICE OPTIONS ──
-      if (tag === 'DIV' && el.classList.contains('icfes-opciones')) {
-        var opts = el.querySelectorAll('.icfes-opcion');
-        for (var oi = 0; oi < opts.length; oi++) {
-          addSpan('Opción ' + String.fromCharCode(65 + oi) + '. ', 'marker', null);
-          addSpan(' ', 'pause', null);
-          addContent(opts[oi]);
-          addSpan('. ', 'pause', null);
-        }
-        return;
-      }
-
-      for (var i = 0; i < el.children.length; i++) processElement(el.children[i]);
     }
 
-    for (var i = 0; i < root.children.length; i++) processElement(root.children[i]);
-    return spans;
-  }
+    class TTSEngine {
+      constructor() {
+        this.state = STATE.IDLE;
+        this.rate = parseFloat(localStorage.getItem(CONFIG.STORAGE_SPEED)) || 1.0;
+        this.voice = null;
+        this.chunks = [];
+        this.textNodes = [];
+        this.fullText = '';
+        this.currentIndex = 0;
+        this.session = 0;
+        this.utteranceStore = [];
+        this.ui = new TTSUI(this);
+        
+        if (!synth) {
+          this.ui.hideAll();
+          return;
+        }
+
+        this.initVoices();
+        if (synth.onvoiceschanged !== undefined) {
+          synth.onvoiceschanged = () => this.initVoices();
+        }
+
+        this.setupEvents();
+      }
+
+      initVoices() {
+        if (!synth) return;
+        const voices = synth.getVoices();
+        const es = voices.filter(v => v.lang.startsWith('es'));
+        if (es.length) {
+          this.voice = es.find(v => v.lang === 'es-MX') || es.find(v => v.lang === 'es-CO') || es.find(v => v.lang === 'es-ES') || es[0];
+        }
+      }
+
+      prepare() {
+        const mainEl = document.getElementById('quarto-document-content');
+        if (!mainEl) return false;
+
+        this.textNodes = [];
+        this.chunks = [];
+        this.fullText = '';
+
+        let spans = [];
+        const titleBlock = document.getElementById('title-block-header');
+        if (titleBlock) spans = spans.concat(DOMExtractor.extractStructural(titleBlock));
+        spans = spans.concat(DOMExtractor.extractStructural(mainEl));
+
+        let chunkStart = 0;
+        for (let span of spans) {
+          let startPos = this.fullText.length;
+          this.fullText += span.text;
+          if (span.type === 'content' && span.node) {
+            this.textNodes.push({ node: span.node, start: startPos, text: span.text });
+          }
+          if (span.type === 'pause') {
+            this.pushChunk(chunkStart, startPos);
+            chunkStart = startPos;
+          }
+        }
+        this.pushChunk(chunkStart, this.fullText.length);
+        this.ui.ensureHighlightEl();
+        return this.textNodes.length > 0 && this.chunks.length > 0;
+      }
+
+      pushChunk(from, to) {
+        const raw = this.fullText.substring(from, to);
+        if (!raw.trim()) return;
+        if (raw.length <= CONFIG.MAX_CHUNK_LENGTH) {
+          this.chunks.push({ text: raw, start: from, end: to });
+          return;
+        }
+        let pos = from;
+        while (pos < to) {
+          let end = Math.min(pos + CONFIG.MAX_CHUNK_LENGTH, to);
+          if (end < to) {
+            let slice = this.fullText.substring(pos, end);
+            let dot = slice.lastIndexOf('. ');
+            let space = slice.lastIndexOf(' ');
+            if (dot > CONFIG.MAX_CHUNK_LENGTH * 0.3) end = pos + dot + 2;
+            else if (space > CONFIG.MAX_CHUNK_LENGTH * 0.3) end = pos + space + 1;
+          }
+          let chunkText = this.fullText.substring(pos, end);
+          if (chunkText.trim().length > 1) this.chunks.push({ text: chunkText, start: pos, end: end });
+          pos = end;
+        }
+      }
+
+      speakChunk(idx) {
+        if (idx >= this.chunks.length || this.state !== STATE.SPEAKING) {
+          this.stop();
+          return;
+        }
+
+        const chunk = this.chunks[idx];
+        if (!chunk.text.trim()) {
+          this.currentIndex++;
+          return this.speakChunk(this.currentIndex);
+        }
+
+        const utt = new SpeechSynthesisUtterance(chunk.text + ' ');
+        utt.lang = 'es-CO';
+        utt.rate = this.rate;
+        if (this.voice) utt.voice = this.voice;
+
+        let handled = false;
+        const currentSession = this.session;
+        this.utteranceStore.push(utt);
+
+        utt.onboundary = (e) => {
+          if (e.name !== 'word' || this.session !== currentSession || handled) return;
+          this.ui.highlight(chunk.start + e.charIndex, this.textNodes, this.fullText);
+        };
+
+        utt.onend = () => {
+          if (handled || this.session !== currentSession) return;
+          handled = true;
+          this.utteranceStore = this.utteranceStore.filter(u => u !== utt);
+          setTimeout(() => {
+            if (this.session === currentSession && this.state === STATE.SPEAKING) {
+              this.currentIndex++;
+              this.speakChunk(this.currentIndex);
+            }
+          }, 400);
+        };
+
+        utt.onerror = (e) => {
+          if (handled || this.session !== currentSession) return;
+          handled = true;
+          this.utteranceStore = this.utteranceStore.filter(u => u !== utt);
+          if (e.error !== 'canceled') this.stop();
+        };
+
+        setTimeout(() => {
+          if (this.session === currentSession && this.state === STATE.SPEAKING) {
+            synth.speak(utt);
+          }
+        }, 50);
+      }
+
+      play(startChar = -1) {
+        if (!synth) return;
+        if (this.state === STATE.PAUSED) {
+          this.resume();
+          return;
+        }
+        if (this.chunks.length === 0) {
+          if (!this.prepare()) {
+            this.ui.showStatus('No hay contenido');
+            return;
+          }
+        }
+        synth.cancel();
+        this.state = STATE.SPEAKING;
+        this.session++;
+        
+        if (startChar >= 0) {
+          this.currentIndex = this.chunks.findIndex(c => startChar >= c.start && startChar < c.end);
+          if(this.currentIndex === -1) this.currentIndex = 0;
+        } else if (this.currentIndex >= this.chunks.length) {
+          this.currentIndex = 0;
+        }
+        
+        this.ui.updateButtons(true);
+        this.ui.showStatus('Leyendo...');
+        this.speakChunk(this.currentIndex);
+      }
+
+      pause() {
+        if (this.state !== STATE.SPEAKING) return;
+        synth.pause();
+        this.state = STATE.PAUSED;
+        this.ui.updatePauseBtn(true);
+        this.ui.showStatus('Pausado');
+      }
+
+      resume() {
+        if (this.state !== STATE.PAUSED) return;
+        synth.resume();
+        this.state = STATE.SPEAKING;
+        this.ui.updatePauseBtn(false);
+        this.ui.showStatus('Reanudando...');
+      }
+
+      stop() {
+        this.state = STATE.IDLE;
+        this.session++;
+        synth.cancel();
+        this.utteranceStore = [];
+        this.currentIndex = 0;
+        this.ui.hideHighlight();
+        this.ui.updateButtons(false);
+        this.ui.hideStatus();
+      }
+
+      setSpeed(rate) {
+        this.rate = rate;
+        localStorage.setItem(CONFIG.STORAGE_SPEED, rate);
+        if (this.state === STATE.SPEAKING) {
+          this.session++;
+          synth.cancel();
+          this.speakChunk(this.currentIndex);
+        }
+      }
+
+      setupEvents() {
+        document.addEventListener('click', (e) => {
+          if (e.target.closest('#a11y-toolbar')) return;
+          if (e.target.closest('a, button, input, select, textarea, pre, code')) return;
+          if (this.state !== STATE.SPEAKING && this.state !== STATE.PAUSED) return;
+          
+          const idx = this.ui.getCharAtPoint(e.clientX, e.clientY, this.textNodes);
+          if (idx >= 0) this.play(idx);
+        });
+        
+        let mutTimer;
+        const main = document.getElementById('quarto-document-content');
+        if (main) {
+          new MutationObserver(() => {
+            clearTimeout(mutTimer);
+            mutTimer = setTimeout(() => {
+              if (this.state === STATE.IDLE) { this.chunks = []; this.textNodes = []; }
+            }, 1000);
+          }).observe(main, { childList: true, subtree: true, characterData: true });
+        }
+      }
+    }
+
+    class TTSUI {
+      constructor(engine) {
+        this.engine = engine;
+        this.els = {
+          play: document.getElementById('a11y-tts-play'),
+          pause: document.getElementById('a11y-tts-pause'),
+          stop: document.getElementById('a11y-tts-stop'),
+          status: document.getElementById('a11y-tts-status'),
+          speedBtn: document.getElementById('a11y-tts-speed-btn'),
+          slider: document.getElementById('a11y-tts-slider'),
+          range: document.getElementById('a11y-tts-range'),
+          speedVal: document.getElementById('a11y-tts-speed-val'),
+          toolbar: document.getElementById('a11y-toolbar')
+        };
+        this.hlEl = null;
+        this.bindEvents();
+      }
+
+      bindEvents() {
+        if (!this.els.play) return;
+        this.els.play.onclick = (e) => { e.stopPropagation(); this.engine.play(); };
+        this.els.pause.onclick = (e) => { e.stopPropagation(); this.engine.state === STATE.PAUSED ? this.engine.resume() : this.engine.pause(); };
+        this.els.stop.onclick = (e) => { e.stopPropagation(); this.engine.stop(); };
+        
+        this.els.speedBtn.onclick = (e) => {
+          e.stopPropagation();
+          this.els.slider.style.display = this.els.slider.style.display === 'none' ? 'flex' : 'none';
+        };
+        
+        this.els.range.oninput = (e) => {
+          const rate = parseFloat(e.target.value);
+          this.els.speedVal.textContent = rate + 'x';
+          this.engine.setSpeed(rate);
+        };
+        if(this.engine.rate && this.els.range) {
+          this.els.range.value = this.engine.rate;
+          this.els.speedVal.textContent = this.engine.rate + 'x';
+        }
+      }
+
+      hideAll() {
+        ['play', 'pause', 'stop', 'speedBtn', 'slider'].forEach(k => { if (this.els[k]) this.els[k].style.display = 'none'; });
+      }
+
+      showStatus(msg) {
+        if (!this.els.status) return;
+        this.els.status.textContent = msg;
+        this.els.status.classList.add('show');
+        setTimeout(() => this.els.status.classList.remove('show'), 2000);
+      }
+      hideStatus() { if (this.els.status) this.els.status.classList.remove('show'); }
+
+      updateButtons(speaking) {
+        if (!this.els.play) return;
+        this.els.play.style.display = speaking ? 'none' : '';
+        this.els.pause.style.display = speaking ? '' : 'none';
+        this.els.stop.style.display = speaking ? '' : 'none';
+        if (this.els.toolbar) {
+          speaking ? this.els.toolbar.classList.add('tts-active') : this.els.toolbar.classList.remove('tts-active');
+        }
+        speaking ? this.els.play.classList.add('active') : this.els.play.classList.remove('active');
+        this.updatePauseBtn(false);
+      }
+
+      updatePauseBtn(paused) {
+        if (!this.els.pause) return;
+        this.els.pause.querySelector('.icon-pause').style.display = paused ? 'none' : '';
+        this.els.pause.querySelector('.icon-play').style.display = paused ? '' : 'none';
+        this.els.pause.querySelector('.label-pause').style.display = paused ? 'none' : '';
+        this.els.pause.querySelector('.label-play').style.display = paused ? '' : 'none';
+        this.els.pause.setAttribute('aria-label', paused ? 'Reanudar lectura' : 'Pausar lectura');
+      }
+
+      ensureHighlightEl() {
+        if (window.CSS && CSS.highlights && !document.getElementById('tts-hl-style')) {
+          const style = document.createElement('style');
+          style.id = 'tts-hl-style';
+          style.textContent = '::highlight(tts-reading-active) { background-color: var(--tts-highlight-bg, #fff3cd); color: var(--tts-highlight-color, #000000); border-radius: 2px; }';
+          document.head.appendChild(style);
+        }
+        if (!this.hlEl) {
+          this.hlEl = document.createElement('div');
+          this.hlEl.className = 'tts-reading-active';
+          this.hlEl.style.cssText = 'position:absolute;display:none;pointer-events:none;z-index:9998;opacity:0.4;mix-blend-mode:multiply;border-radius:2px;';
+          document.body.appendChild(this.hlEl);
+        }
+      }
+
+      highlight(absIdx, textNodes, fullText) {
+        if (!textNodes.length || absIdx < 0 || absIdx >= fullText.length) return;
+        let ws = absIdx, we = absIdx;
+        while (ws > 0 && /\S/.test(fullText[ws - 1])) ws--;
+        while (we < fullText.length && /\S/.test(fullText[we])) we++;
+        if (we <= ws) return;
+
+        let sn = textNodes.find(t => ws >= t.start && ws < t.start + t.text.length) || textNodes[0];
+        let en = textNodes.find(t => we >= t.start && we <= t.start + t.text.length) || textNodes[textNodes.length - 1];
+        if (!sn || !en) return;
+
+        try {
+          const r = document.createRange();
+          r.setStart(sn.node, Math.max(0, ws - sn.start));
+          r.setEnd(en.node, Math.min(we - en.start, en.node.textContent.length));
+          
+          if (window.CSS && CSS.highlights) {
+            CSS.highlights.set('tts-reading-active', new Highlight(r));
+          } else {
+            const rect = r.getBoundingClientRect();
+            if (rect.width && rect.height) {
+              this.hlEl.style.display = 'block';
+              this.hlEl.style.left = (rect.left + window.scrollX - 3) + 'px';
+              this.hlEl.style.top = (rect.top + window.scrollY - 3) + 'px';
+              this.hlEl.style.width = (rect.width + 6) + 'px';
+              this.hlEl.style.height = (rect.height + 6) + 'px';
+            }
+          }
+        } catch (e) {}
+      }
+
+      hideHighlight() {
+        if (window.CSS && CSS.highlights) CSS.highlights.delete('tts-reading-active');
+        if (this.hlEl) this.hlEl.style.display = 'none';
+      }
+
+      getCharAtPoint(cx, cy, textNodes) {
+        let r = null;
+        if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(cx, cy);
+        else if (document.caretPositionFromPoint) {
+          const p = document.caretPositionFromPoint(cx, cy);
+          if (p) { r = document.createRange(); r.setStart(p.offsetNode, p.offset); r.setEnd(p.offsetNode, p.offset); }
+        }
+        if (!r) return -1;
+
+        let node = r.startContainer;
+        if (node.nodeType !== 3) {
+          const tw = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
+          node = tw.nextNode();
+          if (!node) return -1;
+        }
+
+        const match = textNodes.find(t => t.node === node);
+        return match ? match.start + r.startOffset : -1;
+      }
+    }
+
+    const tts = new TTSEngine();
+    
+    window.naturaInvalidateTTS = () => { if(tts.state === STATE.IDLE) { tts.chunks = []; tts.textNodes = []; } };
+    window.naturaStopTTS = () => tts.stop();
+    window.naturaIsTTSSpeaking = () => tts.state !== STATE.IDLE;
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key === 'P') {
+        e.preventDefault();
+        if (tts.state === STATE.SPEAKING) tts.pause();
+        else if (tts.state === STATE.PAUSED) tts.resume();
+        else tts.play();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key === 'S') { e.preventDefault(); tts.stop(); }
+      if (e.key === 'Escape' && tts.ui && tts.ui.els.slider) tts.ui.els.slider.style.display = 'none';
+    });
+
+    return tts;
+  })();
 
   /* ═══════════════════════════════════════════════════════════════
-     TTS CORE — Chunked Queue
+     TOOLBAR KEYBOARD NAVIGATION (roving tabindex)
      ═══════════════════════════════════════════════════════════════ */
-  var ttsText = '';
-  var ttsTextNodes = [];
-  var ttsChunks = [];       // {text, start, end} — full-text offsets
-  var ttsIsActive = false;
-  var ttsSession = 0;
-  var ttsMainEl = null;
-  var ttsCurrentChar = 0;
-  var ttsHighlightEl = null;
-  var ttsFallbackTimer = null;
-  var ttsWatchdog = null;
-  var ttsPrepared = false;
+  (function() {
+    var toolbar = document.getElementById('a11y-toolbar');
+    if (!toolbar) return;
+    var buttons = Array.from(toolbar.querySelectorAll('button'));
+    if (!buttons.length) return;
+    var currentIdx = 0;
 
-  function ensureHighlightEl() {
-    if (ttsHighlightEl) return;
-    ttsHighlightEl = document.createElement('div');
-    ttsHighlightEl.style.cssText = 'position:absolute;display:none;pointer-events:none;background:rgba(160,96,80,0.25);border:2px solid rgba(160,96,80,0.6);border-radius:4px;z-index:9998;transition:none;';
-    document.body.appendChild(ttsHighlightEl);
-  }
+    buttons.forEach(function(btn, i) {
+      btn.setAttribute('tabindex', i === 0 ? '0' : '-1');
+    });
 
-  function prepareTTS() {
-    ttsMainEl = document.getElementById('quarto-document-content');
-    if (!ttsMainEl) return false;
-    ttsTextNodes = [];
-    ttsChunks = [];
-    var spans = extractStructural(ttsMainEl);
+    toolbar.addEventListener('keydown', function(e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'Home' && e.key !== 'End') return;
+      e.preventDefault();
 
-    // Build full text + text node map + chunks
-    var text = '';
-    var chunkStart = 0;
-    var hasContent = false;
+      var idx = buttons.indexOf(document.activeElement);
+      if (idx === -1) idx = currentIdx;
 
-    for (var i = 0; i < spans.length; i++) {
-      var span = spans[i];
-      var startPos = text.length;
-      text += span.text;
-      if (span.type === 'content' && span.node) {
-        ttsTextNodes.push({ node: span.node, start: startPos, text: span.text });
-        hasContent = true;
+      if (e.key === 'ArrowRight') idx = (idx + 1) % buttons.length;
+      else if (e.key === 'ArrowLeft') idx = (idx - 1 + buttons.length) % buttons.length;
+      else if (e.key === 'Home') idx = 0;
+      else if (e.key === 'End') idx = buttons.length - 1;
+
+      buttons[currentIdx].setAttribute('tabindex', '-1');
+      buttons[idx].setAttribute('tabindex', '0');
+      buttons[idx].focus();
+      currentIdx = idx;
+    });
+  })();
+
+  /* Toggle móvil */
+  (function() {
+    var toggleBtn = document.getElementById('a11y-toggle-btn');
+    var toolbar = document.getElementById('a11y-toolbar');
+    if (!toggleBtn || !toolbar) return;
+    toggleBtn.addEventListener('click', function() {
+      var isOpen = toolbar.classList.contains('mobile-open');
+      toolbar.classList.toggle('mobile-open', !isOpen);
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      toggleBtn.innerHTML = isOpen
+        ? '<span aria-hidden="true">&#9881;</span>'
+        : '<span aria-hidden="true">&#10005;</span>';
+    });
+    /* Cerrar al hacer click fuera */
+    document.addEventListener('click', function(e) {
+      if (!toolbar.contains(e.target) && e.target !== toggleBtn) {
+        toolbar.classList.remove('mobile-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<span aria-hidden="true">&#9881;</span>';
       }
-      // Create chunk at pause points (paragraph breaks, heading ends, etc.)
-      if (span.type === 'pause') {
-        var chunkText = text.substring(chunkStart);
-        if (chunkText.trim().length > 0) {
-          ttsChunks.push({ text: chunkText, start: chunkStart, end: text.length });
-        }
-        chunkStart = text.length;
-      }
-    }
-    // Final chunk (content after last pause)
-    if (chunkStart < text.length) {
-      var chunkText = text.substring(chunkStart);
-      if (chunkText.trim().length > 0) {
-        ttsChunks.push({ text: chunkText, start: chunkStart, end: text.length });
-      }
-    }
-
-    ttsText = text;
-    ttsPrepared = hasContent && ttsChunks.length > 0;
-    ensureHighlightEl();
-    return ttsPrepared;
-  }
-
-  function invalidateTTS() {
-    ttsPrepared = false;
-    ttsText = '';
-    ttsTextNodes = [];
-    ttsChunks = [];
-  }
-
-  function showHighlight(absIdx) {
-    if (!ttsHighlightEl || !ttsTextNodes.length) return;
-    if (absIdx < 0 || absIdx >= ttsText.length) return;
-
-    var ws = absIdx, we = absIdx;
-    while (ws > 0 && /\S/.test(ttsText[ws - 1])) ws--;
-    while (we < ttsText.length && /\S/.test(ttsText[we])) we++;
-    if (we <= ws) return;
-
-    var sn = null, so = 0, en = null, eo = 0;
-    for (var i = 0; i < ttsTextNodes.length; i++) {
-      var tn = ttsTextNodes[i];
-      var tnEnd = tn.start + tn.text.length;
-      if (!sn && tnEnd > ws) { sn = tn.node; so = ws - tn.start; }
-      if (tnEnd >= we) { en = tn.node; eo = we - tn.start; break; }
-    }
-    if (!sn || !en) return;
-
-    try {
-      var r = document.createRange();
-      var soC = Math.max(0, Math.min(so, sn.textContent.length));
-      var eoC = Math.max(0, Math.min(eo, en.textContent.length));
-      if (soC >= sn.textContent.length && eoC >= en.textContent.length) return;
-      r.setStart(sn, soC);
-      r.setEnd(en, eoC);
-
-      var rects = r.getClientRects();
-      if (!rects || rects.length === 0) return;
-      var rect = rects[0];
-      if (!rect.width || !rect.height) return;
-
-      var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-      var scrollX = window.pageXOffset || document.documentElement.scrollLeft;
-
-      ttsHighlightEl.style.display = 'block';
-      ttsHighlightEl.style.left = (rect.left + scrollX - 3) + 'px';
-      ttsHighlightEl.style.top = (rect.top + scrollY - 3) + 'px';
-      ttsHighlightEl.style.width = (rect.width + 6) + 'px';
-      ttsHighlightEl.style.height = (rect.height + 6) + 'px';
-
-      var visTop = scrollY, visBot = scrollY + window.innerHeight;
-      if (rect.top < visTop + 80 || rect.bottom > visBot - 80) {
-        window.scrollTo({ top: Math.max(0, rect.top + scrollY - window.innerHeight / 3), behavior: 'smooth' });
-      }
-    } catch(e) {}
-  }
-
-  function hideHighlight() { if (ttsHighlightEl) ttsHighlightEl.style.display = 'none'; }
-
-  function clearTimers() {
-    if (ttsFallbackTimer) { clearInterval(ttsFallbackTimer); ttsFallbackTimer = null; }
-  }
-  function startWatchdog() {
-    stopWatchdog();
-    ttsWatchdog = setInterval(function() { if (synth.speaking && !synth.paused) synth.resume(); }, 10000);
-  }
-  function stopWatchdog() { if (ttsWatchdog) { clearInterval(ttsWatchdog); ttsWatchdog = null; } }
-
-  // Find which chunk contains a given absolute char index
-  function findChunkForChar(absChar) {
-    for (var i = 0; i < ttsChunks.length; i++) {
-      if (absChar >= ttsChunks[i].start && absChar < ttsChunks[i].end) return i;
-    }
-    // If at exact end of last chunk, return last chunk
-    if (ttsChunks.length > 0 && absChar >= ttsChunks[ttsChunks.length - 1].start) return ttsChunks.length - 1;
-    return 0;
-  }
-
-  function speakFrom(startChar) {
-    clearTimers();
-    synth.cancel();
-    hideHighlight();
-
-    if (!ttsText.trim() || ttsChunks.length === 0) {
-      ttsIsActive = false; updateButtons(false); hideStatus(); return;
-    }
-
-    ttsIsActive = true;
-    ttsCurrentChar = startChar;
-    var session = ttsSession;
-    var voice = getSpanishVoice();
-    var startChunkIdx = findChunkForChar(startChar);
-
-    // Sequential chunk speaker
-    function speakChunk(chunkIdx) {
-      if (chunkIdx >= ttsChunks.length || ttsSession !== session || !ttsIsActive) {
-        // All done
-        hideHighlight();
-        ttsIsActive = false;
-        ttsCurrentChar = 0;
-        updateButtons(false);
-        hideStatus();
-        stopWatchdog();
-        clearTimers();
-        return;
-      }
-
-      var chunk = ttsChunks[chunkIdx];
-      var text = chunk.text;
-      if (!text.trim()) { speakChunk(chunkIdx + 1); return; }
-
-      var utt = new SpeechSynthesisUtterance(text);
-      utt.lang = 'es-CO';
-      utt.rate = currentRate;
-      if (voice) utt.voice = voice;
-
-      var gotBoundary = false;
-      var lastHL = 0;
-
-      utt.onboundary = function(e) {
-        if (e.name !== 'word' || ttsSession !== session) return;
-        gotBoundary = true;
-        var now = Date.now();
-        if (now - lastHL < 30) return;
-        lastHL = now;
-        var abs = chunk.start + e.charIndex;
-        ttsCurrentChar = abs;
-        showHighlight(abs);
-      };
-
-      utt.onend = function() {
-        if (ttsSession !== session || !ttsIsActive) return;
-        // Natural pause between chunks: 400ms
-        setTimeout(function() {
-          if (ttsSession !== session || !ttsIsActive) return;
-          speakChunk(chunkIdx + 1);
-        }, 400);
-      };
-
-      utt.onerror = function(e) {
-        if (e.error !== 'canceled' && ttsSession === session) {
-          clearTimers(); hideHighlight(); ttsIsActive = false;
-          updateButtons(false); hideStatus(); stopWatchdog();
-        }
-      };
-
-      synth.speak(utt);
-      startWatchdog();
-
-      // Fallback timer for voices without boundary events
-      setTimeout(function() {
-        if (gotBoundary || ttsSession !== session || !ttsIsActive) return;
-        var words = text.split(/(\s+)/);
-        var wIdx = 0, charPos = 0, wordList = [];
-        for (var i = 0; i < words.length; i++) {
-          if (/\S/.test(words[i])) wordList.push(chunk.start + charPos);
-          charPos += words[i].length;
-        }
-        var interval = Math.round(700 / currentRate);
-        ttsFallbackTimer = setInterval(function() {
-          if (ttsSession !== session || !ttsIsActive) { clearTimers(); return; }
-          if (wIdx < wordList.length) { showHighlight(wordList[wIdx]); ttsCurrentChar = wordList[wIdx]; wIdx++; }
-          else clearTimers();
-        }, interval);
-      }, 800);
-    }
-
-    speakChunk(startChunkIdx);
-  }
-
-  /* ═══════════════════════════════════════════════════════════════
-     CLICK-TO-READ
-     ═══════════════════════════════════════════════════════════════ */
-  function getCharAtPoint(cx, cy) {
-    var r = null;
-    if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(cx, cy);
-    else if (document.caretPositionFromPoint) {
-      var p = document.caretPositionFromPoint(cx, cy);
-      if (p) { r = document.createRange(); r.setStart(p.offsetNode, p.offset); r.setEnd(p.offsetNode, p.offset); }
-    }
-    if (!r || !ttsMainEl || !ttsMainEl.contains(r.startContainer)) return -1;
-    for (var i = 0; i < ttsTextNodes.length; i++) {
-      if (ttsTextNodes[i].node === r.startContainer) return ttsTextNodes[i].start + r.startOffset;
-    }
-    return -1;
-  }
-
-  /* ═══════════════════════════════════════════════════════════════
-     EVENTS
-     ═══════════════════════════════════════════════════════════════ */
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('#a11y-tts-speed-wrap')) {
-      var sl = document.getElementById('a11y-tts-slider'); if (sl) sl.style.display = 'none';
-    }
-  });
-
-  document.addEventListener('click', function(e) {
-    if (!ttsPrepared) return;
-    var main = document.getElementById('quarto-document-content');
-    if (!main || !main.contains(e.target)) return;
-    if (e.target.closest('a, button, input, select, textarea, .cell-code, pre, code')) return;
-    var idx = getCharAtPoint(e.clientX, e.clientY);
-    if (idx < 0) return;
-    while (idx > 0 && /\S/.test(ttsText[idx - 1])) idx--;
-    ttsSession++; ttsCurrentChar = idx;
-    updateButtons(true); showStatus('Leyendo desde aquí...');
-    speakFrom(idx);
-  });
-
-  TTS_PLAY.addEventListener('click', function(e) {
-    e.stopPropagation();
-    if (ttsIsActive) return;
-    if (!ttsPrepared && !prepareTTS()) { showStatus('No hay contenido para leer'); setTimeout(hideStatus, 2000); return; }
-    ttsSession++; updateButtons(true); showStatus('Leyendo...');
-    speakFrom(ttsCurrentChar);
-  });
-
-  TTS_PAUSE.addEventListener('click', function(e) {
-    e.stopPropagation();
-    if (isPaused) { synth.resume(); updatePauseBtn(false); showStatus('Reanudando...'); setTimeout(hideStatus, 1200); }
-    else { synth.pause(); updatePauseBtn(true); showStatus('Pausado'); }
-  });
-
-  TTS_STOP.addEventListener('click', function(e) {
-    e.stopPropagation();
-    ttsIsActive = false; ttsSession++; synth.cancel(); clearTimers(); stopWatchdog();
-    hideHighlight(); updateButtons(false); hideStatus(); ttsCurrentChar = 0;
-  });
-
-  TTS_VOICE_BTN.addEventListener('click', function(e) {
-    e.stopPropagation();
-    var wasActive = ttsIsActive;
-    voiceGender = voiceGender === 'female' ? 'male' : 'female';
-    localStorage.setItem(VOICE_KEY, voiceGender); updateVoiceButton();
-    var v = getSpanishVoice(); var name = v ? v.name : 'No disponible';
-    if (wasActive) {
-      showStatus('Voz cambiada, continuando...'); setTimeout(hideStatus, 1500);
-      ttsSession++; speakFrom(ttsCurrentChar);
-    } else {
-      showStatus('Voz: ' + (voiceGender === 'female' ? 'Femenina' : 'Masculina') + ' (' + name + ')');
-      setTimeout(hideStatus, 2000);
-    }
-  });
-
-  /* ═══════════════════════════════════════════════════════════════
-     SPEED
-     ═══════════════════════════════════════════════════════════════ */
-  var TTS_SPEED_BTN = document.getElementById('a11y-tts-speed-btn');
-  var TTS_SLIDER = document.getElementById('a11y-tts-slider');
-  var TTS_RANGE = document.getElementById('a11y-tts-range');
-  var TTS_SPEED_VAL = document.getElementById('a11y-tts-speed-val');
-  var SPEED_KEY = 'natura-docens-ttsspeed';
-  var currentRate = 1;
-
-  function applySpeed(rate) {
-    currentRate = rate; localStorage.setItem(SPEED_KEY, rate);
-    TTS_RANGE.value = rate; TTS_SPEED_VAL.textContent = rate + 'x';
-  }
-  TTS_SPEED_BTN.addEventListener('click', function(e) {
-    e.stopPropagation();
-    TTS_SLIDER.style.display = TTS_SLIDER.style.display === 'none' ? 'flex' : 'none';
-  });
-  var speedDebounce = null;
-  TTS_RANGE.addEventListener('input', function() {
-    var newRate = parseFloat(this.value); applySpeed(newRate);
-    if (ttsIsActive && ttsText) {
-      showStatus('Velocidad: ' + newRate + 'x');
-      clearTimeout(speedDebounce);
-      speedDebounce = setTimeout(function() { ttsSession++; speakFrom(ttsCurrentChar); }, 300);
-    }
-  });
-  var savedSpeed = localStorage.getItem(SPEED_KEY);
-  if (savedSpeed) currentRate = parseFloat(savedSpeed);
-  applySpeed(currentRate);
-
-  if (synth.onvoiceschanged !== undefined) { synth.onvoiceschanged = function() { getSpanishVoice(); }; }
-
-  var mutTimer = null;
-  var observer = new MutationObserver(function() { clearTimeout(mutTimer); mutTimer = setTimeout(invalidateTTS, 1000); });
-  if (MAIN_CONTENT) observer.observe(MAIN_CONTENT, { childList: true, subtree: true });
+    });
+  })();
 
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -2125,12 +2533,12 @@ section.level2.evaluacion > :not(h2) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../01_Generalidades/02_PlanDeArea.html" class="pagination-link" aria-label="Plan de Área de Ciencias Naturales">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Plan de Área de Ciencias Naturales</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Plan de Área de Ciencias Naturales</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../bibliografia.html" class="pagination-link" aria-label="Referencias">
-        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Referencias</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../bibliografia.html" class="pagination-link" aria-label="Bibliografía">
+        <span class="nav-page-text">Bibliografía</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
