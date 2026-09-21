@@ -1,0 +1,71 @@
+# Configuración Electrónica: Principios de Aufbau, Pauli y Regla de Hund (Oriakhi Cap. 8)
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Cuántica del Átomo
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **configuración electrónica** describe la distribución de los electrones de un átomo polielectrónico entre los diversos orbitales disponibles en su estado fundamental (de mínima energía). La asignación se rige por tres leyes fundamentales de la mecánica cuántica:
+
+1. **Principio de Aufbau o de Construcción Progresiva:** Los electrones ocupan secuencialmente los subniveles en orden creciente de energía relativa, determinada por la regla de Madelung o regla de $(n + l)$: a menor $(n+l)$ menor energía; ante igualdad de $(n+l)$, tiene menor energía el de menor $n$ (ej. $4s: 4+0=4$ se llena antes que $3d: 3+2=5$).
+2. **Principio de Exclusión de Pauli:** Dos electrones en un mismo átomo no pueden tener los cuatro números cuánticos idénticos. Como consecuencia, un orbital individual definido por $(n, l, m_l)$ puede alojar como máximo **dos electrones**, los cuales deben tener espines opuestos o antiparalelos ($m_s = +1/2$ y $-1/2$).
+3. **Regla de Máxima Multiplicidad de Hund:** Para orbitales degenerados (de igual energía, como los tres $p$ o los cinco $d$), los electrones se distribuyen con espines paralelos ocupando el mayor número posible de orbitales vacíos antes de aparearse, minimizando la repulsión interelectrónica.
+
+### Formalización Matemática y Leyes Físicas
+Regla de energía de orbitales $(n + l)$:
+$$E(4s) < E(3d) \quad \text{pues } (4+0=4) < (3+2=5)$$
+$$E(3d) < E(4p) \quad \text{pues } (3+2=5; n=3) < (4+1=5; n=4)$$
+Orden de llenado universal (Regla de las diagonales):
+$$1s \to 2s \to 2p \to 3s \to 3p \to 4s \to 3d \to 4p \to 5s \to 4d \to 5p \to 6s \to 4f \to 5d \to 6p \to 7s \to 5f \to 6d \to 7p$$
+Excepciones por estabilidad de subcapa semillena o llena (
+
+$$d^4 \to d^5$$
+
+, $d^9 \to d^{10}$):
+$$\text{Cromo (Cr, } Z=24): [Ar]\, 4s^1 3d^5 \quad (\text{no } [Ar]\, 4s^2 3d^4)$$
+$$\text{Cobre (Cu, } Z=29): [Ar]\, 4s^1 3d^{10} \quad (\text{no } [Ar]\, 4s^2 3d^9)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Aparear dos electrones en el primer orbital $p$ dejando vacíos los otros dos orbitales degenerados (violación de la Regla de Hund).
+2. Dibujar dos flechas hacia arriba en la misma casilla de orbital (violación flagrante del Principio de Exclusión de Pauli).
+3. Asumir que el orbital $3d$ se llena antes del $4s$ por el simple hecho de que el número 3 es menor que el 4.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los asientos del autobús escolar:** Los niños que suben al autobús prefieren sentarse solos en un asiento doble vacío con la vista al frente (espines paralelos en orbitales degenerados, Regla de Hund); sólo cuando todos los asientos dobles tienen ya a un pasajero, los recién llegados comienzan a sentarse al lado de alguien compartiendo asiento con miradas opuestas (apareamiento con espines antiparalelos, Pauli).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 8):** Escriba la configuración electrónica completa y la configuración con notación abreviada de kernel para el átomo de Hierro ($Fe, Z=26$) en su estado fundamental. Determine el número de electrones desapareados y los cuatro números cuánticos del último electrón asignado.
+
+**Paso 1:** Configuración completa siguiendo el principio de Aufbau:
+$$1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$$
+**Paso 2:** Configuración con kernel de gas noble:
+El gas noble precedente es el Argón ($Ar, Z=18$):
+$$[Ar]\, 4s^2 3d^6$$
+**Paso 3:** Diagrama de orbitales del subnivel $3d$ ($l=2$):
+Los 5 orbitales ($m_l = -2, -1, 0, +1, +2$) reciben 6 electrones:
+$$\underline{\uparrow\downarrow}_{(-2)} \quad \underline{\uparrow}_{(-1)} \quad \underline{\uparrow}_{(0)} \quad \underline{\uparrow}_{(+1)} \quad \underline{\uparrow}_{(+2)}$$
+El átomo posee **4 electrones desapareados**, lo que le confiere un fuerte carácter paramagnético/ferromagnético.
+**Paso 4:** Números cuánticos del 6to electrón de $3d$ (el que se aparea en $m_l=-2$):
+$$(n=3, \, l=2, \, m_l=-2, \, m_s=-\frac{1}{2})$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el Cromo ($Z=24$) y el Cobre ($Z=29$) promocionan un electrón del orbital $4s$ al orbital $3d$?
+2. ¿Cuál es la configuración electrónica del catión $Fe^{2+}$ y por qué se pierden primero los electrones del subnivel $4s$ antes que los de $3d$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

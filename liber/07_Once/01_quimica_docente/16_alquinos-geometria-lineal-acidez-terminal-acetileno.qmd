@@ -1,0 +1,90 @@
+# Alquinos, Geometría Lineal, Acidez de Alquinos Terminales y Termoquímica del Acetileno
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Hidrocarburos Insaturados y Reactividad Ácido-Base
+> * **Propósito Docente:** Modelar cuántica y termodinámicamente la estructura del enlace triple carbono-carbono, fundamentar la acidez anómala de los alquinos terminales según la hibridación $sp$ y analizar las aplicaciones energéticas de la combustión del acetileno.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los alquinos son hidrocarburos alifáticos que albergan al menos un enlace triple carbono-carbono ($C\equiv C$). La serie homóloga acíclica con un único enlace triple responde a la fórmula molecular general:
+
+$$C_n H_{2n-2}$$
+
+Esta relación refleja un índice de deficiencia de hidrógeno de dos ($IDH = 2$). En el enlace triple, cada carbono presenta un estado de hibridación mecano-cuántica de tipo $sp$, resultante de la combinación lineal de un orbital atómico $2s$ con un único orbital $2p$. Los dos orbitales híbridos $sp$ se proyectan en sentidos opuestos formando un ángulo de enlace estrictamente colineal de $180^\circ$. Los dos orbitales atómicos $p$ restantes ($2p_y$ y $2p_z$) se mantienen ortogonales entre sí y perpendiculares al eje internuclear, solapándose lateralmente con los orbitales correspondientes del carbono adyacente para generar dos enlaces $\pi$ mutuamente perpendiculares.
+
+El cilindro envolvente de densidad electrónica $\pi$ acorta la distancia internuclear carbono-carbono a tan solo $1.20\,\text{Å}$ (en contraste con $1.34\,\text{Å}$ en alquenos y $1.54\,\text{Å}$ en alcanos), elevando la energía de disociación del enlace a $837\,\text{kJ/mol}$. No obstante, a pesar de esta gran fortaleza total, los enlaces $\pi$ individuales conservan una elevada polarizabilidad, lo que permite que los alquinos experimenten adiciones electrofílicas sucesivas (incorporando hasta dos equivalentes de halógeno o de halogenuro de hidrógeno).
+
+Una de las peculiaridades químicas más notables de los **alquinos terminales** (aquellos cuyo enlace triple se localiza en el extremo de la cadena carbonada, $R-C\equiv C-H$) es su marcada acidez en comparación con otros hidrocarburos. El protón terminal presenta un valor de $pK_a \approx 25$, mientras que los hidrógenos vinílicos de los alquenos muestran un $pK_a \approx 44$ y los hidrógenos alifáticos de los alcanos alcanzan un $pK_a \approx 50$:
+
+$$R-C\equiv C-H + B^- \rightleftharpoons R-C\equiv C:^- + HB$$
+
+Esta diferencia de casi 25 órdenes de magnitud en la constante de acidez se fundamenta en el **porcentaje de carácter $s$** del orbital híbrido que aloja al par de electrones solitario en la base conjugada (ion alquinuro o acetiluro):
+
+1. **Ion Alcanoilo ($sp^3$):** $25\,\%$ de carácter $s$. Los electrones se ubican lejos del núcleo en orbitales más difusos, resultando en un anión fuertemente inestable.
+2. **Ion Alquenoilo ($sp^2$):** $33.3\,\%$ de carácter $s$. Estabilidad intermedia pero insuficiente para ionización espontánea.
+3. **Ion Alquinuro ($sp$):** $50\,\%$ de carácter $s$. El orbital $s$ posee densidad de probabilidad finita en el origen nuclear y carece de plano nodal que cruce el núcleo. Al poseer un $50\,\%$ de carácter $s$, el par electrónico no enlazante del ion alquinuro está situado mucho más cerca del núcleo cargado positivamente del átomo de carbono, experimentando una atracción electrostática intensificada que estabiliza fuertemente la carga negativa.
+
+Por esta razón, una base suficientemente fuerte como el ion amiduro de sodio ($NaNH_2$, base conjugada del amoníaco con $pK_a \approx 38$) desprotona cuantitativamente a un alquino terminal en medio líquido:
+
+$$R-C\equiv C-H + NaNH_2 \xrightarrow{NH_3(l)} R-C\equiv C:^- Na^+ + NH_3$$
+
+En el ámbito industrial, el miembro más simple de la familia, el etino o **acetileno** ($C_2H_2$), se sintetiza a partir de materias primas inorgánicas mediante la hidrólisis exotérmica del carburo de calcio ($CaC_2$):
+
+$$CaC_2(s) + 2\,H_2O(l) \longrightarrow Ca(OH)_2(s) + C_2H_2(g)$$
+
+La combustión del acetileno en atmósfera de oxígeno puro (soplete oxiacetilénico) libera una extraordinaria densidad de potencia térmica, alcanzando temperaturas de llama superiores a $3300^\circ\text{C}$ gracias a su entalpía estándar de formación fuertemente endotérmica ($\Delta H_f^\circ = +226.7\,\text{kJ/mol}$), lo que permite fundir y cortar acero estructural con notable precisión.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que todos los hidrocarburos son sustancias neutras incapaces de ceder protones:** Los estudiantes asocian la acidez exclusivamente a ácidos inorgánicos oxigenados o carboxílicos, ignorando que la acidez es una propiedad relativa del enlace gobernada por la estabilidad mecano-cuántica de la base conjugada.
+2. **Confundir la reactividad de adición con la reactividad ácido-base:** No distinguir entre el ataque nucleófilo de la nube $\pi$ del alquino y la extracción del protón terminal por una base fuerte.
+3. **Dibujar la geometría del triple enlace en zigzag:** Trazar los enlaces unidos al carbono $sp$ con ángulos de $120^\circ$ o $109.5^\circ$ en fórmulas de líneas, omitiendo que la rigidez de los orbitales $sp$ impone una estricta colinealidad de $180^\circ$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Cuerda y el Núcleo Magnético:** Comparar los orbitales híbridos con una cuerda elástica sostenida por un imán central; a mayor porcentaje de carácter $s$, la cuerda es más corta y tensa, manteniendo los electrones fuertemente anclados al imán (núcleo), lo que explica por qué el anión $sp$ retiene la carga negativa con mínima energía libre.
+2. **Construcción con Pitillos Rígidos:** Insertar un alambre metálico recto a través de un pitillo para forzar la visualización de la linealidad absoluta de los cuatro átomos que componen el esqueleto $C-C\equiv C-C$ en el 2-butino.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En el taller de metalmecánica se utiliza un soplete oxiacetilénico para soldar planchas de acero. La reacción de combustión completa del acetileno gaseoso viene descrita por la siguiente ecuación termoquímica a $298.15\,\text{K}$:
+
+$$2\,C_2H_2(g) + 5\,O_2(g) \longrightarrow 4\,CO_2(g) + 2\,H_2O(g),\qquad \Delta H^\circ_{\text{comb}} = -2511.2\,\text{kJ}$$
+
+Considere que un cilindro portátil suministra $130.0\,\text{g}$ de acetileno ($C_2H_2$, masa molar $26.04\,\text{g/mol}$). Calcule analíticamente: 
+1. La cantidad total de calor liberado en la combustión completa de todo el gas del cilindro.
+2. El volumen de oxígeno gaseoso ($O_2$) necesario para la combustión estequiométrica a una presión de $1.15\,\text{atm}$ y una temperatura de $25.0^\circ\text{C}$ ($298.15\,\text{K}$). Dato: $R = 0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)}$.
+
+**Solución paso a paso:**
+
+1. *Calcular la cantidad molar de acetileno presente en la muestra:*
+   $$n_{\text{acetileno}} = \frac{130.0\,\text{g}}{26.04\,\text{g/mol}} = 4.9923\,\text{mol}$$
+   La masa dividida por la masa molar del etino determina los moles netos de reactivo gaseoso disponibles para la combustión.
+
+2. *Calcular la energía calorífica liberada en el proceso:*
+   $$q = 4.9923\,\text{mol } C_2H_2 \times \left( \frac{-2511.2\,\text{kJ}}{2\,\text{mol } C_2H_2} \right)$$
+   El factor estequiométrico proviene directamente de la ecuación termoquímica balanceada, donde la combustión de dos moles de acetileno genera $2511.2\,\text{kJ}$.
+   $$q = -6268.3\,\text{kJ}$$
+   La combustión completa de la carga de acetileno desprende $6.27 \times 10^3\,\text{kJ}$ de energía térmica aprovechable para el calentamiento y fusión del metal.
+
+3. *Determinar los moles de dioxígeno requeridos según la estequiometría:*
+   $$n_{O_2} = 4.9923\,\text{mol } C_2H_2 \times \left( \frac{5\,\text{mol } O_2}{2\,\text{mol } C_2H_2} \right) = 12.4808\,\text{mol } O_2$$
+   La relación estequiométrica $5:2$ establece la necesidad de consumir 2.5 moles de comburente por cada mol de combustible hidrocarbonado.
+
+4. *Calcular el volumen de oxígeno gaseoso mediante la Ley de Gas Ideal:*
+   $$V_{O_2} = \frac{n_{O_2} R T}{P}$$
+   Se despeja el volumen en la ecuación de estado para condiciones de presión y temperatura constantes.
+   $$V_{O_2} = \frac{(12.4808\,\text{mol})(0.08206\,\text{L}\cdot\text{atm/mol}\cdot\text{K})(298.15\,\text{K})}{1.15\,\text{atm}} = 265.4\,\text{L}$$
+   Se requieren exactamente $265.4\,\text{litros}$ de oxígeno gaseoso en las condiciones especificadas de trabajo para asegurar una combustión completa y evitar la producción de monóxido de carbono e inquemados.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. Si se hace reaccionar 1-butino y 2-butino con amiduro de sodio ($NaNH_2$), ¿cuál de los dos compuestos generará una sal orgánica de alquinuro sódico y por qué?
+2. ¿Por qué la hidrólisis del carburo de calcio ($CaC_2$) produce acetileno, mientras que la hidrólisis del carburo de berilio ($Be_2C$) o de aluminio ($Al_4C_3$) produce metano ($CH_4$)?
+3. ¿Cómo permite la prueba con nitrato de plata amoniacal (reactivo de Tollens) distinguir experimentalmente entre un alquino terminal y un alquino interno mediante la formación de un precipitado de acetiluro de plata?

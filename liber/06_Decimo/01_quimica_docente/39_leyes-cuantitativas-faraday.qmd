@@ -1,0 +1,75 @@
+# Leyes Cuantitativas de la Electrólisis de Michael Faraday
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Electroquímica y Procesos Redox
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Michael Faraday formuló en 1834 las dos leyes cuantitativas que rigen la electrólisis, fundamentando la naturaleza discontinua y cuantizada de la carga eléctrica mucho antes del descubrimiento formal del electrón:
+
+1. **Primera Ley de Faraday:** La masa ($m$) de cualquier sustancia depositada, liberada o disuelta en un electrodo durante la electrólisis es **directamente proporcional a la cantidad total de carga eléctrica ($Q$)** que atraviesa la celda: $m \propto Q$.
+2. **Segunda Ley de Faraday:** Para una cantidad fija de carga eléctrica, las masas de diferentes sustancias depositadas en los electrodos son **directamente proporcionales a sus pesos equivalentes químicos** ($PE = M / z$).
+
+Combinando ambas leyes con la definición de corriente eléctrica ($Q = I \cdot t$):
+
+$$m = \left( \frac{I \cdot t}{F} \right) \times \left( \frac{M}{z} \right) = \frac{I \cdot t \cdot M}{z \cdot F}$$
+
+Donde:
+1. $m$: Masa de sustancia depositada o liberada en gramos.
+2. $I$: Intensidad de corriente eléctrica constante en amperios ($\text{A} = \text{C/s}$).
+3. $t$: Tiempo transcurrido en segundos ($\text{s}$).
+4. $M$: Masa molar de la sustancia en $\text{g/mol}$.
+5. $z$: Número de electrones transferidos por unidad fórmula en la semirreacción de electrodo.
+6. $F$: Constante de Faraday ($96485\,\text{C/mol}$).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación integrada de Faraday:
+$$m = \frac{I \cdot t \cdot M}{z \cdot F}$$
+Cálculo del número de moles depositados ($n$):
+$$n = \frac{m}{M} = \frac{I \cdot t}{z \cdot F}$$
+Volumen de gas liberado en condiciones normales ($V_m = 22.414\,\text{L/mol}$):
+$$V = \left( \frac{I \cdot t}{z \cdot F} \right) \times V_m$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar convertir el tiempo de minutos u horas a segundos ($t$ debe estar obligatoriamente en segundos).
+2. Usar un valor incorrecto de $z$ (ej. para el cobre usar $z=1$ en lugar de $z=2$ en sales de $Cu^{2+}$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los cupones de compra:** Un electrón es un cupón de compra. Si quieres comprar un átomo de plata ($Ag^+$), cuesta $1$ cupón ($z=1$). Si quieres comprar un átomo de cobre ($Cu^{2+}$), cuesta $2$ cupones ($z=2$). Si la corriente eléctrica te envía $1000$ cupones por segundo, sabes exactamente cuántos átomos de metal vas a poder canjear en la ventanilla del electrodo.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se hace circular una corriente eléctrica constante de $5.00\,\text{A}$ a través de una celda de galvanoplastia que contiene una disolución de nitrato de plata ($AgNO_3$) durante $45.0\,\text{minutos}$. Calcule la masa en gramos de plata metálica depositada sobre el cátodo. Datos: $Ag = 107.87\,\text{g/mol}$, $F = 96485\,\text{C/mol}$.
+
+**Paso 1:** Semirreacción catódica:
+$$Ag^+(aq) + 1 e^- \longrightarrow Ag(s) \implies z = 1$$
+**Paso 2:** Conversión del tiempo a segundos:
+$$t = 45.0\,\text{min} \times 60\,\frac{\text{s}}{\text{min}} = 2700\,\text{s}$$
+**Paso 3:** Cantidad total de carga eléctrica ($Q$):
+$$Q = I \cdot t = (5.00\,\text{A}) \times (2700\,\text{s}) = 13500\,\text{C}$$
+**Paso 4:** Moles de electrones suministrados:
+$$n_e = \frac{Q}{F} = \frac{13500\,\text{C}}{96485\,\text{C/mol}} = 0.1399\,\text{mol de electrones}$$
+**Paso 5:** Masa de plata depositada:
+$$m(Ag) = n_e \times \left( \frac{1\,\text{mol } Ag}{1\,\text{mol } e^-} \right) \times 107.87\,\frac{\text{g}}{\text{mol}} = (0.1399)(107.87) = 15.09\,\text{g de } Ag$$
+Se depositan exactamente **$15.09\,\text{g}$** de plata pura sobre el objeto electroplateado.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cuántas horas se requerirían para depositar $1.00\,\text{kg}$ de aluminio ($Al^{3+}, z=3$) empleando una corriente industrial de $1000\,\text{A}$?
+2. ¿Cómo se relaciona la constante de Faraday con el número de Avogadro y la carga del electrón ($F = N_A \cdot e$)? (Demuestre cómo Faraday midió indirectamente la carga del electrón en el siglo XIX).
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

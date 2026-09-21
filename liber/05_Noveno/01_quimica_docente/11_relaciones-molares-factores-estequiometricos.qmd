@@ -1,0 +1,75 @@
+# Relaciones Molares y Factores Estequiométricos de Reacción
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estequiometría de Reacción
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una ecuación química balanceada constituye una relación matemática y material estricta que especifica las proporciones molares relativas en las que los reactivos se consumen y los productos se forman. Los **coeficientes estequiométricos** representan cantidades de sustancia en moles (no masas en gramos).
+
+Un **factor estequiométrico molar** es una fracción unitaria derivada directamente de los coeficientes estequiométricos de la ecuación balanceada, que permite relacionar los moles de cualquier especie química participante ($A$) con los moles de cualquier otra especie ($B$):
+
+$$\text{Factor de conversión} = \left( \frac{\nu_B\,\text{moles de } B}{\nu_A\,\text{moles de } A} \right)$$
+
+Este principio de proporcionalidad molecular fundamenta la totalidad de los cálculos de síntesis industrial, control ambiental y análisis farmacológico.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación general:
+$$a\, A + b\, B \longrightarrow c\, C + d\, D$$
+Relaciones molares equivalentes:
+$$\frac{n_A}{a} = \frac{n_B}{b} = \frac{n_C}{c} = \frac{n_D}{d}$$
+Conversión de moles de $A$ a moles de $C$:
+$$n_C = n_A \times \left( \frac{c\,\text{mol } C}{a\,\text{mol } A} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Utilizar los coeficientes de la ecuación como factores de masa en gramos (ej. en
+
+$$2 H_2 + O_2 \to 2 H_2O$$
+
+, creer erróneamente que
+2. Aplicar factores estequiométricos sin verificar previamente que la ecuación esté balanceada.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del ensamblaje de bicicletas:** Para fabricar 1 bicicleta necesitas 1 cuadro y 2 ruedas (
+
+$$1\,\text{Cuadro} + 2\,\text{Ruedas} \to 1\,\text{Bicicleta}$$
+
+). Si te entregan 50 cuadros, ¿cuántas ruedas necesitas?
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En el proceso Haber-Bosch para la síntesis industrial de amoníaco:
+$$N_2(g) + 3 H_2(g) \longrightarrow 2 NH_3(g)$$
+Calcule cuántos moles de hidrógeno ($H_2$) se requieren para reaccionar completamente con $4.50\,\text{mol}$ de nitrógeno ($N_2$) y cuántos moles de amoníaco ($NH_3$) se producirán.
+
+**Paso 1:** Identificación de factores estequiométricos:
+$$\frac{3\,\text{mol } H_2}{1\,\text{mol } N_2} \qquad \frac{2\,\text{mol } NH_3}{1\,\text{mol } N_2}$$
+**Paso 2:** Cálculo de moles de hidrógeno requeridos:
+$$n_{H_2} = 4.50\,\text{mol } N_2 \times \left( \frac{3\,\text{mol } H_2}{1\,\text{mol } N_2} \right) = 13.5\,\text{mol de } H_2$$
+**Paso 3:** Cálculo de moles de amoníaco formados:
+$$n_{NH_3} = 4.50\,\text{mol } N_2 \times \left( \frac{2\,\text{mol } NH_3}{1\,\text{mol } N_2} \right) = 9.00\,\text{mol de } NH_3$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la suma de los coeficientes de los reactivos no tiene que ser igual a la suma de los coeficientes de los productos?
+2. En la reacción
+
+$$2 H_2 + O_2 \to 2 H_2O$$
+
+, ¿cuántos moles de enlaces químicos se rompen y cuántos se forman?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

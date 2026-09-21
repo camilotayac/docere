@@ -1,0 +1,51 @@
+# Separación Mecánica de Mezclas: Filtración y Tamizado
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Métodos de Separación de Mezclas
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los métodos de separación física aprovechan las diferencias en las propiedades intensivas de las sustancias componentes para aislarlas sin alterar su naturaleza molecular.
+
+1. **Tamizado o Cribado:** Método mecánico que separa sólidos heterogéneos basándose en la diferencia en el tamaño geométrico de partícula mediante una malla o tamiz de apertura estandarizada.
+2. **Filtración:** Técnica que permite separar un sólido insoluble suspendido en un fluido líquido o gaseoso haciendo pasar la mezcla a través de un medio poroso permeable (papel de filtro, membranas poliméricas, crisoles de Gooch). El fluido que atraviesa los poros constituye el filtrado y el sólido retenido forma el residuo o torta de filtración.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de flujo de filtración (Ley de Darcy):
+$$Q = \frac{V}{t} = \frac{k \cdot A \cdot \Delta P}{\eta \cdot L}$$
+Donde $k$ es la permeabilidad del lecho, $A$ el área, $\Delta P$ la caída de presión, $\eta$ la viscosidad y $L$ el espesor del lecho filtrante.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que la filtración puede separar sustancias disueltas en solución verdadera (ej. intentar separar sal del agua con papel de filtro).
+2. Desconocer que el tamaño de poro del papel de filtro debe ser menor al tamaño de las partículas del sólido suspendido.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la red de pesca:** La red retiene los peces grandes pero deja escapar el agua y los microorganismos; el filtro de papel retiene los cristales de arena pero deja pasar las moléculas individuales de agua y los iones disueltos.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una mezcla heterogénea de $50.0\,\text{g}$ contiene $12.5\,\text{g}$ de arena insoluble y cloruro de sodio disuelto en agua. Se filtra la mezcla lavando el sólido retenido y se seca el papel filtro. Determine el porcentaje en masa de arena en la muestra original.
+
+**Paso 1:** Cálculo del porcentaje en masa del sólido insoluble:
+$$\%\text{arena} = \frac{m_{\text{arena}}}{m_{\text{muestra}}} \times 100\% = \frac{12.5\,\text{g}}{50.0\,\text{g}} \times 100\% = 25.0\%$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una mascarilla quirúrgica o N95 es técnicamente un sistema de filtración de partículas y aerosoles?
+2. ¿Cómo funciona la filtración al vacío con embudo Büchner y por qué es más rápida que la filtración por gravedad?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

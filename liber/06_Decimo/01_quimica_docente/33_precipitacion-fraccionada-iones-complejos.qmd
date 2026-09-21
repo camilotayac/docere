@@ -1,0 +1,64 @@
+# Precipitación Fraccionada y Formación de Iones Complejos ($K_f$)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio de Solubilidad e Iones Complejos
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Para predecir si precipitará una sal poco soluble al mezclar dos disoluciones, se calcula el **Cociente del Producto Iónico ($Q_{sp}$)** con las concentraciones instantáneas:
+1. **$Q_{sp} < K_{sp}$:** Solución insaturada; no se observa precipitación.
+2. **$Q_{sp} = K_{sp}$:** Solución en el límite exacto de saturación.
+3. **$Q_{sp} > K_{sp}$:** Solución sobresaturada; **ocurre precipitación espontánea** hasta que las concentraciones iónicas disminuyen igualando a $K_{sp}$.
+
+La **precipitación fraccionada o selectiva** es la técnica analítica que permite separar mezclas de cationes en solución añadiendo progresivamente un reactivo precipitante común, precipitando secuencialmente primero aquel catión cuya sal requiera menor concentración del reactivo para alcanzar su $K_{sp}$.
+
+Por su parte, la **formación de iones complejos** consiste en la coordinación de un catión metálico central (ácido de Lewis) con moléculas o aniones con pares solitarios (**ligandos**, bases de Lewis, como $NH_3, CN^-, OH^-$). El complejo soluble está regido por la **constante de formación ($K_f$)**, cuyo elevado valor desplaza los equilibrios de solubilidad permitiendo redisolver precipitados insolubles (ej. disolución de $AgCl$ en amoníaco formando $[Ag(NH_3)_2]^+$).
+
+### Formalización Matemática y Leyes Físicas
+Criterio de precipitación:
+$$Q_{sp} > K_{sp} \implies \text{Precipitación}$$
+Equilibrio de formación del ion complejo y constante de estabilidad ($K_f$):
+$$M^{n+} + n L \rightleftharpoons [M L_n]^{n+} \implies K_f = \frac{[[M L_n]^{n+}]}{[M^{n+}][L]^n}$$
+Equilibrio acoplado de redisolución de sales insolubles con ligando:
+$$AgCl(s) + 2 NH_3(aq) \rightleftharpoons [Ag(NH_3)_2]^+(aq) + Cl^-(aq) \implies K_{\text{global}} = K_{sp} \cdot K_f$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Suponer que al mezclar dos soluciones el volumen no cambia al calcular las concentraciones iniciales para $Q_{sp}$ (¡debe considerarse obligatoriamente la dilución mutua: $V_{\text{total}} = V_1 + V_2$!).
+2. Olvidar que los iones complejos aumentan la solubilidad de sales insolubles al secuestrar cationes libres.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del señuelo molecular:** El precipitado de $AgCl$ está firmemente agarrado en el fondo; cuando agregas amoníaco concentrado ($NH_3$), las moléculas de amoníaco abrazan con tanta fuerza al catión plata ($K_f = 1.7 \times 10^7$) que arrancan los iones plata de la red cristalina, disolviendo por completo el precipitado sólido ante tus ojos.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se mezclan $100.0\,\text{mL}$ de disolución de nitrato de plomo(II) $0.0100\,M$ con $100.0\,\text{mL}$ de disolución de yoduro de potasio $0.0200\,M$. Sabiendo que para el yoduro de plomo(II) ($PbI_2$) el $K_{sp} = 7.10 \times 10^{-9}$ a $25^\circ\text{C}$, prediga si precipitará $PbI_2$.
+
+**Paso 1:** Cálculo de concentraciones tras la dilución ($V_{\text{total}} = 200.0\,\text{mL}$):
+$$[Pb^{2+}]_0 = (0.0100\,M) \times \left( \frac{100.0}{200.0} \right) = 5.00 \times 10^{-3}\,M$$
+$$[I^-]_0 = (0.0200\,M) \times \left( \frac{100.0}{200.0} \right) = 1.00 \times 10^{-2}\,M$$
+**Paso 2:** Cálculo del producto iónico $Q_{sp}$:
+$$Q_{sp} = [Pb^{2+}][I^-]^2 = (5.00 \times 10^{-3})(1.00 \times 10^{-2})^2 = (5.00 \times 10^{-3})(1.00 \times 10^{-4}) = 5.00 \times 10^{-7}$$
+**Paso 3:** Comparación con $K_{sp}$:
+$$Q_{sp} (5.00 \times 10^{-7}) > K_{sp} (7.10 \times 10^{-9})$$
+Como $Q_{sp} > K_{sp}$, la disolución está fuertemente sobresaturada y **precipitará inmediatamente un abundante precipitado amarillo brillante de $PbI_2(s)$**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo permite la terapia de quelación con EDTA salvar la vida de pacientes con intoxicación aguda por plomo o mercurio?
+2. ¿En qué orden precipitarán los aniones cloruro ($AgCl, K_{sp}=1.8\times 10^{-10}$) y cromato ($Ag_2CrO_4, K_{sp}=1.1\times 10^{-12}$) al agregar nitrato de plata a una disolución equimolar de ambos?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

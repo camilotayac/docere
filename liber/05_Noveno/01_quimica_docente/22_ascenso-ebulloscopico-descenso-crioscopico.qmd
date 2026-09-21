@@ -1,0 +1,65 @@
+# Propiedades Coligativas: Ascenso Ebulloscópico y Descenso Crioscópico
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Propiedades Coligativas de las Disoluciones
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Como consecuencia termodinámica directa del descenso de la presión de vapor provocado por un soluto no volátil, se modifican las temperaturas de transición de fase del solvente:
+
+1. **Ascenso Ebulloscópico ($\Delta T_b$):** Dado que la presión de vapor de la disolución es menor a cualquier temperatura, se requiere calentar a una temperatura más elevada para que la presión de vapor iguale la presión externa atmosférica y comience la ebullición ($T_{b,\text{solución}} > T_{b,\text{solvente}}^*$).
+2. **Descenso Crioscópico ($\Delta T_f$):** Las moléculas de soluto interfieren con el empaquetamiento geométrico ordenado de las moléculas de solvente en la red cristalina del sólido, exigiendo una mayor extracción de energía cinética para congelar ($T_{f,\text{solución}} < T_{f,\text{solvente}}^*$).
+
+Ambas variaciones son directamente proporcionales a la **molalidad ($m$)** de las partículas de soluto en disolución.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación del ascenso ebulloscópico:
+$$\Delta T_b = T_b - T_b^* = K_b \cdot m$$
+Ecuación del descenso crioscópico:
+$$\Delta T_f = T_f^* - T_f = K_f \cdot m$$
+Constantes molales crioscópica y ebulloscópica para el agua:
+$$K_b = 0.512\,^\circ\text{C}\cdot\text{kg/mol} \qquad K_f = 1.86\,^\circ\text{C}\cdot\text{kg/mol}$$
+Determinación de masa molar de solutos desconocidos por crioscopía:
+$$M_{\text{soluto}} = \frac{K_f \cdot m_{\text{soluto}}\,(\text{g})}{\Delta T_f \cdot m_{\text{solvente}}\,(\text{kg})}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Restar al revés las temperaturas en el descenso crioscópico ($\Delta T_f$ se define como una cantidad positiva: temperatura del solvente puro menos la de la solución, $0^\circ\text{C} - T_f$).
+2. Usar Molaridad en lugar de Molalidad en la ecuación.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de armar un rompecabezas con polvo:** Para congelar agua debes armar un rompecabezas perfecto de hielo. Si el agua está pura las fichas encajan al instante a $0^\circ\text{C}$. Si hay azúcar o sal disuelta, las partículas extrañas se meten entre las piezas del rompecabezas estorbando; tienes que enfriar mucho más abajo (a $-5^\circ\text{C}$) para forzarlas a encajar.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se disuelven $15.0\,\text{g}$ de un compuesto orgánico no electrolito desconocido en $200.0\,\text{g}$ de agua pura. La disolución resultante congela experimentalmente a $-0.775^\circ\text{C}$. Calcule la masa molar del soluto desconocido.
+
+**Paso 1:** Descenso crioscópico experimental:
+$$\Delta T_f = 0.000^\circ\text{C} - (-0.775^\circ\text{C}) = 0.775^\circ\text{C}$$
+**Paso 2:** Cálculo de la molalidad de la disolución ($K_f = 1.86^\circ\text{C/m}$):
+$$m = \frac{\Delta T_f}{K_f} = \frac{0.775^\circ\text{C}}{1.86\,^\circ\text{C}\cdot\text{kg/mol}} = 0.4167\,\text{mol/kg}$$
+**Paso 3:** Moles de soluto en la muestra ($0.2000\,\text{kg}$ de agua):
+$$n = m \times m_{\text{solvente}} = 0.4167\,\text{mol/kg} \times 0.2000\,\text{kg} = 0.08333\,\text{mol}$$
+**Paso 4:** Cálculo de la masa molar:
+$$M = \frac{15.0\,\text{g}}{0.08333\,\text{mol}} = 180.0\,\text{g/mol}$$
+La masa molar calculada ($180\,\text{g/mol}$) es compatible con la glucosa ($C_6H_{12}O_6$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué se esparce sal común ($NaCl$) sobre las carreteras congeladas en invierno en países con estaciones?
+2. ¿Por qué el etilenglicol funciona simultáneamente como anticongelante en invierno y como refrigerante antiebullición en verano en los radiadores de automóviles?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

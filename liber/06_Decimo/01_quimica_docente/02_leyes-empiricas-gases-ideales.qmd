@@ -1,0 +1,61 @@
+# Leyes Empíricas de los Gases: Boyle, Charles, Gay-Lussac y Ley Combinada
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las leyes empíricas de los gases derivan de experimentos clásicos donde se mantienen constantes dos de las cuatro variables de estado:
+
+1. **Ley de Boyle-Mariotte (1662):** A temperatura y masa constantes, el volumen de un gas es inversamente proporcional a la presión absoluta:
+$$P_1 V_1 = P_2 V_2 \quad (T, n = \text{cte})$$
+2. **Ley de Charles (1787):** A presión y masa constantes, el volumen es directamente proporcional a la temperatura absoluta:
+$$\frac{V_1}{T_1} = \frac{V_2}{T_2} \quad (P, n = \text{cte})$$
+3. **Ley de Gay-Lussac (1802):** A volumen y masa constantes, la presión es directamente proporcional a la temperatura absoluta:
+$$\frac{P_1}{T_1} = \frac{P_2}{T_2} \quad (V, n = \text{cte})$$
+4. **Ley Combinada de los Gases:** Agrupa las tres leyes para una cantidad de materia fija:
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+
+### Formalización Matemática y Leyes Físicas
+Ecuaciones empíricas combinadas:
+$$\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}$$
+Condición de isotermas, isóbaras e isócoras:
+$$PV = k_1 \quad \text{(Isoterma)} \qquad \frac{V}{T} = k_2 \quad \text{(Isóbara)} \qquad \frac{P}{T} = k_3 \quad \text{(Isócora)}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar convertir la temperatura a Kelvin (utilizar $^\circ\text{C}$ produce errores matemáticos grotescos y divisiones entre cero).
+2. Creer que si la presión se duplica a temperatura constante, el volumen también se duplica (se reduce a la mitad por proporcionalidad inversa).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la jeringa cerrada:** Si tapas la punta de una jeringa y empujas el émbolo duplicando la fuerza (presión), el volumen de aire atrapado se comprime a la mitad (Boyle). Si sumerges la jeringa cerrada en agua hirviendo, el aire caliente empuja el émbolo hacia afuera expandiéndose (Charles).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una muestra de gas nitrógeno ocupa un volumen de $4.50\,\text{L}$ a $27.0^\circ\text{C}$ y $1.20\,\text{atm}$. ¿Qué volumen ocupará si la presión se incrementa a $3.00\,\text{atm}$ y la temperatura se eleva a $127.0^\circ\text{C}$?
+
+**Paso 1:** Conversión de temperaturas a Kelvin:
+$$T_1 = 27.0 + 273.15 = 300.15\,\text{K}; \quad T_2 = 127.0 + 273.15 = 400.15\,\text{K}$$
+**Paso 2:** Aplicación de la ley combinada:
+$$V_2 = V_1 \times \left( \frac{P_1}{P_2} \right) \times \left( \frac{T_2}{T_1} \right) = 4.50\,\text{L} \times \left( \frac{1.20\,\text{atm}}{3.00\,\text{atm}} \right) \times \left( \frac{400.15\,\text{K}}{300.15\,\text{K}} \right)$$
+$$V_2 = 4.50 \times 0.400 \times 1.333 = 2.40\,\text{L}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la presión de los neumáticos de un automóvil aumenta después de un viaje largo por autopista en un día caluroso?
+2. ¿Qué ocurriría físicamente si se extrapola la gráfica de la ley de Charles hasta el cero absoluto ($0\,\text{K}$)? (Volumen nulo hipotético).
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,89 @@
+# Energía Libre de Gibbs y Criterio de Espontaneidad
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Clásica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La Segunda Ley exige calcular tanto el cambio de entropía del sistema como el de los alrededores ($\Delta S_{\text{univ}} = \Delta S_{\text{sis}} + \Delta S_{\text{alred}} > 0$). Sin embargo, monitorear experimentalmente los alrededores de todo el universo es impráctico.
+
+En la década de 1870, el físico y matemático Josiah Willard Gibbs resolvió este problema definiendo una nueva función de estado termodinámica que permite evaluar la espontaneidad enfocándose **exclusivamente en las propiedades del sistema**: la **Energía Libre de Gibbs ($G$)**.
+
+A temperatura y presión constantes:
+$$G = H - TS$$
+Diferenciando a $T$ constante:
+$$\Delta G_{\text{sis}} = \Delta H_{\text{sis}} - T \Delta S_{\text{sis}}$$
+Recordando que $\Delta S_{\text{alred}} = -\frac{\Delta H_{\text{sis}}}{T}$, sustituimos en la Segunda Ley:
+$$\Delta S_{\text{univ}} = \Delta S_{\text{sis}} - \frac{\Delta H_{\text{sis}}}{T}$$
+Multiplicando toda la ecuación por $-T$ (con $T > 0\,\text{K}$):
+$$-T \Delta S_{\text{univ}} = \Delta H_{\text{sis}} - T \Delta S_{\text{sis}} = \Delta G_{\text{sis}}$$
+
+Este resultado establece la equivalencia directa entre el criterio de la Segunda Ley y la Energía Libre de Gibbs:
+1. **Si $\Delta S_{\text{univ}} > 0 \iff \Delta G < 0$:** El proceso es **espontáneo** o exergónico en el sentido directo.
+2. **Si $\Delta S_{\text{univ}} = 0 \iff \Delta G = 0$:** El sistema se encuentra en estado de **equilibrio termodinámico dinámico**.
+3. **Si $\Delta S_{\text{univ}} < 0 \iff \Delta G > 0$:** El proceso es **no espontáneo** o endergónico en el sentido directo (la reacción espontánea ocurre en sentido inverso).
+
+La energía libre de Gibbs representa físicamente la **máxima cantidad de trabajo útil no expansivo** (como el trabajo eléctrico en una celda galvánica o el trabajo osmótico en membranas biológicas) que puede obtenerse de un proceso químico a temperatura y presión constantes:
+$$w_{\text{útil, máx}} = \Delta G$$
+
+### Formalización Matemática y Leyes Físicas
+$$G = H - TS$$
+$$\Delta G = \Delta H - T \Delta S \quad (T, P = \text{cte})$$
+$$\Delta G^\circ_{\text{rxn}} = \sum \nu_p \Delta G^\circ_f(\text{productos}) - \sum \nu_r \Delta G^\circ_f(\text{reactivos})$$
+Criterio de espontaneidad:
+$$\Delta G < 0 \implies \text{Espontáneo}$$
+$$\Delta G = 0 \implies \text{Equilibrio}$$
+$$\Delta G > 0 \implies \text{No espontáneo}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Asumir que 'espontáneo' significa 'rápido':** Confundir termodinámica con cinética. Un proceso puede ser sumamente espontáneo ($\Delta G^\circ \ll 0$) pero tener una energía de activación tan elevada que su velocidad a temperatura ambiente sea nula (ejemplo: la combustión de la gasolina o la transformación de diamante en grafito). La termodinámica indica la factibilidad del destino; la cinética indica el tiempo de llegada.
+2. **Olvidar convertir las unidades de $T \Delta S$:** Calcular $\Delta G = \Delta H - T \Delta S$ sumando directamente $\Delta H$ en $\text{kJ}$ con $T \Delta S$ en $\text{J}$, produciendo un error por un factor de 1000.
+3. **Creer que un proceso con $\Delta G > 0$ es imposible:** Un proceso con $\Delta G > 0$ puede realizarse si se acopla externamente a un proceso más espontáneo cuyo $\Delta G$ global neto sea negativo (como el acoplamiento de hidrólisis de ATP en bioquímica).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Pelota y el Tobogán Gravitacional:** En mecánica clásica, una pelota rueda colina abajo hacia el punto de mínima energía potencial. En termodinámica química a $T$ y $P$ constantes, la mezcla de reacción desciende por el 'tobogán' de la energía libre de Gibbs hasta el fondo del valle, donde $\Delta G = 0$ (el estado de equilibrio).
+2. **El Remanente Disponible (Gibbs Libre):** La entalpía total $\Delta H$ es el dinero total que sale de la caja fuerte. Pero para operar a temperatura $T$, la naturaleza cobra un 'impuesto de desorden irreversible' obligatorio ($T \Delta S$). La energía libre de Gibbs ($\Delta G$) es el dinero que te queda libre después de pagar los impuestos para hacer trabajo real.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Para la descomposición térmica del carbonato de calcio a $298.15\,\text{K}$:
+$$\text{CaCO}_3(s) \to \text{CaO}(s) + \text{CO}_2(g)$$
+Se tienen los siguientes datos termodinámicos estándar:
+1. $\Delta H^\circ_{rxn} = +178.3\,\text{kJ/mol}$
+2. $\Delta S^\circ_{rxn} = +160.5\,\text{J}/(\text{mol}\cdot\text{K})$
+1. Calcule el cambio de energía libre estándar de Gibbs ($\Delta G^\circ_{rxn}$) a $298.15\,\text{K}$.
+2. Determine si la descomposición es espontánea a temperatura ambiente estándar.
+
+**Solución paso a paso:**
+1. *Homogeneizar unidades:*
+   $\Delta H^\circ_{rxn} = +178.3\,\text{kJ/mol}$
+   $$\Delta S^\circ_{rxn} = 160.5\,\frac{\text{J}}{\text{mol}\cdot\text{K}} \times \left( \frac{1\,\text{kJ}}{1000\,\text{J}} \right) = 0.1605\,\frac{\text{kJ}}{\text{mol}\cdot\text{K}}$$
+2. *Calcular el término entrópico $T \Delta S^\circ$:*
+   $$T \Delta S^\circ = (298.15\,\text{K}) \times \left( 0.1605\,\frac{\text{kJ}}{\text{mol}\cdot\text{K}} \right) = 47.85\,\text{kJ/mol}$$
+3. *Aplicar la ecuación fundamental de Gibbs:*
+   $$\Delta G^\circ_{rxn} = \Delta H^\circ_{rxn} - T \Delta S^\circ_{rxn}$$
+   $$\Delta G^\circ_{rxn} = +178.3\,\text{kJ/mol} - 47.85\,\text{kJ/mol} = +130.45\,\text{kJ/mol}$$
+4. *Diagnóstico de espontaneidad:*
+   Como $\Delta G^\circ_{rxn} = +130.5\,\text{kJ/mol} > 0$, la reacción es fuertemente **no espontánea** a $25^\circ\text{C}$. La piedra caliza ($\text{CaCO}_3$) es químicamente estable en condiciones ambientales y no se descompone espontáneamente en óxido de calcio y dióxido de carbono.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua líquida se evapora espontáneamente a $25^\circ\text{C}$ si el proceso de vaporización es endotérmico ($\Delta H > 0$)?
+2. ¿Cuál es la condición matemática exacta que define el equilibrio de fases (como el punto de ebullición normal)?
+3. Si una reacción tiene $\Delta G^\circ < 0$, ¿significa que todos los reactivos se convertirán al 100% en productos?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

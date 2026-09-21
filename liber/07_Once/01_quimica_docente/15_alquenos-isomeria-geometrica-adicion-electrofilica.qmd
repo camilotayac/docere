@@ -1,0 +1,80 @@
+# Hidrocarburos Insaturados: Alquenos, Isomería Geométrica y Adición Electrofílica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Hidrocarburos Insaturados
+> * **Propósito Docente:** Explicar los fundamentos cuánticos de la barrera rotacional del doble enlace, dominar la asignación de configuraciones $E/Z$, y deducir termodinámicamente la regla de Markovnikov en reacciones de adición electrofílica.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los alquenos, u olefinas, son hidrocarburos alifáticos insaturados que contienen al menos un doble enlace carbono-carbono ($C=C$). Su serie homóloga acíclica responde a la fórmula molecular general:
+
+$$C_n H_{2n}$$
+
+El doble enlace está constituido por un enlace $\sigma$, originado por el solapamiento frontal de dos orbitales híbridos $sp^2$, y un enlace $\pi$, resultante del solapamiento lateral de dos orbitales atómicos $2p_z$ no hibridados y coplanares. La energía de disociación del enlace doble carbono-carbono ronda los $611\,\text{kJ/mol}$, mientras que la de un enlace simple $C-C$ es de aproximadamente $348\,\text{kJ/mol}$. La diferencia de $263\,\text{kJ/mol}$ corresponde a la energía intrínseca del enlace $\pi$. Esta elevada energía representa una formidable barrera rotacional que impide la torsión libre alrededor del eje internuclear a temperaturas ordinarias, forzando a los cuatro átomos unidos a los carbonos del doble enlace a permanecer estrictamente en un mismo plano.
+
+Esta restricción geométrica origina el fenómeno de la **estereoisomería geométrica o configuracional**. Cuando cada uno de los dos carbonos del doble enlace porta dos sustituyentes distintos entre sí, los grupos pueden disponerse de dos formas espaciales que no se interconvierten espontáneamente:
+
+1. **Sistema Clásico Cis/Trans:** Aplicable cuando existen dos sustituyentes idénticos en extremos opuestos del doble enlace. En el isómero *cis*, los grupos semejantes se ubican hacia el mismo lado del plano de referencia definido por el enlace doble; en el isómero *trans*, se sitúan en lados opuestos del plano.
+2. **Sistema Sistemático E/Z (Cahn-Ingold-Prelog):** Requerido de forma unívoca para alquenos tri- y tetrasustituidos. Se asignan prioridades relativas (1 para mayor prioridad, 2 para menor) a los dos grupos unidos a cada carbono del doble enlace en función de su número atómico ($Z$). Si los dos grupos de mayor prioridad se hallan del mismo lado, se designa como configuración **$Z$** (del alemán *zusammen*, juntos); si están en lados opuestos, se asigna la configuración **$E$** (del alemán *entgegen*, opuestos).
+
+En términos de reactividad, la densidad electrónica del enlace $\pi$ se sitúa por encima y por debajo del plano nodal molecular, relativamente expuesta y accesible. Por consiguiente, los electrones $\pi$ actúan como una base de Lewis o especie nucleófila capaz de interactuar con reactivos ávidos de carga negativa (electrófilos, $E^+$). La transformación característica de los alquenos es la **adición electrofílica ($Ad_E$)**, cuyo mecanismo transcurre en dos etapas fundamentales:
+
+1. **Ataque electrofílico inicial (etapa lenta, determinante de la velocidad):** Los electrones $\pi$ atacan al electrófilo, formándose un enlace $\sigma$ y generando un intermediario reactivo catiónico denominado **carbocatión**.
+2. **Ataque nucleofílico final (etapa rápida):** Una especie con carga negativa o par libre disponible (nucleófilo, $Nu^-$) ataca al carbocatión para restablecer el octeto electrónico y consolidar la molécula saturada final.
+
+En 1869, el químico ruso Vladimir Markovnikov dedujo empíricamente que en la adición de un halogenuro de hidrógeno ($HX$) a un alqueno asimétrico, el átomo de hidrógeno se une al carbono que inicialmente posee mayor número de átomos de hidrógeno. En el marco de la química moderna, la **Regla de Markovnikov** se justifica rigurosamente por la estabilidad termodinámica relativa de los carbocationes intermediarios:
+
+$$\text{Carbocatión Terciario } (3^\circ) > \text{Secundario } (2^\circ) > \text{Primario } (1^\circ) > \text{Metilo } (CH_3^+)$$
+
+Esta escala de estabilidad se explica por dos fenómenos cuánticos concurrentes: el **efecto inductivo dador de electrones ($+I$)** ejercido por los grupos alquilo adyacentes hacia el carbono deficiente con hibridación $sp^2$, y la **hiperconjugación**, consistente en el solapamiento estabilizador de los orbitales moleculares $\sigma_{C-H}$ o $\sigma_{C-C}$ de los enlaces vecinos con el orbital atómico $2p$ vacío del centro carbocatiónico.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Aplicar la regla de Markovnikov como una regla nemotécnica ciega:** Memorizar que "el rico en hidrógenos se hace más rico", sin comprender que el camino de reacción real lo determina la ruta que involucra el carbocatión de menor energía de activación.
+2. **Asumir que cualquier molécula con doble enlace presenta isomería cis/trans:** Omitir la condición necesaria de heterogeneidad en los sustituyentes geminales. Si uno solo de los carbonos del doble enlace porta dos sustituyentes idénticos (p. ej., dos hidrógenos en el 1-buteno, $CH_2=CH-CH_2-CH_3$), no puede existir isomería geométrica.
+3. **Confundir la estereoisomería con la isomería constitucional:** Tratar a los isómeros geométricos como moléculas con diferente conectividad, cuando en realidad tienen exactamente la misma secuencia de enlaces atómicos y únicamente discrepan en su orientación espacial rígida.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Dos Lápices Paralelos Unidos con Elásticos:** Conectar dos extremos de madera mediante un solo pasador elástico (permite girar 360 grados sin resistencia); al colocar dos pasadores paralelos (análogos a los enlaces $\sigma$ y $\pi$), el intento de torsión deforma y rompe la estructura, ilustrando la barrera de rotación del enlace múltiple.
+2. **Analogía de las Columnas de Soporte en un Edificio:** Comparar la estabilidad del carbocatión con una columna que sostiene peso; una columna central rodeada y apuntalada por tres muros de carga (carbocatión terciario con tres grupos alquilo dadores) es mucho más estable frente al colapso energético que una columna solitaria sin contrafuertes (carbocatión primario).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Analice la reacción de adición electrofílica de bromuro de hidrógeno gaseoso ($HBr$) sobre el 2-metil-2-buteno. Formule las estructuras de los dos posibles carbocationes intermediarios, determine justificadamente cuál es la especie de menor energía libre y prediga la estructura y el nombre IUPAC del producto mayoritario de la reacción.
+
+**Solución paso a paso:**
+
+1. *Formular la estructura del sustrato de partida e identificar los carbonos del doble enlace:*
+   $$(CH_3)_2C=CH-CH_3$$
+   El alqueno es el 2-metil-2-buteno. El carbono $C_2$ se encuentra unido a dos grupos metilo (disustituido), mientras que el carbono $C_3$ porta un grupo metilo y un átomo de hidrógeno (monosustituido).
+
+2. *Evaluar las dos rutas de protonación electrofílica inicial:*
+   $$\text{Ruta A (Protonación en } C_3): \quad (CH_3)_2C=CH-CH_3 + H^+ \longrightarrow (CH_3)_2\overset{+}{C}-CH_2-CH_3$$
+   Al unirse el protón electrofílico al carbono 3, la carga positiva formal queda alojada en el carbono 2, generando un carbocatión terciario ($3^\circ$) coordinado a tres grupos alquilo.
+   $$\text{Ruta B (Protonación en } C_2): \quad (CH_3)_2C=CH-CH_3 + H^+ \longrightarrow (CH_3)_2CH-\overset{+}{C}H-CH_3$$
+   Si el protón se enlazara al carbono 2, la carga positiva se ubicaría en el carbono 3, produciendo un carbocatión secundario ($2^\circ$) coordinado únicamente a dos grupos carbonados.
+
+3. *Comparar la estabilidad energética de ambos intermediarios:*
+   $$\text{Estabilidad: } \text{Carbocatión Terciario } (3^\circ) \gg \text{Carbocatión Secundario } (2^\circ)$$
+   El carbocatión terciario de la Ruta A posee 8 hidrógenos en posición $\alpha$ disponibles para hiperconjugación ($(CH_3)_2$ aporta 6 hidrógenos y el grupo $-CH_2-$ aporta 2), frente a solo 4 hidrógenos $\alpha$ en la Ruta B, resultando termodinámicamente mucho más favorable.
+
+4. *Efectuar el ataque nucleofílico del ion bromuro sobre el carbocatión más estable:*
+   $$(CH_3)_2\overset{+}{C}-CH_2-CH_3 + :Br:^- \longrightarrow (CH_3)_2C(Br)-CH_2-CH_3$$
+   El ion bromuro actúa como nucleófilo aportando su par electrónico al orbital $2p$ vacío del carbocatión terciario, completando la adición electrofílica.
+
+5. *Asignar el nombre sistemático IUPAC al producto mayoritario obtenido:*
+   $$\text{Producto mayoritario: } 2\text{-bromo-}2\text{-metilbutano}$$
+   El producto responde fielmente a la predicción de Markovnikov, consolidando un derivado halogenado terciario con rendimiento superior al $95\,\%$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ácido clorhídrico ($HCl$) y el ácido bromhídrico ($HBr$) experimentan adición según Markovnikov, mientras que en presencia de peróxidos orgánicos el $HBr$ experimenta una adición anti-Markovnikov mediada por radicales libres?
+2. Al evaluar el ácido maleico (isómero *cis*) y el ácido fumárico (isómero *trans*), ¿por qué sus puntos de fusión y constantes de acidez son marcadamente divergentes si sus enlaces químicos son idénticos?
+3. ¿Cómo se utiliza la prueba del bromo en tetracloruro de carbono ($Br_2/\text{CCl}_4$) en el laboratorio para evidenciar cualitativamente la presencia de insaturaciones olefínicas?

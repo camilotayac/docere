@@ -1,0 +1,66 @@
+# Gases Reales y Desviaciones de la Idealidad: Ecuación de Van der Waals
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los gases reales se desvían drásticamente del comportamiento predicho por la ecuación del gas ideal cuando se someten a **presiones elevadas** (donde las moléculas están tan comprimidas que su volumen molecular propio deja de ser despreciable) y a **temperaturas bajas** (donde la energía cinética térmica disminuye y las fuerzas intermoleculares de atracción no pueden ser ignoradas).
+
+El factor de compresibilidad ($Z$):
+$$Z = \frac{P V_m}{R T}$$
+Para un gas ideal $Z = 1$ en cualquier condición. Para gases reales, $Z < 1$ a presiones moderadas (predominio de atracciones intermoleculares que reducen la presión real) y $Z > 1$ a presiones extremas (predominio del volumen excluido impenetrable).
+
+Johannes Diderik van der Waals (1873) formuló su célebre ecuación de estado introduciendo dos constantes empíricas características de cada gas ($a$ y $b$):
+$$\left( P + \frac{n^2 a}{V^2} \right) (V - n b) = n R T$$
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de Van der Waals:
+$$\left( P + \frac{a}{V_m^2} \right) (V_m - b) = R T$$
+Significado físico de las constantes de Van der Waals:
+1. $a$ ($\text{L}^2\cdot\text{atm/mol}^2$): Corrige la presión reducida debida a las **fuerzas de atracción intermolecular** que frenan el impacto contra las paredes.
+2. $b$ ($\text{L/mol}$): Representa el **volumen covolumen excluido** impenetrable ocupado por las moléculas ($b \approx 4 \cdot N_A \cdot V_{\text{molécula individual}}$).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que la constante $a$ suma presión porque el gas 'empuja más' (se suma algebraicamente porque la presión real del manómetro $P$ es menor que la ideal debido a que las atracciones jalan hacia adentro a las moléculas perimetrales).
+2. Asumir que la ecuación del gas ideal es inútil (a presiones ordinarias menores a $5\,\text{atm}$ y temperaturas ambiente, el error del gas ideal es típicamente inferior al $1\%$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los autos en el embotellamiento:** En una autopista vacía a medianoche (gas ideal a baja presión), el tamaño de los autos no importa y van a toda velocidad. En un trancón monumental de hora pico (gas real a alta presión), el parachoques de un auto choca con el otro (volumen molecular propio $b$) y si los autos tienen imanes en las puertas (fuerzas de atracción $a$), el tráfico se frena severamente.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la presión ejercida por $1.000\,\text{mol}$ de gas $Cl_2$ en un recipiente de $2.000\,\text{L}$ a $0.0^\circ\text{C}$ ($273.15\,\text{K}$):
+a) Empleando la ecuación del gas ideal.
+b) Empleando la ecuación de Van der Waals ($a = 6.49\,\text{L}^2\cdot\text{atm/mol}^2$, $b = 0.0562\,\text{L/mol}$).
+
+**Paso 1:** Presión ideal:
+$$P_{\text{ideal}} = \frac{n R T}{V} = \frac{(1.000)(0.08206)(273.15)}{2.000} = 11.21\,\text{atm}$$
+**Paso 2:** Presión de Van der Waals:
+$$P = \frac{n R T}{V - n b} - \frac{n^2 a}{V^2}$$
+$$V - n b = 2.000 - (1.000)(0.0562) = 1.9438\,\text{L}$$
+$$\text{Término térmico} = \frac{(1.000)(0.08206)(273.15)}{1.9438} = \frac{22.415}{1.9438} = 11.532\,\text{atm}$$
+$$\text{Término de atracción} = \frac{(1.000)^2 (6.49)}{(2.000)^2} = \frac{6.49}{4.000} = 1.623\,\text{atm}$$
+$$P_{\text{real}} = 11.532 - 1.623 = 9.91\,\text{atm}$$
+La presión real ($9.91\,\text{atm}$) es un $11.6\%$ menor que la ideal debido a las intensas fuerzas atractivas de London entre las moléculas de cloro polarizables.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el helio tiene valores de $a$ y $b$ extremadamente pequeños ($a=0.034$, $b=0.0237$) comparado con el agua ($a=5.46$, $b=0.0305$)?
+2. ¿A qué temperatura e intervalo de presión un gas real se comporta de forma prácticamente indistinguible de un gas ideal?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

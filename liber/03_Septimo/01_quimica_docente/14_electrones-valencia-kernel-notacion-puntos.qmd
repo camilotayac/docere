@@ -1,0 +1,68 @@
+# Electrones de Valencia, Kernel Atómico y Diagramas de Puntos de Lewis
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Cuántica del Átomo
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En la reactividad química de los elementos, los electrones no intervienen con igual probabilidad. Se distingue rigurosamente entre:
+
+1. **Kernel o Centro Atómico:** Constituido por el núcleo atómico y las capas electrónicas internas completamente llenas. Esta estructura es extraordinariamente estable, químicamente inerte en condiciones ordinarias y apantalla la carga nuclear. Se abrevia en las configuraciones mediante el símbolo del gas noble precedente entre corchetes ($[He], [Ne], [Ar], [Kr], [Xe], [Rn]$).
+2. **Capa y Electrones de Valencia:** Son los electrones alojados en el nivel cuántico principal más externo ($n_{\text{max}}$), más aquellos electrones en subniveles $d$ o $f$ incompletos. Son los únicos responsables directos de la formación de enlaces químicos y determinan las propiedades químicas del elemento.
+
+Gilbert N. Lewis (1916) introdujo los **diagramas de puntos de Lewis**, una representación gráfica bidimensional donde el símbolo del elemento representa al kernel atómico y los electrones de valencia se representan mediante puntos o cruces dispuestos alrededor del símbolo.
+
+### Formalización Matemática y Leyes Físicas
+Determinación de electrones de valencia ($e^-_v$) para elementos de grupos principales (bloques $s$ y $p$):
+$$e^-_v = \text{Número de Grupo IUPAC} \quad (\text{Grupos 1 y 2})$$
+$$e^-_v = \text{Número de Grupo IUPAC} - 10 \quad (\text{Grupos 13 a 18})$$
+Regla del octeto de valencia:
+$$n s^2 n p^6 = 8\,e^-$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Contar todos los electrones de la configuración como electrones de valencia (ej. creer que el Galio, $1s^2 \dots 3d^{10} 4s^2 4p^1$, tiene 13 electrones de valencia en lugar de 3, olvidando que el subnivel $3d^{10}$ está lleno y forma parte del kernel interno).
+2. Dibujar puntos de Lewis apareados antes de ubicar un electrón por cada uno de los cuatro lados del símbolo atómico.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la cebolla:** El corazón apretado de la cebolla es el kernel atómico protegido; las cáscaras exteriores son los electrones de valencia, que son los únicos que entran en contacto cuando dos cebollas chocan en la cocina.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Para los elementos Fósforo ($P, Z=15$) y Calcio ($Ca, Z=20$):
+a) Escriba su configuración con kernel de gas noble.
+b) Indique el número de electrones de valencia.
+c) Dibuje el diagrama de puntos de Lewis correspondiente.
+
+**Paso 1:** Fósforo ($Z=15$):
+1. Configuración con kernel: $[Ne]\, 3s^2 3p^3$.
+2. Nivel más externo: $n=3$. Electrones de valencia: $2 + 3 = 5\,e^-_v$ (Grupo 15).
+3. Notación de Lewis: El símbolo $\text{P}$ rodeado de un par solitario en un lado y tres electrones desapareados en los otros tres lados:
+$$: \dot{\text{P}} \cdot$$
+$$\quad \cdot$$
+
+**Paso 2:** Calcio ($Z=20$):
+1. Configuración con kernel: $[Ar]\, 4s^2$.
+2. Nivel más externo: $n=4$. Electrones de valencia: $2\,e^-_v$ (Grupo 2).
+3. Notación de Lewis: El símbolo $\text{Ca}$ con dos electrones en lados opuestos:
+$$\cdot \text{Ca} \cdot$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el helio se dibuja con dos puntos apareados ($\, :\!He$) en lugar de separados, a pesar de pertenecer a los gases nobles?
+2. ¿Por qué los elementos del mismo grupo de la tabla periódica presentan diagramas de puntos de Lewis idénticos?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

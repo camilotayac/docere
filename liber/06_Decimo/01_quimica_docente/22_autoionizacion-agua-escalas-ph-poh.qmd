@@ -1,0 +1,73 @@
+# Autoionización del Agua, Producto Iónico ($K_w$) y Escalas de pH y pOH (Oriakhi Cap. 18)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El agua pura es un anfótero anfiprótico que experimenta una autodisolución espontánea muy leve denominada **autoionización o autoprotólisis del agua**:
+$$H_2O(l) + H_2O(l) \rightleftharpoons H_3O^+(aq) + OH^-(aq)$$
+En este equilibrio, el producto de las actividades iónicas define la constante termodinámica del **producto iónico del agua ($K_w$)**, cuyo valor a $25.0^\circ\text{C}$ es exactamente $1.00 \times 10^{-14}$. Dado que el proceso es endotérmico ($\Delta H > 0$), el valor de $K_w$ aumenta al elevar la temperatura.
+
+Søren Sørensen (1909) introdujo la **escala logarítmica de pH** (potencial de hidrógeno) para compactar las variaciones infinitesimales de concentración de protones:
+$$\text{pH} = -\log_{10}[H_3O^+] \qquad \text{pOH} = -\log_{10}[OH^-]$$
+A $25^\circ\text{C}$, se cumple estrictamente la relación aditiva: $\text{pH} + \text{pOH} = \text{pK}_w = 14.00$.
+
+### Formalización Matemática y Leyes Físicas
+Ecuaciones operacionales fundamentales:
+$$K_w = [H_3O^+][OH^-] = 1.00 \times 10^{-14} \quad (\text{a } 25^\circ\text{C})$$
+$$\text{pH} = -\log[H^+] \implies [H^+] = 10^{-\text{pH}}$$
+$$\text{pOH} = -\log[OH^-] \implies [OH^-] = 10^{-\text{pOH}}$$
+$$\text{pH} + \text{pOH} = 14.00 \quad (\text{a } 25^\circ\text{C})$$
+Criterios de neutralidad a $25^\circ\text{C}$:
+1. Neutro: $[H^+] = [OH^-] = 1.0 \times 10^{-7}\,M \implies \text{pH} = 7.00$
+2. Ácido: $[H^+] > [OH^-] \implies \text{pH} < 7.00$
+3. Básico: $[OH^-] > [H^+] \implies \text{pH} > 7.00$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Asumir que un pH neutro siempre es $7.00$ (a la temperatura corporal de $37^\circ\text{C}$, $K_w = 2.4 \times 10^{-14}$ y el pH neutro es $6.81$).
+2. Creer que la escala de pH sólo existe entre 0 y 14 (soluciones concentradas de ácidos fuertes como $HCl\,2\,M$ tienen $\text{pH} = -0.30$; soluciones concentradas de $NaOH\,2\,M$ tienen $\text{pH} = 14.30$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la escala Richter de sismos:** La escala de pH es logarítmica: un cambio de una sola unidad de pH (de 6 a 5) no es un poquito más ácido, ¡es diez veces ($10\times$) más ácido! Pasar de pH 7 a pH 4 es mil veces ($10^3$) más ácido.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 18):** Se prepara una disolución disolviendo $0.0560\,\text{g}$ de hidróxido de potasio ($KOH$, $M = 56.11\,\text{g/mol}$) en agua suficiente para completar $500.0\,\text{mL}$ de solución a $25^\circ\text{C}$. Calcule $[OH^-]$, $[H^+]$, el pOH y el pH.
+
+**Paso 1:** Cálculo de la concentración molar de $KOH$:
+$$n(KOH) = \frac{0.0560\,\text{g}}{56.11\,\text{g/mol}} = 9.980 \times 10^{-4}\,\text{mol}$$
+$$M = \frac{9.980 \times 10^{-4}\,\text{mol}}{0.5000\,\text{L}} = 1.996 \times 10^{-3}\,M$$
+Como el $KOH$ es una base fuerte que se disocia al $100\%$ (
+
+$$KOH \to K^+ + OH^-$$
+
+):
+$$[OH^-] = 1.996 \times 10^{-3}\,M$$
+**Paso 2:** Cálculo del pOH:
+$$\text{pOH} = -\log(1.996 \times 10^{-3}) = 2.70$$
+**Paso 3:** Cálculo del pH:
+$$\text{pH} = 14.00 - \text{pOH} = 14.00 - 2.70 = 11.30$$
+**Paso 4:** Concentración de $[H^+]$:
+$$[H^+] = 10^{-\text{pH}} = 10^{-11.30} = 5.01 \times 10^{-12}\,M$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua pura a $60^\circ\text{C}$ tiene un $\text{pH} \approx 6.5$ pero sigue siendo estrictamente neutra?
+2. ¿Cuál es el pH de una solución $1.0 \times 10^{-8}\,M$ de $HCl$? (Demuestre por qué no puede ser $8.0$ considerando la autoionización del agua).
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

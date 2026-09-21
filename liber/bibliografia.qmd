@@ -1,4 +1,10 @@
-### Referencias
+---
+nocite: |
+  @*
+---
+
+# Bibliografía {.unnumbered}
 
 ::: {#refs}
 :::
+

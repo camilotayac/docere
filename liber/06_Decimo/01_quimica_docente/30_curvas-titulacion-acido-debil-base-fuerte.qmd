@@ -1,0 +1,69 @@
+# Curvas de Titulación Ácido Débil - Base Fuerte e Indicadores de pH
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Volumetría y Titulaciones Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La curva de titulación de un ácido débil ($HA$, ej. $CH_3COOH$) con una base fuerte ($NaOH$) presenta marcadas diferencias termodinámicas respecto a la de un ácido fuerte:
+
+1. **pH Inicial más elevado:** Debido a la ionización incompleta del ácido débil.
+2. **Zona Tampón o Amortiguadora:** Antes del punto de equivalencia coexisten el ácido débil remanente y su base conjugada formada ($A^-$), generándose una disolución amortiguadora gobernada por Henderson-Hasselbalch.
+3. **Punto de Semiequivalencia ($V_b = \frac{1}{2}V_e$):** Se ha neutralizado exactamente la mitad del ácido ($[HA] = [A^-]$); en este punto singular **$\text{pH} = \text{p}K_a$**, permitiendo determinar experimentalmente el $\text{p}K_a$ del ácido directamente de la curva.
+4. **Punto de Equivalencia BÁSICO ($	ext{pH} > 7.00$):** En el punto de equivalencia todo el ácido se ha transformado en su base conjugada ($A^-$), la cual sufre **hidrólisis básica**. Por tanto, **el punto de equivalencia es siempre alcalino ($	ext{pH} \approx 8.5 - 9.0$)**.
+5. **Selección de Indicadores:** Un indicador ácido-base es un ácido débil orgánico ($HIn$) cuya forma protonada tiene un color diferente a su base conjugada ($In^-$). Para minimizar el error de titulación, el intervalo de viraje del indicador ($\text{p}K_{\text{In}} \pm 1$) debe coincidir con el salto vertical en el punto de equivalencia (en este caso, **fenolftaleína**, cuyo viraje es de $8.2$ a $10.0$).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación en el punto de semiequivalencia:
+$$\text{Si } V_b = \frac{1}{2}V_e \implies [A^-] = [HA] \implies \text{pH} = \text{p}K_a$$
+
+PH en el punto de equivalencia alcalino:
+$$[OH^-] = \sqrt{\frac{K_w}{K_a} \cdot \frac{M_a V_a}{V_a + V_e}}$$
+Equilibrio del indicador:
+$$HIn(aq) + H_2O \rightleftharpoons H_3O^+ + In^-(aq) \implies \text{pH} = \text{p}K_{\text{In}} + \log\left( \frac{[In^-]}{[HIn]} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar naranja de metilo (viraje de $3.1$ a $4.4$) para titular un ácido débil con base fuerte (el indicador virará mucho antes de que se alcance el punto de equivalencia, introduciendo un error analítico inmenso).
+2. Suponer que en el punto de equivalencia de un ácido débil el pH es neutro ($7.00$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El punto medio del espejo:** En la mitad exacta del camino hacia la neutralización total, la concentración del ácido original y la sal formada son clones perfectos; en ese momento mágico el pH del vaso es exactamente igual al carnet de identidad molecular del ácido: su $\text{p}K_a$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se titulan $25.0\,\text{mL}$ de ácido acético $0.100\,M$ ($K_a = 1.80 \times 10^{-5}, \text{p}K_a = 4.74$) con $NaOH\,0.100\,M$. Calcule:
+a) El pH en el punto de semiequivalencia ($12.5\,\text{mL}$ de $NaOH$).
+b) El pH en el punto de equivalencia ($25.0\,\text{mL}$ de $NaOH$).
+
+**Paso 1:** Punto de semiequivalencia ($V_b = 12.5\,\text{mL}$):
+$$[CH_3COO^-] = [CH_3COOH] \implies \text{pH} = \text{p}K_a = 4.74$$
+**Paso 2:** Punto de equivalencia ($V_b = 25.0\,\text{mL}$, $V_{\text{total}} = 50.0\,\text{mL}$):
+Moles de acetato formado: $n = (0.0250\,\text{L})(0.100\,M) = 2.50 \times 10^{-3}\,\text{mol}$.
+Concentración de acetato en el punto de equivalencia:
+$$c = \frac{2.50 \times 10^{-3}\,\text{mol}}{0.0500\,\text{L}} = 0.0500\,M$$
+Hidrólisis del acetato ($K_h = K_w / K_a = 5.56 \times 10^{-10}$):
+$$[OH^-] = \sqrt{K_h \cdot c} = \sqrt{(5.56 \times 10^{-10})(0.0500)} = 5.27 \times 10^{-6}\,M$$
+$$\text{pOH} = -\log(5.27 \times 10^{-6}) = 5.28$$
+$$\text{pH} = 14.00 - 5.28 = 8.72$$
+El punto de equivalencia ocurre a **$\text{pH} = 8.72$**, validando el uso de fenolftaleína (incoloro a rosado tenue).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la curva de titulación de un ácido débil presenta una pendiente mucho menos pronunciada en el punto de equivalencia que la de un ácido fuerte?
+2. ¿Cómo se titula un ácido poliprótico como el ácido fosfórico y por qué presenta dos saltos de pH distinguibles?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

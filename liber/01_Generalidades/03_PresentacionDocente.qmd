@@ -1,0 +1,96 @@
+# Presentación del Manual del Docente: Fundamentación y Mediación
+
+> **Natura Docens — Marco Disciplinar y Pedagógico para el Docente de Química**
+>
+> * **Autor y Analizador Pedagógico-Curricular:** Camilo Tayac
+> * **Propósito Institucional:** Proporcionar al docente de Educación Básica Secundaria y Media una fundamentación epistemológica, teórica y matemática de nivel universitario, articulada rigurosamente con los Estándares Básicos de Competencias (MEN), los Derechos Básicos de Aprendizaje (DBA) y las competencias evaluadas en la prueba de Estado ICFES Saber 11°.
+
+## 1. Naturaleza y Propósito de la Parte I
+
+En el modelo tripartito de **Natura Docens**, la **Parte I: Manual del Docente** constituye el núcleo epistemológico de la obra. Su función no es proporcionar resúmenes elementales, sino dotar al maestro de las herramientas conceptuales más avanzadas de la química general y cuantitativa (basadas en la obra canónica de Christopher O. Oriakhi, *Chemistry in Quantitative Language*, Oxford University Press), permitiéndole:
+
+1. **Dominar el rigor disciplinar desde los primeros principios:** Explicar los fenómenos no como recetas o dogmas de memoria, sino deduciendo las ecuaciones desde la termodinámica, la mecánica cuántica y las leyes fundamentales de conservación.
+2. **Prever y desmontar los obstáculos epistemológicos:** Conocer anticipadamente las concepciones erróneas, confusiones ontológicas y vicios algebraicos más frecuentes de los estudiantes colombianos documentados en la investigación internacional en didáctica de la química.
+3. **Mediar pedagógicamente mediante el Conocimiento Pedagógico del Contenido (PCK):** Conectar el *Triángulo Representacional de Johnstone* (niveles macroscópico, submicroscópico y simbólico) con estrategias de Diseño Universal para el Aprendizaje (DUA) y analogías con límites epistémicos bien delimitados.
+
+## 2. La Estructura Curricular por Grados y Clases Granulares
+
+La obra para docentes está organizada en partes secuenciales estrictamente delimitadas por grado escolar (Grados 6° a 11°), con un total de **126 clases de alta fidelidad teórica y cuantitativa**:
+
+```
+ESTRUCTURA DISCIPLINAR POR GRADOS — QUÍMICA DOCENTE:
+
+  PARTE: SEXTO — QUÍMICA (DOCENTE) [15 Clases]
+    • Magnitudes físicas fundamentales, análisis dimensional y factores de conversión unitarios.
+    • Propiedades generales, específicas y térmicas de la materia.
+    • Estados de agregación, transiciones de fase y curvas de calentamiento.
+    • Clasificación de la materia (sustancias puras, elementos, compuestos y mezclas).
+    • Métodos físicos de separación de mezclas homogéneas y heterogéneas.
+
+  PARTE: SÉPTIMO — QUÍMICA (DOCENTE) [14 Clases]
+    • Evolución histórica y epistemológica de los modelos atómicos (Dalton, Thomson, Rutherford, Bohr, Sommerfeld).
+    • Estructura subatómica moderna (número atómico Z, número másico A, isótopos e iones).
+    • Dualidad onda-partícula, principio de incertidumbre de Heisenberg y mecánica ondulatoria.
+    • Números cuánticos, orbitales atómicos y principios de aufbau, Pauli y Hund.
+    • Estructura de la tabla periódica moderna y periodicidad de propiedades atómicas.
+
+  PARTE: OCTAVO — QUÍMICA (DOCENTE) [19 Clases]
+    • Estabilidad electrónica y regla del octeto.
+    • Enlace iónico, ciclo de Born-Haber y energía reticular.
+    • Enlace covalente, estructuras de Lewis, carga formal y resonancia.
+    • Geometría molecular según TRPEV, polaridad molecular y momento dipolar.
+    • Hibridación de orbitales atómicos y orbitales moleculares ($\sigma$ y $\pi$).
+    • Fuerzas intermoleculares (dispersión de London, dipolo-dipolo, puente de hidrógeno).
+    • Estados de oxidación, funciones químicas inorgánicas y nomenclatura sistemática IUPAC.
+
+  PARTE: NOVENO — QUÍMICA (DOCENTE) [23 Clases]
+    • Ecuaciones químicas, leyes de conservación y balanceo por tanteo y algebraico.
+    • El concepto de mol, constante de Avogadro y masa molar.
+    • Composición porcentual, fórmulas empíricas y moleculares.
+    • Estequiometría de reacción, reactivo limitante, reactivo en exceso, pureza y rendimiento.
+    • Química de disoluciones, unidades físicas y químicas de concentración (molaridad, molalidad, fracción molar).
+    • Procesos de dilución y propiedades coligativas (presión de vapor, crioscopía, ebulloscopía, presión osmótica).
+
+  PARTE: DÉCIMO — QUÍMICA (DOCENTE) [44 Clases]
+    • Estado gaseoso: variables de estado, leyes empíricas de los gases ideales y ley general.
+    • Densidad y masa molar de gases, mezclas gaseosas (Dalton) y teoría cinético-molecular (Graham).
+    • Desviaciones del comportamiento ideal y ecuación de Van der Waals.
+    • Reacciones redox avanzadas y método ion-electrón en medios ácido y básico.
+    • Cinética química: leyes diferenciales, órdenes de reacción, leyes integradas, vida media, Arrhenius y catálisis.
+    • Dinámica del equilibrio químico, constantes $K_c$ y $K_p$, cociente de reacción $Q$ y Le Chatelier.
+    • Equilibrio iónico: autoionización del agua, pH/pOH, fuerza ácido-base, hidrólisis de sales y amortiguadores.
+    • Análisis volumétrico: curvas de titulación e indicadores ácido-base.
+    • Equilibrios de solubilidad ($K_{sp}$), efecto del ion común y complejos de coordinación.
+    • Electroquímica: celdas galvánicas, potenciales estándar, ecuación de Nernst, celdas electrolíticas y leyes de Faraday.
+    • Química nuclear: estabilidad nuclear, defecto de masa, energía de enlace, modos de decaimiento, cinética y fisión/fusión.
+
+  PARTE: ONCE — QUÍMICA (DOCENTE) [38 Clases]
+    • Termodinámica química clásica: Primera Ley, entalpía, calorimetría, ley de Hess y entalpías de formación.
+    • Segunda y Tercera Ley: entropía molecular, energía libre de Gibbs y constantes de equilibrio.
+    • Estructura del carbono: hibridación $sp^3, sp^2, sp$, enlaces $\sigma$ y $\pi$, e hidrocarburos saturados (alcanos).
+    • Análisis conformacional de cicloalcanos y teoría de tensión de anillo de Baeyer (silla y bote del ciclohexano).
+    • Hidrocarburos insaturados: alquenos (isomería $E/Z$ y adición electrofílica según Markovnikov) y alquinos (acidez terminal).
+    • Compuestos aromáticos: benceno, regla de Hückel, energía de resonancia y sustitución electrofílica aromática (SEAr).
+    • Estereoisomería y quiralidad: centros estereogénicos, enantiómeros, reglas CIP ($R/S$), diastereómeros y ley de Biot.
+    • Química del petróleo: destilación fraccionada, craqueo catalítico (FCC) e índice de octano.
+    • Derivados halogenados y mecanismos cinéticos en competencia: $S_N1, S_N2, E1$ y $E2$.
+    • Funciones oxigenadas: alcoholes, fenoles (acidez por resonancia), éteres y vías de oxidación redox.
+    • Química del carbonilo: polaridad, adición nucleófila en aldehídos/cetonas y ensayos diagnósticos (Tollens y Fehling).
+    • Ácidos carboxílicos y derivados: efectos inductivos en la acidez, condensación de Fischer, saponificación y micelas de jabón.
+    • Funciones nitrogenadas: basicidad de aminas, amidas, resonancia del enlace peptídico y nitrilos.
+    • Macropolímeros sintéticos: polimerización por adición radicalaria (polietileno, PVC, teflón) y por condensación (Nailon, Kevlar, PET).
+    • Bioquímica de carbohidratos: monosacáridos, proyecciones de Haworth, anomería, mutarrotación, disacáridos y polisacáridos (almidón, glucógeno, celulosa).
+    • Bioquímica de lípidos: ácidos grasos saturados/insaturados ($cis$), triacilgliceroles, densidad calórica y ensamblaje de la bicapa lipídica.
+    • Bioquímica de aminoácidos y proteínas: comportamiento zwitteriónico, punto isoeléctrico, niveles estructurales, desnaturalización y cinética enzimática de Michaelis-Menten.
+    • Genética molecular: nucleótidos, enlace fosfodiéster, doble hélice de ADN (Watson, Crick y Franklin), reglas de Chargaff y tipos de ARN.
+    • Bioenergética celular: hidrólisis del ATP y acoplamiento termodinámico metabólico.
+    • Química atmosférica: fotoquímica del ozono estratosférico, ciclo de Chapman y catálisis destructiva por radicales de cloro de los CFCs.
+    • Contaminación troposférica y clima: espectros infrarrojos de gases de efecto invernadero (GEI) y geoquímica de la lluvia ácida.
+    • Fisicoquímica de sistemas acuáticos: oxígeno disuelto, $DBO_5$, eutrofización y tren de potabilización (coagulación-floculación y cloración).
+    • Principios de la Química Verde: los 12 principios de Anastas-Warner, economía atómica ($\%EA$) y Factor Ambiental $E$ de Sheldon.
+```
+
+## 3. Nota Epistemológica sobre la Cobertura Integral del Plan de Área
+
+El presente compendio para el docente cubre de forma exhaustiva, matemática y cuantitativa el **$100\,\%$ del Plan de Área de Ciencias Naturales y Educación Ambiental de Grados 6° a 11°**, articulando armónicamente la Química General, Inorgánica, Analítica, Fisicoquímica, Termodinámica, Química Orgánica, Bioquímica y Química Ambiental / Verde según los Estándares Básicos de Competencias del MEN, los DBA y las exigencias de la prueba Saber 11° (ICFES).
+

@@ -1,0 +1,68 @@
+# Mecanismos de Reacción, Etapas Elementales y Catálisis
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La inmensa mayoría de las reacciones químicas no ocurren en una sola colisión concertada, sino a través de una secuencia de etapas microscópicas individuales denominadas **etapas elementales**, cuya suma global reproduce la estequiometría de la reacción: el **mecanismo de reacción**.
+
+1. **Molecularidad:** Número de partículas reaccionantes que colisionan en una etapa elemental (unimolecular, bimolecular, termolecular muy rara). A diferencia de la reacción global, **en una etapa elemental los órdenes de reacción son exactamente iguales a sus coeficientes estequiométricos**.
+2. **Paso Determinante de la Velocidad ($RDS$):** La etapa elemental más lenta del mecanismo. Actúa como el 'cuello de botella' cinético que gobierna y dicta la ley de velocidad de toda la reacción.
+3. **Intermediario de reacción:** Especie que se produce en una etapa y se consume en una etapa posterior (no aparece en la ecuación global neta).
+4. **Catálisis:** Un catalizador es una sustancia que **aumenta la velocidad de la reacción proporcionando una ruta mecanicista alternativa con menor energía de activación ($E_a$)**, consumiéndose en una etapa inicial y regenerándose intacto al final del ciclo, sin alterar el equilibrio termodinámico ($\Delta G, K_{\text{eq}}$ permanecen invariables).
+
+### Formalización Matemática y Leyes Físicas
+Efecto del catalizador en la constante de Arrhenius:
+$$k_{\text{cat}} = A \cdot e^{-\frac{E_{a,\text{cat}}}{R T}} \gg k_{\text{no cat}} = A \cdot e^{-\frac{E_{a,\text{no cat}}}{R T}}$$
+Relación de aceleración catalítica a temperatura constante:
+$$\frac{k_{\text{cat}}}{k_{\text{no cat}}} = e^{\frac{\Delta E_a}{R T}} \quad (\Delta E_a = E_{a,\text{no cat}} - E_{a,\text{cat}})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que un catalizador 'da energía a las moléculas' (no aporta energía: disminuye la barrera que deben cruzar).
+2. Creer que un catalizador modifica el rendimiento o la constante de equilibrio de la reacción (los catalizadores aceleran por igual el sentido directo y el inverso, alcanzando el equilibrio más rápido sin alterar las concentraciones finales).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del túnel a través de la montaña:** Sin catalizador, los autos deben subir por un camino empinado y peligroso hasta la cima de la montaña ($E_a$ alta); el catalizador es un túnel excavado a través de la base de la montaña ($E_a$ baja). La ciudad de origen y de destino son idénticas (mismo $\Delta H$ y $\Delta G$), pero el viaje por el túnel toma minutos en lugar de horas.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se propone el siguiente mecanismo de dos etapas para la reacción entre dióxido de nitrógeno y monóxido de carbono:
+$$\text{Etapa 1 (lenta): } NO_2 + NO_2 \xrightarrow{k_1} NO_3 + NO$$
+$$\text{Etapa 2 (rápida): } NO_3 + CO \xrightarrow{k_2} NO_2 + CO_2$$
+
+A) Escriba la ecuación balanceada global neta.
+b) Identifique el intermediario de reacción y el catalizador (si existe).
+c) Deduzca la ley de velocidad predicha por este mecanismo.
+
+**Paso 1:** Ecuación global (sumando etapas y cancelando especies comunes):
+$$NO_2 + NO_2 + NO_3 + CO \longrightarrow NO_3 + NO + NO_2 + CO_2$$
+$$NO_2(g) + CO(g) \longrightarrow NO(g) + CO_2(g)$$
+**Paso 2:** Identificación de especies:
+1. El trióxido de nitrógeno ($NO_3$) se forma en la Etapa 1 y se destruye en la Etapa 2: es un **intermediario de reacción**.
+2. No hay catalizador (ninguna especie ingresa al inicio y sale intacta sin transformarse).
+**Paso 3:** Ley de velocidad del mecanismo:
+La velocidad global está dictada exclusivamente por la etapa elemental lenta (Paso Determinante, $RDS$):
+$$v = v_1 = k_1 [NO_2][NO_2] = k_1 [NO_2]^2$$
+El monóxido de carbono ($CO$) interviene después del paso lento, por lo que es de orden cero en la ley de velocidad experimental: $v = k [NO_2]^2$, coincidiendo con las observaciones de laboratorio.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo funcionan los convertidores catalíticos de platino/paladio/rodio en los tubos de escape de los automóviles?
+2. ¿Por qué las enzimas biológicas son catalizadores con especificidad molecular casi perfecta?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

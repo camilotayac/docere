@@ -1,0 +1,62 @@
+# Propiedades Periódicas: Energía de Ionización, Afinidad Electrónica y Electronegatividad
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** La Tabla Periódica y Periodicidad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las propiedades electrónicas energéticas determinan el carácter metálico y la formación de enlaces:
+
+1. **Primera Energía de Ionización ($I_1$):** Energía mínima requerida para arrancar el electrón más externo de un átomo gaseoso aislado en su estado fundamental:
+$$X(g) + I_1 \longrightarrow X^+(g) + e^-$$
+Aumenta a lo largo de un período hacia la derecha (por mayor $Z_{\text{eff}}$) y disminuye descendiendo en un grupo (por mayor apantallamiento y distancia $r$).
+2. **Afinidad Electrónica ($E_{\text{ea}}$):** Cambio entálpico o energía asociada a la adición de un electrón a un átomo gaseoso neutro para formar un anión:
+$$X(g) + e^- \longrightarrow X^-(g)$$
+3. **Electronegatividad ($\chi$):** Capacidad intrínseca relativa de un átomo químicamente enlazado para atraer hacia sí la densidad electrónica del enlace (Escala de Linus Pauling, donde el Flúor es el elemento de referencia con $\chi = 4.0$).
+
+### Formalización Matemática y Leyes Físicas
+Energías de ionización sucesivas para un mismo elemento:
+$$I_1 < I_2 \ll I_3 < I_4$$
+El salto abrupto ocurre cuando se remueve un electrón de un nivel cuántico interno lleno (capa noble).
+Definición de Electronegatividad de Mulliken:
+$$\chi_M = \frac{I_1 + E_{\text{ea}}}{2}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir energía de ionización (requiere energía siempre, proceso endotérmico) con afinidad electrónica.
+2. Creer que la electronegatividad es una propiedad de un átomo aislado (es una propiedad exclusiva de átomos enlazados molecularmente).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del secuestro del electrón:** La energía de ionización es el rescate en julios que debes pagar para arrebatarle un electrón al núcleo; si el núcleo lo tiene agarrado muy cerca y con fuerza (átomo pequeño como el Flúor), el rescate es altísimo. La electronegatividad es como un juego de jalar la cuerda entre dos niños: el más fuerte atrae la mayor parte de la cuerda hacia su lado.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un elemento $X$ del tercer período presenta las siguientes energías de ionización sucesivas: $I_1 = 738\,\text{kJ/mol}$, $I_2 = 1451\,\text{kJ/mol}$, $I_3 = 7733\,\text{kJ/mol}$, $I_4 = 10540\,\text{kJ/mol}$. Identifique a qué grupo pertenece y deduzca su identidad.
+
+**Paso 1:** Análisis de los saltos energéticos:
+$$I_2 - I_1 = 1451 - 738 = 713\,\text{kJ/mol} \quad (\text{aumento moderado})$$
+$$I_3 / I_2 = \frac{7733}{1451} \approx 5.33 \quad (\text{¡salto abrupto masivo de más de 5 veces!})$$
+**Paso 2:** Deducción de electrones de valencia:
+El salto descomunal en $I_3$ demuestra que el átomo tiene exactamente $2$ electrones en su capa de valencia que se remueven con relativa facilidad ($I_1$ e $I_2$), mientras que el tercer electrón proviene del nivel cuántico interno cerrado ($n=2$), extremadamente estable.
+**Paso 3:** Identificación:
+Pertenece al **Grupo 2** (alcalinotérreos). En el tercer período, el elemento es el Magnesio ($Mg$, $Z=12$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la primera energía de ionización del nitrógeno ($1s^2 2s^2 2p^3$) es mayor que la del oxígeno ($1s^2 2s^2 2p^4$), invirtiendo la tendencia periódica general?
+2. ¿Por qué los gases nobles carecen de valores estándar en la escala de electronegatividad de Pauling?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

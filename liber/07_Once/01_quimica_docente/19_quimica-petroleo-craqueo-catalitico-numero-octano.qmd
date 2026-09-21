@@ -1,0 +1,87 @@
+# Química del Petróleo, Refinación, Craqueo Catalítico y Determinación del Índice de Octano
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Combustibles Fósiles y Procesos Petroquímicos
+> * **Propósito Docente:** Dominar las operaciones unitarias de destilación fraccionada, modelar los mecanismos por carbocationes del craqueo catalítico y fundamentar cuantitativamente el índice de octanaje y la termodinámica del golpeteo en motores de combustión interna.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El petróleo crudo es una mezcla líquida natural extraordinariamente compleja de hidrocarburos generada durante millones de años por la alteración diagénica y térmica de sedimentos biológicos marinos y lacustres ricos en materia orgánica (querógeno) sometidos a altas presiones y temperaturas en ausencia de oxígeno. Su composición química involucra cuatro familias fundamentales de compuestos:
+
+1. **Parafinas (Alcanos):** Cadenas lineales y ramificadas saturadas ($C_n H_{2n+2}$).
+2. **Naftenos (Cicloalcanos):** Anillos saturados principalmente de ciclopentano y ciclohexano con sustituyentes alquílicos ($C_n H_{2n}$).
+3. **Aromáticos:** Derivados del benceno, tolueno, xilenos y policíclicos condensados.
+4. **Resinas y Asfaltenos:** Macromoléculas complejas de elevada masa molar con heteroátomos como azufre ($S$), nitrógeno ($N$), oxígeno ($O$) y metales pesados en trazas (níquel y vanadio).
+
+Dado que el petróleo crudo no puede ser utilizado directamente como combustible automotriz o insumo químico, se somete en las refinerías a una separación física inicial mediante **destilación fraccionada continua** en columnas de platos perforados. En la columna atmosférica, el gradiente térmico decreciente desde la base ($370^\circ\text{C}$) hasta la cúspide ($40^\circ\text{C}$) permite recolectar los cortes petrolíferos según sus intervalos de temperatura de ebullición y masas molares: gases ligeros incondensables ($C_1-C_4$, $< 20^\circ\text{C}$), nafta ligera y gasolina de destilación directa ($C_5-C_{10}$, $40-200^\circ\text{C}$), queroseno y combustible de aviación ($C_{11}-C_{16}$, $175-275^\circ\text{C}$), gasóleo ligero y diésel ($C_{15}-C_{22}$, $250-370^\circ\text{C}$), y residuo de fondo atmosférico, el cual se transfiere a una columna de destilación al vacío para extraer aceites lubricantes y gasóleos pesados sin provocar craqueo térmico indeseado.
+
+La fracción de gasolina obtenida por destilación atmosférica simple representa solo entre el $20\,\%$ y el $25\,\%$ del volumen total del crudo, y presenta un índice antidetonante sumamente bajo (alrededor de 40 a 60 octanos), insuficiente para los motores modernos. Para maximizar el rendimiento en gasolinas de alto valor comercial, la industria desarrolló procesos químicos secundarios de conversión:
+
+El proceso central es el **Craqueo Catalítico Fluido (FCC)**, donde gasóleos pesados de alto punto de ebullición ($C_{18}-C_{30}$) se ponen en contacto a $500^\circ\text{C}$ con catalizadores heterogéneos de zeolitas ácidas sintéticas en un lecho fluidizado. Las zeolitas contienen centros ácidos de Brønsted en sus microporos que protonan a los hidrocarburos pesados para generar carbocationes intermedios. Dichos carbocationes experimentan roturas de enlace en posición beta ($\beta$-escisiones), originando alcanos de cadena media de 5 a 10 carbonos y alquenos ligeros ($C_3-C_4$):
+
+$$C_{16}H_{34}(g) \xrightarrow{\text{Zeolita / } 500^\circ\text{C}} C_8H_{18}(g) + C_8H_{16}(g)$$
+
+Posteriormente, la **reformación catalítica (reforming)** transforma los alcanos lineales en cicloalcanos y compuestos aromáticos mediante deshidrogenación sobre catalizadores bimetálicos de platino-renio ($Pt-Re$), incrementando drásticamente el octanaje del combustible.
+
+El funcionamiento del motor de combustión interna exige que la mezcla de aire y vapor de combustible comprimida en el cilindro arda de manera homogénea y progresiva, iniciada exclusivamente por la chispa eléctrica de la bujía. Si la gasolina posee una estabilidad térmica precaria, la elevación de presión y temperatura durante la carrera de compresión provoca la autoignición prematura y descontrolada de la mezcla frente a la cabeza del pistón. Este fenómeno genera ondas de choque supersónicas que golpean las paredes metálicas de la cámara de combustión, produciendo un sonido metálico característico conocido como **golpeteo o picado de biela** (*knocking*), el cual reduce drásticamente la eficiencia termodinámica y causa daños mecánicos catastróficos.
+
+Para cuantificar la resistencia de un combustible a la autoignición prematura, se definió la escala del **Número de Octano (Índice Antidetonante)**:
+
+1. **n-Heptano ($C_7H_{16}$):** Alcano lineal de fácil autoignición que detona intensamente en el cilindro patrón; se le asigna arbitrariamente un valor de **0 octanos**.
+2. **Isooctano (2,2,4-trimetilpentano, $C_8H_{18}$):** Alcano altamente ramificado que arde de forma suave y controlada sin autoignición; se le asigna arbitrariamente un valor de **100 octanos**.
+
+Una gasolina comercial calificada con un índice de 92 octanos manifiesta exactamente la misma resistencia al golpeteo que una mezcla de referencia normalizada compuesta por un $92\,\%$ volumétrico de isooctano y un $8\,\%$ de n-heptano. Durante gran parte del siglo XX se utilizó el tetraetilo de plomo, $Pb(C_2H_5)_4$, como aditivo antidetonante para desactivar radicales libres en la fase de precombustión; no obstante, su comprobada neurotoxicidad y su capacidad para envenenar irreversiblemente los convertidores catalíticos condujeron a su prohibición global, siendo sustituido por éteres y alcoholes oxigenados como el etanol y el metil terc-butil éter (MTBE).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que el número de octano mide el contenido de energía o potencia calorífica:** Asociar mayor octanaje con "más energía por litro". El índice de octano mide exclusivamente la resistencia cinética a la detonación prematura; de hecho, el n-heptano ($0$ octanos) libera ligeramente mayor energía por gramo que el isooctano ($100$ octanos).
+2. **Confundir la destilación física con reacciones químicas de craqueo:** Suponer que en la torre de destilación se rompen enlaces covalentes $C-C$. La destilación solo vence fuerzas intermoleculares de dispersión de London, mientras que el craqueo exige rotura endotérmica de enlaces covalentes mediada por catalizadores.
+3. **Ignorar la estructura molecular en la combustión:** No correlacionar la resistencia a la detonación con la morfología molecular: las cadenas lineales arden de forma violenta y detonante, mientras que las moléculas muy ramificadas y los anillos aromáticos arden con combustión suave y controlada.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del Empujón Suave vs. Golpe de Mazo:** Empujar a un niño en un columpio justo cuando inicia el regreso es eficiente y suave (combustión de 100 octanos); pegarle un puñetazo al columpio en pleno vuelo contrario transmite una sacudida destructiva (golpeteo de 0 octanos).
+2. **Analogía del Colador y las Cuentas de Collar:** Explicar el craqueo visualizando una cadena larga de cuentas que no pasa por el embudo de utilización industrial, requiriendo unas tijeras químicas (zeolitas) que la seccionan en fragmentos manejables de tamaño estándar.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una planta petroquímica formula un lote de combustible de aviación mezclando tres corrientes líquidas de hidrocarburos:
+- Corriente A: $40.0\,\%$ en volumen de una nafta reformada rica en tolueno con un índice de octano medido de $108.0$.
+- Corriente B: $45.0\,\%$ en volumen de una corriente de alquilato constituida principalmente por isooctano con un índice de octano de $98.0$.
+- Corriente C: $15.0\,\%$ en volumen de una nafta directa de hidrotratamiento con un índice de octano de $62.0$.
+
+Calcule analíticamente el número de octano promedio resultante de la mezcla combinada ($NO_{\text{mezcla}}$) asumiendo comportamiento lineal ideal de mezcla volumétrica.
+
+**Solución paso a paso:**
+
+1. *Establecer el modelo matemático de ponderación volumétrica para el índice de octano:*
+   $$NO_{\text{mezcla}} = \sum_{i=1}^n x_i \times NO_i$$
+   donde $x_i$ representa la fracción volumétrica adimensional de cada corriente y $NO_i$ es su número de octano individual respectivo.
+
+2. *Calcular la contribución individual de la Corriente A (Nafta reformada aromática):*
+   $$NO_A = 0.400 \times 108.0 = 43.20$$
+   La alta proporción de aromáticos ramificados aporta una enorme estabilidad antidetonante a la base del combustible.
+
+3. *Calcular la contribución individual de la Corriente B (Alquilato ramificado):*
+   $$NO_B = 0.450 \times 98.0 = 44.10$$
+   El alquilato aporta casi la mitad de la masa del combustible, consolidando la resistencia a la autoignición.
+
+4. *Calcular la contribución de la Corriente C (Nafta parafínica de destilación):*
+   $$NO_C = 0.150 \times 62.0 = 9.30$$
+   A pesar de su bajo índice, esta corriente equilibra la volatilidad requerida para el arranque en frío a gran altitud.
+
+5. *Sumar las contribuciones y determinar el índice de octano final de la formulación:*
+   $$NO_{\text{mezcla}} = 43.20 + 44.10 + 9.30 = 96.60 \approx 96.6\ \text{octanos}$$
+   La mezcla final obtenida posee un índice antidetonante de $96.6$ octanos, superando holgadamente los requerimientos mínimos de la gasolina extra automotriz (generalmente 91 a 95 octanos).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la presencia de azufre en el petróleo crudo requiere procesos de hidrodesulfuración antes de enviar las corrientes a las unidades catalíticas?
+2. Si un motor diseñado para operar con gasolina de 87 octanos se llena con gasolina de 98 octanos, ¿aumenta realmente la potencia mecánica desarrollada o la velocidad máxima del automóvil?
+3. ¿Cuáles son las ventajas e inconvenientes ambientales del uso de etanol anhidro ($CH_3CH_2OH$) como oxigenante antidetonante en las mezclas de gasolina (como el E10 en Colombia)?

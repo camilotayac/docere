@@ -1,0 +1,55 @@
+# Separación Térmica: Evaporación y Cristalización Fraccionada
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Métodos de Separación de Mezclas
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La evaporación y la cristalización son métodos de separación basados en las diferencias de volatilidad y solubilidad térmica entre un soluto sólido no volátil y un solvente líquido volátil.
+
+1. **Evaporación:** Se suministra energía térmica para eliminar completamente el solvente por ebullición o evaporación a la atmósfera, recuperando el soluto sólido como residuo seco anhidro o masa amorfa.
+2. **Cristalización:** Se fundamenta en la variación de la solubilidad del soluto con la temperatura. Al enfriar lentamente una solución concentrada caliente saturada, se alcanza un estado de sobresaturación donde las moléculas de soluto se autoensamblan en una red cristalina de alta pureza geométrica, dejando las impurezas disueltas en las aguas madres.
+
+### Formalización Matemática y Leyes Físicas
+Rendimiento teórico de cristalización por solubilidad térmica:
+$$m_{\text{cristales}} = m_{\text{soluto inicial}} - \left( \frac{S(T_{\text{frío}})}{100\,\text{g solvente}} \times m_{\text{solvente}} \right)$$
+Donde $S(T)$ es la solubilidad en gramos de soluto por $100\,\text{g}$ de solvente a la temperatura final.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que la evaporación destruye el solvente en lugar de dispersarlo en la atmósfera en forma de vapor.
+2. Confundir precipitación amorfa rápida con cristalización ordenada.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Las salinas marinas:** En las salinas de Manaure (Guajira), la radiación solar y el viento evaporan lentamente el agua del mar en piscinas gigantescas hasta que el cloruro de sodio supera su límite de saturación y precipita en cristales puros de sal.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La solubilidad del sulfato de cobre pentahidratado ($CuSO_4 \cdot 5H_2O$) es de $60.0\,\text{g}$ por $100\,\text{g}$ de agua a $80^\circ\text{C}$ y de $20.0\,\text{g}$ por $100\,\text{g}$ de agua a $20^\circ\text{C}$. Si se enfría una solución saturada que contiene $200\,\text{g}$ de agua desde $80^\circ\text{C}$ hasta $20^\circ\text{C}$, ¿cuántos gramos de sal cristalizarán?
+
+**Paso 1:** Soluto disuelto a $80^\circ\text{C}$:
+$$m_{\text{inicial}} = \frac{60.0\,\text{g}}{100\,\text{g agua}} \times 200\,\text{g agua} = 120.0\,\text{g}$$
+**Paso 2:** Soluto que permanece disuelto a $20^\circ\text{C}$:
+$$m_{\text{remanente}} = \frac{20.0\,\text{g}}{100\,\text{g agua}} \times 200\,\text{g agua} = 40.0\,\text{g}$$
+**Paso 3:** Masa de cristales precipitados:
+$$m_{\text{cristales}} = 120.0\,\text{g} - 40.0\,\text{g} = 80.0\,\text{g}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué un enfriamiento rápido genera cristales pequeños e impuros mientras que un enfriamiento lento produce cristales grandes y muy puros?
+2. ¿Cómo se recupera el solvente evaporado si no se quiere liberar a la atmósfera?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

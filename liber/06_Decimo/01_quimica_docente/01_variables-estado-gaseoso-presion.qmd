@@ -1,0 +1,54 @@
+# Variables de Estado Gaseoso y Medición de Presión
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El estado gaseoso se describe termodinámicamente mediante cuatro variables de estado macroscópicas interdependientes: presión ($P$), volumen ($V$), temperatura absoluta ($T$) y cantidad de sustancia ($n$). La presión de un gas resulta del bombardeo cinético incesante de un número colosal de partículas contra las paredes del recipiente que lo contiene. En el SI se mide en pascales ($\text{Pa} = \text{N/m}^2$), con equivalencias en atmósferas, milímetros de mercurio (Torr) y bares. El barómetro de Torricelli y los manómetros de tubo en U permiten cuantificar presiones manométricas y absolutas.
+
+### Formalización Matemática y Leyes Físicas
+Definición de presión y manometría:
+$$P = \frac{F}{A} = \rho \cdot g \cdot h$$
+Equivalencias universales de presión:
+$$1\,\text{atm} = 760\,\text{mmHg} = 760\,\text{Torr} = 101325\,\text{Pa} = 101.325\,\text{kPa} = 1.01325\,\text{bar}$$
+Presión absoluta en manómetro de extremo abierto:
+$$P_{\text{gas}} = P_{\text{atm}} \pm \rho g h$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir presión manométrica con presión absoluta (olvidar sumar la presión atmosférica local).
+2. Utilizar temperaturas en grados Celsius en cálculos gaseosos.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los dardos contra la pared:** Cada molécula de gas es un dardo que golpea la pared y rebota; un solo golpe es imperceptible, pero billones de trillones de impactos por segundo sostienen una fuerza continua por metro cuadrado: la presión.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un manómetro de tubo en U que contiene mercurio ($\rho = 13.6\,\text{g/cm}^3$) está conectado a un tanque de gas. El brazo abierto hacia la atmósfera presenta una columna de mercurio $145.0\,\text{mm}$ más alta que el brazo conectado al tanque. Si la presión atmosférica local en Bogotá es de $560.0\,\text{mmHg}$, calcule la presión absoluta del gas en atmósferas y kilopascales.
+
+**Paso 1:** Presión absoluta en mmHg:
+$$P_{\text{gas}} = P_{\text{atm}} + h = 560.0\,\text{mmHg} + 145.0\,\text{mmHg} = 705.0\,\text{mmHg}$$
+**Paso 2:** Conversión a atmósferas y kilopascales:
+$$P = 705.0\,\text{mmHg} \times \left( \frac{1\,\text{atm}}{760.0\,\text{mmHg}} \right) = 0.9276\,\text{atm}$$
+$$P = 0.9276\,\text{atm} \times 101.325\,\frac{\text{kPa}}{\text{atm}} = 93.99\,\text{kPa}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la presión atmosférica disminuye exponencialmente al aumentar la altitud geográfica?
+2. ¿Por qué el agua no puede elevarse más de 10.3 metros mediante una bomba de succión al vacío?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

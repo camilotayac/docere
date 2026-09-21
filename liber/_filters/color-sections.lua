@@ -11,17 +11,21 @@ local sectionColors = {
   evaluacion      = { bg = "f0c4b8", fg = "dcb0a4" },
 }
 
-function Header(el)
-  if el.level == 2 then
-    for _, cls in ipairs(el.classes) do
-      local c = sectionColors[cls]
-      if c then
-        return {
-          pandoc.RawBlock('latex', '\\setcolorsection{' .. c.bg .. '}{' .. c.fg .. '}'),
-          el
-        }
+function Pandoc(doc)
+  if not quarto.doc.is_format("latex") then return doc end
+  return doc:walk({
+    Header = function(el)
+      if el.level == 2 then
+        for _, cls in ipairs(el.classes) do
+          local c = sectionColors[cls]
+          if c then
+            return {
+              pandoc.RawBlock('latex', '\\setcolorsection{' .. c.bg .. '}{' .. c.fg .. '}'),
+              el
+            }
+          end
+        end
       end
     end
-  end
-  return el
+  })
 end

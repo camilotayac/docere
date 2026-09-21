@@ -1,0 +1,65 @@
+# Cálculos Estequiométricos Cuantitativos Masa-Masa y Mol-Masa (Oriakhi Cap. 7)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estequiometría de Reacción
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El cálculo estequiométrico cuantitativo de masa a masa es la aplicación operativa central de la estequiometría química. Dado que en el laboratorio químico no se miden moles directamente sino masas en balanzas analíticas, el procedimiento exige una secuencia integrada de tres conversiones por factores unitarios encadenados:
+
+$$\text{Gramos de } A \xrightarrow{\div M_A} \text{Moles de } A \xrightarrow{\times (\nu_B / \nu_A)} \text{Moles de } B \xrightarrow{\times M_B} \text{Gramos de } B$$
+
+1. Transformar la masa inicial del reactivo dato ($A$) en moles dividiendo entre su masa molar ($M_A$).
+2. Transformar moles de $A$ en moles de la sustancia incógnita ($B$) aplicando el factor molar de la ecuación balanceada.
+3. Transformar los moles de $B$ en masa en gramos multiplicando por la masa molar de $B$ ($M_B$).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación dimensional integrada:
+$$m_B = m_A \times \left( \frac{1\,\text{mol } A}{M_A\,\text{g } A} \right) \times \left( \frac{\nu_B\,\text{mol } B}{\nu_A\,\text{mol } A} \right) \times \left( \frac{M_B\,\text{g } B}{1\,\text{mol } B} \right)$$
+Principio de Lavoisier aplicado:
+$$\text{Si la reacción es completa sin pérdidas, la masa total calculada se conserva estrictamente}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar relacionar directamente masas sin pasar por moles ($m_B \neq m_A \times (\nu_B / \nu_A)$).
+2. Utilizar masas molares sin verificar la fórmula de los compuestos.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la casa de cambio internacional:**
+  1. No puedes pagar con pesos colombianos (gramos de reactivo) en una tienda de Tokio (gramos de producto).
+  2. Primero cambias tus pesos colombianos a dólares (moles de reactivo).
+  3. Luego haces la conversión de dólares a yenes japoneses según la tasa oficial de cambio (el factor estequiométrico de la ecuación).
+  4. Finalmente retiras tus yenes en billetes japoneses en el cajero (gramos de producto).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 7):** El hierro metálico se produce industrialmente en un alto horno mediante la reducción de óxido de hierro(III) con monóxido de carbono:
+$$Fe_2O_3(s) + 3 CO(g) \longrightarrow 2 Fe(s) + 3 CO_2(g)$$
+Calcule cuántos kilogramos de hierro metálico ($Fe$) puro se pueden producir a partir de $500.0\,\text{kg}$ de mineral de $Fe_2O_3$ puro. Datos: $Fe_2O_3 = 159.70\,\text{g/mol}$, $Fe = 55.85\,\text{g/mol}$.
+
+**Paso 1:** Conversión de la masa de reactivo a moles:
+$$n(Fe_2O_3) = 500000\,\text{g} \times \left( \frac{1\,\text{mol } Fe_2O_3}{159.70\,\text{g}} \right) = 3130.87\,\text{mol de } Fe_2O_3$$
+**Paso 2:** Factor estequiométrico molar:
+$$n(Fe) = 3130.87\,\text{mol } Fe_2O_3 \times \left( \frac{2\,\text{mol } Fe}{1\,\text{mol } Fe_2O_3} \right) = 6261.74\,\text{mol de } Fe$$
+**Paso 3:** Conversión a masa de hierro:
+$$m(Fe) = 6261.74\,\text{mol} \times 55.85\,\frac{\text{g}}{\text{mol}} = 349718\,\text{g} = 349.7\,\text{kg de } Fe$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cuántos kilogramos de $CO_2$ se emiten a la atmósfera en la producción de los $349.7\,\text{kg}$ de hierro del problema anterior?
+2. ¿Por qué en la industria química siempre se balancean estequiométricamente los procesos antes de comprar las materias primas?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

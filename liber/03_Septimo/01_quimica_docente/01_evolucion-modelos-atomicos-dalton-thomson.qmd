@@ -1,0 +1,55 @@
+# Evolución Histórica de los Modelos Atómicos: De Dalton a Thomson
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Modelos Atómicos y Estructura de la Materia
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La comprensión moderna de la materia es el resultado de una evolución paradigmática en la física y la química. John Dalton (1808) postuló la primera teoría atómica científica con base cuantitativa en las leyes ponderales de Lavoisier y Proust, concibiendo el átomo como esferas rígidas, indivisibles e indestructibles.
+
+A finales del siglo XIX, las investigaciones de J.J. Thomson (1897) con tubos de rayos catódicos sometidos a campos eléctricos y magnéticos cruzados demostraron la existencia de corpúsculos de carga negativa universales en toda la materia: los electrones. Esto obligó a abandonar la indivisibilidad daltoniana, formulándose el **modelo de pudín de pasas** (1904), donde los electrones se encontraban embebidos en una esfera difusa de carga positiva homogénea.
+
+### Formalización Matemática y Leyes Físicas
+Relación carga/masa del electrón de Thomson ($e/m_e$):
+$$\frac{e}{m_e} = \frac{E}{B^2 r} = -1.758820 \times 10^{11}\,\text{C/kg}$$
+Ley de conservación de masa de Dalton:
+$$\sum m_{\text{reactivos}} = \sum m_{\text{productos}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que los modelos atómicos antiguos eran 'errores tontos' de científicos del pasado, en lugar de comprenderlos como modelos explicativos válidos que respondían a la evidencia experimental de su época.
+2. Creer que los rayos catódicos son rayos de luz en lugar de haces de partículas con masa y carga eléctrica negativa.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la sandía o el pan de pasas:** La pulpa roja es la masa positiva continua y difusa; las semillas negras incrustadas son los electrones puntuales negativos que neutralizan la carga total.
+2. **El tubo de rayos de Crookes con imán:** Mostrar en simulación cómo el haz se desvía ante el polo norte o sur de un imán, demostrando que tiene carga e inercia física real.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En el experimento de Thomson, un haz de electrones atraviesa un campo magnético $B = 1.50 \times 10^{-3}\,\text{T}$ y un campo eléctrico perpendicular $E = 3.00 \times 10^4\,\text{V/m}$ sin desviarse. Calcule la velocidad de los electrones.
+
+**Paso 1:** Igualación de fuerza eléctrica y fuerza de Lorentz magnética:
+$$F_e = F_m \implies e \cdot E = e \cdot v \cdot B$$
+**Paso 2:** Despeje de la velocidad:
+$$v = \frac{E}{B} = \frac{3.00 \times 10^4\,\text{V/m}}{1.50 \times 10^{-3}\,\text{T}} = 2.00 \times 10^7\,\text{m/s}$$
+Los electrones viajan a aproximadamente el $6.7\%$ de la velocidad de la luz.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el descubrimiento del electrón refutó definitivamente la teoría atómica de Dalton?
+2. ¿Cómo demostró Thomson que los electrones estaban presentes en todos los elementos químicos y no eran exclusivos del cátodo metálico?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

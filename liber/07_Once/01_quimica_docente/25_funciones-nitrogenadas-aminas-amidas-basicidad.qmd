@@ -1,0 +1,100 @@
+# Funciones Nitrogenadas: Aminas, Amidas, Basicidad Diferencial y Resonancia Amídica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Compuestos Nitrogenados y Estructuras Peptídicas
+> * **Propósito Docente:** Dominar los factores electrónicos y de solvatación que modulan la basicidad en aminas alifáticas y aromáticas, y fundamentar la rigidez planar y nula basicidad del enlace amida a partir de la resonancia mecano-cuántica.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El átomo de nitrógeno ($Z = 7$) posee una configuración electrónica en estado fundamental representada por $1s^2\,2s^2\,2p^3$. En los compuestos orgánicos alifáticos adopta típicamente una hibridación $sp^3$ de geometría piramidal trigonal, disponiendo de tres enlaces covalentes simples y **un par de electrones solitario no enlazante** alojado en el cuarto orbital híbrido. La presencia de este par electrónico confiere a las moléculas nitrogenadas dos rasgos fundamentales: nucleofilia marcada y comportamiento como base de Lewis y de Brønsted-Lowry.
+
+Las **aminas** son derivados orgánicos del amoníaco ($NH_3$) en los que uno, dos o tres átomos de hidrógeno han sido formalmente sustituidos por radicales hidrocarbonados. Su clasificación estructural se fundamenta estrictamente en el número de átomos de carbono directamente unidos al nitrógeno (criterio divergente del empleado en alcoholes y halogenuros):
+
+1. **Amina Primaria ($1^\circ$):** El nitrógeno se encuentra enlazado a un único átomo de carbono y a dos átomos de hidrógeno ($R-NH_2$).
+2. **Amina Secundaria ($2^\circ$):** El nitrógeno se enlaza a dos átomos de carbono y a un único hidrógeno ($R_2NH$).
+3. **Amina Terciaria ($3^\circ$):** El nitrógeno se coordina a tres átomos de carbono, careciendo de hidrógenos unidos a él ($R_3N$).
+
+Las aminas primarias y secundarias forman enlaces por puente de hidrógeno intermoleculares ($N-H\cdots:N$), aunque de menor intensidad que los puentes de hidrógeno de los alcoholes ($O-H\cdots:O$) debido a la menor electronegatividad del nitrógeno ($\chi_N = 3.04$ frente a $\chi_O = 3.44$). Por consiguiente, sus puntos de ebullición son intermedios entre los alcanos y los alcoholes homólogos.
+
+En disolución acuosa, las aminas actúan como bases débiles de Brønsted capturando un protón del agua mediante su par de electrones no enlazante:
+
+$$R-NH_2 + H_2O \rightleftharpoons R-NH_3^+ + OH^-$$
+
+El equilibrio se cuantifica mediante la constante de basicidad ($K_b$) y su correspondiente logaritmo negativo ($pK_b = -\log K_b$). Cuanto menor es el valor de $pK_b$, mayor es la fuerza intrínseca de la base. La basicidad relativa de las aminas alifáticas frente a las aromáticas revela contrastes electrónicos notables:
+
+1. **Aminas Alifáticas:** El amoníaco presenta un $pK_b = 4.75$. La introducción de grupos alquilo dadores de electrones por efecto inductivo ($+I$) incrementa la densidad electrónica sobre el nitrógeno y estabiliza el catión amonio conjugado ($R-NH_3^+$), haciendo que las aminas alifáticas sean bases más fuertes que el amoníaco:
+$$\text{Metilamina } (CH_3NH_2): \quad pK_b = 3.36$$
+$$\text{Dimetilamina } ((CH_3)_2NH): \quad pK_b = 3.27$$
+$$\text{Trimetilamina } ((CH_3)_3N): \quad pK_b = 4.19$$
+En fase gaseosa, la basicidad aumenta linealmente con el número de grupos alquilo ($3^\circ > 2^\circ > 1^\circ > NH_3$); sin embargo, en disolución acuosa la amina secundaria resulta ser la base más fuerte debido a un compromiso termodinámico entre el efecto inductivo dador ($+I$) y el **impedimento estérico a la solvatación por puentes de hidrógeno** del ion amonio resultante (el catión trimetilamonio, $(CH_3)_3NH^+$, solo posee un hidrógeno para coordinarse con el agua líquida circundante).
+2. **Aminas Aromáticas (Anilina, $C_6H_5NH_2$):** Manifiestan una pérdida drástica y colosal de basicidad, exhibiendo un $pK_b = 9.40$ (seis órdenes de magnitud menos básica que la ciclohexilamina, $pK_b = 3.34$). Esta debilidad se fundamenta en la **deslocalización mecano-cuántica por resonancia**: el par de electrones solitario del nitrógeno no está confinado sobre él, sino que se solapa lateralmente con el sistema aromático de orbitales $\pi$ del anillo bencénico, distribuyendo densidad electrónica negativa en las posiciones *orto* y *para*. Al protonarse, la anilina forma el ion anilinio ($C_6H_5NH_3^+$), en el cual el par solitario queda rígidamente fijado al protón $H^+$, destruyendo por completo la estabilización por resonancia con el anillo.
+
+Las **amidas ($R-CO-NH_2, R-CO-NHR', R-CO-NR'R''$)** son derivados de ácidos carboxílicos donde el grupo hidroxilo ha sido reemplazado por una función amino. A diferencia de las aminas, las amidas **carecen por completo de basicidad en disolución acuosa ($pK_b > 14$)** y son químicamente neutras frente al tornasol. Esta particularidad se origina en la intensa **resonancia amídica**:
+
+$$R - C(=O) - \ddot{N}H_2 \longleftrightarrow R - C(-O^-) = \overset{+}{N}H_2$$
+
+El par de electrones no enlazante del nitrógeno se halla fuertemente atraído hacia el átomo de oxígeno carbonílico electronegativo, originando un doble enlace parcial entre el carbono y el nitrógeno. La contribución de la estructura dipolar dipolar dipolar es del orden del $40\,\%$, lo que acarrea consecuencias estructurales de inmensa trascendencia biológica:
+
+1. **Carácter Parcial de Doble Enlace $C-N$:** La distancia de enlace carbono-nitrógeno es de tan solo $1.32\,\text{Å}$ (mucho más corta que un enlace simple $C-N$ convencional de $1.47\,\text{Å}$).
+2. **Rigidez Planar y Barrera Rotacional:** El enlace amídico es totalmente rígido a temperatura fisiológica, con una formidable barrera de rotación interna de aproximadamente $75$ a $85\,\text{kJ/mol}$. Los seis átomos que componen el entorno amida ($C_\alpha - C(=O) - N(H) - C_\alpha$) residen obligatoriamente en un mismo plano geométrico.
+3. **Fundamento del Enlace Peptídico:** El enlace peptídico que concatena los aminoácidos en las cadenas polipeptídicas de las proteínas es precisamente un enlace amida planar. La ausencia de basicidad evita que la cadena troncal se protone al azar, y su rigidez planar limita las conformaciones espaciales posibles, permitiendo el plegamiento espontáneo en $\alpha$-hélices y hojas $\beta$.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Clasificar aminas primarias, secundarias y terciarias según el carbono carbinol:** Aplicar la regla de los alcoholes a las aminas. La terc-butilamina ($(CH_3)_3C-NH_2$) es una **amina primaria** porque el nitrógeno está unido a un solo átomo de carbono, a pesar de que dicho carbono es terciario.
+2. **Asumir que las amidas son compuestos fuertemente básicos como las aminas:** Suponer que por poseer el átomo de nitrógeno, las amidas deben comportarse como bases acuosas. El docente debe insistir en que el par electrónico está comprometido en la resonancia con el oxígeno carbonílico.
+3. **Olvidar el olor característico de las aminas volátiles:** No vincular su presencia con la putrefacción biológica natural de proteínas ricas en nitrógeno (putrescina o 1,4-butanodiamina, y cadaverina o 1,5-pentanodiamina).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Moneda en el Bolsillo vs. en el Banco Compartido:** El par de electrones en una amina alifática es como una moneda en el bolsillo disponible de inmediato para pagar un café (capturar un protón); en la amida, la moneda está invertida en un fondo fiduciario conjunto con un socio dominante (oxígeno carbonílico) y no puede gastarse de forma inmediata.
+2. **Modelo del Cuaderno Espiral con Bisagra Bloqueada:** Representar la rotación libre de un alcano como una libreta de hojas libres y el enlace peptídico amídico como una bisagra metálica plana soldada que no permite ningún giro lateral.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se disuelven $3.106\,\text{g}$ de metilamina gaseosa ($CH_3NH_2$, masa molar $31.06\,\text{g/mol}$, $K_b = 4.37 \times 10^{-4}$ a $25^\circ\text{C}$) en agua destilada hasta alcanzar un volumen final aforado de $500.0\,\text{mL}$.
+1. Calcule la concentración molar inicial ($C_0$) de la disolución de metilamina.
+2. Plantee el equilibrio de disociación básica y calcule la concentración de iones hidróxido ($[OH^-]$) y el grado de ionización ($\alpha$).
+3. Determine el $pOH$ y el $pH$ de la disolución resultante.
+
+**Solución paso a paso:**
+
+1. *Calcular la concentración molar analítica inicial ($C_0$):*
+   $$n_{\text{amina}} = \frac{3.106\,\text{g}}{31.06\,\text{g/mol}} = 0.1000\,\text{mol}$$
+   $$C_0 = \frac{0.1000\,\text{mol}}{0.5000\,\text{L}} = 0.2000\,\text{mol/L}$$
+   La disolución preparada posee una concentración inicial formal de $0.200\,\text{M}$.
+
+2. *Plantear el equilibrio químico de ionización básica:*
+   $$CH_3NH_2(ac) + H_2O(l) \rightleftharpoons CH_3NH_3^+(ac) + OH^-(ac)$$
+   Sea $x = [OH^-] = [CH_3NH_3^+]$ la cantidad disociada en el equilibrio:
+   $$K_b = \frac{[CH_3NH_3^+][OH^-]}{[CH_3NH_2]} = \frac{x^2}{C_0 - x} = 4.37 \times 10^{-4}$$
+   Dado que $C_0 / K_b = 0.200 / (4.37 \times 10^{-4}) \approx 458 < 500$, verificamos mediante la ecuación cuadrática completa para garantizar exactitud analítica:
+   $$x^2 + (4.37 \times 10^{-4})x - (4.37 \times 10^{-4})(0.200) = 0$$
+   $$x^2 + 4.37 \times 10^{-4} x - 8.740 \times 10^{-5} = 0$$
+
+3. *Calcular la concentración de ion hidróxido ($x$):*
+   $$x = \frac{-4.37 \times 10^{-4} + \sqrt{(4.37 \times 10^{-4})^2 - 4(1)(-8.740 \times 10^{-5})}}{2}$$
+   $$x = \frac{-4.37 \times 10^{-4} + \sqrt{1.9097 \times 10^{-7} + 3.496 \times 10^{-4}}}{2} = \frac{-4.37 \times 10^{-4} + 0.01870}{2}$$
+   $$x = [OH^-] = 9.131 \times 10^{-3}\,\text{mol/L}$$
+   La concentración de iones hidróxido generados en el equilibrio asciende a $9.13 \times 10^{-3}\,\text{M}$.
+
+4. *Calcular el grado de ionización básica ($\alpha$):*
+   $$\alpha = \frac{[OH^-]}{C_0} = \frac{9.131 \times 10^{-3}\,\text{M}}{0.2000\,\text{M}} = 0.04566 \quad (4.57\,\%)$$
+   La metilamina se halla ionizada en un $4.57\,\%$, coherente con su naturaleza de electrolito débil.
+
+5. *Determinar el $pOH$ y el $pH$ de la disolución:*
+   $$pOH = -\log[OH^-] = -\log(9.131 \times 10^{-3}) = 2.039 \approx 2.04$$
+   $$pH = 14.00 - pOH = 14.00 - 2.04 = 11.96$$
+   La disolución resultante manifiesta un marcado carácter alcalino con un $pH$ de $11.96$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué al añadir ácido clorhídrico ($HCl$) al pescado descompuesto se elimina instantáneamente el olor desagradable a trimetilamina?
+2. Si se compara la acetamida ($CH_3CONH_2$) y la etilamina ($CH_3CH_2NH_2$), ¿cuál de las dos sustancias reaccionará cuantitativamente con un ácido acuoso para formar una sal soluble?
+3. ¿Cómo explica la teoría orbital molecular que el enlace peptídico imponga una restricción angular rígida en la conformación del esqueleto de una proteína?

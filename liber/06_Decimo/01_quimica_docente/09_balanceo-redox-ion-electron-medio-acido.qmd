@@ -1,0 +1,76 @@
+# Balanceo Redox por el Método del Ion-Electrón en Medio Ácido (Oriakhi Cap. 22)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Reacciones Redox y Electroquímica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El método del ion-electrón en medio ácido es el algoritmo cuantitativo normalizado para balancear reacciones de transferencia electrónica en solución acuosa ácida ($H^+, H_2O$). El procedimiento consta de siete etapas metódicas:
+
+1. Asignar estados de oxidación e identificar las especies que sufren cambio de estado.
+2. Escribir las dos semirreacciones iónicas independientes (oxidación y reducción).
+3. **Balancear todos los átomos distintos de oxígeno e hidrógeno** mediante coeficientes.
+4. **Balancear átomos de oxígeno:** Añadir moléculas de agua ($H_2O$) en el miembro deficiente en oxígeno.
+5. **Balancear átomos de hidrógeno:** Añadir protones ($H^+$) en el miembro deficiente en hidrógeno.
+6. **Balancear cargas eléctricas netas:** Añadir electrones ($e^-$) al miembro más positivo (o menos negativo) para igualar la carga de ambos miembros.
+7. Igualar el número de electrones transferidos multiplicando las semirreacciones por números enteros mínimos, sumar y cancelar especies comunes ($e^-, H^+, H_2O$).
+
+### Formalización Matemática y Leyes Físicas
+Reglas de balanceo en medio ácido:
+$$\text{Por cada átomo de } O \text{ faltante} \implies \text{añadir } 1\, H_2O$$
+$$\text{Por cada átomo de } H \text{ faltante} \implies \text{añadir } 1\, H^+$$
+Balance de carga neta:
+$$\sum q_{\text{reactivos}} = \sum q_{\text{productos}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar balancear oxígenos añadiendo iones óxido ($O^{2-}$) o gas $O_2$ (en solución acuosa ácida sólo existen $H_2O$ y $H^+$).
+2. Cancelar electrones sin haber igualado previamente su número entre ambas semirreacciones.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El principio de la partida doble contable:** No puedes cerrar el libro contable de la reacción hasta que el débito de electrones de la oxidación sea numéricamente idéntico al crédito de electrones de la reducción.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 22):** Balancee por el método del ion-electrón en medio ácido la reacción de oxidación del catión hierro(II) por el ion dicromato:
+$$Cr_2O_7^{2-} + Fe^{2+} \longrightarrow Cr^{3+} + Fe^{3+}$$
+
+**Paso 1:** Semirreacción de reducción del dicromato:
+1. Balance de átomos de $Cr$:
+  $$Cr_2O_7^{2-} \longrightarrow 2 Cr^{3+}$$
+1. Balance de oxígenos con $H_2O$:
+  $$Cr_2O_7^{2-} \longrightarrow 2 Cr^{3+} + 7 H_2O$$
+1. Balance de hidrógenos con $H^+$:
+  $$Cr_2O_7^{2-} + 14 H^+ \longrightarrow 2 Cr^{3+} + 7 H_2O$$
+1. Balance de cargas: Reactivos tiene $-2 + 14(+1) = +12$. Productos tiene $2(+3) = +6$. Añadimos $6\,e^-$ a la izquierda:
+  $$Cr_2O_7^{2-} + 14 H^+ + 6 e^- \longrightarrow 2 Cr^{3+} + 7 H_2O$$
+
+**Paso 2:** Semirreacción de oxidación del hierro:
+$$Fe^{2+} \longrightarrow Fe^{3+} + 1 e^-$$
+
+**Paso 3:** Multiplicación para igualar electrones transferidos (multiplicar la semirreacción de $Fe$ por 6):
+$$6 \left( Fe^{2+} \longrightarrow Fe^{3+} + 1 e^- \right) \implies 6 Fe^{2+} \longrightarrow 6 Fe^{3+} + 6 e^-$$
+
+**Paso 4:** Suma y simplificación de electrones:
+$$Cr_2O_7^{2-}(aq) + 14 H^+(aq) + 6 Fe^{2+}(aq) \longrightarrow 2 Cr^{3+}(aq) + 6 Fe^{3+}(aq) + 7 H_2O(l)$$
+1. Verificación de cargas: Reactivos $= -2 + 14 + 12 = +24$. Productos $= 6 + 18 = +24$. La ecuación está perfectamente balanceada en masa y carga.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ion permanganato ($MnO_4^-$) cambia de color violeta intenso a incoloro ($Mn^{2+}$) al completar su reducción en medio ácido?
+2. ¿Cómo se demuestra que una reacción redox balanceada en medio ácido cumple la ley de conservación de la carga eléctrica además de la de la masa?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

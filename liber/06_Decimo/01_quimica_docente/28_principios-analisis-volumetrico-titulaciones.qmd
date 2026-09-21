@@ -1,0 +1,62 @@
+# Principios del Análisis Volumétrico y Patrones Primarios (Oriakhi Cap. 14)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Volumetría y Titulaciones Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El **análisis volumétrico (titulometría)** es un método cuantitativo analítico fundamental en el cual se determina con alta precisión la concentración desconocida de una disolución problema (analito) mediante la adición controlada, gota a gota desde una bureta graduada, de un volumen exactamente medido de una disolución de concentración perfectamente conocida y estandarizada (**titulante o solución patrón**), hasta alcanzar la estequiometría completa de la reacción.
+
+1. **Punto de Equivalencia:** Punto teórico estequiométrico exacto en el cual la cantidad de equivalentes o moles de titulante añadido iguala rigurosamente a los equivalentes de analito presentes en la muestra.
+2. **Punto Final:** Punto experimental en el cual el analista detiene la titulación, detectado visualmente por el viraje de color de un indicador químico o instrumentalmente mediante un potenciómetro (pH-metro). La discrepancia entre ambos puntos constituye el **error de titulación**.
+3. **Patrón Primario:** Sustancia química sólida de altísima pureza ($> 99.9\%$) y estabilidad química (no higroscópico ni reactivo con el $CO_2$ atmosférico, alta masa molar para minimizar errores de pesada en balanza analítica, ej. biftalato de potasio, $KHP$, o carbonato de sodio anhidro, $Na_2CO_3$).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación estequiométrica de titulación:
+$$a\, \text{Analito} + b\, \text{Titulante} \longrightarrow \text{Productos}$$
+En el punto de equivalencia:
+$$\frac{n_{\text{analito}}}{a} = \frac{n_{\text{titulante}}}{b} \implies \frac{M_{\text{analito}} \cdot V_{\text{analito}}}{a} = \frac{M_{\text{titulante}} \cdot V_{\text{titulante}}}{b}$$
+Estandarización contra patrón primario sólido:
+$$M_{\text{titulante}} = \frac{m_{\text{patrón}}\,(\text{g})}{M_{\text{patrón}}\,(\text{g/mol}) \cdot V_{\text{bureta}}\,(\text{L})}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir el punto de equivalencia teórico con el punto final experimental del indicador.
+2. Utilizar hidróxido de sodio ($NaOH$) como patrón primario directo (el $NaOH$ sólido es higroscópico y absorbe humedad y $CO_2$ del aire formando $Na_2CO_3$, por lo que sus soluciones deben estandarizarse siempre contra biftalato de potasio).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la balanza de precisión:** En un lado colocas una masa conocida de fichas rojas (patrón primario); en la bureta tienes un cuentagotas de líquido azul. Vas agregando gota a gota hasta que la aguja marca exactamente el centro. En ese instante exacto sabes cuánta masa azul había en cada gota.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Se estandariza una disolución de $NaOH$ de concentración desconocida utilizando biftalato de potasio ($KHC_8H_4O_4$, abreviado $KHP$, masa molar $M = 204.22\,\text{g/mol}$) como patrón primario monoprótico:
+$$KHC_8H_4O_4(aq) + NaOH(aq) \longrightarrow KNaC_8H_4O_4(aq) + H_2O(l)$$
+Una masa de $0.5106\,\text{g}$ de $KHP$ puro requiere $24.85\,\text{mL}$ de la disolución de $NaOH$ para alcanzar el punto final con fenolftaleína. Calcule la molaridad estandarizada exacta del $NaOH$.
+
+**Paso 1:** Moles de patrón primario $KHP$:
+$$n(KHP) = \frac{0.5106\,\text{g}}{204.22\,\text{g/mol}} = 2.5002 \times 10^{-3}\,\text{mol}$$
+**Paso 2:** Moles de $NaOH$ consumidos (estequiometría $1:1$):
+$$n(NaOH) = n(KHP) = 2.5002 \times 10^{-3}\,\text{mol}$$
+**Paso 3:** Cálculo de la Molaridad del titulante:
+$$M(NaOH) = \frac{2.5002 \times 10^{-3}\,\text{mol}}{0.02485\,\text{L}} = 0.10061\,\text{mol/L} = 0.1006\,M$$
+La concentración estandarizada exacta del hidróxido de sodio es **$0.1006\,M$**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una bureta debe enjuagarse con pequeñas porciones de la solución titulante antes de enrasar?
+2. ¿Cómo influye la presencia de una burbuja de aire atrapada en la punta de la bureta en el volumen final registrado?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,107 @@
+# Ácidos Nucleicos: Nucleótidos, Enlace Fosfodiéster, Doble Hélice de ADN y Tipos de ARN
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Biomoléculas y Genética Molecular
+> * **Propósito Docente:** Dominar la arquitectura mecano-cuántica de los nucleótidos, aplicar cuantitativamente las reglas de Chargaff y el modelo helicoidal de Watson, Crick y Franklin, y modelar la termodinámica de la desnaturalización térmica ($T_m$).
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los **ácidos nucleicos** son los biopolímeros macromoleculares universales responsables del almacenamiento, conservación, replicación y transcripción de la información genética en todos los organismos vivos y entidades virales. Existen dos clases fundamentales: el **ácido desoxirribonucleico (ADN)**, depositario estable de la información hereditaria, y el **ácido ribonucleico (ARN)**, mediador dinámico en la expresión génica y la síntesis de proteínas.
+
+La unidad monomérica elemental de los ácidos nucleicos es el **nucleótido**, el cual resulta de la unión covalente y coordinada de tres componentes moleculares:
+
+1. **Base Nitrogenada Heterocíclica:** Compuestos aromáticos planos ricos en nitrógeno, clasificados en dos familias:
+   - **Purinas (Bicíclicas):** Poseen un anillo condensado de pirimidina y de imidazol con 9 átomos. Comprenden la **Adenina ($A$)** y la **Guanina ($G$)**, comunes al ADN y ARN.
+   - **Pirimidinas (Monocíclicas):** Poseen un único anillo hexagonal de 6 átomos. Comprenden la **Citosina ($C$)** (en ADN y ARN), la **Timina ($T$)** (exclusiva del ADN) y el **Uracilo ($U$)** (exclusivo del ARN, carente del grupo metilo en posición 5 presente en la timina).
+2. **Aldopentosa Furanósica:** Un azúcar de cinco carbonos en su conformación cíclica hemiacetálica de $\beta$-D-furanosa. En el ARN participa la **$\beta$-D-ribosa**, mientras que en el ADN se incorpora la **$\beta$-D-2-desoxirribosa**, la cual carece del átomo de oxígeno en el carbono $C_{2'}$ (albergando dos hidrógenos, $-CH_2-$). Esta aparente sutil variación confiere al ADN una resistencia hidrolítica alcalina extraordinaria, haciéndolo químicamente más estable a lo largo del tiempo geológico que el ARN.
+   La unión entre el carbono anomérico $C_{1'}$ de la pentosa y el átomo de nitrógeno de la base ($N_9$ en purinas o $N_1$ en pirimidinas) mediante un enlace covalente $\beta$-$N$-glucosídico origina un **nucleósido**.
+3. **Grupo Fosfato:** Uno a tres grupos ortofosfato esterificados en el grupo hidroxilo del carbono $C_{5'}$ de la pentosa completan el nucleótido (nucleósido monofosfato, difosfato o trifosfato).
+
+La polimerización lineal para erigir cadenas polinucleotídicas ocurre mediante el **enlace fosfodiéster $3'\to 5'$**. El grupo hidroxilo alcohólico del carbono $C_{3'}$ de una desoxirribosa reacciona covalentemente mediante una condensación con el grupo fosfato situado en el carbono $C_{5'}$ de la pentosa siguiente. Esta conectividad repetitiva genera un esqueleto covalente alternado azúcar-fosfato-azúcar-fosfato continuo. A $pH$ fisiológico ($7.4$), cada grupo fosfato conserva una carga neta negativa formal deslocalizada sobre sus oxígenos no enlazantes, convirtiendo al esqueleto en un **polianión continuo** que previene la precipitación y repele el ataque hidrolítico nucleofílico de metabolitos celulares. La cadena polinucleotídica manifiesta una **polaridad direccional intrínseca e irreversible**: un extremo de la cadena retiene un fosfato libre en el carbono $C_{5'}$ (**extremo $5'$-terminal**), mientras que el extremo opuesto expone un hidroxilo libre en el carbono $C_{3'}$ (**extremo $3'$-terminal**). Por convención internacional, toda secuencia genética se escribe siempre de izquierda a derecha en sentido $5'\to 3'$.
+
+En 1950, el químico austríaco Erwin Chargaff cuantificó cromatográficamente la composición de bases de muestras de ADN purificado de diversas especies biológicas, deduciendo dos relaciones matemáticas universales conocidas como las **Reglas de Chargaff**:
+
+1. La suma molar de purinas iguala exactamente a la suma de pirimidinas en cualquier ADN celular bicatenario:
+$$\%A + \%G = \%T + \%C \implies \frac{[A] + [G]}{[T] + [C]} = 1.00$$
+2. La cantidad molar de adenina es rigurosamente idéntica a la de timina, y la de guanina es idéntica a la de citosina:
+$$[A] = [T] \quad \text{y} \quad [G] = [C]$$
+
+En 1953, James Watson y Francis Crick, integrando las reglas de Chargaff con los patrones experimentales de difracción de rayos X en fibras de ADN hidratado obtenidos por **Rosalind Franklin y Maurice Wilkins** (especialmente la célebre Fotografía 51), formularon el **Modelo de la Doble Hélice de ADN (ADN-B)**:
+
+1. El ADN consta de **dos cadenas polinucleotídicas helicoidales enrolladas de forma dextrógira** alrededor de un eje central común.
+2. Las dos cadenas son estrictamente **antiparalelas**: una hebra discurre en sentido $5'\to 3'$ mientras que la hebra complementaria avanza en sentido $3'\to 5'$.
+3. Los esqueletos hidrofílicos cargados negativamente de azúcar-fosfato se sitúan en la periferia exterior interactuando con el agua celular, mientras que las bases nitrogenadas aromáticas hidrófobas se proyectan hacia el interior de la hélice, orientadas perpendicularmente al eje longitudinal (separación interplanar de $3.4\,\text{Å}$ o $0.34\,\text{nm}$). Cada vuelta completa de la hélice abarca $35.4\,\text{Å}$ e involucra $10.5$ pares de bases.
+4. **Complementariedad de Bases y Puentes de Hidrógeno:** Las dimensiones del cilindro interior imponen que una purina voluminosa deba emparejarse obligatoriamente con una pirimidina monocíclica mediante enlaces por puente de hidrógeno geométricamente óptimos:
+   - **Adenina se aparea exclusivamente con Timina ($A = T$):** Mediante dos puentes de hidrógeno específicos.
+   - **Guanina se aparea exclusivamente con Citosina ($G \equiv C$):** Mediante tres puentes de hidrógeno específicos.
+
+La estabilidad de la doble hélice no depende únicamente de los puentes de hidrógeno transversales, sino primordialmente del **apilamiento de bases hidrófobas (base stacking)** a lo largo del eje vertical, donde los orbitales $\pi$ aromáticos deslocalizados de pares de bases contiguos establecen intensas interacciones de Van der Waals que excluyen el agua.
+
+Cuando una disolución de ADN nativo se somete a calentamiento progresivo, la energía térmica vence el apilamiento y los puentes de hidrógeno, separando las dos hebras complementarias en cadenas sencillas al azar (**desnaturalización térmica o fusión del ADN**). Este proceso se acompaña de un incremento notable en la absorbancia a $260\,\text{nm}$ denominado **efecto hipercrómico**. La temperatura a la cual exactamente el $50\,\%$ de la estructura helicoidal se halla desnaturalizada se define como la **Temperatura de Fusión ($T_m$)**, la cual depende linealmente del contenido porcentual de pares $G\equiv C$: dado que el par $G\equiv C$ posee tres puentes de hidrógeno e interacciones de apilamiento más intensas que el par $A=T$ (con dos puentes), a mayor fracción $(\%G+C)$, mayor es la estabilidad termodinámica y más elevada es la $T_m$ del genoma.
+
+En contraste, el **ARN** es una molécula predominantemente monocatenaria compuesta por ribosa y uracilo. Sus principales clases funcionales son:
+- **ARN mensajero (ARNm):** Copia transcripcional lineal del gen que transporta los codones de tres nucleótidos desde el núcleo hacia los ribosomas.
+- **ARN de transferencia (ARNt):** Molécula adaptadora plegada en forma de trébol que porta un anticodón en un extremo y el aminoácido correspondiente esterificado en el extremo $3'-OH$ terminal.
+- **ARN ribosomal (ARNr):** Constituyente estructural y catalítico de los ribosomas, responsable directo de catalizar la síntesis del enlace peptídico (actividad peptidil transferasa / ribozima).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que el apareamiento de bases se realiza por enlaces covalentes:** Suponer que para replicar o transcribir el ADN se deben romper enlaces químicos covalentes fuertes. Las dos hebras están retenidas por puentes de hidrógeno débiles y fuerzas de apilamiento, lo que permite que helicasas celulares abran la hélice a temperatura ambiente sin degradar la información primaria.
+2. **Asumir que las reglas de Chargaff aplican al ARN o a virus monocatenarios:** Olvidar que $\%A = \%T$ solo se cumple en estructuras estrictamente bicatenarias complementarias; en el ARN monocatenario $\%A \ne \%U$ y $\%G \ne \%C$ de forma rutinaria.
+3. **Ignorar la polaridad antiparalela:** Tratar las dos hebras del ADN como cadenas que corren en el mismo sentido, omitiendo que las polimerasas celulares solo pueden sintetizar ADN en sentido unidireccional $5'\to 3'$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Escalera de Caracol de Madera:** Los dos pasamanos exteriores continuos son los esqueletos polares azúcar-fosfato; los peldaños interiores son los pares de bases hidrófobos apareados ($A-T$ y $G-C$). Cada peldaño tiene la misma longitud exacta ($1.08\,\text{nm}$) porque siempre combina una pieza ancha (purina) con una pieza angosta (pirimidina).
+2. **Analogía de los Cierres de Cremallera (Cremallera Biológica):** La doble hélice es una cremallera donde los dientes son complementarios y se cierran por dientes magnéticos (puentes de hidrógeno); el par $G-C$ tiene tres imanes y el $A-T$ tiene dos imanes, por lo que abrir una sección rica en $G-C$ exige mucha más fuerza o temperatura.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** El análisis bioquímico de una muestra de ADN genómico bicatenario purificado de una bacteria termófila extremófila revela que el $34.0\,\%$ de sus bases nitrogenadas totales corresponde a Guanina ($G$).
+1. Aplicando de manera analítica las reglas de Chargaff, calcule el porcentaje molar de cada una de las otras tres bases nitrogenadas (Citosina, Adenina y Timina) en el genoma de la bacteria.
+2. Determine la relación molar de purinas a pirimidinas ($\frac{A+G}{T+C}$).
+3. Calcule la Temperatura de Fusión teórica ($T_m$) de este ADN en disolución salina estándar ($0.10\,\text{M}$ de $Na^+$) empleando la fórmula empírica de Marmur-Doty:
+$$T_m = 69.3 + 0.41 \times [\%(G + C)]$$
+y compárela con la $T_m$ de un ADN mesófilo estándar que posee únicamente un $40.0\,\%$ de $(G + C)$.
+
+**Solución paso a paso:**
+
+1. *Calcular la composición de bases aplicando las Reglas de Chargaff:*
+   En un ADN bicatenario regular, la guanina se empareja exclusivamente con la citosina:
+   $$\%C = \%G = 34.0\,\%$$
+   El contenido total del par $G \equiv C$ en el genoma es:
+   $$\%(G + C) = 34.0\,\% + 34.0\,\% = 68.0\,\%$$
+   Dado que la suma total de las cuatro bases debe completar el $100.0\,\%$:
+   $$\%(A + T) = 100.0\,\% - 68.0\,\% = 32.0\,\%$$
+   Puesto que la adenina se empareja unívocamente con la timina ($\%A = \%T$):
+   $$\%A = \frac{32.0\,\%}{2} = 16.0\,\%$$
+   $$\%T = \frac{32.0\,\%}{2} = 16.0\,\%$$
+   La composición del genoma bacteriano es: $34.0\,\%$ Guanina, $34.0\,\%$ Citosina, $16.0\,\%$ Adenina y $16.0\,\%$ Timina.
+
+2. *Verificar la relación molar estequiométrica purinas/pirimidinas:*
+   $$\text{Purinas} = \%A + \%G = 16.0\,\% + 34.0\,\% = 50.0\,\%$$
+   $$\text{Pirimidinas} = \%T + \%C = 16.0\,\% + 34.0\,\% = 50.0\,\%$$
+   $$\frac{\text{Purinas}}{\text{Pirimidinas}} = \frac{50.0\,\%}{50.0\,\%} = 1.00$$
+   Se satisface rigurosamente el primer postulado de Chargaff con una relación unitaria exacta.
+
+3. *Calcular la Temperatura de Fusión ($T_m$) del ADN de la bacteria termófila:*
+   $$T_m = 69.3 + 0.41 \times (68.0) = 69.3 + 27.88 = 97.18^\circ\text{C} \approx 97.2^\circ\text{C}$$
+   La doble hélice de esta bacteria termófila no se desnaturaliza sino hasta alcanzar los $97.2^\circ\text{C}$, permitiéndole habitar en géiseres y fuentes termales hirvientes.
+
+4. *Calcular la $T_m$ para el ADN mesófilo con $40.0\,\%$ de $(G + C)$:*
+   $$T_m = 69.3 + 0.41 \times (40.0) = 69.3 + 16.40 = 85.70^\circ\text{C} \approx 85.7^\circ\text{C}$$
+   La diferencia de temperatura de fusión es de:
+   $$\Delta T_m = 97.18^\circ\text{C} - 85.70^\circ\text{C} = +11.48^\circ\text{C}$$
+   El elevado contenido de pares $G\equiv C$ (con tres puentes de hidrógeno y mayor densidad de apilamiento) confiere al ADN de la bacteria termófila una estabilidad térmica superior en $11.5^\circ\text{C}$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ADN celular utiliza timina metilada en lugar de uracilo, y cómo la desaminación oxidativa espontánea de la citosina a uracilo justifica evolutivamente esta diferencia?
+2. Si un fragmento de ADN tiene una secuencia de hebra molde $5'\text{-ATGCGATTCG-}3'$, ¿cuál es la secuencia exacta y polaridad de la hebra complementaria sintetizada?
+3. ¿Cómo actúa el bromuro de etidio como agente intercalante fluorescente en geles de electroforesis de agarosa para visualizar bandas de ADN bajo luz ultravioleta?

@@ -1,41 +1,126 @@
-\usepackage{xcolor}
-\definecolor{docere-link}{HTML}{000080}
-\definecolor{docere-cite}{HTML}{000080}
-\definecolor{docere-url}{HTML}{0000cc}
+% ── Paleta Terracota PDF ──
+\definecolor{docereblack}{HTML}{3a2418}
+\definecolor{docerewhite}{HTML}{FFFFFF}
+
+\definecolor{docere-link}{HTML}{8a4030}
+\definecolor{docere-cite}{HTML}{503020}
+\definecolor{docere-url}{HTML}{8a4030}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[version=4]{mhchem}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
-\usepackage{lmodern}
+% ── Font: Atkinson Hyperlegible ──
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{atkinson}
+
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{caption}
 \usepackage{longtable}
 \usepackage{booktabs}
 
+% ── Paragraph styling ──
 \usepackage{parskip}
-\setlength{\parskip}{0.6em}
-\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+\raggedright
+\usepackage{setspace}
+\setstretch{1.5}
 
+\usepackage{tikz}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins, breakable, raster}
 
-\definecolor{icfesletra}{HTML}{000000}
-\newcommand{\circletter}[1]{\textcircled{#1}}
+\definecolor{icfesletra}{HTML}{a06050}
+\definecolor{icfesbg}{HTML}{fdf5f2}
+\definecolor{icfesborder}{HTML}{a06050}
+\definecolor{icfescircle}{HTML}{a06050}
 
-\definecolor{currentsectionbg}{HTML}{e0d8f0}
-\definecolor{currentsectionborder}{HTML}{c8bae0}
+% ── Table styling ──
+\definecolor{icfesheader}{HTML}{ede0d8}
+\definecolor{icfestext}{HTML}{503020}
+\definecolor{icfeveryodd}{HTML}{fdf5f2}
+\definecolor{icfeveryeven}{HTML}{f6eeea}
+\definecolor{icfestabletext}{HTML}{3a2418}
+\definecolor{icfestablecapbg}{HTML}{f0ddd4}
+\newcommand{\circletter}[1]{%
+  \tikz[baseline=(char.base)]{%
+    \node[fill=icfescircle, text=white, circle, minimum size=1.8em, inner sep=0pt, font=\bfseries\small] (char) {#1};%
+  }%
+}
+
+\newcommand{\colorframe}[3]{%
+  \tikz[baseline=(X.base)]{%
+    \node[fill=#1, draw=#2, rounded corners=2pt, inner xsep=4pt, inner ysep=1pt, font=\small] (X) {#3};%
+  }%
+}
+
+\definecolor{currentsectionbg}{HTML}{fdf5f2}
+\definecolor{currentsectionborder}{HTML}{a06050}
 
 \newcommand{\setcolorsection}[2]{%
   \definecolor{currentsectionbg}{HTML}{#1}%
   \definecolor{currentsectionborder}{HTML}{#2}%
 }
 
-\addtokomafont{section}{\normalfont\Large\bfseries\color{black}}
+% ── Docere Interactive Cards (PDF) ──
+\newtcolorbox{docerecard}{
+  colback=white,
+  colframe=black!10,
+  arc=4pt,
+  boxrule=0.5pt,
+  left=12pt,
+  right=12pt,
+  top=8pt,
+  bottom=8pt,
+  before skip=12pt,
+  after skip=12pt,
+  breakable,
+  enhanced,
+  drop fuzzy shadow=black!5
+}
 
-\makeatletter
+% ── Docere Question Cards (PDF) ──
+\definecolor{basica-color}{HTML}{2ecc71}
+\definecolor{basica-bg}{HTML}{eafaf1}
+\definecolor{media-color}{HTML}{f39c12}
+\definecolor{media-bg}{HTML}{fef5e7}
+\definecolor{dificil-color}{HTML}{e74c3c}
+\definecolor{dificil-bg}{HTML}{fdedec}
+
+\newtcolorbox{preguntabasica}[1][]{
+  colback=basica-bg,
+  colframe=basica-color,
+  fonttitle=\bfseries,
+  coltitle=white,
+  arc=4pt,
+  boxrule=1pt,
+  #1
+}
+
+\newtcolorbox{preguntamedia}[1][]{
+  colback=media-bg,
+  colframe=media-color,
+  fonttitle=\bfseries,
+  coltitle=white,
+  arc=4pt,
+  boxrule=1pt,
+  #1
+}
+
+\newtcolorbox{preguntadificil}[1][]{
+  colback=dificil-bg,
+  colframe=dificil-color,
+  fonttitle=\bfseries,
+  coltitle=white,
+  arc=4pt,
+  boxrule=1pt,
+  #1
+}
+
+\addtokomafont{section}{\normalfont\Large\bfseries\color{docereblack}}
+
 \renewcommand{\sectionlinesformat}[4]{%
   \begin{tcolorbox}[
     colback=currentsectionbg,
@@ -53,9 +138,12 @@
     #4%
   \end{tcolorbox}%
 }
-\makeatother
 
 \AtBeginDocument{
+  % ── Apply optimized contrast ──
+  \pagecolor{docerewhite}
+  \color{docereblack}
+  
   \setlength{\abovedisplayskip}{1em}
   \setlength{\belowdisplayskip}{1em}
   \setlength{\abovedisplayshortskip}{0.5em}

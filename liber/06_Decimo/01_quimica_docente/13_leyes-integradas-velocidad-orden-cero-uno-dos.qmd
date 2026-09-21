@@ -1,0 +1,65 @@
+# Leyes Integradas de Velocidad para Órdenes Cero, Uno y Dos
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las leyes integradas de velocidad se obtienen mediante la integración analítica de la ecuación diferencial de velocidad respecto al tiempo, permitiendo calcular la concentración remanente de un reactivo en cualquier instante temporal $t$, o determinar el tiempo necesario para alcanzar cierta fracción de conversión.
+
+Cada orden cinético genera una **firma matemática lineal gráfica unívoca**:
+1. **Orden Cero ($v = k$):** Concentración lineal decreciente con el tiempo:
+$$[A]_t = [A]_0 - k t$$
+1. **Primer Orden ($v = k[A]$):** Decaimiento exponencial; la gráfica de $\ln[A]_t$ frente a $t$ es una recta con pendiente $-k$:
+$$\ln[A]_t = \ln[A]_0 - k t \iff \ln\left(\frac{[A]_0}{[A]_t}\right) = k t \iff [A]_t = [A]_0 e^{-k t}$$
+1. **Segundo Orden ($v = k[A]^2$):** La gráfica de $1/[A]_t$ frente a $t$ es una recta con pendiente positiva $+k$:
+$$\frac{1}{[A]_t} = \frac{1}{[A]_0} + k t$$
+
+### Formalización Matemática y Leyes Físicas
+Resumen matemático de leyes integradas:
+| Orden | Ley Diferencial | Ley Integrada | Gráfica Lineal | Pendiente |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | $v = k$ | $[A]_t = [A]_0 - k t$ | $[A]$ vs $t$ | $-k$ |
+| 1 | $v = k[A]$ | $\ln[A]_t = \ln[A]_0 - kt$ | $\ln[A]$ vs $t$ | $-k$ |
+| 2 | $v = k[A]^2$ | $\frac{1}{[A]_t} = \frac{1}{[A]_0} + kt$ | $\frac{1}{[A]}$ vs $t$ | $+k$ |
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar usar la fórmula de primer orden para una cinética de segundo orden.
+2. Olvidar que en la cinética de segundo orden la pendiente de la recta es positiva ($+k$) mientras que en orden 0 y 1 es negativa ($-k$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El método del ensayo de regresión lineal:** Introducir los datos $(t, [A])$ en una hoja de cálculo o calculadora y probar tres columnas: $[A]$, $\ln[A]$ y $1/[A]$. La columna que arroje el coeficiente de correlación $r^2$ más cercano a $1.000$ revela inequívocamente el orden de la reacción.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La descomposición térmica de una sustancia orgánica en fase gaseosa es de primer orden con una constante de velocidad $k = 4.50 \times 10^{-3}\,\text{s}^{-1}$ a $450\,\text{K}$. Si la concentración inicial es $[A]_0 = 0.800\,M$:
+a) Calcule la concentración remanente tras $300.0\,\text{segundos}$.
+b) Calcule el tiempo necesario para que se descomponga el $75.0\%$ de la muestra original.
+
+**Paso 1:** Concentración tras $300.0\,\text{s}$:
+$$\ln[A]_t = \ln(0.800) - (4.50 \times 10^{-3}\,\text{s}^{-1})(300.0\,\text{s}) = -0.2231 - 1.350 = -1.5731$$
+$$[A]_t = e^{-1.5731} = 0.207\,M$$
+**Paso 2:** Tiempo para descomponer el $75.0\%$ (queda el $25.0\%$ sin reaccionar: $[A]_t = 0.250 [A]_0$):
+$$\ln\left(\frac{[A]_0}{0.250 [A]_0}\right) = \ln(4.00) = k \cdot t$$
+$$t = \frac{\ln(4.00)}{k} = \frac{1.3863}{4.50 \times 10^{-3}\,\text{s}^{-1}} = 308.1\,\text{s}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué las cinéticas de eliminación de la mayoría de fármacos en el cuerpo humano siguen modelos integrados de primer orden?
+2. ¿Qué compuesto químico se descompone en el hígado mediante cinética de orden cero a concentraciones ordinarias? (El etanol o alcohol etílico).
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

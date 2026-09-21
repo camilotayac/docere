@@ -1,0 +1,65 @@
+# Excepciones a la Regla del Octeto: Especies Deficientes, Radicales y Octeto Expandido
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Enlace Químico y Estructura Molecular
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Aunque la regla del octeto es extraordinariamente útil para elementos del segundo período (como $C, N, O, F$, que no pueden expandir su capa por carecer de orbitales $d$ accesibles), existen tres categorías fundamentales de excepciones bien documentadas:
+
+1. **Moléculas con Octeto Incompleto (Deficiencia Electrónica):** Compuestos estables de elementos ligeros de los grupos 2 y 13 ($Be, B, Al$) que se rodean de menos de 8 electrones. Ejemplo: trifluoruro de boro ($BF_3$), donde el boro se rodea de sólo $6\,e^-_v$, actuando como un potente ácido de Lewis.
+2. **Moléculas con Número Impar de Electrones (Radicales Libres):** Especies que poseen un número impar de electrones de valencia totales, por lo que es matemáticamente imposible aparear todos los electrones. Ejemplo: óxido nítrico ($NO, 11\,e^-$) y dióxido de nitrógeno ($NO_2, 17\,e^-$). Son especies altamente reactivas y paramagnéticas.
+3. **Moléculas con Octeto Expandido (Hipervalencia):** Elementos a partir del tercer período en adelante ($Si, P, S, Cl, Br, I, Xe$) que pueden acomodar $10, 12$ o hasta $14$ electrones en su capa de valencia (ej. $PCl_5, SF_6, XeF_4$), tradicionalmente atribuido a la participación de orbitales $3d$ de baja energía o a modelos de enlace hipervalente de 3 centros y 4 electrones.
+
+### Formalización Matemática y Leyes Físicas
+Criterio de número impar (Radicales libres):
+$$N_v = 2k + 1 \quad (k \in \mathbb{N}) \implies \text{Existe al menos un } e^- \text{ desapareado (paramagnético)}$$
+Especies con octeto expandido comunes:
+$$PCl_5: 5\,\text{pares enlazantes} = 10\,e^-_v \qquad SF_6: 6\,\text{pares enlazantes} = 12\,e^-_v$$
+$$XeF_4: 4\,\text{pares enlazantes} + 2\,\text{pares solitarios} = 12\,e^-_v$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar a la fuerza 'completar el octeto' del boro en el $BF_3$ dibujando un doble enlace con el flúor (eso asignaría una carga formal positiva absurda $+1$ al elemento más electronegativo del universo, el flúor).
+2. Intentar expandir el octeto en elementos del segundo período como el Nitrógeno o el Carbono (no existe el $NF_5$ porque no existen orbitales $2d$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del garaje de estacionamiento:** El segundo piso del edificio atómico ($n=2$) sólo tiene cuatro plazas de parqueo (un orbital $s$ y tres orbitales $p$). Caben máximo 8 autos; no cabe un auto más físicamente. A partir del tercer piso ($n=3$), se habilita un sótano anexo de cinco plazas adicionales (orbitales $3d$), lo que permite parquear 10 o 12 autos si es necesario.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Dibuje la estructura de Lewis para el hexafluoruro de azufre ($SF_6$) y para el trifluoruro de boro ($BF_3$), calcule las cargas formales de todos los átomos e identifique el tipo de excepción al octeto en cada caso.
+
+**Paso 1:** Análisis del $SF_6$:
+$$N_v = S(6) + 6 \cdot F(7) = 6 + 42 = 48\,e^-_v$$
+El azufre central se enlaza a 6 átomos de flúor mediante 6 enlaces simples ($12\,e^-$ sobre el azufre). Cada flúor completa su octeto con 3 pares solitarios ($6 \times 6 = 36\,e^-$). Total: $12 + 36 = 48\,e^-$.
+Cargas formales:
+$$CF(S) = 6 - (0 + 6) = 0; \quad CF(F) = 7 - (6 + 1) = 0$$
+El azufre presenta **octeto expandido (hipervalencia con 12 electrones)**.
+
+**Paso 2:** Análisis del $BF_3$:
+$$N_v = B(3) + 3 \cdot F(7) = 3 + 21 = 24\,e^-_v$$
+El boro central forma 3 enlaces simples con los 3 átomos de flúor ($6\,e^-$ sobre el boro). Cada flúor completa su octeto ($3 \times 6 = 18\,e^-$). Total: $6 + 18 = 24\,e^-$.
+Cargas formales:
+$$CF(B) = 3 - (0 + 3) = 0; \quad CF(F) = 7 - (6 + 1) = 0$$
+El boro presenta **octeto incompleto (deficiencia electrónica con 6 electrones)**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué existe el compuesto $PCl_5$ pero no existe el compuesto análogo de nitrógeno $NCl_5$?
+2. ¿Por qué los radicales libres como el óxido nítrico ($NO$) son tan reactivos en los sistemas biológicos?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

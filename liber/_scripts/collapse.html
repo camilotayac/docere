@@ -1,144 +1,102 @@
-<style id="accordion-fouc">
-section.level2.teoria > :not(h2),
-section.level2.ideas-previas > :not(h2),
-section.level2.contexto > :not(h2),
-section.level2.caracterizados > :not(h2),
-section.level2.retos > :not(h2),
-section.level2.socioemocional > :not(h2),
-section.level2.ejercicios > :not(h2),
-section.level2.aplicacion > :not(h2),
-section.level2.ejemplo > :not(h2),
-section.level2.evaluacion > :not(h2) {
-  display: none;
+<style>
+#docere-progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: var(--table-bg, #FAFAF8);
+  z-index: 999999 !important;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+#docere-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #5A7BA8, #4A9B6B);
+  transition: width 0.1s ease-out;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 </style>
+<div id="docere-progress-container" aria-hidden="true">
+  <div id="docere-progress-bar"></div>
+</div>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  if (document.getElementById('accordion-body')) return;
+(function() {
+  'use strict';
 
-  var TARGET = [
-    'teoria', 'ideas-previas', 'contexto', 'caracterizados',
-    'retos', 'socioemocional', 'ejercicios', 'aplicacion',
-    'ejemplo', 'evaluacion'
-  ];
-  var SEL = TARGET.map(function (c) { return 'section.level2.' + c; }).join(',');
-  var sections = document.querySelectorAll(SEL);
-  if (!sections.length) return;
-
-  var parent = sections[0].parentNode;
-  var accordion = document.createElement('div');
-  accordion.id = 'accordion-body';
-  parent.insertBefore(accordion, sections[0]);
-
-  for (var i = sections.length - 1; i >= 0; i--) {
-    var section = sections[i];
-    var heading = section.querySelector('h2');
-    if (!heading) continue;
-
-    var body = document.createElement('div');
-    body.className = 'collapse';
-    body.id = 'acc-section-' + i;
-
-    var children = Array.from(section.children);
-    for (var j = 0; j < children.length; j++) {
-      if (children[j] !== heading) {
-        body.appendChild(children[j]);
-      }
-    }
-
-    section.appendChild(body);
-    heading.classList.add('accordion-toggle', 'collapsed');
-    heading.setAttribute('role', 'button');
-    heading.setAttribute('tabindex', '0');
-    heading.setAttribute('aria-expanded', 'false');
-    heading.setAttribute('aria-controls', body.id);
-    body.setAttribute('role', 'region');
-    body.setAttribute('aria-labelledby', heading.id);
-
-    accordion.insertBefore(section, accordion.firstChild);
-
-    body.style.display = '';
-  }
-
-  var refs = document.getElementById('refs');
-  if (refs) {
-    var refsParent = refs.closest('.collapse');
-    if (refsParent) {
-      accordion.parentNode.insertBefore(refs, accordion.nextSibling);
-    }
-  }
-
-  var foucStyle = document.getElementById('accordion-fouc');
-  if (foucStyle) foucStyle.remove();
-
-  function renderMermaidInSection(container) {
-    if (typeof mermaid === 'undefined' || !mermaid.run) return;
-    var pres = container.querySelectorAll('pre.mermaid');
-    pres.forEach(function (pre) {
-      var code = pre.querySelector('code');
-      if (code) {
-        mermaid.run({ nodes: [code] });
-      } else {
-        var svg = pre.querySelector('svg');
-        if (svg && svg.getBoundingClientRect().height === 0) {
-          var src = pre.getAttribute('data-mermaid-src');
-          if (src) {
-            pre.innerHTML = '<code>' + src.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code>';
-            pre.classList.add('mermaid');
-            mermaid.run({ nodes: [pre] });
-          }
+  // Helper: DOM Manipulation for details (ICFES restructuring)
+  function restructureDetails() {
+    const openDetails = document.querySelectorAll('details.icfes-respuesta');
+    openDetails.forEach(d => {
+      const parent = d.parentNode;
+      const children = Array.from(d.children);
+      let insertBefore = d.nextSibling;
+      for (let k = children.length - 1; k >= 0; k--) {
+        const child = children[k];
+        if (child.tagName === 'SECTION' && !child.classList.contains('clave-respuestas')) {
+          parent.insertBefore(child, insertBefore);
+          insertBefore = child;
         }
       }
     });
   }
 
-  function toggleSection(h2) {
-    var section = h2.closest('section.level2');
-    if (!section) return;
-    var body = section.querySelector('.collapse');
-    if (!body) return;
+  // Helper: Scroll Progress Bar
+  function initProgressBar() {
+    const progressBar = document.getElementById('docere-progress-bar');
+    if (!progressBar) return;
 
-    var isOpen = body.classList.contains('show');
+    function updateProgress() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      
+      if (scrollHeight <= 0) {
+        progressBar.style.width = '0%';
+        return;
+      }
+      
+      const scrolled = (scrollTop / scrollHeight) * 100;
+      // Clamp between 0 and 100
+      progressBar.style.width = Math.min(100, Math.max(0, scrolled)) + '%';
+    }
 
-    accordion.querySelectorAll('.collapse.show').forEach(function (c) {
-      c.classList.remove('show');
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(updateProgress);
+    }, { passive: true, capture: true }); // Capture true to catch scroll on any element just in case
+    
+    // Fallback: also listen on body
+    document.body.addEventListener('scroll', () => {
+      requestAnimationFrame(updateProgress);
+    }, { passive: true, capture: true });
+    
+    // Initial call
+    updateProgress();
+    console.log("Natura Docens: Progress bar initialized.");
+  }
+
+  // Helper: Force all sidebar sections to start collapsed
+  function collapseAllSidebarSections() {
+    const sidebar = document.getElementById('quarto-sidebar');
+    if (!sidebar) return;
+
+    const sections = sidebar.querySelectorAll('.sidebar-section.collapse');
+    sections.forEach(sec => {
+      sec.classList.remove('show');
     });
-    accordion.querySelectorAll('.accordion-toggle').forEach(function (t) {
+
+    const toggles = sidebar.querySelectorAll('.sidebar-item-toggle, .sidebar-link');
+    toggles.forEach(t => {
       t.classList.add('collapsed');
       t.setAttribute('aria-expanded', 'false');
     });
-
-    if (!isOpen) {
-      body.classList.add('show');
-      h2.classList.remove('collapsed');
-      h2.setAttribute('aria-expanded', 'true');
-      renderMermaidInSection(body);
-    }
   }
 
-  document.addEventListener('click', function (e) {
-    var h2 = e.target.closest('.accordion-toggle');
-    if (h2) toggleSection(h2);
+  document.addEventListener('DOMContentLoaded', () => {
+    restructureDetails();
+    initProgressBar();
+    collapseAllSidebarSections();
   });
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    var h2 = e.target.closest('.accordion-toggle');
-    if (h2) {
-      e.preventDefault();
-      toggleSection(h2);
-    }
-  });
-
-  var firstBody = accordion.querySelector('.collapse');
-  if (firstBody) {
-    firstBody.classList.add('show');
-    var firstH2 = accordion.querySelector('.accordion-toggle');
-    if (firstH2) {
-      firstH2.classList.remove('collapsed');
-      firstH2.setAttribute('aria-expanded', 'true');
-    }
-    renderMermaidInSection(firstBody);
-  }
-});
+})();
 </script>

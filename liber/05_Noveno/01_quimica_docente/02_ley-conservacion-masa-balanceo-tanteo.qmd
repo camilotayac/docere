@@ -1,0 +1,67 @@
+# Ley de Conservación de la Masa y Balanceo por Tanteo (Oriakhi Cap. 6)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Reacciones Químicas y Conservación
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La Ley de Conservación de la Masa (Antoine Lavoisier, 1789) establece que en un sistema cerrado aislado que no intercambia materia con el exterior, la masa total permanece estrictamente invariable durante cualquier transformación química:
+
+$$\sum m_{\text{reactivos}} = \sum m_{\text{productos}}$$
+
+A nivel atómico, esto exige que el número total de átomos de cada elemento presente en el primer miembro de la ecuación (reactivos) sea rigurosamente idéntico al número de átomos de ese mismo elemento en el segundo miembro (productos). El balanceo por tanteo (o inspección sistemática) consiste en ajustar los **coeficientes estequiométricos** enteros mínimos que satisfagan este principio, siguiendo el orden heurístico recomendado: **Metales $\to$ No Metales $\to$ Hidrógenos $\to$ Oxígenos**.
+
+### Formalización Matemática y Leyes Físicas
+Condición vectorial de conservación atómica para cada elemento $j$:
+$$\sum_{i \in \text{reactivos}} \nu_i \cdot a_{ij} = \sum_{k \in \text{productos}} \nu_k \cdot a_{kj}$$
+Donde $\nu$ son los coeficientes estequiométricos y $a_{ij}$ los subíndices del elemento $j$ en la especie $i$.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Cambiar subíndices químicos para forzar el balanceo (
+
+$$H_2 + O_2 \to H_2O_2$$
+
+Para 'balancear' la formación de agua, formando peróxido tóxico en vez de agua).
+2. Olvidar multiplicar el coeficiente estequiométrico por el subíndice fuera del paréntesis en iones poliatómicos, como en $Al_2(SO_4)_3$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la balanza de platillos atómica:** En el platillo izquierdo colocas todos los átomos que entran a la fábrica; en el derecho colocas los productos. La aguja de la balanza debe quedar exactamente en cero. Si tienes 4 oxígenos a la izquierda, deben salir exactamente 4 oxígenos a la derecha.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 6):** Balancee por inspección sistemática la ecuación de combustión completa del gas propano ($C_3H_8$) con oxígeno gaseoso para producir dióxido de carbono y vapor de agua:
+$$C_3H_8(g) + O_2(g) \longrightarrow CO_2(g) + H_2O(g)$$
+
+**Paso 1:** Balanceo de carbonos (no metal):
+Hay 3 átomos de $C$ en reactivos; colocamos coeficiente 3 al $CO_2$:
+$$C_3H_8 + O_2 \longrightarrow 3 CO_2 + H_2O$$
+**Paso 2:** Balanceo de hidrógenos:
+Hay 8 átomos de $H$ en reactivos; colocamos coeficiente 4 al $H_2O$ ($4 \times 2 = 8$):
+$$C_3H_8 + O_2 \longrightarrow 3 CO_2 + 4 H_2O$$
+**Paso 3:** Balanceo de oxígenos:
+Contamos en productos: $3(2) + 4(1) = 6 + 4 = 10$ átomos de oxígeno.
+Colocamos coeficiente 5 al $O_2$ ($5 \times 2 = 10$):
+$$C_3H_8(g) + 5 O_2(g) \longrightarrow 3 CO_2(g) + 4 H_2O(g)$$
+**Paso 4:** Verificación final de conservación:
+$C: 3 = 3$; $H: 8 = 8$; $O: 10 = 10$. La ecuación está perfectamente balanceada.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué es físicamente incorrecto dejar coeficientes fraccionarios en una ecuación molecular final?
+2. ¿Cómo demostró Lavoisier la conservación de la masa utilizando recipientes sellados herméticamente?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,75 @@
+# Estructuras de Lewis Sistemáticas y Cálculo de Carga Formal (Oriakhi Cap. 9)
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Enlace Químico y Estructura Molecular
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La formulación rigurosa de las estructuras de Lewis para especies moleculares e iones poliatómicos requiere un procedimiento algorítmico sistemático que garantice la conservación estricta de la carga y el cumplimiento óptimo del octeto:
+
+1. **Conteo de electrones de valencia totales ($N_v$):** Sumar los electrones de valencia de todos los átomos constituyentes. Si la especie es un anión con carga $-q$, sumar $q$; si es un catión con carga $+q$, restar $q$.
+2. **Esqueleto atómico:** Seleccionar como átomo central el elemento de menor electronegatividad (excluyendo siempre al hidrógeno y flúor, que son monovalentes periféricos).
+3. **Distribución de enlaces simples:** Unir los átomos con enlaces $\sigma$ simples ($2\,e^-$ por enlace) y completar los octetos de los átomos periféricos.
+4. **Asignación a átomo central:** Los electrones sobrantes se asignan al átomo central como pares solitarios.
+5. **Cálculo de Cargas Formales ($CF$):** La carga formal evalúa el balance de carga aparente que tendría cada átomo si todos los enlaces fueran puramente covalentes no polares.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de la Carga Formal ($CF$):
+$$CF = e^-_v - \left( e^-_{\text{no enlazantes}} + \frac{1}{2} e^-_{\text{enlazantes}} \right) = V - (L + B)$$
+Donde:
+1. $V$: Electrones de valencia del átomo neutro libre.
+2. $L$: Electrones no enlazantes (electrones en pares solitarios individuales).
+3. $B$: Número de enlaces químicos que convergen en el átomo (rayas de enlace).
+Conservación de la carga total:
+$$\sum_{i} CF_i = q_{\text{especie}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir carga formal con estado de oxidación (el estado de oxidación asume enlaces $100\%$ iónicos asignando los electrones al más electronegativo; la carga formal asume enlaces $100\%$ covalentes dividiéndolos por la mitad).
+2. Aceptar estructuras con cargas formales altas ($+2, -2$) cuando se pueden neutralizar formando enlaces múltiples.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Regla de la contabilidad estricta:** La carga formal es una auditoría de impuestos de electrones: ¿cuántos electrones trajo el átomo de su casa ($V$)? ¿cuántos tiene guardados en su bolsillo ($L$)? ¿cuántos comparte en sociedad al $50\%$ con su vecino ($B$)? La diferencia entre lo que trajo y lo que tiene es su saldo contable ($CF$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 9):** Dibuje la estructura de Lewis para el ion cianato ($OCN^-$), calcule las cargas formales de sus átomos en tres estructuras canónicas posibles y elija la más estable termodinámicamente.
+
+**Paso 1:** Conteo de electrones de valencia totales:
+$$N_v = O(6) + C(4) + N(5) + 1 (\text{carga}) = 16\,e^-_v$$
+El carbono es el menos electronegativo ($\,\chi_C=2.5 < \chi_N=3.0 < \chi_O=3.5$), por lo que es el átomo central: $[O - C - N]^-$.
+**Paso 2:** Estructuras resonantes posibles:
+1. **Estructura I:** Doble enlace en ambos lados: $\ddot{O} = C = \ddot{N}^-$
+2. **Estructura II:** Triple enlace con nitrógeno: $:O - C \equiv N:$
+3. **Estructura III:** Triple enlace con oxígeno: $:O \equiv C - \ddot{N}^{2-}$
+
+**Paso 3:** Cálculo de cargas formales para cada estructura:
+1. **Estructura I:**
+  $$CF(O) = 6 - (4 + 2) = 0; \quad CF(C) = 4 - (0 + 4) = 0; \quad CF(N) = 5 - (4 + 2) = -1$$
+1. **Estructura II:**
+  $$CF(O) = 6 - (6 + 1) = -1; \quad CF(C) = 4 - (0 + 4) = 0; \quad CF(N) = 5 - (2 + 3) = 0$$
+1. **Estructura III:**
+  $$CF(O) = 6 - (2 + 3) = +1; \quad CF(C) = 4 - (0 + 4) = 0; \quad CF(N) = 5 - (6 + 1) = -2$$
+
+**Paso 4:** Selección de la estructura más representativa:
+La Estructura II sitúa la carga formal negativa ($-1$) sobre el átomo más electronegativo (el oxígeno, $\chi=3.5$), mientras que la Estructura I la sitúa sobre el nitrógeno ($\chi=3.0$). Ambas contribuyen al híbrido real, siendo la Estructura II la contribuyente preponderante.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una estructura de Lewis donde átomos contiguos tienen cargas formales del mismo signo ($+1$ y $+1$) es extremadamente inestable?
+2. ¿Por qué la suma de las cargas formales de todos los átomos en una molécula neutra debe ser obligatoriamente igual a cero?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,66 @@
+# Hidrólisis Salina y pH de Disoluciones Acuosas de Sales
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Cuando una sal iónica se disuelve en agua, se disocia completamente en cationes y aniones hidratados. Dependiendo del origen conjugado de dichos iones, estos pueden reaccionar químicamente con el agua alterando el equilibrio de autoionización de esta, fenómeno conocido como **hidrólisis salina**:
+
+1. **Sal de Ácido Fuerte y Base Fuerte ($NaCl, KNO_3$):** Ni el catión ni el anión se hidrolizan (son iones espectadores conjugados extremadamente débiles). La disolución es estrictamente **neutra** ($	ext{pH} = 7.00$).
+2. **Sal de Ácido Débil y Base Fuerte ($CH_3COONa, KCN, NaF$):** El anión es la base conjugada fuerte del ácido débil y sufre **hidrólisis básica**:
+$$A^-(aq) + H_2O(l) \rightleftharpoons HA(aq) + OH^-(aq) \implies K_h = K_b = \frac{K_w}{K_a} \implies \text{pH} > 7.00$$
+3. **Sal de Ácido Fuerte y Base Débil ($NH_4Cl, Fe(NO_3)_3$):** El catión es el ácido conjugado de la base débil y sufre **hidrólisis ácida**:
+$$BH^+(aq) + H_2O(l) \rightleftharpoons B(aq) + H_3O^+(aq) \implies K_h = K_a = \frac{K_w}{K_b} \implies \text{pH} < 7.00$$
+4. **Sal de Ácido Débil y Base Débil ($NH_4CN, CH_3COONH_4$):** Ambos iones se hidrolizan simultáneamente. El pH depende de la comparación entre $K_a$ y $K_b$: si $K_a > K_b$ es ácida; si $K_b > K_a$ es básica; si $K_a = K_b$ es neutra.
+
+### Formalización Matemática y Leyes Físicas
+Constante de hidrólisis ($K_h$):
+$$\text{Para anión básico: } K_h = \frac{K_w}{K_a} = \frac{[HA][OH^-]}{[A^-]}$$
+$$\text{Para catión ácido: } K_h = \frac{K_w}{K_b} = \frac{[B][H^+]}{[BH^+]}$$
+Cálculo de pH en hidrólisis de anión básico:
+$$[OH^-] = \sqrt{K_h \cdot c_{\text{sal}}} = \sqrt{\frac{K_w}{K_a} \cdot c_{\text{sal}}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que todas las soluciones salinas son neutras con $\text{pH} = 7$.
+2. Escribir hidrólisis para iones como $Na^+$ o $Cl^-$ (los cationes alcalinos y aniones de haluros fuertes no se hidrolizan jamás en agua).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del huérfano que busca a sus padres:** El anión acetato ($CH_3COO^-$) proviene de un ácido débil inestable; al verse en el agua no resiste la tentación de robarle un protón a una molécula de agua para volver a ser ácido acético, dejando flotando un $OH^-$ libre que vuelve alcalina la solución.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule el pH de una disolución acuosa $0.100\,M$ de acetato de sodio ($CH_3COONa$) a $25^\circ\text{C}$. Dato: $K_a(CH_3COOH) = 1.80 \times 10^{-5}$.
+
+**Paso 1:** Reacción de disociación e hidrólisis:
+$$CH_3COONa \longrightarrow Na^+ + CH_3COO^- \implies [CH_3COO^-] = 0.100\,M$$
+$$CH_3COO^- + H_2O \rightleftharpoons CH_3COOH + OH^-$$
+**Paso 2:** Constante de hidrólisis ($K_h$):
+$$K_h = \frac{K_w}{K_a} = \frac{1.00 \times 10^{-14}}{1.80 \times 10^{-5}} = 5.56 \times 10^{-10}$$
+**Paso 3:** Concentración de iones hidróxido en el equilibrio:
+$$[OH^-] = \sqrt{K_h \cdot c} = \sqrt{(5.56 \times 10^{-10})(0.100)} = \sqrt{5.56 \times 10^{-11}} = 7.457 \times 10^{-6}\,M$$
+**Paso 4:** Cálculo del pH:
+$$\text{pOH} = -\log(7.457 \times 10^{-6}) = 5.13$$
+$$\text{pH} = 14.00 - 5.13 = 8.87$$
+La disolución es netamente **básica** con un pH de $8.87$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una disolución de cloruro de amonio ($NH_4Cl$) corroe ciertos metales debido a su pH ácido?
+2. ¿Por qué las sales de metales de transición con alta densidad de carga como $AlCl_3$ o $FeCl_3$ generan disoluciones fuertemente ácidas ($	ext{pH} \approx 2$ a $3$)?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

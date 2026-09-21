@@ -1,0 +1,92 @@
+# Carbohidratos II: Disacáridos, el Enlace Glucosídico y Polisacáridos Estructurales y de Reserva
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Biomoléculas y Polímeros Glucídicos
+> * **Propósito Docente:** Explicar la estereoquímica del enlace $O$-glucosídico, contrastar el poder reductor de la maltosa y la lactosa frente a la sacarosa, y modelar la arquitectura supramolecular del almidón, el glucógeno y la celulosa.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La condensación de unidades de monosacárido para construir estructuras de orden superior está gobernada por la formación del **enlace $O$-glucosídico**. Químicamente, el enlace glucosídico es una unión de tipo **acetal**, originada por la reacción de adición nucleófila entre el grupo hidroxilo anomérico hemiacetálico de un monosacárido y un grupo hidroxilo alcohólico de otra molécula de azúcar, con desprendimiento estequiométrico de una molécula de agua:
+
+$$R-\text{OH (anomérico)} + HO-R' \overset{H^+}{\rightleftharpoons} R-O-R' + H_2O$$
+
+A diferencia del enlace hemiacetálico original, el enlace acetálico glucosídico es **estable en disolución acuosa neutra o alcalina** y no se abre espontáneamente a temperatura ambiente. Su ruptura requiere catálisis ácida o la intervención de enzimas hidrolíticas específicas (glucosidasas). La orientación espacial del enlace se designa rigurosamente como **$\alpha$** o **$\beta$** en función de la configuración del carbono anomérico participante.
+
+Los **disacáridos** resultan de la unión covalente de dos monosacáridos. Su reactividad y comportamiento analítico están determinados por la disponibilidad de centros anoméricos libres:
+
+1. **Maltosa (Azúcar de Malta):** Formada por dos moléculas de D-glucopiranosa unidas mediante un enlace **$\alpha(1\to 4)$-glucosídico**:
+$$\alpha\text{-D-glucopiranosil-(1}\to\text{4)-D-glucopiranosa}$$
+El carbono anomérico del primer residuo ($C_1$) está comprometido en el enlace acetal, pero el carbono anomérico de la segunda unidad de glucosa ($C_1'$) conserva su grupo hidroxilo hemiacetálico libre. Por consiguiente, la maltosa presenta un **extremo reductor**, experimenta mutarrotación en disolución acuosa y rinde un resultado positivo intenso en los ensayos de Tollens y Fehling.
+2. **Lactosa (Azúcar de la Leche):** Constituida por una molécula de $\beta$-D-galactopiranosa y una de D-glucopiranosa enlazadas a través de una unión **$\beta(1\to 4)$-glucosídica**:
+$$\beta\text{-D-galactopiranosil-(1}\to\text{4)-D-glucopiranosa}$$
+Al igual que la maltosa, retiene libre el carbono anomérico hemiacetálico del residuo de glucosa, comportándose como un disacárido reductor. Su hidrólisis biológica en el intestino delgado depende exclusivamente de la enzima $\beta$-galactosidasa (lactasa); la disminución fisiológica de esta enzima en la población adulta genera la intolerancia a la lactosa, donde el azúcar no hidrolizado es fermentado anaeróbicamente por las bacterias colónicas produciendo gases ($H_2, CH_4, CO_2$) y diarrea osmótica.
+3. **Sacarosa (Azúcar de Mesa):** Formada por la unión de una molécula de $\alpha$-D-glucopiranosa y una de $\beta$-D-fructofuranosa. En esta molécula singular, el enlace se establece directamente entre el carbono anomérico aldehídico de la glucosa ($C_1$) y el carbono anomérico cetónico de la fructosa ($C_2$):
+$$\alpha\text{-D-glucopiranosil-(1}\to\text{2)-}\beta\text{-D-fructofuranósido}$$
+Dado que **ambos carbonos anoméricos están mutuamente bloqueados** en el enlace acetal dicarbonílico, la sacarosa carece de extremos hemiacetálicos libres. Como consecuencia trascendental, la sacarosa es un **azúcar no reductor**: no reacciona con el reactivo de Fehling ni Tollens y no experimenta mutarrotación en agua. Su hidrólisis ácida produce una mezcla equimolar de D-glucosa ($[\alpha]_D = +52.7^\circ$) y D-fructosa ($[\alpha]_D = -92.4^\circ$), invirtiendo la rotación óptica neta de dextrógira ($+66.5^\circ$) a levógira ($-19.8^\circ$), razón por la cual la mezcla resultante se denomina comercialmente **azúcar invertido**.
+
+Los **polisacáridos (o glicanos)** son polímeros de condensación de alta masa molar constituidos por cientos o miles de residuos de monosacáridos. Se clasifican según su función biológica y microestructura:
+
+1. **Almidón:** Es el principal polisacárido de reserva energética en las plantas superiores, acumulado en cloroplastos y amiloplastos. Es una mezcla de dos componentes moleculares:
+   - **Amilosa ($10-20\,\%$):** Cadena lineal no ramificada de unidades de D-glucosa unidas exclusivamente mediante enlaces $\alpha(1\to 4)$. La geometría angular del enlace $\alpha$ fuerza a la cadena a enrollarse en una **hélice tridimensional continua** estabilizada por puentes de hidrógeno. En el interior hidrófobo de esta hélice pueden alojarse moléculas de yodo molecular ($I_2 / I_3^-$), originando un complejo de transferencia de carga con una absorción óptica resonante de color azul marino profundo, base del ensayo diagnóstico de yodo.
+   - **Amilopectina ($80-90\,\%$):** Polímero altamente ramificado compuesto por cadenas principales de glucosa con enlaces $\alpha(1\to 4)$ que presentan ramificaciones mediante enlaces **$\alpha(1\to 6)$-glucosídicos** cada 24 a 30 residuos.
+2. **Glucógeno:** Es el polisacárido de almacenamiento energético en los animales, acumulado principalmente en el hígado (hasta el $10\,\%$ de su masa húmeda) y en el músculo esquelético ($1-2\,\%$). Su arquitectura es similar a la de la amilopectina, pero con una frecuencia de ramificaciones $\alpha(1\to 6)$ notablemente mayor (cada 8 a 12 residuos de glucosa). Esta densa red globular hiperramificada expone miles de extremos no reductores en su periferia exterior, permitiendo que la enzima glucógeno fosforilasa degrade múltiples cadenas en paralelo para movilizar glucosa sanguínea con extrema rapidez ante demandas energéticas críticas.
+3. **Celulosa:** Es el polímero orgánico más abundante sobre la faz de la Tierra, constituyendo el armazón estructural de la pared celular vegetal (presente en más del $90\,\%$ en el algodón y cerca del $50\,\%$ en la madera). Es un homopolímero estrictamente lineal compuesto por hasta 15000 unidades de D-glucosa unidas mediante enlaces **$\beta(1\to 4)$-glucosídicos**. La orientación $\beta$ invierte cada residuo $180^\circ$ respecto a sus vecinos, forzando a la macromolécula a extenderse como una cinta recta y rígida. Las cadenas paralelas adyacentes se empaquetan de forma extraordinariamente compacta mediante una intrincada red de **puentes de hidrógeno intercatenarios e intracatenarios**, excluyendo totalmente al agua y formando microfibrillas cristalinas de inmensa resistencia mecánica a la tracción e insolubilidad. Los seres humanos y la mayoría de los vertebrados carecen de celulasas capaces de hidrolizar el enlace $\beta(1\to 4)$, por lo que la celulosa actúa como fibra insoluble no asimilable.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que el almidón y la celulosa son químicamente idénticos porque ambos son "polímeros de glucosa":** Ignorar que la única diferencia radica en la estereoquímica del enlace anomérico: $\alpha(1\to 4)$ en el almidón (hélice blanda digestible por amilasas) frente a $\beta(1\to 4)$ en la celulosa (cinta rígida e indigerible por humanos). Esta pequeña variación conformacional define la frontera entre un alimento básico y un material estructural leñoso.
+2. **Asumir que todos los azúcares de consumo diario son reductores:** Suponer que la sacarosa reacciona con el reactivo de Fehling. El docente debe recalcar que el bloqueo mutuo de ambos carbonos anoméricos anula la formación del grupo carbonilo libre.
+3. **Confundir la amilosa con un polímero ramificado:** Suponer que por ser parte del almidón es ramificada, olvidando que la amilosa es rigurosamente lineal y que la amilopectina es la fracción ramificada.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Eslabones con Enganche por Arriba vs. por Abajo:** Enlaces $\alpha(1\to 4)$ son como eslabones de cadena con bisagras curvadas que se pliegan sobre sí mismas formando espirales y resortes flexibles (almidón soluble); enlaces $\beta(1\to 4)$ son como vigas machihembradas rígidas que se traban en línea recta para construir una pared de concreto impenetrable (celulosa).
+2. **Demostración de Azúcar Invertido con Polarímetro o Prueba de Fehling:** Probar sacarosa pura con Fehling (azul inalterado, negativo); calentar con unas gotas de ácido clorhídrico durante tres minutos, neutralizar con bicarbonato y repetir la prueba de Fehling (precipitado rojo ladrillo masivo instantáneo por liberación de glucosa y fructosa libres).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una disolución acuosa concentrada contiene $171.15\,\text{g}$ de sacarosa pura ($C_{12}H_{22}O_{11}$, masa molar $342.30\,\text{g/mol}$) disueltos en agua destilada hasta completar un volumen de $1.000\,\text{L}$. La rotación específica de la sacarosa pura es $[\alpha]_D = +66.5^\circ$. La muestra se somete a hidrólisis ácida completa según la siguiente reacción química:
+
+$$C_{12}H_{22}O_{11}(ac) + H_2O(l) \xrightarrow{H^+} C_6H_{12}O_6(ac) \text{ [D-glucosa]} + C_6H_{12}O_6(ac) \text{ [D-fructosa]}$$
+
+Sabiendo que las rotaciones específicas en el equilibrio para los monosacáridos productos son $[\alpha]_{\text{glucosa}} = +52.7^\circ$ y $[\alpha]_{\text{fructosa}} = -92.4^\circ$:
+1. Calcule la cantidad molar inicial de sacarosa y la masa teórica producida de cada monosacárido.
+2. Determine la rotación específica efectiva promedio de la mezcla equimolar de azúcar invertido formada tras la hidrólisis cuantitativa.
+3. Calcule el ángulo de rotación observada ($\alpha_{\text{obs}}$) medido en un tubo polarimétrico de $2.00\,\text{dm}$ antes y después de la hidrólisis.
+
+**Solución paso a paso:**
+
+1. *Calcular la cantidad molar de sacarosa hidrolizada:*
+   $$n_{\text{sacarosa}} = \frac{171.15\,\text{g}}{342.30\,\text{g/mol}} = 0.5000\,\text{mol}$$
+   La hidrólisis completa de medio mol de disacárido consume $0.5000\,\text{moles}$ de agua ($9.01\,\text{g}$) y genera exactamente $0.5000\,\text{moles}$ de D-glucosa y $0.5000\,\text{moles}$ de D-fructosa.
+   $$m_{\text{glucosa}} = (0.5000\,\text{mol})(180.16\,\text{g/mol}) = 90.08\,\text{g}$$
+   $$m_{\text{fructosa}} = (0.5000\,\text{mol})(180.16\,\text{g/mol}) = 90.08\,\text{g}$$
+   La masa total de azúcares en la disolución final asciende a $180.16\,\text{g}$.
+
+2. *Calcular la rotación específica efectiva de la mezcla equimolar de azúcar invertido:*
+   Dado que se generan masas idénticas de ambos monosacáridos (fracción másica $0.500$ para cada uno):
+   $$[\alpha]_{\text{invertido}} = 0.500 \times (+52.7^\circ) + 0.500 \times (-92.4^\circ)$$
+   $$[\alpha]_{\text{invertido}} = +26.35^\circ - 46.20^\circ = -19.85^\circ$$
+   La mezcla resultante exhibe una rotación específica neta marcadamente levógira de $-19.85^\circ$, confirmando el fenómeno histórico de la inversión polarimétrica.
+
+3. *Calcular la rotación observada antes de la hidrólisis:*
+   La concentración inicial de sacarosa es $c = 171.15\,\text{g}/1000\,\text{mL} = 0.17115\,\text{g/mL}$.
+   $$\alpha_{\text{obs, inicial}} = [\alpha]_{\text{sacarosa}} \times l \times c = (+66.5^\circ)(2.00\,\text{dm})(0.17115\,\text{g/mL}) = +22.76^\circ$$
+   Antes de la reacción, la luz polarizada se desviaba $+22.8^\circ$ hacia la derecha.
+
+4. *Calcular la rotación observada tras la hidrólisis:*
+   La concentración total de azúcar invertido es $c' = 180.16\,\text{g}/1000\,\text{mL} = 0.18016\,\text{g/mL}$.
+   $$\alpha_{\text{obs, final}} = [\alpha]_{\text{invertido}} \times l \times c' = (-19.85^\circ)(2.00\,\text{dm})(0.18016\,\text{g/mL}) = -7.15^\circ$$
+   El ángulo final medido en el polarímetro viró a $-7.15^\circ$ hacia la izquierda, evidenciando de manera incontestable el progreso completo de la reacción.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué las termitas y los rumiantes pueden nutrirse de madera y pasto ricos en celulosa a pesar de no poseer genes propios de celulasa en su genoma?
+2. Si se trata una muestra de almidón y otra de glucógeno con disolución de lugol (yodo/yoduro), ¿por qué el almidón tiñe de azul oscuro mientras que el glucógeno rinde una coloración pardo-rojiza tenue?
+3. ¿Cuál es el fundamento químico por el cual la miel de abejas no cristaliza tan fácilmente como una disolución saturada de azúcar común?

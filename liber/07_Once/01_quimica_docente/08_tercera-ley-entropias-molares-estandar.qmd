@@ -1,0 +1,84 @@
+# Tercera Ley de la Termodinámica y Entropías Molares Estándar
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Clásica y Cuántica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+A diferencia de la entalpía o la energía interna, para las cuales no existe un cero natural absoluto (motivo por el cual solo podemos medir diferencias relativas $\Delta H$ respecto a estados de referencia convenidos), **la entropía posee un cero absoluto bien definido**, establecido por la **Tercera Ley de la Termodinámica** formulada por Walther Nernst y generalizada por Max Planck:
+
+**Postulado de la Tercera Ley:**
+La entropía de una sustancia pura y perfectamente cristalina a la temperatura del cero absoluto ($0\,\text{K}$ o $-273.15^\circ\text{C}$) es exactamente igual a cero:
+$$S(T = 0\,\text{K}) = 0\,\text{J}/(\text{mol}\cdot\text{K})$$
+
+La fundamentación estadística de la Tercera Ley es inmediata mediante la ecuación de Boltzmann: en un cristal perfecto a $0\,\text{K}$, cesa toda agitación térmica motriz y todos los átomos o moléculas ocupan el estado cuántico fundamental único del retículo sin defectos ni desorden posicional. Al haber una única configuración posible:
+$$W = 1 \implies S = k_B \ln(1) = 0$$
+
+Gracias a este cero absoluto, es posible determinar la **Entropía Molar Estándar ($S^\circ$)** de cualquier sustancia a cualquier temperatura $T$ midiendo experimentalmente su capacidad calorífica $c_p$ en función de la temperatura desde $0\,\text{K}$ hasta $T$, e integrando rigurosamente:
+$$S^\circ(T) = \int_0^{T_f} \frac{c_{p,\text{sólido}}}{T} dT + \frac{\Delta H_f}{T_f} + \int_{T_f}^{T_e} \frac{c_{p,\text{líquido}}}{T} dT + \frac{\Delta H_e}{T_e} + \int_{T_e}^{T} \frac{c_{p,\text{gas}}}{T} dT$$
+
+**Tendencias Periódicas y Estructurales de $S^\circ$:**
+1. **Estado de Agregación:** Para una misma sustancia, $S^\circ_{\text{gas}} \gg S^\circ_{\text{líquido}} > S^\circ_{\text{sólido}}$.
+2. **Complejidad Molecular:** Moléculas con más átomos y enlaces tienen más modos vibracionales y rotacionales accesibles, incrementando $S^\circ$ (ejemplo: $S^\circ(\text{CH}_4) < S^\circ(\text{C}_2\text{H}_6) < S^\circ(\text{C}_3\text{H}_8)$).
+3. **Masa Molar:** Entre elementos análogos, a mayor masa molar mayor densidad de niveles cuánticos traslacionales (ejemplo: $S^\circ(\text{He}) < S^\circ(\text{Ne}) < S^\circ(\text{Ar}) < S^\circ(\text{Kr})$).
+
+El cambio de entropía estándar de una reacción química se calcula como:
+$$\Delta S^\circ_{\text{rxn}} = \sum \nu_p S^\circ(\text{productos}) - \sum \nu_r S^\circ(\text{reactivos})$$
+
+### Formalización Matemática y Leyes Físicas
+$$S^\circ(T) = \int_0^T \frac{c_p(T)}{T} dT + \sum \frac{\Delta H_{\text{fase}}}{T_{\text{fase}}}$$
+$$\Delta S^\circ_{\text{rxn}} = \sum n_p S^\circ(\text{productos}) - \sum m_r S^\circ(\text{reactivos})$$
+Unidades rigurosas: $\text{J}/(\text{mol}\cdot\text{K})$ (nótese Joules, NO kiloJoules).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Asignar entropía cero a elementos en su estado estándar:** Es el error más frecuente por analogía falsa con la entalpía. Para un elemento en estado estándar, $\Delta H^\circ_f = 0$, pero su entropía absoluta $S^\circ$ es SIEMPRE estrictamente POSITIVA a $298.15\,\text{K}$ (ejemplo: $S^\circ[\text{O}_2(g)] = 205.0\,\text{J}/(\text{mol}\cdot\text{K})$). Solo es cero a $0\,\text{K}$.
+2. **Incompatibilidad de unidades al combinar con entalpía:** Tabular $\Delta S^\circ$ en $\text{J}/(\text{mol}\cdot\text{K})$ y $\Delta H^\circ$ en $\text{kJ/mol}$ sin convertir previamente antes de operar.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **La Biblioteca Perfectamente Ordenada:** A $0\,\text{K}$, todos los libros de la biblioteca están clasificados en su estante exacto sin que nadie los mueva ($W=1$, entropía cero). A medida que sube la temperatura, los estudiantes entran y sacan libros; cuanto más calor hace, más libros están abiertos sobre las mesas y en más estanterías diferentes pueden encontrarse (aumenta el número de microestados accesibles).
+2. **Las fases del agua:** El hielo tiene una estructura rígida enrejada ($S^\circ = 41.3\,\text{J}/(\text{mol}\cdot\text{K})$); el agua líquida permite deslizar moléculas unas sobre otras ($S^\circ = 69.9\,\text{J}/(\text{mol}\cdot\text{K})$); el vapor expande sus moléculas por toda la habitación libremente ($S^\circ = 188.8\,\text{J}/(\text{mol}\cdot\text{K})$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Para el proceso industrial de Haber-Bosch de síntesis del amoníaco:
+$$\text{N}_2(g) + 3 \text{H}_2(g) \to 2 \text{NH}_3(g)$$
+Utilice los siguientes valores de entropía molar absoluta estándar a $298.15\,\text{K}$:
+1. $S^\circ[\text{N}_2(g)] = 191.5\,\text{J}/(\text{mol}\cdot\text{K})$
+2. $S^\circ[\text{H}_2(g)] = 130.6\,\text{J}/(\text{mol}\cdot\text{K})$
+3. $S^\circ[\text{NH}_3(g)] = 192.3\,\text{J}/(\text{mol}\cdot\text{K})$
+1. Prediga cualitativamente el signo de $\Delta S^\circ_{\text{rxn}}$.
+2. Calcule el valor numérico exacto de $\Delta S^\circ_{\text{rxn}}$ a $298.15\,\text{K}$.
+
+**Solución paso a paso:**
+1. *Predicción cualitativa:*
+   Reactivos gaseosos: $1\,\text{mol de N}_2 + 3\,\text{moles de H}_2 = 4\,\text{moles de gas}$.
+   Productos gaseosos: $2\,\text{moles de NH}_3$.
+   Al pasar de 4 moles de gas libre a solo 2 moles de gas, disminuye drásticamente el número de partículas independientes y el volumen molar estadístico; por lo tanto, se predice rigurosamente que $\Delta S^\circ_{\text{rxn}} < 0$.
+2. *Calcular mediante sumatoria:*
+   $$\Delta S^\circ_{\text{rxn}} = [2 \cdot S^\circ(\text{NH}_3)] - [1 \cdot S^\circ(\text{N}_2) + 3 \cdot S^\circ(\text{H}_2)]$$
+3. *Sustituir los valores numéricos:*
+   $$\Delta S^\circ_{\text{rxn}} = [2(192.3)] - [1(191.5) + 3(130.6)]\,\frac{\text{J}}{\text{K}}$$
+   $$\Delta S^\circ_{\text{rxn}} = 384.6 - [191.5 + 391.8] = 384.6 - 583.3 = -198.7\,\text{J/K}$$
+   *Interpretación:* La entropía del sistema químico disminuye en $-198.7\,\text{J/K}$. Para que esta reacción sea termodinámicamente espontánea, debe ser suficientemente exotérmica para que el incremento de entropía en los alrededores compense este déficit interno.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el grafito tiene menor entropía molar estándar ($S^\circ = 5.74\,\text{J}/(\text{mol}\cdot\text{K})$) que el diamante ($S^\circ = 2.38\,\text{J}/(\text{mol}\cdot\text{K})$)? ¿Cuál tiene mayor rigidez estructural?
+2. ¿Qué sustancia tiene mayor entropía a $25^\circ\text{C}$: un mol de $\text{NaCl}(s)$ disuelto en agua o un mol de $\text{NaCl}(s)$ cristalino? ¿Por qué?
+3. ¿Por qué no es cero la entropía estándar de los elementos químicos a $298\,\text{K}$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

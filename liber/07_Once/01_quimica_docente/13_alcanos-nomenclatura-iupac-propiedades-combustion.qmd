@@ -1,0 +1,78 @@
+# Hidrocarburos Saturados: Alcanos, Nomenclatura IUPAC y Termoquímica de Combustión
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Hidrocarburos Saturados
+> * **Propósito Docente:** Fundamentar las reglas sistemáticas de nomenclatura IUPAC en alcanos lineales y ramificados, analizar su estabilidad conformacional y modelar cuantitativamente los balances energéticos de su combustión.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los alcanos constituyen la familia fundamental de los hidrocarburos alifáticos saturados, caracterizados por contener exclusivamente enlaces covalentes simples carbono-carbono y carbono-hidrógeno de tipo $\sigma$. Su composición responde a la fórmula empírica molecular general:
+
+$$C_n H_{2n+2}$$
+
+En esta serie homóloga cada término difiere del precedente por la adición de una unidad metileno ($-CH_2-$). Al presentar todos sus átomos de carbono con hibridación tetraédrica $sp^3$, las cadenas carbonadas no son lineales en el espacio tridimensional sino que adoptan una disposición en zigzag con ángulos de enlace próximos a $109.5^\circ$. La ausencia de grupos polares y la pequeña diferencia de electronegatividad entre el carbono ($\chi = 2.55$) y el hidrógeno ($\chi = 2.20$) determinan que los alcanos sean moléculas esencialmente no polares, cuyas interacciones intermoleculares se limitan a fuerzas de dispersión de London. Como consecuencia directa, sus puntos de ebullición crecen de manera monótona con la masa molar y disminuyen con la presencia de ramificaciones que reducen el área de contacto superficial.
+
+La nomenclatura sistemática oficial fue establecida en el Congreso de Ginebra de 1892 y actualizada continuamente por la Unión Internacional de Química Pura y Aplicada (IUPAC). La asignación del nombre unívoco se rige por una secuencia de principios analíticos:
+
+1. **Identificación de la cadena principal:** Se selecciona la cadena continua más larga de átomos de carbono. En caso de existir dos o más cadenas con igual longitud, se elige aquella que contenga el mayor número de ramificaciones o cadenas laterales.
+2. **Numeración de la cadena principal:** Se numera la secuencia de carbonos de un extremo a otro, asignando los localizadores numéricos más bajos posibles a los puntos de ramificación en la primera discrepancia encontrada.
+3. **Identificación y ensamblaje de sustituyentes:** Los grupos alquilo unidos a la cadena principal se nombran sustituyendo el sufijo *-ano* por *-ilo*. En el nombre final, los sustituyentes se listan en estricto orden alfabético precedidos por sus respectivos localizadores separados por guiones, ignorando los prefijos multiplicativos (*di-*, *tri-*, *tetra-*) y los prefijos de posición (*sec-*, *terc-*), pero considerando prefijos como *iso-* y *neo-*.
+
+Desde la perspectiva de la reactividad, los alcanos fueron denominados históricamente *parafinas* (del latín *parum affinis*, escasa afinidad) debido a su gran inercia química frente a ácidos, bases y oxidantes fuertes a temperatura ordinaria. No obstante, en presencia de oxígeno y una fuente de ignición, experimentan reacciones de combustión fuertemente exotérmicas. La combustión completa de un alcano arbitrario se formaliza estequiométricamente según la ecuación general:
+
+$$C_n H_{2n+2} + \left(\frac{3n+1}{2}\right) O_2(g) \longrightarrow n\,CO_2(g) + (n+1)\,H_2O(l)$$
+
+Cuando el suministro de comburente es deficiente, ocurre la combustión incompleta con generación de monóxido de carbono ($CO$) y partículas de carbono elemental u hollín ($C$), con un desprendimiento de entalpía sustancialmente menor y alta toxicidad ambiental.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Asumir que la cadena principal debe ser siempre horizontal:** Confundir la convención de escritura gráfica plana con la conectividad topológica real. Los estudiantes tienden a buscar la cadena más larga solo en línea recta horizontal ignorando las curvaturas espaciales del esqueleto.
+2. **Ordenar los sustituyentes por localizador numérico en lugar de alfabéticamente:** Colocar los sustituyentes en orden numérico creciente (p. ej., escribir *2-metil-4-etiloctano* en lugar del correcto *4-etil-2-metiloctano*).
+3. **Creer que los enlaces simples son estáticos o inmóviles:** Ignorar que a temperatura ambiente las moléculas de alcano experimentan rotación continua alrededor de los enlaces $\sigma$ $C-C$, fluctuando entre conformaciones alternadas de mínima energía y conformaciones eclipsadas de mayor repulsión torsional.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Carretera Principal y sus Salidas:** Comparar la cadena de carbonos con una autopista troncal numerada por hitos kilométricos; la longitud de la autopista define la ciudad de destino (prefijo matriz) y las salidas o desvíos señalizan las ramificaciones (sustituyentes alquilo) con su número exacto de salida.
+2. **Modelización con Plastilina o Esferas Moleculares:** Construir modelos de etano y butano rotando el enlace central para visualizar directamente la tensión estérica y la diferencia energética entre la conformación *anti* y la conformación *gauche*.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Asigne el nombre sistemático IUPAC a la siguiente estructura semidesarrollada y determine cuantitativamente la entalpía estándar de combustión completa ($\Delta H^\circ_{\text{comb}}$) liberada por mol de sustancia, considerando que la entalpía estándar de combustión molar de su isómero lineal (heptano) es de $-4817\,\text{kJ/mol}$. Estructura:
+
+$$CH_3-CH(CH_3)-CH(C_2H_5)-CH_2-CH_3$$
+
+**Solución paso a paso:**
+
+1. *Desglosar la fórmula semidesarrollada para ubicar la cadena continua más larga:*
+   $$CH_3-\overset{CH_3}{\overset{|}{CH}}-\overset{CH_2-CH_3}{\overset{|}{CH}}-CH_2-CH_3$$
+   Si se cuenta en línea recta horizontal se observan 5 carbonos (pentano); sin embargo, al incorporar el sustituyente etilo ($-CH_2-CH_3$) en la cadena continua se obtienen 6 carbonos consecutivos (hexano).
+
+2. *Numerar la cadena principal para obtener la menor combinación de localizadores:*
+   $$C_1(H_3)-C_2(H, CH_3)-C_3(H, CH_3)-C_4(H_2)-C_5(H_2)-C_6(H_3)$$
+   Al numerar de izquierda a derecha, los sustituyentes metilo quedan ubicados en los carbonos 2 y 3. Si se numerara de derecha a izquierda, quedarían en las posiciones 4 y 5. Se selecciona la numeración $2,3$.
+
+3. *Ensamblar el nombre sistemático IUPAC:*
+   $$\text{Nombre IUPAC: } 2,3\text{-dimetilhexano}$$
+   La cadena posee 6 carbonos con dos grupos metilo en las posiciones 2 y 3, por lo que se utiliza el prefijo *di-* antepuesto al sustituyente.
+
+4. *Formular y balancear la ecuación termoquímica de combustión completa:*
+   $$C_8H_{18}(l) + \frac{25}{2}\,O_2(g) \longrightarrow 8\,CO_2(g) + 9\,H_2O(l)$$
+   Un mol de $2,3$-dimetilhexano ($C_8H_{18}$, isómero del octano con masa molar $114.23\,\text{g/mol}$) reacciona estequiométricamente con $12.5\,\text{moles}$ de $O_2$ para generar $8\,\text{moles}$ de $CO_2$ gaseoso y $9\,\text{moles}$ de $H_2O$ líquida.
+
+5. *Calcular la energía calorífica liberada en la combustión de $50.0\,\text{g}$ de este hidrocarburo:*
+   $$n = \frac{50.0\,\text{g}}{114.23\,\text{g/mol}} = 0.4377\,\text{mol}$$
+   El número de moles presentes en la muestra se obtiene dividiendo la masa de reactivo puro entre su masa molar molecular respectiva.
+   $$q = 0.4377\,\text{mol} \times (-5470.5\,\text{kJ/mol}) = -2394.4\,\text{kJ}$$
+   El calor liberado a presión constante es directamente proporcional a la cantidad molar del combustible consumido, desprendiendo aproximadamente $2.39 \times 10^3\,\text{kJ}$ hacia los alrededores.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el punto de ebullición del pentano lineal ($36.1^\circ\text{C}$) es sustancialmente mayor que el de su isómero 2,2-dimetilpropano o neopentano ($9.5^\circ\text{C}$), a pesar de tener idéntica fórmula molecular?
+2. ¿Qué factores fisicoquímicos explican que los primeros cuatro alcanos sean gaseosos a temperatura ambiente mientras que los comprendidos entre 5 y 17 carbonos sean líquidos?
+3. ¿Cómo se relaciona la formación de monóxido de carbono durante la combustión incompleta con la afinidad de unión por la hemoglobina sanguínea?

@@ -1,0 +1,77 @@
+# Reactivo Limitante y Reactivo en Exceso: Algoritmo Sistemático
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estequiometría de Reacción
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En los procesos químicos reales de laboratorio e industria, los reactivos casi nunca se mezclan en proporciones estequiométricas exactas. Uno de los reactivos se consume por completo primero, deteniendo la reacción e impidiendo que los demás reactivos sigan transformándose:
+
+1. **Reactivo Limitante ($RL$):** Es el reactivo que se agota totalmente en primer lugar. Determina y limita de forma estricta la cantidad máxima teórica de producto que puede formarse.
+2. **Reactivo en Exceso ($RE$):** Es el reactivo que no se consume por completo; al finalizar la reacción queda una fracción sin reaccionar que permanece mezclada con los productos.
+
+Para identificar el reactivo limitante de manera cuantitativa infalible, se divide la cantidad de moles disponibles de cada reactivo entre su respectivo coeficiente estequiométrico en la ecuación balanceada: **el cociente numérico menor señala inequívocamente al reactivo limitante**.
+
+### Formalización Matemática y Leyes Físicas
+Criterio del cociente molar normalizado:
+$$R_i = \frac{n_i^{\text{disponible}}}{\nu_i}$$
+$$RL = \min(R_1, R_2, \dots, R_k)$$
+Cálculo de la cantidad de reactivo en exceso remanente:
+$$n_{RE,\text{reaccionado}} = n_{RL} \times \left( \frac{\nu_{RE}}{\nu_{RL}} \right)$$
+$$n_{RE,\text{sobrante}} = n_{RE,\text{inicial}} - n_{RE,\text{reaccionado}}$$
+$$m_{RE,\text{sobrante}} = n_{RE,\text{sobrante}} \times M_{RE}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que el reactivo limitante es siempre el que tiene menor masa en gramos (el limitante depende del número de moles y de los coeficientes estequiométricos, no de la masa en la balanza).
+2. Intentar calcular el producto formado utilizando la cantidad del reactivo en exceso.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los sándwiches de jamón y queso:** Para hacer un sándwich necesitas 2 rebanadas de pan, 1 tajada de jamón y 1 de queso. Si en la nevera tienes 20 rebanadas de pan, 8 tajadas de jamón y 15 de queso: ¿cuántos sándwiches puedes hacer? Sólo 8 sándwiches, porque el jamón se acaba primero. El jamón es el reactivo limitante; el pan y el queso son reactivos en exceso que sobran en la nevera.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se mezclan $50.0\,\text{g}$ de nitrógeno ($N_2$) con $15.0\,\text{g}$ de hidrógeno ($H_2$) para producir amoníaco:
+$$N_2(g) + 3 H_2(g) \longrightarrow 2 NH_3(g)$$
+
+A) Identifique el reactivo limitante.
+b) Calcule los gramos de $NH_3$ formados teóricamente.
+c) Calcule cuántos gramos del reactivo en exceso quedan sin reaccionar.
+
+**Paso 1:** Moles disponibles de cada reactivo:
+$$n(N_2) = \frac{50.0\,\text{g}}{28.02\,\text{g/mol}} = 1.784\,\text{mol}$$
+$$n(H_2) = \frac{15.0\,\text{g}}{2.016\,\text{g/mol}} = 7.440\,\text{mol}$$
+**Paso 2:** Prueba del cociente estequiométrico:
+$$\text{Para } N_2: \frac{1.784}{1} = 1.784$$
+$$\text{Para } H_2: \frac{7.440}{3} = 2.480$$
+Como $1.784 < 2.480$, el **reactivo limitante es el $N_2$** y el $H_2$ es el reactivo en exceso.
+
+**Paso 3:** Gramos de amoníaco formados a partir del reactivo limitante:
+$$n(NH_3) = 1.784\,\text{mol } N_2 \times \left( \frac{2\,\text{mol } NH_3}{1\,\text{mol } N_2} \right) = 3.568\,\text{mol } NH_3$$
+$$m(NH_3) = 3.568\,\text{mol} \times 17.03\,\text{g/mol} = 60.76\,\text{g de } NH_3$$
+
+**Paso 4:** Cantidad de reactivo en exceso ($H_2$) que sobra:
+$$n(H_2)_{\text{reaccionado}} = 1.784\,\text{mol } N_2 \times 3 = 5.352\,\text{mol } H_2$$
+$$n(H_2)_{\text{sobrante}} = 7.440 - 5.352 = 2.088\,\text{mol de } H_2$$
+$$m(H_2)_{\text{sobrante}} = 2.088\,\text{mol} \times 2.016\,\text{g/mol} = 4.21\,\text{g de } H_2\,\text{sin reaccionar}$$
+*(Verificación de Lavoisier: $50.0\,\text{g} + 15.0\,\text{g} = 65.0\,\text{g}$ iniciales; productos y sobrante: $60.76 + 4.21 = 64.97 \approx 65.0\,\text{g}$).*
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué en los procesos industriales a menudo se utiliza intencionalmente un reactivo muy barato (como el aire o el agua) en gran exceso?
+2. Si en una reacción química ambos cocientes molares resultan exactamente iguales, ¿cuál es el reactivo limitante?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,55 @@
+# El Enlace Metálico: Modelo del Mar de Electrones y Propiedades
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Enlace Químico y Estructura Molecular
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los metales presentan una estructura cristalina compacta (redes cúbicas centradas en el cuerpo, en las caras o hexagonales compactas) con números de coordinación elevados ($8$ o $12$). Dado que los átomos metálicos poseen pocas valencias ($1, 2$ o $3$) y bajas energías de ionización, no pueden formar enlaces covalentes localizados pares a pares.
+
+Paul Drude y Hendrik Lorentz propusieron el **modelo del mar de electrones** (gas electrónico), refinado posteriormente por Felix Bloch en la **teoría de bandas**. En este modelo, los cationes metálicos fijos forman una red periódica regular sumergida en una 'piscina' de electrones de valencia completamente deslocalizados que se mueven con libertad a través de todo el cristal, actuando como un cemento electrostático cohesivo multidireccional.
+
+### Formalización Matemática y Leyes Físicas
+Conductividad eléctrica en metales (Ley de Ohm microscópica):
+$$\vec{J} = \sigma \vec{E} = \frac{n e^2 \tau}{m_e} \vec{E}$$
+Donde $n$ es la densidad de electrones libres y $\tau$ el tiempo de relajación entre colisiones con los fonones de la red.
+Relación de Wiedemann-Franz (conductividad térmica y eléctrica acopladas):
+$$\frac{\kappa}{\sigma T} = L = \frac{\pi^2 k_B^2}{3 e^2} \approx 2.44 \times 10^{-8}\,\text{W}\cdot\Omega/\text{K}^2$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que los metales conducen electricidad porque sus núcleos atómicos se mueven.
+2. Confundir maleabilidad con fragilidad (los metales son maleables porque los planos de cationes pueden deslizarse sin que se rompan enlaces electrostáticos con el mar de electrones; los cristales iónicos son quebradizos porque al desplazarse enfrentan cargas iguales que se repelen catastróficamente).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los balines en miel:** Los cationes metálicos son rodamientos esféricos pesados y el mar de electrones es miel espesa y elástica que los envuelve. Si golpeas los balines con un martillo, se deslizan y cambian de forma pero la miel los sigue pegando firmemente sin romperse.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la densidad numérica de electrones libres ($n$) en el cobre metálico sabiendo que cristaliza en red FCC con densidad $\rho = 8.96\,\text{g/cm}^3$, masa molar $M = 63.55\,\text{g/mol}$ y cada átomo de cobre aporta $1$ electrón de valencia ($4s^1$) al mar de electrones.
+
+**Paso 1:** Número de átomos de cobre por centímetro cúbico:
+$$n_{\text{átomos}} = \frac{\rho \cdot N_A}{M} = \frac{(8.96\,\text{g/cm}^3)(6.022 \times 10^{23}\,\text{átomos/mol})}{63.55\,\text{g/mol}} = 8.49 \times 10^{22}\,\text{átomos/cm}^3$$
+**Paso 2:** Densidad de electrones libres en unidades SI:
+$$n = 8.49 \times 10^{22}\,\text{electrones/cm}^3 = 8.49 \times 10^{28}\,\text{electrones/m}^3$$
+Esta altísima densidad de portadores libres de carga explica la extraordinaria conductividad eléctrica y térmica del cobre.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la conductividad eléctrica de un metal disminuye cuando aumenta la temperatura, a diferencia de los electrolitos líquidos?
+2. ¿Por qué los metales tienen brillo característico e interactúan fuertemente con la luz visible?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

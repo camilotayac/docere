@@ -1,0 +1,70 @@
+# Fórmulas Moleculares y Análisis Cuantitativo por Combustión
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **fórmula molecular** indica el número real y exacto de átomos de cada elemento presentes en una molécula discreta. Es siempre un múltiplo entero ($n$) de la fórmula empírica:
+
+$$\text{Fórmula Molecular} = (\text{Fórmula Empírica})_n \qquad (n = 1, 2, 3, \dots)$$
+
+El factor multiplicador entero $n$ se determina conociendo experimentalmente la masa molar real de la sustancia (obtenida por espectrometría de masas o métodos coligativos/gaseosos) y dividiéndola entre la masa de la fórmula empírica calculada:
+
+$$n = \frac{M_{\text{molecular experimental}}}{M_{\text{fórmula empírica}}}$$
+
+En química orgánica, el método analítico fundamental es el **análisis por combustión**: una muestra de hidrocarburo se quema completamente en atmósfera de oxígeno puro; todo el carbono se oxida cuantitativamente a $CO_2$ (absorbido en $NaOH/KOH$) y todo el hidrógeno se oxida a $H_2O$ (absorbido en $Mg(ClO_4)_2$).
+
+### Formalización Matemática y Leyes Físicas
+Cálculo estequiométrico en análisis por combustión:
+$$m_C = m_{CO_2} \times \left( \frac{12.011\,\text{g C}}{44.01\,\text{g } CO_2} \right)$$
+$$m_H = m_{H_2O} \times \left( \frac{2.016\,\text{g H}}{18.016\,\text{g } H_2O} \right)$$
+Masa de oxígeno (por diferencia respecto a la muestra total):
+$$m_O = m_{\text{muestra}} - (m_C + m_H)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar calcular el oxígeno a partir del $CO_2$ o $H_2O$ producidos (un grave error, puesto que se añadió oxígeno externo durante la combustión). El oxígeno del compuesto se calcula siempre por sustracción.
+2. Aceptar factores $n$ no enteros (si $n=1.98$, se redondea a $2$; si resulta $1.5$, hubo un error previo en la fórmula empírica).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del eslabón y la cadena:** La fórmula empírica es el diseño de un eslabón individual de una cadena; la fórmula molecular es la cadena completa. Para saber cuántos eslabones tiene la cadena, pesas la cadena entera en la báscula y divides ese peso entre el peso de un solo eslabón.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La combustión completa de $1.152\,\text{g}$ de un compuesto orgánico que contiene $C, H$ y $O$ produce $2.201\,\text{g}$ de $CO_2$ y $1.351\,\text{g}$ de $H_2O$. En un espectrómetro de masas se determinó que su masa molar es $46.07\,\text{g/mol}$. Determine su fórmula empírica y su fórmula molecular.
+
+**Paso 1:** Masa de carbono e hidrógeno a partir de los productos:
+$$m_C = 2.201\,\text{g } CO_2 \times \frac{12.011}{44.01} = 0.6008\,\text{g de C}$$
+$$m_H = 1.351\,\text{g } H_2O \times \frac{2.016}{18.016} = 0.1512\,\text{g de H}$$
+**Paso 2:** Masa de oxígeno por diferencia:
+$$m_O = 1.152\,\text{g} - (0.6008 + 0.1512)\,\text{g} = 1.152 - 0.7520 = 0.4000\,\text{g de O}$$
+**Paso 3:** Moles de cada elemento:
+$$n_C = \frac{0.6008}{12.011} = 0.05002\,\text{mol}; \quad n_H = \frac{0.1512}{1.008} = 0.1500\,\text{mol}; \quad n_O = \frac{0.4000}{16.00} = 0.02500\,\text{mol}$$
+Dividiendo entre el menor ($0.02500$):
+$$C: \frac{0.05002}{0.02500} = 2.00; \quad H: \frac{0.1500}{0.02500} = 6.00; \quad O: \frac{0.02500}{0.02500} = 1.00$$
+Fórmula empírica: **$C_2H_6O$** ($M_{\text{empírica}} = 2(12.01) + 6(1.008) + 16.00 = 46.07\,\text{g/mol}$).
+
+**Paso 4:** Determinación del factor $n$:
+$$n = \frac{M_{\text{real}}}{M_{\text{emp}}} = \frac{46.07\,\text{g/mol}}{46.07\,\text{g/mol}} = 1$$
+La fórmula molecular coincide con la empírica: **$C_2H_6O$** (etanol o dimetiléter).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la glucosa ($C_6H_{12}O_6$), el ácido acético ($C_2H_4O_2$) y el formaldehído ($CH_2O$) tienen la misma fórmula empírica $CH_2O$?
+2. ¿Cómo se determina experimentalmente la masa molar de un gas desconocido a partir de la ley del gas ideal?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

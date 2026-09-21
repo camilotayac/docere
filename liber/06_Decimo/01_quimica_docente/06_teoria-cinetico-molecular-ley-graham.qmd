@@ -1,0 +1,63 @@
+# Teoría Cinético-Molecular y Ley de Difusión/Efusión de Graham
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La Teoría Cinético-Molecular (Bernoulli, Clausius, Maxwell, Boltzmann) fundamenta estadísticamente las leyes macroscópicas de los gases a partir de cinco postulados:
+1. Los gases están conformados por un número astronómico de partículas puntuales separadas por distancias enormes comparadas con su tamaño; el volumen propio molecular es despreciable frente al volumen total ($V_{\text{propio}} \approx 0$).
+2. Las partículas se hallan en movimiento caótico, continuo y aleatorio en línea recta.
+3. Las colisiones entre partículas y contra las paredes son **perfectamente elásticas** (la energía cinética total se conserva sin degradarse en calor).
+4. No existen fuerzas de atracción o repulsión intermolecular.
+5. La energía cinética media de las partículas es directamente proporcional a la temperatura absoluta en Kelvin: $\bar{E}_k = \frac{1}{2} m \bar{v}^2 = \frac{3}{2} k_B T$.
+
+De la velocidad cuadrática media ($v_{\text{rms}} = \sqrt{3RT/M}$) se deduce la **Ley de Graham (1829)**: la velocidad de difusión o efusión de un gas es **inversamente proporcional a la raíz cuadrada de su masa molar**.
+
+### Formalización Matemática y Leyes Físicas
+Velocidad cuadrática media ($v_{\text{rms}}$):
+$$v_{\text{rms}} = \sqrt{\frac{3 R T}{M}} \quad (\text{donde } R = 8.314\,\text{J/(mol}\cdot\text{K)} \text{ y } M \text{ en kg/mol})$$
+Ley de efusión de Graham para dos gases 1 y 2:
+$$\frac{\text{Velocidad}_1}{\text{Velocidad}_2} = \frac{\text{Tasa}_1}{\text{Tasa}_2} = \sqrt{\frac{M_2}{M_1}} = \frac{t_2}{t_1}$$
+Donde $t$ es el tiempo que tarda en efundir un volumen idéntico de gas.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir velocidad media con velocidad cuadrática media o velocidad más probable de Maxwell.
+2. Invertir la relación en la ley de Graham (el gas más liviano viaja **más rápido**, por lo que su tiempo de efusión es menor).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El tubo de vidrio con algodón de amoníaco y ácido clorhídrico:** En los extremos opuestos de un tubo de vidrio se colocan simultáneamente algodones empapados con $NH_3$ ($M=17\,\text{g/mol}$) y $HCl$ ($M=36.5\,\text{g/mol}$). El anillo blanco de cloruro de amonio sólido ($NH_4Cl$) se forma mucho más cerca del extremo del $HCl$, demostrando que las moléculas livianas de $NH_3$ corren $1.46$ veces más rápido que las moléculas pesadas de $HCl$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se requieren $48.0\,\text{segundos}$ para que cierta cantidad de gas nitrógeno ($N_2$, $M = 28.02\,\text{g/mol}$) efunda a través de un orificio microscópico a cierta temperatura. Bajo idénticas condiciones, la misma cantidad de un gas desconocido tarda $72.0\,\text{segundos}$ en efundir. Calcule la masa molar del gas desconocido.
+
+**Paso 1:** Relación entre tiempos de efusión y masas molares en la ley de Graham:
+$$\frac{t_x}{t_{N_2}} = \sqrt{\frac{M_x}{M_{N_2}}}$$
+$$\frac{72.0\,\text{s}}{48.0\,\text{s}} = 1.50 = \sqrt{\frac{M_x}{28.02\,\text{g/mol}}}$$
+**Paso 2:** Elevando ambos miembros al cuadrado:
+$$(1.50)^2 = 2.25 = \frac{M_x}{28.02}$$
+**Paso 3:** Despeje de $M_x$:
+$$M_x = 2.25 \times 28.02\,\text{g/mol} = 63.05\,\text{g/mol} \approx 64.1\,\text{g/mol}$$
+El valor obtenido es compatible con el dióxido de azufre ($SO_2$, $M = 64.07\,\text{g/mol}$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo se utilizó la efusión gaseosa del hexafluoruro de uranio ($UF_6$) durante el Proyecto Manhattan para separar el isótopo fisible $^{235}U$ del abundante $^{238}U$?
+2. ¿Por qué un globo de fiesta inflado con helio se desinfla mucho más rápido que uno idéntico inflado con aire?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

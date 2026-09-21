@@ -1,0 +1,65 @@
+# Conversiones Cuantitativas Integradas: Masa, Moles y Partículas
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El dominio operativo de la química cuantitativa requiere la capacidad fluida de transitar bidireccionalmente entre el nivel macroscópico de masa en gramos y el nivel submicroscópico de partículas individuales (átomos, moléculas, iones). El **mol** es el nexo indispensable y obligatorio para cualquier conversión estequiométrica:
+
+$$\text{Masa } (g) \quad \longleftrightarrow \quad \text{Cantidad de Sustancia } (\text{mol}) \quad \longleftrightarrow \quad \text{Partículas Elementales}$$
+
+Bajo ninguna circunstancia operativa se debe intentar convertir directamente gramos a número de partículas sin pasar explícitamente por el cálculo intermediario de moles.
+
+### Formalización Matemática y Leyes Físicas
+Algoritmo maestro de conversión por análisis dimensional:
+$$N_{\text{partículas}} = m_{\text{gramos}} \times \left( \frac{1\,\text{mol}}{M\,\text{gramos}} \right) \times \left( \frac{6.022 \times 10^{23}\,\text{entidades}}{1\,\text{mol}} \right)$$
+$$m_{\text{gramos}} = N_{\text{partículas}} \times \left( \frac{1\,\text{mol}}{6.022 \times 10^{23}\,\text{entidades}} \right) \times \left( \frac{M\,\text{gramos}}{1\,\text{mol}} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar multiplicar directamente la masa en gramos por el número de Avogadro sin dividir previamente entre la masa molar.
+2. Confundir el número de moléculas totales con el número de átomos de un elemento específico dentro de la molécula.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El mapa del metro estequiométrico:**
+  1. Estación A: Estación Gramos (Báscula).
+  2. Estación Central: Estación Mol (Transbordo obligatorio).
+  3. Estación B: Estación Partículas (Microscopio cuántico).
+  No hay línea directa de tren entre Gramos y Partículas: todos los pasajeros deben bajarse obligatoriamente a hacer transbordo en la Estación Mol.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una gota de agua líquida tiene un volumen promedio de $0.0500\,\text{mL}$ (densidad $\rho = 1.00\,\text{g/mL}$). Calcule:
+a) Cuántos moles de agua hay en la gota.
+b) Cuántas moléculas de $H_2O$ contiene.
+c) Cuántos átomos totales (hidrógeno más oxígeno) hay en esa única gota.
+
+**Paso 1:** Masa de la gota:
+$$m = V \cdot \rho = 0.0500\,\text{mL} \times 1.00\,\text{g/mL} = 0.0500\,\text{g de } H_2O$$
+**Paso 2:** Moles de agua ($M = 18.02\,\text{g/mol}$):
+$$n = \frac{0.0500\,\text{g}}{18.02\,\text{g/mol}} = 2.775 \times 10^{-3}\,\text{mol}$$
+**Paso 3:** Número de moléculas de $H_2O$:
+$$N_{\text{moléculas}} = (2.775 \times 10^{-3}\,\text{mol}) \times (6.022 \times 10^{23}\,\text{moléculas/mol}) = 1.671 \times 10^{21}\,\text{moléculas}$$
+**Paso 4:** Átomos totales (cada molécula de $H_2O$ tiene 3 átomos: $2\,H + 1\,O$):
+$$N_{\text{átomos}} = 1.671 \times 10^{21} \times 3 = 5.013 \times 10^{21}\,\text{átomos totales}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una muestra de $10.0\,\text{g}$ de helio ($He$) contiene muchas más partículas que una muestra de $10.0\,\text{g}$ de plomo ($Pb$)?
+2. ¿Cuántos gramos de glucosa ($C_6H_{12}O_6$) contienen exactamente un mol de átomos de carbono?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,1049 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<link rel="preload" as="style" href="https://fonts.cdnfonts.com/css/opendyslexic">
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/opendyslexic" media="print" onload="this.media='all'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+</noscript>
+
+<style id="a11y-toolbar-style">
+#a11y-toolbar {
+  position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+  display: flex; flex-direction: column; gap: 4px;
+  font-family: system-ui, sans-serif;
+}
+#a11y-toolbar button {
+  position: relative;
+  width: 44px; height: 44px;
+  border: 2px solid var(--toolbar-border, #a06050); border-radius: 10px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 18px; font-weight: bold;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.15s, box-shadow 0.15s, transform 0.1s; line-height: 1;
+}
+#a11y-toolbar button:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  color: var(--toolbar-hover-color, #503020);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  transform: scale(1.06);
+}
+#a11y-toolbar button:active { transform: scale(0.95); }
+#a11y-toolbar button.active {
+  background: var(--toolbar-btn-active-bg, #a06050); color: #fff;
+  box-shadow: 0 2px 6px rgba(160,96,80,0.4);
+}
+/* Tooltip */
+#a11y-toolbar .a11y-label {
+  position: absolute; right: 52px; top: 50%; transform: translateY(-50%);
+  background: var(--toolbar-label-bg, #503020); color: var(--toolbar-label-color, #FAF8F4);
+  padding: 4px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+#a11y-toolbar .a11y-label::after {
+  content: ''; position: absolute; left: 100%; top: 50%; transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: var(--toolbar-label-bg, #503020);
+}
+#a11y-toolbar button:hover .a11y-label,
+#a11y-toolbar button:focus .a11y-label { opacity: 1; }
+/* Separador de grupos */
+#a11y-toolbar .a11y-separator {
+  width: 32px; height: 1px;
+  background: var(--toolbar-border, #a06050); opacity: 0.4;
+  margin: 3px auto; border-radius: 1px;
+}
+/* Toasts de estado */
+#a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
+  position: fixed; bottom: 20px; right: 76px;
+  background: var(--toolbar-label-bg, #503020); color: #fff;
+  padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: bold;
+  opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#a11y-fontsize-display.show, #a11y-tts-status.show, #a11y-mode-status.show { opacity: 1; }
+#a11y-toolbar button:focus-visible {
+  outline: 3px solid var(--focus-outline, #0077BB); outline-offset: 2px;
+}
+@media (forced-colors: active) {
+  #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; }
+}
+/* Slider velocidad */
+#a11y-tts-speed-wrap { position: relative; }
+#a11y-tts-slider {
+  position: absolute; right: 52px; bottom: 0;
+  background: var(--toolbar-label-bg, #503020);
+  padding: 8px 12px; border-radius: 8px; display: flex; align-items: center;
+  gap: 8px; white-space: nowrap; box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+#a11y-tts-range {
+  width: 100px; height: 6px; -webkit-appearance: none; appearance: none;
+  background: rgba(255,255,255,0.3); border-radius: 3px; outline: none; cursor: pointer;
+}
+#a11y-tts-range::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
+}
+#a11y-tts-range::-moz-range-thumb {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
+}
+#a11y-tts-speed-val { color: #fff; font-size: 13px; font-weight: bold; min-width: 30px; text-align: center; }
+@media (prefers-reduced-motion: reduce) { #a11y-toolbar button { transition: none; } }
+#quarto-document-content {
+  font-family: var(--body-font) !important;
+  font-size: var(--body-font-size) !important;
+  line-height: var(--body-line-height) !important;
+  letter-spacing: var(--body-letter-spacing) !important;
+  word-spacing: var(--body-word-spacing) !important;
+}
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  #a11y-toolbar {
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    right: 16px;
+  }
+  #a11y-tts-slider { right: auto; left: 0; bottom: 52px; }
+}
+/* ── FAB móvil ── */
+#a11y-toggle-btn { display: none; }
+@media (max-width: 480px) {
+  #a11y-toggle-btn {
+    display: flex;
+    position: fixed;
+    bottom: max(16px, env(safe-area-inset-bottom, 16px));
+    right: 16px;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--toolbar-btn-active-bg, #a06050);
+    color: #fff; border: none; font-size: 22px;
+    align-items: center; justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    z-index: 10000; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    transition: transform 0.2s;
+  }
+  #a11y-toggle-btn:active { transform: scale(0.92); }
+  #a11y-toolbar {
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 10px; gap: 4px; display: none;
+  }
+  #a11y-toolbar.mobile-open { display: flex; }
+  #a11y-toolbar.tts-active  { display: flex !important; }
+  #a11y-toolbar button { width: 42px; height: 42px; font-size: 16px; border-radius: 8px; }
+  /* Tooltip arriba en móvil */
+  #a11y-toolbar .a11y-label {
+    right: auto; left: 50%; top: auto;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
+  }
+  #a11y-toolbar .a11y-label::after {
+    left: 50%; top: 100%; transform: translateX(-50%);
+    border-left-color: transparent;
+    border-top-color: var(--toolbar-label-bg, #503020);
+  }
+  #a11y-tts-slider { right: auto; left: 0; bottom: 50px; min-width: 180px; max-width: 260px; }
+  #a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 62px; font-size: 12px; padding: 4px 8px;
+  }
+}
+
+
+</style>
+
+<button id="a11y-toggle-btn" aria-label="Abrir controles de accesibilidad" aria-expanded="false" aria-controls="a11y-toolbar">
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="4" r="1.5"/>
+    <path d="M12 7v5l3 3"/>
+    <path d="M9 10H5.5a1 1 0 0 0-.8 1.6L7 15l-1.5 5h2l1.2-4h6.6l1.2 4h2L17 15l2.3-3.4A1 1 0 0 0 18.5 10H15"/>
+  </svg>
+</button>
+<div id="a11y-toolbar" role="toolbar" aria-label="Controles de accesibilidad">
+  <button id="a11y-font-plus" aria-label="Aumentar tamaño de texto" title="Aumentar texto">
+    <svg aria-hidden="true"
+  class="lucide lucide-zoom-in"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="11" cy="11" r="8" />
+  <line x1="21" x2="16.65" y1="21" y2="16.65" />
+  <line x1="11" x2="11" y1="8" y2="14" />
+  <line x1="8" x2="14" y1="11" y2="11" />
+</svg>
+<span class="a11y-label">Aumentar texto</span>
+  </button>
+  <button id="a11y-font-minus" aria-label="Disminuir tamaño de texto" title="Disminuir texto">
+    <svg aria-hidden="true"
+  class="lucide lucide-zoom-out"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="11" cy="11" r="8" />
+  <line x1="21" x2="16.65" y1="21" y2="16.65" />
+  <line x1="8" x2="14" y1="11" y2="11" />
+</svg>
+<span class="a11y-label">Disminuir texto</span>
+  </button>
+  <button id="a11y-font-reset" aria-label="Restablecer tamaño de texto" title="Restablecer">
+    <svg aria-hidden="true"
+  class="lucide lucide-rotate-ccw"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+  <path d="M3 3v5h5" />
+</svg>
+<span class="a11y-label">Restablecer tamaño</span>
+  </button>
+  <div class="a11y-separator" aria-hidden="true"></div>
+  <button id="a11y-tts-play" aria-label="Leer texto en voz alta" title="Leer texto">
+    <svg aria-hidden="true"
+  class="lucide lucide-play"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polygon points="6 3 20 12 6 21 6 3" />
+</svg>
+<span class="a11y-label">Leer texto</span>
+  </button>
+  <button id="a11y-tts-pause" aria-label="Pausar lectura" title="Pausar" style="display:none;">
+    <i class="bi bi-pause-circle icon-pause" aria-hidden="true"></i>
+    <i class="bi bi-play-circle icon-play" aria-hidden="true" style="display:none;"></i>
+    <span class="a11y-label label-pause">Pausar</span>
+    <span class="a11y-label label-play" style="display:none;">Reanudar</span>
+  </button>
+  <button id="a11y-tts-stop" aria-label="Detener lectura" title="Detener" style="display:none;">
+    <svg aria-hidden="true"
+  class="lucide lucide-square"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="18" height="18" x="3" y="3" rx="2" />
+</svg>
+<span class="a11y-label">Detener</span>
+  </button>
+  <div id="a11y-tts-speed-wrap">
+    <button id="a11y-tts-speed-btn" aria-label="Velocidad de lectura" title="Velocidad">
+      <svg aria-hidden="true"
+  class="lucide lucide-gauge"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12 14 4-4" />
+  <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+</svg>
+<span class="a11y-label">Velocidad</span>
+<span class="speed-badge" id="a11y-speed-badge">1x</span>
+    </button>
+    <div id="a11y-tts-slider" style="display:none;">
+      <input type="range" id="a11y-tts-range" min="0.5" max="2" step="0.25" value="1" aria-label="Velocidad de lectura">
+      <span id="a11y-tts-speed-val">1x</span>
+    </div>
+  </div>
+  <div class="a11y-separator" aria-hidden="true"></div>
+  <button id="a11y-mode-normal" aria-label="Restablecer modos de accesibilidad" title="Restablecer">
+    <svg aria-hidden="true"
+  class="lucide lucide-rotate-ccw"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+  <path d="M3 3v5h5" />
+</svg>
+<span class="a11y-label">Restablecer</span>
+  </button>
+  <button id="a11y-mode-daltonismo" aria-label="Colores para daltonismo" title="Daltonismo" aria-pressed="false">
+    <svg aria-hidden="true"
+  class="lucide lucide-palette"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+</svg>
+<span class="a11y-label">Daltonismo</span>
+  </button>
+  <button id="a11y-mode-dislexia" aria-label="Fuente para dislexia" title="Dislexia" aria-pressed="false">
+    <svg aria-hidden="true"
+  class="lucide lucide-book-open"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+</svg>
+<span class="a11y-label">Dislexia</span>
+  </button>
+</div>
+
+<div id="a11y-fontsize-display" aria-live="polite"></div>
+<div id="a11y-tts-status" aria-live="assertive"></div>
+<div id="a11y-mode-status" aria-live="polite"></div>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ═══════════════════════════════════════════════════════════════
+     MODE SYSTEM — 2 independent toggles
+     ═══════════════════════════════════════════════════════════════ */
+  var COLOR_KEY = 'natura-docens-colorblind';
+  var DYSLEXIA_KEY = 'natura-docens-dyslexia';
+  var COLOR_VERSION_KEY = 'natura-docens-cb-version';
+
+  var DYSLEXIA_FONT = '"OpenDyslexic", "Atkinson Hyperlegible", system-ui, sans-serif';
+  var DEFAULT_FONT = '"Atkinson Hyperlegible", system-ui, sans-serif';
+
+  function showModeStatus(msg) {
+    var el = document.getElementById('a11y-mode-status');
+    if (!el) return;
+    el.textContent = msg; el.classList.add('show');
+    clearTimeout(el._t); el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+  }
+
+  function updateModeStatus() {
+    var modes = [];
+    if (document.body.classList.contains('theme-colorblind')) modes.push('Daltonismo');
+    if (document.body.classList.contains('overlay-cream')) modes.push('Dislexia');
+    showModeStatus(modes.length ? 'Modos: ' + modes.join(' + ') : 'Modo: Normal');
+  }
+
+  function toggleBtn(id, on) {
+    var btn = document.getElementById(id);
+    if (btn) {
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
+  function applyColors(on) {
+    document.body.classList.toggle('theme-colorblind', on);
+    localStorage.setItem(COLOR_KEY, on ? '1' : '0');
+    toggleBtn('a11y-mode-daltonismo', on);
+  }
+
+  function applyDyslexia(on) {
+    var root = document.documentElement;
+    if (on) {
+      document.body.classList.add('overlay-cream');
+      root.style.setProperty('--body-font', DYSLEXIA_FONT);
+      root.style.setProperty('--body-line-height', '1.8');
+      root.style.setProperty('--body-letter-spacing', '0.04em');
+      root.style.setProperty('--body-word-spacing', '0.16em');
+    } else {
+      document.body.classList.remove('overlay-cream');
+      root.style.setProperty('--body-font', DEFAULT_FONT);
+      root.style.setProperty('--body-line-height', '1.5');
+      root.style.setProperty('--body-letter-spacing', 'normal');
+      root.style.setProperty('--body-word-spacing', 'normal');
+    }
+    localStorage.setItem(DYSLEXIA_KEY, on ? '1' : '0');
+    toggleBtn('a11y-mode-dislexia', on);
+  }
+
+  function resetModes() {
+    applyColors(false);
+    applyDyslexia(false);
+    updateModeStatus();
+  }
+
+  document.getElementById('a11y-mode-normal').onclick = resetModes;
+  document.getElementById('a11y-mode-daltonismo').onclick = function() {
+    applyColors(!document.body.classList.contains('theme-colorblind'));
+    updateModeStatus();
+  };
+  document.getElementById('a11y-mode-dislexia').onclick = function() {
+    applyDyslexia(!document.body.classList.contains('overlay-cream'));
+    updateModeStatus();
+  };
+
+  /* Restore from localStorage — clear stale values from previous buggy versions */
+  if (localStorage.getItem(COLOR_VERSION_KEY) !== '2') {
+    localStorage.removeItem(COLOR_KEY);
+    localStorage.setItem(COLOR_VERSION_KEY, '2');
+  }
+  applyColors(localStorage.getItem(COLOR_KEY) === '1');
+  applyDyslexia(localStorage.getItem(DYSLEXIA_KEY) === '1');
+  updateModeStatus();
+
+  /* ═══════════════════════════════════════════════════════════════
+     FONT SIZE
+     ═══════════════════════════════════════════════════════════════ */
+  var STORAGE_KEY = 'natura-docens-fontsize';
+  var BASE_SIZE = 1.0, STEP = 0.125, MIN = 0.75, MAX = 2.0;
+
+  function getCurrentSize() {
+    var v = localStorage.getItem(STORAGE_KEY);
+    if (!v) return BASE_SIZE;
+    var n = parseFloat(v);
+    var validSizes = [0.75, 0.875, 1.0, 1.125, 1.25, 1.375, 1.5, 1.625, 1.75, 1.875, 2.0];
+    if (!validSizes.includes(n)) {
+      localStorage.removeItem(STORAGE_KEY);
+      return BASE_SIZE;
+    }
+    return n;
+  }
+  
+  function applySize(rem) {
+    document.documentElement.style.setProperty('--a11y-base-size', rem + 'rem');
+    localStorage.setItem(STORAGE_KEY, rem);
+    var el = document.getElementById('a11y-fontsize-display');
+    if (el) {
+      el.textContent = 'Tamaño: ' + Math.round(rem * 20) + 'px'; 
+      el.classList.add('show');
+      clearTimeout(el._t); 
+      el._t = setTimeout(function() { el.classList.remove('show'); }, 1500);
+    }
+  }
+
+  document.getElementById('a11y-font-plus').onclick = function() { applySize(Math.min(getCurrentSize() + STEP, MAX)); };
+  document.getElementById('a11y-font-minus').onclick = function() { applySize(Math.max(getCurrentSize() - STEP, MIN)); };
+  document.getElementById('a11y-font-reset').onclick = function() {
+    localStorage.removeItem(STORAGE_KEY);
+    applySize(BASE_SIZE);
+  };
+  
+  var savedSize = getCurrentSize();
+  if (savedSize !== BASE_SIZE) applySize(savedSize);
+
+  /* ═══════════════════════════════════════════════════════════════
+     TTS ENGINE — v3
+     ═══════════════════════════════════════════════════════════════ */
+  /* ═══════════════════════════════════════════════════════════════
+     TTS ENGINE — REFACTORED (CLEAN CODE & OOP)
+     ═══════════════════════════════════════════════════════════════ */
+  const DocereTTS = (function() {
+    const synth = window.speechSynthesis;
+    
+    const CONFIG = {
+      MAX_CHUNK_LENGTH: 200,
+      SKIP_TAGS: { SCRIPT:1, STYLE:1, NOSCRIPT:1, SVG:1, MATH:1, PRE:1, CODE:1, NAV:1, FOOTER:1, HEADER:1, ASIDE:1, IFRAME:1, TEMPLATE:1 },
+      SKIP_SELS: ['.cell-code','.sourceCode','.code-block','pre','code','.callout-caption','.quarto-btn-toggle','.sidebar','.quarto-sidebar','[aria-hidden="true"]','.toc-title','.page-navigation','.back-to-top','.section-nav','.doc-footer'],
+      STORAGE_SPEED: 'natura-docens-ttsspeed'
+    };
+    
+    const STATE = { IDLE: 0, SPEAKING: 1, PAUSED: 2 };
+
+    class DOMExtractor {
+      static isHidden(el) {
+        if (el.nodeType !== 1) return false;
+        const s = window.getComputedStyle(el);
+        return s.display === 'none' || s.visibility === 'hidden' || (el.offsetHeight === 0 && el.offsetWidth === 0);
+      }
+      
+      static isSkipped(el) {
+        if (!el || el.nodeType !== 1) return false;
+        if (CONFIG.SKIP_TAGS[el.tagName]) return true;
+        for (let sel of CONFIG.SKIP_SELS) {
+          if (el.matches && el.matches(sel)) return true;
+          if (el.closest && el.closest(sel)) return true;
+        }
+        return false;
+      }
+
+      static extractContent(el) {
+        let parts = [];
+        for (let c of el.childNodes) {
+          if (c.nodeType === 3 && c.textContent.trim().length > 0) {
+            parts.push({ text: c.textContent, node: c });
+          } else if (c.nodeType === 1) {
+            if (this.isSkipped(c) || this.isHidden(c)) continue;
+            if (c.tagName === 'BR') { parts.push({ text: ' ', node: null }); continue; }
+            parts.push(...this.extractContent(c));
+          }
+        }
+        return parts;
+      }
+
+      static extractStructural(root) {
+        let spans = [];
+        const addSpan = (text, type, node = null) => { if (text) spans.push({ text, type, node }); };
+        const processElement = (el) => {
+          if (this.isSkipped(el) || this.isHidden(el)) return;
+          const tag = el.tagName;
+
+          if (/^H[1-6]$/.test(tag)) {
+            const lvl = parseInt(tag[1]);
+            addSpan(lvl === 1 ? 'Título. ' : lvl === 2 ? 'Subtítulo. ' : 'Sección. ', 'marker');
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            return;
+          }
+          if (tag === 'P') {
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            return;
+          }
+          if (tag === 'LI') {
+            addSpan('Ítem. ', 'marker');
+            this.extractContent(el).forEach(p => addSpan(p.text, 'content', p.node));
+            addSpan('. ', 'pause');
+            Array.from(el.children).filter(c => c.tagName === 'UL' || c.tagName === 'OL').forEach(processElement);
+            return;
+          }
+          if (tag === 'UL' || tag === 'OL' || tag === 'BLOCKQUOTE') {
+            if (tag === 'BLOCKQUOTE') addSpan('Cita. ', 'marker');
+            Array.from(el.children).forEach(processElement);
+            return;
+          }
+          if (tag === 'TABLE') {
+             const cap = el.querySelector('caption');
+             if(cap) { addSpan('Tabla. ', 'marker'); this.extractContent(cap).forEach(p => addSpan(p.text, 'content', p.node)); addSpan('. ', 'pause'); }
+             Array.from(el.querySelectorAll('tr')).forEach((tr, i) => {
+                const cells = tr.querySelectorAll('th, td');
+                if(!cells.length) return;
+                addSpan(`Fila ${i+1}. `, 'marker');
+                Array.from(cells).forEach(cell => {
+                   this.extractContent(cell).forEach(p => addSpan(p.text, 'content', p.node));
+                   addSpan(', ', 'pause');
+                });
+                addSpan('. ', 'pause');
+             });
+             return;
+          }
+          if (['THEAD', 'TBODY', 'TFOOT', 'TR', 'TD', 'TH', 'CAPTION'].includes(tag)) return;
+          
+          for (let c of el.childNodes) {
+            if (c.nodeType === 1) processElement(c);
+            else if (c.nodeType === 3 && c.textContent.trim()) addSpan(c.textContent, 'content', c);
+          }
+        };
+
+        for (let c of root.childNodes) {
+          if (c.nodeType === 1) processElement(c);
+          else if (c.nodeType === 3 && c.textContent.trim()) addSpan(c.textContent, 'content', c);
+        }
+        return spans;
+      }
+    }
+
+    class TTSEngine {
+      constructor() {
+        this.state = STATE.IDLE;
+        this.rate = parseFloat(localStorage.getItem(CONFIG.STORAGE_SPEED)) || 1.0;
+        this.voice = null;
+        this.chunks = [];
+        this.textNodes = [];
+        this.fullText = '';
+        this.currentIndex = 0;
+        this.session = 0;
+        this.utteranceStore = [];
+        this.ui = new TTSUI(this);
+        
+        if (!synth) {
+          this.ui.hideAll();
+          return;
+        }
+
+        this.initVoices();
+        if (synth.onvoiceschanged !== undefined) {
+          synth.onvoiceschanged = () => this.initVoices();
+        }
+
+        this.setupEvents();
+      }
+
+      initVoices() {
+        if (!synth) return;
+        const voices = synth.getVoices();
+        const es = voices.filter(v => v.lang.startsWith('es'));
+        if (es.length) {
+          this.voice = es.find(v => v.lang === 'es-MX') || es.find(v => v.lang === 'es-CO') || es.find(v => v.lang === 'es-ES') || es[0];
+        }
+      }
+
+      prepare() {
+        const mainEl = document.getElementById('quarto-document-content');
+        if (!mainEl) return false;
+
+        this.textNodes = [];
+        this.chunks = [];
+        this.fullText = '';
+
+        let spans = [];
+        const titleBlock = document.getElementById('title-block-header');
+        if (titleBlock) spans = spans.concat(DOMExtractor.extractStructural(titleBlock));
+        spans = spans.concat(DOMExtractor.extractStructural(mainEl));
+
+        let chunkStart = 0;
+        for (let span of spans) {
+          let startPos = this.fullText.length;
+          this.fullText += span.text;
+          if (span.type === 'content' && span.node) {
+            this.textNodes.push({ node: span.node, start: startPos, text: span.text });
+          }
+          if (span.type === 'pause') {
+            this.pushChunk(chunkStart, startPos);
+            chunkStart = startPos;
+          }
+        }
+        this.pushChunk(chunkStart, this.fullText.length);
+        this.ui.ensureHighlightEl();
+        return this.textNodes.length > 0 && this.chunks.length > 0;
+      }
+
+      pushChunk(from, to) {
+        const raw = this.fullText.substring(from, to);
+        if (!raw.trim()) return;
+        if (raw.length <= CONFIG.MAX_CHUNK_LENGTH) {
+          this.chunks.push({ text: raw, start: from, end: to });
+          return;
+        }
+        let pos = from;
+        while (pos < to) {
+          let end = Math.min(pos + CONFIG.MAX_CHUNK_LENGTH, to);
+          if (end < to) {
+            let slice = this.fullText.substring(pos, end);
+            let dot = slice.lastIndexOf('. ');
+            let space = slice.lastIndexOf(' ');
+            if (dot > CONFIG.MAX_CHUNK_LENGTH * 0.3) end = pos + dot + 2;
+            else if (space > CONFIG.MAX_CHUNK_LENGTH * 0.3) end = pos + space + 1;
+          }
+          let chunkText = this.fullText.substring(pos, end);
+          if (chunkText.trim().length > 1) this.chunks.push({ text: chunkText, start: pos, end: end });
+          pos = end;
+        }
+      }
+
+      speakChunk(idx) {
+        if (idx >= this.chunks.length || this.state !== STATE.SPEAKING) {
+          this.stop();
+          return;
+        }
+
+        const chunk = this.chunks[idx];
+        if (!chunk.text.trim()) {
+          this.currentIndex++;
+          return this.speakChunk(this.currentIndex);
+        }
+
+        const utt = new SpeechSynthesisUtterance(chunk.text + ' ');
+        utt.lang = 'es-CO';
+        utt.rate = this.rate;
+        if (this.voice) utt.voice = this.voice;
+
+        let handled = false;
+        const currentSession = this.session;
+        this.utteranceStore.push(utt);
+
+        utt.onboundary = (e) => {
+          if (e.name !== 'word' || this.session !== currentSession || handled) return;
+          this.ui.highlight(chunk.start + e.charIndex, this.textNodes, this.fullText);
+        };
+
+        utt.onend = () => {
+          if (handled || this.session !== currentSession) return;
+          handled = true;
+          this.utteranceStore = this.utteranceStore.filter(u => u !== utt);
+          setTimeout(() => {
+            if (this.session === currentSession && this.state === STATE.SPEAKING) {
+              this.currentIndex++;
+              this.speakChunk(this.currentIndex);
+            }
+          }, 400);
+        };
+
+        utt.onerror = (e) => {
+          if (handled || this.session !== currentSession) return;
+          handled = true;
+          this.utteranceStore = this.utteranceStore.filter(u => u !== utt);
+          if (e.error !== 'canceled') this.stop();
+        };
+
+        setTimeout(() => {
+          if (this.session === currentSession && this.state === STATE.SPEAKING) {
+            synth.speak(utt);
+          }
+        }, 50);
+      }
+
+      play(startChar = -1) {
+        if (!synth) return;
+        if (this.state === STATE.PAUSED) {
+          this.resume();
+          return;
+        }
+        if (this.chunks.length === 0) {
+          if (!this.prepare()) {
+            this.ui.showStatus('No hay contenido');
+            return;
+          }
+        }
+        synth.cancel();
+        this.state = STATE.SPEAKING;
+        this.session++;
+        
+        if (startChar >= 0) {
+          this.currentIndex = this.chunks.findIndex(c => startChar >= c.start && startChar < c.end);
+          if(this.currentIndex === -1) this.currentIndex = 0;
+        } else if (this.currentIndex >= this.chunks.length) {
+          this.currentIndex = 0;
+        }
+        
+        this.ui.updateButtons(true);
+        this.ui.showStatus('Leyendo...');
+        this.speakChunk(this.currentIndex);
+      }
+
+      pause() {
+        if (this.state !== STATE.SPEAKING) return;
+        synth.pause();
+        this.state = STATE.PAUSED;
+        this.ui.updatePauseBtn(true);
+        this.ui.showStatus('Pausado');
+      }
+
+      resume() {
+        if (this.state !== STATE.PAUSED) return;
+        synth.resume();
+        this.state = STATE.SPEAKING;
+        this.ui.updatePauseBtn(false);
+        this.ui.showStatus('Reanudando...');
+      }
+
+      stop() {
+        this.state = STATE.IDLE;
+        this.session++;
+        synth.cancel();
+        this.utteranceStore = [];
+        this.currentIndex = 0;
+        this.ui.hideHighlight();
+        this.ui.updateButtons(false);
+        this.ui.hideStatus();
+      }
+
+      setSpeed(rate) {
+        this.rate = rate;
+        localStorage.setItem(CONFIG.STORAGE_SPEED, rate);
+        if (this.state === STATE.SPEAKING) {
+          this.session++;
+          synth.cancel();
+          this.speakChunk(this.currentIndex);
+        }
+      }
+
+      setupEvents() {
+        document.addEventListener('click', (e) => {
+          if (e.target.closest('#a11y-toolbar')) return;
+          if (e.target.closest('a, button, input, select, textarea, pre, code')) return;
+          if (this.state !== STATE.SPEAKING && this.state !== STATE.PAUSED) return;
+          
+          const idx = this.ui.getCharAtPoint(e.clientX, e.clientY, this.textNodes);
+          if (idx >= 0) this.play(idx);
+        });
+        
+        let mutTimer;
+        const main = document.getElementById('quarto-document-content');
+        if (main) {
+          new MutationObserver(() => {
+            clearTimeout(mutTimer);
+            mutTimer = setTimeout(() => {
+              if (this.state === STATE.IDLE) { this.chunks = []; this.textNodes = []; }
+            }, 1000);
+          }).observe(main, { childList: true, subtree: true, characterData: true });
+        }
+      }
+    }
+
+    class TTSUI {
+      constructor(engine) {
+        this.engine = engine;
+        this.els = {
+          play: document.getElementById('a11y-tts-play'),
+          pause: document.getElementById('a11y-tts-pause'),
+          stop: document.getElementById('a11y-tts-stop'),
+          status: document.getElementById('a11y-tts-status'),
+          speedBtn: document.getElementById('a11y-tts-speed-btn'),
+          slider: document.getElementById('a11y-tts-slider'),
+          range: document.getElementById('a11y-tts-range'),
+          speedVal: document.getElementById('a11y-tts-speed-val'),
+          speedBadge: document.getElementById('a11y-speed-badge'),
+          toolbar: document.getElementById('a11y-toolbar')
+        };
+        this.hlEl = null;
+        this.bindEvents();
+      }
+
+      bindEvents() {
+        if (!this.els.play) return;
+        this.els.play.onclick = (e) => { e.stopPropagation(); this.engine.play(); };
+        this.els.pause.onclick = (e) => { e.stopPropagation(); this.engine.state === STATE.PAUSED ? this.engine.resume() : this.engine.pause(); };
+        this.els.stop.onclick = (e) => { e.stopPropagation(); this.engine.stop(); };
+        
+        this.els.speedBtn.onclick = (e) => {
+          e.stopPropagation();
+          this.els.slider.style.display = this.els.slider.style.display === 'none' ? 'flex' : 'none';
+        };
+        
+        this.els.range.oninput = (e) => {
+          const rate = parseFloat(e.target.value);
+          if (this.els.speedVal)   this.els.speedVal.textContent   = rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = rate + 'x';
+          this.engine.setSpeed(rate);
+        };
+        if(this.engine.rate && this.els.range) {
+          this.els.range.value = this.engine.rate;
+          if (this.els.speedVal)   this.els.speedVal.textContent   = this.engine.rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = this.engine.rate + 'x';
+
+        }
+      }
+
+      hideAll() {
+        ['play', 'pause', 'stop', 'speedBtn', 'slider'].forEach(k => { if (this.els[k]) this.els[k].style.display = 'none'; });
+      }
+
+      showStatus(msg) {
+        if (!this.els.status) return;
+        this.els.status.textContent = msg;
+        this.els.status.classList.add('show');
+        setTimeout(() => this.els.status.classList.remove('show'), 2000);
+      }
+      hideStatus() { if (this.els.status) this.els.status.classList.remove('show'); }
+
+      updateButtons(speaking) {
+        if (!this.els.play) return;
+        this.els.play.style.display = speaking ? 'none' : '';
+        this.els.pause.style.display = speaking ? '' : 'none';
+        this.els.stop.style.display = speaking ? '' : 'none';
+        if (this.els.toolbar) {
+          speaking ? this.els.toolbar.classList.add('tts-active') : this.els.toolbar.classList.remove('tts-active');
+        }
+        speaking ? this.els.play.classList.add('active') : this.els.play.classList.remove('active');
+        this.updatePauseBtn(false);
+      }
+
+      updatePauseBtn(paused) {
+        if (!this.els.pause) return;
+        this.els.pause.querySelector('.icon-pause').style.display = paused ? 'none' : '';
+        this.els.pause.querySelector('.icon-play').style.display = paused ? '' : 'none';
+        this.els.pause.querySelector('.label-pause').style.display = paused ? 'none' : '';
+        this.els.pause.querySelector('.label-play').style.display = paused ? '' : 'none';
+        this.els.pause.setAttribute('aria-label', paused ? 'Reanudar lectura' : 'Pausar lectura');
+      }
+
+      ensureHighlightEl() {
+        if (window.CSS && CSS.highlights && !document.getElementById('tts-hl-style')) {
+          const style = document.createElement('style');
+          style.id = 'tts-hl-style';
+          style.textContent = '::highlight(tts-reading-active) { background-color: var(--tts-highlight-bg, #fff3cd); color: var(--tts-highlight-color, #000000); border-radius: 2px; }';
+          document.head.appendChild(style);
+        }
+        if (!this.hlEl) {
+          this.hlEl = document.createElement('div');
+          this.hlEl.className = 'tts-reading-active';
+          this.hlEl.style.cssText = 'position:absolute;display:none;pointer-events:none;z-index:9998;opacity:0.4;mix-blend-mode:multiply;border-radius:2px;';
+          document.body.appendChild(this.hlEl);
+        }
+      }
+
+      highlight(absIdx, textNodes, fullText) {
+        if (!textNodes.length || absIdx < 0 || absIdx >= fullText.length) return;
+        let ws = absIdx, we = absIdx;
+        while (ws > 0 && /\S/.test(fullText[ws - 1])) ws--;
+        while (we < fullText.length && /\S/.test(fullText[we])) we++;
+        if (we <= ws) return;
+
+        let sn = textNodes.find(t => ws >= t.start && ws < t.start + t.text.length) || textNodes[0];
+        let en = textNodes.find(t => we >= t.start && we <= t.start + t.text.length) || textNodes[textNodes.length - 1];
+        if (!sn || !en) return;
+
+        try {
+          const r = document.createRange();
+          r.setStart(sn.node, Math.max(0, ws - sn.start));
+          r.setEnd(en.node, Math.min(we - en.start, en.node.textContent.length));
+          
+          if (window.CSS && CSS.highlights) {
+            CSS.highlights.set('tts-reading-active', new Highlight(r));
+          } else {
+            const rect = r.getBoundingClientRect();
+            if (rect.width && rect.height) {
+              this.hlEl.style.display = 'block';
+              this.hlEl.style.left = (rect.left + window.scrollX - 3) + 'px';
+              this.hlEl.style.top = (rect.top + window.scrollY - 3) + 'px';
+              this.hlEl.style.width = (rect.width + 6) + 'px';
+              this.hlEl.style.height = (rect.height + 6) + 'px';
+            }
+          }
+        } catch (e) {}
+      }
+
+      hideHighlight() {
+        if (window.CSS && CSS.highlights) CSS.highlights.delete('tts-reading-active');
+        if (this.hlEl) this.hlEl.style.display = 'none';
+      }
+
+      getCharAtPoint(cx, cy, textNodes) {
+        let r = null;
+        if (document.caretRangeFromPoint) r = document.caretRangeFromPoint(cx, cy);
+        else if (document.caretPositionFromPoint) {
+          const p = document.caretPositionFromPoint(cx, cy);
+          if (p) { r = document.createRange(); r.setStart(p.offsetNode, p.offset); r.setEnd(p.offsetNode, p.offset); }
+        }
+        if (!r) return -1;
+
+        let node = r.startContainer;
+        if (node.nodeType !== 3) {
+          const tw = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
+          node = tw.nextNode();
+          if (!node) return -1;
+        }
+
+        const match = textNodes.find(t => t.node === node);
+        return match ? match.start + r.startOffset : -1;
+      }
+    }
+
+    const tts = new TTSEngine();
+    
+    window.naturaInvalidateTTS = () => { if(tts.state === STATE.IDLE) { tts.chunks = []; tts.textNodes = []; } };
+    window.naturaStopTTS = () => tts.stop();
+    window.naturaIsTTSSpeaking = () => tts.state !== STATE.IDLE;
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key === 'P') {
+        e.preventDefault();
+        if (tts.state === STATE.SPEAKING) tts.pause();
+        else if (tts.state === STATE.PAUSED) tts.resume();
+        else tts.play();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key === 'S') { e.preventDefault(); tts.stop(); }
+      if (e.key === 'Escape' && tts.ui && tts.ui.els.slider) tts.ui.els.slider.style.display = 'none';
+    });
+
+    return tts;
+  })();
+
+  /* ═══════════════════════════════════════════════════════════════
+     TOOLBAR KEYBOARD NAVIGATION (roving tabindex)
+     ═══════════════════════════════════════════════════════════════ */
+  (function() {
+    var toolbar = document.getElementById('a11y-toolbar');
+    if (!toolbar) return;
+    var buttons = Array.from(toolbar.querySelectorAll('button'));
+    if (!buttons.length) return;
+    var currentIdx = 0;
+
+    buttons.forEach(function(btn, i) {
+      btn.setAttribute('tabindex', i === 0 ? '0' : '-1');
+    });
+
+    toolbar.addEventListener('keydown', function(e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'Home' && e.key !== 'End') return;
+      e.preventDefault();
+
+      var idx = buttons.indexOf(document.activeElement);
+      if (idx === -1) idx = currentIdx;
+
+      if (e.key === 'ArrowRight') idx = (idx + 1) % buttons.length;
+      else if (e.key === 'ArrowLeft') idx = (idx - 1 + buttons.length) % buttons.length;
+      else if (e.key === 'Home') idx = 0;
+      else if (e.key === 'End') idx = buttons.length - 1;
+
+      buttons[currentIdx].setAttribute('tabindex', '-1');
+      buttons[idx].setAttribute('tabindex', '0');
+      buttons[idx].focus();
+      currentIdx = idx;
+    });
+  })();
+
+  /* Toggle móvil */
+  (function() {
+    var toggleBtn = document.getElementById('a11y-toggle-btn');
+    var toolbar = document.getElementById('a11y-toolbar');
+    if (!toggleBtn || !toolbar) return;
+    toggleBtn.addEventListener('click', function() {
+      var isOpen = toolbar.classList.contains('mobile-open');
+      toolbar.classList.toggle('mobile-open', !isOpen);
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      toggleBtn.innerHTML = isOpen
+        ? '<span aria-hidden="true">&#9881;</span>'
+        : '<span aria-hidden="true">&#10005;</span>';
+    });
+    /* Cerrar al hacer click fuera */
+    document.addEventListener('click', function(e) {
+      if (!toolbar.contains(e.target) && e.target !== toggleBtn) {
+        toolbar.classList.remove('mobile-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '<span aria-hidden="true">&#9881;</span>';
+      }
+    });
+  })();
+
+})();
+</script>

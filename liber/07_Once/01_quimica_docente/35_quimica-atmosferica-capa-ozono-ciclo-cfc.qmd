@@ -1,0 +1,97 @@
+# Química Atmosférica: Fotoquímica del Ozono Estratosférico, Ciclo de Chapman y Catálisis por CFCs
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química del Medio Ambiente y Procesos Fotoquímicos
+> * **Propósito Docente:** Explicar el perfil térmico y la composición de la atmósfera, deducir mecano-cuánticamente el ciclo de Chapman del ozono y modelar cuantitativamente la catálisis destructiva en cadena por radicales de cloro de los clorofluorocarbonos (CFCs).
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La atmósfera terrestre es una envoltura gaseosa estratificada de aproximadamente $5.1 \times 10^{18}\,\text{kg}$ de masa total, retenida por el campo gravitacional del planeta. Su estructura vertical se divide en cuatro regiones térmicas concéntricas definidas por gradientes térmicos opuestos:
+
+1. **Troposfera ($0 - 12\,\text{km}$):** Alberga cerca del $80\,\%$ de la masa gaseosa y prácticamente la totalidad del vapor de agua y los fenómenos meteorológicos. La temperatura desciende linealmente con la altitud hasta unos $-56^\circ\text{C}$ en la tropopausa.
+2. **Estratosfera ($12 - 50\,\text{km}$):** Presenta una **inversión térmica**: la temperatura se incrementa gradualmente con la altitud desde $-56^\circ\text{C}$ hasta alcanzar casi $0^\circ\text{C}$ en la estratopausa. Este calentamiento se debe exclusivamente a la absorción química de radiación ultravioleta solar de alta energía por parte de la capa de ozono.
+3. **Mesosfera ($50 - 85\,\text{km}$):** La temperatura vuelve a descender con la altitud hasta alcanzar el punto más frío del sistema terrestre (aproximadamente $-90^\circ\text{C}$).
+4. **Termosfera ($> 85\,\text{km}$):** La temperatura se eleva a más de $1200^\circ\text{C}$ debido a la absorción de radiación ultravioleta de vacío y rayos X cósmicos por moléculas de oxígeno y nitrógeno residuales ionizadas.
+
+En la alta atmósfera, la radiación electromagnética solar de longitud de onda corta ($\lambda < 240\,\text{nm}$) promueve dos transformaciones fotoquímicas primarias: la **fotoionización** (donde la energía del fotón incidente supera la energía de ionización de la molécula, expulsando un electrón: $N_2 + h\nu \to N_2^+ + e^-$) y la **fotodisociación** (ruptura homolítica de un enlace covalente por absorción resonante de un fotón).
+
+En 1930, el geofísico británico Sydney Chapman formuló el modelo fotoquímico que describe la formación y descomposición en estado estacionario del **ozono ($O_3$)** en la estratosfera media (entre 20 y 35 km de altitud), conocido como el **Ciclo de Chapman**:
+
+1. **Fotólisis del Oxígeno Molecular:** Los fotones solares del ultravioleta lejano (UV-C, $\lambda < 242\,\text{nm}$) escinden el enlace covalente doble del dioxígeno ($O_2$), cuya energía de disociación es de $498\,\text{kJ/mol}$, produciendo dos átomos de oxígeno radicálicos en estado fundamental:
+$$O_2 + h\nu \ (\lambda < 242\,\text{nm}) \longrightarrow 2\,O^\bullet$$
+2. **Formación de Ozono:** Los átomos de oxígeno libres colisionan de inmediato con moléculas de dioxígeno en presencia de un tercer cuerpo catalítico inerte ($M = N_2$ u $O_2$) que absorbe y disipa el exceso de energía cinética para estabilizar el enlace:
+$$O^\bullet + O_2 + M \longrightarrow O_3 + M + \text{Calor}$$
+3. **Fotólisis del Ozono (Escudo Biológico de Radiación):** Las moléculas de ozono sintetizadas absorben de manera extraordinariamente eficaz la radiación ultravioleta de longitud de onda intermedia (UV-B, $280-315\,\text{nm}$ y UV-C residual), fragmentándose fotoquímicamente:
+$$O_3 + h\nu \ (\lambda < 320\,\text{nm}) \longrightarrow O_2 + O^\bullet$$
+4. **Recombinación Térmica de Chapman:** El ciclo se cierra mediante la colisión bimolecular entre un átomo de oxígeno y una molécula de ozono para regenerar dioxígeno estable:
+$$O^\bullet + O_3 \longrightarrow 2\,O_2$$
+
+Este ciclo continuo opera como un formidable **filtro fotoquímico protector**. Sin la absorción en la banda de Hartley ($200-300\,\text{nm}$) por el ozono estratosférico, la radiación UV-B solar alcanzaría intensamente la superficie de la Tierra, induciendo la fotodimerización de timinas en el ADN celular de los seres vivos, provocando mutaciones letales, carcinogénesis cutánea, cataratas oculares y el colapso del fitoplancton oceánico primario.
+
+A comienzos de la década de 1970, el químico mexicano Mario Molina y el estadounidense F. Sherwood Rowland (galardonados con el Premio Nobel de Química en 1995 junto a Paul Crutzen) descubrieron que el equilibrio natural del ciclo de Chapman estaba siendo severamente alterado por la acumulación troposférica de los **Clorofluorocarbonos (CFCs)**, compuestos sintéticos desarrollados en 1930 por Thomas Midgley como propelentes de aerosoles, agentes espumantes y fluidos refrigerantes en aires acondicionados y refrigeradores (arquetipo: Freón-12, $CF_2Cl_2$).
+
+Los CFCs fueron seleccionados industrialmente por su absoluta inercia química, no inflamabilidad y nula toxicidad en la troposfera. Sin embargo, esa misma inercia evita que sean degradados por el radical hidroxilo ($\cdot OH$) o disueltos por las lluvias troposféricas. Como consecuencia, las moléculas de CFC difunden lentamente a través de la tropopausa a lo largo de décadas hasta penetrar en la estratosfera media.
+
+En la estratosfera, al carecer del escudo protector de ozono superior, las moléculas de CFC son bombardeadas por radiación UV-C intensa ($\lambda < 220\,\text{nm}$), la cual escinde homolíticamente el enlace carbono-cloro ($C-Cl$, energía de enlace de $328\,\text{kJ/mol}$), liberando **átomos de cloro atómicos libres ($Cl^\bullet$)**:
+
+$$CF_2Cl_2 + h\nu \ (\lambda < 220\,\text{nm}) \longrightarrow \dot{C}F_2Cl + Cl^\bullet$$
+
+El radical libre de cloro es una especie extraordinariamente reactiva que actúa como un **catalizador homogéneo de destrucción en cadena del ozono**, operando a través de un ciclo catalítico bimolecular cerrado:
+
+$$\text{Paso 1:} \quad Cl^\bullet + O_3 \longrightarrow ClO^\bullet + O_2$$
+$$\text{Paso 2:} \quad ClO^\bullet + O^\bullet \longrightarrow Cl^\bullet + O_2$$
+$$\text{Reacción Neta Global:} \quad O_3 + O^\bullet \longrightarrow 2\,O_2$$
+
+El análisis cinético del mecanismo revela la gravedad del fenómeno: el átomo de cloro reacciona con el ozono generando el radical monóxido de cloro ($ClO^\bullet$); inmediatamente, el $ClO^\bullet$ colisiona con un átomo de oxígeno libre, regenerando intacto al radical $Cl^\bullet$. Al no consumirse en el balance global neto, **un único átomo de cloro puede destruir en promedio más de $100000$ moléculas de ozono** antes de ser temporalmente desactivado hacia especies reservorio inertes (como el cloruro de hidrógeno, $HCl$, o el nitrato de cloro, $ClONO_2$).
+
+Durante el invierno austral en la Antártida, el aislamiento térmico del vórtice polar permite que las temperaturas caigan por debajo de $-80^\circ\text{C}$, induciendo la formación de **Nubes Estratosféricas Polares (NEP)** compuestas de cristales de hielo y ácido nítrico hidratado. Las superficies microcristalinas heterogéneas de estas nubes catalizan la hidrólisis y conversión de las especies reservorio inactivas en cloro molecular libre ($Cl_2$). Al llegar la primavera en septiembre, la radiación solar naciente fotoliza masivamente el $Cl_2$, liberando una ráfaga devastadora de radicales $Cl^\bullet$ que desmantela de forma fulminante la capa protectora, fenómeno cartografiado satelitalmente como el **Agujero de Ozono Antártico**.
+
+La comprobación irrefutable de este modelo científico condujo a la firma del **Protocolo de Montreal en 1987**, considerado el tratado ambiental internacional más exitoso de la historia de la humanidad, el cual ordenó la eliminación global total de la producción de CFCs, sustituyéndolos inicialmente por hidroclorofluorocarbonos (HCFCs) y posteriormente por hidrofluorocarbonos (HFCs) e hidrofluoroolefinas (HFOs), compuestos que carecen de átomos de cloro y poseen vidas medias troposféricas cortas que les impiden alcanzar la estratosfera.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir el agujero de la capa de ozono con el calentamiento global:** Creer que el agujero de ozono es la causa directa del efecto invernadero o que deja entrar el "calor" solar. El ozono filtra radiación ultravioleta perjudicial para el ADN; el calentamiento global está impulsado por la retención de radiación infrarroja térmica por gases como $CO_2$ y $CH_4$ en la troposfera.
+2. **Pensar que el ozono troposférico es beneficioso:** Ignorar la paradoja del ozono: *"ozono bueno arriba (estratosfera), ozono malo abajo (troposfera)"*. A nivel del suelo, el ozono es un contaminante secundario altamente oxidante y tóxico del esmog fotoquímico que lesiona el tejido pulmonar y necrosa hojas vegetales.
+3. **Asumir que los CFCs no suben a la estratosfera porque son más pesados que el aire:** Olvidar que la atmósfera troposférica se halla en continuo movimiento convectivo turbulento y mezcla homogénea forzada por los vientos, lo que transporta a cualquier molécula gaseosa persistente independientemente de su masa molecular.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de las Gafas de Sol de Alta Montaña:** La capa de ozono estratosférico es como unas gafas de sol fotocromáticas con filtro UV400 que absorben selectivamente la luz invisible que quema la retina (UV-B); los CFCs son como un solvente ácido que disuelve y raya el filtro óptico de las gafas, dejando pasar los rayos ionizantes hacia los ojos.
+2. **Analogía del Pac-Man Regenerativo (Catálisis de Destrucción):** El radical de cloro es un Pac-Man que devora una molécula de ozono; pero a diferencia de un comedor normal que se llena y duerme, cuando devora el ozono se transforma temporalmente en $ClO$ hasta que choca con un átomo de oxígeno, el cual "escupe" al cloro intacto, dejándolo con hambre voraz para devorar otros cien mil puntos de ozono.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La fotodisociación homolítica del enlace oxígeno-oxígeno en la molécula de dioxígeno ($O_2$) en la alta estratosfera requiere una energía de disociación de enlace de $\Delta H^\circ = 498.0\,\text{kJ/mol}$. 
+1. Calcule la energía requerida expresada en Joules ($J$) y en electrón-voltios ($eV$) para disociar una única molécula de dioxígeno ($O_2$). Datos: Constante de Avogadro $N_A = 6.022 \times 10^{23}\,\text{mol}^{-1}$, $1\,\text{eV} = 1.602 \times 10^{-19}\,\text{J}$.
+2. Utilizando la ecuación de Planck-Einstein ($E = \frac{hc}{\lambda}$), determine la longitud de onda máxima umbral ($\lambda_{\max}$) en nanómetros ($\text{nm}$) del fotón solar capaz de escindir fotoquímicamente la molécula de oxígeno e identifique la región espectral correspondiente. Datos: $h = 6.626 \times 10^{-34}\,\text{J}\cdot\text{s}$, velocidad de la luz $c = 2.998 \times 10^8\,\text{m/s}$.
+3. Si el enlace carbono-cloro ($C-Cl$) en el Freón-12 posee una energía de enlace de $328.0\,\text{kJ/mol}$, calcule su longitud de onda umbral de fotólisis y justifique por qué este compuesto no se degrada en la troposfera (donde la radiación incidente tiene $\lambda > 290\,\text{nm}$).
+
+**Solución paso a paso:**
+
+1. *Calcular la energía de disociación por molécula individual de dioxígeno:*
+   $$E_{\text{molécula}} = \frac{\Delta H^\circ}{N_A} = \frac{498.0 \times 10^3\,\text{J/mol}}{6.022 \times 10^{23}\,\text{mol}^{-1}} = 8.2697 \times 10^{-19}\,\text{J}$$
+   $$E_{\text{eV}} = \frac{8.2697 \times 10^{-19}\,\text{J}}{1.602 \times 10^{-19}\,\text{J/eV}} = 5.162\,\text{eV}$$
+   Cada fotón solar absorbido debe suministrar al menos $8.27 \times 10^{-19}\,\text{J}$ ($5.16\,\text{eV}$) para escindir los orbitales moleculares del dioxígeno.
+
+2. *Calcular la longitud de onda umbral máxima ($\lambda_{\max}$) para el dioxígeno:*
+   $$\lambda_{\max} = \frac{h c}{E_{\text{molécula}}}$$
+   $$\lambda_{\max} = \frac{(6.626 \times 10^{-34}\,\text{J}\cdot\text{s})(2.998 \times 10^8\,\text{m/s})}{8.2697 \times 10^{-19}\,\text{J}} = \frac{1.9865 \times 10^{-25}\,\text{J}\cdot\text{m}}{8.2697 \times 10^{-19}\,\text{J}} = 2.402 \times 10^{-7}\,\text{m}$$
+   $$\lambda_{\max} = 240.2\,\text{nm}$$
+   Únicamente los fotones de radiación ultravioleta lejana de alta energía (UV-C) con longitudes de onda menores o iguales a **$240.2\,\text{nm}$** poseen la energía cuántica suficiente para fotolizar al oxígeno y desencadenar el ciclo de Chapman.
+
+3. *Calcular la longitud de onda umbral de fotólisis para el enlace $C-Cl$ del Freón-12:*
+   $$E_{\text{CFC}} = \frac{328.0 \times 10^3\,\text{J/mol}}{6.022 \times 10^{23}\,\text{mol}^{-1}} = 5.4467 \times 10^{-19}\,\text{J}$$
+   $$\lambda_{\max, \text{CFC}} = \frac{1.9865 \times 10^{-25}\,\text{J}\cdot\text{m}}{5.4467 \times 10^{-19}\,\text{J}} = 3.647 \times 10^{-7}\,\text{m} \approx 364.7\,\text{nm}$$
+   Sin embargo, debido a la sección eficaz de absorción electrónica de la molécula de $CF_2Cl_2$, su fotólisis efectiva requiere fotones del UV-C con $\lambda < 220\,\text{nm}$. Dado que la atmósfera superior y la capa de ozono filtran íntegramente todos los fotones con $\lambda < 290\,\text{nm}$, ningún fotón que penetra a la troposfera posee energía suficiente para activar la fotólisis del CFC, permitiéndole permanecer químicamente invulnerable a nivel del suelo durante más de un siglo.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agujero de la capa de ozono se manifiesta con máxima intensidad destructiva sobre la Antártida precisamente en la primavera polar (septiembre-octubre) y no durante el invierno polar continuo?
+2. Si los hidrofluorocarbonos (HFCs) no destruyen la capa de ozono al carecer de cloro, ¿por qué la Enmienda de Kigali (2016) al Protocolo de Montreal reguló su eliminación gradual obligatoria?
+3. ¿Cómo influyen las erupciones volcánicas explosivas ricas en aerosoles de sulfato en la aceleración temporal de la pérdida de ozono estratosférico?

@@ -1,0 +1,58 @@
+# El Enlace Iónico: Formación, Energía de Red y Ciclo de Born-Haber
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Enlace Químico y Estructura Molecular
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El enlace iónico es la atracción electrostática no direccional omnidireccional que se establece entre cationes de baja electronegatividad (metales) y aniones de alta electronegatividad (no metales) con una diferencia de electronegatividad típicamente $\Delta \chi \ge 1.7$ o $2.0$. En el estado sólido, los compuestos iónicos no existen como moléculas discretas, sino como una **red cristalina tridimensional infinita** altamente ordenada.
+
+La estabilidad termodinámica de un cristal iónico no reside en la transferencia individual de electrones (la cual suele ser endotérmica si se suma la energía de ionización y la afinidad electrónica), sino en la inmensa energía electrostática liberada cuando los iones gaseosos colapsan para condensarse en la red cristalina: la **energía reticular o energía de red** ($U_0$).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de Born-Landé para la energía reticular:
+$$U_0 = -\frac{N_A \cdot M \cdot |z_+ z_-| \cdot e^2}{4\pi \varepsilon_0 r_0} \left( 1 - \frac{1}{n} \right)$$
+Donde $M$ es la constante geométrica de Madelung, $z_+, z_-$ las cargas de los iones y $r_0$ la distancia internuclear.
+Ciclo termodinámico de Born-Haber (Ley de Hess):
+$$\Delta H_f^\circ = \Delta H_{\text{sub}} + \frac{1}{2} D + I_1 - E_{\text{ea}} + U_0$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que el cloruro de sodio ($NaCl$) está formado por 'moléculitas aisladas de $NaCl$ flotando en el sólido'.
+2. Creer que la transferencia de electrones entre $Na$ y $Cl$ es suficiente por sí sola para hacer la sal estable, ignorando que sin la energía reticular de la red cristalina el proceso global sería termodinámicamente desfavorable.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los imanes cúbicos de neodimio:** Si tienes 100 pequeños cubos imantados con caras positivas y negativas, no se quedan en parejas aisladas: se atraen automáticamente formando un cubo gigante compacto y ultra resistente. Esa resistencia colectiva es la energía reticular.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la energía reticular ($U_0$) del fluoruro de litio ($LiF$) a partir de los datos termoquímicos del ciclo de Born-Haber: $\Delta H_f^\circ(LiF) = -617\,\text{kJ/mol}$, sublimación del litio $\Delta H_{\text{sub}} = +161\,\text{kJ/mol}$, disociación del flúor $D(F_2) = +158\,\text{kJ/mol}$ ($\frac{1}{2}D = +79\,\text{kJ/mol}$), ionización del litio $I_1 = +520\,\text{kJ/mol}$, y afinidad electrónica del flúor $E_{\text{ea}} = -328\,\text{kJ/mol}$.
+
+**Paso 1:** Ecuación del ciclo de Born-Haber:
+$$\Delta H_f^\circ = \Delta H_{\text{sub}} + \frac{1}{2} D + I_1 + (-E_{\text{ea}}) + U_0$$
+$$-617 = 161 + 79 + 520 - 328 + U_0$$
+**Paso 2:** Suma de etapas intermedias:
+$$-617 = 432 + U_0$$
+**Paso 3:** Despeje de la energía reticular:
+$$U_0 = -617 - 432 = -1049\,\text{kJ/mol}$$
+La formación de la red cristalina libera un gigantesco paquete exotérmico de $1049\,\text{kJ/mol}$, lo que explica el altísimo punto de fusión del $LiF$ ($845^\circ\text{C}$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el óxido de magnesio ($MgO$, $z_+=+2, z_-=-2$) tiene un punto de fusión ($2852^\circ\text{C}$) inmensamente mayor que el cloruro de sodio ($NaCl$, $801^\circ\text{C}$)?
+2. ¿Por qué los compuestos iónicos sólidos son aislantes eléctricos pero conducen perfectamente la electricidad al fundirse o disolverse en agua?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

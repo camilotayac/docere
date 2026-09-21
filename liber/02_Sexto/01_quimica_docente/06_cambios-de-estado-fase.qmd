@@ -1,0 +1,51 @@
+# Cambios de Estado y Transiciones de Fase Térmicas
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estados de la Materia
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las transiciones de fase son transformaciones físicas en las cuales la materia cambia su estado de agregación sin alterar su composición química molecular. Se clasifican termodinámicamente en endotérmicas (absorben calor del entorno: fusión, vaporización y sublimación progresiva) y exotérmicas (liberan calor al entorno: solidificación, condensación y deposición o sublimación regresiva). Estas transiciones ocurren a presiones y temperaturas específicas donde las energías libres de Gibbs de ambas fases coexisten en equilibrio.
+
+### Formalización Matemática y Leyes Físicas
+Calor de cambio de fase:
+$$q = m \cdot \Delta H_{\text{fase}}$$
+Donde $\Delta H_{\text{fus}}$ es la entalpía de fusión y $\Delta H_{\text{vap}}$ es la entalpía de vaporización.
+Condición termodinámica de equilibrio de fases:
+$$\Delta G = \Delta H - T_{\text{trans}} \Delta S = 0 \implies T_{\text{trans}} = \frac{\Delta H}{\Delta S}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que durante la evaporación se rompen enlaces covalentes dentro de la molécula ($H-O-H$), en lugar de vencerse las fuerzas intermoleculares de atracción.
+2. Olvidar que la evaporación ocurre a cualquier temperatura en la superficie del líquido, mientras que la ebullición ocurre en toda la masa del líquido a una temperatura fija cuando la presión de vapor iguala la presión externa.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Diferenciación entre romper ladrillos y desarmar el edificio:** Romper enlaces covalentes es destruir el ladrillo (cambio químico); evaporar es simplemente separar los ladrillos que estaban apilados (cambio físico).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule el calor requerido para fundir $250\,\text{g}$ de hielo a $0^\circ\text{C}$ sabiendo que el calor latente de fusión del agua es $\Delta H_{\text{fus}} = 334\,\text{J/g}$.
+
+**Paso 1:** Aplicación de la ecuación de calor latente:
+$$q = m \cdot \Delta H_{\text{fus}} = (250\,\text{g}) \times (334\,\text{J/g}) = 83500\,\text{J} = 83.5\,\text{kJ}$$
+El proceso absorbe $83.5\,\text{kJ}$ del entorno manteniendo la temperatura constante a $0^\circ\text{C}$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el sudor enfría el cuerpo humano al evaporarse?
+2. ¿Por qué el agua hierve a menor temperatura en Bogotá ($2600\,\text{m}$, aprox. $92^\circ\text{C}$) que en Cartagena al nivel del mar ($100^\circ\text{C}$)?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

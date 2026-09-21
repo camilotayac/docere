@@ -1,0 +1,82 @@
+# Entalpía y Procesos a Presión Constante
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Clásica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La inmensa mayoría de las transformaciones químicas y biológicas ocurren en recipientes abiertos a la atmósfera, es decir, bajo presión externa esencialmente constante ($P = \text{cte}$). Para describir los intercambios de calor bajo estas condiciones de contorno naturales, se define la función termodinámica **Entalpía ($H$)**:
+$$H = U + PV$$
+Dado que $U$, $P$ y $V$ son funciones de estado, la entalpía $H$ es rigurosamente una función de estado extensiva.
+
+Diferenciando para un proceso a presión constante con trabajo únicamente de expansión ($P-V$):
+$$\Delta H = \Delta U + P \Delta V$$
+Sustituyendo la Primera Ley ($\Delta U = q_p + w = q_p - P \Delta V$):
+$$\Delta H = (q_p - P \Delta V) + P \Delta V = q_p$$
+Este resultado es de trascendental importancia experimental: el cambio de entalpía ($\Delta H$) es numéricamente igual al calor absorbido o liberado por el sistema a presión constante ($q_p$).
+
+1. **Procesos Exotérmicos ($\Delta H < 0$):** El sistema transfiere calor a los alrededores; la entalpía del estado final es menor que la del estado inicial.
+2. **Procesos Endotérmicos ($\Delta H > 0$):** El sistema absorbe calor de los alrededores; la entalpía del estado final es mayor que la del inicial.
+
+Para reacciones en fase condensada (sólidos y líquidos), $\Delta V \approx 0 \implies \Delta H \approx \Delta U$. Para reacciones con gases ideales:
+$$\Delta H = \Delta U + \Delta(PV) = \Delta U + \Delta n_g R T$$
+
+Donde $\Delta n_g = \sum n_{g,\text{productos}} - \sum n_{g,\text{reactivos}}$.
+
+### Formalización Matemática y Leyes Físicas
+$$H = U + PV$$
+$$\Delta H = q_p \qquad (P = \text{cte, solo trabajo } P-V)$$
+$$\Delta H = \Delta U + \Delta n_g R T \qquad (\text{gases ideales})$$
+$$\Delta n_g = \sum \nu_i(\text{gas, prod}) - \sum \nu_j(\text{gas, react})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Identificar entalpía con energía interna:** Creer que $\Delta H = \Delta U$ en todos los casos. En reacciones gaseosas donde cambia la cantidad de sustancia, la diferencia $(\Delta n_g R T)$ puede ser de decenas de kilojoules.
+2. **Ignorar el signo termodinámico:** Considerar que una reacción 'tiene un calor de $500\,\text{kJ}$' sin especificar si es absorbido ($+$) o liberado ($-$).
+3. **Creer que solo las reacciones exotérmicas son espontáneas:** La entalpía por sí sola no determina la espontaneidad; la entropía del universo es el árbitro definitivo.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Mochila Inflable:** La energía interna ($U$) es lo que llevas dentro de la mochila. Pero si tu mochila tiene un compartimento que se infla automáticamente al llenarse, tienes que empujar la atmósfera que te rodea para hacerle espacio. La entalpía ($H$) es la energía interna total más el costo energético de empujar la atmósfera ($P V$).
+2. **Curvas de Nivel en la Montaña:** La altura de un campamento en la montaña es una función de estado ($H$); no importa si subiste en helicóptero o por un sendero sinuoso, el desnivel ($\Delta H$) entre el campamento base y la cumbre es invariante.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Para la combustión completa de un mol de metano a $298.15\,\text{K}$:
+$$\text{CH}_4(g) + 2 \text{O}_2(g) \to \text{CO}_2(g) + 2 \text{H}_2\text{O}(l)$$
+
+Se mide experimentalmente un cambio de entalpía estándar $\Delta H^\circ = -890.3\,\text{kJ/mol}$. Calcule el cambio en la energía interna estándar ($\Delta U^\circ$) para esta reacción a dicha temperatura. Dato: $R = 8.3145\,\text{J}/(\text{mol}\cdot\text{K})$.
+
+**Solución paso a paso:**
+1. *Identificar los moles gaseosos de reactivos y productos:*
+   1. Reactivos gaseosos: $1\,\text{mol de CH}_4 + 2\,\text{mol de O}_2 = 3\,\text{mol}$
+   2. Productos gaseosos: $1\,\text{mol de CO}_2 = 1\,\text{mol}$ (el $\text{H}_2\text{O}$ está en fase líquida).
+   $$\Delta n_g = 1 - (1 + 2) = -2\,\text{mol}$$
+2. *Aplicar la relación $\Delta H = \Delta U + \Delta n_g R T$:*
+   $$\Delta U^\circ = \Delta H^\circ - \Delta n_g R T$$
+3. *Calcular el término $\Delta n_g R T$ con consistencia de unidades:*
+   $$\Delta n_g R T = (-2\,\text{mol}) \times \left( 8.3145\,\frac{\text{J}}{\text{mol}\cdot\text{K}} \right) \times (298.15\,\text{K})$$
+   $$\Delta n_g R T = -4958\,\text{J} = -4.958\,\text{kJ}$$
+4. *Sustituir para hallar $\Delta U^\circ$:*
+   $$\Delta U^\circ = -890.3\,\text{kJ} - (-4.958\,\text{kJ}) = -890.3 + 4.958 = -885.34\,\text{kJ/mol}$$
+   *Interpretación:* $\Delta U^\circ$ es ligeramente menos negativo que $\Delta H^\circ$ porque los alrededores realizaron trabajo sobre el sistema al contraerse el volumen gaseoso de 3 a 1 mol.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua líquida formada en una combustión no se incluye en el conteo de $\Delta n_g$?
+2. En una reacción donde $\Delta n_g = 0$, ¿qué relación cuantitativa guardan $\Delta H$ y $\Delta U$?
+3. Si se produce una detonación dentro de una vasija de acero rígido indeformable, ¿se está midiendo $q_p$ o $q_v$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

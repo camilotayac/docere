@@ -1,0 +1,67 @@
+# Capacidad Reguladora y Rango Amortiguador Óptimo
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La efectividad de una solución tampón está delimitada por dos parámetros cuantitativos esenciales:
+
+1. **Capacidad Amortiguadora ($\beta$):** Medida cuantitativa de la resistencia del amortiguador al cambio de pH, definida por Donald Van Slyke como los moles de ácido o base fuerte requeridos para modificar el pH de un litro de disolución en una unidad:
+$$\beta = \frac{db}{d\text{pH}} = -\frac{da}{d\text{pH}}$$
+La capacidad amortiguadora es directamente proporcional a las **concentraciones absolutas** de los componentes del buffer (un tampón $1.0\,M$ tiene diez veces más capacidad que uno $0.1\,M$ aunque ambos tengan exactamente el mismo pH).
+2. **Rango Útil de Amortiguamiento:** Intervalo de pH en el cual el tampón opera con eficiencia práctica. Corresponde a relaciones de concentración base/ácido comprendidas entre $0.1$ y $10$, lo que define el criterio estándar:
+$$\text{Rango útil} = \text{p}K_a \pm 1.00$$
+
+### Formalización Matemática y Leyes Físicas
+Ecuación analítica de Van Slyke para la capacidad buffer:
+$$\beta = 2.303 \left( \frac{K_w}{[H^+]} + [H^+] + \frac{C_{\text{total}} \cdot K_a [H^+]}{(K_a + [H^+])^2} \right)$$
+Donde $C_{\text{total}} = [HA] + [A^-]$.
+Límites del rango de amortiguamiento:
+$$\text{Si } \frac{[A^-]}{[HA]} = 0.10 \implies \text{pH} = \text{p}K_a + \log(0.10) = \text{p}K_a - 1$$
+$$\text{Si } \frac{[A^-]}{[HA]} = 10.0 \implies \text{pH} = \text{p}K_a + \log(10.0) = \text{p}K_a + 1$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que dos disoluciones amortiguadoras con el mismo pH tienen la misma resistencia química (ignorar la concentración total $C_{\text{total}}$).
+2. Seleccionar un par ácido/base cuyo $\text{p}K_a$ difiera en más de 2 unidades del pH de trabajo deseado.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la esponja absorbente:** Una pequeña esponja y una esponja gigante absorben agua con el mismo tipo de poros (mismo pH), pero la esponja gigante puede absorber un vaso entero derramado antes de empaparse totalmente (alta capacidad amortiguadora), mientras que la esponjita se satura con tres gotas y desborda el agua (se agota el buffer).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un investigador biológico necesita preparar una disolución amortiguadora a $	ext{pH} = 7.40$ para el cultivo de células endoteliales. Dispone en el laboratorio de los siguientes sistemas ácido-base:
+1. Ácido fórmico / Formiato: $\text{p}K_a = 3.75$
+2. Ácido acético / Acetato: $\text{p}K_a = 4.74$
+3. Dihidrogenofosfato / Hidrogenofosfato ($H_2PO_4^- / HPO_4^{2-}$): $\text{p}K_a = 7.21$
+4. Amonio / Amoníaco ($NH_4^+ / NH_3$): $\text{p}K_a = 9.25$
+Elija el sistema óptimo y calcule la relación molar requerida $[\text{Base}]/[\text{Ácido}]$.
+
+**Paso 1:** Selección del sistema según el criterio $\text{p}K_a \approx \text{pH}$:
+El sistema óptimo es el **dihidrogenofosfato/hidrogenofosfato** ($H_2PO_4^- / HPO_4^{2-}$), cuyo $\text{p}K_a = 7.21$ es el más cercano a $7.40$, encontrándose dentro del rango óptimo ($7.21 \pm 1.00$).
+**Paso 2:** Cálculo de la relación de concentraciones:
+$$\text{pH} = \text{p}K_a + \log\left( \frac{[HPO_4^{2-}]}{[H_2PO_4^-]} \right)$$
+$$7.40 = 7.21 + \log(R) \implies \log(R) = 7.40 - 7.21 = +0.19$$
+$$R = \frac{[HPO_4^{2-}]}{[H_2PO_4^-]} = 10^{0.19} = 1.55$$
+Se deben mezclar $1.55$ moles de $HPO_4^{2-}$ por cada $1.00\,\text{mol}$ de $H_2PO_4^-$. 
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la sangre se vuelve letal si su pH cae por debajo de 6.8 o sube por encima de 7.8 (acidosis y alcalosis metabólica)?
+2. ¿Qué ocurre experimentalmente cuando se añade una cantidad de ácido fuerte superior a los moles totales de base conjugada presentes en el amortiguador?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

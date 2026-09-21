@@ -1,0 +1,64 @@
+# Estados y Números de Oxidación: Reglas IUPAC de Asignación
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Nomenclatura Química Inorgánica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El **número o estado de oxidación** es un concepto contable formal que representa la carga eléctrica neta ficticia que adquiriría un átomo en un compuesto si todos los enlaces químicos que forma fueran $100\%$ de carácter iónico puro, asignándose todos los electrones compartidos de cada enlace al átomo más electronegativo.
+
+La Unión Internacional de Química Pura y Aplicada (IUPAC) establece las siguientes reglas universales de asignación jerárquica:
+1. El estado de oxidación de un elemento en su forma elemental libre es siempre cero ($0$), sin importar su alótropo ($Fe, Cu, O_2, P_4, S_8$).
+2. En iones monoatómicos simples, el estado de oxidación es igual a su carga eléctrica ($Na^+: +1$, $Al^{3+}: +3$, $S^{2-}: -2$).
+3. El flúor tiene siempre estado de oxidación $-1$ en todos sus compuestos.
+4. El oxígeno tiene estado de oxidación $-2$ en casi todos sus compuestos, salvo en peróxidos ($-1$, ej. $H_2O_2$), superóxidos ($-1/2$, ej. $KO_2$) y cuando se une al flúor ($OF_2: +2$).
+5. El hidrógeno tiene estado de oxidación $+1$ cuando se une a no metales ($H_2O, CH_4$) y $-1$ cuando se une a metales formando hidruros metálicos ($NaH, CaH_2$).
+6. Los metales alcalinos (Grupo 1) son siempre $+1$; alcalinotérreos (Grupo 2) son $+2$.
+7. La suma algebraica de los estados de oxidación en una molécula neutra debe ser **cero**; en un ion poliatómico debe ser igual a la **carga neta del ion**.
+
+### Formalización Matemática y Leyes Físicas
+Conservación de estados de oxidación:
+$$\text{Molécula neutra: } \sum_{i} n_i \cdot \text{EO}_i = 0$$
+$$\text{Ion poliatómico: } \sum_{i} n_i \cdot \text{EO}_i = q_{\text{ion}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir estado de oxidación con valencia química (la valencia es el número de enlaces que puede formar un átomo y carece de signo algebraico; el estado de oxidación lleva signo positivo o negativo).
+2. Olvidar que en un elemento puro en estado natural el estado de oxidación es cero aunque sea poliatómico ($S_8$ tiene $\text{EO} = 0$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del préstamo bancario con garantía:** El átomo más electronegativo es el banco con hipoteca preferente: si la empresa quiebra (disolución hipotética del enlace en iones), el banco se queda con todo el dinero (los electrones del enlace) y anota saldo negativo en la cuenta del deudor.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Determine el estado de oxidación del átomo de cromo en el ion dicromato ($Cr_2O_7^{2-}$) y del átomo de cloro en el ion perclorato ($ClO_4^-$).
+
+**Paso 1:** Análisis del ion dicromato ($Cr_2O_7^{2-}$):
+El oxígeno tiene $\text{EO} = -2$. La carga neta del ion es $-2$.
+$$2 \cdot \text{EO}(Cr) + 7(-2) = -2$$
+$$2 \cdot \text{EO}(Cr) - 14 = -2 \implies 2 \cdot \text{EO}(Cr) = +12 \implies \text{EO}(Cr) = +6$$
+
+**Paso 2:** Análisis del ion perclorato ($ClO_4^-$):
+El oxígeno tiene $\text{EO} = -2$. La carga neta es $-1$.
+$$\text{EO}(Cl) + 4(-2) = -1$$
+$$\text{EO}(Cl) - 8 = -1 \implies \text{EO}(Cl) = +7$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el nitrógeno puede exhibir estados de oxidación desde $-3$ (en $NH_3$) hasta $+5$ (en $HNO_3$)?
+2. ¿Cuál es el estado de oxidación del carbono en el formaldehído ($H_2C=O$)? (Demuestre por qué es cero).
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

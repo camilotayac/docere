@@ -1,0 +1,87 @@
+# Métodos Calorimétricos: Calorimetría a Volumen y Presión Constante
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Cuantitativa
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La calorimetría es la técnica experimental mediante la cual se cuantifican los intercambios térmicos que acompañan a las transformaciones físicas y químicas. Se fundamenta en el balance adiabático de energía: en un calorímetro aislado, el calor cedido por la reacción química es cuantitativamente absorbido por el dispositivo calorimétrico y el medio dispersante (generalmente agua):
+$$q_{\text{reac}} + q_{\text{cal}} = 0 \implies q_{\text{reac}} = -q_{\text{cal}}$$
+
+Existen dos diseños calorimétricos fundamentales según las restricciones mecánicas impuestas:
+1. **Calorímetro a Presión Constante (Calorímetro de Vaso de Poliestireno):**
+   1. El sistema está abierto a la presión barométrica local.
+   2. Mide directamente cambios de entalpía: $q_p = \Delta H$.
+   3. Utilizado para neutralizaciones ácido-base, calores de disolución y calores específicos de sólidos y líquidos.
+   $$q_{\text{cal}} = m_{\text{sol}} c_{p,\text{sol}} \Delta T + C_{\text{vaso}} \Delta T$$
+2. **Calorímetro a Volumen Constante (Bomba Calorimétrica de Combustión):**
+   1. El sistema reacciona dentro de un vaso de acero de paredes gruesas sumergido en un baño de agua bajo atmósfera de oxígeno puro ($25-30\,\text{atm}$).
+   2. Como las paredes son rígidas, $\Delta V = 0 \implies w = 0$.
+   3. Mide directamente cambios de energía interna: $q_v = \Delta U$.
+   $$q_{\text{cal}} = C_{\text{bomba}} \Delta T$$
+   donde $C_{\text{bomba}}$ es la capacidad calorífica del calorímetro completo (determinada previamente mediante calibración con un estándar como el ácido benzoico).
+
+### Formalización Matemática y Leyes Físicas
+$$q = m c_p \Delta T = C \Delta T$$
+$$q_{\text{reac}} = -C_{\text{cal}} \Delta T$$
+Calorimetría de vaso ($P = \text{cte}$):
+$$\Delta H_{\text{reac}} = \frac{q_p}{n} = \frac{-m_{\text{sol}} c_p \Delta T}{n}$$
+Bomba calorimétrica ($V = \text{cte}$):
+$$\Delta U_{\text{reac}} = \frac{q_v}{n} = \frac{-C_{\text{bomba}} \Delta T}{n}$$
+$$\Delta H_{\text{reac}} = \Delta U_{\text{reac}} + \Delta n_g R T$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Olvidar el signo negativo en el balance calorimétrico:** Si el agua sube de temperatura ($\Delta T > 0$), el agua absorbió calor ($q_{\text{cal}} > 0$); por lo tanto, la reacción química liberó energía ($q_{\text{reac}} < 0$, exotérmica). Omitir el signo altera el diagnóstico termodinámico.
+2. **Confundir Capacidad Calorífica ($C$) con Calor Específico ($c_p$):** La capacidad calorífica $C$ es una propiedad extensiva ($\text{J/K}$ o $\text{kJ/}^\circ\text{C}$) de un objeto o ensamble particular, mientras que el calor específico $c_p$ es una propiedad intensiva referida a la unidad de masa ($\text{J}/(\text{g}\cdot^\circ\text{C})$).
+3. **Suponer que la bomba calorimétrica mide directamente $\Delta H$:** Mide $\Delta U$ ($q_v$); para obtener $\Delta H$ es indispensable corregir con $\Delta n_g R T$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Balanza Térmica:** La calorimetría es como una balanza de platillos: lo que pierde un platillo (la reacción química al romper y formar enlaces) cae exactamente en el otro platillo (las moléculas de agua que vibran más rápido). La aguja indicadora es el termómetro.
+2. **El Termo de Café como Calorímetro Escolar:** Dos vasos de icopor (poliestireno expandido) concéntricos atrapan el aire inmóvil impidiendo el escape de calor por conducción y convección, permitiendo pesar el calor intercambiado con precisión analítica.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Se quema una muestra de $1.435\,\text{g}$ de naftaleno ($\text{C}_{10}\text{H}_8(s)$, masa molar $128.17\,\text{g/mol}$) en una bomba calorimétrica de volumen constante con exceso de oxígeno. La temperatura del calorímetro se eleva de $20.28^\circ\text{C}$ a $25.95^\circ\text{C}$. La capacidad calorífica calibrada del calorímetro completo ($C_{\text{bomba}}$) es $10.17\,\text{kJ/}^\circ\text{C}$.
+1. Calcule el calor molar de combustión a volumen constante ($\Delta U_m$).
+2. Calcule la entalpía molar estándar de combustión ($\Delta H^\circ_m$) a $298.15\,\text{K}$ para la reacción:
+$$\text{C}_{10}\text{H}_8(s) + 12 \text{O}_2(g) \to 10 \text{CO}_2(g) + 4 \text{H}_2\text{O}(l)$$
+
+**Solución paso a paso:**
+1. *Calcular el cambio de temperatura:*
+   $$\Delta T = 25.95^\circ\text{C} - 20.28^\circ\text{C} = 5.67^\circ\text{C}$$
+2. *Calcular el calor absorbido por el calorímetro:*
+   $$q_{\text{cal}} = C_{\text{bomba}} \Delta T = \left(10.17\,\frac{\text{kJ}}{^\circ\text{C}}\right) \times 5.67^\circ\text{C} = 57.664\,\text{kJ}$$
+3. *Calcular el calor de la reacción:*
+   $$q_{\text{reac}} = -q_{\text{cal}} = -57.664\,\text{kJ}$$
+4. *Calcular los moles de naftaleno quemados:*
+   $$n = 1.435\,\text{g} \times \left( \frac{1\,\text{mol}}{128.17\,\text{g}} \right) = 0.011196\,\text{mol}$$
+5. *Calcular $\Delta U_m$:*
+   $$\Delta U_m = \frac{-57.664\,\text{kJ}}{0.011196\,\text{mol}} = -5150.4\,\text{kJ/mol}$$
+6. *Calcular $\Delta n_g$ de la ecuación balanceada:*
+   $$\Delta n_g = 10\,\text{mol}(\text{CO}_2) - 12\,\text{mol}(\text{O}_2) = -2\,\text{mol}$$
+7. *Calcular $\Delta H^\circ_m$:*
+   $$\Delta H^\circ_m = \Delta U_m + \Delta n_g R T$$
+   $$\Delta n_g R T = (-2\,\text{mol})(8.3145 \times 10^{-3}\,\text{kJ}/(\text{mol}\cdot\text{K}))(298.15\,\text{K}) = -4.958\,\text{kJ}$$
+   $$\Delta H^\circ_m = -5150.4\,\text{kJ/mol} + (-4.96\,\text{kJ/mol}) = -5155.4\,\text{kJ/mol}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua líquida que se forma en la bomba se condensa rápidamente contra las paredes frías del recipiente?
+2. ¿Cómo se calibra la capacidad calorífica de un calorímetro antes de usarlo con una muestra desconocida?
+3. Si no se aísla adecuadamente el vaso calorimétrico y hay fuga de calor al ambiente, ¿el $\Delta H$ calculado será más alto o más bajo en magnitud que el valor real?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,54 @@
+# Magnitudes Físicas, Sistema Internacional y Análisis Dimensional
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Propiedades de la Materia y Medición
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La química se fundamenta en la cuantificación rigurosa de las propiedades de la materia. Una magnitud física es cualquier propiedad de un cuerpo susceptible de ser medida con un instrumento estandarizado. En el Sistema Internacional de Unidades (SI, 2019), las magnitudes básicas primordiales son la masa ($\text{kg}$), longitud ($\text{m}$), tiempo ($\text{s}$), temperatura ($\text{K}$) y cantidad de sustancia ($\text{mol}$). El método del factor unitario garantiza que multiplicar sucesivamente una cantidad por factores de equivalencia física idénticos a la unidad ($1$) transforme las unidades sin alterar la cantidad física real.
+
+### Formalización Matemática y Leyes Físicas
+Factor de conversión unitario:
+$$Q_2 = Q_1 \times \left( \frac{U_2}{U_1} \right)$$
+Factores de volumen y longitud:
+$$1\,\text{m}^3 = 1000\,\text{dm}^3 = 10^6\,\text{cm}^3$$
+$$1\,\text{L} = 1\,\text{dm}^3 = 1000\,\text{mL} = 1000\,\text{cm}^3$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Tratar a las unidades como 'etiquetas decorativas' que se pueden suprimir durante el cálculo y añadir al final sin justificación.
+2. Olvidar elevar al cubo el factor de conversión lineal al transformar unidades de volumen ($1\,\text{m}^3 \neq 100\,\text{cm}^3$).
+3. Sumar magnitudes con dimensiones incompatibles (metros con gramos).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del billete de cambio:** Multiplicar por un factor de conversión es idéntico a cambiar un billete de $10.000$ pesos por dos de $5.000$; la apariencia numérica cambia, pero el valor físico permanece intacto.
+2. **Cancelación gráfica en diagonal:** Tachar con color en la pizarra las unidades en numerador y denominador para asegurar consistencia dimensional antes de realizar operaciones numéricas.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Convierta $0.0750\,\text{m}^3$ a litros ($\text{L}$) y a centímetros cúbicos ($\text{cm}^3$).
+
+**Paso 1:** Factor a litros:
+$$V = 0.0750\,\text{m}^3 \times \left( \frac{1000\,\text{L}}{1\,\text{m}^3} \right) = 75.0\,\text{L}$$
+**Paso 2:** Factor a centímetros cúbicos:
+$$V = 75.0\,\text{L} \times \left( \frac{1000\,\text{cm}^3}{1\,\text{L}} \right) = 75000\,\text{cm}^3 = 7.50 \times 10^4\,\text{cm}^3$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué es físicamente válido multiplicar una masa por una longitud, pero es inválido sumarlas?
+2. Si un cubo tiene $10\,\text{cm}$ de lado, ¿cuántos litros de agua contiene exactamente?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,71 @@
+# Disoluciones Amortiguadoras (Buffers) y Ecuación de Henderson-Hasselbalch
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una **disolución amortiguadora, reguladora o tampón (buffer)** es un sistema acuoso capaz de resistir cambios drásticos en el pH ante la adición de cantidades moderadas de ácidos o bases fuertes, o ante la dilución con agua. Está constituida químicamente por una mezcla en concentraciones comparables de:
+1. Un **ácido débil y su base conjugada** en forma de sal (ej. $CH_3COOH / CH_3COONa$).
+2. O una **base débil y su ácido conjugado** en forma de sal (ej. $NH_3 / NH_4Cl$).
+
+El mecanismo de acción reguladora se basa en el **efecto del ion común**: si se añaden protones ($H^+$), son consumidos por la base conjugada; si se añaden iones hidróxido ($OH^-$), son neutralizados por el ácido débil.
+
+Lawrence Joseph Henderson (1908) y Karl Albert Hasselbalch (1916) dedujeron la ecuación fundamental que rige el pH de estos sistemas:
+
+$$\text{pH} = \text{p}K_a + \log_{10}\left( \frac{[\text{Base Conjugada}]}{[\text{Ácido Débil}]} \right)$$
+
+### Formalización Matemática y Leyes Físicas
+Deducción formal de la Ecuación de Henderson-Hasselbalch:
+$$K_a = \frac{[H^+][A^-]}{[HA]} \implies [H^+] = K_a \cdot \frac{[HA]}{[A^-]}$$
+Aplicando $-\log_{10}$ a ambos miembros:
+$$-\log[H^+] = -\log K_a - \log\left( \frac{[HA]}{[A^-]} \right)$$
+$$\text{pH} = \text{p}K_a + \log\left( \frac{[A^-]}{[HA]} \right) = \text{p}K_a + \log\left( \frac{n_{\text{base}}}{n_{\text{ácido}}} \right)$$
+Para buffers básicos:
+$$\text{pOH} = \text{p}K_b + \log\left( \frac{[\text{Ácido Conjugado}]}{[\text{Base Débil}]} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar preparar un buffer con un ácido fuerte y su sal (un ácido fuerte no forma amortiguador porque su anión carece de basicidad para capturar protones).
+2. Usar concentraciones molares en lugar de moles cuando se produce una reacción de neutralización tras añadir ácido o base externa.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del amortiguador del automóvil:** Cuando el carro cae en un hueco de la carretera (adición de ácido fuerte) o pasa por un bache alto (adición de base fuerte), los resortes del amortiguador absorben el golpe mecánico y los pasajeros sentados adentro casi no sienten el impacto (el pH permanece prácticamente estable).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se prepara una disolución amortiguadora mezclando $0.250\,\text{mol}$ de ácido acético ($CH_3COOH$, $\text{p}K_a = 4.74$) y $0.350\,\text{mol}$ de acetato de sodio ($CH_3COONa$) en agua hasta completar $1.00\,\text{L}$.
+a) Calcule el pH del amortiguador original.
+b) Calcule el nuevo pH si se añaden $0.050\,\text{mol}$ de gas $HCl$ puro.
+
+**Paso 1:** pH del buffer original:
+$$\text{pH} = \text{p}K_a + \log\left( \frac{[A^-]}{[HA]} \right) = 4.74 + \log\left( \frac{0.350}{0.250} \right) = 4.74 + \log(1.40) = 4.74 + 0.146 = 4.89$$
+
+**Paso 2:** Efecto de la adición de $0.050\,\text{mol}$ de $HCl$:
+Los protones del $HCl$ reaccionan cuantitativamente con la base conjugada acetato:
+$$CH_3COO^- + H^+ \longrightarrow CH_3COOH$$
+1. Moles finales de base ($A^-$): $0.350 - 0.050 = 0.300\,\text{mol}$
+2. Moles finales de ácido ($HA$): $0.250 + 0.050 = 0.300\,\text{mol}$
+**Paso 3:** Recálculo del pH:
+$$\text{pH} = 4.74 + \log\left( \frac{0.300}{0.300} \right) = 4.74 + \log(1.00) = 4.74 + 0 = 4.74$$
+*(El pH sólo disminuyó de $4.89$ a $4.74$, en contraste con el agua pura donde $0.050\,\text{mol}$ de $HCl$ derrumbarían el pH de $7.00$ a $1.30$).*
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la máxima capacidad amortiguadora de un buffer se alcanza cuando $[\text{Base}] = [\text{Ácido}]$, es decir, cuando $\text{pH} = \text{p}K_a$?
+2. ¿Cómo regula el amortiguador fosfato ($H_2PO_4^- / HPO_4^{2-}$) el pH intracelular en los tejidos biológicos?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

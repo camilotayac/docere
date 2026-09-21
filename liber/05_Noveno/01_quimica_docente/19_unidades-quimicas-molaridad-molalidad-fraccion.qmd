@@ -1,0 +1,68 @@
+# Concentración en Unidades Químicas: Molaridad, Molalidad y Fracción Molar
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Disoluciones Acuosas y Concentración
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las unidades químicas de concentración fundamentan la estequiometría en solución y la termodinámica de sistemas multicomponentes al expresar la concentración en función del número de moles de soluto:
+
+1. **Molaridad ($M$ o molar):** Moles de soluto disueltos por cada litro de solución ($\text{mol/L}$). Es la unidad más común en el laboratorio, aunque varía levemente con la temperatura debido a la dilatación volumétrica del líquido.
+2. **Molalidad ($m$ o molal):** Moles de soluto disueltos por cada kilogramo de solvente puro ($\text{mol/kg}$). Es estrictamente independiente de la temperatura, siendo obligatoria en el cálculo de propiedades coligativas.
+3. **Fracción Molar ($X$):** Relación adimensional entre los moles de un componente dado y los moles totales de todos los componentes de la mezcla.
+
+### Formalización Matemática y Leyes Físicas
+Ecuaciones operacionales de unidades químicas:
+$$\text{Molaridad: } M = \frac{n_{\text{soluto}}\,(\text{mol})}{V_{\text{solución}}\,(\text{L})} = \frac{m_{\text{soluto}}\,(\text{g})}{M_{\text{soluto}}\,(\text{g/mol}) \cdot V_{\text{solución}}\,(\text{L})}$$
+$$\text{Molalidad: } m = \frac{n_{\text{soluto}}\,(\text{mol})}{m_{\text{solvente}}\,(\text{kg})}$$
+$$\text{Fracción Molar: } X_A = \frac{n_A}{n_A + n_B + \dots + n_k} \qquad \sum_{i} X_i = 1$$
+Relación matemática entre Molaridad ($M$) y Molalidad ($m$):
+$$m = \frac{M}{\rho_{\text{solución}} - M \cdot M_{\text{soluto}} \times 10^{-3}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir el volumen de la solución con el volumen del solvente al calcular Molaridad.
+2. Usar la masa de la solución en vez de la masa exclusiva del solvente en el denominador de la Molalidad.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Molaridad vs Molalidad:** La Molaridad es como comprar leche por litro de botella terminada (si calientas la botella el vidrio y el líquido se dilatan y el litro cambia de masa); la Molalidad es como pesar la harina en una balanza de masa fija en kilogramos, no cambia sin importar el calor que haga en la cocina.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se disuelven $40.0\,\text{g}$ de hidróxido de sodio ($NaOH$, $M = 40.00\,\text{g/mol}$) en $460.0\,\text{g}$ de agua pura ($M = 18.02\,\text{g/mol}$), obteniéndose una disolución con una densidad final de $1.08\,\text{g/mL}$. Calcule:
+a) La fracción molar de $NaOH$.
+b) La molalidad ($m$).
+c) La molaridad ($M$).
+
+**Paso 1:** Cálculo de moles de cada componente:
+$$n(NaOH) = \frac{40.0\,\text{g}}{40.00\,\text{g/mol}} = 1.000\,\text{mol}$$
+$$n(H_2O) = \frac{460.0\,\text{g}}{18.02\,\text{g/mol}} = 25.527\,\text{mol}$$
+**Paso 2:** Fracción molar de $NaOH$:
+$$X_{NaOH} = \frac{1.000}{1.000 + 25.527} = \frac{1.000}{26.527} = 0.0377$$
+**Paso 3:** Molalidad ($m$):
+Masa de solvente en $\text{kg}$: $460.0\,\text{g} = 0.4600\,\text{kg}$.
+$$m = \frac{1.000\,\text{mol}}{0.4600\,\text{kg}} = 2.174\,\text{mol/kg} = 2.17\,m$$
+**Paso 4:** Molaridad ($M$):
+Masa total de la solución: $40.0 + 460.0 = 500.0\,\text{g}$.
+Volumen de la solución: $V = \frac{500.0\,\text{g}}{1.08\,\text{g/mL}} = 462.96\,\text{mL} = 0.4630\,\text{L}$.
+$$M = \frac{1.000\,\text{mol}}{0.4630\,\text{L}} = 2.160\,\text{mol/L} = 2.16\,M$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué a concentraciones acuosas extremadamente diluidas el valor numérico de la molaridad y de la molalidad son prácticamente idénticos?
+2. ¿Por qué la fracción molar carece totalmente de unidades de medida?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,88 @@
+# Energías de Enlace y Estimación de Calores de Reacción
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Química y Termoquímica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+A escala submicroscópica, una transformación química es un proceso de redistribución de densidad electrónica y reordenamiento atómico: requiere romper ciertos enlaces covalentes en las moléculas de los reactivos y formar nuevos enlaces covalentes en las moléculas de los productos.
+
+La **Energía de Disociación de Enlace ($D$ o $E_{\text{enlace}}$)** se define como: el cambio de entalpía requerido para romper homolíticamente un mol de un enlace químico específico en una molécula en estado gaseoso a presión y temperatura estándar:
+$$A-B(g) \to A(g) + B(g) \qquad \Delta H = D(A-B) > 0$$
+1. **La ruptura de enlaces es SIEMPRE un proceso endotérmico ($D > 0$):** Se requiere suministrar energía externa para vencer la atracción electrostática entre los núcleos cargados positivamente y el par electrónico compartido.
+2. **La formación de enlaces es SIEMPRE un proceso exotérmico ($\Delta H < 0$):** Al formarse el enlace se libera energía debido a la estabilización culómbica del sistema.
+
+Para moléculas diatómicas ($\text{H}_2, \text{Cl}_2, \text{HCl}, \text{O}_2, \text{N}_2$), la energía de disociación de enlace es una propiedad físicamente exacta e inequívoca. Para moléculas poliatómicas (como el metano $\text{CH}_4$), se emplean **energías de enlace promedio** tabuladas a partir de una amplia variedad de compuestos que contienen dicho enlace.
+
+La entalpía de una reacción en fase gaseosa puede estimarse mediante el balance:
+$$\Delta H_{\text{rxn}} \approx \sum D(\text{enlaces rotos}) - \sum D(\text{enlaces formados})$$
+Nótese con especial atención que el orden de la sustracción es $(\text{rotos} - \text{formados})$, exactamente el inverso de la fórmula de entalpías estándar de formación $(\text{productos} - \text{reactivos})$. Esto se debe a que romper enlaces cuesta energía ($+$) y formar enlaces devuelve energía ($-$).
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta H_{\text{rxn}} \approx \sum n \cdot D(\text{enlaces rotos en reactivos}) - \sum m \cdot D(\text{enlaces formados en productos})$$
+$$D(\text{enlace triple}) > D(\text{enlace doble}) > D(\text{enlace simple})$$
+Ejemplos de referencia (Oriakhi Cap. 14):
+1. $D(\text{C}-\text{C}) \approx 348\,\text{kJ/mol}$
+2. $D(\text{C}=\text{C}) \approx 614\,\text{kJ/mol}$
+3. $D(\text{C}\equiv\text{C}) \approx 839\,\text{kJ/mol}$
+4. $D(\text{N}\equiv\text{N}) \approx 945\,\text{kJ/mol}$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **El obstáculo de 'los enlaces almacenan energía':** Es el error didáctico más común en estudiantes de secundaria y biología: creer que 'romper enlaces de alta energía (como el ATP) libera energía'. Romper cualquier enlace SIEMPRE cuesta energía; la energía neta liberada en el catabolismo proviene de la formación de enlaces nuevos mucho más fuertes y estables en los productos (como los enlaces en el $\text{CO}_2$ y $\text{H}_2\text{O}$).
+2. **Aplicar energías de enlace a fases líquidas o sólidas:** Olvidar que las energías de enlace están definidas estrictamente en estado gas. Si intervienen líquidos (como el agua líquida), se debe incluir la entalpía de vaporización en el ciclo termoquímico.
+3. **Invertir la fórmula de balance:** Restar $(\text{formados} - \text{rotos})$, lo que invierte el signo de $\Delta H$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Imanes:** Dos imanes unidos representan un enlace químico estable. Para separarlos (romper el enlace), debes hacer fuerza y gastar tu energía muscular (proceso endotérmico). Cuando dos imanes sueltos se atraen y chocan violentamente (formar el enlace), liberan un 'clic' sonoro y calor por el impacto (proceso exotérmico).
+2. **El Presupuesto de Construcción:** Imagina derribar una pared vieja: pagas un costo de demolición (energía para romper enlaces). Luego vendes los ladrillos nuevos recuperados para el nuevo edificio: recibes una bonificación (energía de formación). Si la bonificación supera el costo de demolición, tu presupuesto final tiene ganancias netas (reacción exotérmica).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Utilice las energías de disociación de enlace promedio siguientes para estimar la entalpía de reacción estándar ($\Delta H^\circ_{rxn}$) de la hidrogenación del etileno a etano en fase gaseosa:
+$$\text{C}_2\text{H}_4(g) + \text{H}_2(g) \to \text{C}_2\text{H}_6(g)$$
+*Datos de energías de enlace promedio:*
+1. $D(\text{C}=\text{C}) = 614\,\text{kJ/mol}$
+2. $D(\text{C}-\text{C}) = 348\,\text{kJ/mol}$
+3. $D(\text{C}-\text{H}) = 413\,\text{kJ/mol}$
+4. $D(\text{H}-\text{H}) = 436\,\text{kJ/mol}$
+
+**Solución paso a paso:**
+1. *Escribir las estructuras de Lewis y contar los enlaces rotos en reactivos:*
+   1. En el etileno ($\text{CH}_2=\text{CH}_2$): $1\,\text{enlace C}=\text{C}$ y $4\,\text{enlaces C}-\text{H}$.
+   2. En el hidrógeno ($\text{H}-\text{H}$): $1\,\text{enlace H}-\text{H}$.
+   3. Enlaces a romper en reactivos:
+     $$\sum D(\text{rotos}) = 1 \cdot D(\text{C}=\text{C}) + 1 \cdot D(\text{H}-\text{H}) + 4 \cdot D(\text{C}-\text{H})$$
+2. *Contar los enlaces formados en los productos:*
+   1. En el etano ($\text{CH}_3-\text{CH}_3$): $1\,\text{enlace C}-\text{C}$ y $6\,\text{enlaces C}-\text{H}$.
+   2. Enlaces formados:
+     $$\sum D(\text{formados}) = 1 \cdot D(\text{C}-\text{C}) + 6 \cdot D(\text{C}-\text{H})$$
+3. *Simplificar los enlaces que no sufren alteración:*
+   1. 4 enlaces $\text{C}-\text{H}$ están presentes intactos a ambos lados. La rotura neta involucra:
+     2. Rotos: $1\,\text{C}=\text{C} + 1\,\text{H}-\text{H} = 614 + 436 = 1050\,\text{kJ/mol}$
+     3. Formados: $1\,\text{C}-\text{C} + 2\,\text{C}-\text{H} = 348 + 2(413) = 348 + 826 = 1174\,\text{kJ/mol}$
+4. *Aplicar la fórmula de balance de energías de enlace:*
+   $$\Delta H_{\text{rxn}} \approx \sum D(\text{rotos}) - \sum D(\text{formados})$$
+   $$\Delta H_{\text{rxn}} \approx 1050\,\text{kJ/mol} - 1174\,\text{kJ/mol} = -124\,\text{kJ/mol}$$
+   *Interpretación:* La hidrogenación es exotérmica en aproximadamente $124\,\text{kJ/mol}$, debido a que los dos nuevos enlaces sencillos formados ($\text{C}-\text{C}$ y $\text{C}-\text{H}$) representan una conformación electrónica más estable que el enlace doble $\pi$ y el enlace $\text{H}-\text{H}$ consumidos.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el nitrógeno molecular ($\text{N}_2$) es extraordinariamente inerte a temperatura ambiente a la luz de su energía de enlace ($D(\text{N}\equiv\text{N}) = 945\,\text{kJ/mol}$)?
+2. ¿Por qué el cálculo basado en energías de enlace es solo una aproximación y difiere levemente del valor obtenido mediante entalpías estándar de formación?
+3. ¿Por qué romper un enlace químico nunca puede liberar energía?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

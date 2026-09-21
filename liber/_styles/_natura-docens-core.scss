@@ -1,0 +1,203 @@
+/* ═══════════════════════════════════════════════════════════════
+   CORE — Tablas HTML · Pruebas ICFES · Toolbar A11y
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Toolbar Accesibilidad ── */
+#a11y-toolbar button {
+  color:        var(--toolbar-btn-color);
+  background:   var(--toolbar-btn-bg);
+  border-color: var(--toolbar-border);
+}
+#a11y-toolbar button:hover  { background: var(--toolbar-hover-bg); color: var(--toolbar-hover-color); }
+#a11y-toolbar button.active { background: var(--toolbar-btn-active-bg); color: #FAF8F4; }
+
+/* Indicador de velocidad dentro del botón */
+#a11y-tts-speed-btn .speed-badge {
+  position: absolute;
+  bottom: 2px; right: 4px;
+  font-size: 9px; font-weight: 700;
+  line-height: 1; color: var(--toolbar-border);
+  pointer-events: none;
+}
+#a11y-tts-speed-wrap { position: relative; }
+
+.skip-link {
+  position: absolute; top: -40px; left: 0;
+  background: #0077BB; color: #fff;
+  padding: 8px 16px; z-index: 100000;
+  font-size: 1rem; text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+*:focus-visible {
+  outline: 3px solid var(--focus-outline); outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+  clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+#quarto-document-content {
+  font-size: var(--a11y-base-size, 1rem);
+}
+
+/* ── Tablas HTML ── */
+#quarto-document-content table {
+  font-size: 0.85em; border-collapse: separate; border-spacing: 0;
+  border: 0.6pt solid var(--border-color); border-radius: var(--radius-md);
+  overflow: hidden; background: var(--table-bg); margin: var(--space-md) 0;
+}
+#quarto-document-content table thead       { background: var(--table-header-bg); }
+#quarto-document-content table thead th    {
+  padding: 0.55em 0.75em; font-weight: 700; color: var(--table-header-color);
+  border-bottom: 0.6pt solid var(--border-color); text-align: left;
+}
+#quarto-document-content table tbody td    {
+  padding: 0.5em 0.75em; border-bottom: 0.4pt solid var(--border-color);
+}
+#quarto-document-content table tbody tr:last-child td { border-bottom: none; }
+#quarto-document-content table tbody tr.odd   { background: var(--table-stripe-odd); }
+#quarto-document-content table tbody tr.even  { background: var(--table-stripe-even); }
+#quarto-document-content table tbody tr:hover { background: var(--table-stripe-hover); }
+.table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* ── Pruebas ICFES ── */
+
+/* Bloque contenedor de cada pregunta */
+.icfes-pregunta {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--icfes-divider);
+}
+.icfes-pregunta:last-child { border-bottom: none; margin-bottom: 0; }
+
+/* Número de pregunta */
+.icfes-num {
+  font-size: 0.75em; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--icfes-border);
+  margin-bottom: 0.4em;
+}
+
+.icfes-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 10px; margin: var(--space-md) 0; max-width: 100%;
+}
+.icfes-opcion {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 12px 16px; min-height: 48px;
+  border: 2px solid var(--icfes-border); border-radius: 6px;
+  background: var(--icfes-bg); cursor: pointer; color: var(--icfes-text);
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+  overflow-wrap: break-word; text-align: left;
+}
+.icfes-opcion:hover:not(.correct):not(.incorrect) {
+  background: var(--icfes-hover-bg);
+  border-color: var(--icfes-hover-border);
+}
+.icfes-opcion:focus-visible:not(.verified) { outline: 3px solid var(--focus-outline); outline-offset: 2px; }
+.icfes-opcion.selected  {
+  background: var(--icfes-selected-bg);
+  border-color: var(--icfes-selected-border);
+  box-shadow: 0 0 0 1px var(--icfes-selected-border);
+}
+.icfes-opcion.correct   { background: var(--icfes-correct-bg); border-color: var(--icfes-correct-border); }
+.icfes-opcion.correct   .icfes-letra { background: var(--icfes-correct-border); color: #fff; }
+.icfes-opcion.incorrect { background: var(--icfes-incorrect-bg); border-color: var(--icfes-incorrect-border); }
+.icfes-opcion.incorrect .icfes-letra { background: var(--icfes-incorrect-border); color: #fff; }
+
+/* Letra circular — color terracota neutro sin selección */
+.icfes-letra {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  background: var(--icfes-letra-bg);
+  border: 2px solid var(--icfes-letra-border);
+  color: var(--icfes-letra-color);
+  font-weight: 700; font-size: 0.85em;
+  margin-top: 1px; /* alinear con la primera línea del texto */
+  transition: background 0.15s, color 0.15s;
+}
+.icfes-opcion.selected .icfes-letra {
+  background: var(--icfes-selected-border);
+  border-color: var(--icfes-selected-border);
+  color: #fff;
+}
+
+.icfes-texto { flex: 1; font-size: 0.95em; line-height: 1.5; }
+
+/* Clave de respuesta */
+details.icfes-respuesta {
+  margin-top: 0.75rem;
+  border-left: 3px solid var(--icfes-correct-border);
+  background: var(--icfes-respuesta-bg);
+  border-radius: 0 6px 6px 0;
+  padding: 0;
+  overflow: hidden;
+}
+details.icfes-respuesta summary {
+  cursor: pointer; font-size: 0.85em; font-weight: 600;
+  padding: 0.45em 0.85em; color: var(--icfes-correct-border);
+  list-style: none; display: flex; align-items: center; gap: 0.4em;
+  user-select: none;
+}
+details.icfes-respuesta summary::-webkit-details-marker { display: none; }
+details.icfes-respuesta summary::before {
+  content: "▶";
+  font-size: 0.7em;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+details.icfes-respuesta[open] summary::before { transform: rotate(90deg); }
+details.icfes-respuesta summary:hover { color: var(--icfes-summary-hover); }
+details.icfes-respuesta > *:not(summary) {
+  padding: 0.5em 0.85em 0.75em;
+  font-size: 0.9em;
+  color: var(--icfes-text);
+}
+
+/* Badges de competencia */
+.competencia-1::after, .competencia-2::after, .competencia-3::after {
+  display: inline-block; font-size: 0.65em; padding: 0.15em 0.5em;
+  border-radius: 3px; margin-left: 0.5em; vertical-align: middle;
+  font-weight: 600;
+}
+.competencia-1::after { content: "Comprensión";    background: #c0f0e8; color: #2d5a4e; }
+.competencia-2::after { content: "Interpretación"; background: #cce0f5; color: #2a4a5e; }
+.competencia-3::after { content: "Evaluación";     background: #f8d0d0; color: #6e3a2a; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .icfes-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .icfes-opcion { padding: 10px 12px; }
+}
+
+/* ── Impresión ── */
+@media print {
+  .icfes-opcion { border: 0.5pt solid #000; background: none; break-inside: avoid; }
+  .icfes-letra  { background: #aaa !important; color: #000 !important; border: 1pt solid #000 !important; }
+  details.icfes-respuesta { display: none; }
+}
+
+/* ── Forced colors (High Contrast) ── */
+@media (forced-colors: active) {
+  .icfes-opcion { border: 2px solid ButtonText; }
+  .icfes-letra  { background: ButtonText; color: Canvas; border-color: ButtonText; }
+  #a11y-toolbar button { border: 1px solid ButtonText; }
+  #a11y-toolbar button:hover,
+  #a11y-toolbar button.active { background: Highlight; color: HighlightText; }
+}
+
+/* ── Sin animaciones ── */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ── Grid fallback ── */
+@supports not (display: grid) {
+  .icfes-grid   { display: flex; flex-wrap: wrap; gap: 10px; }
+  .icfes-opcion { flex: 1 1 calc(50% - 10px); min-width: 0; box-sizing: border-box; }
+}

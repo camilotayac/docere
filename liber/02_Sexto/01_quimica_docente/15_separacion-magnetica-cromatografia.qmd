@@ -1,0 +1,56 @@
+# Separación Magnética y Cromatografía en Papel
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Métodos de Separación de Mezclas
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Existen técnicas de separación especializadas basadas en propiedades físicas diferenciales:
+
+1. **Separación Magnética (Imantación):** Explota las propiedades ferromagnéticas intensivas de ciertas sustancias (hierro, cobalto, níquel, magnetita) frente a sustancias diamagnéticas o paramagnéticas no susceptibles, extrayéndolas selectivamente mediante campos magnéticos externos.
+2. **Cromatografía en Papel:** Técnica analítica de partición y adsorción que separa solutos disueltos en virtud de su afinidad diferencial entre dos fases: una **fase estacionaria** polar fija (el agua adsorbida en la red de celulosa del papel) y una **fase móvil** eluyente (un solvente orgánico o mezcla de solventes que asciende por capilaridad).
+
+### Formalización Matemática y Leyes Físicas
+Factor de retención cromatográfico ($R_f$, adimensional):
+$$R_f = \frac{\text{Distancia recorrida por el soluto}}{\text{Distancia recorrida por el frente del solvente}} = \frac{d_{\text{soluto}}}{d_{\text{solvente}}}$$
+Condición de rango:
+$$0 \le R_f \le 1$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que el imán 'atrae a todos los metales' (el cobre, aluminio, oro y plata no son ferromagnéticos y no se atraen con imanes comunes).
+2. Creer que en la cromatografía el colorante 'se desintegra', en lugar de comprender que se están separando pigmentos moleculares preexistentes.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la carrera con obstáculos:** Las moléculas de la tinta corren arrastradas por el agua (la corriente de viento); las moléculas que se apegan fuertemente a las fibras del papel (obstáculos) avanzan lento ($R_f$ bajo), mientras que las que se disuelven mejor en el solvente corren rápido ($R_f$ alto).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En una cromatografía en papel de una tinta verde, el frente del solvente eluyente avanzó $8.0\,\text{cm}$ desde la línea de siembra. El componente amarillo avanzó $6.4\,\text{cm}$ y el componente azul avanzó $3.2\,\text{cm}$. Calcule el valor de $R_f$ para cada pigmento e indique cuál tiene mayor afinidad por la fase móvil.
+
+**Paso 1:** Cálculo de $R_f$ del pigmento amarillo:
+$$R_{f,\text{amarillo}} = \frac{6.4\,\text{cm}}{8.0\,\text{cm}} = 0.80$$
+**Paso 2:** Cálculo de $R_f$ del pigmento azul:
+$$R_{f,\text{azul}} = \frac{3.2\,\text{cm}}{8.0\,\text{cm}} = 0.40$$
+**Paso 3:** Interpretación fisicoquímica:
+El pigmento amarillo posee un $R_f$ mayor ($0.80 > 0.40$), lo que demuestra que tiene mayor afinidad termodinámica por la fase móvil eluyente y menor adsorción sobre la fase estacionaria de celulosa.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo se utiliza la separación magnética en las plantas modernas de reciclaje de residuos sólidos urbanos?
+2. Si dos sustancias tienen el mismo $R_f$ en agua, ¿cómo podemos modificar el experimento para lograr su separación cromatográfica?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

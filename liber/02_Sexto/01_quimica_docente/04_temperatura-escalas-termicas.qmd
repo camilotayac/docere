@@ -1,0 +1,55 @@
+# Temperatura y Escalas Termométricas: Celsius, Kelvin y Fahrenheit
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Propiedades de la Materia y Medición
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La temperatura mide la energía cinética traslacional promedio de las partículas que constituyen un sistema material. La Ley Cero de la Termodinámica fundamenta su medición a través del equilibrio térmico con termómetros calibrados. Las escalas empíricas (Celsius y Fahrenheit) se basan en transiciones de fase de sustancias de referencia, mientras que la escala Kelvin es la escala termodinámica absoluta cuyo cero ($0\,\text{K}$) marca el límite asintótico donde cesa la energía cinética térmica clásica.
+
+### Formalización Matemática y Leyes Físicas
+Ecuaciones de conversión de temperatura:
+$$T(\text{K}) = T({}^\circ\text{C}) + 273.15$$
+$$T({}^\circ\text{F}) = 1.8 \cdot T({}^\circ\text{C}) + 32$$
+$$T({}^\circ\text{C}) = \frac{T({}^\circ\text{F}) - 32}{1.8}$$
+Energía cinética promedio molecular:
+$$\bar{E}_k = \frac{3}{2} k_B T$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar la palabra 'calor' como sinónimo de 'temperatura' (el calor es transferencia transitoria de energía, no una propiedad intrínseca de estado).
+2. Pensar que una temperatura de $20^\circ\text{C}$ representa 'el doble de caliente' que $10^\circ\text{C}$ (la escala Celsius no posee cero absoluto de razón física).
+3. Concebir temperaturas negativas en la escala Kelvin.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del velocímetro escolar:** La temperatura es la velocidad media a la que corren los niños en el patio; el calor es el impacto colectivo si todos chocan contra una valla.
+2. **Comparador de escalas en regletas paralelas:** Graficar las tres escalas alineando el punto triple del agua y los puntos de ebullición para evidenciar los factores de escala (100 divisiones en Celsius/Kelvin frente a 180 en Fahrenheit).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una reacción química requiere una temperatura de $393.15\,\text{K}$. Convierta esta temperatura a grados Celsius ($^\circ\text{C}$) y grados Fahrenheit ($^\circ\text{F}$).
+
+**Paso 1:** Conversión a grados Celsius:
+$$T({}^\circ\text{C}) = 393.15\,\text{K} - 273.15 = 120.00\,{}^\circ\text{C}$$
+**Paso 2:** Conversión a grados Fahrenheit:
+$$T({}^\circ\text{F}) = 1.8 \cdot (120.00) + 32 = 216.0 + 32 = 248.0\,{}^\circ\text{F}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué en las leyes de los gases es mandatorio usar temperaturas en Kelvin y se incurre en error grave al usar Celsius?
+2. ¿A qué temperatura numérica marcan el mismo valor un termómetro Celsius y uno Fahrenheit?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

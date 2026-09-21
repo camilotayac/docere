@@ -1,0 +1,57 @@
+# El Mol y la Constante de Avogadro: Definición SI y Fundamentos (Oriakhi Cap. 3)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El **mol** es la unidad fundamental de cantidad de sustancia ($n$) en el Sistema Internacional de Unidades (SI). En la redefinición histórica del SI adoptada por la 26ª Conferencia General de Pesas y Medidas (CGPM, Versalles, 2019), el mol se independizó de la masa del carbono-12 y quedó fijado universalmente mediante el valor numérico exacto de la **constante de Avogadro** ($N_A$):
+
+**Un mol contiene exactamente $6.02214076 \times 10^{23}$ entidades elementales especificadas** (átomos, moléculas, iones, electrones o cualquier conjunto de partículas).
+
+La constante de Avogadro actúa como el **puente de escala fundamental** entre el microcosmos submicroscópico inobservable de masa molecular (en daltons o u.m.a.) y el macrocosmos macroscópico medible en el laboratorio en gramos y kilogramos.
+
+### Formalización Matemática y Leyes Físicas
+Definición exacta del SI (2019):
+$$N_A = 6.02214076 \times 10^{23}\,\text{mol}^{-1}$$
+Relación matemática fundamental:
+$$N = n \cdot N_A \implies n = \frac{N}{N_A}$$
+Donde $N$ es el número total de partículas elementales y $n$ la cantidad de sustancia en moles.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que el mol es una unidad de masa (el mol mide número de partículas o cantidad de sustancia, no masa inercial).
+2. No especificar la entidad elemental al usar el término (decir 'un mol de cloro' es ambiguo: ¿se refiere a un mol de átomos de $Cl$ o a un mol de moléculas de $Cl_2$?).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la docena en el supermercado:** Una docena son exactamente 12 objetos, ya sean 12 huevos, 12 uvas o 12 sandías. Una docena de uvas pesa $50\,\text{g}$ y una docena de sandías pesa $60\,\text{kg}$, pero ambas son una docena. Un mol son siempre $6.022 \times 10^{23}$ partículas, independientemente de que sean átomos livianos de hidrógeno o moléculas gigantes de hemoglobina.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 3):** Una muestra de sacarosa pura ($C_{12}H_{22}O_{11}$) contiene $3.011 \times 10^{24}$ átomos de carbono. Calcule cuántos moles de sacarosa representa y cuántas moléculas totales de sacarosa contiene la muestra.
+
+**Paso 1:** Relación entre átomos de carbono y moléculas de sacarosa:
+Cada molécula de $C_{12}H_{22}O_{11}$ contiene exactamente 12 átomos de carbono.
+$$N_{\text{moléculas}} = \frac{3.011 \times 10^{24}\,\text{átomos de C}}{12\,\text{átomos de C/molécula}} = 2.509 \times 10^{23}\,\text{moléculas de sacarosa}$$
+**Paso 2:** Cálculo de moles de sacarosa mediante $N_A$:
+$$n = \frac{N}{N_A} = \frac{2.509 \times 10^{23}\,\text{moléculas}}{6.022 \times 10^{23}\,\text{moléculas/mol}} = 0.4167\,\text{mol de sacarosa}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los químicos necesitan una unidad como el mol en lugar de contar directamente gramos o partículas individuales?
+2. Si un mol de granos de arena cubriera toda Colombia, ¿qué espesor tendría la capa de arena?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

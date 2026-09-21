@@ -1,0 +1,82 @@
+# Estereoisomería, Quiralidad, Enantiómeros y Actividad Óptica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estereoquímica y Quiralidad Molecular
+> * **Propósito Docente:** Dominar los criterios de simetría molecular, aplicar rigurosamente las reglas de Cahn-Ingold-Prelog para configuraciones $(R)$ y $(S)$, modelar cuantitativamente la polarimetría mediante la ley de Biot y analizar el impacto farmacológico de los enantiómeros.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La estereoisomería aborda el estudio de aquellas moléculas que poseen idéntica fórmula molecular e idéntica conectividad atómica (la misma secuencia de enlaces covalentes), pero difieren en la disposición tridimensional de sus átomos en el espacio. Dentro de la estereoisomería configuracional, el concepto más profundo y de mayor trascendencia biológica es la **quiralidad**.
+
+Una molécula u objeto se define como **quiral** (del griego *cheir*, mano) si no es superponible con su imagen especular. Por el contrario, si una molécula es exactamente superponible sobre su reflejo en un espejo, se clasifica como **aquiral**. El criterio geométrico necesario y suficiente para que una estructura sea aquiral es la presencia de un elemento de simetría impropio, principalmente un **plano interno de simetría ($\sigma$)** que divide a la molécula en dos mitades que son imágenes especulares mutuas, o un **centro de inversión ($i$)**. En la inmensa mayoría de las moléculas orgánicas, la quiralidad surge de la presencia de uno o más **carbonos asimétricos o centros estereogénicos ($C^*$)**, definidos como átomos de carbono con hibridación tetraédrica $sp^3$ unidos a cuatro sustituyentes o átomos químicamente distintos entre sí.
+
+Las dos formas quirales no superponibles de una misma molécula reciben el nombre de **enantiómeros**. Los enantiómeros presentan propiedades físicas y termodinámicas escalares absolutamente indistinguibles en medios aquirales: poseen exactamente el mismo punto de fusión, idéntico punto de ebullición, misma densidad, idéntica constante dieléctrica y espectros de absorción infrarroja y resonancia magnética nuclear idénticos. Sin embargo, manifiestan diferencias en dos circunstancias físicas cruciales:
+
+1. **Interacción con la Luz Polarizada en un Plano:** Hacen rotar el vector del campo eléctrico de la luz polarizada en igual magnitud angular pero en sentidos opuestos. El enantiómero que rota el plano hacia la derecha (en sentido horario) se denomina **dextrógiro** y se simboliza con el signo $(+)$ o la letra $d$; el enantiómero que lo desvía hacia la izquierda (sentido antihorario) se designa como **levógiro**, denotado por el signo $(-)$ o la letra $l$. Una mezcla equimolar ($1:1$) de dos enantiómeros se denomina **mezcla racémica o racemato** ($[\pm]$) y carece por completo de actividad óptica neta debido a la compensación mutua externa.
+2. **Interacción con Otros Entornos Quirales:** En los sistemas biológicos, los receptores proteicos, las enzimas y los ácidos nucleicos son inherentemente quirales (constituidos casi exclusivamente por L-aminoácidos y D-carbohidratos). Por ende, dos enantiómeros interactúan con una enzima de forma asimétrica (modelo de ajuste en tres puntos de Easson-Stedman), lo que provoca que un enantiómero sea farmacológicamente activo (eutómero) mientras que el otro resulte inactivo o incluso teratogénico y tóxico (distómero).
+
+La polarimetría cuantitativa se rige por la **Ley de Biot**, que relaciona el ángulo de rotación óptica observado ($\alpha$) con la concentración de la especie y la longitud del camino óptico:
+
+$$[\alpha]_\lambda^T = \frac{\alpha_{\text{obs}}}{l \times c}$$
+
+donde $[\alpha]_\lambda^T$ es la rotación específica del compuesto a una temperatura $T$ y longitud de onda $\lambda$ (habitualmente la línea $D$ del sodio, $589.3\,\text{nm}$), expresada en $\text{grados}\cdot\text{cm}^3/(\text{dm}\cdot\text{g})$; $\alpha_{\text{obs}}$ es el ángulo experimental medido en grados; $l$ es la longitud del tubo polarimétrico en decímetros ($\text{dm}$); y $c$ es la concentración másica de la disolución en gramos por mililitro ($\text{g/mL}$).
+
+Para nombrar de manera inequívoca la configuración tridimensional absoluta de un centro quiral sin depender de la rotación óptica experimental, Robert Cahn, Christopher Ingold y Vladimir Prelog introdujeron en 1956 el **Sistema de Nomenclatura R/S (Reglas CIP)**:
+
+1. **Asignación de Prioridades:** Se asignan prioridades decrecientes ($1 > 2 > 3 > 4$) a los cuatro átomos unidos directamente al centro estereogénico en función de su número atómico ($Z$). A mayor $Z$, mayor prioridad ($I > Br > Cl > S > P > F > O > N > C > H$).
+2. **Regla de Desempate:** Si dos átomos unidos al centro quiral son idénticos, se comparan secuencialmente los átomos unidos a ellos a lo largo de la cadena hasta encontrar la primera discrepancia atómica. Los enlaces múltiples se tratan formalmente duplicando o triplicando los átomos involucrados.
+3. **Visualización y Giro:** Se orienta la molécula en el espacio de modo que el sustituyente de menor prioridad (4) quede dirigido hacia atrás (alejándose del observador). Se traza un arco imaginario desde el sustituyente de prioridad 1 hacia el 2 y luego al 3. Si el sentido de avance es horario (en el sentido de las manecillas del reloj), la configuración absoluta es **$(R)$** (del latín *rectus*, derecha); si el sentido de giro es antihorario, la configuración absoluta es **$(S)$** (del latín *sinister*, izquierda).
+
+Cuando una molécula contiene dos o más centros estereogénicos ($n$), el número máximo teórico de estereoisómeros viene dado por $2^n$. Aquellos estereoisómeros que no son imágenes especulares entre sí se denominan **diastereómeros** y presentan propiedades físicas y químicas completamente diferentes (distintos puntos de ebullición, solubilidades y estabilidades). Si una molécula posee centros quirales pero alberga un plano interno de simetría que anula la quiralidad global, se denomina **compuesto meso** y es ópticamente inactivo por compensación interna.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir la configuración absoluta $(R/S)$ con el signo de la rotación óptica $(+/-)$:** Creer que una molécula $(R)$ es siempre dextrógira $(+)$ y una $(S)$ es levógira $(-)$. No existe correlación teórica directa entre la nomenclatura geométrica CIP y el signo medido en el polarímetro; el sentido de rotación depende de la polarizabilidad electrónica de la molécula y solo se determina empíricamente.
+2. **Olvidar proyectar el grupo de menor prioridad hacia atrás:** Asignar la configuración mirando la molécula con el hidrógeno hacia adelante o en el plano, incurriendo en la inversión artificial del descriptor estereoquímico.
+3. **Identificar carbonos quirales en anillos sin recorrer ambos lados:** Analizar los sustituyentes en un cicloalcano sin avanzar por las dos trayectorias periféricas del anillo para verificar si los caminos son simétricos o asimétricos.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de las Manos y los Guantes:** Las manos humanas son el ejemplo canónico de quiralidad: la mano derecha y la izquierda son imágenes especulares no superponibles. Un guante quirúrgico derecho (entorno quiral) calza perfectamente en la mano derecha pero no en la izquierda, explicando por qué una enzima solo metaboliza un enantiómero específico.
+2. **Analogía del Volante de Conducción:** Para la asignación $(R/S)$, imaginar el centro quiral como el eje de la columna de dirección de un automóvil con el sustituyente 4 orientado hacia el motor; girar de 1 a 2 y a 3 equivale a girar el volante para doblar a la derecha ($(R)$) o a la izquierda ($(S)$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una disolución preparada disolviendo $1.50\,\text{g}$ del enantiómero puro de la hormona adrenalina en etanol hasta completar un matraz aforado de $25.0\,\text{mL}$, se introduce en un tubo polarimétrico de $20.0\,\text{cm}$ de longitud. La medición experimental en el polarímetro con la línea $D$ del sodio a $20^\circ\text{C}$ registra una rotación observada $\alpha_{\text{obs}} = -6.00^\circ$. Determine:
+1. La concentración de la disolución en $\text{g/mL}$ y la longitud del tubo en decímetros ($\text{dm}$).
+2. La rotación óptica específica $[\alpha]_D^{20}$ de la adrenalina.
+3. La rotación observada si una muestra se contamina al $20\,\%$ con su enantiómero opuesto (exceso enantiomérico $ee = 60\,\%$).
+
+**Solución paso a paso:**
+
+1. *Calcular la concentración másica y adecuar las unidades dimensionales:*
+   $$c = \frac{1.50\,\text{g}}{25.0\,\text{mL}} = 0.0600\,\text{g/mL}$$
+   La concentración requerida en la ley de Biot debe expresarse rigurosamente en gramos de soluto por mililitro de disolución.
+   $$l = 20.0\,\text{cm} \times \left(\frac{1\,\text{dm}}{10\,\text{cm}}\right) = 2.00\,\text{dm}$$
+   La longitud de la celda de paso óptico debe convertirse de centímetros a decímetros dividiendo entre diez.
+
+2. *Calcular la rotación específica $[\alpha]_D^{20}$ aplicando la Ley de Biot:*
+   $$[\alpha]_D^{20} = \frac{\alpha_{\text{obs}}}{l \times c}$$
+   Se sustituyen directamente los valores experimentales medidos.
+   $$[\alpha]_D^{20} = \frac{-6.00^\circ}{(2.00\,\text{dm})(0.0600\,\text{g/mL})} = \frac{-6.00^\circ}{0.1200} = -50.0^\circ$$
+   La rotación específica de la $(-)$-adrenalina natural es de $-50.0^\circ\,\text{dm}^{-1}\cdot\text{g}^{-1}\cdot\text{mL}$, confirmando su naturaleza levógira intrínseca.
+
+3. *Calcular la rotación observada bajo un exceso enantiomérico del $60.0\,\%$ en la misma celda:*
+   $$ee = \frac{[\alpha]_{\text{mezcla}}}{[\alpha]_{\text{puro}}} \times 100\,\% \implies [\alpha]_{\text{mezcla}} = [\alpha]_{\text{puro}} \times \left(\frac{ee}{100\,\%}\right)$$
+   El exceso enantiomérico cuantifica la fracción de mezcla que no está compensada racémicamente y que genera la desviación neta de la luz.
+   $$[\alpha]_{\text{mezcla}} = -50.0^\circ \times 0.600 = -30.0^\circ$$
+   La rotación específica efectiva cae proporcionalmente a la pureza óptica de la muestra.
+   $$\alpha_{\text{obs, mezcla}} = [\alpha]_{\text{mezcla}} \times l \times c = (-30.0^\circ)(2.00\,\text{dm})(0.0600\,\text{g/mL}) = -3.60^\circ$$
+   El ángulo medido en el polarímetro disminuye a $-3.60^\circ$ debido a que el $40\,\%$ de la mezcla conforma un par racémico inactivo que no aporta a la rotación neta.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ácido tartárico posee únicamente 3 estereoisómeros en lugar de los $2^2 = 4$ predichos por la regla general de Van 't Hoff?
+2. En el caso histórico de la talidomida, ¿por qué la administración del enantiómero $(R)$ puro no logró evitar los efectos teratogénicos en mujeres gestantes?
+3. ¿Cómo es posible separar (resolver) químicamente dos enantiómeros si tienen exactamente los mismos puntos de fusión, ebullición y solubilidad?

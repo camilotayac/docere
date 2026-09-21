@@ -1,0 +1,73 @@
+# Construcción Matemática de Curvas de Titulación Ácido Fuerte - Base Fuerte
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Volumetría y Titulaciones Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una **curva de titulación** es el registro gráfico continuo de la variación del pH de la disolución analizada en función del volumen ($V$) de titulante añadido desde la bureta. Para la titulación de un ácido fuerte monoprótico ($HCl$) con una base fuerte ($NaOH$), la curva se divide en cuatro regiones matemáticas distintas:
+
+1. **Antes de añadir titulante ($V_b = 0$):** El pH está regido exclusivamente por la concentración inicial del ácido fuerte: $\text{pH} = -\log[H^+]_0$.
+2. **Antes del punto de equivalencia ($0 < V_b < V_e$):** Hay exceso de ácido fuerte no neutralizado. Se calculan los moles residuales de $H^+$ divididos entre el volumen total acumulado ($V_a + V_b$).
+3. **En el punto de equivalencia ($V_b = V_e$):** Todo el ácido fuerte ha sido neutralizado por la base fuerte; los únicos iones presentes son espectadores ($Na^+, Cl^-$) que no sufren hidrólisis. El pH está gobernado exclusivamente por la autoionización del agua a $25^\circ\text{C}$: **$\text{pH} = 7.00$ estricto**.
+4. **Después del punto de equivalencia ($V_b > V_e$):** Todo el ácido se consumió y existe un exceso progresivo de base fuerte libre ($OH^-$). El pH se calcula a partir de $[OH^-]$ residual.
+
+### Formalización Matemática y Leyes Físicas
+Ecuaciones por etapas (titulación de $V_a$ de ácido fuerte $M_a$ con base fuerte $M_b$):
+1. Volumen en el punto de equivalencia:
+$$V_e = \frac{M_a \cdot V_a}{M_b}$$
+1. Región 2 ($V_b < V_e$):
+$$[H^+] = \frac{M_a V_a - M_b V_b}{V_a + V_b} \implies \text{pH} = -\log[H^+]$$
+1. Región 3 ($V_b = V_e$):
+$$[H^+] = \sqrt{K_w} = 1.0 \times 10^{-7}\,M \implies \text{pH} = 7.00$$
+1. Región 4 ($V_b > V_e$):
+$$[OH^-] = \frac{M_b V_b - M_a V_a}{V_a + V_b} \implies \text{pOH} = -\log[OH^-] \implies \text{pH} = 14.00 - \text{pOH}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar sumar los volúmenes ($V_{\text{total}} = V_a + V_b$) en el denominador, ignorando el efecto de dilución progresiva durante la titulación.
+2. Suponer que el punto de equivalencia de cualquier titulación es siempre a $\text{pH} = 7.00$ (sólo es 7 si ambos son fuertes).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El salto del acantilado de pH:** Durante casi toda la titulación el pH sube muy lentamente (de 1 a 3); pero al llegar a una sola gota antes del punto de equivalencia, la curva se vuelve vertical como una pared, disparando el pH bruscamente de 3 a 11 en una sola gota.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se titulan $50.0\,\text{mL}$ de $HCl\,0.100\,M$ con disolución de $NaOH\,0.100\,M$. Calcule el pH:
+a) Al inicio ($0\,\text{mL}$).
+b) Al añadir $49.0\,\text{mL}$ de $NaOH$.
+c) En el punto de equivalencia ($50.0\,\text{mL}$ de $NaOH$).
+d) Al añadir $51.0\,\text{mL}$ de $NaOH$.
+
+**Paso 1:** Volumen inicial ($V_b = 0$):
+$$\text{pH} = -\log(0.100) = 1.00$$
+**Paso 2:** Al añadir $49.0\,\text{mL}$ ($V_{\text{total}} = 99.0\,\text{mL} = 0.0990\,\text{L}$):
+$$n(H^+) = (0.0500\,\text{L})(0.100\,M) - (0.0490\,\text{L})(0.100\,M) = 5.00 \times 10^{-3} - 4.90 \times 10^{-3} = 1.00 \times 10^{-4}\,\text{mol}$$
+$$[H^+] = \frac{1.00 \times 10^{-4}\,\text{mol}}{0.0990\,\text{L}} = 1.01 \times 10^{-3}\,M \implies \text{pH} = 2.996 \approx 3.00$$
+**Paso 3:** En el punto de equivalencia ($50.0\,\text{mL}$):
+Todo se neutraliza formando $NaCl(aq)$. La sal no se hidroliza: **$\text{pH} = 7.00$**.
+**Paso 4:** Al añadir $51.0\,\text{mL}$ ($V_{\text{total}} = 101.0\,\text{mL} = 0.1010\,\text{L}$):
+$$n(OH^-)_{\text{exceso}} = (0.0510)(0.100) - (0.0500)(0.100) = 1.00 \times 10^{-4}\,\text{mol}$$
+$$[OH^-] = \frac{1.00 \times 10^{-4}\,\text{mol}}{0.1010\,\text{L}} = 9.901 \times 10^{-4}\,M$$
+$$\text{pOH} = 3.004 \implies \text{pH} = 14.00 - 3.00 = 11.00$$
+*(Nótese que una variación de sólo $2.0\,\text{mL}$ alrededor del punto de equivalencia produce un salto colosal de 8 unidades de pH: de 3.00 a 11.00).*
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué para una titulación ácido fuerte - base fuerte se pueden utilizar tanto fenolftaleína como naranja de metilo como indicadores?
+2. ¿Cómo se detecta el punto de equivalencia mediante el método de la primera y segunda derivada del pH frente al volumen?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

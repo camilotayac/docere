@@ -1,0 +1,60 @@
+# Fisicoquímica de Líquidos: Tensión Superficial, Viscosidad y Presión de Vapor (Oriakhi Cap. 12)
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Fuerzas Intermoleculares y Estados Condensados
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El estado líquido se caracteriza por un ordenamiento molecular de corto alcance con libertad de traslación. Las fuerzas intermoleculares gobiernan tres propiedades físicas cruciales:
+
+1. **Tensión Superficial ($\gamma$):** Trabajo o energía requerida para incrementar el área superficial de un líquido en una unidad ($ \text{J/m}^2 $ o $ \text{N/m} $). Las moléculas del seno del líquido experimentan fuerzas de atracción simétricas en todas direcciones, mientras que las moléculas de la superficie sufren una fuerza neta hacia el interior, obligando al líquido a adoptar la forma geométrica de mínima superficie (la esfera).
+2. **Viscosidad ($\eta$):** Medida de la resistencia interna de un fluido a fluir o deformarse por esfuerzo cortante (Ley de Newton de la viscosidad). Disminuye rápidamente al aumentar la temperatura.
+3. **Presión de Vapor:** Presión ejercida por el vapor en equilibrio dinámico con su fase líquida a una temperatura fija en un recipiente cerrado (Ecuación de Clausius-Clapeyron).
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de Capilaridad (Ley de Jurin):
+$$h = \frac{2\gamma \cos \theta}{\rho g r}$$
+Donde $\theta$ es el ángulo de contacto, $\gamma$ la tensión superficial, $\rho$ la densidad y $r$ el radio del capilar.
+Ecuación de Clausius-Clapeyron para la presión de vapor:
+$$\ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{\text{vap}}}{R} \left( \frac{1}{T_2} - \frac{1}{T_1} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que la tensión superficial es una 'película de plástico' que cubre el agua.
+2. Confundir viscosidad con densidad (el aceite vegetal es más viscoso que el agua pero es menos denso y flota sobre ella).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los niños en un concierto:** En el centro de la multitud (seno del líquido), los empujones vienen de todos lados y se anulan; en el borde exterior del concierto (superficie), la gente del centro te jala hacia adentro para no quedar aislada, tensando el perímetro de la multitud.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 12):** La presión de vapor del agua pura es de $3.17\,\text{kPa}$ a $25.0^\circ\text{C}$ ($298.15\,\text{K}$). Sabiendo que el calor de vaporización del agua es $\Delta H_{\text{vap}} = 40.7\,\text{kJ/mol}$, calcule la presión de vapor del agua a $50.0^\circ\text{C}$ ($323.15\,\text{K}$).
+
+**Paso 1:** Aplicación de la ecuación de Clausius-Clapeyron:
+$$\ln\left(\frac{P_2}{3.17}\right) = -\frac{40700\,\text{J/mol}}{8.314\,\text{J/(mol}\cdot\text{K)}} \left( \frac{1}{323.15} - \frac{1}{298.15} \right)$$
+**Paso 2:** Cálculo del factor térmico:
+$$\left( \frac{1}{323.15} - \frac{1}{298.15} \right) = 0.0030945 - 0.0033540 = -0.0002595\,\text{K}^{-1}$$
+$$\ln\left(\frac{P_2}{3.17}\right) = -4895.35 \times (-0.0002595) = +1.2703$$
+**Paso 3:** Despeje de $P_2$:
+$$\frac{P_2}{3.17} = e^{1.2703} = 3.562 \implies P_2 = 3.17 \times 3.562 = 11.29\,\text{kPa}$$
+La presión de vapor se triplica ampliamente al ascender de $25^\circ\text{C}$ a $50^\circ\text{C}$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los insectos zapateros pueden caminar sobre el agua sin hundirse y por qué se hunden de inmediato si se agrega una gota de jabón líquido?
+2. ¿Por qué el menisco del agua en un tubo de vidrio es cóncavo mientras que el del mercurio es convexo?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

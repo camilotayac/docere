@@ -1,0 +1,74 @@
+# Fuerza Electromotriz ($E^\circ$), Energía Libre de Gibbs y Espontaneidad
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Electroquímica y Procesos Redox
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La fuerza electromotriz (fem o $E$) de una celda electroquímica está directamente acoplada a la termodinámica química clásica a través de la variación de la **Energía Libre de Gibbs ($\Delta G$)**. El trabajo eléctrico máximo ($w_{\text{eléctrico}}$) que puede realizar una celda a presión y temperatura constantes es igual a la disminución de su energía libre de Gibbs:
+
+$$w_{\text{máx}} = \Delta G = -q \cdot E_{\text{celda}} = -n \cdot F \cdot E_{\text{celda}}$$
+
+Donde:
+1. $n$: Número de moles de electrones transferidos en la ecuación balanceada.
+2. $F$: **Constante de Faraday**, carga eléctrica correspondiente a un mol de electrones ($F = N_A \cdot e = 96485.33\,\text{C/mol} \approx 96500\,\text{C/mol}$).
+3. $E$: Potencial de la celda en voltios ($\text{V} = \text{J/C}$).
+
+Bajo condiciones estándar: **$\Delta G^\circ = -n F E^\circ$**. De esta relación se deduce el acoplamiento directo con la constante de equilibrio: **$E^\circ = \frac{R T}{n F} \ln K$**.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de acoplamiento termodinámico:
+$$\Delta G^\circ = -n \cdot F \cdot E^\circ_{\text{celda}}$$
+Relación entre potencial estándar y constante de equilibrio:
+$$\Delta G^\circ = -R T \ln K \implies -n F E^\circ = -R T \ln K \implies E^\circ = \frac{R T}{n F} \ln K$$
+A $25.0^\circ\text{C}$ ($298.15\,\text{K}$), expresado en logaritmo decimal:
+$$E^\circ = \frac{0.05916}{n} \log_{10} K \iff \log_{10} K = \frac{n \cdot E^\circ}{0.05916}$$
+Criterio unificado de espontaneidad a $25^\circ\text{C}$:
+1. Espontánea: $\Delta G^\circ < 0 \iff E^\circ > 0 \iff K > 1$
+2. En equilibrio: $\Delta G^\circ = 0 \iff E^\circ = 0 \iff K = 1$
+3. No espontánea: $\Delta G^\circ > 0 \iff E^\circ < 0 \iff K < 1$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar el signo negativo en $\Delta G^\circ = -nFE^\circ$ (un potencial de celda positivo $+E^\circ$ corresponde a un $\Delta G^\circ$ negativo espontáneo).
+2. Confundir el número de moles de electrones transferidos ($n$) con el coeficiente estequiométrico del metal.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El triángulo dorado de la fisicoquímica:** Los tres vértices del triángulo son $\Delta G^\circ$, $E^\circ$ y $K$. Si mides uno solo de ellos en el laboratorio (por ejemplo, el voltaje con un voltímetro de 5 dólares), las matemáticas te dan de inmediato los otros dos sin necesidad de hacer calorimetría ni equilibrios químicos complejos.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Para la reacción redox de la celda Daniell:
+$$Zn(s) + Cu^{2+}(aq) \rightleftharpoons Zn^{2+}(aq) + Cu(s) \qquad E^\circ = +1.10\,\text{V}$$
+Calcule a $25.0^\circ\text{C}$:
+a) La variación de la energía libre de Gibbs estándar ($\Delta G^\circ$) en $\text{kJ/mol}$.
+b) El valor numérico de la constante de equilibrio ($K$).
+
+**Paso 1:** Identificación del número de electrones transferidos ($n$):
+$$Zn \to Zn^{2+} + 2e^-; \quad Cu^{2+} + 2e^- \to Cu \implies n = 2$$
+**Paso 2:** Cálculo de $\Delta G^\circ$:
+$$\Delta G^\circ = -n F E^\circ = -(2\,\text{mol})(96485\,\text{C/mol})(1.10\,\text{J/C}) = -212267\,\text{J/mol} = -212.3\,\text{kJ/mol}$$
+**Paso 3:** Cálculo de la constante de equilibrio ($K$):
+$$\log K = \frac{n \cdot E^\circ}{0.05916} = \frac{2 \times 1.10}{0.05916} = \frac{2.20}{0.05916} = 37.187$$
+$$K = 10^{37.187} = 1.54 \times 10^{37}$$
+El valor colosal de $K \approx 1.5 \times 10^{37}$ confirma que la reacción directa transcurre hasta completitud absoluta.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una pila se descarga por completo cuando su potencial real cae a $E = 0\,\text{V}$? (Equilibrio electroquímico).
+2. ¿Cómo se relaciona el sobrepotencial cinético con la discrepancia entre el potencial termodinámico y el voltaje real medido?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

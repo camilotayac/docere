@@ -1,0 +1,65 @@
+# Estabilidad Nuclear, Relación Neutrón-Protón y Defecto de Masa (Oriakhi Cap. 24)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química Nuclear y Radiactividad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+A diferencia de las reacciones químicas ordinarias (que involucran únicamente la reorganización de los electrones de valencia extranucleares con energías del orden de los electronvoltios, $\text{eV}$), las transformaciones nucleares modifican la composición intrínseca del núcleo atómico involucrando energías del orden de los megaelectronvoltios ($1\,\text{MeV} = 10^6\,\text{eV}$).
+
+La cohesión del núcleo atómico frente a la intensa repulsión electrostática culombiana entre protones positivos adyacentes se mantiene gracias a la **Fuerza Nuclear Fuerte**, una interacción fundamental de atracción de corto alcance ($< 1.5\,\text{fm}$) que opera indiscriminadamente entre protones y neutrones.
+
+La estabilidad nuclear está determinada por:
+1. **Relación Neutrón-Protón ($N/Z$):** Para núcleos ligeros ($Z \le 20$), los núclidos estables presentan $N/Z \approx 1.0$. Para núcleos pesados, se requieren progresivamente más neutrones para diluir la repulsión protón-protón, alcanzando $N/Z \approx 1.5$ en el bismuto ($^{209}_{83}Bi$, el límite superior de estabilidad nuclear natural).
+2. **Números Mágicos:** Núcleos con $2, 8, 20, 28, 50, 82$ o $126$ protones o neutrones presentan capas nucleares cerradas de extraordinaria estabilidad.
+3. **Defecto de Masa ($\Delta m$):** La masa real medida experimentalmente de cualquier núcleo atómico consolidado es **siempre inferior a la suma aritmética de las masas aisladas de sus protones y neutrones constituyentes**:
+$$\Delta m = \left( Z \cdot m_p + N \cdot m_n \right) - m_{\text{núcleo real}}$$
+
+### Formalización Matemática y Leyes Físicas
+Definición de defecto de masa:
+$$\Delta m = \left[ Z \cdot m(^1H) + (A - Z) \cdot m_n \right] - M_{\text{átomo real}}$$
+Donde:
+1. $m(^1H) = 1.007825\,\text{u}$
+2. $m_n = 1.008665\,\text{u}$
+Cinturón o franja de estabilidad nuclear:
+$$N/Z = 1.0 \quad (Z \le 20) \longrightarrow N/Z = 1.5 \quad (Z \approx 83)$$
+Todos los núclidos con $Z > 83$ son inherentemente inestables y radiactivos.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que los neutrones 'pesan menos adentro del átomo' por desgaste físico (la masa perdida se transforma íntegramente en energía pura según Einstein).
+2. Pensar que todos los núcleos pesados son radiactivos por igual.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del descuento por compra en paquete:** Si compras 6 ladrillos individuales en la ferretería pesan $6\,\text{kg}$; pero al unirlos con un pegamento mágico indestructible para formar una columna, la columna pesa $5.9\,\text{kg}$. Los $100\,\text{g}$ que faltan se transformaron en la energía de unión que mantiene pegados los ladrillos.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 24):** La masa atómica experimental del helio-4 ($^4_2He$) es $4.002603\,\text{u}$. Calcule el defecto de masa ($\Delta m$) en unidades de masa atómica ($	ext{u}$) y en kilogramos ($	ext{kg}$). Datos: masa del protón más electrón $m(^1H) = 1.007825\,\text{u}$, masa del neutrón $m_n = 1.008665\,\text{u}$, $1\,\text{u} = 1.66054 \times 10^{-27}\,\text{kg}$.
+
+**Paso 1:** Suma de las masas de los nucleones constituyentes ($2\,p^+ + 2\,n^0$):
+$$m_{\text{teórica}} = 2(1.007825\,\text{u}) + 2(1.008665\,\text{u}) = 2.015650 + 2.017330 = 4.032980\,\text{u}$$
+**Paso 2:** Cálculo del defecto de masa:
+$$\Delta m = m_{\text{teórica}} - m_{\text{experimental}} = 4.032980\,\text{u} - 4.002603\,\text{u} = 0.030377\,\text{u}$$
+**Paso 3:** Conversión a kilogramos:
+$$\Delta m = 0.030377\,\text{u} \times 1.66054 \times 10^{-27}\,\frac{\text{kg}}{\text{u}} = 5.0442 \times 10^{-29}\,\text{kg}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el núcleo de $^{56}_{26}Fe$ posee la mayor estabilidad nuclear por nucleón de todo el universo observable?
+2. ¿Qué ocurre con un núcleo atómico que se encuentra por encima del cinturón de estabilidad (exceso de neutrones)?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

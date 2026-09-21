@@ -1,0 +1,66 @@
+# Potenciales Estándar de Electrodo ($E^\circ$) y Serie Electroquímica
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Electroquímica y Procesos Redox
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Dado que es físicamente imposible medir el potencial eléctrico absoluto de una semicelda aislada independiente, se define un electrodo de referencia universal arbitrario: el **Electrodo Estándar de Hidrógeno (SHE o EEH)**, al cual se le asigna por convención un potencial estándar de reducción de exactamente **cero voltios ($E^\circ = 0.000\,\text{V}$)** a todas las temperaturas:
+
+$$2 H^+(aq, 1.0\,M) + 2 e^- \rightleftharpoons H_2(g, 1.0\,\text{bar}) \qquad E^\circ = 0.000\,\text{V}$$
+
+El **Potencial Estándar de Reducción ($E^\circ$)** de cualquier semirreacción mide su tendencia intrínseca relativa a ganar electrones bajo condiciones estándar ($25.0^\circ\text{C}$, concentraciones iónicas $1.00\,M$, presiones de gases $1.00\,\text{bar}$).
+
+La **Serie Electroquímica** ordena las semirreacciones por valor de $E^\circ$ decreciente:
+1. A mayor $E^\circ$ positivo: Mayor tendencia a reducirse (el $F_2$ tiene $E^\circ = +2.87\,\text{V}$, es el agente oxidante más fuerte).
+2. A mayor $E^\circ$ negativo: Mayor tendencia a oxidarse en sentido inverso (el $Li^+$ tiene $E^\circ = -3.04\,\text{V}$, el litio metálico es el agente reductor más potente).
+
+### Formalización Matemática y Leyes Físicas
+Cálculo del potencial estándar de la celda ($E^\circ_{\text{celda}}$):
+$$E^\circ_{\text{celda}} = E^\circ_{\text{cátodo}} - E^\circ_{\text{ánodo}} = E^\circ_{\text{reducción}} - E^\circ_{\text{oxidación}}$$
+Propiedad intensiva del potencial eléctrico:
+$$\text{El valor de } E^\circ \text{ NO se multiplica al multiplicar los coeficientes estequiométricos de la semirreacción}$$
+$$\text{Ejemplo: } Cu^{2+} + 2e^- \to Cu \quad (E^\circ = +0.34\,\text{V}) \implies 2 Cu^{2+} + 4e^- \to 2 Cu \quad (E^\circ = +0.34\,\text{V})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Multiplicar el valor de $E^\circ$ por el coeficiente al balancear electrones (el potencial en voltios es julios por culombio, $\text{V} = \text{J/C}$, una magnitud intensiva que no depende del número de electrones transferidos).
+2. Cambiar el signo de $E^\circ$ y luego volver a restarlo en la fórmula (se debe usar la fórmula estándar directa: $E^\circ_{\text{cátodo}} - E^\circ_{\text{ánodo}}$ con los valores de tabla de reducción).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del salto de cascada hidráulica:** El potencial estándar es la altura de la cascada en metros. El agua siempre cae desde la cascada más alta (mayor $E^\circ$, cátodo) hacia la más baja (menor $E^\circ$, ánodo). La diferencia de alturas es la fuerza motriz ($E^\circ_{\text{celda}}$). Duplicar el caudal de agua que cae no cambia la altura de la cascada.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** A partir de los potenciales estándar de reducción tabulados:
+1. $E^\circ(Ag^+ / Ag) = +0.80\,\text{V}$
+2. $E^\circ(Zn^{2+} / Zn) = -0.76\,\text{V}$
+Calcule el potencial estándar de la celda ($E^\circ_{\text{celda}}$) y demuestre que la reacción es espontánea.
+
+**Paso 1:** Asignación de electrodos:
+El electrodo con mayor potencial estándar se reduce en el cátodo; el de menor potencial se oxida en el ánodo:
+$$E^\circ_{\text{cátodo}} = E^\circ(Ag^+) = +0.80\,\text{V}$$
+$$E^\circ_{\text{ánodo}} = E^\circ(Zn^{2+}) = -0.76\,\text{V}$$
+**Paso 2:** Cálculo del potencial de celda:
+$$E^\circ_{\text{celda}} = E^\circ_{\text{cátodo}} - E^\circ_{\text{ánodo}} = (+0.80\,\text{V}) - (-0.76\,\text{V}) = +0.80 + 0.76 = +1.56\,\text{V}$$
+Como $E^\circ_{\text{celda}} > 0$ ($+1.56\,\text{V}$), la celda genera un voltaje positivo y la reacción es termodinámicamente espontánea.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una varilla de zinc sumergida en sulfato de cobre se recubre espontáneamente de cobre mientras que una varilla de cobre en sulfato de zinc no reacciona?
+2. ¿Por qué el platino o el grafito se utilizan habitualmente como electrodos inertes en celdas redox?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

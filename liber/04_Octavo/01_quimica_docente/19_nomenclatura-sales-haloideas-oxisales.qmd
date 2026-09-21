@@ -1,0 +1,72 @@
+# Formulación y Nomenclatura de Sales Neutras, Ácidas y Dobles (Oriakhi Cap. 5)
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Nomenclatura Química Inorgánica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las sales son compuestos iónicos constituidos por la unión electrostática de un catión (procedente de una base o metal) y un anión (procedente de la desprotonación parcial o total de un ácido). Se originan formalmente en reacciones de neutralización ácido-base:
+
+$$\text{Ácido} + \text{Base} \longrightarrow \text{Sal} + H_2O$$
+
+Se clasifican según su composición en:
+1. **Sales Haloideas (Binarias):** Derivadas de ácidos hidrácidos (sin oxígeno). El anión termina en **-uro** (ej. $NaCl$: cloruro de sodio; $FeS$: sulfuro de hierro(II)).
+2. **Oxisales Neutras (Ternarias):** Derivadas de ácidos oxácidos con desprotonación completa de los hidrógenos ionizables. El sufijo *-oso* del ácido cambia a **-ito**, y el sufijo *-ico* cambia a **-ato** (ej. $Na_2SO_4$: sulfato de sodio; $KClO_3$: clorato de potasio).
+3. **Sales Ácidas:** Resultan de la sustitución parcial de los hidrógenos de ácidos polipróticos (ej. $NaHCO_3$: hidrogenocarbonato de sodio o bicarbonato de sodio; $NaH_2PO_4$: dihidrogenofosfato de sodio).
+
+### Formalización Matemática y Leyes Físicas
+Formulación de sales por balance de cargas catión-anión:
+$$M^{m+} + A^{n-} \longrightarrow M_n A_m$$
+Ejemplos de aniones comunes:
+1. De hidrácidos: $Cl^-$ (cloruro), $S^{2-}$ (sulfuro), $CN^-$ (cianuro).
+2. De oxácidos: $SO_4^{2-}$ (sulfato), $SO_3^{2-}$ (sulfito), $NO_3^-$ (nitrato), $PO_4^{3-}$ (fosfato).
+Regla de neutralidad eléctrica:
+$$n \cdot (+m) + m \cdot (-n) = 0$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Escribir la fórmula de la sal sin cruzar las cargas de los iones (escribir $CaPO_4$ en lugar de $Ca_3(PO_4)_2$).
+2. Confundir los sufijos -ito y -ato con los estados de oxidación del catión metálico.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los bloques con clavijas:** El catión calcio $Ca^{2+}$ tiene 2 clavijas positivas; el anión fosfato $PO_4^{3-}$ tiene 3 enchufes negativos. Para que no sobre ninguna clavija ni ningún enchufe suelto, necesitas tomar 3 átomos de calcio ($3 \times 2 = +6$) y 2 grupos fosfato ($2 \times 3 = -6$), ensamblando perfectamente el bloque neutro $Ca_3(PO_4)_2$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 5):** Formule y nombre rigurosamente las sales obtenidas al combinar:
+a) Catión hierro(III) ($Fe^{3+}$) con anión sulfato ($SO_4^{2-}$)
+b) Catión calcio ($Ca^{2+}$) con anión hidrogenocarbonato ($HCO_3^-$)
+c) Catión cobre(II) ($Cu^{2+}$) con anión nitrato ($NO_3^-$)
+
+**Paso 1:** Sal de hierro(III) y sulfato:
+Intercambio de cargas cruzadas: $2$ aniones sulfato por cada $3$ cationes hierro:
+$$Fe^{3+} + SO_4^{2-} \longrightarrow Fe_2(SO_4)_3$$
+Nombre: **Sulfato de hierro(III)** o sulfato férrico.
+
+**Paso 2:** Sal de calcio e hidrogenocarbonato:
+$$Ca^{2+} + 2 HCO_3^- \longrightarrow Ca(HCO_3)_2$$
+Nombre: **Hidrogenocarbonato de calcio** (bicarbonato de calcio).
+
+**Paso 3:** Sal de cobre(II) y nitrato:
+$$Cu^{2+} + 2 NO_3^- \longrightarrow Cu(NO_3)_2$$
+Nombre: **Nitrato de cobre(II)** o nitrato cúprico.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el bicarbonato de sodio ($NaHCO_3$) se utiliza como antiácido estomacal frente al ácido clorhídrico?
+2. ¿Cuál es la fórmula del permanganato de potasio y qué función cumple el ion $MnO_4^-$ en química analítica?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,64 @@
+# Efecto del Ion Común en Equilibrios de Precipitación
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio de Solubilidad e Iones Complejos
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El **efecto del ion común** en equilibrios de solubilidad es una manifestación termodinámica directa del Principio de Le Chatelier: **la solubilidad molar de una sal poco soluble disminuye significativamente cuando se disuelve en una disolución acuosa que ya contiene previamente uno de los iones constitutivos de dicha sal**, procedente de un electrólito fuerte soluble.
+
+Al existir una concentración inicial no nula del catión o del anión, el sistema responde desplazando el equilibrio de disolución hacia la izquierda (hacia la fase sólida precipitada):
+
+$$M X(s) \rightleftharpoons M^+(aq) + X^-(aq) \xleftarrow{\text{adición de } X^-} \text{Desplazamiento a la izquierda}$$
+
+Este fenómeno se aprovecha en química analítica cuantitativa para forzar la precipitación completa de metales pesados en gravimetría reduciendo las pérdidas en las aguas madres.
+
+### Formalización Matemática y Leyes Físicas
+Cálculo de solubilidad con ion común:
+$$K_{sp} = [M^+][X^-] = (s)(c_0 + s) \approx s \cdot c_0 \implies s = \frac{K_{sp}}{c_0}$$
+Donde $c_0$ es la concentración inicial del ion común procedente del electrólito fuerte disuelto, asumiendo $s \ll c_0$.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar sumar las solubilidades en lugar de plantear el equilibrio con la concentración inicial del ion común.
+2. Creer que el valor de la constante $K_{sp}$ disminuye (la constante $K_{sp}$ permanece idéntica; lo que disminuye drásticamente es la solubilidad molar $s$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del elevador lleno de personas:** Si el elevador tiene cupo para $K_{sp}$ contactos y ya hay 9 personas adentro (ion común añadido), sólo cabe 1 persona más antes de sonar la alarma de sobrecupo (sólo se disuelve una mínima fracción antes de precipitar).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la solubilidad molar del cloruro de plata ($AgCl$, $K_{sp} = 1.80 \times 10^{-10}$):
+a) En agua destilada pura.
+b) En una disolución de cloruro de sodio ($NaCl$) $0.0500\,M$.
+
+**Paso 1:** Solubilidad en agua pura:
+$$s_0 = \sqrt{K_{sp}} = \sqrt{1.80 \times 10^{-10}} = 1.34 \times 10^{-5}\,\text{mol/L}$$
+**Paso 2:** Solubilidad en disolución de $NaCl\,0.0500\,M$ (Ion común $[Cl^-]_0 = 0.0500\,M$):
+$$AgCl(s) \rightleftharpoons Ag^+ + Cl^-$$
+$$[Ag^+] = s; \qquad [Cl^-] = 0.0500 + s \approx 0.0500\,M$$
+$$K_{sp} = (s)(0.0500) = 1.80 \times 10^{-10}$$
+$$s = \frac{1.80 \times 10^{-10}}{0.0500} = 3.60 \times 10^{-9}\,\text{mol/L}$$
+**Paso 3:** Comparación:
+$$\frac{s_0}{s} = \frac{1.34 \times 10^{-5}}{3.60 \times 10^{-9}} \approx 3720$$
+La solubilidad del $AgCl$ se reduce en más de **$3700$ veces** por la presencia del ion cloruro común.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué al lavar un precipitado de sulfato de bario en gravimetría se utiliza una solución diluida de ácido sulfúrico en vez de agua destilada pura?
+2. ¿Cómo previene el efecto del ion común la formación de cálculos renales de oxalato de calcio en personas sanas?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

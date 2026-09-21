@@ -1,0 +1,70 @@
+# Ecuación de Arrhenius y Dependencia Térmica de la Constante Cinética
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La velocidad de las reacciones químicas exhibe una sensibilidad extrema a la temperatura: para la mayoría de reacciones en fase condensada o gaseosa, un incremento de $10^\circ\text{C}$ duplica o triplica la constante de velocidad.
+
+En 1889, Svante Arrhenius integró la teoría de colisiones y la distribución de Boltzmann en su célebre **Ecuación de Arrhenius**:
+
+$$k = A \cdot e^{-\frac{E_a}{R T}}$$
+
+Donde:
+1. $k$: Constante de velocidad a la temperatura absoluta $T$ (en Kelvin).
+2. $A$: **Factor preexponencial o factor de frecuencia**, que engloba la frecuencia total de colisiones moleculares y los requisitos de orientación estérica favorable.
+3. $E_a$: Energía de activación en $\text{J/mol}$ o $\text{kJ/mol}$.
+4. $R$: Constante universal de los gases ($8.314\,\text{J/(mol}\cdot\text{K)}$).
+5. $e^{-E_a/RT}$: Fracción de moléculas que poseen energía cinética igual o superior a $E_a$.
+
+### Formalización Matemática y Leyes Físicas
+Forma linealizada logarítmica de la ecuación de Arrhenius:
+$$\ln(k) = \ln(A) - \frac{E_a}{R} \left( \frac{1}{T} \right)$$
+La gráfica de $\ln(k)$ frente a $1/T$ es una línea recta con:
+$$\text{Pendiente } (m) = -\frac{E_a}{R} \implies E_a = -m \cdot R$$
+$$\text{Ordenada al origen } (b) = \ln(A)$$
+Forma de dos puntos para cálculo directo entre dos temperaturas $T_1$ y $T_2$:
+$$\ln\left(\frac{k_2}{k_1}\right) = -\frac{E_a}{R} \left( \frac{1}{T_2} - \frac{1}{T_1} \right) = \frac{E_a}{R} \left( \frac{T_2 - T_1}{T_1 T_2} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar $R = 0.08206$ en la ecuación de Arrhenius (¡error clásico grave! En Arrhenius la energía está en julios, por lo que debe usarse obligatoriamente $R = 8.314\,\text{J/(mol}\cdot\text{K)}$).
+2. No convertir $E_a$ de $\text{kJ/mol}$ a $\text{J/mol}$ al operar con $R$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la barra de salto de altura en atletismo:** La energía de activación es la altura de la varilla; la temperatura es la energía media de los atletas. Si la varilla está a $2.20\,\text{m}$, casi nadie la pasa a baja temperatura. Si subes la temperatura, no cambias la varilla, pero das esteroides de energía cinética a todos los atletas, por lo que una multitud logra saltar por encima de la barra.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La constante de velocidad de una reacción de descomposición es $k_1 = 3.46 \times 10^{-5}\,\text{s}^{-1}$ a $298.15\,\text{K}$ ($25^\circ\text{C}$) y se incrementa a $k_2 = 9.63 \times 10^{-4}\,\text{s}^{-1}$ a $328.15\,\text{K}$ ($55^\circ\text{C}$). Calcule la energía de activación ($E_a$) de la reacción en $\text{kJ/mol}$ y el factor preexponencial $A$.
+
+**Paso 1:** Aplicación de la ecuación de dos puntos:
+$$\ln\left(\frac{k_2}{k_1}\right) = \ln\left(\frac{9.63 \times 10^{-4}}{3.46 \times 10^{-5}}\right) = \ln(27.832) = 3.3262$$
+**Paso 2:** Término térmico:
+$$\left( \frac{1}{T_1} - \frac{1}{T_2} \right) = \frac{1}{298.15} - \frac{1}{328.15} = 0.0033540 - 0.0030474 = 3.066 \times 10^{-4}\,\text{K}^{-1}$$
+**Paso 3:** Despeje de la energía de activación:
+$$E_a = \frac{R \cdot \ln(k_2/k_1)}{(1/T_1 - 1/T_2)} = \frac{(8.314\,\text{J/(mol}\cdot\text{K)})(3.3262)}{3.066 \times 10^{-4}\,\text{K}^{-1}} = \frac{27.654}{3.066 \times 10^{-4}} = 90196\,\text{J/mol}$$
+$$E_a = 90.2\,\text{kJ/mol}$$
+**Paso 4:** Cálculo del factor preexponencial $A$ (a $T=298.15\,\text{K}$):
+$$A = k_1 \cdot e^{+\frac{E_a}{R T}} = (3.46 \times 10^{-5}) \cdot e^{\frac{90196}{(8.314)(298.15)}} = (3.46 \times 10^{-5}) \cdot e^{36.386} = 2.14 \times 10^{11}\,\text{s}^{-1}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los refrigeradores domésticos retardan la descomposición bacteriana de los alimentos basándose en la ecuación de Arrhenius?
+2. Si una reacción tiene $E_a = 0$, ¿qué dependencia exhibe su constante cinética respecto a la temperatura?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

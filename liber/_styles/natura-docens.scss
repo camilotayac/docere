@@ -1,0 +1,190 @@
+/*-- scss:defaults --*/
+
+/* ── Paleta Terracota ── */
+$font-size-root: 20px;
+
+/* Bootstrap colors → terracota dominante */
+$primary:   #a06050;   /* terracota principal */
+$secondary: #7A6858;   /* terracota oscuro / marrón */
+$success:   #3a7d52;   /* verde sobrio */
+$info:      #b07060;   /* terracota medio */
+$warning:   #c4832a;   /* ámbar cálido */
+$danger:    #c04040;   /* rojo apagado */
+$light:     #fdf5f2;   /* crema cálido */
+$dark:      #2E1A10;   /* marrón muy oscuro */
+
+/* Body */
+$body-color: #3a2418;
+$body-bg:    #FFFFFF;
+
+#quarto-content {
+  min-height: calc(100vh - 100px);
+}
+
+/* Links */
+$link-color:            #8a4030;
+$link-decoration:       none;
+$link-hover-decoration: underline;
+$link-hover-color:      #6a3020;
+
+/* Headings */
+$headings-color:       #2E1A10;
+$headings-font-weight: 700;
+
+/* Bordes */
+$border-color:     #D0C8C0;
+$border-radius:    0.375rem;
+$border-radius-lg: 0.5rem;
+$border-radius-sm: 0.25rem;
+
+/* Navbar → terracota */
+$navbar-bg:        #a06050;
+$navbar-fg:        #fdf5f2;
+$navbar-hl:        #fdf5f2;
+$navbar-padding-y: 0.5rem;
+
+/* Sidebar */
+$sidebar-bg:        #FFFFFF;
+$sidebar-fg:        #3a2418;
+$sidebar-font-size: 0.9375rem;
+$sidebar-hl:        #a06050;
+
+/* TOC */
+$toc-color:           #3a2418;
+$toc-font-size:       0.85rem;
+$toc-active-border:   #a06050;
+$toc-inactive-border: #D0C8C0;
+
+/* Footer */
+$footer-bg: #fdf5f2;
+$footer-fg: #7A6858;
+
+/* Código */
+$code-color:                 #8a4030;
+$code-bg:                    rgba(160, 96, 80, 0.08);
+$code-font-size:             0.85em;
+$code-block-bg:              #faf0eb;
+$code-block-border-left:     #a06050;
+$btn-code-copy-color:        #a06050;
+$btn-code-copy-color-active: #fdf5f2;
+
+/* Tablas Bootstrap */
+$table-color:       #3a2418;
+$table-bg:          transparent;
+$table-striped-bg:  rgba(160, 96, 80, 0.04);
+$table-hover-bg:    rgba(160, 96, 80, 0.08);
+$table-border-color: #D0C8C0;
+
+/* Callouts */
+$callout-color-note:      #a06050;
+$callout-color-tip:       #3a7d52;
+$callout-color-warning:   #c4832a;
+$callout-color-caution:   #8a4030;
+$callout-color-important: #c04040;
+
+/*-- scss:rules --*/
+:root {
+  --a11y-base-size: 1rem;
+
+  /* Toolbar accesibilidad */
+  --toolbar-border:        #a06050;
+  --toolbar-btn-bg:        #fdf5f2;
+  --toolbar-btn-color:     #503020;
+  --toolbar-btn-active-bg: #a06050;
+  --toolbar-hover-bg:      #f0ddd4;
+  --toolbar-hover-color:   #503020;
+  --toolbar-label-bg:      #503020;
+  --toolbar-label-color:   #FAF8F4;
+  --tts-highlight-bg:      #f8e8c0;
+  --tts-highlight-color:   #2E1A10;
+  --focus-outline:         #a06050;
+
+  /* Tablas */
+  --border-color:       #D0C8C0;
+  --table-bg:           #FAFAF8;
+  --table-header-bg:    #ede0d8;
+  --table-header-color: #2E1A10;
+  --table-stripe-odd:   #FAFAF8;
+  --table-stripe-even:  #f6eeea;
+  --table-stripe-hover: #f0ddd4;
+  --radius-md: 0.375rem;
+  --space-md:  1rem;
+
+  /* ICFES */
+  --icfes-bg:               #fdf5f2;
+  --icfes-border:           #a06050;
+  --icfes-hover-bg:         #f5e8e2;
+  --icfes-hover-border:     #8a4a38;
+  --icfes-text:             #503020;
+  --icfes-letra-bg:         #fdf5f2;
+  --icfes-letra-border:     #a06050;
+  --icfes-letra-color:      #a06050;
+  --icfes-selected-bg:      #ede0d8;
+  --icfes-selected-border:  #7A6858;
+  --icfes-correct-bg:       #e6f4ea;
+  --icfes-correct-border:   #1e8e3e;
+  --icfes-incorrect-bg:     #fce8e6;
+  --icfes-incorrect-border: #d93025;
+  --icfes-summary-hover:    #7A6858;
+  --icfes-respuesta-bg:     #f4fbf6;
+  --icfes-divider:          rgba(160, 96, 80, 0.2);
+}
+
+body.theme-colorblind {
+  --toolbar-border:        #0072B2;
+  --toolbar-btn-active-bg: #0072B2;
+  --tts-highlight-bg:      rgba(230, 159, 0, 0.2);
+  --icfes-border:          #0072B2;
+  --icfes-selected-border: #0072B2;
+  --table-header-bg:       rgba(86, 180, 233, 0.1);
+  --focus-outline:         #0072B2;
+}
+
+@import "natura-docens-core.scss";
+
+/* ── Preguntas por nivel de dificultad (.pregunta-*) ── */
+.callout.pregunta-basica,
+div.pregunta-basica {
+  border-left-color: #4caf50 !important;
+  background-color: #eef7ee !important;
+  border-radius: 4px;
+}
+.callout.pregunta-basica .callout-header,
+div.pregunta-basica > .callout-header {
+  background-color: rgba(76, 175, 80, 0.12) !important;
+  color: #2e7d32 !important;
+}
+
+.callout.pregunta-media,
+div.pregunta-media {
+  border-left-color: #f9a825 !important;
+  background-color: #fff8e1 !important;
+  border-radius: 4px;
+}
+.callout.pregunta-media .callout-header,
+div.pregunta-media > .callout-header {
+  background-color: rgba(249, 168, 37, 0.12) !important;
+  color: #c4832a !important;
+}
+
+.callout.pregunta-dificil,
+div.pregunta-dificil {
+  border-left-color: #e53935 !important;
+  background-color: #fdecea !important;
+  border-radius: 4px;
+}
+.callout.pregunta-dificil .callout-header,
+div.pregunta-dificil > .callout-header {
+  background-color: rgba(229, 57, 53, 0.12) !important;
+  color: #c04040 !important;
+}
+
+/* ── Bibliografía ── */
+#refs {
+  display: block !important;
+  margin-top: 1.5rem;
+}
+.csl-entry {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,68 @@
+# Preparación Volumétrica de Soluciones y Ecuación de Dilución
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Disoluciones Acuosas y Concentración
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La preparación rigurosa de soluciones en el laboratorio analítico exige el empleo de material volumétrico calibrado (matraces aforados, pipetas volumétricas y balanzas de precisión).
+
+El procedimiento de **dilución** consiste en disminuir la concentración de una solución madre concentrada mediante la adición controlada de solvente puro. Durante el proceso de dilución, **la cantidad de sustancia de soluto (moles o gramos) permanece estrictamente constante e invariable**; lo único que se incrementa es el volumen del solvente.
+
+$$n_{\text{soluto concentrado}} = n_{\text{soluto diluido}}$$
+
+Dado que $n = M \cdot V$, se deduce la ecuación universal de dilución:
+
+$$M_1 \cdot V_1 = M_2 \cdot V_2$$
+
+Donde los subíndices 1 y 2 corresponden a la solución concentrada inicial y a la solución diluida final, respectivamente.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de dilución:
+$$M_1 V_1 = M_2 V_2 \qquad C_1 V_1 = C_2 V_2$$
+Factor de dilución ($FD$):
+$$FD = \frac{V_2}{V_1} = \frac{C_1}{C_2}$$
+Dilución seriada en $k$ pasos idénticos:
+$$C_k = C_0 \times \left( \frac{V_{\text{alícuota}}}{V_{\text{total}}} \right)^k$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar la fórmula de dilución ($M_1 V_1 = M_2 V_2$) para problemas de reacciones químicas estequiométricas (la fórmula sólo es válida para diluir la misma sustancia, no para neutralizaciones de ácidos y bases con estequiometría distinta a $1:1$).
+2. Agregar agua sobre ácido concentrado (¡regla de seguridad vital: siempre se debe verter el ácido lentamente sobre el agua para disipar el calor de hidratación y evitar proyecciones explosivas!).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del café demasiado cargado:** Si preparas una taza de café muy oscuro y amargo y le viertes media taza de agua hirviendo más, no agregaste más café ni quitaste café: el número de moléculas de cafeína es exactamente el mismo, pero el sabor es más suave porque el volumen se expandió.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se dispone en el laboratorio de una solución madre de ácido clorhídrico concentrado ($12.0\,M$). Explique detalladamente cómo preparar $500.0\,\text{mL}$ de una solución de $HCl$ diluida a una concentración de $0.300\,M$.
+
+**Paso 1:** Aplicación de la ecuación de dilución:
+$$M_1 V_1 = M_2 V_2 \implies (12.0\,M) \cdot V_1 = (0.300\,M) \cdot (500.0\,\text{mL})$$
+**Paso 2:** Despeje del volumen de solución concentrada requerido ($V_1$):
+$$V_1 = \frac{(0.300\,M) \times (500.0\,\text{mL})}{12.0\,M} = \frac{150.0}{12.0} = 12.5\,\text{mL}$$
+**Paso 3:** Protocolo experimental de laboratorio:
+1. Con una pipeta volumétrica calibrada en campana de extracción de gases, se miden con precisión $12.5\,\text{mL}$ de la solución madre de $HCl\,12.0\,M$.
+2. En un matraz aforado de $500.0\,\text{mL}$ se colocan previamente unos $200\,\text{mL}$ de agua destilada.
+3. Se vierte lentamente el ácido sobre el agua con agitación suave.
+4. Se completa con agua destilada hasta la línea de aforo, enrasando cuidadosamente la base del menisco a la altura de los ojos y se invierte varias veces para homogeneizar.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué nunca se debe enrasar un matraz aforado con agua caliente o hirviendo?
+2. En una prueba de ELISA o microbiología, ¿cuál es la concentración final tras una dilución seriada de 4 pasos al $1:10$ a partir de una muestra de $1000\,\text{mg/L}$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,89 @@
+# Alcoholes, Fenoles y Éteres: Puentes de Hidrógeno, Acidez Comparativa y Vías de Oxidación
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Funciones Orgánicas Oxigenadas
+> * **Propósito Docente:** Explicar las propiedades termofísicas derivadas del enlace por puente de hidrógeno, deducir la acidez del fenol mediante estabilización por resonancia y modelar las rutas redox de oxidación de alcoholes primarios, secundarios y terciarios.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los compuestos oxigenados son sustancias orgánicas donde uno o más átomos de oxígeno se integran al esqueleto carbonado. El átomo de oxígeno posee configuración fundamental $1s^2\,2s^2\,2p^4$ y adopta una hibridación mecano-cuántica aproximadamente $sp^3$, disponiendo de dos enlaces covalentes $\sigma$ y dos pares de electrones no enlazantes. La geometría en torno al oxígeno es angular, con un ángulo de enlace ligeramente comprimido respecto al tetraédrico ideal debido a la repulsión de los pares solitarios ($104.5^\circ$ en agua, $108.9^\circ$ en metanol y $111.7^\circ$ en dimetiléter).
+
+Los **alcoholes ($R-OH$)** y los **fenoles ($Ar-OH$)** contienen el grupo funcional hidroxilo unido a un carbono alifático $sp^3$ o a un anillo aromático $sp^2$, respectivamente. Los **éteres ($R-O-R'$)** presentan un átomo de oxígeno puente entre dos radicales carbonados.
+
+La presencia del enlace polar $O-H$ confiere a los alcoholes y fenoles una propiedad física trascendental: la capacidad de formar redes de **enlaces por puente de hidrógeno intermoleculares**, donde el átomo de hidrógeno deficiente en densidad electrónica interactúa electrostáticamente con el par libre del oxígeno de una molécula vecina. La energía de esta interacción oscila entre $15$ y $25\,\text{kJ/mol}$, manifestando una repercusión termodinámica drástica sobre las temperaturas de cambio de fase:
+
+1. **Etanol ($CH_3CH_2OH$):** Masa molar $46.07\,\text{g/mol}$. Es un líquido polar que forma enlaces de hidrógeno continuos; su punto de ebullición normal es de $+78.3^\circ\text{C}$ y es totalmente miscible en agua.
+2. **Dimetiléter ($CH_3OCH_3$):** Isómero constitucional con exactamente la misma fórmula molecular ($C_2H_6O$) e idéntica masa molar ($46.07\,\text{g/mol}$). Al carecer de hidrógenos unidos a oxígeno, es incapaz de formar puentes de hidrógeno entre sus propias moléculas, exhibiendo un punto de ebullición de $-24.0^\circ\text{C}$ (gas a temperatura ambiente).
+
+Desde la perspectiva ácido-base de Brønsted-Lowry, los alcoholes y fenoles son ácidos débiles capaces de disociarse en disolución acuosa:
+
+$$R-OH + H_2O \rightleftharpoons R-O^- + H_3O^+$$
+
+Sin embargo, la acidez de los fenoles supera a la de los alcoholes alifáticos en más de seis órdenes de magnitud:
+
+1. **Alcoholes Alifáticos:** Presentan valores de $pK_a$ comprendidos entre $16$ y $18$. El ion alcóxido resultante ($R-O^-$) concentra la carga negativa formal de manera localizada y puntual sobre el átomo de oxígeno electronegativo. Los grupos alquilo contiguos ejercen un efecto inductivo dador de electrones ($+I$) que desestabiliza aún más la densidad de carga aniónica.
+2. **Fenoles:** El fenol ($C_6H_5OH$) exhibe un $pK_a \approx 9.95$. La disociación genera el ion **fenolato ($C_6H_5O^-$)**, el cual no confina la carga sobre el oxígeno sino que la deslocaliza a través del sistema de orbitales moleculares $\pi$ del anillo aromático mediante resonancia entre cuatro estructuras contribuyentes principales (alojando densidad de carga negativa en las posiciones *orto* y *para* del anillo). La elevada estabilización por resonancia desplaza fuertemente el equilibrio de ionización hacia los productos.
+
+En el laboratorio sintético, los éteres se preparan eficientemente mediante la **Síntesis de Williamson (1850)**, una reacción bimolecular de sustitución nucleófila ($S_N2$) entre un ion alcóxido o fenolato y un halogenuro de alquilo primario no impedido:
+
+$$R-O^- Na^+ + R'-X \longrightarrow R-O-R' + NaX$$
+
+En cuanto a su reactividad redox, los alcoholes experimentan procesos de oxidación selectiva gobernados estrictamente por el grado de sustitución del carbono que porta el grupo hidroxilo (carbono carbinol):
+
+1. **Alcoholes Primarios ($R-CH_2OH$):** Poseen dos átomos de hidrógeno en el carbono $\alpha$. Una oxidación suave y controlada con clorocromato de piridinio ($PCC$) en medio anhidro detiene el proceso en el **aldehído** correspondiente ($R-CHO$). Una oxidación enérgica en disolución acuosa con permanganato de potasio ($KMnO_4$) o dicromato de potasio ($K_2Cr_2O_7$) en medio ácido oxida primero al aldehído y prosigue inmediatamente hasta el **ácido carboxílico** ($R-COOH$).
+2. **Alcoholes Secundarios ($R_2CHOH$):** Poseen un único hidrógeno en el carbono $\alpha$. Se oxidan limpiamente a **cetonas** ($R-CO-R'$), las cuales resisten la degradación posterior al carecer de enlaces $C-H$ fácilmente escindibles en el centro funcional.
+3. **Alcoholes Terciarios ($R_3COH$):** Carecen por completo de hidrógenos unidos al carbono carbinol. Por consiguiente, son inertes a la oxidación en condiciones neutras o alcalinas, requiriendo la ruptura forzada y destructiva de enlaces covalentes carbono-carbono bajo condiciones fuertemente ácidas y térmicas extremas.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir el grupo hidroxilo orgánico ($-OH$) con el ion hidróxido inorgánico ($OH^-$):** Los estudiantes asumen con frecuencia que los alcoholes son bases fuertes como el hidróxido de sodio ($NaOH$), esperando que liberen iones $OH^-$ en agua. Es fundamental clarificar que el enlace $C-O$ es un enlace covalente fuerte que no se disocia heterolíticamente en disolución acuosa.
+2. **Pensar que los éteres forman puentes de hidrógeno entre sí:** Asumir que por poseer oxígeno, los éteres hierven a altas temperaturas. Si bien los éteres pueden actuar como aceptores de puentes de hidrógeno provenientes de moléculas donadoras (como agua o alcoholes), carecen de hidrógenos activos donadores, por lo que son líquidos notablemente volátiles.
+3. **Predecir la oxidación de alcoholes terciarios:** Intentar formular aldehídos o cetonas a partir de alcoholes terciarios violando la tetravalencia del carbono.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Imanes con Velcro (Puentes de Hidrógeno):** El enlace covalente dentro de la molécula es como un tornillo de acero indeformable; los puentes de hidrógeno intermoleculares son como tiras de velcro o pequeños imanes que se adhieren y se despegan continuamente al agitar el líquido, requiriendo energía térmica extra para separarlos hacia la fase gaseosa.
+2. **Analogía de la Esponja y el Cubo de Agua (Deslocalización de Resonancia):** Verter un vaso de agua sobre una baldosa lisa crea un charco concentrado (ion alcóxido localizado e inestable); verter la misma cantidad sobre una esponja grande la absorbe y distribuye en todo su volumen (ion fenolato deslocalizado por el anillo bencénico).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un laboratorio forense analiza una muestra de $10.00\,\text{mL}$ de una disolución acuosa de etanol ($CH_3CH_2OH$, masa molar $46.07\,\text{g/mol}$) para cuantificar su concentración mediante valoración redox con dicromato de potasio en medio ácido sulfúrico. La reacción redox completa se describe mediante la siguiente ecuación química:
+
+$$3\,CH_3CH_2OH(ac) + 2\,K_2Cr_2O_7(ac) + 8\,H_2SO_4(ac) \longrightarrow 3\,CH_3COOH(ac) + 2\,Cr_2(SO_4)_3(ac) + 2\,K_2SO_4(ac) + 11\,H_2O(l)$$
+
+Si se requirieron exactamente $35.40\,\text{mL}$ de una disolución patrón de $K_2Cr_2O_7$ $0.0500\,\text{M}$ para oxidar cuantitativamente todo el etanol presente en la alícuota:
+1. Determine la cantidad molar de agente oxidante consumido.
+2. Calcule la masa de etanol presente en la muestra analizada.
+3. Determine la concentración molar ($\text{mol/L}$) del etanol en la disolución original.
+
+**Solución paso a paso:**
+
+1. *Calcular los moles de dicromato de potasio consumidos en la titulación:*
+   $$n_{Cr_2O_7^{2-}} = M \times V = (0.0500\,\text{mol/L})(0.03540\,\text{L}) = 1.770 \times 10^{-3}\,\text{mol}$$
+   El producto del volumen consumido expresado en litros por la molaridad del reactivo fija la cantidad química exacta del ion oxidante.
+
+2. *Calcular la cantidad molar de etanol oxidada según la estequiometría redox:*
+   $$n_{\text{etanol}} = 1.770 \times 10^{-3}\,\text{mol } K_2Cr_2O_7 \times \left( \frac{3\,\text{mol } CH_3CH_2OH}{2\,\text{mol } K_2Cr_2O_7} \right)$$
+   La relación molar estequiométrica $3:2$ refleja la transferencia concertada de 12 electrones entre las tres moléculas orgánicas y los dos iones dicromato.
+   $$n_{\text{etanol}} = 2.655 \times 10^{-3}\,\text{mol } CH_3CH_2OH$$
+   Esta es la cantidad molar absoluta de etanol contenida en los $10.00\,\text{mL}$ de muestra.
+
+3. *Calcular la masa de etanol en la alícuota:*
+   $$m_{\text{etanol}} = n \times M_m = (2.655 \times 10^{-3}\,\text{mol})(46.07\,\text{g/mol}) = 0.1223\,\text{g}$$
+   Multiplicando los moles por la masa molar molecular se obtienen $122.3\,\text{mg}$ de alcohol puro.
+
+4. *Calcular la concentración molar de etanol en la disolución original:*
+   $$M_{\text{etanol}} = \frac{n_{\text{etanol}}}{V_{\text{muestra}}} = \frac{2.655 \times 10^{-3}\,\text{mol}}{0.01000\,\text{L}} = 0.2655\,\text{mol/L} \approx 0.266\,\text{M}$$
+   La disolución original posee una concentración molar de etanol de $0.266\,\text{M}$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el 4-nitrofenol es un ácido considerablemente más fuerte ($pK_a = 7.15$) que el fenol no sustituido ($pK_a = 9.95$), mientras que el 4-metoxifenol es menos ácido ($pK_a = 10.20$)?
+2. Si se desea sintetizar etil terc-butil éter mediante la síntesis de Williamson, ¿por qué es mandatorio emplear terc-butóxido de potasio con bromoetano y no etóxido de sodio con 2-bromo-2-metilpropano?
+3. ¿Cómo opera la prueba del alcoholímetro convencional basada en el viraje colorimétrico del ion dicromato anaranjado ($Cr_2O_7^{2-}$) a ion cromo(III) verde ($Cr^{3+}$)?

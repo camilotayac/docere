@@ -1,0 +1,64 @@
+# El Cociente de Reacción ($Q$) y Predicción de la Dirección Espontánea
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Cuando se mezclan reactivos y productos en proporciones arbitrarias en un reactor químico, el sistema no se encuentra necesariamente en equilibrio. Para determinar en qué dirección neta evolucionará espontáneamente el sistema para alcanzar el estado de equilibrio termodinámico, se utiliza el **Cociente de Reacción ($Q$)**.
+
+El cociente de reacción tiene una forma matemática idéntica a la expresión de la constante de equilibrio de la ley de acción de masas, pero evaluada con las **concentraciones molares o presiones parciales instantáneas actuales no correspondientes al equilibrio**:
+
+$$Q_c = \frac{[C]_{\text{actual}}^c [D]_{\text{actual}}^d}{[A]_{\text{actual}}^a [B]_{\text{actual}}^b}$$
+
+La comparación cuantitativa entre $Q$ y $K$ establece el criterio estricto de evolución termodinámica ($\Delta G = RT \ln(Q/K)$):
+1. **$Q < K$:** El cociente de productos a reactivos es menor que el valor de equilibrio. El sistema evoluciona espontáneamente **hacia la derecha** (hacia los productos, $\to$).
+2. **$Q = K$:** El sistema se encuentra en **equilibrio químico dinámico**; no hay cambio neto observable.
+3. **$Q > K$:** Hay un exceso relativo de productos. El sistema evoluciona espontáneamente **hacia la izquierda** (hacia los reactivos, $\leftarrow$).
+
+### Formalización Matemática y Leyes Físicas
+Criterio de espontaneidad según la Energía Libre de Gibbs:
+$$\Delta G = \Delta G^\circ + R T \ln Q = -R T \ln K + R T \ln Q = R T \ln\left( \frac{Q}{K} \right)$$
+1. Si $Q < K \implies \ln(Q/K) < 0 \implies \Delta G < 0$ (Evolución espontánea hacia productos).
+2. Si $Q > K \implies \ln(Q/K) > 0 \implies \Delta G > 0$ (Evolución espontánea hacia reactivos).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir $Q$ con $K$ (la constante $K$ es un número fijo invariable para cada temperatura; el cociente $Q$ es una variable dinámica que cambia segundo a segundo hasta igualar a $K$).
+2. Intentar predecir el sentido de la reacción sin calcular numéricamente $Q$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del velocímetro y el límite de velocidad:** La constante $K$ es el límite de velocidad fijo fijado por la ley en la autopista ($100\,\text{km/h}$). El cociente $Q$ es la velocidad a la que marca tu velocímetro en este segundo. Si vas a $60\,\text{km/h}$ ($Q < K$), aceleras hacia adelante; si vas a $140\,\text{km/h}$ ($Q > K$), frenas hacia atrás; si vas a $100\,\text{km/h}$ ($Q = K$), mantienes la marcha en equilibrio.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Para la reacción reversible a $1000\,\text{K}$:
+$$2 SO_2(g) + O_2(g) \rightleftharpoons 2 SO_3(g) \qquad K_c = 280.0$$
+En cierto instante se analizan las concentraciones en un reactor de $1.00\,\text{L}$: $[SO_2] = 0.0500\,M$, $[O_2] = 0.0200\,M$, $[SO_3] = 0.400\,M$. Determine si el sistema está en equilibrio y, de no estarlo, prediga la dirección en la que procederá la reacción.
+
+**Paso 1:** Planteamiento y cálculo del cociente de reacción $Q_c$:
+$$Q_c = \frac{[SO_3]^2}{[SO_2]^2 [O_2]} = \frac{(0.400)^2}{(0.0500)^2 (0.0200)} = \frac{0.1600}{(0.00250)(0.0200)} = \frac{0.1600}{5.00 \times 10^{-5}} = 3200$$
+**Paso 2:** Comparación de $Q_c$ frente a $K_c$:
+$$Q_c (3200) > K_c (280.0)$$
+**Paso 3:** Conclusión termodinámica:
+Dado que $Q_c > K_c$, el sistema no está en equilibrio y contiene un exceso de productos respecto al equilibrio. La reacción neta procederá espontáneamente **hacia la izquierda (hacia los reactivos)**, consumiendo $SO_3$ y regenerando $SO_2$ y $O_2$ hasta que el cociente disminuya hasta igualar a $280.0$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cuál es el valor de $Q$ al inicio de una reacción química cuando sólo se introducen reactivos puros en el reactor?
+2. ¿Por qué una reacción química se detiene macroscópicamente cuando $\Delta G = 0$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,76 @@
+# Hibridación del Carbono, Geometría Molecular y Enlaces Sigma y Pi
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura del Carbono e Hidrocarburos
+> * **Propósito Docente:** Proporcionar al docente el dominio cuántico y geométrico de la tetravalencia del carbono, la teoría de hibridación de orbitales y la distinción físico-química entre enlaces $\sigma$ y $\pi$, facilitando su transposición didáctica en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La química orgánica contemporánea se fundamenta en la capacidad singular del átomo de carbono para formar cadenas covalentes estables, fenómeno conocido como concatenación. El carbono elemental posee un número atómico $Z = 6$ con una configuración electrónica en estado fundamental representada por:
+
+$$1s^2\,2s^2\,2p_x^1\,2p_y^1\,2p_z^0$$
+
+Bajo esta distribución fundamental, el átomo de carbono únicamente dispone de dos electrones desapareados en los orbitales $2p$, lo que predeciría una valencia de dos y la formación de compuestos como el carbénico $:CH_2$, de vida efímera e inestable. Sin embargo, la evidencia experimental demuestra de manera unívoca que en prácticamente todos sus compuestos estables el carbono es rigurosamente tetravalente. Para justificar esta observación, Linus Pauling introdujo en 1931 el modelo de hibridación mecano-cuántica de orbitales atómicos.
+
+El proceso termodinámico se interpreta en dos etapas secuenciales. Inicialmente ocurre una promoción electrónica promovida por absorción de energía, donde un electrón del subnivel $2s$ se promueve al orbital vacante $2p_z$:
+
+$$1s^2\,2s^1\,2p_x^1\,2p_y^1\,2p_z^1$$
+
+Aunque esta promoción requiere aproximadamente $400\,\text{kJ/mol}$, dicha inversión energética se compensa holgadamente mediante la formación de cuatro enlaces covalentes en lugar de dos, liberando una energía de estabilización reticular significativamente mayor. Posteriormente, las funciones de onda radiales y angulares de los orbitales atómicos se combinan linealmente (CLOA) para originar nuevos conjuntos de orbitales híbridos degenerados y direccionales:
+
+1. **Hibridación $sp^3$ (Tetraédrica):** Resulta de la combinación de un orbital $s$ y tres orbitales $p$. Se generan cuatro orbitales híbridos equivalentes dirigidos hacia los vértices de un tetraedro regular, con ángulos de enlace interaxiales de $109.5^\circ$. Cada orbital presenta un $25\,\%$ de carácter $s$ y un $75\,\%$ de carácter $p$, constituyendo la geometría característica de los alcanos y del metano ($CH_4$).
+2. **Hibridación $sp^2$ (Trigonal Plana):** Proviene de la mezcla de un orbital $s$ y dos orbitales $p$, preservando un orbital atómico $2p_z$ puro perpendicular al plano de hibridación. Los tres orbitales híbridos $sp^2$ yacen en un mismo plano con separación angular de $120^\circ$ ($33.3\,\%$ carácter $s$, $66.7\,\%$ carácter $p$), estableciendo la arquitectura fundamental de los alquenos y del eteno ($C_2H_4$).
+3. **Hibridación $sp$ (Lineal):** Se origina por la combinación lineal de un orbital $s$ y un único orbital $p$, dejando inalterados dos orbitales atómicos $p_y$ y $p_z$ puros perpendiculares entre sí y al eje de enlace. Los dos orbitales híbridos $sp$ forman un ángulo colineal de $180^\circ$ ($50\,\%$ carácter $s$, $50\,\%$ carácter $p$), propio de los alquinos y del acetileno ($C_2H_2$).
+
+La naturaleza del solapamiento orbital define la fortaleza y simetría del enlace covalente. El enlace tipo sigma ($\sigma$) se produce por solapamiento frontal o coaxial a lo largo del eje internuclear, concentrando la mayor densidad electrónica entre los dos núcleos y admitiendo rotación libre sobre el eje sin disrupción de la nube electrónica. Por el contrario, el enlace pi ($\pi$) se origina mediante el solapamiento lateral de los orbitales atómicos $p$ paralelos residuales, ubicando dos lóbulos de densidad electrónica por encima y por debajo del plano nodal internuclear. Debido a su menor extensión de recubrimiento espacial, el enlace $\pi$ posee menor energía de disociación que el enlace $\sigma$, resultando considerablemente más polarizable y químicamente reactivo.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Considerar la hibridación como un fenómeno físico real o mecánico:** Los estudiantes suelen atribuir a los orbitales híbridos una existencia material autónoma previa a la reacción. Es indispensable clarificar que la hibridación es un constructo matemático de funciones de onda para modelar geometrías de mínima energía.
+2. **Confundir enlaces dobles con dos enlaces idénticos:** Suponer que un doble enlace equivale a la suma simétrica de dos enlaces simples idénticos. Se debe enfatizar que un enlace múltiple consta de un enlace $\sigma$ fuerte y uno o dos enlaces $\pi$ de menor energía y nula rotación axial.
+3. **Ignorar el efecto del carácter $s$ sobre la electronegatividad:** Omitir que a mayor fracción de carácter $s$ en el orbital híbrido ($sp > sp^2 > sp^3$), mayor es la proximidad de los electrones de enlace al núcleo del carbono, aumentando la electronegatividad efectiva del átomo de carbono.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Globos Atados por el Cuello:** Emplear cuatro globos inflados idénticos atados por sus boquillas; espontáneamente adoptan una disposición tetraédrica simétrica ($109.5^\circ$) debido a la repulsión mutua de sus volúmenes, análoga al principio de repulsión de pares electrónicos de la capa de valencia (TRPEV).
+2. **Modelo del Apretón de Manos vs. Contacto de Antebrazos:** Para diferenciar los tipos de enlace, representar el enlace $\sigma$ como un apretón frontal de manos (fuerte, firme y libre para rotar la muñeca) y el enlace $\pi$ como el contacto lateral simultáneo de ambos antebrazos en paralelo (que bloquea inmediatamente cualquier torsión o giro).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Considere la molécula de propenonitrilo (acrilonitrilo), ampliamente empleada en la industria polimérica de fibras sintéticas:
+
+$$CH_2=CH-C\equiv N$$
+
+Determine de manera analítica el estado de hibridación de cada átomo de carbono y del nitrógeno, los ángulos de enlace aproximados asociados y contabilice el número total de enlaces tipo sigma ($\sigma$) y enlaces tipo pi ($\pi$) contenidos en la estructura molecular.
+
+**Solución paso a paso:**
+
+1. *Desglosar la estructura de Lewis con todos sus enlaces explícitos y pares libres:*
+   $$H_2C=CH-C\equiv N:$$
+   En esta representación plana se aprecia que el carbono terminal izquierdo se une a dos hidrógenos y al carbono central; el carbono central se une a un hidrógeno y al carbono derecho; y el carbono derecho se enlaza triple al nitrógeno.
+
+2. *Determinar la esfera de coordinación y la hibridación por átomo de carbono:*
+   $$C_1 \ (CH_2): \ 3\ \text{dominios electrónicos} \implies \text{hibridación } sp^2 \quad (\text{ángulo } \approx 120^\circ)$$
+   $$C_2 \ (CH): \ 3\ \text{dominios electrónicos} \implies \text{hibridación } sp^2 \quad (\text{ángulo } \approx 120^\circ)$$
+   $$C_3 \ (C\equiv N): \ 2\ \text{dominios electrónicos} \implies \text{hibridación } sp \quad (\text{ángulo } = 180^\circ)$$
+   El átomo de nitrógeno posee un enlace triple y un par libre no enlazante (2 dominios), por lo que también se describe bajo hibridación $sp$.
+
+3. *Contabilizar los enlaces coaxiales de tipo sigma ($\sigma$):*
+   $$N_\sigma = 2\ (C-H) + 1\ (C=C)_\sigma + 1\ (C-H) + 1\ (C-C)_\sigma + 1\ (C\equiv N)_\sigma = 6\ \text{enlaces } \sigma$$
+   Cada enlace simple aporta un enlace $\sigma$, y cada enlace múltiple contribuye exactamente con un enlace $\sigma$ en el eje internuclear.
+
+4. *Contabilizar los enlaces de solapamiento lateral pi ($\pi$):*
+   $$N_\pi = 1\ (C=C)_\pi + 2\ (C\equiv N)_\pi = 3\ \text{enlaces } \pi$$
+   El doble enlace carbono-carbono contiene un enlace $\pi$ originado por orbitales $2p$ no hibridados, mientras que el triple enlace carbono-nitrógeno contiene dos enlaces $\pi$ perpendiculares.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la distancia de enlace carbono-carbono disminuye progresivamente desde $1.54\,\text{Å}$ en el etano a $1.34\,\text{Å}$ en el eteno y $1.20\,\text{Å}$ en el etino?
+2. ¿Qué consecuencias estructurales y reactivas genera la imposibilidad de rotación en torno a un enlace que posee solapamiento tipo $\pi$?
+3. ¿Cómo influye el porcentaje de carácter $s$ en la acidez relativa de los hidrógenos unidos a carbonos $sp^3, sp^2$ y $sp$?

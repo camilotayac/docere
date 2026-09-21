@@ -1,0 +1,65 @@
+# Fundamentos de Reacciones de Óxido-Reducción y Pares Conjugados Redox
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Reacciones Redox y Electroquímica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las reacciones de óxido-reducción (redox) constituyen procesos químicos fundamentales en los cuales tiene lugar una **transferencia neta de electrones** entre especies químicas reaccionantes, modificando sus estados de oxidación formales:
+
+1. **Oxidación:** Proceso en el cual una especie química **pierde electrones**, aumentando su estado de oxidación algebraico ($\text{EO} \uparrow$). La especie que se oxida actúa como **agente reductor** (provoca la reducción de la otra especie cediéndole electrones).
+2. **Reducción:** Proceso en el cual una especie **gana electrones**, disminuyendo su estado de oxidación algebraico ($\text{EO} \downarrow$). La especie que se reduce actúa como **agente oxidante** (sustrae electrones oxidando a la otra).
+
+Ambos procesos son termodinámicamente inseparables y acoplados: el número total de electrones cedidos por el agente reductor debe ser rigurosamente idéntico al número total de electrones capturados por el agente oxidante.
+
+### Formalización Matemática y Leyes Físicas
+Definición electrónica fundamental:
+$$\text{Semirreacción de Oxidación: } \text{Red}_1 \longrightarrow \text{Ox}_1 + n e^-$$
+$$\text{Semirreacción de Reducción: } \text{Ox}_2 + n e^- \longrightarrow \text{Red}_2$$
+Reacción Redox neta global:
+$$\text{Red}_1 + \text{Ox}_2 \longrightarrow \text{Ox}_1 + \text{Red}_2$$
+Regla mnemotécnica internacional:
+$$\text{OIL RIG: } \textbf{O}\text{xidation } \textbf{I}\text{s } \textbf{L}\text{oss}, \quad \textbf{R}\text{eduction } \textbf{I}\text{s } \textbf{G}\text{ain (of electrons)}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir agente oxidante con la sustancia que se oxida (el agente oxidante es la sustancia que **se reduce**; el agente reductor es la que **se oxida**).
+2. Olvidar que una reducción implica disminución algebraica (pasar de $+2$ a $0$ es reducción, pero pasar de $-1$ a $-2$ también es reducción).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la transacción comercial:** Un comprador y un vendedor: el comprador entrega dinero (cede electrones, se oxida) para reducir el inventario de la tienda; el vendedor recibe el dinero (gana electrones, se reduce). No puede haber venta si no hay quien reciba el dinero simultáneamente.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En la siguiente reacción redox espontánea:
+$$Zn(s) + Cu^{2+}(aq) \longrightarrow Zn^{2+}(aq) + Cu(s)$$
+Identifique la especie oxidada, la especie reducida, el agente oxidante, el agente reductor y escriba las semirreacciones correspondientes.
+
+**Paso 1:** Asignación de estados de oxidación:
+$$Zn^0 \longrightarrow Zn^{+2} \qquad Cu^{+2} \longrightarrow Cu^0$$
+**Paso 2:** Análisis de transferencia electrónica:
+1. El $Zn$ pasa de $0$ a $+2$: pierde $2\,e^-$. Se **oxida**, por tanto es el **agente reductor**.
+2. El $Cu^{2+}$ pasa de $+2$ a $0$: gana $2\,e^-$. Se **reduce**, por tanto es el **agente oxidante**.
+**Paso 3:** Semirreacciones acopladas:
+$$\text{Oxidación: } Zn(s) \longrightarrow Zn^{2+}(aq) + 2 e^-$$
+$$\text{Reducción: } Cu^{2+}(aq) + 2 e^- \longrightarrow Cu(s)$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la fotosíntesis biológica y la respiración celular son macro-reacciones redox acopladas?
+2. ¿Cómo actúa el cloro de uso doméstico ($NaClO$) como agente oxidante blanqueador y desinfectante?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

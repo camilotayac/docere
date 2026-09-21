@@ -1,0 +1,69 @@
+# Fuerza Ácido-Base: Constantes de Disociación ($K_a, K_b$) y Grado de Ionización
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En disolución acuosa se distingue rigurosamente entre electrólitos fuertes y débiles:
+1. **Ácidos y Bases Fuertes:** Se ionizan o disocian cuantitativamente al $100\%$ en agua ($HCl, HBr, HI, HNO_3, HClO_4, H_2SO_4$; hidróxidos de metales alcalinos y alcalinotérreos). La concentración de $[H^+]$ o $[OH^-]$ es igual a la concentración inicial del electrólito multiplicada por su número de protones/hidróxidos.
+2. **Ácidos y Bases Débiles:** Se ionizan sólo parcialmente en una pequeña fracción ($< 5\%$), estableciendo un equilibrio químico homogéneo regido por la **constante de acidez ($K_a$)** o la **constante de basicidad ($K_b$)**:
+$$HA(aq) + H_2O(l) \rightleftharpoons H_3O^+(aq) + A^-(aq) \implies K_a = \frac{[H_3O^+][A^-]}{[HA]}$$
+$$B(aq) + H_2O(l) \rightleftharpoons BH^+(aq) + OH^-(aq) \implies K_b = \frac{[BH^+][OH^-]}{[B]}$$
+
+Para cualquier par conjugado ácido-base de Brønsted-Lowry en agua, las constantes están acopladas por la relación universal: **$K_a \cdot K_b = K_w = 1.0 \times 10^{-14}$**.
+
+### Formalización Matemática y Leyes Físicas
+Relación del par conjugado:
+$$K_a \cdot K_b = K_w \iff \text{p}K_a + \text{p}K_b = 14.00$$
+Grado o porcentaje de ionización ($\alpha$):
+$$\%\text{Ionización} = \left( \frac{[H^+]_{\text{equilibrio}}}{[HA]_{\text{inicial}}} \right) \times 100\%$$
+Aproximación de simplificación (Regla del 5%):
+$$\text{Si } \frac{[HA]_0}{K_a} > 400 \implies [HA]_0 - x \approx [HA]_0 \implies x = \sqrt{K_a \cdot [HA]_0}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Utilizar la aproximación $[HA]_0 - x \approx [HA]_0$ cuando $K_a$ es grande o la solución es muy diluida (en ese caso debe resolverse obligatoriamente la ecuación cuadrática completa por fórmula general).
+2. Confundir la fuerza de un ácido ($K_a$) con su concentración molar.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los soldados disciplinados frente a los tímidos:** Un ácido fuerte es un batallón de 100 soldados donde todos saltan de inmediato al agua a nadar al recibir la orden ($100\%$ disociados). Un ácido débil es un grupo de 100 niños donde sólo 2 o 3 se atreven a entrar a la piscina y los otros 97 se quedan sentados en la orilla sin mojarse (equilibrio con $98\%$ sin ionizar).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule el pH y el porcentaje de ionización de una disolución acuosa $0.150\,M$ de ácido acético ($CH_3COOH$, $K_a = 1.80 \times 10^{-5}$) a $25^\circ\text{C}$.
+
+**Paso 1:** Planteamiento de la tabla de equilibrio (ICE):
+$$CH_3COOH \rightleftharpoons H^+ + CH_3COO^-$$
+1. Inicial ($M$): $0.150 \qquad 0 \qquad 0$
+2. Cambio ($M$): $-x \qquad +x \qquad +x$
+3. Equilibrio ($M$): $0.150 - x \qquad x \qquad x$
+
+**Paso 2:** Verificación de la aproximación:
+$$\frac{[HA]_0}{K_a} = \frac{0.150}{1.80 \times 10^{-5}} = 8333 > 400 \implies 0.150 - x \approx 0.150$$
+$$K_a = \frac{x^2}{0.150} = 1.80 \times 10^{-5} \implies x^2 = 2.70 \times 10^{-6} \implies x = [H^+] = 1.643 \times 10^{-3}\,M$$
+**Paso 3:** Cálculo del pH:
+$$\text{pH} = -\log(1.643 \times 10^{-3}) = 2.78$$
+**Paso 4:** Porcentaje de ionización:
+$$\%\text{Ionización} = \frac{1.643 \times 10^{-3}}{0.150} \times 100\% = 1.10\%$$
+El ácido acético está ionizado sólo en un $1.10\%$, validando con holgura la aproximación efectuada.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ácido fluorhídrico ($HF$) es un ácido débil a pesar de que el flúor es el elemento más electronegativo de la tabla periódica?
+2. ¿Cómo influye la dilución en el porcentaje de ionización de un ácido débil según la Ley de Dilución de Ostwald?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

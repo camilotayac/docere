@@ -1,0 +1,69 @@
+# Balanceo Redox por el Método del Ion-Electrón en Medio Básico
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Reacciones Redox y Electroquímica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En disolución acuosa alcalina o básica, la concentración de protones libres es despreciable ($[H^+] < 10^{-7}\,M$) y el medio está dominado por iones hidróxido ($OH^-$) y moléculas de agua ($H_2O$). Para balancear en medio básico, el procedimiento más seguro y libre de errores algebraicos consiste en:
+
+1. Ejecutar las etapas completas del método del ion-electrón **como si estuviera en medio ácido** hasta obtener la ecuación final simplificada con iones $H^+$.
+2. **Neutralización estequiométrica de protones:** Sumar a **ambos miembros de la ecuación** un número exacto de iones hidróxido ($OH^-$) igual al número de protones ($H^+$) presentes.
+3. En el miembro donde coinciden $H^+$ y $OH^-$, combinarlos para formar moléculas de agua:
+$$n\, H^+ + n\, OH^- \longrightarrow n\, H_2O$$
+4. Simplificar algebraicamente las moléculas de agua que aparezcan repetidas en ambos lados de la ecuación.
+
+### Formalización Matemática y Leyes Físicas
+Regla de neutralización en medio básico:
+$$H^+ + OH^- \longrightarrow H_2O$$
+Balance de cargas en medio alcalino:
+$$\sum q_{\text{reactivos}} = \sum q_{\text{productos}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Agregar $OH^-$ únicamente en un miembro de la ecuación (destruye el balance atómico y de carga; todo lo que se sume debe agregarse idénticamente a ambos lados).
+2. Mantener protones $H^+$ en la ecuación final de una reacción que ocurre explícitamente en hidróxido de sodio concentrado.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los platos gemelos en la balanza:** Si la balanza está equilibrada y agregas tres pesas de plomo ($OH^-$) en el platillo izquierdo, estás obligado a colocar exactamente las tres mismas pesas de plomo en el platillo derecho para que la balanza continúe en perfecto equilibrio.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Balancee por el método del ion-electrón en medio básico la reacción redox entre el ion permanganato y el ion sulfito:
+$$MnO_4^- + SO_3^{2-} \longrightarrow MnO_2 + SO_4^{2-}$$
+
+**Paso 1:** Semirreacción del permanganato en medio ácido:
+$$MnO_4^- + 4 H^+ + 3 e^- \longrightarrow MnO_2 + 2 H_2O$$
+**Paso 2:** Semirreacción del sulfito en medio ácido:
+$$SO_3^{2-} + H_2O \longrightarrow SO_4^{2-} + 2 H^+ + 2 e^-$$
+**Paso 3:** Igualación de electrones ($6\,e^-$, multiplicando por 2 y por 3):
+$$2 MnO_4^- + 8 H^+ + 6 e^- \longrightarrow 2 MnO_2 + 4 H_2O$$
+$$3 SO_3^{2-} + 3 H_2O \longrightarrow 3 SO_4^{2-} + 6 H^+ + 6 e^-$$
+Suma ácida simplificada:
+$$2 MnO_4^- + 3 SO_3^{2-} + 2 H^+ \longrightarrow 2 MnO_2 + 3 SO_4^{2-} + H_2O$$
+
+**Paso 4:** Conversión a medio básico (añadir $2\, OH^-$ a ambos miembros):
+$$2 MnO_4^- + 3 SO_3^{2-} + \underbrace{(2 H^+ + 2 OH^-)}_{2 H_2O} \longrightarrow 2 MnO_2 + 3 SO_4^{2-} + H_2O + 2 OH^-$$
+**Paso 5:** Cancelación de $1\, H_2O$ en ambos lados:
+$$2 MnO_4^-(aq) + 3 SO_3^{2-}(aq) + H_2O(l) \longrightarrow 2 MnO_2(s) + 3 SO_4^{2-}(aq) + 2 OH^-(aq)$$
+1. Verificación de cargas: Reactivos $= 2(-1) + 3(-2) = -8$. Productos $= 3(-2) + 2(-1) = -8$. Balance perfecto en masa y carga.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ion permanganato se reduce a $Mn^{2+}$ en medio ácido pero se reduce a $MnO_2(s)$ marrón en medio básico?
+2. ¿Cómo influye el pH del suelo en las reacciones redox de absorción de nutrientes metálicos en las raíces de las plantas?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

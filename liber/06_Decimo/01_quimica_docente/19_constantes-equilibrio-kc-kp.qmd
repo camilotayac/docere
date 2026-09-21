@@ -1,0 +1,70 @@
+# Constantes de Equilibrio en Presiones Parciales ($K_p$) y Relación con $K_c$
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Para sistemas reversibles que operan en fase gaseosa homogénea o heterogénea, resulta experimental y analíticamente ventajoso expresar la constante de equilibrio en función de las **presiones parciales en el equilibrio ($P_i$)** medidas en atmósferas o bares, definiéndose la constante **$K_p$**:
+
+$$a\, A(g) + b\, B(g) \rightleftharpoons c\, C(g) + d\, D(g) \implies K_p = \frac{P_C^c \cdot P_D^d}{P_A^a \cdot P_B^b}$$
+
+Dado que para cada gas ideal la concentración molar es $[i] = n_i / V = P_i / (RT)$, la sustitución analítica rigurosa en la expresión de $K_c$ deduce la relación termodinámica universal entre ambas constantes:
+
+$$K_p = K_c \cdot (R T)^{\Delta n_g}$$
+
+Donde $\Delta n_g$ es la variación estequiométrica neta en los moles de especies exclusivamente gaseosas:
+$$\Delta n_g = \sum \nu_{\text{gases productos}} - \sum \nu_{\text{gases reactivos}} = (c + d) - (a + b)$$
+Si $\Delta n_g = 0$, entonces $(RT)^0 = 1$ y **$K_p = K_c$**.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de acoplamiento:
+$$K_p = K_c (R T)^{\Delta n_g} \iff K_c = K_p (R T)^{-\Delta n_g}$$
+Donde:
+1. $R = 0.082057\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)}$ (si $K_p$ se expresa en atmósferas).
+2. $T$ es la temperatura absoluta en Kelvin.
+3. $\Delta n_g = (c + d) - (a + b)$ (sólo coeficientes de gases).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Incluir moles de especies sólidas o líquidas en el cálculo de $\Delta n_g$ (únicamente se cuentan los coeficientes de sustancias con símbolo $(g)$).
+2. Usar la temperatura en grados Celsius en el factor $(RT)^{\Delta n_g}$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El factor de conversión de moneda gas-concentración:** $K_c$ es la contabilidad en número de monedas por litro de alcancía; $K_p$ es la presión que hacen las monedas empujando la tapa de la alcancía. La tasa de cambio oficial entre ambas monedas es $(RT)^{\Delta n_g}$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Para la síntesis del amoníaco a $500.0^\circ\text{C}$ ($773.15\,\text{K}$):
+$$N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g)$$
+Se determina experimentalmente que la constante de equilibrio en concentración es $K_c = 0.0602\,\text{M}^{-2}$. Calcule el valor de $K_p$ a dicha temperatura.
+
+**Paso 1:** Cálculo de $\Delta n_g$:
+$$\Delta n_g = 2 - (1 + 3) = 2 - 4 = -2$$
+**Paso 2:** Aplicación de la relación matemática:
+$$K_p = K_c (R T)^{\Delta n_g} = K_c (R T)^{-2} = \frac{K_c}{(R T)^2}$$
+**Paso 3:** Sustitución numérica ($R = 0.08206$):
+$$R T = (0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)})(773.15\,\text{K}) = 63.445\,\text{atm}$$
+$$(R T)^2 = (63.445)^2 = 4025.3$$
+$$K_p = \frac{0.0602}{4025.3} = 1.495 \times 10^{-5}$$
+A $500^\circ\text{C}$, $K_p = 1.50 \times 10^{-5}$. El valor diminuto refleja que a altas temperaturas el equilibrio favorece la disociación en $N_2$ y $H_2$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿En qué condiciones estequiométricas se cumple que $K_p = K_c$? Cite dos ejemplos de reacciones.
+2. ¿Cómo se modifica el valor de la constante de equilibrio si se invierte el sentido de la ecuación química o si se multiplican sus coeficientes por 2?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,87 @@
+# Modos de Decaimiento Radiactivo: Emisiones $\alpha$, $\beta^-$, $\beta^+$ y Radiación $\gamma$
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química Nuclear y Radiactividad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los núclidos inestables (radionúclidos) que se sitúan fuera de la franja de estabilidad experimentan transformaciones nucleares espontáneas para alcanzar una configuración nuclear más estable, proceso denominado **decaimiento o desintegración radiactiva** (Becquerel, Marie y Pierre Curie, Rutherford).
+
+Las leyes de conservación en las ecuaciones nucleares exigen que:
+1. La suma de los **números atómicos ($Z$)** debe ser idéntica en ambos miembros.
+2. La suma de los **números de masa ($A$)** debe ser idéntica en ambos miembros.
+
+Modos fundamentales de desintegración:
+1. **Emisión Alfa ($\alpha$ o $^4_2He$):** Expulsión de núcleos de helio-4 de alta masa y baja penetración por núcleos pesados ($Z > 83$):
+$$^A_Z X \longrightarrow ^{A-4}_{Z-2} Y + ^4_2 He$$
+2. **Emisión Beta Negativa ($\beta^-$ o $^0_{-1}e$):** Ocurre en núcleos con exceso de neutrones; un neutrón se transmuta en un protón expulsando un electrón relativista y un antineutrino electrónico:
+$$^1_0 n \longrightarrow ^1_1 p + ^0_{-1} e + \bar{\nu}_e \implies ^A_Z X \longrightarrow ^A_{Z+1} Y + ^0_{-1} e$$
+3. **Emisión Beta Positiva (Positrón, $\beta^+$ o $^0_{+1}e$) y Captura Electrónica ($EC$):** Ocurre en núcleos con deficiencia de neutrones; un protón se transmuta en neutrón:
+$$^1_1 p \longrightarrow ^1_0 n + ^0_{+1} e + \nu_e \implies ^A_Z X \longrightarrow ^A_{Z-1} Y + ^0_{+1} e$$
+4. **Emisión Gamma ($\gamma$ o $^0_0\gamma$):** Desexcitación electromagnética de fotones de altísima energía y gran penetración desde un estado nuclear excitado isómero metaestable ($m$). No altera $A$ ni $Z$.
+
+### Formalización Matemática y Leyes Físicas
+Leyes de conservación en reacciones nucleares:
+$$\sum A_{\text{reactivos}} = \sum A_{\text{productos}} \qquad \sum Z_{\text{reactivos}} = \sum Z_{\text{productos}}$$
+Poder de penetración de las radiaciones:
+$$\alpha\,(\text{se detiene con una hoja de papel}) \ll \beta\,(\text{lámina de aluminio de } 3\,\text{mm}) \ll \gamma\,(\text{bloques gruesos de plomo u hormigón})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir la partícula $\beta^-$ con un electrón de la corteza extranuclear (la partícula beta se crea y nace dentro del núcleo durante la desintegración del neutrón).
+2. Asumir que la radiación gamma transmuta el elemento químico (sólo disipa energía electromagnética sin cambiar protones ni neutrones).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los tipos de proyectiles:** La partícula $\alpha$ es una bola de cañón pesada y lenta: choca con la primera pared de papel y se detiene causando gran daño superficial. La partícula $\beta$ es una flecha rápida: atraviesa el papel y se clava en la madera. El rayo $\gamma$ es un rayo láser invisible ultra penetrante: atraviesa paredes y personas, requiriendo un búnker de plomo para frenarlo.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Complete las siguientes ecuaciones nucleares e identifique el modo de desintegración en cada caso:
+a)
+
+$$^{238}_{92}U \longrightarrow \dots + ^4_2 He$$
+
+B)
+
+$$^{14}_6 C \longrightarrow ^{14}_7 N + \dots$$
+
+C)
+
+$$^{11}_6 C \longrightarrow \dots + ^0_{+1} e$$
+
+D)
+
+$$^{99m}_{43}Tc \longrightarrow \dots + ^0_0\gamma$$
+
+**Paso 1:** Caso a:
+$$A = 238 - 4 = 234; \quad Z = 92 - 2 = 90 \implies ^{234}_{90}\text{Th}$$
+Modo: **Emisión Alfa ($\alpha$)**, produciendo Torio-234.
+**Paso 2:** Caso b:
+$$A = 14 - 14 = 0; \quad Z = 6 - 7 = -1 \implies ^0_{-1}e$$
+Modo: **Emisión Beta negativa ($\beta^-$)**.
+**Paso 3:** Caso c:
+$$A = 11 - 0 = 11; \quad Z = 6 - (+1) = 5 \implies ^{11}_5 B$$
+Modo: **Emisión de Positrón ($\beta^+$)**, produciendo Boro-11.
+**Paso 4:** Caso d:
+$$A = 99; \quad Z = 43 \implies ^{99}_{43}\text{Tc}$$
+Modo: **Emisión Gamma ($\gamma$)**, desexcitación del Tecnecio-99 metaestable utilizado en medicina nuclear.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el radón-222 ($^{222}Rn$, emisor alfa gaseoso) representa un grave riesgo de cáncer de pulmón si se inhala en sótanos mal ventilados?
+2. ¿Cómo se utiliza la tomografía por emisión de positrones (PET) en el diagnóstico oncológico temprano?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

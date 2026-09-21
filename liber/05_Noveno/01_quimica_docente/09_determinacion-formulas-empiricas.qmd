@@ -1,0 +1,67 @@
+# Determinación Cuantitativa de Fórmulas Empíricas Mínimas
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **fórmula empírica** (o fórmula mínima) representa la proporción en números enteros más simples y reducidos entre los átomos de los diferentes elementos que constituyen un compuesto químico. A diferencia de la fórmula molecular (que especifica el número exacto real de átomos en una molécula discreta), la fórmula empírica se deduce directamente a partir de datos experimentales de análisis cuantitativo elemental o porcentajes en masa.
+
+El algoritmo riguroso de resolución comprende cuatro etapas sucesivas:
+1. **Base de cálculo:** Asumir una muestra de $100.00\,\text{g}$, convirtiendo los porcentajes centesimales directamente en gramos de cada elemento.
+2. **Conversión a moles:** Dividir la masa de cada elemento entre su respectiva masa atómica molar ($n_i = m_i / A_{r,i}$).
+3. **Normalización por el menor:** Dividir todos los valores de moles entre el menor valor molar obtenido, hallando relaciones relativas unitarias.
+4. **Conversión a enteros:** Si los cocientes no son enteros próximos, multiplicar todos por el factor entero mínimo ($2, 3, 4, 5$) para eliminar decimales característicos ($0.5 \times 2$, $0.33 \times 3$, $0.25 \times 4$).
+
+### Formalización Matemática y Leyes Físicas
+Algoritmo de cálculo:
+$$\%X_i \implies m_i = \%X_i\,\text{g} \implies n_i = \frac{m_i}{A_{r,i}}$$
+Relación molar normalizada:
+$$r_i = \frac{n_i}{n_{\text{menor}}}$$
+Factores de multiplicación para fracciones decimales:
+$$\dots .50 \times 2 \qquad \dots .33 \times 3 \qquad \dots .67 \times 3 \qquad \dots .25 \times 4 \qquad \dots .75 \times 4$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Redondear arbitrariamente decimales lejanos (ej. redondear $1.33$ a $1.0$, o $1.5$ a $2.0$; $1.5$ indica una relación $3:2$ y $1.33$ indica $4:3$).
+2. Dividir los porcentajes entre el número atómico ($Z$) en lugar de la masa atómica molar ($A_r$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la receta de cocina por proporciones:** Un chef no sabe para cuántas personas es el banquete final, pero el análisis de la masa le dice que por cada taza de arroz hay $1.5$ tazas de agua. Como no puedes cocinar con medias tazas indivisibles en átomos, duplicas toda la receta: $2$ tazas de arroz por cada $3$ tazas de agua ($Arroz_2 Agua_3$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** El análisis cuantitativo de un óxido de hierro revela que contiene $69.94\%$ de hierro y $30.06\%$ de oxígeno en masa. Calcule su fórmula empírica mínima. Datos: $Fe=55.85\,\text{g/mol}$, $O=16.00\,\text{g/mol}$.
+
+**Paso 1:** Base de $100.0\,\text{g}$:
+$$m_{Fe} = 69.94\,\text{g}; \quad m_O = 30.06\,\text{g}$$
+**Paso 2:** Conversión a moles de átomos:
+$$n_{Fe} = \frac{69.94\,\text{g}}{55.85\,\text{g/mol}} = 1.252\,\text{mol}$$
+$$n_O = \frac{30.06\,\text{g}}{16.00\,\text{g/mol}} = 1.879\,\text{mol}$$
+**Paso 3:** División entre el menor número de moles ($1.252$):
+$$Fe: \frac{1.252}{1.252} = 1.00$$
+$$O: \frac{1.879}{1.252} = 1.50$$
+**Paso 4:** Multiplicación por factor 2 para obtener números enteros mínimos:
+$$Fe: 1.00 \times 2 = 2$$
+$$O: 1.50 \times 2 = 3$$
+La fórmula empírica es **$Fe_2O_3$** (óxido de hierro(III)).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la fórmula empírica del peróxido de hidrógeno es $HO$ mientras que su fórmula molecular real es $H_2O_2$?
+2. Si un compuesto contiene $40.0\%$ de carbono, $6.7\%$ de hidrógeno y $53.3\%$ de oxígeno, ¿cuál es su fórmula empírica?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,52 @@
+# Estados de Agregación de la Materia y Modelo Corpuscular Cinético
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estados de la Materia
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El estado físico de agregación de la materia (sólido, líquido, gas) está determinado por el balance competitivo entre dos energías microscópicas: la energía cinética de agitación térmica ($E_k \propto T$), que tiende a dispersar las partículas, y la energía potencial intermolecular de cohesión ($E_p$), que tiende a mantenerlas unidas en posiciones relativas fijas. En el estado sólido predominan fuertemente las fuerzas cohesivas; en el líquido existe un balance dinámico que permite fluidez con volumen constante; y en el gas la energía cinética supera totalmente a las fuerzas de atracción.
+
+### Formalización Matemática y Leyes Físicas
+Balance energético de agregación:
+$$\text{Sólido: } E_p \gg E_k \qquad \text{Líquido: } E_p \approx E_k \qquad \text{Gas: } E_k \gg E_p$$
+Ecuación de estado aproximada para gases ideales:
+$$P V = n R T$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Atribuir propiedades macroscópicas a las partículas individuales (creer que 'las moléculas de hielo son duras y frías' o 'las moléculas de vapor son calientes y blandas').
+2. Creer que entre las moléculas de un gas hay aire en lugar de vacío absoluto.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del baile en el salón:** En el sólido los alumnos están tomados fuertemente de las manos vibrando en su lugar; en el líquido se toman de los hombros y se deslizan unos alrededor de otros; en el gas sueltan los agarres y corren a toda velocidad chocando con las paredes.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Compare el volumen molar del agua líquida ($\rho = 1.00\,\text{g/mL}$) con el volumen molar del vapor de agua a $100^\circ\text{C}$ y $1\,\text{atm}$ ($V_m \approx 30.6\,\text{L/mol}$) y deduzca el factor de expansión volumétrica.
+
+**Paso 1:** Volumen molar del agua líquida:
+$$V_{m,\text{liq}} = \frac{18.02\,\text{g/mol}}{1.00\,\text{g/mL}} = 18.02\,\text{mL/mol} = 0.01802\,\text{L/mol}$$
+**Paso 2:** Razón de expansión:
+$$\text{Factor} = \frac{30.6\,\text{L/mol}}{0.01802\,\text{L/mol}} \approx 1700$$
+El vapor de agua ocupa aproximadamente 1700 veces más volumen que el agua líquida, demostrando que el gas es predominantemente espacio vacío intermolecular.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los líquidos y los sólidos son prácticamente incompresibles mientras que los gases se comprimen con facilidad?
+2. ¿Qué existe exactamente en el espacio entre dos moléculas de gas en una botella cerrada?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

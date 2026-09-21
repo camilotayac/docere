@@ -1,0 +1,62 @@
+# Tiempo de Vida Media en Cinéticas de Diferente Orden
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El **tiempo de vida media** ($t_{1/2}$) se define como el intervalo de tiempo necesario para que la concentración de un reactivo se reduzca exactamente a la **mitad de su valor inicial**: $[A]_{t_{1/2}} = \frac{1}{2} [A]_0$.
+
+El comportamiento matemático de $t_{1/2}$ constituye un criterio diagnóstico decisivo para identificar el orden cinético:
+1. **Orden Cero:** El tiempo de vida media es **directamente proporcional** a la concentración inicial: $t_{1/2} = \frac{[A]_0}{2k}$.
+2. **Primer Orden:** El tiempo de vida media es **estrictamente independiente de la concentración inicial**:
+$$t_{1/2} = \frac{\ln(2)}{k} = \frac{0.69315}{k}$$
+Cada período $t_{1/2}$ sucesivo reduce la muestra a la mitad independientemente de la cantidad inicial.
+3. **Segundo Orden:** El tiempo de vida media es **inversamente proporcional** a la concentración inicial: $t_{1/2} = \frac{1}{k [A]_0}$.
+
+### Formalización Matemática y Leyes Físicas
+Deducción analítica de vidas medias:
+$$\text{Orden 0: } \frac{1}{2}[A]_0 = [A]_0 - k t_{1/2} \implies t_{1/2} = \frac{[A]_0}{2k}$$
+$$\text{Orden 1: } \ln\left(\frac{[A]_0}{\frac{1}{2}[A]_0}\right) = \ln(2) = k t_{1/2} \implies t_{1/2} = \frac{0.693}{k}$$
+$$\text{Orden 2: } \frac{1}{\frac{1}{2}[A]_0} - \frac{1}{[A]_0} = \frac{2 - 1}{[A]_0} = k t_{1/2} \implies t_{1/2} = \frac{1}{k [A]_0}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que en cualquier reacción el tiempo de vida media es constante (sólo es constante en cinéticas de primer orden y decaimiento radiactivo).
+2. Asumir que después de dos vidas medias ($2 t_{1/2}$) la concentración cae a cero (cae al $25\%$, después de $3 t_{1/2}$ al $12.5\%$, luego al $6.25\%$, etc.).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del corte de papel continuo:** Tomas una hoja de papel y la cortas a la mitad cada 10 minutos. A los 10 min tienes media hoja; a los 20 min un cuarto; a los 30 min un octavo. Nunca llegas a cero papel por división sucesiva en mitades.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un contaminante orgánico se degrada en aguas subterráneas siguiendo una cinética de primer orden con un tiempo de vida media $t_{1/2} = 14.5\,\text{días}$. Calcule la constante de velocidad de degradación $k$ en $\text{días}^{-1}$ y en $\text{s}^{-1}$, y determine qué porcentaje del contaminante permanecerá activo después de $43.5\,\text{días}$.
+
+**Paso 1:** Cálculo de la constante cinética $k$:
+$$k = \frac{\ln(2)}{t_{1/2}} = \frac{0.69315}{14.5\,\text{días}} = 0.04780\,\text{días}^{-1}$$
+En unidades SI:
+$$k = \frac{0.04780\,\text{días}^{-1}}{86400\,\text{s/día}} = 5.53 \times 10^{-7}\,\text{s}^{-1}$$
+**Paso 2:** Análisis de vidas medias transcurridas:
+$$n = \frac{t}{t_{1/2}} = \frac{43.5\,\text{días}}{14.5\,\text{días}} = 3.0\,\text{vidas medias exactas}$$
+**Paso 3:** Porcentaje remanente:
+$$\% = \left(\frac{1}{2}\right)^3 \times 100\% = \frac{1}{8} \times 100\% = 12.5\%$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la datación por carbono-14 ($^{14}C, t_{1/2} = 5730\,\text{años}$) utiliza el modelo matemático de primer orden?
+2. ¿Qué le ocurre al tiempo de vida media de una reacción de segundo orden si se cuadruplica la concentración inicial del reactivo?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

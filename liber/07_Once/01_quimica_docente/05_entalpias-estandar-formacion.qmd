@@ -1,0 +1,82 @@
+# Entalpías Estándar de Formación
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termoquímica y Ciclos Energéticos
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Para tabular de manera universal y consistente las propiedades energéticas de las sustancias químicas sin requerir la medición de infinitas combinaciones de reacciones, la fisicoquímica establece un estado de referencia termodinámico: el **estado estándar**.
+
+El **estado estándar** de una sustancia pura a una temperatura especificada (por convenio habitual, $T = 298.15\,\text{K}$ o $25^\circ\text{C}$) es su forma física y alotrópica más estable bajo una presión de $1\,\text{bar}$ ($10^5\,\text{Pa}$, históricamente aproximada a $1\,\text{atm}$). Para disoluciones, corresponde a una concentración efectiva unitaria ($1\,\text{mol/L}$ o $1\,\text{m}$).
+
+La **Entalpía Estándar de Formación ($\Delta H^\circ_f$)** de un compuesto se define como: el cambio de entalpía que acompaña a la síntesis de un mol del compuesto en su estado estándar a partir de sus elementos constituyentes en sus formas alotrópicas más estables en sus estados estándar.
+
+**Convenio Fundamental de Escala Cero:**
+Por definición axiomatica de la IUPAC, la entalpía estándar de formación de cualquier elemento químico en su forma alotrópica más termodinámicamente estable en condiciones estándar es exactamente cero:
+$$\Delta H^\circ_f [\text{elemento en su forma más estable}] \equiv 0\,\text{kJ/mol}$$
+*Ejemplos:* $\Delta H^\circ_f[\text{O}_2(g)] = 0$, pero $\Delta H^\circ_f[\text{O}_3(g)] = +142.7\,\text{kJ/mol}$; $\Delta H^\circ_f[\text{C}(\text{grafito})] = 0$, pero $\Delta H^\circ_f[\text{C}(\text{diamante})] = +1.9\,\text{kJ/mol}$; $\Delta H^\circ_f[\text{Br}_2(l)] = 0$, pero $\Delta H^\circ_f[\text{Br}_2(g)] = +30.9\,\text{kJ/mol}$.
+
+A partir de las tablas de entalpías estándar de formación, se calcula el cambio de entalpía de cualquier reacción química general aplicando la sumatoria de Hess:
+$$\Delta H^\circ_{\text{rxn}} = \sum_{p} n_p \Delta H^\circ_f(\text{productos}) - \sum_{r} m_r \Delta H^\circ_f(\text{reactivos})$$
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta H^\circ_{\text{rxn}} = \sum \nu_p \Delta H^\circ_f(\text{productos}) - \sum \nu_r \Delta H^\circ_f(\text{reactivos})$$
+$$\Delta H^\circ_f[\text{elemento estable}] = 0$$
+Relación con entalpía de combustión estándar ($\Delta H^\circ_c$):
+$$\Delta H^\circ_f(\text{compuesto}) = \sum \Delta H^\circ_c(\text{elementos}) - \Delta H^\circ_c(\text{compuesto})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Asignar $\Delta H^\circ_f = 0$ a cualquier elemento sin verificar el estado físico o forma alotrópica:** Considerar que el diamante, el vapor de bromo o el ozono tienen entalpía de formación nula.
+2. **Omitir los coeficientes estequiométricos en la sumatoria:** Sumar los valores tabulados de $\Delta H^\circ_f$ sin multiplicarlos por los moles de cada sustancia presentes en la ecuación balanceada.
+3. **Confundir reactivos y productos:** Invertir la resta como $(\text{reactivos} - \text{productos})$, lo que genera un error sistemático de signo algebraico.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del Nivel del Mar:** En geodesia no conocemos la distancia absoluta de una montaña al centro de la Tierra; establecemos el nivel del mar como altitud cero ($h = 0$). Los elementos más estables son el 'nivel del mar térmico' ($\Delta H^\circ_f = 0$). Los compuestos más estables que sus elementos tienen valles submarinos ($\Delta H^\circ_f < 0$), y los compuestos inestables o energéticos son colinas elevadas ($\Delta H^\circ_f > 0$).
+2. **Fábrica de Lego:** Desarmar los reactivos hasta sus piezas elementales básicas sueltas (los elementos puros en el nivel cero) y volver a ensamblar los productos a partir de esas mismas piezas.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** La termita es una mezcla intensamente pirotécnica utilizada para soldar vías férreas mediante la reacción:
+$$2 \text{Al}(s) + \text{Fe}_2\text{O}_3(s) \to \text{Al}_2\text{O}_3(s) + 2 \text{Fe}(s)$$
+Utilizando los siguientes datos tabulados de entalpías estándar de formación a $298.15\,\text{K}$:
+1. $\Delta H^\circ_f[\text{Fe}_2\text{O}_3(s)] = -824.2\,\text{kJ/mol}$
+2. $\Delta H^\circ_f[\text{Al}_2\text{O}_3(s)] = -1675.7\,\text{kJ/mol}$
+3. $\Delta H^\circ_f[\text{Al}(s)] = 0\,\text{kJ/mol}$
+4. $\Delta H^\circ_f[\text{Fe}(s)] = 0\,\text{kJ/mol}$
+1. Calcule la entalpía estándar de la reacción ($\Delta H^\circ_{rxn}$).
+2. Calcule la cantidad de calor desprendida cuando reaccionan completamente $54.0\,\text{g}$ de aluminio metálico ($\text{Al}$, masa molar $26.98\,\text{g/mol}$).
+
+**Solución paso a paso:**
+1. *Escribir la fórmula de la sumatoria de Hess:*
+   $$\Delta H^\circ_{rxn} = [1 \cdot \Delta H^\circ_f(\text{Al}_2\text{O}_3) + 2 \cdot \Delta H^\circ_f(\text{Fe})] - [2 \cdot \Delta H^\circ_f(\text{Al}) + 1 \cdot \Delta H^\circ_f(\text{Fe}_2\text{O}_3)]$$
+2. *Sustituir los valores numéricos:*
+   $$\Delta H^\circ_{rxn} = [1(-1675.7) + 2(0)] - [2(0) + 1(-824.2)]\,\text{kJ}$$
+   $$\Delta H^\circ_{rxn} = -1675.7 - (-824.2) = -1675.7 + 824.2 = -851.5\,\text{kJ/mol}$$
+   *Interpretación:* La reacción es sumamente exotérmica, liberando $851.5\,\text{kJ}$ por cada mol de $\text{Fe}_2\text{O}_3$ transformado o por cada dos moles de $\text{Al}$ consumidos.
+3. *Calcular el calor transferido por $54.0\,\text{g}$ de $\text{Al}$:*
+   $$q = 54.0\,\text{g Al} \times \left( \frac{1\,\text{mol Al}}{26.98\,\text{g Al}} \right) \times \left( \frac{-851.5\,\text{kJ}}{2\,\text{mol Al}} \right)$$
+   $$n_{\text{Al}} = 2.0015\,\text{mol}$$
+   $$q = 2.0015\,\text{mol} \times \left( -425.75\,\frac{\text{kJ}}{\text{mol Al}} \right) = -852.1\,\text{kJ}$$
+   *Respuesta:* Se liberan $852.1\,\text{kJ}$ de energía térmica, calor suficiente para fundir el hierro producido ($T_f = 1538^\circ\text{C}$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el oxígeno gas diatómico ($\text{O}_2$) tiene $\Delta H^\circ_f = 0$ pero el átomo libre de oxígeno en fase gas ($\text{O}(g)$) tiene un valor positivo elevado ($+249.2\,\text{kJ/mol}$)?
+2. Si una sustancia tiene un $\Delta H^\circ_f$ muy positivo, ¿qué podemos deducir acerca de su estabilidad frente a la descomposición en sus elementos?
+3. ¿Qué ventajas prácticas ofrece tener tabuladas las entalpías de formación en comparación con medir cada reacción directamente?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

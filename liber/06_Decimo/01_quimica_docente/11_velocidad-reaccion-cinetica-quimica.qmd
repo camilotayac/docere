@@ -1,0 +1,57 @@
+# Cinética Química: Velocidad de Reacción y Técnicas Experimentales (Oriakhi Cap. 16)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La cinética química estudia las velocidades a las que transcurren las transformaciones químicas y los mecanismos moleculares microscópicos a través de los cuales los reactivos se convierten en productos. La **velocidad media de reacción** ($\bar{v}$) se define como la variación de la concentración molar de una especie dividida entre el intervalo de tiempo, normalizada por su coeficiente estequiométrico:
+$$v = -\frac{1}{\nu_A}\frac{\Delta [A]}{\Delta t} = +\frac{1}{\nu_C}\frac{\Delta [C]}{\Delta t}$$
+La **velocidad instantánea** corresponde a la derivada temporal $v = \pm \frac{1}{\nu}\frac{d[X]}{dt}$. Técnicas experimentales como espectrofotometría UV-Vis, polarimetría, conductimetría y manometría de gases permiten registrar la velocidad en tiempo real.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación diferencial general de velocidad:
+$$v = -\frac{1}{a}\frac{d[A]}{dt} = -\frac{1}{b}\frac{d[B]}{dt} = +\frac{1}{c}\frac{d[C]}{dt} = +\frac{1}{d}\frac{d[D]}{dt}$$
+Unidades en el SI: $\text{mol}/(\text{L}\cdot\text{s})$ o $\text{M}\cdot\text{s}^{-1}$.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir la velocidad de reacción con la espontaneidad termodinámica (una reacción puede ser sumamente espontánea, $\Delta G \ll 0$, pero tener velocidad prácticamente nula a temperatura ambiente, como la combustión de la gasolina o la transformación de diamante en grafito).
+2. Olvidar el signo negativo al calcular la velocidad en función de los reactivos.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del velocímetro del automóvil:** La velocidad media es dividir los 100 km del viaje entre 2 horas ($50\,\text{km/h}$); la velocidad instantánea es mirar la aguja del velocímetro en un segundo exacto al pisar el acelerador.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 16):** Para la descomposición del pentóxido de dinitrógeno:
+$$2 N_2O_5(g) \longrightarrow 4 NO_2(g) + O_2(g)$$
+Si en un intervalo de $120.0\,\text{segundos}$ la concentración de $N_2O_5$ cae de $0.0500\,M$ a $0.0320\,M$, calcule la velocidad promedio de desaparición de $N_2O_5$ y la velocidad promedio de formación de $NO_2$ y de $O_2$.
+
+**Paso 1:** Velocidad de desaparición de $N_2O_5$:
+$$-\frac{\Delta [N_2O_5]}{\Delta t} = -\frac{0.0320 - 0.0500}{120.0} = -\frac{-0.0180\,M}{120.0\,\text{s}} = 1.50 \times 10^{-4}\,\text{M/s}$$
+**Paso 2:** Velocidad única general de reacción:
+$$v = \frac{1}{2}\left(-\frac{\Delta [N_2O_5]}{\Delta t}\right) = \frac{1.50 \times 10^{-4}}{2} = 7.50 \times 10^{-5}\,\text{M/s}$$
+**Paso 3:** Velocidades de formación:
+$$\frac{\Delta [NO_2]}{\Delta t} = 4 \cdot v = 4(7.50 \times 10^{-5}) = 3.00 \times 10^{-4}\,\text{M/s}$$
+$$\frac{\Delta [O_2]}{\Delta t} = 1 \cdot v = 7.50 \times 10^{-5}\,\text{M/s}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la velocidad de una reacción química suele disminuir a medida que transcurre el tiempo?
+2. ¿Cómo permite la espectrofotometría medir la velocidad de una reacción sin perturbar el sistema químico?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

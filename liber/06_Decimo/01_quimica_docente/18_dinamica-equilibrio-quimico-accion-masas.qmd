@@ -1,0 +1,66 @@
+# Dinámica del Equilibrio Químico y Ley de Acción de Masas (Oriakhi Cap. 17)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Muchas transformaciones químicas son reversibles: a medida que los productos se acumulan, colisionan entre sí regenerando los reactivos originales. El **equilibrio químico** es un estado dinámico estacionario en el cual **la velocidad de la reacción directa es exactamente igual a la velocidad de la reacción inversa**:
+
+$$v_{\text{directa}} = v_{\text{inversa}}$$
+
+En este punto, las concentraciones molares de todos los reactivos y productos permanecen estrictamente constantes en el tiempo a escala macroscópica, aunque a escala submicroscópica las transformaciones moleculares continúan ocurriendo a tasas idénticas en ambos sentidos.
+
+Cato Guldberg y Peter Waage (1864) formularon la **Ley de Acción de Masas**: para cualquier reacción reversible en equilibrio a una temperatura fija, el producto de las concentraciones molares de los productos elevadas a sus coeficientes estequiométricos, dividido entre el producto de las concentraciones de los reactivos elevadas a sus coeficientes, es una constante universal característica: la **Constante de Equilibrio ($K_c$)**.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de la Ley de Acción de Masas:
+$$a\, A + b\, B \rightleftharpoons c\, C + d\, D$$
+Constante de equilibrio en concentración ($K_c$):
+$$K_c = \frac{[C]^c [D]^d}{[A]^a [B]^b}$$
+Condición estricta de fases en equilibrios heterogéneos:
+$$\text{Los sólidos puros } (s) \text{ y líquidos puros } (l) \text{ poseen actividad unitaria constante } (a=1) \text{ y se omiten de } K_c$$
+Ejemplo heterogéneo:
+$$CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g) \implies K_c = [CO_2]$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que en el equilibrio químico las concentraciones de reactivos y productos deben ser iguales (lo que es igual son las velocidades de reacción, no las concentraciones).
+2. Incluir sólidos puros o agua líquida pura en la expresión algebraica de $K_c$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del puente peatonal con caminantes:** 50 personas cruzan el puente de norte a sur cada minuto, y exactamente 50 personas cruzan de sur a norte cada minuto. El número total de personas en el lado norte y en el lado sur permanece constante todo el día, pero nadie se ha quedado quieto.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 17):** Se coloca una muestra de pentacloruro de fósforo gaseoso en un matraz sellado de $2.00\,\text{L}$ a $250^\circ\text{C}$ y se deja alcanzar el equilibrio:
+$$PCl_5(g) \rightleftharpoons PCl_3(g) + Cl_2(g)$$
+En el equilibrio se miden las siguientes cantidades: $0.0420\,\text{mol}$ de $PCl_5$, $0.160\,\text{mol}$ de $PCl_3$ y $0.160\,\text{mol}$ de $Cl_2$. Calcule el valor numérico de la constante de equilibrio $K_c$ a dicha temperatura.
+
+**Paso 1:** Cálculo de concentraciones molares en el equilibrio ($V = 2.00\,\text{L}$):
+$$[PCl_5] = \frac{0.0420\,\text{mol}}{2.00\,\text{L}} = 0.0210\,M$$
+$$[PCl_3] = \frac{0.160\,\text{mol}}{2.00\,\text{L}} = 0.0800\,M$$
+$$[Cl_2] = \frac{0.160\,\text{mol}}{2.00\,\text{L}} = 0.0800\,M$$
+**Paso 2:** Sustitución en la ley de acción de masas:
+$$K_c = \frac{[PCl_3][Cl_2]}{[PCl_5]} = \frac{(0.0800)(0.0800)}{0.0210} = \frac{0.00640}{0.0210} = 0.3048 \approx 0.305$$
+El valor $K_c = 0.305$ indica que en el equilibrio coexisten cantidades significativas de reactivos y productos.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Qué significado fisicoquímico tiene un valor de constante de equilibrio extremadamente grande ($K_c > 10^5$) o extremadamente pequeño ($K_c < 10^{-5}$)?
+2. ¿Por qué la constante de equilibrio depende exclusivamente de la temperatura y no de las concentraciones iniciales?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

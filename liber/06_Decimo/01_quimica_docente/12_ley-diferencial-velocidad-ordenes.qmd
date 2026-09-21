@@ -1,0 +1,74 @@
+# Ley Diferencial de Velocidad, Órdenes de Reacción y Constante Cinética
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **ley diferencial de velocidad** expresa matemáticamente la dependencia funcional de la velocidad de reacción con respecto a las concentraciones instantáneas de los reactivos a una temperatura constante dada:
+$$v = k [A]^m [B]^n$$
+Donde $k$ es la **constante cinética de velocidad** (dependiente de la temperatura y la presencia de catalizadores), y los exponentes $m$ y $n$ son los **órdenes parciales de reacción** respecto a cada especie. El orden global es $m + n$.
+
+Es un principio epistemológico fundamental que **los órdenes de reacción son parámetros puramente experimentales que no guardan ninguna relación necesaria con los coeficientes estequiométricos** de la ecuación balanceada, salvo en reacciones elementales que ocurren en una sola etapa molecular.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación general:
+$$v = k [A]^m [B]^n$$
+Unidades de la constante de velocidad $k$ según el orden global ($n_{\text{global}}$):
+$$\text{Unidades de } k = M^{1 - n_{\text{global}}} \cdot \text{s}^{-1} = \left(\frac{\text{L}}{\text{mol}}\right)^{n_{\text{global}} - 1} \cdot \text{s}^{-1}$$
+1. Orden 0: $M \cdot \text{s}^{-1}$
+2. Orden 1: $\text{s}^{-1}$
+3. Orden 2: $M^{-1} \cdot \text{s}^{-1}$ o $\text{L}/(\text{mol}\cdot\text{s})$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Asumir que los exponentes de la ley de velocidad son iguales a los coeficientes de la ecuación (ej. en
+
+$$2 NO + O_2 \to 2 NO_2$$
+
+, pretender deducir
+2. Olvidar que las unidades de $k$ cambian según el orden de reacción.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El método de las velocidades iniciales:** Variar la concentración de un solo reactivo duplicándola ($2\times$) mientras los demás se congelan constantes: si la velocidad no cambia ($2^0=1$), es orden 0; si la velocidad se duplica ($2^1=2$), es orden 1; si la velocidad se cuadruplica ($2^2=4$), es orden 2.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se estudia la reacción
+
+$$A + 2 B \to C$$
+
+Mediante el método de velocidades iniciales a
+1. Exp. 1: $[A]=0.10\,M, [B]=0.10\,M \implies v_0 = 2.0 \times 10^{-3}\,\text{M/s}$
+2. Exp. 2: $[A]=0.20\,M, [B]=0.10\,M \implies v_0 = 4.0 \times 10^{-3}\,\text{M/s}$
+3. Exp. 3: $[A]=0.10\,M, [B]=0.20\,M \implies v_0 = 8.0 \times 10^{-3}\,\text{M/s}$
+Deduzca la ley de velocidad, los órdenes parciales, el orden total y el valor numérico de $k$ con sus unidades.
+
+**Paso 1:** Orden respecto a $A$ (comparando Exp. 2 y Exp. 1):
+$$\frac{v_2}{v_1} = \frac{4.0 \times 10^{-3}}{2.0 \times 10^{-3}} = 2.0 = \left( \frac{0.20}{0.10} \right)^m = 2.0^m \implies m = 1$$
+**Paso 2:** Orden respecto a $B$ (comparando Exp. 3 y Exp. 1):
+$$\frac{v_3}{v_1} = \frac{8.0 \times 10^{-3}}{2.0 \times 10^{-3}} = 4.0 = \left( \frac{0.20}{0.10} \right)^n = 2.0^n \implies n = 2$$
+**Paso 3:** Ley de velocidad y orden total:
+$$v = k [A] [B]^2 \qquad \text{Orden total} = 1 + 2 = 3$$
+**Paso 4:** Cálculo de $k$ a partir del Exp. 1:
+$$k = \frac{v_0}{[A][B]^2} = \frac{2.0 \times 10^{-3}\,\text{M/s}}{(0.10\,M)(0.10\,M)^2} = \frac{2.0 \times 10^{-3}}{1.0 \times 10^{-3}} = 2.00\,\text{M}^{-2}\cdot\text{s}^{-1}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una reacción puede tener un orden parcial de reacción fraccionario o negativo?
+2. ¿Qué significa conceptualmente que una reacción sea de orden cero respecto a un reactivo?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

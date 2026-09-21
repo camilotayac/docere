@@ -1,0 +1,483 @@
+<style>
+/* ── Stepper y Paginación por Secciones H2 ── */
+#section-pager-bar {
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 1.25rem 0 2rem 0;
+  box-shadow: 0 3px 10px rgba(160, 96, 80, 0.08);
+}
+
+.section-pager-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.section-pager-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--toolbar-btn-color, #503020);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-view-toggle {
+  background: #fff;
+  border: 1px solid var(--toolbar-border, #a06050);
+  border-radius: 6px;
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.section-view-toggle:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  transform: translateY(-1px);
+}
+
+.section-pager-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  padding: 2px;
+}
+
+.section-step-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  text-align: left;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+}
+.section-step-btn:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  border-color: var(--toolbar-hover-border, #8a4a38);
+}
+.section-step-btn.active {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  border-color: var(--toolbar-btn-active-bg, #a06050);
+  box-shadow: 0 3px 8px rgba(160, 96, 80, 0.35);
+}
+.section-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(160, 96, 80, 0.15);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.section-step-btn.active .section-step-num {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Navegación al final de la sección */
+.section-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 2.5rem 0 1.5rem 0;
+  padding: 12px 16px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section-nav-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+.section-nav-btn:hover:not(:disabled) {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.section-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #d0c8c0;
+  background: #f8f8f8;
+  color: #888;
+}
+
+/* Ocultar secciones inactivas en modo paginado */
+body.mode-paginated section.level2 {
+  display: none !important;
+}
+body.mode-paginated section.level2.active-pager-section {
+  display: block !important;
+}
+
+/* Estilo para el título H2 dentro de la sección activa */
+body.mode-paginated section.level2.active-pager-section > h2 {
+  font-size: 1.45rem;
+  color: var(--toolbar-btn-color, #503020);
+  border-bottom: 2px solid var(--toolbar-border, #a06050);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Ocultar elementos de subsecciones inactivas en el TOC derecho */
+body.mode-paginated #TOC li.toc-inactive-section,
+body.mode-paginated #quarto-margin-sidebar li.toc-inactive-section {
+  display: none !important;
+}
+
+/* Ocultar barra de paginación en modo continuo */
+body.mode-continuous .section-footer-nav {
+  display: none !important;
+}
+body.mode-continuous .section-step-btn {
+  opacity: 0.75;
+}
+body.mode-continuous .section-step-btn.active {
+  opacity: 1;
+}
+
+/* Header secundario Quarto en tono terracota */
+.quarto-secondary-nav {
+  background-color: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border-bottom: 1px solid var(--toolbar-border, #a06050) !important;
+}
+.quarto-secondary-nav .quarto-secondary-nav-title {
+  color: var(--toolbar-btn-color, #503020) !important;
+  font-weight: 700;
+}
+
+/* ── Estilo unificado para la navegación de capítulos al pie (.page-navigation) ── */
+.page-navigation {
+  margin-top: 2.5rem !important;
+  padding-top: 1.5rem !important;
+  border-top: 1.5px dashed var(--toolbar-border, #a06050) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+}
+
+.page-navigation .nav-page {
+  flex: 1;
+}
+
+.page-navigation .nav-page-previous {
+  text-align: left;
+}
+.page-navigation .nav-page-next {
+  text-align: right;
+}
+
+.page-navigation .pagination-link {
+  background: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border: 1.5px solid var(--toolbar-border, #a06050) !important;
+  border-radius: 10px !important;
+  color: var(--toolbar-btn-color, #503020) !important;
+  padding: 10px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+  transition: all 0.15s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.page-navigation .pagination-link:hover {
+  background: var(--toolbar-btn-active-bg, #a06050) !important;
+  color: #fff !important;
+  border-color: var(--toolbar-btn-active-bg, #a06050) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(160, 96, 80, 0.25) !important;
+}
+
+.page-navigation .pagination-link i,
+.page-navigation .pagination-link span {
+  color: inherit !important;
+}
+
+@media (max-width: 576px) {
+  #section-pager-bar {
+    padding: 10px 12px;
+  }
+  .section-pager-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-step-btn {
+    padding: 6px 8px;
+    font-size: 0.76rem;
+  }
+  .section-nav-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  var STORAGE_KEY = 'docere-view-mode';
+  var activeIndex = 0;
+  var sections = [];
+  var mode = 'paginated';
+
+  // Nombres limpios simplificados para los botones de paso
+  function getCleanLabel(rawText) {
+    var clean = rawText.replace(/^[\d\.\s]+/, '').replace(/—.*$/, '').strip ? rawText.strip() : rawText.trim();
+    if (/ideas\s*previas/i.test(clean)) return 'Ideas previas';
+    if (/contexto|contextualizaci/i.test(clean)) return 'Contexto';
+    if (/ejemplo/i.test(clean)) return 'Ejemplos';
+    if (/ejercicio/i.test(clean)) return 'Ejercicios';
+    if (/evaluaci/i.test(clean)) return 'Evaluación';
+    if (/auto/i.test(clean)) return 'Autoevaluación';
+    return clean;
+  }
+
+  function initSectionPager() {
+    var contentEl = document.getElementById('quarto-document-content');
+    if (!contentEl) return;
+
+    var allSections = Array.from(contentEl.querySelectorAll('section.level2'));
+    if (allSections.length < 2) return;
+
+    sections = allSections;
+
+    try {
+      mode = localStorage.getItem(STORAGE_KEY) || 'paginated';
+    } catch(e) {
+      mode = 'paginated';
+    }
+    document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+
+    if (window.location.hash) {
+      var targetId = decodeURIComponent(window.location.hash.substring(1));
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+          activeIndex = i;
+          break;
+        }
+      }
+    }
+
+    var pagerBar = document.createElement('div');
+    pagerBar.id = 'section-pager-bar';
+
+    var topRow = document.createElement('div');
+    topRow.className = 'section-pager-top';
+
+    var titleEl = document.createElement('span');
+    titleEl.className = 'section-pager-title';
+    titleEl.innerHTML = '📌 Secuencia de Clase';
+
+    var toggleBtn = document.createElement('button');
+    toggleBtn.className = 'section-view-toggle';
+    toggleBtn.setAttribute('aria-label', 'Cambiar modo de vista');
+    updateToggleText(toggleBtn);
+    toggleBtn.onclick = function() {
+      mode = (mode === 'paginated') ? 'continuous' : 'paginated';
+      try { localStorage.setItem(STORAGE_KEY, mode); } catch(e) {}
+      document.body.classList.remove('mode-paginated', 'mode-continuous');
+      document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+      updateToggleText(toggleBtn);
+      showSection(activeIndex, false);
+    };
+
+    topRow.appendChild(titleEl);
+    topRow.appendChild(toggleBtn);
+    pagerBar.appendChild(topRow);
+
+    var stepsContainer = document.createElement('div');
+    stepsContainer.className = 'section-pager-steps';
+
+    sections.forEach(function(sec, idx) {
+      var heading = sec.querySelector('h2');
+      var headingText = heading ? heading.textContent.trim() : ('Paso ' + (idx + 1));
+      var labelText = getCleanLabel(headingText);
+      
+      var btn = document.createElement('button');
+      btn.className = 'section-step-btn' + (idx === activeIndex ? ' active' : '');
+      btn.title = headingText;
+      btn.innerHTML = '<span class="section-step-num">' + (idx + 1) + '</span> <span>' + escapeHTML(labelText) + '</span>';
+      btn.onclick = function() {
+        showSection(idx, true);
+      };
+      stepsContainer.appendChild(btn);
+
+      createFooterNav(sec, idx, sections.length);
+    });
+
+    pagerBar.appendChild(stepsContainer);
+
+    sections[0].parentNode.insertBefore(pagerBar, sections[0]);
+
+    showSection(activeIndex, false);
+
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash) {
+        var targetId = decodeURIComponent(window.location.hash.substring(1));
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+            showSection(i, true);
+            break;
+          }
+        }
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.altKey && e.key === 'ArrowRight') {
+        if (activeIndex < sections.length - 1) showSection(activeIndex + 1, true);
+      } else if (e.altKey && e.key === 'ArrowLeft') {
+        if (activeIndex > 0) showSection(activeIndex - 1, true);
+      }
+    });
+  }
+
+  function createFooterNav(secEl, idx, total) {
+    var footerNav = document.createElement('div');
+    footerNav.className = 'section-footer-nav';
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'section-nav-btn';
+    prevBtn.innerHTML = '← Sección Anterior';
+    prevBtn.disabled = (idx === 0);
+    prevBtn.onclick = function() { showSection(idx - 1, true); };
+
+    var countLabel = document.createElement('span');
+    countLabel.style.fontSize = '0.85rem';
+    countLabel.style.fontWeight = '600';
+    countLabel.style.color = 'var(--toolbar-btn-color, #503020)';
+    countLabel.textContent = 'Página ' + (idx + 1) + ' de ' + total;
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'section-nav-btn';
+    nextBtn.innerHTML = 'Sección Siguiente →';
+    nextBtn.disabled = (idx === total - 1);
+    nextBtn.onclick = function() { showSection(idx + 1, true); };
+
+    footerNav.appendChild(prevBtn);
+    footerNav.appendChild(countLabel);
+    footerNav.appendChild(nextBtn);
+    secEl.appendChild(footerNav);
+  }
+
+  function showSection(index, scroll) {
+    if (index < 0 || index >= sections.length) return;
+    activeIndex = index;
+
+    sections.forEach(function(sec, idx) {
+      if (idx === index) {
+        sec.classList.add('active-pager-section');
+      } else {
+        sec.classList.remove('active-pager-section');
+      }
+    });
+
+    var stepBtns = document.querySelectorAll('.section-step-btn');
+    stepBtns.forEach(function(btn, idx) {
+      if (idx === index) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    syncTOC(index);
+
+    if (scroll) {
+      var target = document.getElementById('section-pager-bar');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  function syncTOC(index) {
+    var activeSec = sections[index];
+    if (!activeSec) return;
+
+    var tocContainer = document.querySelector('#quarto-margin-sidebar nav, #TOC');
+    if (!tocContainer) return;
+
+    var allH2Li = Array.from(tocContainer.querySelectorAll('ul > li'));
+    allH2Li.forEach(function(li, idx) {
+      if (mode === 'paginated') {
+        if (idx === index) {
+          li.classList.remove('toc-inactive-section');
+          li.style.display = 'block';
+        } else {
+          li.classList.add('toc-inactive-section');
+          li.style.display = 'none';
+        }
+      } else {
+        li.classList.remove('toc-inactive-section');
+        li.style.display = 'block';
+      }
+    });
+  }
+
+  function updateToggleText(btn) {
+    if (mode === 'paginated') {
+      btn.innerHTML = '📄 Modo: <strong>Página a Página</strong>';
+    } else {
+      btn.innerHTML = '📜 Modo: <strong>Continuo</strong>';
+    }
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, function(tag) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[tag] || tag;
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSectionPager);
+  } else {
+    initSectionPager();
+  }
+})();
+</script>

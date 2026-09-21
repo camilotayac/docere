@@ -1,0 +1,77 @@
+# Formulación y Nomenclatura de Óxidos Básicos y Óxidos Ácidos
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Nomenclatura Química Inorgánica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los óxidos son compuestos binarios formados por la combinación del oxígeno con estado de oxidación $-2$ con cualquier otro elemento químico. Se dividen según su comportamiento ácido-base en:
+
+1. **Óxidos Básicos:** Combinación de oxígeno con un metal (redes iónicas o covalentes polares). Al reaccionar con agua forman hidróxidos o bases (
+
+$$Na_2O + H_2O \to 2 NaOH$$
+
+;
+2. **Óxidos Ácidos (Anhídridos):** Combinación de oxígeno con un no metal (especies covalentes moleculares o poliméricas). Al reaccionar con agua generan oxácidos (
+
+$$SO_3 + H_2O \to H_2SO_4$$
+
+;
+
+Los tres sistemas de nomenclatura normalizados por la IUPAC son:
+1. **Sistemática (Prefijos multiplicadores griegos):** mono-, di-, tri-, tetra-, penta-, hepta- ($Cl_2O_7$: heptóxido de dicloro).
+2. **Stock (Recomendada IUPAC):** Nombre genérico 'óxido de' seguido del elemento y su estado de oxidación en números romanos entre paréntesis ($Fe_2O_3$: óxido de hierro(III)).
+3. **Tradicional:** Emplea sufijos -oso e -ico, y prefijos hipo- y per- según la valencia ($FeO$: óxido ferroso; $Fe_2O_3$: óxido férrico).
+
+### Formalización Matemática y Leyes Físicas
+Formulación general de óxidos (Regla del aspa o intercambio de valencias cruzadas):
+$$M^{+m} + O^{-2} \longrightarrow M_2 O_m \qquad (\text{se simplifica si } m \text{ es par})$$
+Ejemplos de simplificación:
+$$Ca^{+2} + O^{-2} \longrightarrow Ca_2 O_2 \longrightarrow CaO$$
+$$C^{+4} + O^{-2} \longrightarrow C_2 O_4 \longrightarrow CO_2$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar simplificar los subíndices cuando son múltiplos pares (escribir $Pb_2O_4$ en lugar de $PbO_2$).
+2. Escribir el número romano de Stock indicando el subíndice en lugar del estado de oxidación real del elemento.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **La regla del cruce de espadas:** El número de oxidación del elemento baja a los pies del oxígeno, y el $2$ del oxígeno baja a los pies del elemento. Si ambos son pares, se dividen entre 2 como en una fracción matemática de primaria.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Para el elemento plomo ($Pb$), que presenta estados de oxidación $+2$ y $+4$:
+a) Formule ambos óxidos.
+b) Nómbrelos mediante los tres sistemas de nomenclatura (Sistemática, Stock y Tradicional).
+
+**Paso 1:** Plomo con estado $+2$:
+$$Pb^{+2} + O^{-2} \longrightarrow Pb_2 O_2 \longrightarrow PbO$$
+1. Sistemática: Monóxido de plomo
+2. Stock: Óxido de plomo(II)
+3. Tradicional: Óxido plumboso
+
+**Paso 2:** Plomo con estado $+4$:
+$$Pb^{+4} + O^{-2} \longrightarrow Pb_2 O_4 \longrightarrow PbO_2$$
+1. Sistemática: Dióxido de plomo
+2. Stock: Óxido de plomo(IV)
+3. Tradicional: Óxido plúmbico
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el monóxido de carbono ($CO$) y el óxido nítrico ($NO$) son óxidos neutros que no reaccionan con agua ni con ácidos/bases?
+2. ¿Qué es un óxido anfótero y por qué el óxido de aluminio ($Al_2O_3$) reacciona tanto con ácidos como con bases fuertes?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

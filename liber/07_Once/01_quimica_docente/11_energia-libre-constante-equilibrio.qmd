@@ -1,0 +1,105 @@
+# Energía Libre de Gibbs, Cociente de Reacción y Constante de Equilibrio
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Avanzada
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En sistemas químicos reales, las concentraciones o presiones parciales de reactivos y productos no se encuentran necesariamente en sus estados estándar unitarios ($1\,\text{bar}$ o $1\,\text{M}$). El potencial termodinámico real que impulsa la reacción bajo condiciones arbitrarias es el cambio de **energía libre de Gibbs no estándar ($\Delta G$)**.
+
+La dependencia de la energía libre de una sustancia con su actividad química $a$ viene dada por $\mu_i = \mu_i^\circ + RT \ln a_i$. Extendiendo esta relación a una mezcla de reacción general:
+$$\Delta G = \Delta G^\circ + R T \ln Q$$
+
+Donde:
+1. $\Delta G$ es el cambio de energía libre instantáneo bajo las concentraciones/presiones presentes en el reactor.
+2. $\Delta G^\circ$ es el cambio de energía libre bajo condiciones estándar termodinámicas puras.
+3. $Q$ es el **cociente de reacción**, formulado con las actividades instantáneas de reactivos y productos.
+4. $R$ es la constante universal de los gases ($8.3145\,\text{J}/(\text{mol}\cdot\text{K})$).
+
+**La Conexión Fundamental con el Equilibrio Químico:**
+Cuando la reacción evoluciona y alcanza el estado macroscópico de equilibrio termodinámico dinámico:
+1. El sistema ya no tiene fuerza impulsora neta en ninguna dirección: $\Delta G = 0$.
+2. El cociente de reacción instantáneo $Q$ se iguala a la **constante de equilibrio termodinámica ($K$)**: $Q = K$.
+
+Sustituyendo estas condiciones límite en la ecuación fundamental:
+$$0 = \Delta G^\circ + R T \ln K \implies \Delta G^\circ = -R T \ln K$$
+Despejando la constante de equilibrio:
+$$K = e^{-\frac{\Delta G^\circ}{RT}}$$
+
+Esta ecuación es uno de los máximos logros de la ciencia física: conecta directamente magnitudes calorimétricas macroscópicas ($\Delta H^\circ, \Delta S^\circ$) con la constante de equilibrio químico $K$:
+1. **Si $\Delta G^\circ \ll 0$:** $K \gg 1$. La mezcla en equilibrio está abrumadoramente desplazada hacia los productos.
+2. **Si $\Delta G^\circ = 0$:** $K = 1$. Reactivos y productos están igualmente favorecidos en el equilibrio.
+3. **Si $\Delta G^\circ \gg 0$:** $K \ll 1$. La reacción apenas procede; en el equilibrio persisten prácticamente solo reactivos.
+
+**Ecuación de Van 't Hoff:**
+Sustituyendo $\Delta G^\circ = \Delta H^\circ - T \Delta S^\circ$ en $-RT \ln K$:
+$$\ln K = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T}\right) + \frac{\Delta S^\circ}{R}$$
+Diferenciando con respecto a la temperatura, se obtiene la forma integrada que modela la variación de la constante de equilibrio con la temperatura:
+$$\ln\left(\frac{K_2}{K_1}\right) = -\frac{\Delta H^\circ}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$$
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta G = \Delta G^\circ + R T \ln Q$$
+$$\Delta G^\circ = -R T \ln K$$
+$$K = \exp\left(-\frac{\Delta G^\circ}{R T}\right)$$
+Ecuación de Van 't Hoff:
+$$\ln\left(\frac{K_2}{K_1}\right) = \frac{\Delta H^\circ}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$
+Acoplamiento bioenergético:
+$$\Delta G^\circ_{\text{global}} = \Delta G^\circ_1 + \Delta G^\circ_2$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir $\Delta G$ con $\Delta G^\circ$:** Es el error conceptual más persistente. $\Delta G^\circ$ es un valor fijo para una reacción a una temperatura dada y determina la magnitud de $K$. En cambio, $\Delta G$ varía continuamente a medida que los reactivos se consumen y los productos se acumulan. En el equilibrio, $\Delta G = 0$, pero $\Delta G^\circ$ rara vez es cero.
+2. **Usar unidades incompatibles de $R$:** Usar $R = 0.08206\,\text{atm}\cdot\text{L}/(\text{mol}\cdot\text{K})$ en la ecuación de Gibbs en vez del valor del Sistema Internacional $R = 8.3145\,\text{J}/(\text{mol}\cdot\text{K})$.
+3. **Creer que $K$ tiene unidades:** En termodinámica rigurosa, $K$ se define en términos de actividades adimensionales relativas al estado estándar ($P_i/P^\circ$ o $c_i/c^\circ$), por lo que el argumento del logaritmo es estrictamente adimensional.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del Desnivel y el Flujo:** $\Delta G^\circ$ representa la diferencia de altura absoluta entre dos mesetas geográficas (los estados estándar puros). $K$ representa el nivel de agua relativo que se acumulará entre ellas. $\Delta G$ es la pendiente del agua en un momento exacto: cuando el canal se llena y el agua se aquieta en el equilibrio, la pendiente es cero ($\Delta G = 0$), aunque una meseta esté mucho más alta que la otra ($\Delta G^\circ \neq 0$).
+2. **Acoplamiento como Rueda Dentada Mecánica:** Si un bloque pesado quiere caer (reacción exergónica, hidrólisis de ATP, $\Delta G^\circ < 0$), se puede conectar mecánicamente mediante una polea a un bloque liviano que necesita subir (reacción endergónica de síntesis biológica, $\Delta G^\circ > 0$). El balance total permite levantar la carga siempre que el peso que cae supere al que sube.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14 y Cap. 17):** Para el equilibrio en fase gaseosa de disociación del tetróxido de dinitrógeno a $298.15\,\text{K}$:
+$$\text{N}_2\text{O}_4(g) \rightleftharpoons 2 \text{NO}_2(g)$$
+Las energías libres estándar de formación son $\Delta G^\circ_f[\text{N}_2\text{O}_4(g)] = +97.82\,\text{kJ/mol}$ y $\Delta G^\circ_f[\text{NO}_2(g)] = +51.30\,\text{kJ/mol}$.
+1. Calcule el cambio de energía libre estándar ($\Delta G^\circ_{rxn}$) y la constante de equilibrio termodinámica ($K_p$) a $298.15\,\text{K}$.
+2. En una mezcla gaseosa a dicha temperatura, las presiones parciales son $P_{\text{N}_2\text{O}_4} = 0.850\,\text{atm}$ y $P_{\text{NO}_2} = 0.0250\,\text{atm}$. Calcule el cambio de energía libre de Gibbs ($\Delta G$) en estas condiciones e indique el sentido del avance espontáneo.
+
+**Solución paso a paso:**
+1. *Calcular $\Delta G^\circ_{rxn}$:*
+   $$\Delta G^\circ_{rxn} = 2 \cdot \Delta G^\circ_f(\text{NO}_2) - 1 \cdot \Delta G^\circ_f(\text{N}_2\text{O}_4)$$
+   $$\Delta G^\circ_{rxn} = 2(+51.30) - (+97.82) = 102.60 - 97.82 = +4.78\,\text{kJ/mol} = +4780\,\text{J/mol}$$
+2. *Calcular $K_p$ a partir de $\Delta G^\circ = -RT \ln K_p$:*
+   $$\ln K_p = -\frac{\Delta G^\circ}{RT} = -\frac{4780\,\text{J/mol}}{(8.3145\,\text{J}/(\text{mol}\cdot\text{K}))(298.15\,\text{K})} = -\frac{4780}{2478.96} = -1.9282$$
+   $$K_p = e^{-1.9282} = 0.145$$
+3. *Calcular el cociente de reacción instantáneo $Q_p$:*
+   $$Q_p = \frac{(P_{\text{NO}_2})^2}{P_{\text{N}_2\text{O}_4}} = \frac{(0.0250)^2}{0.850} = \frac{6.25 \times 10^{-4}}{0.850} = 7.353 \times 10^{-4}$$
+4. *Calcular $\Delta G$ con la ecuación fundamental:*
+   $$\Delta G = \Delta G^\circ + R T \ln Q_p$$
+   $$\ln Q_p = \ln(7.353 \times 10^{-4}) = -7.215$$
+   $$R T \ln Q_p = (2478.96\,\text{J/mol}) \times (-7.215) = -17886\,\text{J/mol} = -17.89\,\text{kJ/mol}$$
+   $$\Delta G = +4.78\,\text{kJ/mol} + (-17.89\,\text{kJ/mol}) = -13.11\,\text{kJ/mol}$$
+5. *Interpretación de los resultados:*
+   1. Como $Q_p (7.35 \times 10^{-4}) < K_p (0.145)$, hay exceso relativo de reactivos respecto al equilibrio.
+   2. Por consiguiente, $\Delta G = -13.1\,\text{kJ/mol} < 0$.
+   3. La mezcla reaccionará **espontáneamente hacia la derecha** (hacia los productos, disociando $\text{N}_2\text{O}_4$ en $\text{NO}_2$) hasta que $Q_p$ crezca hasta $0.145$ y $\Delta G$ alcance exactamente cero.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué una reacción con $\Delta G^\circ > 0$ puede avanzar espontáneamente si la concentración de productos se mantiene artificialmente baja?
+2. ¿Qué ocurre con la constante de equilibrio $K$ de una reacción endotérmica ($\Delta H^\circ > 0$) cuando se eleva la temperatura según la ecuación de Van 't Hoff?
+3. ¿Cuál es el significado biológico fundamental del acoplamiento químico con la hidrólisis de ATP ($\Delta G^{\circ\prime} = -30.5\,\text{kJ/mol}$) en el anabolismo celular?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

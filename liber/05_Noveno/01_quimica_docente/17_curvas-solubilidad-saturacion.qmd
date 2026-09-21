@@ -1,0 +1,61 @@
+# Curvas de Solubilidad Térmica y Estados de Saturación
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Disoluciones Acuosas y Concentración
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La solubilidad es la cantidad máxima de soluto que puede disolverse en una cantidad dada de solvente (convencionalmente $100\,\text{g}$ de agua) a una temperatura y presión específicas. Se definen tres estados termodinámicos de saturación:
+
+1. **Disolución Insaturada:** Contiene menor cantidad de soluto que la máxima capacidad de disolución a esa temperatura. Si se agrega más soluto, se disuelve completamente.
+2. **Disolución Saturada:** El solvente contiene la máxima cantidad posible de soluto disuelto en equilibrio dinámico con soluto sólido no disuelto:
+$$\text{Soluto disuelto} \quad \rightleftharpoons \quad \text{Soluto no disuelto}$$
+3. **Disolución Sobresaturada:** Estado metaestable termodinámicamente inestable que contiene temporalmente mayor cantidad de soluto disuelto que la solución saturada a esa temperatura. Se prepara enfriando con extremo cuidado y lentitud una solución saturada caliente. Cualquier perturbación mecánica o adición de un cristal germen semilla provoca la precipitación enérgica instantánea del exceso.
+
+### Formalización Matemática y Leyes Físicas
+Curva de solubilidad en función de la temperatura:
+$$S = f(T) \quad (\text{gramos de soluto / } 100\,\text{g de } H_2O)$$
+Regla de cristalización por enfriamiento de $T_1$ a $T_2$:
+$$m_{\text{precipitado}} = m_{\text{solvente}} \times \left( \frac{S(T_1) - S(T_2)}{100\,\text{g } H_2O} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que una disolución saturada es lo mismo que una disolución concentrada (el sulfato de bario, $BaSO_4$, se satura con apenas $0.00025\,\text{g}$ en $100\,\text{g}$ de agua: es una solución extremadamente diluida pero está totalmente saturada).
+2. Creer que una disolución sobresaturada puede conservarse indefinidamente sin precipitar.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los comensales en el restaurante:**
+  1. Insaturado: Un restaurante con 20 mesas ocupadas de 50 disponibles (cabe más gente con comodidad).
+  2. Saturado: Todas las 50 mesas están ocupadas y hay gente esperando en la puerta (equilibrio dinámico).
+  3. Sobresaturado: El dueño metió a 60 personas apretadas sentadas en el piso en silencio (metaestable); si alguien tose o entra un cliente más (cristal semilla), la policía desaloja inmediatamente a los 10 que sobran.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La solubilidad del nitrato de potasio ($KNO_3$) es de $110.0\,\text{g}/100\,\text{g } H_2O$ a $60^\circ\text{C}$ y de $32.0\,\text{g}/100\,\text{g } H_2O$ a $20^\circ\text{C}$. Se prepara una solución saturada de $KNO_3$ en $250.0\,\text{g}$ de agua a $60^\circ\text{C}$ y se enfría hasta $20^\circ\text{C}$. Calcule la masa de cristales puros que precipitarán.
+
+**Paso 1:** Masa de soluto disuelto a $60^\circ\text{C}$:
+$$m_1 = 250.0\,\text{g } H_2O \times \left( \frac{110.0\,\text{g } KNO_3}{100\,\text{g } H_2O} \right) = 275.0\,\text{g de } KNO_3$$
+**Paso 2:** Masa de soluto que puede permanecer disuelto a $20^\circ\text{C}$:
+$$m_2 = 250.0\,\text{g } H_2O \times \left( \frac{32.0\,\text{g } KNO_3}{100\,\text{g } H_2O} \right) = 80.0\,\text{g de } KNO_3$$
+**Paso 3:** Masa de cristales precipitados:
+$$m_{\text{cristales}} = m_1 - m_2 = 275.0\,\text{g} - 80.0\,\text{g} = 195.0\,\text{g de } KNO_3$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo funcionan los parches térmicos reutilizables basados en acetato de sodio sobresaturado?
+2. ¿Por qué algunas sales como el sulfato de cerio(III) disminuyen su solubilidad al aumentar la temperatura?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

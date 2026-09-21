@@ -1,0 +1,68 @@
+# Energía de Enlace Nuclear por Nucleón y Ecuación de Einstein
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química Nuclear y Radiactividad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Albert Einstein formuló en 1905 la **Teoría de la Relatividad Especial**, postulando la equivalencia fundamental entre la masa y la energía:
+
+$$E = m \cdot c^2$$
+
+Donde $c$ es la velocidad de la luz en el vacío ($2.99792 \times 10^8\,\text{m/s}$). El defecto de masa ($\Delta m$) que desaparece durante la formación del núcleo a partir de sus nucleones libres se libera al espacio como radiación de altísima energía; por tanto, para desintegrar el núcleo y separar sus nucleones al infinito se debe suministrar exactamente esa misma cantidad de trabajo: la **Energía de Enlace Nuclear ($E_b$)**.
+
+Para comparar la estabilidad intrínseca entre núcleos de diferente tamaño, se calcula la **Energía de Enlace Nuclear por Nucleón ($E_b / A$)**:
+$$\frac{E_b}{A} = \frac{E_b}{\text{Número de masa } A}$$
+La curva de $E_b/A$ frente a $A$ muestra un máximo prominente en el **Hierro-56 ($^ {56}\text{Fe}$)** con $8.79\,\text{MeV/nucleón}$. Esto explica por qué los núcleos muy ligeros liberan energía por **fusión nuclear**, mientras que los núcleos muy pesados liberan energía por **fisión nuclear**.
+
+### Formalización Matemática y Leyes Físicas
+Equivalencia masa-energía para $1\,\text{u}$:
+$$E = (1.66054 \times 10^{-27}\,\text{kg})(2.99792 \times 10^8\,\text{m/s})^2 = 1.4924 \times 10^{-10}\,\text{J}$$
+En megaelectronvoltios ($1\,\text{eV} = 1.60218 \times 10^{-19}\,\text{J}$):
+$$1\,\text{u} \equiv 931.494\,\text{MeV}$$
+Ecuación operativa de la energía de enlace:
+$$E_b\,(\text{MeV}) = \Delta m\,(\text{u}) \times 931.494\,\text{MeV/u}$$
+Energía por nucleón:
+$$\bar{E}_b = \frac{E_b}{A}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar la velocidad de la luz sin elevar al cuadrado ($c^2$).
+2. Confundir energía de enlace total del núcleo con energía de enlace por nucleón (un núcleo grande de uranio tiene mayor energía total que el hierro, pero menor energía por nucleón, por lo que es menos estable que el hierro).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la fortaleza de la cooperativa:** La energía total es el dinero total en la bóveda de la cooperativa; la energía por nucleón es la riqueza de cada socio. Una cooperativa de 200 socios con 200 millones tiene $1$ millón por socio; una de 10 socios con 50 millones tiene $5$ millones por socio. Los socios de la pequeña están mucho mejor blindados y seguros (más estables).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la energía de enlace nuclear total ($E_b$) en $\text{MeV}$ y la energía de enlace por nucleón para el núcleo de helio-4 ($^4_2He$), sabiendo que su defecto de masa es $\Delta m = 0.030377\,\text{u}$.
+
+**Paso 1:** Cálculo de la energía de enlace total:
+$$E_b = \Delta m \times 931.494\,\text{MeV/u} = (0.030377\,\text{u}) \times (931.494\,\text{MeV/u}) = 28.296\,\text{MeV}$$
+**Paso 2:** Conversión a julios por mol de núcleos de helio:
+$$E_b = 28.296 \times 10^6\,\text{eV} \times 1.6022 \times 10^{-19}\,\text{J/eV} = 4.533 \times 10^{-12}\,\text{J por núcleo}$$
+$$E_b\,\text{molar} = (4.533 \times 10^{-12}\,\text{J}) \times (6.022 \times 10^{23}\,\text{mol}^{-1}) = 2.73 \times 10^{12}\,\text{J/mol} = 2.73 \times 10^9\,\text{kJ/mol}$$
+*(¡Nótese que la formación de un mol de núcleos de helio libera casi tres millones de millones de kilojulios, millones de veces más que cualquier reacción química de combustión!).*
+
+**Paso 3:** Energía de enlace por nucleón ($A = 4$):
+$$\frac{E_b}{A} = \frac{28.296\,\text{MeV}}{4\,\text{nucleones}} = 7.074\,\text{MeV/nucleón}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la curva de energía de enlace por nucleón explica que el Sol produzca energía mediante la fusión de núcleos de hidrógeno en helio?
+2. ¿Por qué la fisión nuclear del uranio-235 genera fragmentos más ligeros con mayor estabilidad nuclear?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

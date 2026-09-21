@@ -1,0 +1,94 @@
+# Carbohidratos I: Monosacáridos, Proyecciones de Haworth, Anomería y Mutarrotación
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Biomoléculas y Química de Glúcidos
+> * **Propósito Docente:** Dominar la estereoquímica de aldosas y cetosas, modelar la ciclación intramolecular hemiacetálica en proyecciones de Haworth y fundamentar cuantitativamente el equilibrio de mutarrotación anomérica.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los **carbohidratos** (o glúcidos, del griego *glykys*, dulce) constituyen la clase de biomoléculas orgánicas más abundante en la biósfera terrestre, desempeñando funciones cardinales como reservorios de energía metabólica primaria, elementos estructurales esqueléticos y mediadores en el reconocimiento intercelular. Químicamente se definen de manera rigurosa como **polihidroxialdehídos**, **polihidroxicetonas** o sustancias macromoleculares complejas que rinden tales compuestos por hidrólisis química o enzimática. Su fórmula empírica elemental básica responde a:
+
+$$C_n(H_2O)_m$$
+
+Los **monosacáridos** son las unidades monoméricas más simples que no pueden ser hidrolizadas a glúcidos más pequeños. Se clasifican según dos criterios concurrentes:
+- **Naturaleza del grupo carbonilo:** Si alberga un grupo aldehído en el carbono terminal $C_1$ se clasifica como **aldosa**; si contiene un grupo cetona en el carbono $C_2$ se clasifica como **cetosa**.
+- **Número de átomos de carbono:** Triosas ($3C$), tetrosas ($4C$), pentosas ($5C$), hexosas ($6C$) y heptosas ($7C$). La D-glucosa y la D-galactosa son aldohexosas, mientras que la D-fructosa es una cetohexosa.
+
+La estereoquímica de los monosacáridos está gobernada por la presencia de múltiples carbonos asimétricos o quirales ($C^*$). La convención clásica introducida por Emil Fischer en 1891 establece la serie **D** o **L** comparando la configuración del centro quiral más alejado del grupo carbonilo con el gliceraldehído: en una proyección de Fischer estándar (con la cadena carbonada vertical y el carbonilo en la cúspide), si el grupo hidroxilo ($-OH$) del carbono quiral de referencia se orienta hacia la derecha, el azúcar pertenece a la **serie D**; si se proyecta hacia la izquierda, pertenece a la **serie L**. Prácticamente la totalidad de los monosacáridos presentes en el metabolismo de los seres vivos terrestres pertenecen de forma natural a la serie D.
+
+En disolución acuosa, las cadenas lineales abiertas de las pentosas y hexosas se hallan en concentraciones ínfimas (menores al $0.1\,\%$ en la glucosa). Ocurre una reacción intramolecular espontánea y reversible de adición nucleófila entre el grupo hidroxilo del carbono 5 ($-OH$ en $C_5$) y el grupo carbonilo electrofílico ($C_1$), formando un **hemiacetal cíclico** de seis miembros termodinámicamente muy estable denominado anillo de **piranosa** (por su similitud con el heterociclo pirano). Cuando una cetosa como la fructosa cicla por ataque del $-OH$ en $C_5$ sobre el carbonilo en $C_2$, forma un anillo de cinco miembros denominado **furanosa** (semejante al furano).
+
+En 1929, Walter Norman Haworth propuso las **Proyecciones de Haworth**, donde el anillo hemiacetálico se visualiza en perspectiva como un plano perpendicular a la página, ubicando el átomo de oxígeno en la esquina superior derecha:
+
+La ciclación intramolecular transforma al carbono carbonílico $C_1$, que originalmente era aquiral y plano ($sp^2$), en un nuevo centro quiral asimétrico tetraédrico ($sp^3$) denominado **carbono anomérico**. La posición espacial del nuevo grupo hidroxilo hemiacetálico unido a este carbono origina dos diastereómeros denominados **anómeros**:
+
+1. **Anómero Alfa ($\alpha$):** En los azúcares de la serie D, el grupo hidroxilo anomérico en $C_1$ se proyecta hacia abajo del plano del anillo de Haworth (en posición *trans* respecto al grupo hidroximetilo terminal $-CH_2OH$ en $C_6$).
+2. **Anómero Beta ($\beta$):** El grupo hidroxilo anomérico en $C_1$ se proyecta hacia arriba del plano del anillo (en posición *cis* respecto al grupo $-CH_2OH$ en $C_6$).
+
+Cuando se disuelven cristales puros de $\alpha$-D-glucopiranosa en agua, la disolución recién preparada registra una rotación óptica específica inicial de $[\alpha]_D^{20} = +112.2^\circ$. Con el transcurso de las horas, el valor angular disminuye de forma continua hasta estabilizarse en un valor constante de equilibrio de $[\alpha]_D^{20} = +52.7^\circ$. De manera análoga, si se disuelven cristales de $\beta$-D-glucopiranosa pura, su rotación inicial de $[\alpha]_D^{20} = +18.7^\circ$ asciende gradualmente hasta alcanzar exactamente el mismo valor final de $+52.7^\circ$.
+
+Este cambio espontáneo en la rotación óptica hacia el equilibrio se denomina **mutarrotación**. El fenómeno se debe a la apertura y cierre dinámico del anillo a través de la forma abierta lineal intermedia en disolución:
+
+$$\alpha\text{-D-glucopiranosa } (+112.2^\circ) \rightleftharpoons \text{D-glucosa de cadena abierta } (\approx 0.02\,\%) \rightleftharpoons \beta\text{-D-glucopiranosa } (+18.7^\circ)$$
+
+El anómero $\beta$ es termodinámicamente más estable y predomina en el equilibrio ($63.6\,\%$ de $\beta$ frente a $36.4\,\%$ de $\alpha$). La conformación tridimensional real del anillo es de silla: en la $\beta$-D-glucopiranosa, absolutamente todos los sustituyentes voluminosos (los cuatro grupos $-OH$ y el grupo $-CH_2OH$) se ubican en **posiciones ecuatoriales**, eliminando por completo cualquier repulsión estérica 1,3-diaxial. En el anómero $\alpha$, el grupo hidroxilo en $C_1$ queda forzado a una posición axial, sufriendo una ligera desestabilización por choque estérico con los hidrógenos axiales de las posiciones 3 y 5.
+
+Dado que en disolución el anillo hemiacetálico puede abrirse para regenerar el carbonilo aldehídico libre con su hidrógeno reductor intacto, todos los monosacáridos son **azúcares reductores** que rinden positivo inmediato frente a los reactivos de Tollens y Fehling.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que los monosacáridos existen en el cuerpo como cadenas lineales abiertas:** Enseñar exclusivamente la proyección de Fischer abierta en el aula lleva a los estudiantes a ignorar que más del $99.9\,\%$ de la glucosa biológica en sangre y citoplasma se encuentra plegada en forma de anillos hemiacetálicos cíclicos de piranosa.
+2. **Confundir la serie D/L con el signo de rotación óptica (+/-):** Suponer que la D-glucosa es dextrógira porque lleva la letra D. El descriptor D indica la configuración geométrica del carbono 5 en la proyección de Fischer; la rotación $(+)$ o $(-)$ es una propiedad experimental independiente (p. ej., la D-fructosa natural es fuertemente levógira, $[\alpha]_D = -92.4^\circ$, razón por la cual se llamaba levulosa).
+3. **Pensar que el anómero $\alpha$ y el anómero $\beta$ son enantiómeros:** Olvidar que solo discrepan en la configuración del carbono 1 conservando intactos los centros quirales de los carbonos 2, 3, 4 y 5; por definición geométrica son **diastereómeros**, exhibiendo diferentes energías, puntos de fusión y rotaciones específicas.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Pulsera que se Abrocha (Ciclación Hemiacetálica):** Extender una cinta métrica recta (cadena abierta); curvarla para que el extremo metálico ($-OH$ del carbono 5) se introduzca en la hebilla superior (carbono 1 carbonílico), demostrando que la forma cíclica es la conformación natural de menor tensión angular en medios fluidos.
+2. **Modelización Espacial de la Silla de Glucosa:** Armar con esferas y varillas la $\beta$-D-glucosa para apreciar que todos los grupos hidroxilo quedan en la cintura ecuatorial del anillo, comprendiendo por qué la glucosa es el combustible universal predilecto de la vida celular (la molécula más estable y resistente a tensiones de toda la naturaleza glucídica).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una muestra pura de glucosa disuelta en agua a $20^\circ\text{C}$ alcanza el equilibrio dinámico de mutarrotación, registrando una rotación específica final de $[\alpha]_{\text{eq}} = +52.7^\circ$. Sabiendo que la rotación específica del anómero puro $\alpha$-D-glucopiranosa es $[\alpha]_\alpha = +112.2^\circ$ y la del anómero puro $\beta$-D-glucopiranosa es $[\alpha]_\beta = +18.7^\circ$, y considerando que la concentración de la forma abierta lineal en el equilibrio es despreciable:
+1. Plantee el modelo matemático de balance óptico ponderado.
+2. Calcule la fracción molar y el porcentaje exacto de cada uno de los dos anómeros en el estado de equilibrio termodinámico.
+3. Determine la constante de equilibrio ($K_{\text{eq}} = [\beta] / [\alpha]$) y la diferencia de energía libre estándar ($\Delta G^\circ$) entre ambos anómeros a $298.15\,\text{K}$. Dato: $R = 8.314\,\text{J/(mol}\cdot\text{K)}$.
+
+**Solución paso a paso:**
+
+1. *Formular el balance de rotación óptica en función de las fracciones molares:*
+   $$[\alpha]_{\text{eq}} = x_\alpha [\alpha]_\alpha + x_\beta [\alpha]_\beta$$
+   Dado que $x_\alpha + x_\beta = 1.000$, se expresa el sistema en términos de una sola variable:
+   $$[\alpha]_{\text{eq}} = x_\alpha [\alpha]_\alpha + (1 - x_\alpha) [\alpha]_\beta$$
+
+2. *Despejar y calcular la fracción molar del anómero alfa ($x_\alpha$):*
+   $$+52.7^\circ = x_\alpha (112.2^\circ) + (1 - x_\alpha)(18.7^\circ)$$
+   $$52.7 = 112.2 x_\alpha + 18.7 - 18.7 x_\alpha$$
+   $$52.7 - 18.7 = (112.2 - 18.7) x_\alpha$$
+   $$34.0 = 93.5 x_\alpha \implies x_\alpha = \frac{34.0}{93.5} = 0.3636$$
+   El anómero $\alpha$ representa el $36.4\,\%$ del total de moléculas de glucosa en disolución acuosa.
+
+3. *Calcular la fracción molar y porcentaje del anómero beta ($x_\beta$):*
+   $$x_\beta = 1.0000 - 0.3636 = 0.6364$$
+   El anómero $\beta$ representa el $63.6\,\%$ de la mezcla en equilibrio, confirmando su mayor estabilidad termodinámica.
+
+4. *Calcular la constante de equilibrio ($K_{\text{eq}}$) de la mutarrotación:*
+   $$K_{\text{eq}} = \frac{[\beta]}{[\alpha]} = \frac{x_\beta}{x_\alpha} = \frac{0.6364}{0.3636} = 1.750$$
+   La constante de equilibrio indica que la población del confórmero $\beta$ es 1.75 veces más abundante que la del confórmero $\alpha$.
+
+5. *Calcular la diferencia de energía libre estándar ($\Delta G^\circ$):*
+   $$\Delta G^\circ = -RT \ln K_{\text{eq}}$$
+   $$\Delta G^\circ = -(8.314\,\text{J/mol}\cdot\text{K})(298.15\,\text{K}) \ln(1.750) = -(2478.8\,\text{J/mol})(0.5596) = -1387.1\,\text{J/mol}$$
+   $$\Delta G^\circ \approx -1.39\,\text{kJ/mol}$$
+   La conformación $\beta$ es $1.39\,\text{kJ/mol}$ más estable que la conformación $\alpha$ a temperatura ambiente debido a la orientación puramente ecuatorial de su grupo hidroxilo anomérico.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la fructosa, siendo formalmente una cetona en su forma lineal, da un resultado positivo intenso en la prueba de Fehling y Tollens?
+2. Si se bloquea químicamente el grupo hidroxilo anomérico formando un glucósido de metilo (mediante reacción con metanol y ácido), ¿por qué cesa por completo el fenómeno de mutarrotación?
+3. ¿Cuál es la diferencia estereoquímica exacta entre la D-glucosa y la D-galactosa y por qué se definen como epímeros en el carbono 4?

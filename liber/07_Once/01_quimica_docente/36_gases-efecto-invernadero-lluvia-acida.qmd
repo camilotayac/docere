@@ -1,0 +1,93 @@
+# Gases de Efecto Invernadero, Balance Radiativo y Geoquímica de la Lluvia Ácida
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Fisicoquímica de la Troposfera e Impacto Antropogénico
+> * **Propósito Docente:** Fundamentar cuánticamente la absorción infrarroja de los gases de efecto invernadero (GEI), modelar el equilibrio termodinámico del $pH$ natural de la lluvia y deducir los mecanismos de acidificación por óxidos de azufre y nitrógeno.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El clima y la temperatura media de la superficie terrestre están gobernados por el **balance radiativo global** entre la radiación electromagnética de longitud de onda corta proveniente del Sol y la radiación térmica de longitud de onda larga reemitida por la Tierra hacia el espacio exterior.
+
+El flujo solar promedio que intercepta el disco planetario terrestre es de aproximadamente $1361\,\text{W/m}^2$ (constante solar). Al promediarse sobre la superficie esférica giratoria del planeta y deducir el **albedo planetario** ($\alpha \approx 0.30$, fracción reflejada directamente al espacio por nubes, nieve y aerosoles), la Tierra absorbe una irradiancia neta media de $240\,\text{W/m}^2$. Si nuestro planeta fuese un cuerpo negro desprovisto de atmósfera, la Ley de Stefan-Boltzmann ($F = \sigma T^4$) predice una temperatura superficial de equilibrio radiativo de:
+
+$$T_{\text{teórica}} = \left(\frac{240\,\text{W/m}^2}{5.67 \times 10^{-8}\,\text{W/(m}^2\cdot\text{K}^4)}\right)^{1/4} = 255\,\text{K} \quad (-18^\circ\text{C})$$
+
+Bajo esas condiciones gélidas teóricas, el agua líquida no podría existir y la biósfera colapsaría en una bola de nieve inerte. Sin embargo, la temperatura media real observada en la superficie terrestre es de **$+15^\circ\text{C}$ ($288\,\text{K}$)**. La diferencia de $+33^\circ\text{C}$ es generada por el **efecto invernadero natural**, promovido por gases traza troposféricos que absorben selectivamente la radiación infrarroja térmica saliente reemitiéndola en todas direcciones, inclusive de regreso hacia la superficie.
+
+La absorción de radiación electromagnética en la región del **infrarrojo térmico ($4 - 50\,\mu\text{m}$)** está supeditada a una regla de selección mecano-cuántica rigurosa: **una vibración molecular es activa en el infrarrojo únicamente si produce un cambio o variación periódica en el momento dipolar eléctrico permanente de la molécula ($\frac{d\mu}{dq} \ne 0$)**:
+
+1. **Diatómicas Homonucleares Inactivas ($N_2$ y $O_2$):** Constituyen más del $99\,\%$ del volumen del aire seco. Al poseer centros de carga simétricos idénticos, su única vibración de elongación internuclear no genera ninguna oscilación en el momento dipolar ($\mu = 0$ invariable), siendo totalmente transparentes a la radiación infrarroja térmica saliente.
+2. **Moléculas Poliatómicas Activas (Gases de Efecto Invernadero, GEI):**
+   - **Dióxido de Carbono ($CO_2$):** Molécula lineal ($O=C=O$). Aunque su estiramiento simétrico es inactivo, experimenta una vibración de **flexión degenerada a $15\,\mu\text{m}$ ($667\,\text{cm}^{-1}$)** y una de estiramiento asimétrico a $4.3\,\mu\text{m}$ ($2349\,\text{cm}^{-1}$) que inducen momentos dipolares dinámicos intensos. La banda de $15\,\mu\text{m}$ coincide exactamente con la ventana de máxima emisión térmica espectral del planeta según la Ley de Planck.
+   - **Vapor de Agua ($H_2O$):** Molécula angular con momento dipolar permanente ($\mu = 1.85\,\text{D}$). Es el gas de efecto invernadero natural más abundante y potente, cubriendo amplias bandas espectrales de absorción térmica.
+   - **Metano ($CH_4$), Óxido Nitroso ($N_2O$) y Clorofluorocarbonos:** Moléculas asimétricas poliatómicas con múltiples modos de vibración activos.
+
+Para comparar cuantitativamente la capacidad de absorción térmica de las distintas especies antropogénicas, se definió el **Potencial de Calentamiento Global (PCG o GWP)** a un horizonte temporal de 100 años relativo al $CO_2$ ($PCG = 1$): el metano posee un $PCG \approx 28 - 30$, el óxido nitroso alcanza un $PCG \approx 273$ y gases fluorados sintéticos como el hexafluoruro de azufre ($SF_6$) superan un $PCG$ de $24000$, debido a su altísima sección eficaz de absorción y milenarias vidas medias troposféricas.
+
+De forma concomitante, las emisiones antropogénicas de gases ácidos han perturbado drásticamente la química de las precipitaciones hídricas. De forma natural, el agua de lluvia pura no contaminada no es químicamente neutra ($pH = 7.0$), sino **ligeramente ácida ($pH \approx 5.6$)** debido a la disolución del dióxido de carbono atmosférico ($CO_2 \approx 420\,\text{ppm}$) en las gotas de lluvia líquidas según la Ley de Henry:
+
+$$CO_2(g) + H_2O(l) \rightleftharpoons CO_2(ac)$$
+$$CO_2(ac) + H_2O(l) \rightleftharpoons H_2CO_3(ac) \rightleftharpoons H^+(ac) + HCO_3^-(ac)$$
+
+Cualquier precipitación acuosa (lluvia, nieve, niebla) que registre un **$pH < 5.0$** se clasifica formalmente como **lluvia ácida** (alcanzando con frecuencia valores críticos de $pH \approx 3.0 - 4.0$, equivalentes a vinagre diluido). El origen de esta acidez extrema reside en la transformación fotoquímica troposférica de dos familias de precursores contaminantes:
+
+1. **Óxidos de Azufre ($SO_x$):** El dióxido de azufre ($SO_2$) es liberado por la combustión de carbón con alto contenido de pirita ($FeS_2$) en centrales termoeléctricas y por la tostación pirometalúrgica de minerales de sulfuro. En la troposfera es oxidado homogéneamente por el radical hidroxilo libre ($\cdot OH$) o catalizado heterogéneamente dentro de las gotas de agua por iones de metales de transición ($Fe^{3+}, Mn^{2+}$) y peróxido de hidrógeno ($H_2O_2$) para producir **ácido sulfúrico ($H_2SO_4$)**, un ácido diprótico fuerte:
+$$SO_2(g) + 2\,\cdot OH(g) \longrightarrow H_2SO_4(ac)$$
+2. **Óxidos de Nitrógeno ($NO_x$):** En las cámaras de combustión interna de automotores y quemadores industriales a temperaturas superiores a $1500^\circ\text{C}$, el nitrógeno y el oxígeno del aire atmosférico reaccionan formando monóxido de nitrógeno ($NO$), el cual se oxida rápidamente en el aire a dióxido de nitrógeno ($NO_2$). Su reacción diurna con el radical hidroxilo genera **ácido nítrico ($HNO_3$)**, un ácido monoprótico fuerte:
+$$NO_2(g) + \cdot OH(g) + M \longrightarrow HNO_3(ac) + M$$
+
+El impacto ecológico y material de la lluvia ácida es desolador:
+- **Ecosistemas Acuáticos y Suelos:** Provoca la lixiviación masiva de cationes básicos nutricionales ($Ca^{2+}, Mg^{2+}, K^+$) fuera de la rizósfera vegetal hacia los mantos freáticos. A $pH < 4.5$, los minerales arcillosos liberan iones aluminio trivalentes libres ($Al^{3+}$), fuertemente fitotóxicos, que necrosan las raicillas absorbentes de los árboles y provocan el colapso respiratorio por precipitación mucosa en las branquias de los peces.
+- **Corrosión de Monumentos y Materiales Calizos:** El ácido sulfúrico reacciona irreversiblemente con el carbonato de calcio insoluble ($CaCO_3$) presente en el mármol, la piedra caliza y el hormigón, disolviéndolo y transformándolo en sulfato de calcio dihidratado (yeso, $CaSO_4\cdot 2H_2O$):
+$$CaCO_3(s) + H_2SO_4(ac) + H_2O(l) \longrightarrow CaSO_4\cdot 2H_2O(s) + CO_2(g)$$
+El yeso es mucho más soluble en agua que la caliza original y posee un mayor volumen molar, provocando tensiones internas, agrietamientos, exfoliación y la pérdida irreversible de fachadas y esculturas del patrimonio histórico mundial.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que el efecto invernadero es intrínsecamente perjudicial y destructivo:** Olvidar que el efecto invernadero natural es indispensable para la vida (mantiene el planeta en $+15^\circ\text{C}$); el problema ambiental actual es el *efecto invernadero antropogénico intensificado* provocado por la inyección masiva de $CO_2$ fósil desde la Revolución Industrial.
+2. **Pensar que el agua de lluvia químicamente no contaminada tiene $pH = 7.0$:** Asumir que la neutralidad ácida ideal existe en la atmósfera abierta, ignorando que el $CO_2$ disuelto establece un $pH$ natural de $5.6$.
+3. **Asumir que el nitrógeno atmosférico ($N_2$) calienta el planeta:** Omitir la regla cuántica del momento dipolar: al carecer de variación dipolar durante su vibración, el $N_2$ no retiene calor infrarrojo a pesar de representar el $78\,\%$ del aire.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Manta Polar de Cama en una Noche Fría:** El cuerpo humano emite calor continuo (radiación infrarroja); una sábana de malla abierta deja escapar todo el calor (atmósfera transparente sin gases GEI); al colocar una cobija polar gruesa ($CO_2$ y vapor de agua), la manta absorbe el calor corporal y devuelve parte hacia el cuerpo manteniéndolo tibio; si se colocan cuatro cobijas superpuestas (aumento desmedido de GEI), el cuerpo empieza a sobrecalentarse afiebrado.
+2. **Demostración de Ácido sobre Tiza de Mármol:** Colocar una tiza escolar o fragmento de concha marina ($CaCO_3$) en vinagre o ácido diluido en un tubo de ensayo; el burbujeo instantáneo y la desintegración del sólido ilustran cómo la lluvia ácida desmantela las estatuas y conchas marinas en tiempo real.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una lluvia ácida intensa cae sobre una cuenca urbana con un $pH$ medido de $3.70$, debido predominantemente a la presencia de ácido sulfúrico diluido disuelto ($H_2SO_4$). Un monumento histórico tallado en mármol blanco expone una masa de carbonato de calcio puro ($CaCO_3$, masa molar $100.09\,\text{g/mol}$).
+1. Calcule la concentración molar de iones hidronio ($[H_3O^+]$) en la lluvia ácida y compárela con la concentración presente en el agua de lluvia no contaminada normal ($pH = 5.60$).
+2. Si durante un episodio de tormenta se precipitan $50000.0\,\text{litros}$ de esta lluvia ácida sobre la superficie de la escultura, calcule los moles de iones $H_3O^+$ depositados.
+3. Asumiendo que todo el ácido sulfúrico reacciona estequiométricamente con la caliza según la reacción:
+$$CaCO_3(s) + 2\,H^+(ac) \longrightarrow Ca^{2+}(ac) + CO_2(g) + H_2O(l)$$
+calcule la masa en gramos y kilogramos de mármol que se disuelve y destruye irreversiblemente durante la tormenta.
+
+**Solución paso a paso:**
+
+1. *Calcular y comparar las concentraciones molares de iones $H^+$:*
+   $$[H^+]_{\text{lluvia ácida}} = 10^{-pH} = 10^{-3.70} = 1.995 \times 10^{-4}\,\text{mol/L}$$
+   $$[H^+]_{\text{lluvia normal}} = 10^{-5.60} = 2.512 \times 10^{-6}\,\text{mol/L}$$
+   $$\text{Factor de acidez} = \frac{[H^+]_{\text{ácida}}}{[H^+]_{\text{normal}}} = \frac{1.995 \times 10^{-4}}{2.512 \times 10^{-6}} = 79.4 \approx 80$$
+   La lluvia ácida es aproximadamente **80 veces más ácida** que la precipitación meteorológica natural no perturbada.
+
+2. *Calcular la cantidad molar de iones hidronio depositados:*
+   $$n_{H^+} = [H^+] \times V = (1.995 \times 10^{-4}\,\text{mol/L})(50000.0\,\text{L}) = 9.975\,\text{mol } H^+$$
+   La precipitación aporta prácticamente diez moles de protones reactivos corrosivos sobre la estructura del monumento.
+
+3. *Calcular los moles y la masa de carbonato de calcio disuelto:*
+   $$n_{CaCO_3} = 9.975\,\text{mol } H^+ \times \left(\frac{1\,\text{mol } CaCO_3}{2\,\text{mol } H^+}\right) = 4.9875\,\text{mol } CaCO_3$$
+   Cada ion carbonato neutraliza dos protones para liberar una molécula de agua y dióxido de carbono gaseoso.
+   $$m_{CaCO_3} = n_{CaCO_3} \times M_m = (4.9875\,\text{mol})(100.09\,\text{g/mol}) = 499.20\,\text{g} \approx 0.499\,\text{kg}$$
+   La tormenta disuelve y lava irreversiblemente casi medio kilogramo ($499.2\,\text{g}$) de piedra caliza estructural del monumento en un solo evento meteorológico.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el forzamiento radiativo del metano ($CH_4$) es casi treinta veces superior al del dióxido de carbono ($CO_2$) por molécula, pero el $CO_2$ continúa siendo el gas prioritario de mitigación en las cumbres climáticas?
+2. Al evaluar suelos calcáreos ricos en caliza natural frente a suelos graníticos ácidos, ¿por qué los primeros resisten mucho mejor la lluvia ácida sin alterar la supervivencia de los bosques circundantes?
+3. ¿Cómo operan las torres lavadoras de gases (*scrubbers*) con lechada de cal ($Ca(OH)_2$ o $CaCO_3$) en las chimeneas de las centrales termoeléctricas para abatir las emisiones de $SO_2$?

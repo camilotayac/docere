@@ -1,0 +1,139 @@
+/* Atkinson Hyperlegible es una fuente de sistema o descargable en el EPUB, no se carga remotamente */
+
+body {
+  font-family: "Atkinson Hyperlegible", Georgia, "Times New Roman", serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #3A3632;
+  background-color: #FAF8F4;
+}
+
+a {
+  color: #2A5A8A;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+  color: #2E2A26;
+}
+
+/* Colores de sección h2 fijos por si EPUB reader no soporta variables CSS */
+h2.ideas-previas { background-color: #F8F6F0; border-left: 4px solid #B8960A; }
+h2.contexto { background-color: #F4EDE4; border-left: 4px solid #A07050; }
+h2.ejemplo { background-color: #E8E4E0; border-left: 4px solid #6B7B8B; }
+h2.ejercicios { background-color: #E4ECE4; border-left: 4px solid #6B8B6B; }
+h2.evaluacion { background-color: #F4E8E4; border-left: 4px solid #A05040; }
+
+/* Badges de competencia (sin pseudo-elementos para compatibilidad EPUB) */
+.competencia-1,
+.competencia-2,
+.competencia-3 {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.competencia-1 { color: #6B8B6B; }
+.competencia-2 { color: #6B7B8B; }
+.competencia-3 { color: #A05040; }
+
+blockquote {
+  margin: 0.8em 0 0.8em 1.2em;
+  padding: 0.5em 1em;
+  border-left: 3px solid #7A6858;
+  color: #2E2A26;
+  font-style: italic;
+}
+blockquote p {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid #D0C8C0;
+}
+
+th, thead {
+  background-color: #ECEAE6;
+}
+
+.icfes-grid {
+  display: block; /* EPUB no soporta grid bien */
+}
+
+.icfes-opcion {
+  display: block;
+  padding: 0.6em 0.8em;
+  border: 1px solid #D0C8C0;
+  margin-bottom: 0.5em;
+  background: #FAFAF8;
+}
+
+.icfes-letra {
+  display: inline-block;
+  background: #7A6858;
+  color: #FAF8F4;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 0.85em;
+  /* Fallback para Kindle: el círculo es decorativo, el texto es suficiente */
+  padding: 0 2px;
+  min-width: 1.5em;
+}
+
+details.icfes-respuesta {
+  padding: 0.5em;
+  border: 1px dashed #D0C8C0;
+  margin-top: 1em;
+}
+
+details.icfes-respuesta > summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #2E2A26;
+  padding: 0.3em 0;
+  list-style: none; /* elimina el triángulo por defecto en algunos e-readers */
+}
+details.icfes-respuesta > summary::-webkit-details-marker {
+  display: none; /* compatibilidad WebKit/Blink */
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+  h2.ideas-previas, h2.contexto, h2.ejemplo, h2.ejercicios, h2.evaluacion {
+    background-color: transparent !important;
+    border-left: none !important;
+  }
+}
+
+/* E-reader responsive */
+@media (max-width: 600px) {
+  body { font-size: 1em; line-height: 1.6; }
+  .icfes-opcion { padding: 0.5em 0.6em; margin-bottom: 0.4em; }
+  blockquote { margin-left: 0.5em; padding: 0.4em 0.75em; }
+  table { font-size: 0.8em; }
+}

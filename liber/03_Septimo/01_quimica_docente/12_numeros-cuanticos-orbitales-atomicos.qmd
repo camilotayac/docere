@@ -1,0 +1,67 @@
+# Los Cuatro Números Cuánticos y la Geometría de los Orbitales Atómicos
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Cuántica del Átomo
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La resolución analítica de la ecuación de onda no relativista de Erwin Schrödinger (1926) para el átomo hidrogenoide ($\hat{H}\psi = E\psi$) introduce naturalmente tres números cuánticos espaciales que caracterizan la función de onda $\psi_{n,l,m_l}$. El cuadrado de la función de onda ($|\psi|^2$) representa la **densidad de probabilidad electrónica**. Un **orbital atómico** es la región del espacio tridimensional donde existe una probabilidad superior al $90\%$ o $95\%$ de hallar al electrón.
+
+1. **Número cuántico principal ($n$):** Determina el nivel de energía y el tamaño del orbital ($n = 1, 2, 3, 4, \dots$).
+2. **Número cuántico del momento angular o azimutal ($l$):** Determina la forma geométrica del orbital ($l = 0, 1, 2, \dots, n-1$). Corresponde a los orbitales $s$ ($l=0$, esférico), $p$ ($l=1$, bilobular), $d$ ($l=2$, tetralobular), $f$ ($l=3$).
+3. **Número cuántico magnético ($m_l$):** Determina la orientación espacial del orbital ante un campo magnético externo ($m_l = -l, \dots, 0, \dots, +l$), habiendo $2l+1$ orbitales por subnivel.
+4. **Número cuántico de espín ($m_s$):** Propiedad intrínseca cuántica del electrón que cuantiza su momento angular intrínseco ($m_s = +\frac{1}{2}, -\frac{1}{2}$).
+
+### Formalización Matemática y Leyes Físicas
+Valores permitidos y relaciones matemáticas de números cuánticos:
+$$n \in \{1, 2, 3, \dots\}$$
+$$l \in \{0, 1, 2, \dots, n-1\}$$
+$$m_l \in \{-l, -l+1, \dots, 0, \dots, l-1, l\}$$
+$$m_s \in \left\{-\frac{1}{2}, +\frac{1}{2}\right\}$$
+Capacidad de orbitales por nivel $n$:
+$$\text{Número total de orbitales} = n^2 \qquad \text{Capacidad máxima de electrones} = 2n^2$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir un orbital con una cajita o contenedor físico real (es una distribución matemática de probabilidad espacial).
+2. Asignar combinaciones cuánticas prohibidas por las reglas mecánicas (ej. pretender que exista el orbital $1p$ o $2d$, donde $l \ge n$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la dirección postal cuántica:**
+  1. $n$: La ciudad (nivel energético general, qué tan lejos del centro).
+  2. $l$: El barrio (tipo de arquitectura: casas redondas $s$, edificios de dos torres $p$, torres cuádruples $d$).
+  3. $m_l$: La calle específica donde está orientada la casa ($p_x, p_y, p_z$).
+  4. $m_s$: El sentido del giro de la llave para entrar (giro a la derecha $+1/2$ o a la izquierda $-1/2$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Determine si los siguientes conjuntos de números cuánticos $(n, l, m_l, m_s)$ son físicamente permitidos o prohibidos, justificando cada caso:
+a) $(2, 1, -1, +\frac{1}{2})$
+b) $(3, 3, 0, -\frac{1}{2})$
+c) $(1, 0, 0, +1)$
+d) $(4, 2, -2, -\frac{1}{2})$
+
+**Paso 1:** Caso a: $n=2$, $l=1$ ($l < n$, válido: subnivel $2p$), $m_l=-1$ (en rango $[-1, 1]$, válido), $m_s=+1/2$ (válido). **Permitido (orbital $2p$).**
+**Paso 2:** Caso b: $n=3, l=3$. Prohibido, pues el valor máximo de $l$ es $n-1 = 2$. No existe el subnivel $3f$.
+**Paso 3:** Caso c: $m_s = +1$. Prohibido, el número cuántico de espín sólo admite $\pm 1/2$.
+**Paso 4:** Caso d: $n=4, l=2$ ($4d$), $m_l=-2$ (en rango $[-2, 2]$), $m_s=-1/2$. **Permitido (orbital $4d$).**
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué no existe un orbital $2d$ ni un orbital $1p$ en el átomo?
+2. ¿Qué es un plano nodal y cuántos planos nodales posee un orbital $2p_z$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

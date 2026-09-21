@@ -1,0 +1,59 @@
+# Propiedades Periódicas: Carga Nuclear Efectiva, Radio Atómico y Radio Iónico
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** La Tabla Periódica y Periodicidad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El comportamiento y reactividad de los elementos está regulado por tendencias periódicas bien definidas regidas por la **carga nuclear efectiva** ($Z_{\text{eff}}$), que representa la carga nuclear positiva real experimentada por los electrones de valencia tras descontar el efecto de apantallamiento ejercido por los electrones de las capas internas:
+
+$$Z_{\text{eff}} = Z - S$$
+
+1. **Radio Atómico:** Se define operativamente como la mitad de la distancia internuclear entre dos átomos adyacentes enlazados. En un **período**, el radio atómico disminuye de izquierda a derecha debido al aumento progresivo de $Z_{\text{eff}}$ sin incremento de capas cuánticas principales. En un **grupo**, el radio aumenta de arriba hacia abajo al añadirse nuevas capas electrónicas ($n$).
+2. **Radio Iónico:** Un catión es siempre significativamente menor que su átomo neutro parental ($r_{\text{catión}} < r_{\text{átomo}}$) por pérdida de electrones y reducción de repulsión. Un anión es siempre mayor que su átomo neutro ($r_{\text{anión}} > r_{\text{átomo}}$) por incremento de la repulsión interelectrónica.
+
+### Formalización Matemática y Leyes Físicas
+Reglas de Slater para la constante de apantallamiento ($S$):
+$$Z_{\text{eff}} = Z - \sum S_i$$
+Variación del radio en series isoelectrónicas (especies con igual número de electrones):
+$$r(O^{2-}) > r(F^-) > r(Na^+) > r(Mg^{2+}) > r(Al^{3+})$$
+A mayor $Z$ con iguales electrones, mayor atracción nuclear y menor radio.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que al desplazarse a la derecha en un período el átomo debe crecer 'porque tiene más protones y más electrones'.
+2. Suponer que el radio de un átomo es una esfera con borde rígido e invariable.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del resorte nuclear:** El núcleo es un imán central potente; los electrones internos son una pantalla que reduce la fuerza. Al moverse a la derecha en el período, agregamos más fuerza al imán central ($Z$ crece) mientras la distancia principal no cambia, por lo que el imán aprieta más fuerte a toda la nube electrónica encogiéndola.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Ordene de menor a mayor tamaño las siguientes especies isoelectrónicas ($10\,e^-$): $Ne$, $Mg^{2+}$, $F^-$, $Na^+$, $O^{2-}$, justificando mediante $Z_{\text{eff}}$.
+
+**Paso 1:** Identificación del número atómico ($Z$) de cada especie:
+$$O^{2-} (Z=8), \quad F^- (Z=9), \quad Ne (Z=10), \quad Na^+ (Z=11), \quad Mg^{2+} (Z=12)$$
+**Paso 2:** Análisis de la relación protones/electrones:
+Todas las especies tienen exactamente $10$ electrones. La especie con mayor número de protones ($Mg^{2+}$, $Z=12$) ejerce la mayor fuerza de atracción electrostática nuclear sobre los $10$ electrones, contrayendo al máximo la nube. La especie con menor $Z$ ($O^{2-}$, $Z=8$) ejerce la menor atracción y sufre mayor repulsión neta.
+**Paso 3:** Orden creciente de radio iónico:
+$$r(Mg^{2+}) < r(Na^+) < r(Ne) < r(F^-) < r(O^{2-})$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el radio atómico del potasio ($K$, $Z=19$) es drásticamente mayor que el del argón ($Ar$, $Z=18$)?
+2. ¿Por qué el catión $Fe^{3+}$ es más pequeño que el catión $Fe^{2+}$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

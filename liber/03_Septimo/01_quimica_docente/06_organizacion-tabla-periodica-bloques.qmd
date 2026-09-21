@@ -1,0 +1,58 @@
+# Organización Moderna de la Tabla Periódica: Períodos, Grupos y Bloques
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** La Tabla Periódica y Periodicidad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La Ley Periódica moderna, establecida a partir de los trabajos de Henry Moseley (1913), enuncia que **las propiedades físicas y químicas de los elementos son funciones periódicas de sus números atómicos ($Z$)**, superando la ordenación por masa atómica de Mendeléyev.
+
+La Tabla Periódica estándar se organiza en:
+1. **7 Períodos (filas horizontales):** Corresponden al número cuántico principal máximo ($n$) ocupado por los electrones en su estado fundamental.
+2. **18 Grupos o Familias (columnas verticales):** Agrupan elementos con idéntica configuración electrónica en su capa de valencia, lo que confiere reactividad y propiedades químicas análogas.
+3. **4 Bloques cuánticos ($s, p, d, f$):** Determinados por el tipo de subnivel u orbital en el que se aloja el último electrón de diferenciación según el principio de Aufbau.
+
+### Formalización Matemática y Leyes Físicas
+Ley de Moseley para rayos X característicos:
+$$\sqrt{\nu} = a (Z - \sigma)$$
+Capacidad electrónica máxima por bloque:
+$$\text{Bloque } s: 2\,e^- \qquad \text{Bloque } p: 6\,e^- \qquad \text{Bloque } d: 10\,e^- \qquad \text{Bloque } f: 14\,e^-$$
+Número de elementos por período $n$:
+$$N = 2, 8, 8, 18, 18, 32, 32$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que la tabla periódica está ordenada por masa atómica creciente (existen inversiones históricas como Telurio $Z=52, 127.6\,\text{u}$ antes de Yodo $Z=53, 126.9\,\text{u}$, o Argón antes de Potasio).
+2. Confundir el número de período con el número de electrones de valencia.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del edificio de apartamentos departamentales:** Cada piso del edificio es un período ($n=1, 2, 3\dots$); cada torre vertical con balcones alineados es un grupo donde todas las familias tienen costumbres parecidas (valencia similar); y las alas del edificio (ala oeste, centro, ala este) representan los bloques $s, d, p$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un elemento posee la configuración electrónica de valencia $4s^2 4p^4$. Determine su período, grupo IUPAC, bloque y prediga el número de electrones que requiere para completar su octeto.
+
+**Paso 1:** Período: El nivel cuántico más alto es $n = 4$, por tanto se ubica en el **Período 4**.
+**Paso 2:** Bloque: El último electrón ingresa en un subnivel $p$, por tanto pertenece al **Bloque p**.
+**Paso 3:** Grupo IUPAC: Para el bloque $p$, $\text{Grupo} = 10 + e^-(s) + e^-(p) = 10 + 2 + 4 = \text{Grupo 16}$ (familia de los anfígenos o calcógenos).
+**Paso 4:** Requiere ganar $2\,e^-$ para alcanzar el octeto ($4s^2 4p^6$), formando aniones $X^{2-}$ (ej. Selenio, $Z=34$).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los gases nobles (Grupo 18) presentan una inercia química excepcional?
+2. ¿Por qué la serie de los lantánidos y actínidos (bloque $f$) se ubica habitualmente separada en la parte inferior de la tabla periódica?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

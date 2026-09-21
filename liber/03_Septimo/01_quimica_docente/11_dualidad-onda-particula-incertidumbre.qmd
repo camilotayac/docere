@@ -1,0 +1,62 @@
+# Dualidad Onda-Partícula e Incertidumbre Cuántica de Heisenberg
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Cuántica del Átomo
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En 1924, Louis de Broglie propuso una hipótesis simétrica audaz: si la luz (tradicionalmente considerada una onda) exhibe propiedades corpusculares en el efecto fotoeléctrico, entonces la materia (tradicionalmente considerada partículas) debe exhibir propiedades ondulatorias asociadas a su cantidad de movimiento ($p = m v$). La longitud de onda de De Broglie ($ \lambda = h / p $) fue confirmada experimentalmente en 1927 por Davisson y Germer al observar patrones de difracción de electrones al atravesar redes cristalinas de níquel.
+
+En 1927, Werner Heisenberg formuló el **Principio de Incertidumbre**, demostrando que es físicamente imposible determinar simultáneamente y con precisión absoluta el momento lineal ($p_x$) y la posición ($x$) de una partícula cuántica:
+
+$$\Delta x \cdot \Delta p_x \ge \frac{\hbar}{2} = \frac{h}{4\pi}$$
+
+Este principio sepulta definitivamente la noción newtoniana clásica de órbitas y trayectorias planetarias deterministas en el átomo, obligando a reemplazar el concepto de órbita por el de **orbital probabilístico**.
+
+### Formalización Matemática y Leyes Físicas
+Longitud de onda de materia de De Broglie:
+$$\lambda = \frac{h}{p} = \frac{h}{m v}$$
+Principio de Incertidumbre de Heisenberg para posición y momento:
+$$\Delta x \cdot \Delta (m v) \ge \frac{h}{4\pi}$$
+Principio de Incertidumbre para energía y tiempo:
+$$\Delta E \cdot \Delta t \ge \frac{\hbar}{2}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que el principio de incertidumbre es una limitación técnica de los instrumentos de laboratorio que se corregirá en el futuro (es una propiedad fundamental de la naturaleza ondulatoria del universo).
+2. Intentar calcular la 'trayectoria exacta' por la que viaja un electrón alrededor del núcleo.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del flash para fotografiar una mariposa:** Para ver dónde está un electrón diminuto debes iluminarlo con un fotón de altísima frecuencia; pero chocar el fotón contra el electrón lo golpea con tanta fuerza que altera drásticamente su velocidad. El acto mismo de medir la posición destruye la precisión sobre su velocidad.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la longitud de onda de De Broglie asociada a un electrón ($m_e = 9.11 \times 10^{-31}\,\text{kg}$) que viaja a una velocidad de $2.19 \times 10^6\,\text{m/s}$ (velocidad en el primer nivel de Bohr), y compárela con la de una pelota de béisbol de $0.145\,\text{kg}$ lanzada a $40.0\,\text{m/s}$.
+
+**Paso 1:** Longitud de onda del electrón:
+$$\lambda_e = \frac{6.626 \times 10^{-34}}{(9.11 \times 10^{-31})(2.19 \times 10^6)} = \frac{6.626 \times 10^{-34}}{1.995 \times 10^{-24}} = 3.32 \times 10^{-10}\,\text{m} = 0.332\,\text{nm} = 3.32\,\text{Å}$$
+*(Esta longitud de onda es del orden exacto del tamaño del átomo y las distancias interatómicas, por lo que su comportamiento ondulatorio domina su física).*
+
+**Paso 2:** Longitud de onda de la pelota de béisbol:
+$$\lambda_{\text{pelota}} = \frac{6.626 \times 10^{-34}}{(0.145\,\text{kg})(40.0\,\text{m/s})} = \frac{6.626 \times 10^{-34}}{5.80} = 1.14 \times 10^{-34}\,\text{m}$$
+*(Inapreciable experimentalmente; en el mundo macroscópico los efectos cuánticos son totalmente indetectables).*
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el principio de incertidumbre invalida completamente el concepto de 'órbita circular' propuesto por Niels Bohr?
+2. ¿Cómo permite la naturaleza ondulatoria del electrón el funcionamiento del microscopio electrónico de transmisión?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

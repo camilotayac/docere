@@ -1,0 +1,64 @@
+# Composición Centesimal Porcentual en Masa de Compuestos (Oriakhi Cap. 4)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **composición centesimal porcentual** de un compuesto químico expresa el porcentaje en masa que aporta cada elemento individual a la masa molar total del compuesto. Constituye una propiedad intensiva e intrínseca de cada sustancia química pura, respaldada por la Ley de las Proporciones Definidas de Joseph Proust.
+
+El cálculo de la composición porcentual no solo permite verificar la pureza de un reactivo sintetizado en el laboratorio frente al estándar teórico, sino que representa el punto de partida matemático indispensable para deducir la fórmula empírica mínima de sustancias de composición desconocida analizadas en espectrometría o análisis elemental orgánico.
+
+### Formalización Matemática y Leyes Físicas
+Fórmula general del porcentaje en masa de un elemento $A$:
+$$\%A = \frac{n_A \cdot M_A}{M_{\text{compuesto}}} \times 100\%$$
+Donde $n_A$ es el subíndice del elemento $A$ en la fórmula química y $M_A$ su masa atómica.
+Condición de cierre de conservación:
+$$\sum_{i} \% \text{Elemento}_i = 100.00\%$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar multiplicar la masa atómica del elemento por su subíndice en la fórmula al calcular el numerador (ej. contar sólo un nitrógeno en el nitrato de amonio, $NH_4NO_3$, ignorando que la fórmula contiene $2$ átomos de nitrógeno).
+2. Redondear excesivamente los porcentajes de modo que la suma final difiera significativamente del $100\%$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los ingredientes de una torta:** Si una torta terminada pesa $1000\,\text{g}$ y le pusiste $400\,\text{g}$ de harina, $300\,\text{g}$ de azúcar, $200\,\text{g}$ de mantequilla y $100\,\text{g}$ de huevo, la torta es $40\%$ harina, $30\%$ azúcar, $20\%$ mantequilla y $10\%$ huevo. Si cortas una rebanada pequeña de $50\,\text{g}$, esa rebanada sigue teniendo exactamente la misma composición centesimal.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 4):** Calcule la composición centesimal porcentual en masa de cada elemento presente en el fertilizante sulfato de amonio, $(NH_4)_2SO_4$. Datos: $N=14.01$, $H=1.008$, $S=32.07$, $O=16.00\,\text{g/mol}$.
+
+**Paso 1:** Conteo de átomos y cálculo de la masa molar total:
+1. Nitrógeno: $2 \times 14.01 = 28.02\,\text{g/mol}$
+2. Hidrógeno: $8 \times 1.008 = 8.064\,\text{g/mol}$
+3. Azufre: $1 \times 32.07 = 32.07\,\text{g/mol}$
+4. Oxígeno: $4 \times 16.00 = 64.00\,\text{g/mol}$
+Masa molar: $M = 28.02 + 8.064 + 32.07 + 64.00 = 132.15\,\text{g/mol}$
+
+**Paso 2:** Cálculo de porcentajes centesimales:
+$$\%N = \frac{28.02}{132.15} \times 100\% = 21.20\%$$
+$$\%H = \frac{8.064}{132.15} \times 100\% = 6.10\%$$
+$$\%S = \frac{32.07}{132.15} \times 100\% = 24.27\%$$
+$$\%O = \frac{64.00}{132.15} \times 100\% = 48.43\%$$
+**Paso 3:** Verificación de cierre:
+$$\sum = 21.20 + 6.10 + 24.27 + 48.43 = 100.00\%$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cuál de los siguientes fertilizantes proporciona mayor cantidad de nitrógeno por cada kilogramo de producto comercial: la urea, $(NH_2)_2CO$, o el nitrato de amonio, $NH_4NO_3$?
+2. ¿Por qué dos compuestos totalmente diferentes como el acetileno ($C_2H_2$) y el benceno ($C_6H_6$) tienen exactamente la misma composición porcentual?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

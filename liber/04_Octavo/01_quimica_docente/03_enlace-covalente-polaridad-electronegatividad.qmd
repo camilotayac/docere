@@ -1,0 +1,70 @@
+# El Enlace Covalente: Tipos, Longitud, Energía y Polaridad
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Enlace Químico y Estructura Molecular
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El enlace covalente se produce cuando dos átomos no metálicos de electronegatividades similares comparten uno o más pares de electrones en orbitales atómicos superpuestos, concentrando la densidad electrónica entre los núcleos atómicos positivamente cargados.
+
+1. **Multiplicidad de enlace:**
+  1. Enlace simple: Un par de electrones compartidos (un enlace $\sigma$, ej. $H-H$, $C-C$).
+  2. Enlace doble: Dos pares compartidos (un enlace $\sigma$ y un enlace $\pi$, ej. $O=O$, $C=C$).
+  3. Enlace triple: Tres pares compartidos (un enlace $\sigma$ y dos enlaces $\pi$, ej. $N \equiv N$, $C \equiv C$).
+  A mayor multiplicidad de enlace, disminuye la **longitud de enlace** internuclear y aumenta sustancialmente la **energía de disociación de enlace**.
+1. **Polaridad de enlace:**
+  1. Covalente apolar (puro): $\Delta \chi = 0$ (átomos idénticos, ej. $Cl_2$).
+  2. Covalente polar: $0 < \Delta \chi < 1.7$ o $2.0$. El átomo más electronegativo adquiere una densidad de carga parcial negativa ($\delta^-$) y el menos electronegativo una densidad parcial positiva ($\delta^+$), originando un momento dipolar de enlace.
+
+### Formalización Matemática y Leyes Físicas
+Momento dipolar de enlace ($\mu$):
+$$\vec{\mu} = q \cdot \vec{r}$$
+Unidades: Debye ($\text{D}$), donde $1\,\text{D} = 3.33564 \times 10^{-30}\,\text{C}\cdot\text{m}$.
+Porcentaje de carácter iónico (Ecuación de Pauling):
+$$\%\text{iónico} = \left( 1 - e^{-\frac{1}{4} (\Delta \chi)^2} \right) \times 100\%$$
+Relación entre orden de enlace, longitud y entalpía:
+$$\text{Orden: } 1 \to 2 \to 3 \implies r_0 \downarrow \quad \text{y} \quad \Delta H_{\text{enlace}} \uparrow$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que en un enlace covalente polar los átomos se transforman en iones completos ($+1$ y $-1$). Las cargas $\delta^+$ y $\delta^-$ son fraccionarias y continuas.
+2. Suponer que un enlace doble es el doble de fuerte que uno simple (los enlaces $\pi$ son por solapamiento lateral, más débiles energéticamente que los enlaces axiales $\sigma$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los niños compartiendo un juguete:** Si dos gemelos idénticos juegan con el juguete, pasa exactamente la mitad del tiempo con cada uno (covalente apolar). Si uno de los niños es un poco más grande y caprichoso, el juguete pasa el $80\%$ del tiempo de su lado (covalente polar con $\delta^-$). Si el niño grande es un abusador y le arrebata el juguete para siempre, ya no hay juego compartido sino robo (enlace iónico).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Compare las longitudes y energías de enlace experimentales entre átomos de carbono:
+1. Enlace simple $C-C$: $r = 154\,\text{pm}$, $D = 348\,\text{kJ/mol}$.
+2. Enlace doble $C=C$: $r = 134\,\text{pm}$, $D = 614\,\text{kJ/mol}$.
+3. Enlace triple $C \equiv C$: $r = 120\,\text{pm}$, $D = 839\,\text{kJ/mol}$.
+Deduzca la energía promedio de un enlace $\sigma$ y un enlace $\pi$ en el carbono.
+
+**Paso 1:** Energía del enlace $\sigma$:
+Directamente la del enlace simple: $D_\sigma = 348\,\text{kJ/mol}$.
+**Paso 2:** Estimación de la energía del primer enlace $\pi$:
+$$D_{\pi,1} = D(C=C) - D_\sigma = 614 - 348 = 266\,\text{kJ/mol}$$
+**Paso 3:** Estimación del segundo enlace $\pi$:
+$$D_{\pi,2} = D(C \equiv C) - D(C=C) = 839 - 614 = 225\,\text{kJ/mol}$$
+Se demuestra empíricamente que los enlaces $\pi$ ($266$ y $225\,\text{kJ/mol}$) son significativamente más débiles que el enlace $\sigma$ ($348\,\text{kJ/mol}$), lo que explica la alta reactividad química de alquenos y alquinos.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la molécula diatómica de nitrógeno ($N_2, N \equiv N$) es uno de los gases más químicamente inertes de la atmósfera?
+2. Si el enlace $H-F$ tiene $\Delta \chi = 1.9$, ¿por qué se clasifica como covalente polar y no puramente iónico?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

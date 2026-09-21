@@ -1,0 +1,71 @@
+# Celdas Galvánicas (Voltaicas) y Notación Estándar de Celda (Oriakhi Cap. 23)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Electroquímica y Procesos Redox
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una **celda galvánica o voltaica** es un dispositivo electroquímico en el cual la energía libre liberada por una reacción redox espontánea ($\Delta G < 0$) se convierte directamente en **energía eléctrica** en forma de corriente de electrones que fluye a través de un circuito conductor externo.
+
+Consta de dos semiceldas acopladas:
+1. **Ánodo:** Electrodo donde ocurre la **oxidación** (polo negativo en celdas galvánicas). Libera electrones hacia el circuito externo.
+2. **Cátodo:** Electrodo donde ocurre la **reducción** (polo positivo en celdas galvánicas). Recibe electrones del circuito.
+3. **Puente Salino:** Tubo en U con gel conductor inerte ($KCl, KNO_3$) que cierra el circuito eléctrico permitiendo la migración de iones para mantener la neutralidad eléctrica en ambas disoluciones sin que se mezclen físicamente.
+
+La IUPAC establece la **notación estándar abreviada de celda**:
+$$\text{Ánodo (s)} \mid \text{Disolución anódica} \parallel \text{Disolución catódica} \mid \text{Cátodo (s)}$$
+Donde la barra simple ($\mid$) representa una interfase de fase y la doble barra ($\parallel$) representa el puente salino.
+
+### Formalización Matemática y Leyes Físicas
+Regla mnemotécnica universal:
+$$\textbf{AN OX} \implies \textbf{Án}\text{odo } = \textbf{Ox}\text{idación}$$
+$$\textbf{RED CAT} \implies \textbf{Red}\text{ucción } = \textbf{Cát}\text{odo}$$
+Notación de la Celda Daniell clásica:
+$$Zn(s) \mid Zn^{2+}(aq, 1.0\,M) \parallel Cu^{2+}(aq, 1.0\,M) \mid Cu(s)$$
+Dirección del flujo de electrones:
+$$\text{Siempre del Ánodo } (-) \longrightarrow \text{al Cátodo } (+)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Invertir los polos de los electrodos o confundir la función del puente salino (creer que por el puente salino viajan electrones en vez de iones).
+2. Escribir el cátodo a la izquierda en la notación de celda (por convención IUPAC, el ánodo se escribe siempre a la izquierda).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los dos tanques de agua conectados por una turbina:** En el tanque izquierdo (ánodo) hay alta presión de electrones que empuja el flujo por un tubo metálico exterior donde una turbina (bombillo o motor) aprovecha la corriente; el puente salino es una manguera de retorno de agua subterránea que equilibra los niveles para que el flujo no se detenga por contrapresión electrostática.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 23):** Escriba las semirreacciones de electrodo, la reacción global neta y la notación abreviada de celda para una celda galvánica construida con una lámina de plata ($Ag$) sumergida en $AgNO_3\,1.0\,M$ y una lámina de zinc ($Zn$) sumergida en $Zn(NO_3)_2\,1.0\,M$.
+
+**Paso 1:** Identificación de electrodos según potenciales estándar:
+El zinc tiene mayor tendencia a oxidarse que la plata:
+1. Ánodo (oxidación):
+
+$$Zn(s) \longrightarrow Zn^{2+}(aq) + 2 e^-$$
+2. Cátodo (reducción):
+
+$$Ag^+(aq) + 1 e^- \longrightarrow Ag(s)$$
+**Paso 2:** Multiplicación para igualar electrones y reacción global neta:
+$$Zn(s) + 2 Ag^+(aq) \longrightarrow Zn^{2+}(aq) + 2 Ag(s)$$
+**Paso 3:** Notación IUPAC estándar de la celda:
+$$Zn(s) \mid Zn^{2+}(aq, 1.0\,M) \parallel Ag^+(aq, 1.0\,M) \mid Ag(s)$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Qué ocurriría inmediatamente con la corriente eléctrica de una celda galvánica si se retira el puente salino durante su funcionamiento?
+2. ¿Por qué el ánodo de zinc pierde masa gradualmente mientras que el cátodo de cobre aumenta de masa en la celda Daniell?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,70 @@
+# Cinética de Decaimiento Radiactivo y Datación por Radiocarbono (Oriakhi Cap. 24)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química Nuclear y Radiactividad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El decaimiento radiactivo es un proceso nuclear probabilístico puramente espontáneo que sigue con exactitud matemática rigurosa una **cinética de primer orden**. La velocidad de desintegración o **actividad radiactiva ($A$)** es directamente proporcional al número de núcleos radiactivos sin desintegrar presentes en la muestra ($N$):
+
+$$A = -\frac{dN}{dt} = \lambda \cdot N$$
+
+Donde $\lambda$ es la **constante de decaimiento radiactivo** ($\text{s}^{-1}$ o $\text{año}^{-1}$). En el SI, la actividad se mide en **becquereles ($1\,\text{Bq} = 1\,\text{desintegración/s}$)** o en curios ($1\,\text{Ci} = 3.70 \times 10^{10}\,\text{Bq}$).
+
+La integración analítica deduce la ley de decaimiento temporal y la vida media:
+$$N(t) = N_0 \cdot e^{-\lambda t} \qquad t_{1/2} = \frac{\ln(2)}{\lambda} = \frac{0.69315}{\lambda}$$
+
+Willard Libby (Premio Nobel 1960) desarrolló el método de **datación por radiocarbono ($^{14}C$)**: en la atmósfera, la radiación cósmica genera continuamente $^{14}C$ por bombardeo de neutrones sobre nitrógeno (
+
+$$^{14}_7 N + ^1_0 n \to ^{14}_6 C + ^1_1 p$$
+
+), manteniendo una actividad constante en los seres vivos por fotosíntesis y alimentación ($\approx 15.3\,\text{desintegraciones/(min}\cdot\text{g C)}$). Al morir el organismo, el intercambio cesa y el $^{14}C$ decae por emisión $\beta^-$ con $t_{1/2} = 5730\,\text{años}$.
+
+### Formalización Matemática y Leyes Físicas
+Ley integrada de decaimiento radiactivo:
+$$\ln\left(\frac{N_0}{N_t}\right) = \ln\left(\frac{A_0}{A_t}\right) = \lambda \cdot t$$
+Ecuación de datación arqueológica por $^{14}C$:
+$$t = \frac{1}{\lambda} \ln\left(\frac{A_0}{A_t}\right) = \frac{t_{1/2}}{\ln(2)} \ln\left(\frac{A_0}{A_t}\right)$$
+Donde $t_{1/2} = 5730\,\text{años}$ y $\lambda = 1.2097 \times 10^{-4}\,\text{año}^{-1}$.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que la vida media radiactiva puede acelerarse calentando la muestra o sometiéndola a presiones extremas (la desintegración nuclear es totalmente insensible a la temperatura, presión o enlaces químicos).
+2. Intentar usar datación por carbono-14 para fósiles de dinosaurios de 65 millones de años (el $^{14}C$ sólo es útil hasta unos $50000$ a $60000$ años; para rocas y fósiles geológicos se usan sistemas como $^{238}U/^{206}Pb$ o $^{40}K/^{40}Ar$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El reloj de arena atómico invisible:** Cuando un árbol está vivo, el reloj de arena recibe arena continuamente de la atmósfera ($^{14}C$ constante). Al talar el árbol para hacer una canoa o momia, se sella el reloj y los granos de arena comienzan a caer a ritmo estricto e inalterable. Midiendo cuántos granos quedan, se calcula con exactitud el año en que murió el árbol.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 24):** Un fragmento de carbón vegetal hallado en un yacimiento arqueológico en los Andes colombianos presenta una actividad de desintegración de $^{14}C$ de $3.825\,\text{desint./(min}\cdot\text{g C)}$. Sabiendo que la actividad del tejido vivo contemporáneo es de $15.30\,\text{desint./(min}\cdot\text{g C)}$ y que la vida media del carbono-14 es de $5730\,\text{años}$, calcule la edad del yacimiento arqueológico.
+
+**Paso 1:** Constante de decaimiento del carbono-14:
+$$\lambda = \frac{\ln(2)}{5730\,\text{años}} = 1.2097 \times 10^{-4}\,\text{año}^{-1}$$
+**Paso 2:** Fracción de actividad remanente:
+$$\frac{A_0}{A_t} = \frac{15.30}{3.825} = 4.000$$
+*(Nótese que $4.000 = 2^2$, lo que significa que han transcurrido exactamente dos vidas medias).*
+
+**Paso 3:** Cálculo de la edad ($t$):
+$$t = \frac{\ln(4.000)}{\lambda} = \frac{1.3863}{1.2097 \times 10^{-4}\,\text{año}^{-1}} = 11460\,\text{años}$$
+El yacimiento arqueológico tiene una antigüedad calculada de **$11460\,\text{años}$**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el método de datación por carbono-14 requiere calibración contra anillos de crecimiento de árboles antiguos (dendrocronología)?
+2. ¿Cómo se utiliza el uranio-238 ($t_{1/2} = 4.47 \times 10^9\,\text{años}$) para datar la edad de la Tierra y los meteoritos lunares en 4500 millones de años?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

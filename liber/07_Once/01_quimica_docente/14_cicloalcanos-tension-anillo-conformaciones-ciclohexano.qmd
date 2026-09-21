@@ -1,0 +1,79 @@
+# Cicloalcanos, Tensión de Anillo y Análisis Conformacional del Ciclohexano
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estereoquímica de Compuestos Cíclicos
+> * **Propósito Docente:** Dominar los principios termodinámicos de la tensión de anillo (angular, torsional y estérica), caracterizar las conformaciones tridimensionales del ciclohexano y modelar cuantitativamente los equilibrios de inversión conformacional.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los cicloalcanos son hidrocarburos saturados en los que la cadena carbonada forma un anillo cerrado, respondiendo a la fórmula empírica molecular general:
+
+$$C_n H_{2n}$$
+
+Al poseer dos hidrógenos menos que el alcano lineal homólogo, presentan un índice de deficiencia de hidrógeno o grado de insaturación igual a uno ($IDH = 1$). Aunque formalmente todos los carbonos poseen hibridación $sp^3$ y requerirían ángulos interorbitales ideales de $109.5^\circ$, la restricción geométrica de cerrar un ciclo plano impone distorsiones angulares considerables.
+
+En 1885, Adolf von Baeyer formuló la **Teoría de la Tensión de Anillo**, postulando que los ciclos con ángulos alejados del valor tetraédrico ideal experimentarían inestabilidad proporcional a dicha desviación. La tensión total de un anillo se descompone en tres componentes termodinámicos:
+
+1. **Tensión Angular (o de Baeyer):** Resulta de la compresión o expansión forzada de los ángulos de enlace con respecto al ángulo tetraédrico de $109.5^\circ$, obligando a los orbitales a solaparse de manera desviada (enlaces flexionados o *enlaces plátano*). En el ciclopropano ($C_3H_6$), el anillo plano fuerza un ángulo interno de $60^\circ$ (desviación de $49.5^\circ$), acumulando una elevada tensión de aproximadamente $115\,\text{kJ/mol}$. En el ciclobutano ($C_4H_8$), el ángulo planar de $90^\circ$ genera una tensión similar de $110\,\text{kJ/mol}$, haciéndolos susceptibles a reacciones de apertura de anillo.
+2. **Tensión Torsional (o de Pitzer):** Se genera cuando los enlaces adyacentes $C-H$ se ven obligados a adoptar una conformación eclipsada en el espacio, produciendo repulsión electrostática entre pares electrónicos enlazantes.
+3. **Tensión Estérica (o de Van der Waals):** Se origina por la interferencia espacial o repulsión no enlazante entre átomos o grupos que se aproximan a una distancia menor que la suma de sus radios de Van der Waals (interacciones transanulares).
+
+La hipótesis de Baeyer falló al predecir que el ciclopentano ($108^\circ$) sería el ciclo más estable y que el ciclohexano ($120^\circ$ si fuese plano) acumularía gran tensión. Hermann Sachse (1890) y Ernst Mohr (1918) demostraron que los anillos con seis o más carbonos no son planos, sino que se pliegan en el espacio tridimensional para eliminar simultáneamente la tensión angular y la torsional.
+
+El ciclohexano adopta fundamentalmente la **conformación de silla**, caracterizada por tener todos sus ángulos de enlace en exactamente $109.5^\circ$ y todos sus enlaces $C-H$ adyacentes en conformación alternada perfecta, lo que le confiere una tensión de anillo de prácticamente cero ($0\,\text{kJ/mol}$). En contraste, la conformación alternativa de **bote** presenta dos fuentes severas de desestabilización energética (aproximadamente $29\,\text{kJ/mol}$ por encima de la silla): el eclipsamiento de cuatro pares de enlaces $C-H$ en la base del bote y la repulsión estérica directa entre los dos hidrógenos interiores denominados *hidrógenos de mástil* o astas de bandera (posiciones 1,4).
+
+En la conformación de silla del ciclohexano existen dos orientaciones geométricas para los doce átomos de hidrógeno:
+
+1. **Hidrógenos Axiales ($6$ enlaces):** Se proyectan perpendicularmente al plano medio del anillo, alternando verticalmente hacia arriba y hacia abajo en carbonos alternos.
+2. **Hidrógenos Ecuatoriales ($6$ enlaces):** Se proyectan radialmente hacia afuera, prácticamente alrededor de la cintura o periferia del anillo.
+
+A temperatura ambiente, el ciclohexano experimenta una oscilación dinámica ultra-rápida conocida como **inversión de anillo** (*chair flip*), que ocurre a una frecuencia aproximada de $10^5\,\text{s}^{-1}$ a través de estados intermedios de mayor energía (media silla y bote retorcido). Durante esta inversión, todos los enlaces que eran axiales pasan a ser ecuatoriales, y todos los ecuatoriales se transforman en axiales.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Concebir los cicloalcanos como polígonos planos bidimensionales:** Representar el ciclohexano como un hexágono plano rígido. Es crucial recordar que la estructura hexagonal plana obligaría a ángulos de $120^\circ$ y eclipsamiento total, mientras que en la naturaleza el anillo está completamente plegado en forma de silla tridimensional.
+2. **Confundir la orientación axial/ecuatorial con la isomería cis/trans:** Creer que axial significa *cis* y ecuatorial significa *trans*. La relación *cis/trans* depende exclusivamente de si dos sustituyentes apuntan a la misma cara o a caras opuestas del anillo, independientemente de si adoptan posiciones axiales o ecuatoriales.
+3. **Despreciar la repulsión 1,3-diaxial:** Omitir que los sustituyentes voluminosos (como $-CH_3$ o $-C(CH_3)_3$) prefieren abrumadoramente la posición ecuatorial para evitar el choque estérico con los hidrógenos axiales situados en los carbonos 3 y 5.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Hamaca de Jardín:** Visualizar la conformación de silla como una silla de playa o hamaca reclinable (respaldo levantado en un extremo y reposapiés bajado en el otro); la conformación de bote equivale a levantar simultáneamente ambos extremos, haciendo que los apoyos choquen entre sí.
+2. **Uso de Modelos Moleculares de Varilla y Esfera:** Obligar al estudiante a manipular físicamente el anillo de ciclohexano, forzando la interconversión de silla a bote para sentir la resistencia mecánica y visualizar la repulsión de los hidrógenos mástil.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** En el equilibrio conformacional del metilciclohexano a $298.15\,\text{K}$, el grupo metilo puede ubicarse en posición ecuatorial o en posición axial. Los datos termodinámicos indican que la conformación ecuatorial es más estable que la conformación axial en una diferencia de energía libre estándar de $\Delta G^\circ = -7.30\,\text{kJ/mol}$ (asociada al alivio de las interacciones 1,3-diaxiales). Calcule la constante de equilibrio ($K_{\text{eq}}$) del proceso y determine el porcentaje relativo de moléculas de metilciclohexano que se encuentran en la conformación ecuatorial a temperatura ambiente. Dato: $R = 8.314\,\text{J/(mol}\cdot\text{K)}$.
+
+**Solución paso a paso:**
+
+1. *Formular el equilibrio termodinámico conformacional:*
+   $$\text{Metilciclohexano (axial)} \rightleftharpoons \text{Metilciclohexano (ecuatorial)}$$
+   La reacción describe la transición entre ambas conformaciones de silla durante la inversión del anillo, donde la conformación ecuatorial corresponde al estado de mínima energía.
+
+2. *Relacionar la energía libre de Gibbs con la constante de equilibrio:*
+   $$\Delta G^\circ = -RT \ln K_{\text{eq}}$$
+   Esta ecuación de Van 't Hoff conecta directamente la diferencia de estabilidad energética entre confórmeros con su relación molar cuantitativa en el equilibrio.
+
+3. *Despejar y calcular numéricamente la constante de equilibrio $K_{\text{eq}}$:*
+   $$\ln K_{\text{eq}} = -\frac{\Delta G^\circ}{RT} = -\frac{-7300\,\text{J/mol}}{(8.314\,\text{J/mol}\cdot\text{K})(298.15\,\text{K})} = \frac{7300}{2478.8} = 2.945$$
+   El exponente positivo refleja que el sistema favorece termodinámicamente la formación del confórmero más estable.
+   $$K_{\text{eq}} = e^{2.945} = 19.01$$
+   La constante de equilibrio obtenida indica que por cada molécula con el grupo metilo en posición axial existen aproximadamente 19 moléculas con el grupo metilo en posición ecuatorial.
+
+4. *Calcular la fracción molar y el porcentaje de confórmero ecuatorial:*
+   $$\%_{\text{ecuatorial}} = \left(\frac{K_{\text{eq}}}{1 + K_{\text{eq}}}\right) \times 100\,\%$$
+   Esta relación surge de definir la fracción molar como la cantidad del confórmero ecuatorial sobre la suma total de ambos estados en solución.
+   $$\%_{\text{ecuatorial}} = \left(\frac{19.01}{1 + 19.01}\right) \times 100\,\% = \left(\frac{19.01}{20.01}\right) \times 100\,\% = 95.0\,\%$$
+   A temperatura ambiente, exactamente el $95.0\,\%$ de las moléculas de metilciclohexano poseen el sustituyente metilo en posición ecuatorial, minimizando las repulsiones estéricas con los hidrógenos axiales de las posiciones 3 y 5.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ciclopropano experimenta reacciones de adición con apertura de anillo frente a halógenos y ácidos, comportándose de modo semejante a un alqueno?
+2. Para el *cis*-1,4-dimetilciclohexano y el *trans*-1,4-dimetilciclohexano, ¿cuál de los dos isómeros geométricos puede adoptar una conformación di-ecuatorial de máxima estabilidad?
+3. ¿Cómo influye el volumen estérico del grupo terc-butilo ($-C(CH_3)_3$) en el bloqueo conformacional de la inversión de anillo en ciclohexanos sustituidos?

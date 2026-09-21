@@ -1,0 +1,63 @@
+# Cálculos Estequiométricos con Muestras Impuras y Grado de Pureza
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estequiometría de Reacción
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En las aplicaciones químicas del mundo real (minería, metalurgia, química industrial), las materias primas nunca son $100\%$ químicamente puras; contienen impurezas inertes como humedad, silicatos, arcillas o sales asociadas.
+
+El **porcentaje o grado de pureza** indica la fracción en masa de la muestra que corresponde a la sustancia químicamente activa real:
+
+$$\%\text{Pureza} = \left( \frac{m_{\text{sustancia pura}}}{m_{\text{muestra comercial impura}}} \right) \times 100\%$$
+
+En cualquier cálculo estequiométrico, **únicamente la fracción pura reacciona químicamente**. Las impurezas no intervienen en la estequiometría de la reacción principal y quedan como escoria, residuo inerte o precipitados insolubles.
+
+### Formalización Matemática y Leyes Físicas
+Determinación de masa pura a partir de muestra impura:
+$$m_{\text{pura}} = m_{\text{impura}} \times \left( \frac{\%\text{Pureza}}{100} \right)$$
+Determinación de masa comercial impura requerida para obtener cierta masa pura:
+$$m_{\text{impura requerida}} = m_{\text{pura requerida}} \times \left( \frac{100}{\%\text{Pureza}} \right)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Introducir la masa total de la muestra impura directamente en el cálculo de moles sin descontar las impurezas.
+2. Olvidar que para calcular la cantidad de producto formado se debe usar la masa pura, pero para calcular el costo económico se debe usar la masa comercial impura.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del oro en la batea:** Tienes $1000\,\text{g}$ de arena sacada del río que contiene $15\%$ de oro fino. No tienes un kilogramo de oro: sólo tienes $150\,\text{g}$ de oro puro; los otros $850\,\text{g}$ son arena común que no vale nada y que no se funde con el oro.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se tratan $250.0\,\text{g}$ de una muestra de piedra caliza que contiene $80.0\%$ de pureza en carbonato de calcio ($CaCO_3$) con exceso de ácido clorhídrico:
+$$CaCO_3(s) + 2 HCl(aq) \longrightarrow CaCl_2(aq) + CO_2(g) + H_2O(l)$$
+Calcule la masa en gramos de cloruro de calcio ($CaCl_2$) obtenida y el volumen de $CO_2$ gaseoso generado en condiciones normales ($22.4\,\text{L/mol}$). Datos: $CaCO_3=100.09\,\text{g/mol}$, $CaCl_2=110.98\,\text{g/mol}$.
+
+**Paso 1:** Cálculo de la masa pura de $CaCO_3$:
+$$m_{\text{pura}} = 250.0\,\text{g muestra} \times 0.800 = 200.0\,\text{g de } CaCO_3\,\text{puro}$$
+**Paso 2:** Moles de $CaCO_3$ puro reaccionante:
+$$n = \frac{200.0\,\text{g}}{100.09\,\text{g/mol}} = 1.998\,\text{mol}$$
+**Paso 3:** Masa de $CaCl_2$ producido (relación estequiométrica $1:1$):
+$$m(CaCl_2) = 1.998\,\text{mol} \times 110.98\,\frac{\text{g}}{\text{mol}} = 221.7\,\text{g de } CaCl_2$$
+**Paso 4:** Volumen de $CO_2$ en condiciones normales:
+$$V(CO_2) = 1.998\,\text{mol} \times 22.414\,\frac{\text{L}}{\text{mol}} = 44.8\,\text{L de } CO_2$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué es fundamental que la industria farmacéutica exija materias primas con purezas superiores al $99.9\%$?
+2. ¿Cómo se determina en el laboratorio la pureza de una muestra de mineral mediante titulación volumétrica?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

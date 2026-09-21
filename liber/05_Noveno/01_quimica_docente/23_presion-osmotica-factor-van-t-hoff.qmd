@@ -1,0 +1,68 @@
+# Presión Osmótica y Factor de Ionización de Van 't Hoff (Oriakhi Cap. 15)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Propiedades Coligativas de las Disoluciones
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **ósmosis** es el flujo espontáneo neto de moléculas de solvente a través de una **membrana semipermeable** (que permite el paso de moléculas de solvente pero bloquea a las partículas de soluto) desde la disolución más diluida hacia la más concentrada, impulsado por el gradiente de potencial químico. La **presión osmótica ($\Pi$)** es la presión hidrostática externa exacta que debe aplicarse sobre la disolución concentrada para detener por completo dicho flujo neto osmótico.
+
+Jacobus Henricus van 't Hoff (Premio Nobel de Química 1901) demostró que la presión osmótica obedece una ecuación análoga a la ley de los gases ideales: $\Pi = M R T$.
+
+Para solutos que son **electrólitos** (sales, ácidos y bases) que se disocian en iones en solución, el número de partículas activas se multiplica. Para corregir este efecto electroquímico, van 't Hoff introdujo el **factor $i$**:
+
+$$i = \frac{\text{moles reales de partículas en disolución}}{\text{moles de unidades fórmula disueltas inicialmente}}$$
+
+### Formalización Matemática y Leyes Físicas
+Ecuación de van 't Hoff para la presión osmótica:
+$$\Pi = i \cdot M \cdot R \cdot T$$
+Donde $M$ es la molaridad, $R = 0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)}$ y $T$ la temperatura absoluta en Kelvin.
+Modificación de las propiedades coligativas para electrólitos:
+$$\Delta T_b = i \cdot K_b \cdot m \qquad \Delta T_f = i \cdot K_f \cdot m$$
+Factor $i$ teórico ideal según el número de iones generados ($\nu$):
+$$NaCl \to Na^+ + Cl^- \implies i = 2$$
+$$CaCl_2 \to Ca^{2+} + 2 Cl^- \implies i = 3$$
+Relación con el grado de disociación aparente ($\alpha$):
+$$i = 1 + \alpha(\nu - 1)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Olvidar multiplicar por el factor $i$ al calcular propiedades coligativas de sales como $NaCl$ o $MgCl_2$.
+2. Creer que el factor $i$ real experimental es siempre idéntico al valor teórico entero (a concentraciones reales, la atracción electrostática interiónica forma pares iónicos que reducen levemente el valor de $i$, ej. $NaCl$ tiene $i=1.87$ en lugar de $2.0$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del glóbulo rojo en agua salada:** Los glóbulos rojos son bolsitas semipermeables con sales adentro. Si los colocas en agua pura destilada (medio hipotónico), el agua entra con furia hasta hacerlos reventar (hemólisis). Si los colocas en salmuera saturada (medio hipertónico), el agua sale del glóbulo arrugándolo como una pasa (crenación). El suero fisiológico al $0.9\%\,NaCl$ tiene la misma presión osmótica que la sangre (isotónico).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 15):** Se disuelven $2.50\,\text{g}$ de una proteína globular en agua suficiente para preparar $100.0\,\text{mL}$ de solución. A $25.0^\circ\text{C}$ ($298.15\,\text{K}$), la presión osmótica medida experimentalmente en un osmómetro de membrana es $\Pi = 4.35\,\text{mmHg}$. Calcule la masa molar de la proteína ($i=1$).
+
+**Paso 1:** Conversión de presión osmótica a atmósferas:
+$$\Pi = \frac{4.35\,\text{mmHg}}{760\,\text{mmHg/atm}} = 5.724 \times 10^{-3}\,\text{atm}$$
+**Paso 2:** Cálculo de la molaridad mediante la ecuación de van 't Hoff:
+$$M = \frac{\Pi}{R \cdot T} = \frac{5.724 \times 10^{-3}\,\text{atm}}{(0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)})(298.15\,\text{K})} = \frac{5.724 \times 10^{-3}}{24.466} = 2.3395 \times 10^{-4}\,\text{mol/L}$$
+**Paso 3:** Moles de proteína en los $100.0\,\text{mL}$ ($0.1000\,\text{L}$) de solución:
+$$n = M \cdot V = (2.3395 \times 10^{-4}\,\text{mol/L}) \times (0.1000\,\text{L}) = 2.340 \times 10^{-5}\,\text{mol}$$
+**Paso 4:** Masa molar de la macromolécula:
+$$M = \frac{m}{n} = \frac{2.50\,\text{g}}{2.340 \times 10^{-5}\,\text{mol}} = 106800\,\text{g/mol} \approx 1.07 \times 10^5\,\text{g/mol}$$
+*(Nótese que para macromoléculas gigantes, la crioscopía arrojaría un descenso indetectable de apenas $0.0004^\circ\text{C}$, mientras que la presión osmótica genera una columna líquida medible con altísima precisión).*
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo funciona la desalación del agua marina por ósmosis inversa en las plantas potabilizadoras?
+2. ¿Por qué una solución $0.1\,m$ de $CaCl_2$ provoca un descenso crioscópico casi tres veces mayor que una solución $0.1\,m$ de sacarosa?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,117 @@
+# Química Verde: Los Doce Principios de Anastas-Warner, Economía Atómica y Factor Ambiental E
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Sostenibilidad y Métricas de la Química Verde
+> * **Propósito Docente:** Dominar los doce principios de la Química Verde, diferenciar el rendimiento químico clásico de la Economía Atómica ($\%EA$) y cuantificar el Factor Ambiental $E$ de Sheldon mediante el estudio comparativo de síntesis farmacéuticas.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Durante la mayor parte del siglo XX, el desarrollo y la optimización de los procesos de manufactura en la industria química estuvieron subordinados casi exclusivamente al criterio del **rendimiento porcentual de reacción** y a la viabilidad de costos inmediatos de materias primas fósiles, externalizando los costos ecológicos derivados de la generación masiva de efluentes tóxicos, disolventes volátiles y subproductos residuales. Las estrategias ambientales tradicionales se limitaban al enfoque de "fin de tubería" (*end-of-pipe*), consistente en construir plantas de tratamiento de aguas, incineradores y vertederos confinados para limpiar, neutralizar o enterrar los contaminantes una vez que ya habían sido generados.
+
+En la década de 1990 surgió una revolución conceptual y paradigmática: la **Química Verde (*Green Chemistry*)**, formulada por Paul T. Anastas y John C. Warner en 1998 en su obra fundacional *Green Chemistry: Theory and Practice* (Oxford University Press). La Química Verde se define como **el diseño de productos y procesos químicos que reducen o eliminan de forma intrínseca el uso y la generación de sustancias peligrosas** para la salud humana y los ecosistemas, priorizando la prevención en el origen a nivel molecular sobre la remediación posterior.
+
+Anastas y Warner codificaron esta filosofía en **Los Doce Principios Fundamentales de la Química Verde**:
+
+1. **Prevención:** Es infinitamente más ventajoso prevenir y evitar la generación de residuos que tratar o limpiar los desechos después de que se hayan producido.
+2. **Economía Atómica:** Los métodos sintéticos deben diseñarse de manera que incorporen al máximo todos los átomos de los materiales de partida en el producto final comercial deseado.
+3. **Síntesis Químicas Menos Peligrosas:** Siempre que sea factible, los métodos sintéticos deben planificarse para utilizar y generar sustancias con escasa o nula toxicidad para la salud y el medio ambiente.
+4. **Diseño de Productos Químicos Más Seguros:** Los productos químicos deben concebirse para preservar la eficacia de su función deseada minimizando al mismo tiempo su toxicidad intrínseca.
+5. **Disolventes y Sustancias Auxiliares Más Seguros:** El empleo de sustancias auxiliares (disolventes de reacción, agentes de separación, desecantes) debe volverse innecesario o, cuando sea imprescindible, seleccionarse sustancias inocuas no volátiles (agua, fluidos supercríticos como el $CO_2$ supercrítico o líquidos iónicos biodegradables).
+6. **Diseño para la Eficiencia Energética:** Los requerimientos energéticos de los procesos químicos deben reconocerse por sus impactos ambientales y económicos y minimizarse, procurando operar a temperatura y presión ambiente mediante tecnologías asistidas por microondas, ultrasonido o fotocatálisis solar.
+7. **Uso de Materias Primas Renovables:** La materia prima de partida debe ser biológicamente renovable en lugar de no renovable o fósil agotable (como el aprovechamiento de biomasa celulósica agrícola en biorrefinerías).
+8. **Reducción de Derivados:** La derivatización innecesaria (el uso de grupos bloqueantes o protectores temporales) debe minimizarse o evitarse, ya que tales etapas exigen reactivos adicionales y generan residuos estequiométricos no recuperables.
+9. **Catálisis:** Los reactivos catalíticos selectivos (altamente eficientes en cantidades submolares) son inherentemente superiores a los reactivos estequiométricos convencionales consumidos en masa.
+10. **Diseño para la Degradabilidad:** Los productos químicos deben concebirse de modo que, al finalizar su función útil, se descompongan espontáneamente en productos de degradación inocuos que no persistan en el medio ambiente.
+11. **Análisis en Tiempo Real para la Prevención de la Contaminación:** Las metodologías analíticas deben desarrollarse para permitir la monitorización y el control en línea dentro del reactor antes de que se originen sustancias no deseadas.
+12. **Química Inherentemente Segura para la Prevención de Accidentes:** Las sustancias y el estado físico de los reactivos empleados en un proceso deben seleccionarse para minimizar el riesgo de accidentes químicos, incluyendo emisiones súbitas, incendios y explosiones.
+
+Para transformar estos principios éticos en herramientas de ingeniería cuantitativa rigurosa, se definieron dos métricas universales:
+
+El **Rendimiento Químico Tradicional ($\%R$)** mide únicamente la masa o moles del producto deseado obtenido respecto a la predicción teórica dictada por el reactivo limitante:
+
+$$\%R = \left(\frac{m_{\text{producto real}}}{m_{\text{producto teórico}}}\right) \times 100\,\%$$
+
+Esta métrica clásica es completamente ciega a la generación de residuos. Una reacción puede exhibir un rendimiento del $100\,\%$ y, no obstante, ser ecológicamente atroz si genera diez kilogramos de subproductos inútiles por cada kilogramo de producto útil (como ocurre en muchas reacciones clásicas de adición y acoplamiento estequiométrico).
+
+Para subsanar esta limitación, Barry Trost (Premio Nobel de Química) introdujo en 1991 el concepto de **Economía Atómica ($\%EA$)**, la cual evalúa cuántos de los átomos reactivos suministrados quedan incorporados en la molécula final:
+
+$$\%EA = \left( \frac{\text{Masa Molar del Producto Deseado}}{\sum \text{Masas Molares de Todos los Reactivos en la Ecuación Estequiométrica}} \right) \times 100\,\%$$
+
+- Las reacciones de **adición pura** (como la hidrogenación catalítica de un alqueno o una polimerización vinílica) poseen una economía atómica teórica del **$100\,\%$**, pues todos los átomos de los reactivos se fusionan en el producto final.
+- Las reacciones de **sustitución y eliminación** presentan economías atómicas significativamente inferiores, al desprender obligatoriamente átomos en forma de sales o subproductos de bajo o nulo valor comercial.
+
+De forma complementaria, Roger Sheldon definió en 1992 el **Factor Ambiental $E$ (E-factor)**, la métrica directa más pragmática para la auditoría ambiental industrial:
+
+$$E = \frac{\text{Masa Total de Residuos Generados (kg)}}{\text{Masa del Producto Deseado Comercial Obtenido (kg)}}$$
+
+El Factor $E$ varía drásticamente según el sector industrial químico:
+- **Refinación de Petróleo:** $E < 0.1$ (procesos continuos catalíticos a escala masiva donde prácticamente todo el hidrocarburo se convierte en combustible o insumo).
+- **Química a Granel (*Bulk Chemicals*):** $E \approx 1 - 5$.
+- **Química Fina (*Fine Chemicals*):** $E \approx 5 - 50$.
+- **Industria Farmacéutica:** Históricamente exhibe un **$E \approx 25 - 100+$** (para producir un kilogramo de un principio activo farmacéutico de alta pureza se generan rutinariamente entre 25 y más de 100 kilogramos de desechos químicos, principalmente disolventes orgánicos usados en extracciones, sales inorgánicas de neutralizaciones intermedias y reactivos de protección funcional).
+
+El caso paradigmático en la historia de la Química Verde es la síntesis industrial del analgésico **Ibuprofeno**:
+- **Proceso Clásico de Boots (década de 1960):** Ruta estequiométrica en 6 etapas que utilizaba reactivos estequiométricos de acoplamiento. Su economía atómica era de apenas el **$40\,\%$**, generando el $60\,\%$ de la masa de reactivos en forma de residuos inútiles de sales de aluminio, acetato y cloruros.
+- **Proceso Verde de BHC (década de 1990):** Síntesis catalítica en solo 3 etapas consecutivas empleando catalizadores reciclables de ácido fluorhídrico anhidro ($HF$), hidrogenación sobre níquel Raney y carbonilación con monóxido de carbono sobre paladio. Su economía atómica se elevó al **$77\,\%$** (alcanzando el **$99\,\%$** si se recupera el subproducto ácido acético), reduciendo el Factor $E$ a una fracción mínima y eliminando millones de kilogramos de residuos anuales a nivel global.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir un rendimiento químico del $100\,\%$ con un proceso verde o limpio:** Asumir que una reacción sin pérdidas de rendimiento es ecológicamente sostenible. Una reacción de Wittig puede tener un rendimiento del $95\,\%$, pero genera óxido de trifenilfosfina ($Ph_3P=O$, masa molar $278\,\text{g/mol}$) como residuo pesado obligatorio por cada molécula pequeña sintetizada, arrojando una economía atómica pobrísima.
+2. **Pensar que la Química Verde es una rama separada o una "química de plantas":** Creer que es una disciplina botánica o agronómica. La Química Verde es una filosofía integral de ingeniería molecular y diseño aplicable a cualquier síntesis inorgánica, orgánica, polimérica o analítica.
+3. **Ignorar el volumen masivo de los disolventes:** Calcular el impacto ecológico considerando solo los reactivos estequiométricos, olvidando que en la práctica farmacéutica más del $85\,\%$ de la masa total de residuos generados proviene de los disolventes orgánicos empleados en las etapas de lavado, extracción y cromatografía.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Receta de Cocina y los Desechos de Cocina:** Cocinar una ensalada pelando papas, zanahorias y botando cáscaras y huesos (bajo porcentaje de economía atómica: mucha materia prima pagada termina en la basura); preparar un plato donde el $100\,\%$ del alimento entero se incorpora a la comida (economía atómica del $100\,\%$).
+2. **Cálculo Comparativo de Rutas en la Pizarra:** Proponer a los alumnos sintetizar una molécula aromática por dos métodos: sustitución nucleófila estequiométrica tradicional vs. catálisis heterogénea oxidativa con oxígeno del aire, contabilizando las masas moleculares que terminan en el producto frente a las que se van al desagüe.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un laboratorio químico sintetiza óxido de etileno (oxirano, $C_2H_4O$, masa molar $44.05\,\text{g/mol}$), un intermediario crucial para la producción de etilenglicol y poliésteres, evaluando dos rutas sintéticas alternativas:
+- **Ruta Clásica de la Clorohidrina (2 etapas):**
+$$C_2H_4 + Cl_2 + H_2O \longrightarrow Cl-CH_2CH_2-OH + HCl$$
+$$2\,Cl-CH_2CH_2-OH + Ca(OH)_2 \longrightarrow 2\,C_2H_4O + CaCl_2 + 2\,H_2O$$
+Reacción global combinada:
+$$2\,C_2H_4 + 2\,Cl_2 + Ca(OH)_2 \longrightarrow 2\,C_2H_4O + CaCl_2 + 2\,HCl$$
+- **Ruta Verde Catalítica Directa:**
+$$2\,C_2H_4 + O_2 \xrightarrow{\text{Ag / } 250^\circ\text{C}} 2\,C_2H_4O$$
+
+1. Calcule la masa molar total de reactivos consumidos y determine la Economía Atómica ($\%EA$) para la Ruta Clásica de la Clorohidrina.
+2. Calcule la Economía Atómica ($\%EA$) para la Ruta Verde Catalítica Directa.
+3. Si en una planta industrial que opera la Ruta Clásica se producen $88.10\,\text{kg}$ de óxido de etileno ($2.000\,\text{kmol}$) generando simultáneamente $111.00\,\text{kg}$ de cloruro de calcio ($CaCl_2$, masa molar $111.0\,\text{g/mol}$) y $72.92\,\text{kg}$ de ácido clorhídrico ($HCl$, masa molar $36.46\,\text{g/mol}$), calcule el Factor Ambiental $E$ del proceso y justifique la superioridad ecológica de la ruta catalítica.
+
+**Solución paso a paso:**
+
+1. *Calcular la Economía Atómica para la Ruta Clásica de la Clorohidrina:*
+   Identificamos las masas molares estequiométricas en la reacción balanceada:
+   $$\text{Masa de reactivos} = 2\,M_m(C_2H_4) + 2\,M_m(Cl_2) + M_m(Ca(OH)_2)$$
+   $$\text{Masa de reactivos} = 2(28.05) + 2(70.90) + 74.09 = 56.10 + 141.80 + 74.09 = 271.99\,\text{g/mol}$$
+   La masa molar del producto deseado generado en la estequiometría es:
+   $$\text{Masa de producto deseado} = 2\,M_m(C_2H_4O) = 2(44.05) = 88.10\,\text{g/mol}$$
+   Aplicando la fórmula de Trost para la economía atómica:
+   $$\%EA_{\text{clásica}} = \left(\frac{88.10\,\text{g/mol}}{271.99\,\text{g/mol}}\right) \times 100\,\% = 32.39\,\% \approx 32.4\,\%$$
+   En la ruta clásica, casi el **$68\,\%$ de la masa total de reactivos comprados** se pierde en forma de subproductos inorgánicos contaminantes ($CaCl_2$ y $HCl$).
+
+2. *Calcular la Economía Atómica para la Ruta Verde Catalítica:*
+   La reacción global balanceada es:
+   $$\text{Masa de reactivos} = 2\,M_m(C_2H_4) + M_m(O_2) = 2(28.05) + 32.00 = 56.10 + 32.00 = 88.10\,\text{g/mol}$$
+   $$\text{Masa de producto deseado} = 2\,M_m(C_2H_4O) = 2(44.05) = 88.10\,\text{g/mol}$$
+   $$\%EA_{\text{catalítica}} = \left(\frac{88.10\,\text{g/mol}}{88.10\,\text{g/mol}}\right) \times 100\,\% = 100.0\,\%$$
+   La ruta catalítica con plata posee una **Economía Atómica perfecta del $100.0\,\%$**: la totalidad de los átomos de etileno y oxígeno molecular se incorporan en la estructura del óxido de etileno sin generar ningún subproducto residual.
+
+3. *Calcular el Factor Ambiental $E$ de la Ruta Clásica:*
+   $$\text{Masa total de residuos} = m_{CaCl_2} + m_{HCl} = 111.00\,\text{kg} + 72.92\,\text{kg} = 183.92\,\text{kg}$$
+   $$E = \frac{\text{Masa de residuos}}{\text{Masa de producto útil}} = \frac{183.92\,\text{kg}}{88.10\,\text{kg}} = 2.0876 \approx 2.09$$
+   Por cada kilogramo de óxido de etileno producido comercialmente, la ruta clásica genera más de **$2.09\,\text{kilogramos}$ de residuos químicos agresivos**, mientras que la ruta catalítica verde opera con un Factor $E$ teórico de cero ($E \approx 0$), reduciendo a cero el costo de tratamiento de efluentes y el impacto ambiental.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el dióxido de carbono en estado supercrítico ($scCO_2$, por encima de $31.1^\circ\text{C}$ y $73.8\,\text{atm}$) es considerado un disolvente verde modelo en la extracción industrial de cafeína del café frente al uso histórico de diclorometano ($CH_2Cl_2$)?
+2. Si una reacción química posee un rendimiento del $98\,\%$ pero un factor de economía atómica del $25\,\%$, ¿qué argumentos de sostenibilidad molecular utilizaría usted para proponer el rediseño del proceso?
+3. ¿Cómo promueven los doce principios de la Química Verde el reemplazo de los reactivos oxidantes tradicionales basados en metales de transición pesados como cromo(VI) por peróxido de hidrógeno ($H_2O_2$) o dioxígeno ($O_2$)?

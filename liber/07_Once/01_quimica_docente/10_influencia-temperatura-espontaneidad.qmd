@@ -1,0 +1,91 @@
+# Influencia de la Temperatura en la Espontaneidad Termodinámica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Clásica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La ecuación fundamental de Gibbs $\Delta G = \Delta H - T \Delta S$ pone de manifiesto la competencia entre dos factores físicos universales que controlan el devenir de las reacciones químicas:
+1. **Factor Entálpico ($\Delta H$):** La tendencia de los sistemas a alcanzar un estado de mínima energía potencial electrónica (enlaces más fuertes y estables, favorecido cuando $\Delta H < 0$).
+2. **Factor Entrópico ($-T \Delta S$):** La tendencia estadística a dispersar la energía entre el mayor número posible de microestados cuánticos (favorecido cuando $\Delta S > 0$).
+
+Dado que la temperatura absoluta $T$ en Kelvin siempre es estrictamente positiva ($T > 0$), su magnitud modula y pondera el peso del factor entrópico. Asumiendo en primera aproximación que $\Delta H$ y $\Delta S$ son esencialmente independientes de la temperatura en un intervalo moderado, surgen **cuatro casos termodinámicos fundamentales**:
+
+| Caso | $\Delta H$ | $\Delta S$ | Signo de $\Delta G = \Delta H - T \Delta S$ | Carácter de Espontaneidad | Ejemplos Típicos |
+|:---|:---:|:---:|:---|:---|:---|
+| **I** | $-$ | $+$ | Negativo a **cualquier** $T$ | **Espontáneo a cualquier temperatura** | Descomposición de $\text{H}_2\text{O}_2$, combustión de azúcares |
+| **II** | $+$ | $-$ | Positivo a **cualquier** $T$ | **No espontáneo a cualquier temperatura** |
+
+$$3 \text{O}_2(g) \to 2 \text{O}_3(g)$$
+
+|
+| **III** | $-$ | $-$ | $\Delta G < 0$ a **baja $T$**; $\Delta G > 0$ a **alta $T$** | **Espontáneo solo a baja temperatura** | Condensación de vapores, congelación del agua, síntesis de $\text{NH}_3$ |
+| **IV** | $+$ | $+$ | $\Delta G > 0$ a **baja $T$**; $\Delta G < 0$ a **alta $T$** | **Espontáneo solo a alta temperatura** | Fusión del hielo, vaporización, calcinación de $\text{CaCO}_3$ |
+
+**Temperatura de Transición o Inversión ($T_{\text{eq}}$):**
+Para los casos III y IV, existe una temperatura crítica a la cual las fuerzas antagónicas de entalpía y entropía se equilibran exactamente ($\Delta G = 0$):
+$$0 = \Delta H - T_{\text{eq}} \Delta S \implies T_{\text{eq}} = \frac{\Delta H}{\Delta S}$$
+A temperaturas superiores a $T_{\text{eq}}$, el término trófico $T\Delta S$ domina el balance de Gibbs.
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta G(T) \approx \Delta H^\circ - T \Delta S^\circ$$
+$$T_{\text{inversión}} = \frac{\Delta H^\circ}{\Delta S^\circ} \quad (\text{cuando } \Delta H \text{ y } \Delta S \text{ tienen el mismo signo})$$
+Para cambios de fase en equilibrio:
+$$T_{\text{ebullición}} = \frac{\Delta H_{\text{vap}}}{\Delta S_{\text{vap}}}$$
+Regla de Trouton empírica: $\Delta S_{\text{vap}} \approx 85-88\,\text{J}/(\text{mol}\cdot\text{K})$ para líquidos no polares.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Asumir que aumentar la temperatura siempre favorece la espontaneidad:** Si la reacción es exotérmica con disminución de entropía ($\Delta H < 0, \Delta S < 0$), aumentar la temperatura hace más positivo el término $-T\Delta S$, volviendo la reacción no espontánea a altas temperaturas.
+2. **Usar temperaturas en grados Celsius en la fórmula $T = \Delta H/\Delta S$:** Produce temperaturas de inversión erróneas o negativas si no se trabaja en escala termodinámica Kelvin.
+3. **Ignorar el cambio de estado:** Extrapolar la linealidad de $\Delta G$ con la temperatura más allá de los puntos de ebullición o transición de fases sin incorporar los saltos de entalpía y entropía de fase.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Pista de Baile:** La entalpía negativa es la atracción romántica de bailar juntos abrazados (mínima energía, menos microestados). A baja temperatura (música lenta), las parejas se unen espontáneamente (caso III). Si subes la temperatura (música electrónica frenética con volumen atronador), la energía cinética agita a la multitud: nadie puede sostenerse quieto y todos se separan bailando libremente por el salón (domina $T\Delta S$, favoreciendo la dispersión y los estados libres).
+2. **El Termostato del Hielo:** A $-10^\circ\text{C}$ ($263\,\text{K}$), la congelación del agua es espontánea ($\Delta G < 0$). A $+10^\circ\text{C}$ ($283\,\text{K}$), la fusión es la espontánea. A $0^\circ\text{C}$ ($273.15\,\text{K}$), ambas fases coexisten en perfecto equilibrio termodinámico.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Para la calcinación industrial del carbonato de calcio:
+$$\text{CaCO}_3(s) \rightleftharpoons \text{CaO}(s) + \text{CO}_2(g)$$
+
+Con $\Delta H^\circ = +178.3\,\text{kJ/mol}$ y $\Delta S^\circ = +160.5\,\text{J}/(\text{mol}\cdot\text{K})$.
+1. Determine la temperatura teórica mínima (en Kelvin y en $^\circ\text{C}$) a la cual esta descomposición se vuelve termodinámicamente espontánea bajo una presión de dióxido de carbono de $1\,\text{bar}$.
+2. Calcule $\Delta G^\circ$ a $1000^\circ\text{C}$ y comente la viabilidad del proceso en hornos industriales.
+
+**Solución paso a paso:**
+1. *Calcular la temperatura de inversión ($T_{\text{eq}}$):*
+   La condición límite para que el proceso pase de no espontáneo a espontáneo es $\Delta G^\circ = 0$:
+   $$T_{\text{eq}} = \frac{\Delta H^\circ}{\Delta S^\circ}$$
+   Convertir $\Delta H^\circ$ a Joules:
+   $$\Delta H^\circ = 178.3\,\text{kJ/mol} = 178300\,\text{J/mol}$$
+   $$T_{\text{eq}} = \frac{178300\,\text{J/mol}}{160.5\,\text{J}/(\text{mol}\cdot\text{K})} = 1110.9\,\text{K}$$
+   Convertir a Celsius:
+   $$T({}^\circ\text{C}) = 1110.9 - 273.15 = 837.8\,{}^\circ\text{C} \approx 838\,{}^\circ\text{C}$$
+   *Conclusión:* Por encima de $838^\circ\text{C}$, la descomposición es espontánea bajo $1\,\text{bar}$ de $\text{CO}_2$.
+2. *Calcular $\Delta G^\circ$ a $1000^\circ\text{C}$ ($T = 1273.15\,\text{K}$):*
+   $$\Delta G^\circ = \Delta H^\circ - T \Delta S^\circ$$
+   $$\Delta G^\circ = 178.3\,\text{kJ/mol} - (1273.15\,\text{K})(0.1605\,\text{kJ}/(\text{mol}\cdot\text{K}))$$
+   $$\Delta G^\circ = 178.3\,\text{kJ/mol} - 204.34\,\text{kJ/mol} = -26.04\,\text{kJ/mol}$$
+   *Interpretación:* A $1000^\circ\text{C}$, $\Delta G^\circ < 0$. Los hornos industriales de cal operan rutinariamente entre $900^\circ\text{C}$ y $1000^\circ\text{C}$ para asegurar una alta velocidad de conversión termodinámica y cinética.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua líquida no hierve a $80^\circ\text{C}$ a nivel del mar si el proceso de evaporación tiene $\Delta S > 0$?
+2. Si una reacción tiene tanto $\Delta H < 0$ como $\Delta S < 0$, ¿qué estrategia experimental debe adoptarse para lograr que sea espontánea?
+3. ¿Cómo se deduce la regla empírica de Trouton para la ebullición de líquidos utilizando la temperatura de equilibrio?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

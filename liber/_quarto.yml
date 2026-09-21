@@ -7,6 +7,7 @@ project:
 bibliography: references.bib
 
 book:
+  author: "Camilo Tayac"
   cover-image: Portada.png
   cover-image-alt: "Portada del libro Natura Docens - Ciencias Naturales"
   title: "Natura Docens"
@@ -17,43 +18,234 @@ book:
   search: true
   repo-url: https://github.com/camilotayac/docere/
   repo-actions: [edit]
-  sharing: [twitter, facebook]
+  sharing: [twitter, facebook, linkedin]
+  twitter-card:
+    creator: "camilotayac"
+    site: "camilotayac"
+    card-style: summary_large_image
+  open-graph:
+    title: "Natura Docens"
+    description: "Ciencias Naturales - Libro interactivo de química para educación media."
+    image: "Portada.png"
   output-file: natura-docens
 
   sidebar:
     collapse-level: 1
 
   chapters:
-    - part: "Generalidades"
+    - index.qmd
+    - 01_Generalidades/02_PlanDeArea.qmd
+    - 01_Generalidades/03_PresentacionDocente.qmd
+    - part: "Sexto — Química (Docente)"
       chapters:
-        - index.qmd
-        - 01_Generalidades/01_Introduccion.qmd
-        - 01_Generalidades/02_PlanDeArea.qmd
-    # - part: "Décimo - Química"
-    #   chapters:
-    #     - 06_Decimo/
-  appendices:
+        - 02_Sexto/01_quimica_docente/01_magnitudes-medicion-analisis-dimensional.qmd
+        - 02_Sexto/01_quimica_docente/02_masa-volumen-densidad.qmd
+        - 02_Sexto/01_quimica_docente/03_propiedades-materia-intensivas-extensivas.qmd
+        - 02_Sexto/01_quimica_docente/04_temperatura-escalas-termicas.qmd
+        - 02_Sexto/01_quimica_docente/05_estados-agregacion-modelo-corpuscular.qmd
+        - 02_Sexto/01_quimica_docente/06_cambios-de-estado-fase.qmd
+        - 02_Sexto/01_quimica_docente/07_curvas-calentamiento-calor-latente.qmd
+        - 02_Sexto/01_quimica_docente/08_sustancias-puras-elementos-compuestos.qmd
+        - 02_Sexto/01_quimica_docente/09_mezclas-homogeneas-soluciones-coloides.qmd
+        - 02_Sexto/01_quimica_docente/10_mezclas-heterogeneas-suspensiones.qmd
+        - 02_Sexto/01_quimica_docente/11_separacion-mecanica-filtracion-tamizado.qmd
+        - 02_Sexto/01_quimica_docente/12_separacion-densidad-decantacion-centrifugacion.qmd
+        - 02_Sexto/01_quimica_docente/13_separacion-termica-evaporacion-cristalizacion.qmd
+        - 02_Sexto/01_quimica_docente/14_separacion-destilacion-simple.qmd
+        - 02_Sexto/01_quimica_docente/15_separacion-magnetica-cromatografia.qmd
+    - part: "Séptimo — Química (Docente)"
+      chapters:
+        - 03_Septimo/01_quimica_docente/01_evolucion-modelos-atomicos-dalton-thomson.qmd
+        - 03_Septimo/01_quimica_docente/02_modelo-nuclear-rutherford-bohr.qmd
+        - 03_Septimo/01_quimica_docente/03_particulas-subatomicas-masas-cargas.qmd
+        - 03_Septimo/01_quimica_docente/04_numero-atomico-masa-iones.qmd
+        - 03_Septimo/01_quimica_docente/05_isotopos-abundancia-peso-atomico.qmd
+        - 03_Septimo/01_quimica_docente/06_organizacion-tabla-periodica-bloques.qmd
+        - 03_Septimo/01_quimica_docente/07_metales-no-metales-familias-quimicas.qmd
+        - 03_Septimo/01_quimica_docente/08_propiedades-periodicas-radio-atomico-ionico.qmd
+        - 03_Septimo/01_quimica_docente/09_propiedades-periodicas-energia-ionizacion-electronegatividad.qmd
+        - 03_Septimo/01_quimica_docente/10_radiacion-electromagnetica-cuantizacion-planck.qmd
+        - 03_Septimo/01_quimica_docente/11_dualidad-onda-particula-incertidumbre.qmd
+        - 03_Septimo/01_quimica_docente/12_numeros-cuanticos-orbitales-atomicos.qmd
+        - 03_Septimo/01_quimica_docente/13_configuracion-electronica-aufbau-hund-pauli.qmd
+        - 03_Septimo/01_quimica_docente/14_electrones-valencia-kernel-notacion-puntos.qmd
+    - part: "Octavo — Química (Docente)"
+      chapters:
+        - 04_Octavo/01_quimica_docente/01_estabilidad-electronica-regla-octeto.qmd
+        - 04_Octavo/01_quimica_docente/02_enlace-ionico-red-cristalina-born-haber.qmd
+        - 04_Octavo/01_quimica_docente/03_enlace-covalente-polaridad-electronegatividad.qmd
+        - 04_Octavo/01_quimica_docente/04_enlace-metalico-teoria-mar-electrones.qmd
+        - 04_Octavo/01_quimica_docente/05_estructuras-lewis-cargas-formales.qmd
+        - 04_Octavo/01_quimica_docente/06_resonancia-quimica-hibridos.qmd
+        - 04_Octavo/01_quimica_docente/07_excepciones-regla-octeto.qmd
+        - 04_Octavo/01_quimica_docente/08_geometria-molecular-trpev-vsepr.qmd
+        - 04_Octavo/01_quimica_docente/09_momento-dipolar-polaridad-molecular.qmd
+        - 04_Octavo/01_quimica_docente/10_teoria-enlace-valencia-hibridacion.qmd
+        - 04_Octavo/01_quimica_docente/11_fuerzas-van-der-waals-dipolares-london.qmd
+        - 04_Octavo/01_quimica_docente/12_puentes-hidrogeno-propiedades-agua.qmd
+        - 04_Octavo/01_quimica_docente/13_propiedades-liquidos-viscosidad-tension.qmd
+        - 04_Octavo/01_quimica_docente/14_solidos-cristalinos-amorfos.qmd
+        - 04_Octavo/01_quimica_docente/15_estados-oxidacion-reglas-asignacion.qmd
+        - 04_Octavo/01_quimica_docente/16_nomenclatura-oxidos-basicos-acidos.qmd
+        - 04_Octavo/01_quimica_docente/17_nomenclatura-hidroxidos-peroxidos.qmd
+        - 04_Octavo/01_quimica_docente/18_nomenclatura-acidos-hidracidos-oxacidos.qmd
+        - 04_Octavo/01_quimica_docente/19_nomenclatura-sales-haloideas-oxisales.qmd
+    - part: "Noveno — Química (Docente)"
+      chapters:
+        - 05_Noveno/01_quimica_docente/01_simbologia-ecuaciones-quimicas-tipos-reaccion.qmd
+        - 05_Noveno/01_quimica_docente/02_ley-conservacion-masa-balanceo-tanteo.qmd
+        - 05_Noveno/01_quimica_docente/03_balanceo-metodo-algebraico-matricial.qmd
+        - 05_Noveno/01_quimica_docente/04_reacciones-acuosas-ecuaciones-ionicas-netas.qmd
+        - 05_Noveno/01_quimica_docente/05_definicion-si-mol-constante-avogadro.qmd
+        - 05_Noveno/01_quimica_docente/06_masa-formula-masa-molar.qmd
+        - 05_Noveno/01_quimica_docente/07_conversiones-estequiometricas-masa-mol-particulas.qmd
+        - 05_Noveno/01_quimica_docente/08_composicion-porcentual-centecimal.qmd
+        - 05_Noveno/01_quimica_docente/09_determinacion-formulas-empiricas.qmd
+        - 05_Noveno/01_quimica_docente/10_determinacion-formulas-moleculares-combustion.qmd
+        - 05_Noveno/01_quimica_docente/11_relaciones-molares-factores-estequiometricos.qmd
+        - 05_Noveno/01_quimica_docente/12_calculos-estequiometricos-masa-masa-mol.qmd
+        - 05_Noveno/01_quimica_docente/13_reactivo-limitante-exceso.qmd
+        - 05_Noveno/01_quimica_docente/14_pureza-reactivos-muestras-impuras.qmd
+        - 05_Noveno/01_quimica_docente/15_rendimiento-teorico-real-porcentual.qmd
+        - 05_Noveno/01_quimica_docente/16_solvatacion-factores-solubilidad.qmd
+        - 05_Noveno/01_quimica_docente/17_curvas-solubilidad-saturacion.qmd
+        - 05_Noveno/01_quimica_docente/18_unidades-fisicas-concentracion.qmd
+        - 05_Noveno/01_quimica_docente/19_unidades-quimicas-molaridad-molalidad-fraccion.qmd
+        - 05_Noveno/01_quimica_docente/20_preparacion-soluciones-dilucion-seriada.qmd
+        - 05_Noveno/01_quimica_docente/21_propiedades-coligativas-ley-raoult.qmd
+        - 05_Noveno/01_quimica_docente/22_ascenso-ebulloscopico-descenso-crioscopico.qmd
+        - 05_Noveno/01_quimica_docente/23_presion-osmotica-factor-van-t-hoff.qmd
+    - part: "Décimo — Química (Docente)"
+      chapters:
+        - 06_Decimo/01_quimica_docente/01_variables-estado-gaseoso-presion.qmd
+        - 06_Decimo/01_quimica_docente/02_leyes-empiricas-gases-ideales.qmd
+        - 06_Decimo/01_quimica_docente/03_ley-gas-ideal-volumen-molar.qmd
+        - 06_Decimo/01_quimica_docente/04_densidad-masa-molar-gases.qmd
+        - 06_Decimo/01_quimica_docente/05_mezclas-gases-ley-dalton.qmd
+        - 06_Decimo/01_quimica_docente/06_teoria-cinetico-molecular-ley-graham.qmd
+        - 06_Decimo/01_quimica_docente/07_gases-reales-ecuacion-van-der-waals.qmd
+        - 06_Decimo/01_quimica_docente/08_fundamentos-reacciones-redox-pares.qmd
+        - 06_Decimo/01_quimica_docente/09_balanceo-redox-ion-electron-medio-acido.qmd
+        - 06_Decimo/01_quimica_docente/10_balanceo-redox-ion-electron-medio-basico.qmd
+        - 06_Decimo/01_quimica_docente/11_velocidad-reaccion-cinetica-quimica.qmd
+        - 06_Decimo/01_quimica_docente/12_ley-diferencial-velocidad-ordenes.qmd
+        - 06_Decimo/01_quimica_docente/13_leyes-integradas-velocidad-orden-cero-uno-dos.qmd
+        - 06_Decimo/01_quimica_docente/14_tiempo-vida-media-reacciones.qmd
+        - 06_Decimo/01_quimica_docente/15_teoria-colisiones-energia-activacion.qmd
+        - 06_Decimo/01_quimica_docente/16_ecuacion-arrhenius-efecto-temperatura.qmd
+        - 06_Decimo/01_quimica_docente/17_mecanismos-reaccion-catalisis.qmd
+        - 06_Decimo/01_quimica_docente/18_dinamica-equilibrio-quimico-accion-masas.qmd
+        - 06_Decimo/01_quimica_docente/19_constantes-equilibrio-kc-kp.qmd
+        - 06_Decimo/01_quimica_docente/20_cociente-reaccion-direccion-espontanea.qmd
+        - 06_Decimo/01_quimica_docente/21_principio-le-chatelier-perturbaciones.qmd
+        - 06_Decimo/01_quimica_docente/22_autoionizacion-agua-escalas-ph-poh.qmd
+        - 06_Decimo/01_quimica_docente/23_fuerza-acidos-bases-ka-kb.qmd
+        - 06_Decimo/01_quimica_docente/24_acidos-poliproticos-ionizaciones-sucesivas.qmd
+        - 06_Decimo/01_quimica_docente/25_hidrolisis-sales-disoluciones-acuosas.qmd
+        - 06_Decimo/01_quimica_docente/26_soluciones-amortiguadoras-henderson-hasselbalch.qmd
+        - 06_Decimo/01_quimica_docente/27_capacidad-amortiguadora-rango-tampon.qmd
+        - 06_Decimo/01_quimica_docente/28_principios-analisis-volumetrico-titulaciones.qmd
+        - 06_Decimo/01_quimica_docente/29_curvas-titulacion-acido-fuerte-base-fuerte.qmd
+        - 06_Decimo/01_quimica_docente/30_curvas-titulacion-acido-debil-base-fuerte.qmd
+        - 06_Decimo/01_quimica_docente/31_producto-solubilidad-ksp-solubilidad-molar.qmd
+        - 06_Decimo/01_quimica_docente/32_efecto-ion-comun-solubilidad.qmd
+        - 06_Decimo/01_quimica_docente/33_precipitacion-fraccionada-iones-complejos.qmd
+        - 06_Decimo/01_quimica_docente/34_celdas-galvanicas-notacion-estandar.qmd
+        - 06_Decimo/01_quimica_docente/35_potenciales-estandar-electrodo-serie.qmd
+        - 06_Decimo/01_quimica_docente/36_fem-espontaneidad-relacion-gibbs.qmd
+        - 06_Decimo/01_quimica_docente/37_ecuacion-nernst-celdas-concentracion.qmd
+        - 06_Decimo/01_quimica_docente/38_celdas-electroliticas-procesos-industriales.qmd
+        - 06_Decimo/01_quimica_docente/39_leyes-cuantitativas-faraday.qmd
+        - 06_Decimo/01_quimica_docente/40_estabilidad-nuclear-defecto-masa.qmd
+        - 06_Decimo/01_quimica_docente/41_energia-enlace-nuclear-einstein.qmd
+        - 06_Decimo/01_quimica_docente/42_modos-decaimiento-radiactivo.qmd
+        - 06_Decimo/01_quimica_docente/43_cinetica-decaimiento-datacion-carbono14.qmd
+        - 06_Decimo/01_quimica_docente/44_fision-nuclear-cadena-fusion-termonuclear.qmd
+    - part: "Once — Química (Docente)"
+      chapters:
+        - 07_Once/01_quimica_docente/01_sistemas-termodinamicos-primera-ley.qmd
+        - 07_Once/01_quimica_docente/02_entalpia-procesos-presion-constante.qmd
+        - 07_Once/01_quimica_docente/03_metodos-calorimetricos-bomba-vaso.qmd
+        - 07_Once/01_quimica_docente/04_ley-hess-sumatoria-entalpica.qmd
+        - 07_Once/01_quimica_docente/05_entalpias-estandar-formacion.qmd
+        - 07_Once/01_quimica_docente/06_energias-enlace-calores-reaccion.qmd
+        - 07_Once/01_quimica_docente/07_segunda-ley-entropia-microestados.qmd
+        - 07_Once/01_quimica_docente/08_tercera-ley-entropias-molares-estandar.qmd
+        - 07_Once/01_quimica_docente/09_energia-libre-gibbs-criterio-espontaneidad.qmd
+        - 07_Once/01_quimica_docente/10_influencia-temperatura-espontaneidad.qmd
+        - 07_Once/01_quimica_docente/11_energia-libre-constante-equilibrio.qmd
+        - 07_Once/01_quimica_docente/12_hibridacion-carbono-geometria-enlaces-sigma-pi.qmd
+        - 07_Once/01_quimica_docente/13_alcanos-nomenclatura-iupac-propiedades-combustion.qmd
+        - 07_Once/01_quimica_docente/14_cicloalcanos-tension-anillo-conformaciones-ciclohexano.qmd
+        - 07_Once/01_quimica_docente/15_alquenos-isomeria-geometrica-adicion-electrofilica.qmd
+        - 07_Once/01_quimica_docente/16_alquinos-geometria-lineal-acidez-terminal-acetileno.qmd
+        - 07_Once/01_quimica_docente/17_hidrocarburos-aromaticos-estructura-benceno-sustitucion.qmd
+        - 07_Once/01_quimica_docente/18_estereoisomeria-quiralidad-enantiomeros-actividad-optica.qmd
+        - 07_Once/01_quimica_docente/19_quimica-petroleo-craqueo-catalitico-numero-octano.qmd
+        - 07_Once/01_quimica_docente/20_derivados-halogenados-sustitucion-sn1-sn2-eliminacion.qmd
+        - 07_Once/01_quimica_docente/21_alcoholes-fenoles-eteres-acidez-oxidacion.qmd
+        - 07_Once/01_quimica_docente/22_aldehidos-cetonas-polaridad-carbonilo-adicion-nucleofilica.qmd
+        - 07_Once/01_quimica_docente/23_acidos-carboxilicos-acidez-fuerza-inductiva.qmd
+        - 07_Once/01_quimica_docente/24_esteres-mecanismo-esterificacion-fischer-saponificacion.qmd
+        - 07_Once/01_quimica_docente/25_funciones-nitrogenadas-aminas-amidas-basicidad.qmd
+        - 07_Once/01_quimica_docente/26_macropolimeros-sinteticos-polimerizacion-adicion.qmd
+        - 07_Once/01_quimica_docente/27_macropolimeros-sinteticos-polimerizacion-condensacion.qmd
+        - 07_Once/01_quimica_docente/28_carbohidratos-monosacaridos-estructuras-haworth.qmd
+        - 07_Once/01_quimica_docente/29_disacaridos-polisacaridos-enlace-glucosidico.qmd
+        - 07_Once/01_quimica_docente/30_lipidos-acidos-grasos-trigliceridos-membranas.qmd
+        - 07_Once/01_quimica_docente/31_aminoacidos-propiedades-acido-base-enlace-peptidico.qmd
+        - 07_Once/01_quimica_docente/32_proteinas-niveles-estructurales-enzimas.qmd
+        - 07_Once/01_quimica_docente/33_acidos-nucleicos-nucleotidos-estructura-adn-arn.qmd
+        - 07_Once/01_quimica_docente/34_bioenergetica-molecular-hidrolisis-atp-acoplamiento.qmd
+        - 07_Once/01_quimica_docente/35_quimica-atmosferica-capa-ozono-ciclo-cfc.qmd
+        - 07_Once/01_quimica_docente/36_gases-efecto-invernadero-lluvia-acida.qmd
+        - 07_Once/01_quimica_docente/37_quimica-aguas-demanda-biologica-oxigeno-potabilizacion.qmd
+        - 07_Once/01_quimica_docente/38_principios-quimica-verde-economia-atomica.qmd
     - bibliografia.qmd
 
   site-url: https://camilotayac.github.io/docere/
-  site-path: /docere/
   language: es
 
+filters:
+  - _filters/icfes-tables.lua
+  - _filters/wide-tables.lua
+  - _filters/custom-questions.lua
+
 format:
+  typst:
+    default: true
+    toc: false
+    toc-depth: 2
+    number-sections: true
+    keep-typ: true
+    paper: a4
+    margin:
+      x: 2cm
+      y: 2.5cm
+    lang: es
+    mainfont: "Palatino"
+    sansfont: "Palatino"
+    fontsize: 11pt
+    linestretch: 1.4
+    template-partials:
+      - _templates/typst/numbering.typ
+      - _templates/typst/page.typ
+      - _templates/typst/typst-show.typ
+
   pdf:
     documentclass: scrbook
     classoption: [12pt, oneside, open=any, DIV=15]
     keep-tex: true
+    latex-auto-install: false
     include-in-header: preamble.tex
     filters:
+      - _filters/span-colors.lua
       - _filters/color-sections.lua
-      - _filters/icfes-tables.lua
-      - _filters/wide-tables.lua
+      - _filters/table-styling.lua
     toc: true
     toc-depth: 1
     number-depth: 3
-    number-sections: true
-    secnumdepth: 1
+    number-sections: false
     lang: es
     colorlinks: true
     linkcolor: docere-link
@@ -63,28 +255,29 @@ format:
     mermaid-format: svg
 
   html:
-    theme: flatly
-    css: _styles/headings.css
-    filters:
-      - _filters/icfes-tables.lua
-      - _filters/wide-tables.lua
+    theme: _styles/natura-docens.scss
     toc: true
     toc-depth: 3
     toc-location: right
+    number-sections: true
+    number-depth: 3
     lang: es
-    include-after-body: _scripts/collapse.html
+    include-in-header:
+      - _scripts/mobile-head.html
+    include-after-body:
+      - _scripts/collapse.html
+      - _scripts/a11y.html
+      - _scripts/section-pager.html
     mermaid:
       theme: neutral
 
 
   epub:
     cover-image: Portada.png
-    filters:
-      - _filters/icfes-tables.lua
-      - _filters/wide-tables.lua
+    css: _styles/natura-docens-epub.css
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     math-method: mathml
     meta:
       dc:creator: "Camilo Tayac"

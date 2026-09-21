@@ -1,0 +1,72 @@
+# Producto de Solubilidad ($K_{sp}$) y Solubilidad Molar (Oriakhi Cap. 19)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio de Solubilidad e Iones Complejos
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las sales consideradas convencionalmente 'insolubles' en agua en realidad poseen una solubilidad finita extremadamente baja pero cuantificable. En una disolución saturada en contacto con el sólido precipitado, se establece un **equilibrio de solubilidad heterogéneo**:
+
+$$M_m X_n(s) \rightleftharpoons m\, M^{n+}(aq) + n\, X^{m-}(aq)$$
+
+Dado que la actividad termodinámica del sólido puro cristalino es unitaria ($a = 1$), la constante de equilibrio se denomina **Producto de Solubilidad ($K_{sp}$)**:
+
+$$K_{sp} = [M^{n+}]^m [X^{m-}]^n$$
+
+La **solubilidad molar ($s$)** representa la cantidad máxima de sustancia en moles de sal sólida que se disuelve por cada litro de disolución saturada a una temperatura dada. La relación matemática entre $s$ y $K_{sp}$ depende exclusivamente de la estequiometría de disociación.
+
+### Formalización Matemática y Leyes Físicas
+Relaciones estequiométricas entre solubilidad molar ($s$) y $K_{sp}$:
+1. Sal $1:1$ (tipo $AgCl$):
+
+$$AgCl(s) \rightleftharpoons Ag^+ + Cl^- \implies K_{sp} = s \cdot s = s^2 \implies s = \sqrt{K_{sp}}$$
+
+2. Sal $1:2$ o $2:1$ (tipo $PbI_2, CaF_2$):
+
+$$CaF_2(s) \rightleftharpoons Ca^{2+} + 2 F^- \implies K_{sp} = (s)(2s)^2 = 4s^3 \implies s = \sqrt[3]{\frac{K_{sp}}{4}}$$
+
+3. Sal $1:3$ (tipo $Al(OH)_3$): $K_{sp} = (s)(3s)^3 = 27s^4 \implies s = \sqrt[4]{\frac{K_{sp}}{27}}$
+4. Sal $2:3$ (tipo $Bi_2S_3$): $K_{sp} = (2s)^2 (3s)^3 = 108s^5 \implies s = \sqrt[5]{\frac{K_{sp}}{108}}$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Comparar directamente los valores de $K_{sp}$ de sales con distinta estequiometría para deducir cuál es más soluble (ej. una sal con $K_{sp} = 10^{-12}$ puede ser más soluble que una con $K_{sp} = 10^{-10}$ si una es tipo $1:2$ y la otra $1:1$; se deben comparar las solubilidades molares $s$, no los $K_{sp}$).
+2. Olvidar elevar al coeficiente estequiométrico la concentración de los iones al formular la expresión de $K_{sp}$.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del desempaque de cajas gemelas:** Al disolver una caja de $CaF_2$, salen 1 bola de calcio ($s$) y 2 bolas de flúor ($2s$). En la fórmula de la constante, la concentración de flúor es el doble ($2s$) y además se eleva al cuadrado ($2s$ al cuadrado $= 4s^2$), dando $4s^3$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 19):** El producto de solubilidad del fluoruro de calcio ($CaF_2$) a $25^\circ\text{C}$ es $K_{sp} = 3.90 \times 10^{-11}$.
+a) Calcule la solubilidad molar ($s$) del $CaF_2$ en agua pura.
+b) Calcule la solubilidad en gramos por litro ($\text{g/L}$). Masa molar $M = 78.08\,\text{g/mol}$.
+
+**Paso 1:** Expresión de equilibrio para sal $1:2$:
+$$CaF_2(s) \rightleftharpoons Ca^{2+} + 2 F^-$$
+$$K_{sp} = [Ca^{2+}][F^-]^2 = (s)(2s)^2 = 4s^3 = 3.90 \times 10^{-11}$$
+**Paso 2:** Despeje de la solubilidad molar ($s$):
+$$s^3 = \frac{3.90 \times 10^{-11}}{4} = 9.75 \times 10^{-12}$$
+$$s = \sqrt[3]{9.75 \times 10^{-12}} = 2.136 \times 10^{-4}\,\text{mol/L}$$
+**Paso 3:** Conversión a solubilidad en $\text{g/L}$:
+$$\text{Solubilidad} = (2.136 \times 10^{-4}\,\text{mol/L}) \times 78.08\,\frac{\text{g}}{\text{mol}} = 0.01668\,\text{g/L} = 16.7\,\text{mg/L}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el sulfato de bario ($BaSO_4, K_{sp} = 1.1 \times 10^{-10}$) se puede ingerir como medio de contraste radiológico sin causar envenenamiento por bario tóxico?
+2. ¿Cómo influye el pH en la solubilidad de sales cuyo anión es una base débil conjugada como los carbonatos ($CaCO_3$)?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

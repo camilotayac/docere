@@ -1,0 +1,59 @@
+# Teoría de Colisiones, Complejo Activado y Perfiles Energéticos
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Cinética y Equilibrio Químico
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La **Teoría de Colisiones** (Max Trautz y William Lewis, 1916) establece que para que ocurra una reacción química molecular entre especies reaccionantes se deben satisfacer simultáneamente tres condiciones estrictas:
+1. Las partículas deben colisionar físicamente entre sí.
+2. Las moléculas deben chocar con una **orientación geométrica espacial estéricamente adecuada** (factor estérico $p$).
+3. La colisión debe ocurrir con una energía cinética mínima necesaria para vencer la repulsión electrónica y comenzar la rotura de enlaces: la **Energía de Activación ($E_a$)**.
+
+Svante Arrhenius postuló que durante una colisión eficaz se forma transitoriamente una estructura inestable de máxima energía potencial denominada **complejo activado o estado de transición ($\ddagger$)**. El perfil de reacción grafica la coordenada de reacción frente a la energía potencial, distinguiendo procesos endotérmicos ($\Delta H > 0$) y exotérmicos ($\Delta H < 0$).
+
+### Formalización Matemática y Leyes Físicas
+Fórmula de la velocidad según la teoría de colisiones:
+$$v = Z \cdot p \cdot e^{-\frac{E_a}{R T}}$$
+Donde $Z$ es la frecuencia de colisión, $p$ el factor estérico y $e^{-E_a/RT}$ la fracción de Boltzmann de colisiones con $E \ge E_a$.
+Relación termodinámica con la entalpía de reacción:
+$$\Delta H_{\text{reac}} = E_{a,\text{directa}} - E_{a,\text{inversa}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que toda colisión entre dos moléculas reactivas produce reacción química (sólo una fracción microscópica, a veces 1 de cada $10^9$ choques, posee la energía y orientación correctas).
+2. Confundir el complejo activado con un intermediario de reacción estable (el complejo activado es un estado de transición fugaz en la cúspide de la barrera de potencial con vida media de femtosegundos, no puede ser aislado).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la llave y la cerradura con fuerza:** Para abrir una puerta (reaccionar), no basta con arrojar la llave contra la puerta. Debes introducir la llave exactamente por la ranura correcta (orientación estérica) y girarla con la fuerza necesaria para vencer el resorte duro del cerrojo (energía de activación).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una reacción química tiene una energía de activación para el sentido directo $E_{a,\text{dir}} = 85.0\,\text{kJ/mol}$ y una entalpía estándar de reacción $\Delta H^\circ = -35.0\,\text{kJ/mol}$ (exotérmica). Calcule la energía de activación de la reacción inversa ($E_{a,\text{inv}}$) y trace mentalmente su perfil energético.
+
+**Paso 1:** Relación de energías en el perfil:
+$$\Delta H = E_{a,\text{dir}} - E_{a,\text{inv}}$$
+$$-35.0\,\text{kJ/mol} = 85.0\,\text{kJ/mol} - E_{a,\text{inv}}$$
+**Paso 2:** Despeje de $E_{a,\text{inv}}$:
+$$E_{a,\text{inv}} = 85.0 - (-35.0) = 85.0 + 35.0 = 120.0\,\text{kJ/mol}$$
+La reacción inversa requiere escalar una barrera energética mucho mayor ($120.0\,\text{kJ/mol}$), lo que concuerda con que los reactivos sean menos estables que los productos en un proceso exotérmico.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la energía de activación de una reacción siempre es una cantidad estrictamente positiva ($E_a > 0$)?
+2. ¿Cómo explica la distribución estadística de Maxwell-Boltzmann que un incremento térmico de apenas $10^\circ\text{C}$ pueda duplicar la velocidad de muchas reacciones químicas?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

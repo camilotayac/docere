@@ -1,0 +1,66 @@
+# Rendimiento Teórico, Rendimiento Real y Eficiencia Porcentual
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estequiometría de Reacción
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En los procesos químicos de laboratorio e industria, la cantidad de producto que se obtiene experimentalmente al finalizar una síntesis es prácticamente siempre inferior a la cantidad máxima prevista por el cálculo estequiométrico en el papel. Se definen tres tipos de rendimiento:
+
+1. **Rendimiento Teórico ($RT$):** Cantidad máxima calculada estequiométricamente de producto que se obtendría si el $100\%$ del reactivo limitante se transformara en producto sin pérdidas ni reacciones secundarias.
+2. **Rendimiento Real o Experimental ($RR$):** Cantidad de producto puro efectivamente aislado, purificado, secado y pesado en la balanza del laboratorio.
+3. **Rendimiento Porcentual o Eficiencia ($\text{\%R}$):** Relación porcentual entre el rendimiento real y el rendimiento teórico:
+
+$$\%\text{Rendimiento} = \left( \frac{\text{Rendimiento Real}}{\text{Rendimiento Teórico}} \right) \times 100\%$$
+
+Las causas del rendimiento inferior al $100\%$ incluyen: reacciones reversibles que alcanzan un equilibrio dinámico incompleto, reacciones secundarias paralelas competitivas que generan subproductos no deseados, pérdidas mecánicas durante la filtración, trasvase o recristalización, y descomposición térmica.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de rendimiento:
+$$\%R = \frac{RR}{RT} \times 100\% \implies RR = RT \times \left( \frac{\%R}{100} \right)$$
+Cálculo de la masa de reactivo requerida para un rendimiento real deseado:
+$$RT_{\text{necesario}} = \frac{RR_{\text{deseado}}}{\%R / 100}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Obtener rendimientos superiores al $100\%$ en el laboratorio y considerarlo un 'éxito' (un rendimiento mayor al $100\%$ viola la conservación de la masa e indica un error grave: el producto está húmedo con solvente o contiene impurezas y sales precipitadas no lavadas).
+2. Confundir porcentaje de pureza del reactivo con rendimiento porcentual de la reacción.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del examen de matemáticas:** El rendimiento teórico es sacar $100/100$ respondiendo todas las preguntas perfectas. El rendimiento real es la nota que sacas ($85/100$). Tu rendimiento porcentual es del $85\%$. Las preguntas que fallaste son las pérdidas por reacciones secundarias o descuidos en el examen.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se calientan $100.0\,\text{g}$ de carbonato de calcio ($CaCO_3$, $M = 100.09\,\text{g/mol}$) para producir óxido de calcio ($CaO$, $M = 56.08\,\text{g/mol}$) y dióxido de carbono:
+$$CaCO_3(s) \xrightarrow{\Delta} CaO(s) + CO_2(g)$$
+Si al finalizar el calentamiento se aíslan y pesan $47.50\,\text{g}$ de $CaO$ en el crisol, calcule:
+a) El rendimiento teórico de óxido de calcio.
+b) El rendimiento porcentual de la reacción.
+
+**Paso 1:** Cálculo del rendimiento teórico ($RT$):
+$$n(CaCO_3) = \frac{100.0\,\text{g}}{100.09\,\text{g/mol}} = 0.9991\,\text{mol}$$
+Relación estequiométrica $1:1 \implies n(CaO)_{\text{teórico}} = 0.9991\,\text{mol}$.
+$$RT = 0.9991\,\text{mol} \times 56.08\,\frac{\text{g}}{\text{mol}} = 56.03\,\text{g de } CaO$$
+**Paso 2:** Cálculo del rendimiento porcentual:
+$$\%R = \frac{RR}{RT} \times 100\% = \frac{47.50\,\text{g}}{56.03\,\text{g}} \times 100\% = 84.78\%$$
+La reacción operó con una eficiencia del **$84.78\%$**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué en la industria petroquímica o farmacéutica un incremento del rendimiento de apenas el $2\%$ puede representar millones de dólares de ahorro?
+2. ¿Qué factores experimentales pueden provocar que un precipitado pesado en el laboratorio arroje un rendimiento aparente del $115\%$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

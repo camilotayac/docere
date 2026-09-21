@@ -1,0 +1,56 @@
+# Masa, Volumen y Densidad en Sólidos y Líquidos
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Propiedades de la Materia y Medición
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La masa ($m$) cuantifica la inercia y la cantidad de materia de un cuerpo, mientras que el volumen ($V$) representa la extensión tridimensional del espacio que ocupa. La densidad absoluta ($\rho$) es una propiedad intensiva característica definida por el cociente entre masa y volumen. Esta magnitud gobierna la estratificación de fluidos inmiscibles y la flotabilidad de los cuerpos sólidos según el principio de empuje hidrostático de Arquímedes.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de densidad:
+$$\rho = \frac{m}{V}$$
+Despejes operacionales:
+$$m = \rho \cdot V \qquad V = \frac{m}{\rho}$$
+Gravedad específica o densidad relativa:
+$$\rho_{\text{rel}} = \frac{\rho}{\rho_{\text{agua al 4}^\circ\text{C}}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir masa (inercia intrínseca) con peso (fuerza gravitatoria vectorial dependiente de la aceleración $g$).
+2. Creer erróneamente que un cuerpo denso siempre es pesado, sin considerar su volumen total.
+3. Asumir que los volúmenes de líquidos miscibles son aditivos al mezclarse (contracción de volumen por solvatación).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del vagón de tren:** Un vagón con 5 pasajeros dispersos representa baja densidad; el mismo vagón en hora pico con 100 pasajeros apretados representa alta densidad. El espacio es idéntico, pero la concentración de materia es drásticamente diferente.
+2. **Columna de densidades:** Probeta estratificada con miel ($1.42\,\text{g/mL}$), jabón líquido ($1.06\,\text{g/mL}$), agua coloreada ($1.00\,\text{g/mL}$) y aceite vegetal ($0.92\,\text{g/mL}$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Una muestra metálica de $113.4\,\text{g}$ se sumerge en una probeta con $40.0\,\text{mL}$ de agua, elevando el menisco a $50.0\,\text{mL}$. Calcule la densidad del metal e identifíquelo sabiendo que la densidad del plomo es $11.34\,\text{g/cm}^3$.
+
+**Paso 1:** Volumen por inmersión de Arquímedes:
+$$V = 50.0\,\text{mL} - 40.0\,\text{mL} = 10.0\,\text{mL} = 10.0\,\text{cm}^3$$
+**Paso 2:** Cálculo de la densidad:
+$$\rho = \frac{113.4\,\text{g}}{10.0\,\text{cm}^3} = 11.34\,\text{g/cm}^3$$
+Se confirma experimentalmente que la muestra corresponde a plomo puro.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el hielo flota en el agua líquida a pesar de ser la misma sustancia en estado sólido?
+2. Si se divide un lingote de hierro de $10\,\text{kg}$ en diez partes iguales de $1\,\text{kg}$, ¿cuál es la densidad de cada pedazo?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

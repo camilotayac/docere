@@ -1,0 +1,96 @@
+# Ácidos Carboxílicos: Resonancia del Ion Carboxilato y Efectos Inductivos en la Acidez
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Ácidos Orgánicos y Equilibrios de Ionización
+> * **Propósito Docente:** Fundamentar cuánticamente la acidez de los ácidos carboxílicos a partir de la deslocalización por resonancia en el ion carboxilato, cuantificar los efectos inductivos en derivados halogenados y modelar sus equilibrios ácido-base en solución.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los ácidos carboxílicos son compuestos orgánicos que albergan el grupo funcional **carboxilo ($-COOH$)**, constituido estructuralmente por la unión directa entre un grupo carbonilo ($C=O$) y un grupo hidroxilo ($-OH$). Esta yuxtaposición electrónica en un mismo átomo de carbono modifica radicalmente las propiedades intrínsecas de ambas entidades funcionales aisladas.
+
+En estado puro y en disolventes apolares, los ácidos carboxílicos forman **dímeros cíclicos estables** mediante la cooperación de dos enlaces por puente de hidrógeno intermoleculares cruzados. Esta intensa asociación intermolecular eleva drásticamente sus puntos de ebullición y fusión, superando ampliamente a los alcoholes de masa molar comparable (p. ej., el ácido acético hierve a $117.9^\circ\text{C}$, frente al 1-propanol que hierve a $97.2^\circ\text{C}$, teniendo ambos una masa molar cercana a $60\,\text{g/mol}$).
+
+Desde el punto de vista del equilibrio químico en disolución acuosa, los ácidos carboxílicos se comportan como ácidos débiles de Brønsted-Lowry, cediendo reversiblemente su protón hidroxílico al agua:
+
+$$R-COOH + H_2O \rightleftharpoons R-COO^- + H_3O^+$$
+
+La constante de acidez ($K_a$) de los ácidos carboxílicos alifáticos no sustituidos se sitúa típicamente en el intervalo de $10^{-4}$ a $10^{-5}$ ($pK_a \approx 4 - 5$). Aunque son considerablemente más débiles que los ácidos minerales inorgánicos como el clorhídrico ($HCl$, $pK_a \approx -7$) o el sulfúrico ($H_2SO_4$), son aproximadamente diez órdenes de magnitud más ácidos que el agua ($pK_a = 15.7$) y más de doce órdenes de magnitud más ácidos que los alcoholes alifáticos ($pK_a \approx 16 - 18$).
+
+Esta formidable disparidad de acidez se explica mediante la **estabilización mecano-cuántica por resonancia del ion carboxilato ($R-COO^-$)**:
+
+1. **Ion Alcóxido ($R-CH_2-O^-$):** La pérdida del protón en un alcohol genera una carga negativa formal que queda localizada y confinada exclusivamente sobre un único átomo de oxígeno, sin posibilidad de deslocalización electrónica, resultando en una especie termodinámicamente inestable y fuertemente básica.
+2. **Ion Carboxilato ($R-COO^-$):** La desprotonación del carboxilo genera una base conjugada estabilizada por la deslocalización simétrica de la carga negativa entre dos átomos de oxígeno electronegativos idénticos. El híbrido de resonancia se describe por dos estructuras contribuyentes canónicas equivalentes de igual energía:
+$$R - C(=\!O) - O^- \longleftrightarrow R - C(-O^-) = O$$
+La espectroscopia de difracción de rayos X demuestra que en el ion carboxilato no existen enlaces simples y dobles alternados; ambos enlaces carbono-oxígeno presentan exactamente la misma longitud interatómica ($1.27\,\text{Å}$, intermedia entre el enlace $C=O$ de $1.20\,\text{Å}$ y el enlace $C-O$ de $1.34\,\text{Å}$), con un orden de enlace de 1.5 y una carga formal de $-\frac{1}{2}$ distribuida homogéneamente sobre cada oxígeno.
+
+La fuerza ácida de un ácido carboxílico puede modularse finamente alterando la naturaleza electrónica de la cadena hidrocarbonada adyacente a través de los **efectos inductivos**:
+
+1. **Efecto Inductivo Electroatractor ($-I$):** Si se incorporan sustituyentes fuertemente electronegativos (como halógenos: $F, Cl, Br, I$), estos retiran densidad electrónica por polarización a lo largo de los enlaces $\sigma$ de la cadena carbonada. Este drenaje electrónico dispersa la carga negativa neta del ion carboxilato, reduciendo su densidad de carga y estabilizando fuertemente la base conjugada, lo que incrementa la constante $K_a$ y reduce el $pK_a$.
+2. **Influencia del Grado de Sustitución:** La sustitución múltiple ejerce un efecto acumulativo extraordinario sobre la constante de disociación. En la serie de los ácidos acéticos clorados:
+$$\text{Ácido acético } (CH_3COOH): \quad K_a = 1.75 \times 10^{-5} \quad (pK_a = 4.76)$$
+$$\text{Ácido cloroacético } (CH_2ClCOOH): \quad K_a = 1.38 \times 10^{-3} \quad (pK_a = 2.86)$$
+$$\text{Ácido dicloroacético } (CHCl_2COOH): \quad K_a = 5.13 \times 10^{-2} \quad (pK_a = 1.29)$$
+$$\text{Ácido tricloroacético } (CCl_3COOH): \quad K_a = 2.24 \times 10^{-1} \quad (pK_a = 0.65)$$
+3. **Influencia de la Distancia Espacial:** El efecto inductivo se transmite a través del esqueleto de enlaces $\sigma$ y decae con extrema rapidez con la distancia física al centro de ionización. La presencia del halógeno en el carbono $\alpha$ (adyacente al carboxilo) produce una marcada acidificación, mientras que en las posiciones $\beta$ o $\gamma$ el efecto se debilita notablemente:
+$$\text{Ácido 2-clorobutanoico } (\alpha): \quad pK_a = 2.84$$
+$$\text{Ácido 3-clorobutanoico } (\beta): \quad pK_a = 4.06$$
+$$\text{Ácido 4-clorobutanoico } (\gamma): \quad pK_a = 4.52 \quad (\approx \text{ácido butanoico}, pK_a = 4.82)$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Creer que el hidrógeno carboxílico se desprende porque el enlace $O-H$ es más débil:** Omitir que la disociación ácida en solución no está gobernada por la energía de disociación homolítica de enlace en fase gaseosa, sino por la ganancia termodinámica de energía libre asociada a la estabilización por resonancia y solvatación de la base conjugada.
+2. **Confundir la electronegatividad con la fuerza ácida directa:** Suponer que un sustituyente dador de electrones aumenta la acidez. Los grupos alquilo ($+I$) concentran más carga sobre el carboxilato, desestabilizándolo y volviendo al ácido menos disociable.
+3. **Pensar que el efecto inductivo se transmite de forma idéntica en toda la cadena:** Asumir que un cloro ubicado en el carbono 8 de un ácido octanoico tiene el mismo impacto acidificante que en el carbono 2.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Dos Niños Sosteniendo una Mochila Pesada:** Un solo niño sosteniendo una carga pesada se fatiga rápidamente (ion alcóxido con carga en un solo oxígeno); dos niños idénticos tomados de las manos compartiendo el peso de la mochila entre ambos distribuyen el esfuerzo cómodamente (ion carboxilato con resonancia simétrica).
+2. **Analogía del Aspirador Electrónico a Través de un Tubo:** El átomo de cloro actúa como un ventilador de succión (aspirador) conectado al extremo de una manguera de goma rígida; la succión alivia la presión en el otro extremo (carboxilato), pero si la manguera es demasiado larga (muchos carbonos de distancia), la caída de presión en el origen es inapreciable.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se prepara una disolución acuosa $0.150\,\text{M}$ de ácido cloroacético ($CH_2ClCOOH$, masa molar $94.50\,\text{g/mol}$, $K_a = 1.38 \times 10^{-3}$ a $25^\circ\text{C}$). 
+1. Plantee el equilibrio de ionización en disolución acuosa y la expresión analítica de su constante $K_a$.
+2. Calcule la concentración molar del ion hidronio en el equilibrio ($[H_3O^+]$), el grado de disociación fraccionaria ($\alpha$) del ácido y el $pH$ resultante de la disolución sin despreciar la disociación en el balance de materia.
+
+**Solución paso a paso:**
+
+1. *Plantear el equilibrio químico y la tabla de concentraciones de equilibrio (ICE):*
+   $$CH_2ClCOOH(ac) + H_2O(l) \rightleftharpoons CH_2ClCOO^-(ac) + H_3O^+(ac)$$
+   Sea $C_0 = 0.150\,\text{M}$ la concentración inicial y $x$ la cantidad molar disociada en el equilibrio:
+   $$[CH_2ClCOOH] = C_0 - x = 0.150 - x$$
+   $$[CH_2ClCOO^-] = x$$
+   $$[H_3O^+] = x$$
+
+2. *Formular la ecuación de equilibrio de la constante de acidez:*
+   $$K_a = \frac{[CH_2ClCOO^-][H_3O^+]}{[CH_2ClCOOH]} = \frac{x^2}{C_0 - x} = 1.38 \times 10^{-3}$$
+   Dado que $K_a$ es del orden de $10^{-3}$, la aproximación $C_0 - x \approx C_0$ incurriría en un error relativo superior al $5\,\%$, por lo que se debe resolver la ecuación cuadrática completa:
+   $$x^2 + K_a x - K_a C_0 = 0$$
+   $$x^2 + (1.38 \times 10^{-3})x - (1.38 \times 10^{-3})(0.150) = 0$$
+   $$x^2 + 1.38 \times 10^{-3} x - 2.070 \times 10^{-4} = 0$$
+
+3. *Resolver analíticamente la ecuación cuadrática para $x$ ($[H_3O^+]$):*
+   $$x = \frac{-b + \sqrt{b^2 - 4ac}}{2a} = \frac{-1.38 \times 10^{-3} + \sqrt{(1.38 \times 10^{-3})^2 - 4(1)(-2.070 \times 10^{-4})}}{2}$$
+   $$x = \frac{-1.38 \times 10^{-3} + \sqrt{1.9044 \times 10^{-6} + 8.280 \times 10^{-4}}}{2} = \frac{-1.38 \times 10^{-3} + 0.02881}{2}$$
+   $$x = [H_3O^+] = 0.01371\,\text{mol/L}$$
+   La concentración real de iones hidronio en el equilibrio es de $1.371 \times 10^{-2}\,\text{M}$.
+
+4. *Calcular el grado de disociación fraccionaria ($\alpha$):*
+   $$\alpha = \frac{x}{C_0} = \frac{0.01371\,\text{M}}{0.150\,\text{M}} = 0.0914 \quad (9.14\,\%)$$
+   El ácido cloroacético se halla disociado en un $9.14\,\%$, lo que confirma la necesidad insoslayable de haber utilizado la fórmula cuadrática exacta en lugar de la aproximación habitual de ácidos muy débiles.
+
+5. *Determinar el $pH$ de la disolución:*
+   $$pH = -\log[H_3O^+] = -\log(0.01371) = 1.863 \approx 1.86$$
+   El $pH$ resultante es de $1.86$, reflejando una marcada acidez derivada del efecto inductivo electroatractor del átomo de cloro.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el ácido benzoico ($C_6H_5COOH$, $pK_a = 4.20$) es ligeramente más ácido que el ácido acético ($pK_a = 4.76$), pero el ácido 4-nitrobenzoico ($pK_a = 3.44$) es notablemente más fuerte?
+2. Al neutralizar ácido benzoico con hidróxido de sodio ($NaOH$), ¿por qué el benzoato de sodio resultante es altamente soluble en agua mientras que el ácido original es casi insoluble en frío?
+3. ¿Cómo influye el efecto inductivo electropositivo de los grupos alquilo en la serie ácido fórmico ($HCOOH$, $pK_a = 3.75$), ácido acético ($CH_3COOH$, $pK_a = 4.76$) y ácido piválico ($(CH_3)_3CCOOH$, $pK_a = 5.05$)?

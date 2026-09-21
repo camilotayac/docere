@@ -1,0 +1,55 @@
+# Mezclas Homogéneas: Soluciones Verdaderas y Dispersiones Coloidales
+
+> **Grado 6° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Clasificación de la Materia
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una mezcla homogénea o solución es un sistema termodinámico monofásico de composición variable integrado por dos o más sustancias que no reaccionan entre sí químicamente. A nivel submicroscópico, el soluto se encuentra disperso a escala molecular, atómica o iónica (diámetro $< 1\,\text{nm}$), lo que impide su separación por filtración mecánica o sedimentación gravitatoria.
+
+En la frontera entre soluciones verdaderas y mezclas heterogéneas se sitúan los **coloides**, donde las partículas dispersas (fase dispersa) poseen tamaños intermedios entre $1\,\text{nm}$ y $1000\,\text{nm}$. Los coloides dispersan la luz visible transversalmente, fenómeno conocido como **efecto Tyndall**, lo que permite distinguirlos experimentalmente de las soluciones verdaderas.
+
+### Formalización Matemática y Leyes Físicas
+Criterio de tamaño de partícula:
+$$\text{Solución verdadera: } d < 1\,\text{nm}$$
+$$\text{Coloide: } 1\,\text{nm} \le d \le 1000\,\text{nm}$$
+$$\text{Suspensión: } d > 1000\,\text{nm}$$
+Intensidad de dispersión luminosa (Efecto Tyndall / Rayleigh):
+$$I \propto \frac{d^6}{\lambda^4}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Considerar que toda mezcla transparente e incolora es una sustancia pura (ej. creer que el agua con sal disuelta es una sustancia pura porque no se ven las partículas).
+2. Creer que la leche o la mayonesa son soluciones verdaderas, ignorando su naturaleza coloidal de emulsión.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El haz de puntero láser en la oscuridad:** Hacer incidir un puntero láser sobre tres vasos (agua pura con sal, agua con una gota de leche y agua con almidón). En la solución de sal el haz es invisible de lado; en la leche y almidón el camino del haz brilla con intensidad por dispersión Tyndall.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Se disuelven $15.0\,\text{g}$ de cloruro de sodio en $185.0\,\text{g}$ de agua destilada. Calcule la masa total de la solución y determine el porcentaje en masa del soluto.
+
+**Paso 1:** Masa total de la solución:
+$$m_{\text{solución}} = m_{\text{soluto}} + m_{\text{solvente}} = 15.0\,\text{g} + 185.0\,\text{g} = 200.0\,\text{g}$$
+**Paso 2:** Cálculo del porcentaje en masa:
+$$\%(m/m) = \frac{m_{\text{soluto}}}{m_{\text{solución}}} \times 100\% = \frac{15.0\,\text{g}}{200.0\,\text{g}} \times 100\% = 7.50\%$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los faros antiniebla de los automóviles utilizan luz amarilla en lugar de luz azul o blanca en presencia de niebla coloidal?
+2. ¿Por qué la sangre se clasifica como coloide y suspensión simultáneamente?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,104 @@
+# Aminoácidos, Comportamiento Ácido-Base, Punto Isoeléctrico y Enlace Peptídico
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Biomoléculas y Química de Péptidos
+> * **Propósito Docente:** Dominar la ionización anfótera de los aminoácidos en función del pH, cuantificar matemáticamente el punto isoeléctrico ($pI$) a partir de constantes $pK_a$ y deducir la rigidez planar del enlace peptídico mediante resonancia.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las proteínas son biopolímeros macromoleculares indispensables para la estructura, catálisis y regulación de la vida celular. Sus monómeros constitutivos son los **$\alpha$-aminoácidos**, moléculas bifuncionales caracterizadas por albergar simultáneamente un grupo funcional carboxilo básico ($-COOH$) y un grupo amino básico ($-NH_2$) unidos covalentemente al mismo átomo de carbono central, denominado **carbono alfa ($C_\alpha$)**:
+
+$$H_2N - CH(R) - COOH$$
+
+Al carbono $C_\alpha$ se unen cuatro sustituyentes funcionalmente distintos: el grupo amino, el grupo carboxilo, un átomo de hidrógeno y una **cadena lateral o grupo $R$**, cuya identidad química y polaridad confiere a cada uno de los 20 $\alpha$-aminoácidos estándar proteinogénicos sus propiedades biofísicas exclusivas (alifáticos, aromáticos, polares sin carga, cargados positivamente o cargados negativamente).
+
+Con la única excepción de la **glicina** (donde $R = -H$, volviendo al carbono central aquiral por simetría geminal), todos los aminoácidos restantes poseen cuatro sustituyentes heterogéneos sobre el carbono $\alpha$, constituyendo un centro quiral asimétrico. Los ribosomas sintetizan las proteínas empleando con absoluta exclusividad el **enantiómero de la serie L** (que corresponde casi universalmente a la configuración absoluta $(S)$ en el sistema CIP, salvo en la L-cisteína donde la mayor prioridad del átomo de azufre invierte el descriptor a $(R)$).
+
+En disolución acuosa y en estado cristalino, los aminoácidos no existen como moléculas neutras sin carga con grupos $-COOH$ y $-NH_2$ intactos. Al poseer un centro donador de protones ácido y un centro aceptor de protones básico en la misma molécula, ocurre una transferencia protónica intramolecular espontánea e inmediata, generando un ion dipolar eléctricamente neutro conocido como **zwitterion (o ion híbrido)**:
+
+$$H_3\overset{+}{N} - CH(R) - COO^-$$
+
+Esta estructura iónica interna les confiere propiedades físicas análogas a las sales inorgánicas cristalinas: presentan elevados puntos de fusión con descomposición térmica superior a $200^\circ\text{C}$, son insolubles en disolventes orgánicos apolares y manifiestan una alta solubilidad en agua debido a la intensa solvatación por interacciones ion-dipolo.
+
+El estado de ionización y la carga eléctrica neta ($q$) de un aminoácido dependen de manera continua y rigurosa del **$pH$ del medio acuoso circundante**. En una titulación ácido-base partiendo de condiciones fuertemente ácidas ($pH < 1$), el aminoácido se halla totalmente protonado en forma de catión monovalente ($q = +1$):
+
+1. **Primera Ionización (Medio Ácido):** Al añadir una base fuerte, el primer protón en disociarse es el del grupo carboxilo $\alpha$, por ser el centro más ácido ($pK_{a1} \approx 2.0 - 2.4$, mucho más ácido que un ácido alifático simple debido al efecto inductivo electroatractor del grupo amonio adyacente):
+$$H_3\overset{+}{N}-CH(R)-COOH \overset{K_{a1}}{\rightleftharpoons} H_3\overset{+}{N}-CH(R)-COO^- + H^+$$
+En el punto de semineutralización ($pH = pK_{a1}$), la concentración del catión ($q = +1$) iguala exactamente a la del zwitterion ($q = 0$).
+2. **Segunda Ionización (Medio Básico):** Al continuar elevando el $pH$, el protón del grupo amonio cargado positivamente se disocia gradualmente ($pK_{a2} \approx 9.0 - 10.0$):
+$$H_3\overset{+}{N}-CH(R)-COO^- \overset{K_{a2}}{\rightleftharpoons} H_2N-CH(R)-COO^- + H^+$$
+A $pH$ muy alcalino ($pH > 11$), el aminoácido existe exclusivamente como un anión desprotonado monovalente ($q = -1$).
+
+El **Punto Isoeléctrico ($pI$)** es el valor específico de $pH$ al cual la concentración del zwitterion alcanza su máximo absoluto y la carga eléctrica neta promedio de las moléculas en disolución es **estrictamente cero ($q = 0$)**:
+
+$$\left[H_3\overset{+}{N}-CH(R)-COOH\right] = \left[H_2N-CH(R)-COO^-\right]$$
+
+Para un aminoácido dipolar simple con cadena lateral $R$ no ionizable (como alanina, valina o leucina), el punto isoeléctrico es el promedio aritmético exacto de sus dos constantes de disociación:
+
+$$pI = \frac{pK_{a1} + pK_{a2}}{2}$$
+
+En el punto isoeléctrico, las moléculas no experimentan migración electroforética neta hacia el ánodo ni hacia el cátodo al aplicar un campo eléctrico externo, y su solubilidad acuosa alcanza el mínimo físico debido a la ausencia de cargas monoplanares de repulsión mutua. Para aminoácidos con cadenas laterales ionizables (como el ácido aspártico o la lisina), el $pI$ se calcula promediando los dos valores de $pK_a$ que delimitan la formación y disociación del zwitterion neutro.
+
+La concatenación polimérica de aminoácidos para erigir péptidos y proteínas ocurre mediante el **enlace peptídico**, una condensación covalente entre el grupo $\alpha$-carboxilo de un aminoácido y el grupo $\alpha$-amino del aminoácido subsiguiente con eliminación de una molécula de agua:
+
+$$H_3\overset{+}{N}-CH(R_1)-COO^- + H_3\overset{+}{N}-CH(R_2)-COO^- \longrightarrow H_3\overset{+}{N}-CH(R_1)-CO-NH-CH(R_2)-COO^- + H_2O$$
+
+El enlace peptídico es una amida sustituida con una peculiaridad físico-química capital: **la deslocalización por resonancia del par de electrones del nitrógeno amídico hacia el oxígeno carbonílico**:
+
+$$- C(=O) - \ddot{N}(H) - \longleftrightarrow - C(-O^-) = \overset{+}{N}(H) -$$
+
+Esta resonancia confiere al enlace peptídico un **$40\,\%$ de carácter de doble enlace**. Como consecuencia mecano-cuántica directa:
+- La distancia de enlace $C-N$ mide $1.32\,\text{Å}$, sensiblemente más corta que un enlace simple alifático ($1.47\,\text{Å}$).
+- La rotación interna alrededor del eje $C-N$ está totalmente congelada a temperatura fisiológica (barrera energética de $80\,\text{kJ/mol}$).
+- Los seis átomos de la unidad peptídica ($C_\alpha, C, O, N, H, C_{\alpha+1}$) yacen de forma forzada en un **mismo plano geométrico rígido**, casi invariablemente en conformación *trans* para evitar choques estéricos entre las cadenas laterales $R$ adyacentes.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Dibujar a los aminoácidos en estado neutro apolar ($H_2N-CH(R)-COOH$):** Los estudiantes escriben fórmulas no disociadas olvidando que en disolución acuosa a cualquier $pH$ siempre al menos uno de los dos grupos se halla ionizado; la forma no cargada no existe en cantidades detectables en agua.
+2. **Creer que el punto isoeléctrico es siempre $pH = 7.00$:** Confundir neutralidad eléctrica ($q = 0$) con neutralidad ácida del agua ($pH = 7$). Cada aminoácido tiene un $pI$ intrínseco determinado por la estructura de su cadena lateral (p. ej., ácido aspártico $pI = 2.77$; arginina $pI = 10.76$).
+3. **Pensar que el esqueleto polipeptídico puede rotar alrededor de cualquier enlace:** Omitir que el enlace peptídico $C-N$ es plano y no rota; la flexibilidad conformacional de una proteína reside exclusivamente en los ángulos diedros de los enlaces simples adyacentes al carbono $\alpha$: el enlace $N-C_\alpha$ (ángulo phi, $\phi$) y el enlace $C_\alpha-C$ (ángulo psi, $\psi$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Vagones con Acoples Magnéticos Rígidos:** Representar a los aminoácidos como vagones de tren con un imán positivo en el frente ($-NH_3^+$) y un imán negativo en la parte trasera ($-COO^-$); el enganche entre dos vagones (enlace peptídico) es una placa de acero soldada que no permite ningún giro vertical ni lateral, forzando a que las curvaturas del tren dependan solo de las articulaciones libres de las ruedas ($C_\alpha$).
+2. **Simulación de Migración Electroforética con Imanes en Papel:** Dibujar una cubeta electroforética con un polo positivo (ánodo) y uno negativo (cátodo). Pedir al estudiante calcular la carga del aminoácido a un $pH$ dado y mover físicamente la tarjeta hacia el electrodo correspondiente según la ley de atracción de Coulomb.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Considere el aminoácido esencial L-alanina ($R = -CH_3$, masa molar $89.09\,\text{g/mol}$), cuyos valores de constantes de acidez a $25^\circ\text{C}$ son $pK_{a1} = 2.34$ (grupo carboxilo) y $pK_{a2} = 9.69$ (grupo amonio).
+1. Calcule analíticamente el Punto Isoeléctrico ($pI$) de la alanina.
+2. Determine la carga eléctrica neta predominante y dibuje las especies iónicas mayoritarias a $pH = 1.00$, $pH = 6.01$ y $pH = 12.00$.
+3. En una electroforesis sobre papel a $pH = 6.01$, determine hacia qué electrodo migrará una mezcla de alanina ($pI = 6.01$), ácido aspártico ($pI = 2.77$) y lisina ($pI = 9.74$).
+
+**Solución paso a paso:**
+
+1. *Calcular el punto isoeléctrico ($pI$) de la alanina:*
+   $$pI = \frac{pK_{a1} + pK_{a2}}{2} = \frac{2.34 + 9.69}{2} = \frac{12.03}{2} = 6.015 \approx 6.01$$
+   A un $pH$ exacto de $6.01$, la alanina se encuentra en su estado zwitteriónico neutro con una carga neta promedio de $q = 0$.
+
+2. *Determinar las especies iónicas y cargas netas a diferentes valores de $pH$:*
+   - A $pH = 1.00$ ($pH < pK_{a1} < pK_{a2}$): Ambos grupos retienen sus protones. La especie mayoritaria es el catión protonado:
+   $$H_3\overset{+}{N}-CH(CH_3)-COOH \quad (\text{Carga neta } q = +1)$$
+   - A $pH = 6.01$ ($pH = pI$): El carboxilo está desprotonado y el amonio retiene su protón. La especie dominante es el zwitterion:
+   $$H_3\overset{+}{N}-CH(CH_3)-COO^- \quad (\text{Carga neta } q = 0)$$
+   - A $pH = 12.00$ ($pH > pK_{a2} > pK_{a1}$): Ambos grupos han cedido sus protones al medio básico. La especie predominante es el anión carboxilato:
+   $$H_2N-CH(CH_3)-COO^- \quad (\text{Carga neta } q = -1)$$
+
+3. *Modelar la separación electroforética de la mezcla a $pH = 6.01$:*
+   Se aplica una diferencia de potencial eléctrico constante a través de la tira de papel amortiguada a $pH = 6.01$:
+   - **Alanina ($pI = 6.01$):** A este $pH$, $pH = pI$, por lo que su carga neta media es estrictamente nula ($q = 0$). La alanina **no experimenta migración electroforética** y permanece inmóvil en la línea de siembra original.
+   - **Ácido Aspártico ($pI = 2.77$):** Dado que el $pH$ del tampón es sustancialmente mayor que su $pI$ ($pH > pI$), el ácido aspártico ha cedido protones de su carboxilo lateral, adquiriendo una **carga neta negativa ($q \approx -1$)**. Por atracción electrostática, **migra hacia el electrodo positivo (ánodo)**.
+   - **Lisina ($pI = 9.74$):** Dado que el $pH$ del tampón es menor que su $pI$ ($pH < pI$), su grupo amino terminal de cadena lateral retiene el protón, otorgándole una **carga neta positiva ($q \approx +1$)**. Por atracción electrostática, **migra hacia el electrodo negativo (cátodo)**.
+   La electroforesis separa de forma perfecta y reproducible los tres aminoácidos en tres zonas espaciales independientes.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la histidina ($pK_R \approx 6.0$) desempeña un papel protagónico constante en los sitios activos de las enzimas biológicas para transferir protones a $pH$ fisiológico ($7.4$)?
+2. Si un dipéptido se sintetiza a partir de alanina y glicina, ¿cuántos dipéptidos isoméricos constitucionalmente distintos pueden obtenerse y en qué se diferencian?
+3. ¿Cómo influye la protonación de los grupos carboxilo y amino en la solubilidad mínima que presentan las proteínas globulares cuando el medio alcanza su punto isoeléctrico exacto?

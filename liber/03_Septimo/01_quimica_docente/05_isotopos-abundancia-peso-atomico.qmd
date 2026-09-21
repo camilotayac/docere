@@ -1,0 +1,54 @@
+# Isótopos, Abundancia Natural y Peso Atómico Ponderado (Oriakhi Cap. 1)
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Atómica y Nuclear
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los **isótopos** son átomos de un mismo elemento químico que poseen idéntico número atómico ($Z$, mismos protones y propiedades químicas) pero diferente número de masa ($A$, diferente número de neutrones en el núcleo). El término proviene del griego *isos* (igual) y *topos* (lugar), aludiendo a que ocupan la misma casilla en la Tabla Periódica.
+
+El **peso atómico estándar** o masa atómica relativa que figura en la Tabla Periódica no corresponde a la masa de un átomo individual, sino al promedio ponderado de las masas isotópicas exactas de todos los isótopos estables naturales de dicho elemento, ponderadas por su fracción de abundancia isotópica natural ($f_i$), cuantificada mediante espectrometría de masas.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación del peso atómico ponderado promedio:
+$$\bar{A}_r = \sum_{i=1}^{n} f_i \cdot m_i = f_1 m_1 + f_2 m_2 + \dots + f_n m_n$$
+Donde $f_i$ es la fracción molar de abundancia:
+$$\sum f_i = 1 \qquad f_i = \frac{\%\text{abundancia}_i}{100}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Buscar en una muestra real de cloro un átomo que pese exactamente $35.45\,\text{u}$ (no existe tal átomo; sólo existen átomos de $^{35}\text{Cl}$ de $\approx 34.97\,\text{u}$ y de $^{37}\text{Cl}$ de $\approx 36.97\,\text{u}$).
+2. Suponer que los isótopos tienen reactividad química drásticamente distinta (salvo el ligero efecto isotópico cinético en el hidrógeno/deuterio, la química electrónica es idéntica).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de las monedas de 500 pesos:** Si tienes $75$ monedas nuevas que pesan $7.0\,\text{g}$ y $25$ monedas viejas gastadas que pesan $6.0\,\text{g}$, el peso promedio de una moneda en tu bolsillo es $6.75\,\text{g}$, aunque ninguna moneda individual pese exactamente $6.75\,\text{g}$.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 1):** El boro natural consta de dos isótopos estables: $^{10}\text{B}$ con masa de $10.0129\,\text{u}$ ($19.9\%$) y $^{11}\text{B}$ con masa de $11.0093\,\text{u}$ ($80.1\%$). Calcule el peso atómico medio del boro.
+
+**Paso 1:** Conversión de porcentajes a fracciones molares:
+$$f_1 = \frac{19.9}{100} = 0.199; \qquad f_2 = \frac{80.1}{100} = 0.801$$
+**Paso 2:** Cálculo del promedio ponderado:
+$$\bar{A}_r = (0.199)(10.0129\,\text{u}) + (0.801)(11.0093\,\text{u}) = 1.9926\,\text{u} + 8.8184\,\text{u} = 10.811\,\text{u}$$
+El peso atómico estándar reportado es $10.81\,\text{u}$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el peso atómico del cloro ($35.45\,\text{u}$) está más cercano a $35$ que a $37$?
+2. ¿Cómo permite la espectrometría de masas medir simultáneamente la masa isotópica y la abundancia relativa?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,65 @@
+# Ecuación del Gas Ideal y Volumen Molar Normal (Oriakhi Cap. 11)
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Al combinar las leyes de Boyle, Charles y el **Principio de Avogadro** (volúmenes iguales de gases a idéntica presión y temperatura contienen el mismo número de partículas, $V \propto n$), se deduce la **Ecuación de Estado del Gas Ideal**:
+
+$$P \cdot V = n \cdot R \cdot T$$
+
+Donde $R$ es la **constante universal de los gases ideales**, cuyo valor numérico exacto depende de las unidades seleccionadas. Un gas ideal es un modelo físico hipotético cuyas partículas poseen volumen molecular nulo (masas puntuales) y no experimentan fuerzas intermoleculares de atracción o repulsión entre sí, colisionando de forma perfectamente elástica.
+
+Bajo **Condiciones Normales de Presión y Temperatura (CNPT: $0^\circ\text{C} = 273.15\,\text{K}$ y $1\,\text{atm}$)**, un mol de cualquier gas ideal ocupa un **volumen molar estándar de $22.414\,\text{L/mol}$**.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental del gas ideal:
+$$P V = n R T$$
+Valores de la constante universal $R$:
+$$R = 0.082057\,\frac{\text{L}\cdot\text{atm}}{\text{mol}\cdot\text{K}} = 8.314462\,\frac{\text{J}}{\text{mol}\cdot\text{K}} = 62.364\,\frac{\text{L}\cdot\text{mmHg}}{\text{mol}\cdot\text{K}} = 8.314\,\frac{\text{kPa}\cdot\text{dm}^3}{\text{mol}\cdot\text{K}}$$
+Volumen molar normal en CNPT ($1\,\text{atm}, 273.15\,\text{K}$):
+$$V_m = \frac{R T}{P} = \frac{(0.08206)(273.15)}{1.000} = 22.414\,\text{L/mol}$$
+En condiciones estándar IUPAC ($1\,\text{bar} = 100\,\text{kPa}, 273.15\,\text{K}$):
+$$V_m = 22.711\,\text{L/mol}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Usar $R = 0.08206$ cuando la presión está en kilopascales o la energía en julios.
+2. Usar el volumen molar de $22.4\,\text{L}$ a temperaturas distintas de $0^\circ\text{C}$ (ej. a temperatura ambiente de $25^\circ\text{C}$, $V_m \approx 24.5\,\text{L/mol}$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del gas ideal como una pista de autos chocadores sin fricción:** Las partículas son autos teledirigidos diminutos en una pista inmensa que rebotan instantáneamente sin perder velocidad ni pegarse jamás entre ellos.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 11):** Un tanque rígido de acero de $15.0\,\text{L}$ se llena con $64.0\,\text{g}$ de gas metano ($CH_4$, $M = 16.04\,\text{g/mol}$) a una temperatura de $25.0^\circ\text{C}$. Calcule la presión del gas en atmósferas y kilopascales.
+
+**Paso 1:** Cálculo de moles de metano:
+$$n = \frac{64.0\,\text{g}}{16.04\,\text{g/mol}} = 3.990\,\text{mol}$$
+**Paso 2:** Temperatura en Kelvin:
+$$T = 25.0 + 273.15 = 298.15\,\text{K}$$
+**Paso 3:** Aplicación de la ecuación de estado:
+$$P = \frac{n R T}{V} = \frac{(3.990\,\text{mol})(0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)})(298.15\,\text{K})}{15.0\,\text{L}} = \frac{97.62}{15.0} = 6.51\,\text{atm}$$
+**Paso 4:** Conversión a kilopascales:
+$$P = 6.51\,\text{atm} \times 101.325\,\frac{\text{kPa}}{\text{atm}} = 659.6\,\text{kPa}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los gases reales se desvían del comportamiento ideal a presiones muy altas y temperaturas muy bajas?
+2. ¿Cómo permite la ley del gas ideal calcular el peso de la atmósfera terrestre?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

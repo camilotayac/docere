@@ -1,0 +1,61 @@
+# Masa Atómica, Masa Fórmula y Masa Molar de Sustancias (Oriakhi Cap. 2)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** El Mol y la Estequiometría
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Para relacionar cuantitativamente la masa macroscópica de una muestra con la cantidad de sustancia en moles, se definen tres magnitudes estrechamente vinculadas pero con precisiones conceptuales indispensables:
+
+1. **Masa Molecular Relativa ($M_r$):** Suma de las masas atómicas estándar de todos los átomos indicados en la fórmula molecular de una sustancia covalente (adimensional o expresada en daltons, $\text{Da}$ o $\text{u}$).
+2. **Masa Fórmula:** Término formalmente correcto para sustancias iónicas o de red cristalina tridimensional continua ($NaCl, CaF_2, SiO_2$) que carecen de moléculas discretas individuales. Se calcula sumando las masas de la unidad fórmula mínima.
+3. **Masa Molar ($M$):** Masa inercial de un mol ($N_A$ entidades) de dicha sustancia, expresada rigurosamente en unidades de **gramos por mol** ($\text{g/mol}$) o kilogramos por mol ($\text{kg/mol}$). Numéricamente es idéntica a la masa fórmula.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de masa molar:
+$$M = \sum_{i} a_i \cdot A_{r,i}$$
+Relación entre masa ($m$), moles ($n$) y masa molar ($M$):
+$$m = n \cdot M \implies n = \frac{m}{M} \implies M = \frac{m}{n}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Hablar de 'peso molecular' del cloruro de sodio (el $NaCl$ es iónico y no tiene moléculas; debe denominarse masa fórmula o masa molar).
+2. Omitir las unidades de $\text{g/mol}$ en la masa molar tratándola como un número abstracto.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del peso del combo de hamburguesa:** La masa molar es el peso de la caja cerrada del combo: pesas el pan (carbono), la carne (oxígeno) y el queso (hidrógeno) de una hamburguesa; cuando compras un contenedor con un mol de combos, el número de gramos que marca la báscula industrial es exactamente igual al peso del combo individual en u.m.a.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 2):** Calcule la masa fórmula del sulfato de aluminio hidratado, $Al_2(SO_4)_3 \cdot 18H_2O$, utilizando masas atómicas de la IUPAC: $Al=26.98$, $S=32.07$, $O=16.00$, $H=1.008\,\text{g/mol}$. Determine la masa en gramos de $0.350\,\text{mol}$ de dicho compuesto.
+
+**Paso 1:** Suma sistemática de componentes atómicos:
+1. $2\, Al = 2 \times 26.98 = 53.96\,\text{g/mol}$
+2. $3\, S = 3 \times 32.07 = 96.21\,\text{g/mol}$
+3. $12\, O (\text{de sulfatos}) = 12 \times 16.00 = 192.00\,\text{g/mol}$
+4. $18\, H_2O = 18 \times [2(1.008) + 16.00] = 18 \times 18.016 = 324.288\,\text{g/mol}$
+Masa molar total:
+$$M = 53.96 + 96.21 + 192.00 + 324.288 = 666.46\,\text{g/mol}$$
+
+**Paso 2:** Cálculo de la masa para $0.350\,\text{mol}$:
+$$m = n \cdot M = 0.350\,\text{mol} \times 666.46\,\frac{\text{g}}{\text{mol}} = 233.26\,\text{g}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la masa molar de un elemento en $\text{g/mol}$ tiene exactamente el mismo valor numérico que su masa atómica en unidades de masa atómica ($	ext{u}$)?
+2. ¿Cómo influye el agua de hidratación en la masa molar de un reactivo al prepararlo en el laboratorio?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

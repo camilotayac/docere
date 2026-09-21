@@ -1,0 +1,76 @@
+# Sistemas Termodinámicos y Primera Ley de la Termodinámica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termodinámica Química Clásica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La termodinámica química estudia las transformaciones de energía térmica en trabajo y otras formas de energía en procesos químicos y físicos. El universo termodinámico se divide en el sistema (porción bajo estudio) y los alrededores o entorno (el resto del universo).
+        
+Los sistemas se clasifican según las transferencias permitidas a través de sus límites:
+1. **Sistema Abierto:** Intercambia tanto materia como energía con el entorno.
+2. **Sistema Cerrado:** Intercambia energía (calor y trabajo) pero no materia con el entorno.
+3. **Sistema Aislado:** No intercambia ni materia ni energía con el entorno.
+
+El estado termodinámico de un sistema queda unívocamente fijado por variables macroscópicas ($P, V, T, n$). Una **función de estado** es una propiedad cuyo valor depende únicamente del estado actual del sistema, independientemente de la trayectoria o camino seguido para alcanzarlo (ejemplos: $U, H, S, G, P, V, T$). En contraste, el calor ($q$) y el trabajo ($w$) no son funciones del sistema sino modos de transferencia de energía a través de los límites durante un cambio de estado; son **funciones de trayectoria**.
+
+La **Primera Ley de la Termodinámica** es el principio de conservación de la energía: la energía interna total ($U$) de un sistema aislado permanece constante. Para un sistema cerrado que experimenta una transformación:
+$$\Delta U = q + w$$
+Bajo el convenio de signos de la IUPAC, la energía que ingresa al sistema es positiva ($q > 0$ si el sistema absorbe calor; $w > 0$ si los alrededores realizan trabajo sobre el sistema). El trabajo de expansión o compresión mecánico contra una presión externa constante $P_{\text{ext}}$ viene dado por:
+$$w = -P_{\text{ext}} \Delta V$$
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta U = q + w$$
+$$w = -\int_{V_1}^{V_2} P_{\text{ext}} dV \quad \xrightarrow{P_{\text{ext}}=\text{cte}} \quad w = -P_{\text{ext}} (V_2 - V_1)$$
+En una expansión isotérmica reversible de un gas ideal:
+$$w_{\text{rev}} = -\int_{V_1}^{V_2} \frac{nRT}{V} dV = -nRT \ln\left(\frac{V_2}{V_1}\right)$$
+A volumen constante ($\Delta V = 0$):
+$$w = 0 \implies \Delta U = q_v$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir calor y temperatura con energía interna:** Creer que un cuerpo 'posee calor'. El calor no es una sustancia ni una propiedad contenida; es energía en tránsito motivada por un gradiente de temperatura.
+2. **Asumir que el calor y el trabajo son funciones de estado:** Suponer que se puede hablar de 'el calor del estado 1'. El calor solo existe durante el proceso dinámico de cambio de estado.
+3. **Inversión en el convenio de signos:** Confundir el signo del trabajo mecánico. Si un gas se expande ($\Delta V > 0$), el sistema realiza trabajo sobre el entorno, perdiendo energía ($w < 0$ bajo IUPAC).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la Cuenta Bancaria (Energía Interna) y Transacciones:** La energía interna ($U$) es el saldo total de la cuenta bancaria (función de estado; solo importa cuánto dinero hay, no cómo llegó allí). El calor ($q$) y el trabajo ($w$) son los dos métodos posibles de depósito o retiro: transferencia electrónica (calor, flujo desordenado) y pago por cheque/cajero (trabajo, acción ordenada). El saldo final no distingue el origen de los fondos.
+2. **Visualización de los Límites:** Comparar un tubo de ensayo abierto (abierto), un matraz sellado (cerrado) y un termo de doble pared al vacío (aislado).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Un gas confinado en un cilindro con émbolo móvil absorbe $450\,\text{J}$ de calor mientras se expande desde un volumen inicial de $2.00\,\text{L}$ hasta un volumen final de $6.50\,\text{L}$ contra una presión externa constante de $1.20\,\text{atm}$. Calcule el trabajo realizado ($w$) en joules y el cambio en la energía interna ($\Delta U$) del gas. Dato: $1\,\text{L}\cdot\text{atm} = 101.325\,\text{J}$.
+
+**Solución paso a paso:**
+1. *Calcular el cambio de volumen:*
+   $$\Delta V = V_2 - V_1 = 6.50\,\text{L} - 2.00\,\text{L} = 4.50\,\text{L}$$
+2. *Calcular el trabajo mecánico:*
+   $$w = -P_{\text{ext}} \Delta V = -(1.20\,\text{atm})(4.50\,\text{L}) = -5.40\,\text{L}\cdot\text{atm}$$
+3. *Convertir el trabajo a Joules con factor de conversión:*
+   $$w = -5.40\,\text{L}\cdot\text{atm} \times \left( \frac{101.325\,\text{J}}{1\,\text{L}\cdot\text{atm}} \right) = -547.16\,\text{J}$$
+4. *Aplicar la Primera Ley de la Termodinámica:*
+   $$\Delta U = q + w$$
+   Dado que el sistema absorbe calor, $q = +450\,\text{J}$:
+   $$\Delta U = +450\,\text{J} + (-547.16\,\text{J}) = -97.16\,\text{J} \approx -97.2\,\text{J}$$
+   *Interpretación:* La energía interna del sistema disminuyó en $97.2\,\text{J}$ porque el trabajo de expansión efectuado superó la energía térmica absorbida.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué $\Delta U$ entre dos estados definidos es idéntico sin importar si la expansión se realiza de forma brusca irreversible o infinitamente lenta reversible?
+2. Si un gas ideal se expande libremente en el vacío ($P_{\text{ext}} = 0$) sin intercambiar calor ($q = 0$), ¿cuánto vale el trabajo mecánico y cuál es el cambio de temperatura del sistema?
+3. ¿Cómo se traduce el principio de conservación de la energía al funcionamiento de un motor de combustión interna?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,62 @@
+# Reacciones Nucleares Inducidas: Fisión en Cadena y Fusión Termonuclear
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Química Nuclear y Radiactividad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Las reacciones nucleares inducidas ocurren cuando un núcleo blanco es bombardeado por partículas aceleradas (neutrones, protones, núcleos ligeros). Se dividen en dos procesos colosales de liberación energética según la curva de energía de enlace:
+
+1. **Fisión Nuclear Inducida (Hahn, Strassmann, Meitner, 1938):** Ruptura de un núcleo pesado e inestable (como $^{235}U$ o $^{239}Pu$) al capturar un neutrón térmico lento ($^1_0 n$), dividiéndose en dos núcleos de masa intermedia (fragmentos de fisión) más la liberación de $2$ a $3$ neutrones secundarios rápidos y gigantescas cantidades de energía térmica ($\approx 200\,\text{MeV}$ por núcleo fisionado). Los neutrones liberados inducen la fisión de núcleos vecinos, originando una **reacción en cadena**. Si la masa de combustible supera la **masa crítica**, la reacción se autosostiene (controlada en reactores nucleares civiles mediante barras de control de cadmio o boro; incontrolada y explosiva en armas nucleares).
+2. **Fusión Termonuclear:** Unión de dos núcleos atómicos ligeros (isótopos de hidrógeno: deuterio $^2H$ y tritio $^3H$) a temperaturas extremas ($> 10^8\,\text{K}$) para vencer la barrera de repulsión culombiana, formando un núcleo más pesado ($^4He$) y liberando $17.6\,\text{MeV}$ por evento. Es la fuente de energía que alimenta a las estrellas y el Sol.
+
+### Formalización Matemática y Leyes Físicas
+Reacción típica de fisión de Uranio-235:
+$$^{235}_{92}U + ^1_0 n \longrightarrow ^{141}_{56}Ba + ^{92}_{36}Kr + 3\, ^1_0 n + 200\,\text{MeV}$$
+Reacción de fusión termonuclear Deuterio-Tritio ($D-T$):
+$$^2_1 H + ^3_1 H \longrightarrow ^4_2 He + ^1_0 n + 17.6\,\text{MeV}$$
+Factor de multiplicación neutrónica ($k$):
+$$k < 1 \implies \text{Subcrítico (la reacción se apaga)}$$
+$$k = 1 \implies \text{Crítico estable (reactor nuclear de potencia constante)}$$
+$$k > 1 \implies \text{Supercrítico (divergencia exponencial)}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir fisión (romper núcleos pesados) con fusión (unir núcleos livianos).
+2. Creer que un reactor nuclear puede explotar como una bomba atómica (físicamente imposible debido a que el uranio de un reactor sólo está enriquecido al $3-5\%\,^{235}U$, mientras que un arma exige $>90\%$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de las trampas de ratones con pelotas de ping-pong:** Imagina un suelo cubierto de miles de trampas de ratones cargadas, cada una con dos pelotas de ping-pong encima. Si lanzas una sola pelota desde arriba (neutrón), dispara una trampa que lanza dos pelotas, las cuales activan dos trampas más lanzando cuatro pelotas, disparando una avalancha exponencial en un parpadeo (reacción en cadena).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** La fisión de un único núcleo de uranio-235 libera un promedio de $200.0\,\text{MeV}$ de energía. Calcule la energía total liberada por la fisión completa de $1.000\,\text{kg}$ de $^{235}U$ puro ($M = 235.04\,\text{g/mol}$) en julios ($\text{J}$) y compárela con la energía liberada al quemar $1.000\,\text{kg}$ de carbón estándar ($3.00 \times 10^7\,\text{J/kg}$).
+
+**Paso 1:** Número de átomos de $^{235}U$ en $1.000\,\text{kg}$ ($1000.0\,\text{g}$):
+$$N = \frac{1000.0\,\text{g}}{235.04\,\text{g/mol}} \times (6.02214 \times 10^{23}\,\text{átomos/mol}) = 2.5622 \times 10^{24}\,\text{núcleos}$$
+**Paso 2:** Energía en electronvoltios y julios:
+$$E_{\text{total}} = (2.5622 \times 10^{24}) \times (200.0 \times 10^6\,\text{eV}) = 5.1244 \times 10^{32}\,\text{eV}$$
+$$E_{\text{total}} = 5.1244 \times 10^{32}\,\text{eV} \times (1.6022 \times 10^{-19}\,\text{J/eV}) = 8.210 \times 10^{13}\,\text{J} = 82.1\,\text{TJ}$$
+**Paso 3:** Comparación con el carbón mineral:
+$$\text{Factor} = \frac{8.210 \times 10^{13}\,\text{J}}{3.00 \times 10^7\,\text{J}} = 2.74 \times 10^6$$
+Un solo kilogramo de uranio-235 produce la misma energía que quemar **$2740\,\text{toneladas}$** de carbón fósil, evidenciando la descomunal densidad energética nuclear.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el confinamiento magnético en reactores Tokamak (como el proyecto ITER) es el mayor desafío tecnológico para lograr la fusión nuclear comercial?
+2. ¿Cómo actúan los moderadores (agua pesada o grafito) para desacelerar los neutrones en un reactor nuclear?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,60 @@
+# Fisicoquímica de Disoluciones: Solvatación y Factores de Solubilidad (Oriakhi Cap. 13)
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Disoluciones Acuosas y Concentración
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una disolución es un sistema homogéneo termodinámicamente estable integrado por dos o más componentes dispersos a nivel molecular o iónico. El proceso de disolución involucra tres etapas energéticas acopladas:
+
+1. Separación de las partículas de soluto entre sí (rompimiento de fuerzas intermoleculares o energía de red iónica, $\Delta H_1 > 0$, endotérmico).
+2. Separación de las moléculas de solvente para crear cavidades de acomodación (vencer puentes de hidrógeno o fuerzas solvente-solvente, $\Delta H_2 > 0$, endotérmico).
+3. Atracción e interacción entre partículas de soluto y moléculas de solvente circundantes: **proceso de solvatación o hidratación** ($\Delta H_3 < 0$, fuertemente exotérmico).
+
+El calor neto de disolución ($\Delta H_{\text{sol}}$) y el incremento de entropía ($\Delta S_{\text{sol}} > 0$) determinan la espontaneidad según la energía libre de Gibbs: $\Delta G = \Delta H_{\text{sol}} - T\Delta S_{\text{sol}} < 0$. El principio empírico fundamental es **'lo semejante disuelve a lo semejante'** (*similia similibus solvuntur*): solventes polares disuelven solutos polares e iónicos; solventes apolares disuelven solutos apolares.
+
+### Formalización Matemática y Leyes Físicas
+Entalpía neta de disolución:
+$$\Delta H_{\text{sol}} = \Delta H_1 + \Delta H_2 + \Delta H_3 = U_{\text{red}} + \Delta H_{\text{hidratación}}$$
+Ley de Henry para la solubilidad de gases en líquidos:
+$$S_g = k_H \cdot P_g$$
+Donde $S_g$ es la solubilidad molar del gas, $P_g$ la presión parcial del gas y $k_H$ la constante de Henry.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que la disolución es una reacción química (la sal disuelta en agua sigue siendo sal; al evaporar el agua se recupera el cloruro de sodio intacto).
+2. Creer que aumentar la temperatura siempre aumenta la solubilidad de cualquier soluto (en los gases, aumentar la temperatura siempre disminuye drásticamente su solubilidad por escape térmico).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los amigos en la fiesta:** El soluto son amigos muy unidos tomados del brazo; el solvente son otros amigos bailando en grupo. Para que se mezclen, los amigos deben soltar a sus parejas originales (romper enlaces previos, cuesta energía) y formar nuevas parejas mixtas (solvatación, libera energía). Si las nuevas parejas se caen bien (atracciones compatibles polar-polar), la fiesta es un éxito (se disuelven).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 13):** La constante de la ley de Henry para el oxígeno gaseoso ($O_2$) en agua a $25^\circ\text{C}$ es $k_H = 1.28 \times 10^{-3}\,\text{mol/(L}\cdot\text{atm)}$. Calcule la solubilidad molar del $O_2$ en un lago a nivel del mar sabiendo que la presión parcial del oxígeno en el aire atmosférico es de $0.209\,\text{atm}$.
+
+**Paso 1:** Aplicación de la ley de Henry:
+$$S = k_H \cdot P_{O_2} = (1.28 \times 10^{-3}\,\text{mol/(L}\cdot\text{atm)}) \times (0.209\,\text{atm})$$
+$$S = 2.68 \times 10^{-4}\,\text{mol/L}$$
+**Paso 2:** Conversión a miligramos por litro (ppm disuelto):
+$$\text{Concentración} = (2.68 \times 10^{-4}\,\text{mol/L}) \times (32000\,\text{mg/mol}) = 8.56\,\text{mg/L} = 8.56\,\text{ppm}$$
+Este valor corresponde a la concentración crítica de oxígeno disuelto que sostiene la vida de la fauna acuática.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué se desprenden burbujas al destapar una botella de refresco gaseoso frío?
+2. ¿Por qué la contaminación térmica (verter agua caliente industrial a los ríos) produce la asfixia masiva de peces?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

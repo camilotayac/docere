@@ -1,0 +1,58 @@
+# Metales, No Metales, Semimetales y Familias Químicas Representativas
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** La Tabla Periódica y Periodicidad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los elementos de la Tabla Periódica se agrupan en tres amplias divisiones termodinámicas y estructurales en función de sus propiedades mecánicas, térmicas, eléctricas y químicas:
+
+1. **Metales:** Ocupan la mayor parte de la tabla (bloques $s, d, f$ y parte de $p$). Son sólidos a temperatura ambiente (salvo el mercurio, $Hg$), presentan brillo metálico, alta conductividad térmica y eléctrica, ductilidad y maleabilidad. Químicamente tienen bajas energías de ionización y tienden a perder electrones formando cationes y óxidos básicos.
+2. **No Metales:** Situados en la región superior derecha del bloque $p$ (más el hidrógeno). Son malos conductores, carecen de brillo, son quebradizos en estado sólido. Tienen alta electronegatividad y afinidad electrónica, formando aniones, enlaces covalentes y óxidos ácidos.
+3. **Metaloides o Semimetales:** Situados sobre la línea diagonal quebrada ($B, Si, Ge, As, Sb, Te$). Exhiben propiedades intermedias y son semiconductores electrónicos de fundamental importancia tecnológica.
+
+### Formalización Matemática y Leyes Físicas
+Propiedades de familias representativas:
+1. Alcalinos (Grupo 1): Configuración $ns^1$, $E_{\text{ion}}$ muy baja, catión $+1$.
+2. Alcalinotérreos (Grupo 2): Configuración $ns^2$, catión $+2$.
+3. Halógenos (Grupo 17): Configuración $ns^2 np^5$, anión $-1$, alta reactividad.
+4. Gases Nobles (Grupo 18): Configuración $ns^2 np^6$ (salvo $He: 1s^2$), octeto completo.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Asumir que todos los metales son sólidos duros e inflexibles (el sodio y potasio se cortan como mantequilla con una espátula y reaccionan violentamente con agua).
+2. Olvidar que el hidrógeno, a pesar de estar en el Grupo 1 por configuración $1s^1$, es un no metal gaseoso.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los donantes y receptores financieros:** Los metales son 'generosos donantes de electrones' que buscan desprenderse de sus pocos electrones de valencia para alcanzar la paz de la capa interna llena; los no metales son 'ávidos receptores' que buscan capturar electrones a toda costa para completar su octeto.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Clasifique los elementos Sodio ($Na$), Silicio ($Si$) y Cloro ($Cl$) en metal, metaloide o no metal, indique su grupo y prediga el tipo de óxido que forman al combinarse con oxígeno.
+
+**Paso 1:** Análisis del Sodio ($Na$, Grupo 1):
+Metal alcalino típico; cede $1\,e^-$ formando $Na_2O$, el cual es un óxido básico que al hidratarse forma el hidróxido fuerte $NaOH$.
+**Paso 2:** Análisis del Silicio ($Si$, Grupo 14):
+Metaloide semiconductor; forma $SiO_2$, un óxido de red covalente gigante de comportamiento ácido débil.
+**Paso 3:** Análisis del Cloro ($Cl$, Grupo 17):
+No metal (halógeno); forma anhídridos u óxidos ácidos como $Cl_2O_7$, el cual al disolverse en agua forma el ácido perclórico ($HClO_4$), un ácido fuerte.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los elementos semiconductores como el silicio aumentan su conductividad al aumentar la temperatura, a diferencia de los metales que la disminuyen?
+2. ¿Por qué el diamante (carbono puro) es un aislante eléctrico y el grafito (también carbono puro) conduce la electricidad?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

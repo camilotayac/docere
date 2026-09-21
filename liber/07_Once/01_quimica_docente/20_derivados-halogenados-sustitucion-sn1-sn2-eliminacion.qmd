@@ -1,0 +1,84 @@
+# Derivados Halogenados: Mecanismos de Sustitución Nucleófila y Eliminación
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Mecanismos de Reacción en Química Orgánica
+> * **Propósito Docente:** Modelar los perfiles cinéticos, los estados de transición y las restricciones estereoquímicas de los mecanismos de sustitución nucleófila ($S_N1, S_N2$) y eliminación ($E1, E2$) en halogenuros de alquilo.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los derivados halogenados, o halogenuros de alquilo ($R-X$), son compuestos orgánicos en los que uno o más átomos de hidrógeno de un hidrocarburo han sido reemplazados por halógenos ($X = F, Cl, Br, I$). La diferencia de electronegatividad entre el carbono ($\chi = 2.55$) y el halógeno (p. ej., cloro $\chi = 3.16$, bromo $\chi = 2.96$) polariza permanentemente el enlace covalente:
+
+$$C^{\delta+} - X^{\delta-}$$
+
+Esta distribución dipolar confiere al átomo de carbono una densidad de carga parcial positiva ($C^{\delta+}$), convirtiéndolo en un centro electrofílico susceptible al ataque de especies ricas en electrones (nucleófilos, $Nu^-$). Simultáneamente, la capacidad del halógeno para estabilizar la carga negativa al desligarse como anión haluro ($X^-$) lo define como un **grupo saliente**. La aptitud como grupo saliente es inversamente proporcional a la basicidad de la especie saliente y crece con el radio iónico y la polarizabilidad a lo largo del grupo de la tabla periódica:
+
+$$I^- > Br^- > Cl^- \gg F^-$$
+
+Los halogenuros de alquilo experimentan dos tipos fundamentales de transformaciones en competencia: la **sustitución nucleófila**, donde el nucleófilo reemplaza al halógeno, y la **eliminación**, donde una base extrae un protón adyacente expulsando al haluro para formar un enlace múltiple (alqueno). Cada proceso puede operar a través de dos mecanismos cinéticos extremos:
+
+1. **Mecanismo Bimolecular Concertado ($S_N2$):** Es un proceso en una sola etapa sin intermediarios. El nucleófilo ataca al carbono electrofílico por el lado opuesto al grupo saliente (ataque dorsal a $180^\circ$) al mismo tiempo que el enlace $C-X$ comienza a romperse. El estado de transición adopta una geometría bipiramidal trigonal pentacoordinada. Cinéticamente obedece a una ley de velocidad de segundo orden:
+$$v = k\,[R-X][Nu^-]$$
+Estereoquímicamente, el ataque dorsal provoca la inversión completa de la configuración tridimensional en el centro quiral, fenómeno conocido como **inversión de Walden**. La reactividad relativa está severamente gobernada por el impedimento estérico:
+$$\text{Metilo } (CH_3X) > \text{Primario } (1^\circ) > \text{Secundario } (2^\circ) \gg \text{Terciario } (3^\circ \text{ inerte por } S_N2)$$
+
+2. **Mecanismo Unimolecular por Etapas ($S_N1$):** Es un proceso en dos etapas. En la etapa lenta (determinante de la velocidad), el enlace $C-X$ se disocia heterolíticamente sin asistencia del nucleófilo para generar un intermediario reactivo plano: un **carbocatión** con hibridación $sp^2$. En la etapa rápida posterior, el nucleófilo ataca al carbocatión por cualquiera de las dos caras del plano con igual probabilidad. Cinéticamente sigue una ley de velocidad de primer orden dependiente solo del sustrato:
+$$v = k\,[R-X]$$
+Estereoquímicamente, el ataque simétrico por ambas caras da lugar a una pérdida de la actividad óptica neta, generando la **racemización**. La reactividad está gobernada por la estabilidad termodinámica del carbocatión intermediario:
+$$\text{Terciario } (3^\circ) > \text{Secundario } (2^\circ) \gg \text{Primario } (1^\circ \text{ no reacciona por } S_N1)$$
+
+En presencia de especies que actúan preferentemente como bases de Brønsted, la sustitución compite directamente con las reacciones de **$\beta$-eliminación**:
+
+1. **Mecanismo Bimolecular de Eliminación ($E2$):** Ocurre de forma concertada cuando una base fuerte extrae un protón del carbono $\beta$ mientras el halógeno se desprende simultáneamente del carbono $\alpha$. Requiere una conformación estereoquímica rigurosamente anti-periplanar entre el hidrógeno $\beta$ y el grupo saliente $X$ (ángulo diedro de $180^\circ$).
+2. **Mecanismo Unimolecular de Eliminación ($E1$):** Comparte el primer paso lento de ionización con el mecanismo $S_N1$, formando el carbocatión, el cual pierde posteriormente un protón $\beta$ capturado por una base débil del medio.
+
+En ambas eliminaciones, cuando son posibles varios alquenos isómeros, la reacción sigue mayoritariamente la **Regla de Zaitsev**, la cual establece que el producto termodinámicamente mayoritario es el alqueno más sustituido y ramificado, debido a la estabilización por hiperconjugación de los enlaces adyacentes.
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Confundir nucleofilia con basicidad:** Creer que toda especie fuertemente básica es un excelente nucleófilo. La basicidad es una propiedad termodinámica de afinidad por el protón ($H^+$), mientras que la nucleofilia es una propiedad cinética de velocidad de ataque sobre el carbono electrofílico gobernada por la polarizabilidad y el volumen estérico (p. ej., el ion terc-butóxido es una base fortísima pero un pésimo nucleófilo debido a su gran volumen estérico).
+2. **Ignorar el efecto del disolvente en la competencia mecanicista:** Omitir que los disolventes próticos polares ($H_2O, CH_3OH$) favorecen los mecanismos unimoleculares ($S_N1, E1$) al solvatar y estabilizar al carbocatión y al haluro por puentes de hidrógeno, mientras que los disolventes apróticos polares ($DMSO, \text{acetona}$) aceleran exponencialmente el mecanismo $S_N2$ al mantener a los nucleófilos aniónicos desolvatados y desnudos.
+3. **Predecir inversión de configuración en reacciones $S_N1$:** Olvidar que el carbocatión intermedio es trigonal plano ($sp^2$), por lo que el nucleófilo tiene idéntica accesibilidad topológica por arriba y por abajo del plano nodal.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del Paraguas Invertido por el Viento:** Explicar la inversión de Walden en el mecanismo $S_N2$ mostrando cómo un paraguas abierto cambia súbitamente su curvatura cuando una ráfaga de viento frontal lo dobla al revés; los tres sustituyentes unidos al carbono se abren en abanico y se pliegan en sentido contrario.
+2. **Analogía del Baile de Parejas:** En $S_N2$, una persona entra a bailar al mismo tiempo que desplaza a la pareja previa sin que nadie quede solo (proceso concertado sin intermedio); en $S_N1$, la pareja original se separa primero dejando a un bailarín solitario esperando en el centro de la pista (carbocatión), y luego cualquier participante disponible puede tomarlo por el frente o por la espalda.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Considere la solvólisis del 2-bromo-2-metilpropano (bromuro de terc-butilo) disuelto en metanol ($CH_3OH$) a $25^\circ\text{C}$.
+1. Identifique justificadamente el mecanismo predominante ($S_N1, S_N2, E1, E2$).
+2. Formule la ecuación de la etapa determinante de la velocidad y justifique la ley cinética asociada.
+3. Deduzca la estructura del éter producido por sustitución nucleófila y del alqueno generado por eliminación competitiva.
+
+**Solución paso a paso:**
+
+1. *Clasificar el sustrato y el medio de reacción:*
+   $$\text{Sustrato: } (CH_3)_3C-Br \quad (\text{Halogenuro de alquilo terciario, } 3^\circ)$$
+   $$\text{Medio: } CH_3OH \quad (\text{Disolvente polar prótico y nucleófilo/base débil})$$
+   El carbono electrofílico está terciariamente bloqueado por tres grupos metilo voluminosos, lo que impide termodinámica y estéricamente el ataque dorsal $S_N2$. Dado que el metanol es un nucleófilo débil y un disolvente prótico ionizante, la reacción operará indispensablemente por vías unimoleculares ($S_N1$ y $E1$).
+
+2. *Formular la etapa lenta determinante de la velocidad (formación del carbocatión):*
+   $$(CH_3)_3C-Br \xrightarrow{\text{Lenta, } k_1} (CH_3)_3\overset{+}{C} + :Br:^-$$
+   La heterólisis espontánea del enlace polar $C-Br$ genera el carbocatión terc-butilo plano, estabilizado por 9 hidrógenos en hiperconjugación. La velocidad depende exclusivamente de la concentración del halogenuro:
+   $$v = k_1\,[(CH_3)_3C-Br]$$
+
+3. *Formular la etapa rápida de sustitución nucleófila ($S_N1$):*
+   $$(CH_3)_3\overset{+}{C} + :O(H)-CH_3 \xrightarrow{\text{Rápida}} (CH_3)_3C-\overset{+}{O}(H)-CH_3 \xrightarrow{-H^+} (CH_3)_3C-O-CH_3$$
+   El metanol ataca al carbocatión con su par solitario sobre el oxígeno y la posterior pérdida de un protón produce el éter neutro: metil terc-butil éter (MTBE).
+
+4. *Formular la etapa rápida de eliminación competitiva ($E1$):*
+   $$(CH_3)_3\overset{+}{C} + CH_3OH \xrightarrow{\text{Rápida}} CH_2=C(CH_3)_2 + CH_3OH_2^+$$
+   El metanol actúa como base capturando un protón de uno de los grupos metilo adyacentes, formando un doble enlace y generando 2-metilpropeno (isobutileno) según la regla de Zaitsev.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Qué ocurriría con la velocidad de reacción si en una sustitución $S_N2$ sobre bromoetano se duplica la concentración del ion hidróxido ($OH^-$)? ¿Y si la misma variación se aplica a la hidrólisis $S_N1$ del bromuro de terc-butilo?
+2. Al someter el $(R)$-2-bromobutano a una reacción con cianuro de sodio ($NaCN$) en dimetilsulfóxido ($DMSO$), ¿cuál es la configuración absoluta del 2-metilbutanonitrilo obtenido?
+3. ¿Por qué los halogenuros de vinilo ($CH_2=CH-Cl$) y de arilo ($C_6H_5-Cl$) son extraordinariamente resistentes a la sustitución nucleófila tanto por vía $S_N1$ como por vía $S_N2$?

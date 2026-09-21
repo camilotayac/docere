@@ -1,0 +1,58 @@
+# Partículas Subatómicas Fundamentales: Protones, Neutrones y Electrones
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Atómica y Nuclear
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+El átomo moderno está estructurado en dos regiones: el núcleo atómico (que concentra más del $99.95\%$ de la masa total) y la nube o corteza electrónica extranuclear. Las tres partículas subatómicas fundamentales que definen el comportamiento químico son:
+
+1. **Protón ($p^+$):** Nucleón descubierto por Rutherford (1919), con carga elemental positiva $+1\,e = +1.6022 \times 10^{-19}\,\text{C}$ y masa en reposo de $1.6726 \times 10^{-27}\,\text{kg} = 1.007276\,\text{u}$.
+2. **Neutrón ($n^0$):** Nucleón neutro descubierto por James Chadwick (1932), con carga eléctrica nula ($0\,\text{C}$) y masa de $1.6749 \times 10^{-27}\,\text{kg} = 1.008665\,\text{u}$.
+3. **Electrón ($e^-$):** Leptón extranuclear con carga elemental negativa $-1\,e = -1.6022 \times 10^{-19}\,\text{C}$ y masa de $9.1094 \times 10^{-31}\,\text{kg} = 0.0005486\,\text{u}$.
+
+### Formalización Matemática y Leyes Físicas
+Unidad de masa atómica unificada ($\text{u}$ o dalton, $\text{Da}$):
+$$1\,\text{u} = \frac{1}{12} m(^{12}\text{C}) = 1.660539 \times 10^{-27}\,\text{kg}$$
+Razón de masas protón/electrón:
+$$\frac{m_p}{m_e} = \frac{1.6726 \times 10^{-27}\,\text{kg}}{9.1094 \times 10^{-31}\,\text{kg}} \approx 1836$$
+Fuerza nuclear fuerte frente a repulsión culombiana en el núcleo:
+$$F_{\text{nuclear}} \gg F_{\text{electrostática}} \approx \frac{k_e \cdot e^2}{r^2}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Considerar que el neutrón es 'la unión pegada de un protón y un electrón'.
+2. Asumir que la masa del electrón se puede despreciar en cálculos estequiométricos ordinarios porque 'no pesa nada' (posee masa inercial real definida).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del mosquito y el camión de carga:** La masa de un protón comparada con un electrón es como un camión de carga pesada frente a un mosquito estrellado en el parabrisas. El camión determina la inercia total del vehículo, pero la carga eléctrica del mosquito es numéricamente idéntica en magnitud a la del camión.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule la masa total en kilogramos y en unidades de masa atómica ($\text{u}$) de un átomo neutro de Carbono-12 ($6\,p^+, 6\,n^0, 6\,e^-$) sumando sus partículas aisladas, y demuestre por qué la suma difiere de la masa atómica real de $12.000000\,\text{u}$.
+
+**Paso 1:** Suma de masas individuales:
+$$m = 6(1.007276) + 6(1.008665) + 6(0.0005486) = 6.043656 + 6.051990 + 0.003292 = 12.098938\,\text{u}$$
+**Paso 2:** Cálculo del defecto de masa:
+$$\Delta m = 12.098938\,\text{u} - 12.000000\,\text{u} = 0.098938\,\text{u}$$
+Este defecto de masa se convierte en la energía de enlace nuclear que mantiene cohesionado el núcleo según $E = \Delta m \cdot c^2$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué los protones del núcleo no se repelen hasta desintegrar el átomo por repulsión electrostática de cargas iguales?
+2. ¿Por qué el descubrimiento del neutrón tardó más de 30 años después del descubrimiento del electrón?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

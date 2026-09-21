@@ -1,0 +1,78 @@
+# Formulación y Nomenclatura de Ácidos: Hidrácidos y Oxácidos
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Nomenclatura Química Inorgánica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los ácidos inorgánicos son sustancias moleculares polares que en disolución acuosa liberan iones hidronio ($H_3O^+$ o $H^+$) según la definición de Arrhenius y Brønsted-Lowry. Se clasifican estructuralmente en:
+
+1. **Ácidos Hidrácidos (Binarios):** Combinación de hidrógeno ($+1$) con un no metal de los grupos 16 ($S, Se, Te$, con valencia $-2$) o 17 ($F, Cl, Br, I$, con valencia $-1$). En estado gaseoso puro anhidro se nombran como haluros de hidrógeno ('-uro de hidrógeno', ej. $HCl(g)$: cloruro de hidrógeno); cuando están disueltos en agua adoptan la nomenclatura de ácido hidrácido ('ácido [no metal]-hídrico', ej. $HCl(aq)$: ácido clorhídrico).
+2. **Ácidos Oxácidos (Ternarios):** Compuestos formados por hidrógeno, oxígeno y un no metal central. Resultan formalmente de la hidratación de un anhídrido u óxido ácido:
+$$\text{Óxido Ácido} + H_2O \longrightarrow \text{Ácido Oxácido}$$
+Se nombran con la raíz del no metal y los prefijos/sufijos: hipo-...-oso, -oso, -ico, per-...-ico.
+
+### Formalización Matemática y Leyes Físicas
+Formulación de hidrácidos:
+$$H_n X \quad (n = 1 \text{ para halógenos}; \, n = 2 \text{ para anfígenos})$$
+Regla nemotécnica de formulación directa de oxácidos ($H_a X_b O_c$):
+1. Si la valencia del no metal ($v$) es impar: $a=1, b=1, c=\frac{v+1}{2} \implies H X O_{(v+1)/2}$
+2. Si la valencia ($v$) es par: $a=2, b=1, c=\frac{v+2}{2} \implies H_2 X O_{(v+2)/2}$
+3. Oxácidos especiales del fósforo, boro y silicio (ácidos *orto* con hidratación triple):
+$$P_2O_5 + 3 H_2O \longrightarrow H_6P_2O_8 \longrightarrow 2 H_3PO_4 \quad (\text{Ácido ortofosfórico o fosfórico})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Confundir el gas anhidro con la disolución acuosa (llamar 'ácido clorhídrico' al cilindro de gas $HCl(g)$, cuando su nombre correcto es cloruro de hidrógeno).
+2. Olvidar que el ácido fosfórico común es $H_3PO_4$ (orto) y no $HPO_3$ (meta).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El puente del sufijo tradicional:** Una regla mnemotécnica clásica para recordar los cambios hacia las sales:
+  2. *Cuando el OSO toca el PITO* (-oso $\to$ -ito)
+  3. *el rico PICO del CORVATO* (-ico $\to$ -ato)
+  4. *y el perro salta con su HÍDRICO hocico en el PLATO* (-hídrico $\to$ -uro).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Formule y nombre los oxácidos del cloro correspondientes a sus cuatro estados de oxidación positivos ($+1, +3, +5, +7$).
+
+**Paso 1:** Valencia $+1$:
+
+$$Cl_2O + H_2O \to H_2Cl_2O_2 \to HClO$$
+
+Nombre tradicional: **Ácido hipocloroso**
+**Paso 2:** Valencia $+3$:
+
+$$Cl_2O_3 + H_2O \to H_2Cl_2O_4 \to HClO_2$$
+
+Nombre tradicional: **Ácido cloroso**
+**Paso 3:** Valencia $+5$:
+
+$$Cl_2O_5 + H_2O \to H_2Cl_2O_6 \to HClO_3$$
+
+Nombre tradicional: **Ácido clórico**
+**Paso 4:** Valencia $+7$:
+
+$$Cl_2O_7 + H_2O \to H_2Cl_2O_8 \to HClO_4$$
+
+Nombre tradicional: **Ácido perclórico** (ácido extraordinariamente fuerte).
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la acidez y fuerza de los oxácidos del cloro aumenta conforme aumenta el número de átomos de oxígeno ($HClO < HClO_2 < HClO_3 < HClO_4$)?
+2. ¿Cuál es la fórmula del ácido sulfhídrico y por qué es un gas fétido a temperatura ambiente a diferencia del agua?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

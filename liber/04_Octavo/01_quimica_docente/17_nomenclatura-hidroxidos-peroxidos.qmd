@@ -1,0 +1,78 @@
+# Formulación y Nomenclatura de Hidróxidos y Peróxidos
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Nomenclatura Química Inorgánica
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los hidróxidos y peróxidos constituyen dos funciones químicas inorgánicas oxigenadas fundamentales:
+
+1. **Hidróxidos o Bases:** Compuestos ternarios iónicos constituidos por un catión metálico (o el ion amonio, $NH_4^+$) y el anión poliatómico **hidróxido o hidroxilo** ($OH^-$), en el cual el oxígeno tiene estado $-2$ y el hidrógeno $+1$. Son solubles en agua generando soluciones básicas que vuelven azul el papel tornasol y neutralizan los ácidos formando sales.
+2. **Peróxidos:** Compuestos binarios donde el oxígeno forma un enlace covalente simple oxígeno-oxígeno (puente peroxo, $[-O-O-]^{2-}$ o $O_2^{2-}$), donde cada átomo de oxígeno posee un estado de oxidación formal de **$-1$**. Son agentes oxidantes enérgicos que liberan oxígeno gaseoso ante catalizadores o calor.
+
+### Formalización Matemática y Leyes Físicas
+Formulación general de hidróxidos:
+$$M^{+n} + n (OH)^- \longrightarrow M(OH)_n$$
+Nomenclatura Stock: 'Hidróxido de [Metal](número romano)'
+Nomenclatura Sistemática: '(prefijo)hidróxido de [Metal]'
+Formulación de peróxidos de metales alcalinos y alcalinotérreos:
+$$2 Na^+ + O_2^{2-} \longrightarrow Na_2O_2 \quad (\text{Peróxido de sodio; no se simplifica})$$
+$$Ba^{2+} + O_2^{2-} \longrightarrow BaO_2 \quad (\text{Peróxido de bario})$$
+$$H_2O_2 \quad (\text{Peróxido de hidrógeno o agua oxigenada})$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Intentar simplificar el peróxido de hidrógeno (
+
+$$H_2O_2 \to HO$$
+
+, lo cual es incorrecto porque el ion peroxo
+2. Olvidar poner paréntesis al grupo hidróxido cuando el subíndice es mayor a uno (escribir $CaOH_2$ en lugar de $Ca(OH)_2$, indicando erróneamente 2 hidrógenos y 1 solo oxígeno).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del paquete cerrado de dos calcetines:** El ion peróxido ($O_2^{2-}$) es como un paquete sellado que trae dos calcetines juntos; no puedes romper el paquete para quedarte con un calcetín porque destruyes la marca comercial. El grupo $OH^-$ es como un paquete de una bolsa con un asa: si necesitas dos bolsas pones paréntesis con el subíndice afuera.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Formule y nombre en el sistema Stock y Sistemático los hidróxidos de:
+a) Aluminio ($Al^{+3}$)
+b) Cobre con estado de oxidación $+1$ y $+2$
+c) Formule el peróxido de potasio e indique el estado de oxidación del oxígeno en él.
+
+**Paso 1:** Hidróxido de aluminio:
+$$Al^{+3} + 3 (OH)^- \longrightarrow Al(OH)_3$$
+Stock: Hidróxido de aluminio; Sistemática: Trihidróxido de aluminio.
+**Paso 2:** Hidróxidos de cobre:
+1. Cobre(I):
+
+$$Cu^+ + OH^- \longrightarrow CuOH$$
+
+(Hidróxido de cobre(I))
+2. Cobre(II):
+
+$$Cu^{2+} + 2 OH^- \longrightarrow Cu(OH)_2$$
+
+(Dihidróxido de cobre / Hidróxido de cobre(II))
+**Paso 3:** Peróxido de potasio:
+$$2 K^+ + O_2^{2-} \longrightarrow K_2O_2$$
+El oxígeno posee estado de oxidación formal $-1$.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el agua oxigenada se descompone violentamente en agua y oxígeno gaseoso al entrar en contacto con la sangre (enzima catalasa)?
+2. ¿Cómo se demuestra analíticamente que el $NaOH$ es una base fuerte en solución acuosa?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

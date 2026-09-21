@@ -1,0 +1,71 @@
+# Simbología de las Ecuaciones Químicas y Clasificación de Reacciones
+
+> **Grado 9° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Reacciones Químicas y Conservación
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Una reacción química es un proceso termodinámico en el cual una o más sustancias (reactivos) transforman sus enlaces y reorganizan sus átomos para producir nuevas sustancias con propiedades distintas (productos). La ecuación química representa simbólicamente esta transformación cuantitativa mediante fórmulas moleculares y coeficientes estequiométricos enteros.
+
+Se clasifican empíricamente en:
+1. **Síntesis o Combinación:**
+
+$$A + B \longrightarrow AB$$
+2. **Descomposición o Análisis:**
+
+$$AB \longrightarrow A + B$$
+3. **Desplazamiento Simple:**
+
+$$A + BC \longrightarrow AC + B$$
+
+(regido por la serie de actividad electroquímica)
+4. **Doble Desplazamiento o Metátesis:**
+
+$$AB + CD \longrightarrow AD + CB$$
+
+(precipitación, neutralización, desprendimiento de gas).
+
+### Formalización Matemática y Leyes Físicas
+Simbología IUPAC de estado de agregación:
+$$(s) = \text{sólido}, \quad (l) = \text{líquido}, \quad (g) = \text{gas}, \quad (aq) = \text{acuoso (solvatado en agua)}$$
+Condiciones de reacción sobre la flecha:
+$$\Delta = \text{aporte de calor}, \quad h\nu = \text{irradiación luminosa}, \quad \text{Cat} = \text{catalizador}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Modificar los subíndices de las fórmulas químicas para balancear una ecuación (destruye la identidad de la sustancia).
+2. Creer que los reactivos 'desaparecen' en lugar de transformarse.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los bloques de construcción:** Tienes una torre azul y roja armada; la desarmas pieza por pieza y vuelves a armar un puente azul y rojo. Ningún bloque se evapora ni se crea de la nada; sólo se reorganizaron los ensambles.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Clasifique las siguientes transformaciones químicas e indique el estado físico de cada especie:
+a) $2 KClO_3(s) \xrightarrow{\Delta, MnO_2} 2 KCl(s) + 3 O_2(g)$
+b)
+
+$$Zn(s) + 2 HCl(aq) \longrightarrow ZnCl_2(aq) + H_2(g)$$
+
+**Paso 1:** Reacción a: Una única sustancia se descompone térmicamente en dos sustancias más simples en presencia de catalizador $MnO_2$. Corresponde a una **reacción de descomposición catalítica**.
+**Paso 2:** Reacción b: El zinc metálico desplaza al catión hidrógeno de la disolución de ácido clorhídrico liberando gas hidrógeno. Corresponde a una **reacción de desplazamiento simple**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el cobre metálico no reacciona con ácido clorhídrico pero el zinc sí reacciona vigorosamente?
+2. ¿Cuál es la diferencia entre un catalizador y un reactivo estequiométrico?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

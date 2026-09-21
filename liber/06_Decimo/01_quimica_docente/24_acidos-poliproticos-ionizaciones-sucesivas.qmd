@@ -1,0 +1,67 @@
+# Ácidos Polipróticos y Equilibrios de Ionización Escalonada
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Equilibrio Iónico y Ácido-Base
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Los **ácidos polipróticos** son aquellos que contienen dos o más átomos de hidrógeno ionizables por molécula ($H_2SO_4, H_2CO_3, H_3PO_4$). En disolución acuosa no ceden todos sus protones simultáneamente en una sola etapa, sino de forma **escalonada y sucesiva**, donde cada etapa posee su propia constante de acidez característica ($K_{a1}, K_{a2}, K_{a3}$).
+
+Para cualquier ácido poliprótico, las constantes de ionización disminuyen drásticamente en varios órdenes de magnitud en cada desprotonación consecutiva:
+
+$$K_{a1} \gg K_{a2} \gg K_{a3}$$
+
+Esta disparidad termodinámica se debe a que resulta electrostáticamente mucho más difícil arrancar un protón positivo ($H^+$) de un anión que ya posee carga negativa previa ($HA^-$ o $A^{2-}$), debido a la intensa atracción culombiana residual. Como regla práctica general, si $K_{a1}$ es al menos $10^3$ veces mayor que $K_{a2}$, **el pH de la disolución está determinado casi exclusivamente por la primera ionización**.
+
+### Formalización Matemática y Leyes Físicas
+Equilibrios sucesivos para un ácido diprótico ($H_2A$):
+$$\text{Etapa 1: } H_2A + H_2O \rightleftharpoons H_3O^+ + HA^- \qquad K_{a1} = \frac{[H_3O^+][HA^-]}{[H_2A]}$$
+$$\text{Etapa 2: } HA^- + H_2O \rightleftharpoons H_3O^+ + A^{2-} \qquad K_{a2} = \frac{[H_3O^+][A^{2-}]}{[HA^-]}$$
+Teorema de la concentración del anión divalente ($A^{2-}$):
+$$\text{En disolución de un ácido diprótico débil libre: } [A^{2-}] \approx K_{a2}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Sumar las constantes $K_{a1} + K_{a2}$ para calcular el pH (las etapas son sucesivas, no simultáneas aditivas).
+2. Olvidar que el ácido sulfúrico ($H_2SO_4$) es un caso especial: su primera ionización es de ácido fuerte total ($K_{a1} \gg 1$), pero su segunda ionización () es de ácido débil con $K_{a2} = 1.2 \times 10^{-2}$.
+
+$$HSO_4^- \rightleftharpoons H^+ + SO_4^{2-}$$
+
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía del imán y las bolas de metal:** Imagina un imán que sostiene tres bolitas de acero pegadas. Arrancar la primera bolita cuesta un poco de fuerza ($K_{a1}$); pero arrancar la segunda bolita del imán que ahora está más expuesto cuesta el triple de fuerza ($K_{a2}$); y arrancar la última bolita requiere una fuerza descomunal ($K_{a3}$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Calcule el pH y las concentraciones en el equilibrio de todas las especies presentes ($[H_2CO_3]$, $[HCO_3^-]$, $[CO_3^{2-}]$, $[H^+]$) en una disolución acuosa $0.040\,M$ de ácido carbónico ($H_2CO_3$). Datos: $K_{a1} = 4.3 \times 10^{-7}$, $K_{a2} = 5.6 \times 10^{-11}$.
+
+**Paso 1:** Primera ionización (determina $[H^+]$ y $[HCO_3^-]$):
+$$K_{a1} = \frac{x^2}{0.040 - x} \approx \frac{x^2}{0.040} = 4.3 \times 10^{-7}$$
+$$x^2 = 1.72 \times 10^{-8} \implies x = [H^+] = [HCO_3^-] = 1.311 \times 10^{-4}\,M$$
+$$\text{pH} = -\log(1.311 \times 10^{-4}) = 3.88$$
+**Paso 2:** Concentración de ácido carbónico no ionizado:
+$$[H_2CO_3] = 0.040 - 1.311 \times 10^{-4} \approx 0.040\,M$$
+**Paso 3:** Segunda ionización (evaluación de $[CO_3^{2-}]$):
+$$K_{a2} = \frac{[H^+][CO_3^{2-}]}{[HCO_3^-]} = 5.6 \times 10^{-11}$$
+Como $[H^+] \approx [HCO_3^-] = 1.311 \times 10^{-4}\,M$, se cancelan algebraicamente:
+$$[CO_3^{2-}] = K_{a2} = 5.6 \times 10^{-11}\,M$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Cómo regula el sistema buffer del ácido carbónico/bicarbonato ($H_2CO_3 / HCO_3^-$) el pH exacto de la sangre humana en $7.35 - 7.45$?
+2. ¿Por qué el ácido fosfórico ($H_3PO_4$) forma tres series distintas de sales minerales?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

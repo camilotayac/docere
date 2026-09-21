@@ -1,0 +1,72 @@
+# Teoría del Enlace de Valencia e Hibridación de Orbitales Atómicos
+
+> **Grado 8° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Geometría Molecular y Polaridad
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La Teoría del Enlace de Valencia (TEV), desarrollada por Linus Pauling y John Slater, postula que un enlace covalente se forma por el **solapamiento de orbitales atómicos** semillenos de dos átomos contiguos, compartiendo dos electrones con espines apareados.
+
+Para explicar cómo el carbono (con configuración fundamental $1s^2 2s^2 2p_x^1 2p_y^1$, que predeciría sólo dos enlaces a $90^\circ$) forma cuatro enlaces covalentes idénticos dispuestos a $109.5^\circ$ en el metano ($CH_4$), Pauling introdujo la **hibridación de orbitales**: la combinación matemática lineal de orbitales atómicos puros ($s, p, d$) de un mismo átomo central para generar un nuevo conjunto de **orbitales híbridos equivalentes**, con geometrías y orientaciones energéticamente óptimas para el solapamiento frontal.
+
+1. **Enlaces tipo $\sigma$ (sigma):** Solapamiento frontal simétrico a lo largo del eje internuclear.
+2. **Enlaces tipo $\pi$ (pi):** Solapamiento lateral de orbitales $p$ puros no hibridados paralelos.
+
+### Formalización Matemática y Leyes Físicas
+Tipos de hibridación según el número estérico ($SN$):
+1. $sp$:  orbitales híbridos lineales ($180^\circ$). Quedan $2$ orbitales $p$ puros para dos enlaces $\pi$ (ej. acetileno, $HC \equiv CH$).
+
+$$1\,s + 1\,p \to 2$$
+
+2. $sp^2$:  orbitales híbridos trigonales planos ($120^\circ$). Queda $1$ orbital $p$ puro para un enlace $\pi$ (ej. etileno, $H_2C = CH_2$).
+
+$$1\,s + 2\,p \to 3$$
+
+3. $sp^3$:  orbitales híbridos tetraédricos ($109.5^\circ$). Sin orbitales $p$ puros (ej. metano, $CH_4$).
+
+$$1\,s + 3\,p \to 4$$
+
+4. $sp^3d$: 5 orbitales híbridos bipiramidales trigonales (ej. $PCl_5$).
+5. $sp^3d^2$: 6 orbitales híbridos octaédricos (ej. $SF_6$).
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Pensar que la hibridación es un fenómeno físico visible en el laboratorio (es un modelo matemático de combinación lineal de funciones de onda mecánicas).
+2. Creer que los enlaces dobles están formados por dos enlaces idénticos (uno es un enlace frontal $\sigma$ fuerte y el otro es un enlace lateral $\pi$ más débil y reactivo).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los batidos de frutas:** Si tomas una taza de jugo de naranja puro ($s$) y tres tazas de jugo de mora puro ($p_x, p_y, p_z$) y los viertes en una licuadora, obtienes cuatro tazas de un batido híbrido exactamente idéntico en color, sabor y consistencia ($sp^3$).
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Analice la molécula de eteno (etileno, $C_2H_4$). Determine la hibridación de cada carbono, cuente el número total de enlaces $\sigma$ y $\pi$ en la molécula y describa la geometría en torno a cada carbono.
+
+**Paso 1:** Estructura de Lewis: $H_2C = CH_2$.
+Cada átomo de carbono está unido a tres átomos (dos hidrógenos y un carbono) sin pares solitarios ($SN = 3$).
+**Paso 2:** Tipo de hibridación:
+Para $SN = 3$, cada carbono adopta hibridación **$sp^2$**, con geometría trigonal plana ($120^\circ$).
+**Paso 3:** Conteo de enlaces:
+1. Cada enlace $C-H$ es un enlace $\sigma$ formado por solapamiento $C(sp^2) - H(1s)$ ($4$ enlaces $\sigma$).
+2. El enlace central $C-C$ consta de un enlace frontal $\sigma$ formado por $C(sp^2) - C(sp^2)$ ($1$ enlace $\sigma$).
+3. El segundo enlace $C=C$ es un enlace lateral $\pi$ formado por solapamiento de los orbitales $2p_z$ puros paralelos no hibridados ($1$ enlace $\pi$).
+Total: **$5$ enlaces $\sigma$ y $1$ enlace $\pi$**.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué la existencia de un enlace $\pi$ en el etileno impide la rotación libre alrededor del enlace $C=C$, originando isomería geométrica cis-trans?
+2. ¿Cuál es la hibridación del átomo de oxígeno en la molécula de agua?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

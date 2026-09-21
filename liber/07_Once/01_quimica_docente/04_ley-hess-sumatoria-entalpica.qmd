@@ -1,0 +1,85 @@
+# Ley de Hess de Sumatoria Calorífica
+
+> **Grado Once — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Termoquímica y Ciclos Energéticos
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+En 1840, el químico Germain Henri Hess formuló empíricamente uno de los principios más poderosos de la fisicoquímica: **si una reacción química se lleva a cabo en una serie de etapas, el cambio de entalpía global para la reacción es numéricamente igual a la suma de los cambios de entalpía de las etapas individuales**.
+
+Desde una perspectiva teórica moderna, la Ley de Hess no es más que una consecuencia directa del hecho de que **la entalpía ($H$) es una función de estado**. Como tal, la diferencia de entalpía entre reactivos (estado inicial) y productos (estado final) es estrictamente independiente del camino mecanístico o de los intermediarios que conecten ambos estados.
+
+La manipulación algebraica de ecuaciones termoquímicas sigue tres reglas operativas rigurosas:
+1. **Regla de Inversión:** Si una ecuación química se invierte (los productos pasan a ser reactivos y viceversa), la magnitud de $\Delta H$ permanece constante, pero su signo algebraico cambia:
+   $$A \to B \quad (\Delta H_1) \implies B \to A \quad (\Delta H_2 = -\Delta H_1)$$
+2. **Regla de Multiplicación Escalar:** Si todos los coeficientes estequiométricos de una ecuación termoquímica se multiplican o dividen por un factor $n$, el valor de $\Delta H$ debe multiplicarse o dividirse por exactamente ese mismo factor $n$ (la entalpía es una propiedad extensiva):
+   $$n A \to n B \quad (\Delta H_3 = n \cdot \Delta H_1)$$
+3. **Regla de Sumatoria:** Al sumar miembro a miembro dos o más ecuaciones termoquímicas cancelando las especies intermedias comunes en reactivos y productos, el $\Delta H$ neto resultante es la suma algebraica de los valores individuales:
+   $$\Delta H_{\text{global}} = \Delta H_1 + \Delta H_2 + \Delta H_3 + \dots = \sum_i \Delta H_i$$
+
+La Ley de Hess permite cuantificar entalpías de reacciones que no pueden medirse directamente en el laboratorio por ser peligrosas, lentas o porque generan subproductos indeseados (por ejemplo, la oxidación parcial de carbono a monóxido de carbono sin producir dióxido).
+
+### Formalización Matemática y Leyes Físicas
+$$\Delta H_{\text{global}} = \sum_{i} \nu_i \Delta H_i$$
+Para un ciclo termodinámico cerrado donde el sistema regresa a su estado original:
+$$\oint dH = 0 \implies \sum_{\text{ciclo}} \Delta H = 0$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. **Tratar las ecuaciones químicas como entidades estáticas:** No advertir que al multiplicar los coeficientes se altera la cantidad de sustancia y, por ende, la entalpía transferida.
+2. **Olvidar invertir el signo de $\Delta H$ al voltear una reacción:** Dejar el valor positivo cuando la reacción inversa es necesariamente exotérmica.
+3. **Cancelar especies en diferentes estados de agregación:** Tratar $\text{H}_2\text{O}(l)$ y $\text{H}_2\text{O}(g)$ como si fueran idénticos en la cancelación algebraica, ignorando el calor de vaporización.
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de los Ascensores y Edificios de Varios Pisos:** Si estás en el piso 1 (reactivos) y quieres llegar al ático (productos en el piso 10), el desnivel total ($\Delta H$) es idéntico si tomas un ascensor expreso directo del 1 al 10, o si tomas uno que suba al piso 15 y luego bajas 5 pisos en escaleras ($15 - 5 = 10$). La energía potencial gravitacional depende de la altura, no del itinerario.
+2. **Puzzle de Rompecabezas Químico:** Los reactivos intermedios son piezas que deben alinearse a izquierda y derecha para anularse mutuamente, dejando intactas solo las especies clave de la reacción blanco.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema (Oriakhi Cap. 14):** Calcule la entalpía estándar de la reacción de formación del monóxido de carbono:
+$$\text{C}(\text{grafito}) + \frac{1}{2} \text{O}_2(g) \to \text{CO}(g) \qquad \Delta H^\circ_{rxn} = ?$$
+
+A partir de las siguientes ecuaciones termoquímicas conocidas determinadas calorimétricamente:
+1.
+
+$$\text{C}(\text{grafito}) + \text{O}_2(g) \to \text{CO}_2(g) \qquad \Delta H^\circ_1 = -393.5\,\text{kJ/mol}$$
+2.
+
+$$\text{CO}(g) + \frac{1}{2} \text{O}_2(g) \to \text{CO}_2(g) \qquad \Delta H^\circ_2 = -283.0\,\text{kJ/mol}$$
+
+**Solución paso a paso:**
+1. *Identificar la posición de las especies objetivo en la reacción blanco:*
+   1. $\text{C}(\text{grafito})$ está a la izquierda (reactivo, 1 mol). La ec. (1) lo tiene a la izquierda con coeficiente 1. Se mantiene sin cambios:
+     $$\text{C}(\text{grafito}) + \text{O}_2(g) \to \text{CO}_2(g) \qquad \Delta H^\circ_A = -393.5\,\text{kJ}$$
+   1. $\text{CO}(g)$ está a la derecha (producto, 1 mol). En la ec. (2) aparece como reactivo (izquierda). Por tanto, invertimos la ec. (2) y multiplicamos su entalpía por $-1$:
+     $$\text{CO}_2(g) \to \text{CO}(g) + \frac{1}{2} \text{O}_2(g) \qquad \Delta H^\circ_B = -(-283.0\,\text{kJ}) = +283.0\,\text{kJ}$$
+2. *Sumar ambas ecuaciones miembro a miembro:*
+   $$\text{C}(\text{grafito}) + \text{O}_2(g) + \text{CO}_2(g) \to \text{CO}_2(g) + \text{CO}(g) + \frac{1}{2} \text{O}_2(g)$$
+3. *Cancelar especies intermedias y términos semejantes:*
+   1. $\text{CO}_2(g)$ se cancela en ambos lados.
+   2. $\text{O}_2(g)$: $1 - \frac{1}{2} = \frac{1}{2}\,\text{O}_2(g)$ en el lado de los reactivos.
+   $$\text{C}(\text{grafito}) + \frac{1}{2} \text{O}_2(g) \to \text{CO}(g)$$
+4. *Calcular el cambio de entalpía neto:*
+   $$\Delta H^\circ_{rxn} = \Delta H^\circ_A + \Delta H^\circ_B = -393.5\,\text{kJ} + 283.0\,\text{kJ} = -110.5\,\text{kJ/mol}$$
+   *Conclusión:* La formación de monóxido de carbono es exotérmica con un valor de $-110.5\,\text{kJ/mol}$, valor inaccesible por combustión directa controlada.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué es imposible medir en un calorímetro convencional la oxidación pura de grafito a monóxido de carbono sin que ocurra paralelamente la formación de dióxido?
+2. Si invertimos el sentido de una reacción endotérmica con $\Delta H = +150\,\text{kJ}$, ¿qué tipo de proceso resulta ser la reacción inversa?
+3. ¿Cómo se vincula matemáticamente la propiedad de una diferencial exacta ($\oint dH = 0$) con la Ley de Hess?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

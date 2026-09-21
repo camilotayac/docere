@@ -1,0 +1,59 @@
+# Densidad Gaseosa y Determinación Experimental de Masas Molares
+
+> **Grado 10° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Leyes de los Gases y Estado Gaseoso
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+Dado que la cantidad de sustancia es $n = m / M$, la sustitución directa en la ecuación del gas ideal permite deducir la relación analítica fundamental entre la **densidad volumétrica de un gas ($\rho = m/V$)**, su masa molar ($M$), la presión y la temperatura:
+
+$$P V = \left( \frac{m}{M} \right) R T \implies P \cdot M = \left( \frac{m}{V} \right) R T = \rho \cdot R \cdot T$$
+
+$$\rho = \frac{P \cdot M}{R \cdot T} \qquad M = \frac{\rho \cdot R \cdot T}{P} = \frac{m \cdot R \cdot T}{P \cdot V}$$
+
+A diferencia de los líquidos y sólidos, la densidad de los gases es **directamente proporcional a la presión y a la masa molar, e inversamente proporcional a la temperatura absoluta**. Este principio fundamenta el **método de Dumas** y el **método de Víctor Meyer** para la determinación experimental de pesos moleculares de sustancias volátiles en el laboratorio.
+
+### Formalización Matemática y Leyes Físicas
+Ecuación fundamental de densidad gaseosa:
+$$\rho = \frac{P \cdot M}{R \cdot T} \quad (\text{expresada habitualmente en g/L})$$
+Fórmula de Dumas para masa molar:
+$$M = \frac{m_{\text{vapor}} \cdot R \cdot T}{P \cdot V_{\text{matraz}}}$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Expresar la densidad de los gases en $\text{g/cm}^3$ o $\text{g/mL}$ sin notar que resultan números con tres ceros a la izquierda (la densidad de los gases se reporta estándarmente en $\text{g/L}$).
+2. Olvidar que el aire caliente asciende porque al aumentar $T$ disminuye su densidad gaseosa ($\rho \propto 1/T$).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **El vuelo del globo aerostático:** El quemador de propano calienta el aire dentro del globo; las moléculas de aire adquieren enorme energía cinética y muchas escapan por la boca inferior. La masa de aire dentro del globo disminuye mientras el volumen es el mismo, reduciendo la densidad interna por debajo de la densidad del aire frío exterior, generando el empuje de flotación de Arquímedes.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Un matraz de vidrio de $250.0\,\text{mL}$ contiene $0.548\,\text{g}$ de un gas desconocido a una presión de $745.0\,\text{mmHg}$ y a una temperatura de $99.0^\circ\text{C}$. Calcule la densidad del gas en $\text{g/L}$ y determine su masa molar.
+
+**Paso 1:** Conversión de unidades a estándar:
+$$V = 0.2500\,\text{L}; \quad P = \frac{745.0}{760.0} = 0.9803\,\text{atm}; \quad T = 99.0 + 273.15 = 372.15\,\text{K}$$
+**Paso 2:** Cálculo de la densidad gaseosa:
+$$\rho = \frac{m}{V} = \frac{0.548\,\text{g}}{0.2500\,\text{L}} = 2.192\,\text{g/L}$$
+**Paso 3:** Cálculo de la masa molar:
+$$M = \frac{\rho \cdot R \cdot T}{P} = \frac{(2.192\,\text{g/L})(0.08206\,\text{L}\cdot\text{atm/(mol}\cdot\text{K)})(372.15\,\text{K})}{0.9803\,\text{atm}} = \frac{66.94}{0.9803} = 68.28\,\text{g/mol}$$
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué el gas helio ($M=4\,\text{g/mol}$) y el hidrógeno ($M=2\,\text{g/mol}$) elevan globos en el aire mientras que el dióxido de carbono ($M=44\,\text{g/mol}$) se hunde en el fondo de una habitación?
+2. ¿Cuál es la densidad media del aire seco ($M \approx 28.96\,\text{g/mol}$) en Bogotá a $14^\circ\text{C}$ y $0.74\,\text{atm}$?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

@@ -1,0 +1,61 @@
+# Número Atómico (Z), Número de Masa (A) e Iones
+
+> **Grado 7° — Química (Docente) — Fundamentación Teórica y Mediación Pedagógica**
+>
+> * **Eje Temático:** Estructura Atómica y Nuclear
+> * **Propósito Docente:** Proporcionar al docente el dominio conceptual avanzado, las deducciones matemáticas rigurosas y las estrategias de mediación didáctica para orientar esta lección en el aula.
+
+## 1. Fundamentación Epistemológica y Disciplinar
+
+La identidad química de un átomo está unívocamente determinada por su **número atómico** ($Z$), que representa el número total de protones en su núcleo atómico. El **número de masa** ($A$) es un número entero adimensional que representa la suma total de nucleones (protones más neutrones):
+
+$$A = Z + N \implies N = A - Z$$
+
+En un átomo neutro, el número de electrones es idéntico a $Z$. Cuando un átomo cede o gana electrones extranucleares se transforma en un **ion**:
+1. **Catión:** Especie de carga neta positiva formada por la pérdida de electrones ($n_e = Z - q$).
+2. **Anión:** Especie de carga neta negativa formada por la ganancia de electrones ($n_e = Z + |q|$).
+Bajo ninguna circunstancia química ordinaria un átomo gana o pierde protones durante la ionización.
+
+### Formalización Matemática y Leyes Físicas
+Notación nuclear estándar de núclido:
+$$_{Z}^{A}\text{X}^{q}$$
+Donde $X$ es el símbolo químico, $A$ el número de masa, $Z$ el número atómico y $q$ la carga neta formal.
+Balance de carga neta:
+$$q = n_p - n_e = Z - n_e$$
+
+## 2. Obstáculos Epistemológicos y Concepciones Alternativas
+
+En la investigación internacional sobre didáctica de las ciencias experimentales (Driver, Johnstone, Gilbert), se han documentado sistemáticamente las siguientes concepciones alternativas en este núcleo temático:
+
+1. Creer que los cationes se forman porque el átomo 'gana protones positivos' (los protones están confinados en el núcleo; modificar $Z$ transmuta el elemento).
+2. Confundir el número de masa ($A$, número entero) con la masa atómica promedio o peso atómico (número decimal continuo).
+
+## 3. Estrategias de Mediación Pedagógica y Analogías Físicas
+
+Para superar la barrera abstracta de este concepto en el aula, se recomienda la siguiente secuencia de mediación basada en el principio de doble codificación y transposición didáctica:
+
+1. **Analogía de la cédula de ciudadanía:** El número atómico ($Z$) es el número de documento de identidad del átomo; si cambia $Z$, cambia la persona (el elemento). Los electrones son la ropa o accesorios: si te quitas una chaqueta quedas con carga ligera (catión), si te pones tres abrigos quedas pesado y cargado negativamente (anión), pero sigues siendo exactamente el mismo individuo.
+
+## 4. Ejemplos Modelo Resueltos Paso a Paso
+
+**Problema:** Complete la composición nuclear y electrónica para la especie ionizada $^{56}_{26}\text{Fe}^{3+}$.
+
+**Paso 1:** Identificación de partículas a partir de la notación:
+$$Z = 26 \implies n_p = 26\,\text{protones}$$
+$$A = 56 \implies N = A - Z = 56 - 26 = 30\,\text{neutrones}$$
+**Paso 2:** Cálculo del número de electrones:
+$$q = +3 \implies n_e = Z - q = 26 - 3 = 23\,\text{electrones}$$
+La especie posee $26$ protones, $30$ neutrones y $23$ electrones.
+
+## 5. Criterios de Evaluación Formativa y Preguntas Guía
+
+### Preguntas Dialógicas de Discusión en Aula
+1. ¿Por qué un ion $^{35}_{17}\text{Cl}^-$ tiene mayor radio iónico que el átomo neutro de $^{35}_{17}\text{Cl}$?
+2. Si un átomo tuviera $11$ protones y $10$ neutrones, ¿cuál es su símbolo nuclear y su número atómico?
+
+### Rúbrica de Valoración Formativa
+| Criterio | Nivel Inicial | Nivel Satisfactorio | Nivel Avanzado |
+|:---|:---|:---|:---|
+| **Comprensión Conceptual** | Identifica términos aislados sin conexión matemática ni física. | Explica el fenómeno aplicando las leyes y fórmulas en contextos estándar. | Deduce relaciones no triviales y analiza desviaciones experimentales y límites del modelo. |
+| **Habilidad Cuantitativa** | Comete errores en factores de conversión y omite unidades de medida. | Resuelve problemas aplicando factores de conversión con unidades explícitas. | Realiza análisis dimensional riguroso justificando cada etapa matemática y cifras significativas. |
+| **Argumentación Científica** | Recurre a intuiciones sensoriales o explicaciones finalistas. | Utiliza vocabulario científico apropiado respaldado en evidencias. | Contrasta modelos, predice variaciones y refuta concepciones erróneas comunes. |

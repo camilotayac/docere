@@ -8,3 +8,5 @@ site_libs/
 # OS
 .DS_Store
 *.log
+
+/.quarto/
