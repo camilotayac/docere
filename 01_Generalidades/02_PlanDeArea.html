@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,22 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../03_Septimo/02_entorno_fisico/movimiento-en-la-historia.html" rel="next">
-<link href="../01_Generalidades/01_Introduccion.html" rel="prev">
+<link href="../01_Generalidades/03_PresentacionDocente.html" rel="next">
+<link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-27fd94ca9aa44b9240e1e48a9b19eda0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a9c78f3887cc4db3e24c08dbb04a5e5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-3f8ea4170b78f1236f00957a89ca2b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-a9c78f3887cc4db3e24c08dbb04a5e5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-faa1857450c419f5a9f81f4b20a8dd62.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -86,6 +85,35 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" type="image/png" href="Portada.png">
 <link rel="apple-touch-icon" href="Portada.png">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Natura Docens">
 <meta property="og:description" content="Ciencias Naturales - Libro interactivo de química para educación media.">
@@ -97,178 +125,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -278,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Plan de Área de Ciencias Naturales</span></h1>
+          <h1 class="quarto-secondary-nav-title">Plan de Área de Ciencias Naturales</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -335,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -346,28 +202,121 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Natura Docens</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01_Generalidades/02_PlanDeArea.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Plan de Área de Ciencias Naturales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../01_Generalidades/03_PresentacionDocente.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentación del Manual del Docente: Fundamentación y Mediación</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Generalidades</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Sexto — Química (Docente)</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inicio</span></a>
+  <a href="../02_Sexto/01_quimica_docente/01_magnitudes-medicion-analisis-dimensional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Magnitudes Físicas, Sistema Internacional y Análisis Dimensional</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/01_Introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Generalidades</span></a>
+  <a href="../02_Sexto/01_quimica_docente/02_masa-volumen-densidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Masa, Volumen y Densidad en Sólidos y Líquidos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01_Generalidades/02_PlanDeArea.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Plan de Área de Ciencias Naturales</span></a>
+  <a href="../02_Sexto/01_quimica_docente/03_propiedades-materia-intensivas-extensivas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Propiedades de la Materia: Criterios Intensivos y Extensivos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/04_temperatura-escalas-termicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Temperatura y Escalas Termométricas: Celsius, Kelvin y Fahrenheit</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/05_estados-agregacion-modelo-corpuscular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Estados de Agregación de la Materia y Modelo Corpuscular Cinético</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/06_cambios-de-estado-fase.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Cambios de Estado y Transiciones de Fase Térmicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/07_curvas-calentamiento-calor-latente.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Curvas de Calentamiento, Calor Latente y Mesetas Térmicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/08_sustancias-puras-elementos-compuestos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Clasificación de la Materia: Sustancias Puras (Elementos y Compuestos)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/09_mezclas-homogeneas-soluciones-coloides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mezclas Homogéneas: Soluciones Verdaderas y Dispersiones Coloidales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/10_mezclas-heterogeneas-suspensiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Mezclas Heterogéneas, Suspensiones y Emulsiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/11_separacion-mecanica-filtracion-tamizado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Separación Mecánica de Mezclas: Filtración y Tamizado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/12_separacion-densidad-decantacion-centrifugacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Separación por Densidad: Decantación y Centrifugación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/13_separacion-termica-evaporacion-cristalizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Separación Térmica: Evaporación y Cristalización Fraccionada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/14_separacion-destilacion-simple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Separación por Volatilidad: Fundamentos de la Destilación Simple</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../02_Sexto/01_quimica_docente/15_separacion-magnetica-cromatografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Separación Magnética y Cromatografía en Papel</span></span></a>
   </div>
 </li>
       </ul>
@@ -375,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Séptimo - Física</span></a>
+ <span class="menu-text">Séptimo — Química (Docente)</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -383,37 +332,86 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/movimiento-en-la-historia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Movimiento en la historia</span></a>
+  <a href="../03_Septimo/01_quimica_docente/01_evolucion-modelos-atomicos-dalton-thomson.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Evolución Histórica de los Modelos Atómicos: De Dalton a Thomson</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/primera-ley-de-newton-inercia.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Primera ley de Newton del movimiento: inercia</span></a>
+  <a href="../03_Septimo/01_quimica_docente/02_modelo-nuclear-rutherford-bohr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">El Modelo Nuclear de Rutherford y el Modelo Cuantizado de Bohr</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/fuerza-neta.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fuerza neta: la fuerza que queda</span></a>
+  <a href="../03_Septimo/01_quimica_docente/03_particulas-subatomicas-masas-cargas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Partículas Subatómicas Fundamentales: Protones, Neutrones y Electrones</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/regla-del-equilibrio.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">La regla del equilibrio</span></a>
+  <a href="../03_Septimo/01_quimica_docente/04_numero-atomico-masa-iones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Número Atómico (Z), Número de Masa (A) e Iones</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/fuerza-de-soporte.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fuerza de soporte</span></a>
+  <a href="../03_Septimo/01_quimica_docente/05_isotopos-abundancia-peso-atomico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Isótopos, Abundancia Natural y Peso Atómico Ponderado (Oriakhi Cap. 1)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/equilibrio-de-cosas-en-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Equilibrio de cosas en movimiento</span></a>
+  <a href="../03_Septimo/01_quimica_docente/06_organizacion-tabla-periodica-bloques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Organización Moderna de la Tabla Periódica: Períodos, Grupos y Bloques</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03_Septimo/02_entorno_fisico/la-tierra-en-movimiento.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">La Tierra en movimiento</span></a>
+  <a href="../03_Septimo/01_quimica_docente/07_metales-no-metales-familias-quimicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Metales, No Metales, Semimetales y Familias Químicas Representativas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/08_propiedades-periodicas-radio-atomico-ionico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Propiedades Periódicas: Carga Nuclear Efectiva, Radio Atómico y Radio Iónico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/09_propiedades-periodicas-energia-ionizacion-electronegatividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Propiedades Periódicas: Energía de Ionización, Afinidad Electrónica y Electronegatividad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/10_radiacion-electromagnetica-cuantizacion-planck.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Radiación Electromagnética y Teoría Cuántica de Planck</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/11_dualidad-onda-particula-incertidumbre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Dualidad Onda-Partícula e Incertidumbre Cuántica de Heisenberg</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/12_numeros-cuanticos-orbitales-atomicos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Los Cuatro Números Cuánticos y la Geometría de los Orbitales Atómicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/13_configuracion-electronica-aufbau-hund-pauli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Configuración Electrónica: Principios de Aufbau, Pauli y Regla de Hund (Oriakhi Cap. 8)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../03_Septimo/01_quimica_docente/14_electrones-valencia-kernel-notacion-puntos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Electrones de Valencia, Kernel Atómico y Diagramas de Puntos de Lewis</span></span></a>
   </div>
 </li>
       </ul>
@@ -421,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Décimo - Química</span></a>
+ <span class="menu-text">Octavo — Química (Docente)</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -429,7 +427,116 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../06_Decimo/cinematica-quimica-clase-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Factores que Afectan las Colisiones y la Velocidad de Reacción</span></a>
+  <a href="../04_Octavo/01_quimica_docente/01_estabilidad-electronica-regla-octeto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Estabilidad Electrónica y Regla del Octeto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/02_enlace-ionico-red-cristalina-born-haber.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">El Enlace Iónico: Formación, Energía de Red y Ciclo de Born-Haber</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/03_enlace-covalente-polaridad-electronegatividad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">El Enlace Covalente: Tipos, Longitud, Energía y Polaridad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/04_enlace-metalico-teoria-mar-electrones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">El Enlace Metálico: Modelo del Mar de Electrones y Propiedades</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/05_estructuras-lewis-cargas-formales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Estructuras de Lewis Sistemáticas y Cálculo de Carga Formal (Oriakhi Cap. 9)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/06_resonancia-quimica-hibridos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Resonancia Química, Estructuras Canónicas e Híbridos de Resonancia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/07_excepciones-regla-octeto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Excepciones a la Regla del Octeto: Especies Deficientes, Radicales y Octeto Expandido</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/08_geometria-molecular-trpev-vsepr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Modelo TRPEV (VSEPR) y Geometría Molecular Tridimensional (Oriakhi Cap. 10)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/09_momento-dipolar-polaridad-molecular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Momento Dipolar Neto y Polaridad en Moléculas Poliatómicas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/10_teoria-enlace-valencia-hibridacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Teoría del Enlace de Valencia e Hibridación de Orbitales Atómicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/11_fuerzas-van-der-waals-dipolares-london.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Fuerzas Intermoleculares de Van der Waals: Dipolo-Dipolo y Dispersión de London</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/12_puentes-hidrogeno-propiedades-agua.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">El Enlace de Hidrógeno y las Anomalías Fisicoquímicas del Agua</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/13_propiedades-liquidos-viscosidad-tension.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Fisicoquímica de Líquidos: Tensión Superficial, Viscosidad y Presión de Vapor (Oriakhi Cap. 12)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/14_solidos-cristalinos-amorfos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Estructura del Estado Sólido: Sólidos Cristalinos y Sólidos Amorfos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/15_estados-oxidacion-reglas-asignacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Estados y Números de Oxidación: Reglas IUPAC de Asignación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/16_nomenclatura-oxidos-basicos-acidos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Formulación y Nomenclatura de Óxidos Básicos y Óxidos Ácidos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/17_nomenclatura-hidroxidos-peroxidos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Formulación y Nomenclatura de Hidróxidos y Peróxidos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/18_nomenclatura-acidos-hidracidos-oxacidos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Formulación y Nomenclatura de Ácidos: Hidrácidos y Oxácidos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../04_Octavo/01_quimica_docente/19_nomenclatura-sales-haloideas-oxisales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Formulación y Nomenclatura de Sales Neutras, Ácidas y Dobles (Oriakhi Cap. 5)</span></span></a>
   </div>
 </li>
       </ul>
@@ -437,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">Apéndices</span></a>
+ <span class="menu-text">Noveno — Química (Docente)</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -445,12 +552,664 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bibliografía</span></a>
+  <a href="../05_Noveno/01_quimica_docente/01_simbologia-ecuaciones-quimicas-tipos-reaccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Simbología de las Ecuaciones Químicas y Clasificación de Reacciones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/02_ley-conservacion-masa-balanceo-tanteo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Ley de Conservación de la Masa y Balanceo por Tanteo (Oriakhi Cap. 6)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/03_balanceo-metodo-algebraico-matricial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Balanceo de Ecuaciones Químicas por el Método Algebraico Matricial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/04_reacciones-acuosas-ecuaciones-ionicas-netas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Reacciones en Solución Acuosa: Ecuaciones Moleculares, Iónicas Totales e Iónicas Netas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/05_definicion-si-mol-constante-avogadro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">El Mol y la Constante de Avogadro: Definición SI y Fundamentos (Oriakhi Cap. 3)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/06_masa-formula-masa-molar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">56</span>&nbsp; <span class="chapter-title">Masa Atómica, Masa Fórmula y Masa Molar de Sustancias (Oriakhi Cap. 2)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/07_conversiones-estequiometricas-masa-mol-particulas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">57</span>&nbsp; <span class="chapter-title">Conversiones Cuantitativas Integradas: Masa, Moles y Partículas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/08_composicion-porcentual-centecimal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">58</span>&nbsp; <span class="chapter-title">Composición Centesimal Porcentual en Masa de Compuestos (Oriakhi Cap. 4)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/09_determinacion-formulas-empiricas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">59</span>&nbsp; <span class="chapter-title">Determinación Cuantitativa de Fórmulas Empíricas Mínimas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/10_determinacion-formulas-moleculares-combustion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">60</span>&nbsp; <span class="chapter-title">Fórmulas Moleculares y Análisis Cuantitativo por Combustión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/11_relaciones-molares-factores-estequiometricos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">61</span>&nbsp; <span class="chapter-title">Relaciones Molares y Factores Estequiométricos de Reacción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/12_calculos-estequiometricos-masa-masa-mol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Cálculos Estequiométricos Cuantitativos Masa-Masa y Mol-Masa (Oriakhi Cap. 7)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/13_reactivo-limitante-exceso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Reactivo Limitante y Reactivo en Exceso: Algoritmo Sistemático</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/14_pureza-reactivos-muestras-impuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Cálculos Estequiométricos con Muestras Impuras y Grado de Pureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/15_rendimiento-teorico-real-porcentual.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">65</span>&nbsp; <span class="chapter-title">Rendimiento Teórico, Rendimiento Real y Eficiencia Porcentual</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/16_solvatacion-factores-solubilidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">66</span>&nbsp; <span class="chapter-title">Fisicoquímica de Disoluciones: Solvatación y Factores de Solubilidad (Oriakhi Cap. 13)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/17_curvas-solubilidad-saturacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">67</span>&nbsp; <span class="chapter-title">Curvas de Solubilidad Térmica y Estados de Saturación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/18_unidades-fisicas-concentracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">68</span>&nbsp; <span class="chapter-title">Concentración en Unidades Físicas: Porcentajes Masa/Volumen, ppm y ppb</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/19_unidades-quimicas-molaridad-molalidad-fraccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">69</span>&nbsp; <span class="chapter-title">Concentración en Unidades Químicas: Molaridad, Molalidad y Fracción Molar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/20_preparacion-soluciones-dilucion-seriada.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">70</span>&nbsp; <span class="chapter-title">Preparación Volumétrica de Soluciones y Ecuación de Dilución</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/21_propiedades-coligativas-ley-raoult.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">71</span>&nbsp; <span class="chapter-title">Propiedades Coligativas: Descenso de la Presión de Vapor y Ley de Raoult (Oriakhi Cap. 15)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/22_ascenso-ebulloscopico-descenso-crioscopico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">72</span>&nbsp; <span class="chapter-title">Propiedades Coligativas: Ascenso Ebulloscópico y Descenso Crioscópico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../05_Noveno/01_quimica_docente/23_presion-osmotica-factor-van-t-hoff.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">73</span>&nbsp; <span class="chapter-title">Presión Osmótica y Factor de Ionización de Van ’t Hoff (Oriakhi Cap. 15)</span></span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Décimo — Química (Docente)</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/01_variables-estado-gaseoso-presion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">74</span>&nbsp; <span class="chapter-title">Variables de Estado Gaseoso y Medición de Presión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/02_leyes-empiricas-gases-ideales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">75</span>&nbsp; <span class="chapter-title">Leyes Empíricas de los Gases: Boyle, Charles, Gay-Lussac y Ley Combinada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/03_ley-gas-ideal-volumen-molar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">76</span>&nbsp; <span class="chapter-title">Ecuación del Gas Ideal y Volumen Molar Normal (Oriakhi Cap. 11)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/04_densidad-masa-molar-gases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">77</span>&nbsp; <span class="chapter-title">Densidad Gaseosa y Determinación Experimental de Masas Molares</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/05_mezclas-gases-ley-dalton.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">78</span>&nbsp; <span class="chapter-title">Mezclas Gaseosas y Ley de las Presiones Parciales de Dalton</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/06_teoria-cinetico-molecular-ley-graham.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">79</span>&nbsp; <span class="chapter-title">Teoría Cinético-Molecular y Ley de Difusión/Efusión de Graham</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/07_gases-reales-ecuacion-van-der-waals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">80</span>&nbsp; <span class="chapter-title">Gases Reales y Desviaciones de la Idealidad: Ecuación de Van der Waals</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/08_fundamentos-reacciones-redox-pares.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">81</span>&nbsp; <span class="chapter-title">Fundamentos de Reacciones de Óxido-Reducción y Pares Conjugados Redox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/09_balanceo-redox-ion-electron-medio-acido.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">82</span>&nbsp; <span class="chapter-title">Balanceo Redox por el Método del Ion-Electrón en Medio Ácido (Oriakhi Cap. 22)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/10_balanceo-redox-ion-electron-medio-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">83</span>&nbsp; <span class="chapter-title">Balanceo Redox por el Método del Ion-Electrón en Medio Básico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/11_velocidad-reaccion-cinetica-quimica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">84</span>&nbsp; <span class="chapter-title">Cinética Química: Velocidad de Reacción y Técnicas Experimentales (Oriakhi Cap. 16)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/12_ley-diferencial-velocidad-ordenes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">85</span>&nbsp; <span class="chapter-title">Ley Diferencial de Velocidad, Órdenes de Reacción y Constante Cinética</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/13_leyes-integradas-velocidad-orden-cero-uno-dos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">86</span>&nbsp; <span class="chapter-title">Leyes Integradas de Velocidad para Órdenes Cero, Uno y Dos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/14_tiempo-vida-media-reacciones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">87</span>&nbsp; <span class="chapter-title">Tiempo de Vida Media en Cinéticas de Diferente Orden</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/15_teoria-colisiones-energia-activacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">88</span>&nbsp; <span class="chapter-title">Teoría de Colisiones, Complejo Activado y Perfiles Energéticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/16_ecuacion-arrhenius-efecto-temperatura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">89</span>&nbsp; <span class="chapter-title">Ecuación de Arrhenius y Dependencia Térmica de la Constante Cinética</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/17_mecanismos-reaccion-catalisis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">90</span>&nbsp; <span class="chapter-title">Mecanismos de Reacción, Etapas Elementales y Catálisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/18_dinamica-equilibrio-quimico-accion-masas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">91</span>&nbsp; <span class="chapter-title">Dinámica del Equilibrio Químico y Ley de Acción de Masas (Oriakhi Cap. 17)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/19_constantes-equilibrio-kc-kp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">92</span>&nbsp; <span class="chapter-title">Constantes de Equilibrio en Presiones Parciales (<span class="math inline">\(K_p\)</span>) y Relación con <span class="math inline">\(K_c\)</span></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/20_cociente-reaccion-direccion-espontanea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">93</span>&nbsp; <span class="chapter-title">El Cociente de Reacción (<span class="math inline">\(Q\)</span>) y Predicción de la Dirección Espontánea</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/21_principio-le-chatelier-perturbaciones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">94</span>&nbsp; <span class="chapter-title">Principio de Le Chatelier: Perturbaciones de Concentración, Presión y Temperatura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/22_autoionizacion-agua-escalas-ph-poh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">95</span>&nbsp; <span class="chapter-title">Autoionización del Agua, Producto Iónico (<span class="math inline">\(K_w\)</span>) y Escalas de pH y pOH (Oriakhi Cap. 18)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/23_fuerza-acidos-bases-ka-kb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">96</span>&nbsp; <span class="chapter-title">Fuerza Ácido-Base: Constantes de Disociación (<span class="math inline">\(K_a, K_b\)</span>) y Grado de Ionización</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/24_acidos-poliproticos-ionizaciones-sucesivas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">97</span>&nbsp; <span class="chapter-title">Ácidos Polipróticos y Equilibrios de Ionización Escalonada</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/25_hidrolisis-sales-disoluciones-acuosas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">98</span>&nbsp; <span class="chapter-title">Hidrólisis Salina y pH de Disoluciones Acuosas de Sales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/26_soluciones-amortiguadoras-henderson-hasselbalch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">99</span>&nbsp; <span class="chapter-title">Disoluciones Amortiguadoras (Buffers) y Ecuación de Henderson-Hasselbalch</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/27_capacidad-amortiguadora-rango-tampon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">100</span>&nbsp; <span class="chapter-title">Capacidad Reguladora y Rango Amortiguador Óptimo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/28_principios-analisis-volumetrico-titulaciones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">101</span>&nbsp; <span class="chapter-title">Principios del Análisis Volumétrico y Patrones Primarios (Oriakhi Cap. 14)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/29_curvas-titulacion-acido-fuerte-base-fuerte.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">102</span>&nbsp; <span class="chapter-title">Construcción Matemática de Curvas de Titulación Ácido Fuerte - Base Fuerte</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/30_curvas-titulacion-acido-debil-base-fuerte.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">103</span>&nbsp; <span class="chapter-title">Curvas de Titulación Ácido Débil - Base Fuerte e Indicadores de pH</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/31_producto-solubilidad-ksp-solubilidad-molar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">104</span>&nbsp; <span class="chapter-title">Producto de Solubilidad (<span class="math inline">\(K_{sp}\)</span>) y Solubilidad Molar (Oriakhi Cap. 19)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/32_efecto-ion-comun-solubilidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">105</span>&nbsp; <span class="chapter-title">Efecto del Ion Común en Equilibrios de Precipitación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/33_precipitacion-fraccionada-iones-complejos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">106</span>&nbsp; <span class="chapter-title">Precipitación Fraccionada y Formación de Iones Complejos (<span class="math inline">\(K_f\)</span>)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/34_celdas-galvanicas-notacion-estandar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">107</span>&nbsp; <span class="chapter-title">Celdas Galvánicas (Voltaicas) y Notación Estándar de Celda (Oriakhi Cap. 23)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/35_potenciales-estandar-electrodo-serie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">108</span>&nbsp; <span class="chapter-title">Potenciales Estándar de Electrodo (<span class="math inline">\(E^\circ\)</span>) y Serie Electroquímica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/36_fem-espontaneidad-relacion-gibbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">109</span>&nbsp; <span class="chapter-title">Fuerza Electromotriz (<span class="math inline">\(E^\circ\)</span>), Energía Libre de Gibbs y Espontaneidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/37_ecuacion-nernst-celdas-concentracion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">110</span>&nbsp; <span class="chapter-title">Dependencia de la Concentración en Celdas: Ecuación de Nernst</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/38_celdas-electroliticas-procesos-industriales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">111</span>&nbsp; <span class="chapter-title">Celdas Electrolíticas y Procesos de Electrólisis Industrial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/39_leyes-cuantitativas-faraday.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">112</span>&nbsp; <span class="chapter-title">Leyes Cuantitativas de la Electrólisis de Michael Faraday</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/40_estabilidad-nuclear-defecto-masa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">113</span>&nbsp; <span class="chapter-title">Estabilidad Nuclear, Relación Neutrón-Protón y Defecto de Masa (Oriakhi Cap. 24)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/41_energia-enlace-nuclear-einstein.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">114</span>&nbsp; <span class="chapter-title">Energía de Enlace Nuclear por Nucleón y Ecuación de Einstein</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/42_modos-decaimiento-radiactivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">115</span>&nbsp; <span class="chapter-title">Modos de Decaimiento Radiactivo: Emisiones <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta^-\)</span>, <span class="math inline">\(\beta^+\)</span> y Radiación <span class="math inline">\(\gamma\)</span></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/43_cinetica-decaimiento-datacion-carbono14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">116</span>&nbsp; <span class="chapter-title">Cinética de Decaimiento Radiactivo y Datación por Radiocarbono (Oriakhi Cap. 24)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../06_Decimo/01_quimica_docente/44_fision-nuclear-cadena-fusion-termonuclear.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">117</span>&nbsp; <span class="chapter-title">Reacciones Nucleares Inducidas: Fisión en Cadena y Fusión Termonuclear</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Once — Química (Docente)</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/01_sistemas-termodinamicos-primera-ley.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">118</span>&nbsp; <span class="chapter-title">Sistemas Termodinámicos y Primera Ley de la Termodinámica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/02_entalpia-procesos-presion-constante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">119</span>&nbsp; <span class="chapter-title">Entalpía y Procesos a Presión Constante</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/03_metodos-calorimetricos-bomba-vaso.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">120</span>&nbsp; <span class="chapter-title">Métodos Calorimétricos: Calorimetría a Volumen y Presión Constante</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/04_ley-hess-sumatoria-entalpica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">121</span>&nbsp; <span class="chapter-title">Ley de Hess de Sumatoria Calorífica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/05_entalpias-estandar-formacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">122</span>&nbsp; <span class="chapter-title">Entalpías Estándar de Formación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/06_energias-enlace-calores-reaccion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">123</span>&nbsp; <span class="chapter-title">Energías de Enlace y Estimación de Calores de Reacción</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/07_segunda-ley-entropia-microestados.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">124</span>&nbsp; <span class="chapter-title">Segunda Ley de la Termodinámica, Entropía y Microestados</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/08_tercera-ley-entropias-molares-estandar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">125</span>&nbsp; <span class="chapter-title">Tercera Ley de la Termodinámica y Entropías Molares Estándar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/09_energia-libre-gibbs-criterio-espontaneidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">126</span>&nbsp; <span class="chapter-title">Energía Libre de Gibbs y Criterio de Espontaneidad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/10_influencia-temperatura-espontaneidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">127</span>&nbsp; <span class="chapter-title">Influencia de la Temperatura en la Espontaneidad Termodinámica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/11_energia-libre-constante-equilibrio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">128</span>&nbsp; <span class="chapter-title">Energía Libre de Gibbs, Cociente de Reacción y Constante de Equilibrio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/12_hibridacion-carbono-geometria-enlaces-sigma-pi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">129</span>&nbsp; <span class="chapter-title">Hibridación del Carbono, Geometría Molecular y Enlaces Sigma y Pi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/13_alcanos-nomenclatura-iupac-propiedades-combustion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">130</span>&nbsp; <span class="chapter-title">Hidrocarburos Saturados: Alcanos, Nomenclatura IUPAC y Termoquímica de Combustión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/14_cicloalcanos-tension-anillo-conformaciones-ciclohexano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">131</span>&nbsp; <span class="chapter-title">Cicloalcanos, Tensión de Anillo y Análisis Conformacional del Ciclohexano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/15_alquenos-isomeria-geometrica-adicion-electrofilica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">132</span>&nbsp; <span class="chapter-title">Hidrocarburos Insaturados: Alquenos, Isomería Geométrica y Adición Electrofílica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/16_alquinos-geometria-lineal-acidez-terminal-acetileno.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">133</span>&nbsp; <span class="chapter-title">Alquinos, Geometría Lineal, Acidez de Alquinos Terminales y Termoquímica del Acetileno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/17_hidrocarburos-aromaticos-estructura-benceno-sustitucion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">134</span>&nbsp; <span class="chapter-title">Hidrocarburos Aromáticos: Estructura del Benceno, Regla de Hückel y Sustitución Electrofílica Aromática</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/18_estereoisomeria-quiralidad-enantiomeros-actividad-optica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">135</span>&nbsp; <span class="chapter-title">Estereoisomería, Quiralidad, Enantiómeros y Actividad Óptica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/19_quimica-petroleo-craqueo-catalitico-numero-octano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">136</span>&nbsp; <span class="chapter-title">Química del Petróleo, Refinación, Craqueo Catalítico y Determinación del Índice de Octano</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/20_derivados-halogenados-sustitucion-sn1-sn2-eliminacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">137</span>&nbsp; <span class="chapter-title">Derivados Halogenados: Mecanismos de Sustitución Nucleófila y Eliminación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/21_alcoholes-fenoles-eteres-acidez-oxidacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">138</span>&nbsp; <span class="chapter-title">Alcoholes, Fenoles y Éteres: Puentes de Hidrógeno, Acidez Comparativa y Vías de Oxidación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/22_aldehidos-cetonas-polaridad-carbonilo-adicion-nucleofilica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">139</span>&nbsp; <span class="chapter-title">Aldehídos y Cetonas: Polaridad del Carbonilo, Adición Nucleófila y Ensayos Diagnósticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/23_acidos-carboxilicos-acidez-fuerza-inductiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">140</span>&nbsp; <span class="chapter-title">Ácidos Carboxílicos: Resonancia del Ion Carboxilato y Efectos Inductivos en la Acidez</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/24_esteres-mecanismo-esterificacion-fischer-saponificacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">141</span>&nbsp; <span class="chapter-title">Ésteres, Mecanismo de Esterificación de Fischer, Saponificación y Química de Jabones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/25_funciones-nitrogenadas-aminas-amidas-basicidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">142</span>&nbsp; <span class="chapter-title">Funciones Nitrogenadas: Aminas, Amidas, Basicidad Diferencial y Resonancia Amídica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/26_macropolimeros-sinteticos-polimerizacion-adicion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">143</span>&nbsp; <span class="chapter-title">Macropolímeros Sintéticos I: Mecanismo de Polimerización por Adición y Derivados Vinílicos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/27_macropolimeros-sinteticos-polimerizacion-condensacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">144</span>&nbsp; <span class="chapter-title">Macropolímeros Sintéticos II: Polímeros de Condensación, Ecuación de Carothers y Desafíos Ambientales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/28_carbohidratos-monosacaridos-estructuras-haworth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">145</span>&nbsp; <span class="chapter-title">Carbohidratos I: Monosacáridos, Proyecciones de Haworth, Anomería y Mutarrotación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/29_disacaridos-polisacaridos-enlace-glucosidico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">146</span>&nbsp; <span class="chapter-title">Carbohidratos II: Disacáridos, el Enlace Glucosídico y Polisacáridos Estructurales y de Reserva</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/30_lipidos-acidos-grasos-trigliceridos-membranas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">147</span>&nbsp; <span class="chapter-title">Lípidos: Ácidos Grasos, Triacilgliceroles, Densidad Energética y la Bicapa Lipídica</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/31_aminoacidos-propiedades-acido-base-enlace-peptidico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">148</span>&nbsp; <span class="chapter-title">Aminoácidos, Comportamiento Ácido-Base, Punto Isoeléctrico y Enlace Peptídico</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/32_proteinas-niveles-estructurales-enzimas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">149</span>&nbsp; <span class="chapter-title">Arquitectura Proteica: Niveles Estructurales, Desnaturalización y Cinética Enzimática</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/33_acidos-nucleicos-nucleotidos-estructura-adn-arn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">150</span>&nbsp; <span class="chapter-title">Ácidos Nucleicos: Nucleótidos, Enlace Fosfodiéster, Doble Hélice de ADN y Tipos de ARN</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/34_bioenergetica-molecular-hidrolisis-atp-acoplamiento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">151</span>&nbsp; <span class="chapter-title">Bioenergética Celular: Termodinámica del ATP, Enlaces Fosfoanhídrido y Acoplamiento Energético</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/35_quimica-atmosferica-capa-ozono-ciclo-cfc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">152</span>&nbsp; <span class="chapter-title">Química Atmosférica: Fotoquímica del Ozono Estratosférico, Ciclo de Chapman y Catálisis por CFCs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/36_gases-efecto-invernadero-lluvia-acida.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">153</span>&nbsp; <span class="chapter-title">Gases de Efecto Invernadero, Balance Radiativo y Geoquímica de la Lluvia Ácida</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/37_quimica-aguas-demanda-biologica-oxigeno-potabilizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">154</span>&nbsp; <span class="chapter-title">Fisicoquímica de Sistemas Acuáticos: DBO, Eutrofización y Tren de Potabilización del Agua</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../07_Once/01_quimica_docente/38_principios-quimica-verde-economia-atomica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">155</span>&nbsp; <span class="chapter-title">Química Verde: Los Doce Principios de Anastas-Warner, Economía Atómica y Factor Ambiental E</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bibliografía</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -467,8 +1226,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#biología-grados-10-11" id="toc-biología-grados-10-11" class="nav-link" data-scroll-target="#biología-grados-10-11">Biología (Grados 10°-11°)</a></li>
   <li><a href="#química-grados-6-7" id="toc-química-grados-6-7" class="nav-link" data-scroll-target="#química-grados-6-7">Química (Grados 6°-7°)</a></li>
   <li><a href="#química-grados-8-9" id="toc-química-grados-8-9" class="nav-link" data-scroll-target="#química-grados-8-9">Química (Grados 8°-9°)</a></li>
-  <li><a href="#química-grados-10-11" id="toc-química-grados-10-11" class="nav-link" data-scroll-target="#química-grados-10-11">Química (Grados 10°-11°)</a></li>
+  <li><a href="#química-grados-10-11" id="toc-química-grados-10-11" class="nav-link" data-scroll-target="#química-grados-10-11">Química (Grados 10°-11°)</a>
+  <ul class="collapse">
   <li><a href="#entorno-físico-grados-6-7" id="toc-entorno-físico-grados-6-7" class="nav-link" data-scroll-target="#entorno-físico-grados-6-7">Entorno físico (Grados 6°-7°)</a></li>
+  </ul></li>
   <li><a href="#entorno-físico-grados-8-9" id="toc-entorno-físico-grados-8-9" class="nav-link" data-scroll-target="#entorno-físico-grados-8-9">Entorno físico (Grados 8°-9°)</a></li>
   <li><a href="#física-grados-10-11" id="toc-física-grados-10-11" class="nav-link" data-scroll-target="#física-grados-10-11">Física (Grados 10°-11°)</a></li>
   </ul>
@@ -477,10 +1238,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-title">Plan de Área de Ciencias Naturales</span></h1>
+<h1 class="title d-none d-lg-block">Plan de Área de Ciencias Naturales</h1>
 </div>
 
 
@@ -501,116 +1261,6 @@ ul.task-list li input[type="checkbox"] {
 .wide-table table thead th{position:sticky;top:0;background:var(--quarto-body-bg,#fff);z-index:1}
 #TOC .header-section-number{display:none}
 </style>
-<blockquote class="blockquote">
-<p><strong>Intensidad horaria semanal por grado:</strong></p>
-</blockquote>
-<div class="wide-table" style="overflow: auto; max-height: 80vh;">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Asignatura</th>
-<th>1°</th>
-<th>2°</th>
-<th>3°</th>
-<th>4°</th>
-<th>5°</th>
-<th>6°</th>
-<th>7°</th>
-<th>8°</th>
-<th>9°</th>
-<th>10°</th>
-<th>11°</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ciencias Naturales (integrada)</td>
-<td>4</td>
-<td>4</td>
-<td>3</td>
-<td>3</td>
-<td>3</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>Biología</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>Física</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>Química</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>—</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr class="odd">
-<td><strong>Total</strong></td>
-<td><strong>4</strong></td>
-<td><strong>4</strong></td>
-<td><strong>3</strong></td>
-<td><strong>3</strong></td>
-<td><strong>3</strong></td>
-<td><strong>4</strong></td>
-<td><strong>4</strong></td>
-<td><strong>4</strong></td>
-<td><strong>6</strong></td>
-<td><strong>10</strong></td>
-<td><strong>10</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr>
 <section id="primaria-grados-1-5-ciencias-naturales-integradas" class="level2">
 <h2 class="anchored" data-anchor-id="primaria-grados-1-5-ciencias-naturales-integradas">Primaria (Grados 1°-5°): Ciencias Naturales Integradas</h2>
 <blockquote class="blockquote">
@@ -619,13 +1269,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 5%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -867,28 +1517,29 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="biología-grados-6-7" class="level2">
 <h2 class="anchored" data-anchor-id="biología-grados-6-7">Biología (Grados 6°-7°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. B</th>
@@ -899,6 +1550,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>I</td>
 <td><strong>La célula y las moléculas de la vida.</strong> Características de los seres vivos. Átomos y moléculas. Biomoléculas: carbohidratos, lípidos, proteínas y ácidos nucleicos. Teoría celular. Célula procariota y eucariota. Organelos y sus funciones.</td>
+<td>DBA 4 (Grado 6°): Comprende algunas de las funciones básicas de la célula a partir del análisis de sus estructuras.</td>
 <td>Explico la estructura de la célula y las funciones básicas de sus componentes. (Est. 6°-7°, Entorno vivo)</td>
 <td>Organización interna de los seres vivos: célula y tejidos (Grado 5°).</td>
 <td>B 1-4</td>
@@ -907,6 +1559,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>II</td>
 <td><strong>La membrana celular y el transporte de sustancias.</strong> Estructura de la membrana: modelo del mosaico fluido. Permeabilidad selectiva. Difusión y ósmosis. Transporte pasivo y activo. Endocitosis y exocitosis.</td>
+<td>DBA 4 (Grado 6°): Comprende cómo el transporte celular a través de la membrana permite la nutrición y eliminación de desechos.</td>
 <td>Verifico y explico los procesos de ósmosis y difusión. Clasifico membranas de los seres vivos de acuerdo con su permeabilidad frente a diversas sustancias. (Est. 6°-7°, Entorno vivo)</td>
 <td>La célula y las moléculas de la vida (Período I).</td>
 <td>B 5</td>
@@ -915,6 +1568,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>III</td>
 <td><strong>Sistemas del cuerpo humano.</strong> Sistemas digestivo, respiratorio y circulatorio. Nutrición y salud. Relación entre estructura y función a nivel de sistemas de órganos. Comparación de estos sistemas con los de otros vertebrados.</td>
+<td>DBA 5 (Grado 6°): Comprende la relación entre las funciones de digestión, circulación y respiración para la nutrición celular.</td>
 <td>Comparo sistemas de órganos de diferentes grupos taxonómicos. (Est. 6°-7°, Entorno vivo)</td>
 <td>La célula y las moléculas de la vida (Período I) y la membrana celular y el transporte de sustancias (Período II).</td>
 <td>B 32-34</td>
@@ -923,6 +1577,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>IV</td>
 <td><strong>Clasificación de los seres vivos.</strong> Criterios de clasificación. Dominios y reinos. Taxonomía básica: especie, género, familia, orden, clase, filo, reino. Diversidad: procariontes, virus, protistas, hongos y plantas.</td>
+<td>DBA 4 (Grado 6°): Clasifica los seres vivos en grupos taxonómicos según las características celulares y morfológicas.</td>
 <td>Clasifico organismos en grupos taxonómicos de acuerdo con las características de sus células. (Est. 6°-7°, Entorno vivo)</td>
 <td>La célula y las moléculas de la vida (Período I).</td>
 <td>B 18-22</td>
@@ -934,11 +1589,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>7°</td>
 <td>I</td>
 <td><strong>División celular: mitosis y meiosis.</strong> Ciclo celular. Fases de la mitosis. Meiosis. Comparación entre mitosis y meiosis. Importancia en el crecimiento, la reparación y la reproducción.</td>
+<td>DBA 4 (Grado 7°): Explica el ciclo celular y la diferencia entre división celular por mitosis y meiosis en organismos unicelulares y pluricelulares.</td>
 <td>Comparo sistemas de división celular y argumento su importancia en la generación de nuevos organismos y tejidos. (Est. 6°-7°, Entorno vivo)</td>
 <td>La célula y las moléculas de la vida (Grado 6°).</td>
 <td>B 9</td>
@@ -947,6 +1604,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>II</td>
 <td><strong>Origen del universo y de la vida.</strong> Teorías sobre el origen del universo. Teorías del origen de la vida: generación espontánea, panspermia y evolución química. Primeras formas de vida.</td>
+<td>DBA 4 (Grado 7°): Analiza las teorías sobre el origen del universo y la aparición de la vida en la Tierra.</td>
 <td>Explico el origen del universo y de la vida a partir de varias teorías. (Est. 6°-7°, Entorno vivo)</td>
 <td>La célula y las moléculas de la vida (Grado 6°).</td>
 <td>B 17 + material complementario</td>
@@ -955,6 +1613,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>III</td>
 <td><strong>Energía y ciclos de la materia en los ecosistemas.</strong> Fotosíntesis y respiración celular (nivel descriptivo). Flujo de energía. Ciclos del agua, del carbono y del nitrógeno. El agua en el sostenimiento de la vida. El suelo como depósito de nutrientes.</td>
+<td>DBA 3 (Grado 7°): Comprende las relaciones entre fotosíntesis y respiración en las cadenas tróficas y ciclos biogeoquímicos.</td>
 <td>Justifico la importancia del agua en el sostenimiento de la vida. Describo y relaciono los ciclos del agua, de algunos elementos y de la energía en los ecosistemas. Explico la función del suelo como depósito de nutrientes. (Est. 6°-7°, Entorno vivo)</td>
 <td>Ecosistemas, relaciones y flujo de energía (Grado 4°).</td>
 <td>B 6-8, 28</td>
@@ -963,6 +1622,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>IV</td>
 <td><strong>Biodiversidad, adaptación y conservación.</strong> Ecosistemas de Colombia y equilibrio dinámico de sus poblaciones. Adaptaciones de los seres vivos. Causas de extinción. Estrategias de conservación. Recursos naturales renovables y no renovables.</td>
+<td>DBA 3 (Grado 7°): Evalúa el impacto de la actividad humana en el equilibrio de los ecosistemas y propone estrategias de conservación.</td>
 <td>Evalúo el potencial de los recursos naturales, la forma como se han utilizado en desarrollos tecnológicos y las consecuencias de la acción del ser humano sobre ellos. (Est. 6°-7°, CTS)</td>
 <td>Energía y ciclos de la materia en los ecosistemas (Período III).</td>
 <td>B 27, 29-30</td>
@@ -974,32 +1634,34 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="biología-grados-8-9" class="level2">
 <h2 class="anchored" data-anchor-id="biología-grados-8-9">Biología (Grados 8°-9°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. B</th>
@@ -1010,6 +1672,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>I</td>
 <td><strong>Herencia y estructura del ADN.</strong> Patrones de herencia de Mendel. Genotipo y fenotipo. Cuadrados de Punnett. Cromosomas. Modelo de la doble hélice del ADN. Replicación y transmisión del material hereditario.</td>
+<td>DBA 4 (Grado 8°): Explica los patrones de herencia de Mendel y la función de la molécula de ADN en la transmisión de rasgos.</td>
 <td>Reconozco la importancia del modelo de la doble hélice para la explicación del almacenamiento y transmisión del material hereditario. (Est. 8°-9°, Entorno vivo)</td>
 <td>División celular: mitosis y meiosis (Período I, Grado 7°).</td>
 <td>B 10-11</td>
@@ -1018,6 +1681,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>II</td>
 <td><strong>Expresión génica y biotecnología.</strong> Código genético. Transcripción y traducción. Regulación de la expresión génica. Mutaciones. Biotecnología: ADN recombinante, PCR, organismos transgénicos. Implicaciones bioéticas.</td>
+<td>DBA 4 (Grado 8°): Comprende cómo se expresan las características hereditarias a través de la síntesis de proteínas.</td>
 <td>Establezco relaciones entre los genes, las proteínas y las funciones celulares. Reconozco la importancia de las proteínas en el desarrollo de los seres vivos. (Est. 8°-9°, Entorno vivo)</td>
 <td>Herencia y estructura del ADN (Período I).</td>
 <td>B 12-13</td>
@@ -1026,6 +1690,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>III</td>
 <td><strong>Reproducción y variabilidad genética.</strong> Reproducción asexual y sexual. Meiosis. Comparación de sistemas de reproducción en distintos grupos de seres vivos. Importancia de la reproducción sexual en el mantenimiento de la variabilidad.</td>
+<td>DBA 4 (Grado 8°): Analiza la importancia de la reproducción sexual como fuente de variabilidad genética en las poblaciones.</td>
 <td>Comparo diferentes sistemas de reproducción. Justifico la importancia de la reproducción sexual en el mantenimiento de la variabilidad. (Est. 8°-9°, Entorno vivo)</td>
 <td>División celular: mitosis y meiosis (Período I, Grado 7°).</td>
 <td>B 9, 41, 44</td>
@@ -1034,6 +1699,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>IV</td>
 <td><strong>Reproducción humana y control de la natalidad.</strong> Sistema reproductor humano. Ciclo menstrual. Fecundación y desarrollo embrionario. Métodos anticonceptivos. Control de la natalidad y dinámica poblacional. Infecciones de transmisión sexual.</td>
+<td>DBA 4 (Grado 8°): Comprende la relación entre el sistema reproductor humano, la fecundación y las Implicaciones bioéticas del control de natalidad.</td>
 <td>Establezco la relación entre el ciclo menstrual y la reproducción humana. Analizo las consecuencias del control de la natalidad en las poblaciones. Identifico aplicaciones de algunos conocimientos sobre la herencia y la reproducción al mejoramiento de la calidad de vida de las poblaciones. (Est. 8°-9°, Entorno vivo / CTS)</td>
 <td>Reproducción y variabilidad genética (Período III).</td>
 <td>B 41-42</td>
@@ -1045,11 +1711,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>9°</td>
 <td>I</td>
 <td><strong>Diversidad animal y sistemas de órganos.</strong> Invertebrados: poríferos, cnidarios, moluscos y artrópodos. Vertebrados: peces, anfibios, reptiles, aves y mamíferos. Comparación de sistemas de órganos entre grupos taxonómicos.</td>
+<td>DBA 4 (Grado 9°): Compara la anatomía y fisiología de los principales grupos taxonómicos animales.</td>
 <td>Comparo sistemas de órganos de diferentes grupos taxonómicos. (Est. 8°-9°, Entorno vivo)</td>
 <td>Clasificación de los seres vivos (Período IV, Grado 6°).</td>
 <td>B 23-24</td>
@@ -1058,6 +1726,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>II</td>
 <td><strong>Evolución: teorías sobre el origen de las especies.</strong> Desarrollo del pensamiento evolutivo. Darwin y Wallace: selección natural. Evidencias de la evolución. Comparación de teorías sobre el origen de las especies. Hipótesis sobre el origen y la evolución de grupos de organismos.</td>
+<td>DBA 4 (Grado 9°): Comprende que las poblaciones evolucionan a través de mecanismos como la selección natural y las mutaciones.</td>
 <td>Comparo diferentes teorías sobre el origen de las especies. Formulo hipótesis acerca del origen y evolución de un grupo de organismos. (Est. 8°-9°, Entorno vivo)</td>
 <td>Herencia y estructura del ADN (Grado 8°) y origen del universo y de la vida (Período II, Grado 7°).</td>
 <td>B 14-16</td>
@@ -1066,6 +1735,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>III</td>
 <td><strong>Historia de la vida y eras geológicas.</strong> Fósiles y datación. Eras geológicas. Relación entre el clima y las adaptaciones de los seres vivos. Extinciones masivas. Evolución humana.</td>
+<td>DBA 4 (Grado 9°): Relaciona las eras geológicas con las extinciones masivas y los cambios adaptativos de los seres vivos.</td>
 <td>Establezco relaciones entre el clima en las diferentes eras geológicas y las adaptaciones de los seres vivos. (Est. 8°-9°, Entorno vivo)</td>
 <td>Evolución: teorías sobre el origen de las especies (Período II).</td>
 <td>B 17</td>
@@ -1074,6 +1744,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>IV</td>
 <td><strong>Regulación hormonal y sistemas de defensa.</strong> Hormonas y regulación de las funciones en el ser humano. Sistemas de defensa y ataque de animales y plantas.</td>
+<td>DBA 4 (Grado 9°): Explica los mecanismos de regulación neuroendocrina e inmunitaria en los seres vivos.</td>
 <td>Explico la importancia de las hormonas en la regulación de las funciones en el ser humano. Comparo y explico los sistemas de defensa y ataque de algunos animales y plantas en el aspecto morfológico y fisiológico. (Est. 8°-9°, Entorno vivo)</td>
 <td>Diversidad animal y sistemas de órganos (Período I).</td>
 <td>B 36-37</td>
@@ -1085,32 +1756,34 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="biología-grados-10-11" class="level2">
 <h2 class="anchored" data-anchor-id="biología-grados-10-11">Biología (Grados 10°-11°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> B = <em>Biología: la vida en la Tierra con Fisiología</em> (Audesirk, Audesirk &amp; Byers, 10ª ed., 2017). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. B</th>
@@ -1121,6 +1794,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>I</td>
 <td><strong>Genética de poblaciones y evolución.</strong> Genética de poblaciones: ley de Hardy-Weinberg. Relación entre mutación, selección natural y herencia. Casos en especies actuales que ilustran la selección natural.</td>
+<td>DBA 4 (Grado 10°): Analiza genéticamente las frecuencias alélicas en poblaciones y explica mecanismos evolutivos.</td>
 <td>Establezco relaciones entre mutación, selección natural y herencia. Comparo casos en especies actuales que ilustren diferentes acciones de la selección natural. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Herencia y estructura del ADN y evolución: teorías sobre el origen de las especies (Grados 8°-9°).</td>
 <td>B 14-16</td>
@@ -1129,6 +1803,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>II</td>
 <td><strong>Fisiología animal: fluidos y señales.</strong> Homeostasis. Mecánica de fluidos en los seres vivos: sistema circulatorio. Neuronas y señales eléctricas y químicas. Sistema nervioso y sentidos.</td>
+<td>DBA 4 (Grado 10°): Modela el transporte de fluidos e impulsos nerviosos bajo principios físicoquímicos.</td>
 <td>Identifico y explico ejemplos del modelo de mecánica de fluidos en los seres vivos. Explico el funcionamiento de neuronas a partir de modelos químicos y eléctricos. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Diversidad animal y sistemas de órganos (Período I, Grado 9°).</td>
 <td>B 32, 38-39</td>
@@ -1137,6 +1812,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>III</td>
 <td><strong>Energía en los ecosistemas.</strong> Cadenas y redes alimentarias. Relaciones entre materia y energía. Principios termodinámicos en los ecosistemas. Productividad primaria.</td>
+<td>DBA 3 (Grado 10°): Relaciona las leyes de la termodinámica con la eficiencia energética y redes tróficas.</td>
 <td>Explico las relaciones entre materia y energía en las cadenas alimentarias. Busco ejemplos de principios termodinámicos en algunos ecosistemas. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Energía y ciclos de la materia en los ecosistemas (Período III, Grado 7°).</td>
 <td>B 6-8, 28</td>
@@ -1145,6 +1821,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>IV</td>
 <td><strong>Ecología de poblaciones y comunidades.</strong> Relaciones entre individuo, población, comunidad y ecosistema. Crecimiento y regulación de poblaciones. Relaciones entre especies. Sucesión ecológica.</td>
+<td>DBA 3 (Grado 10°): Comprende la dinámica de crecimiento poblacional y las interacciones intra e interespecíficas.</td>
 <td>Establezco relaciones entre individuo, población, comunidad y ecosistema. Explico diversos tipos de relaciones entre especies en los ecosistemas. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Energía en los ecosistemas (Período III).</td>
 <td>B 26-27</td>
@@ -1156,11 +1833,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>11°</td>
 <td>I</td>
 <td><strong>Ciclos biogeoquímicos y problemas ambientales globales.</strong> Ciclos del agua y de los elementos. Energía de los ecosistemas. Cambio climático y contaminación como alteraciones de los ciclos.</td>
+<td>DBA 3 (Grado 11°): Argumenta el impacto del cambio climático y las alteraciones humanas en los ciclos biogeoquímicos.</td>
 <td>Relaciono los ciclos del agua y de los elementos con la energía de los ecosistemas. (Est. 10°-11°, Procesos biológicos / CTS)</td>
 <td>Energía en los ecosistemas y ecología de poblaciones (Períodos III-IV, Grado 10°).</td>
 <td>B 28, 30</td>
@@ -1169,6 +1848,7 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>II</td>
 <td><strong>Biodiversidad del mundo y de Colombia.</strong> Biomas terrestres y acuáticos. Adaptaciones de los seres vivos en ecosistemas del mundo y de Colombia. Especies amenazadas. Conservación y áreas protegidas.</td>
+<td>DBA 3 (Grado 11°): Comprende la riqueza ecosistémica colombiana y evalúa políticas de conservación y desarrollo sostenible.</td>
 <td>Explico y comparo algunas adaptaciones de seres vivos en ecosistemas del mundo y de Colombia. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Ecología de poblaciones y comunidades (Período IV, Grado 10°).</td>
 <td>B 29-30</td>
@@ -1177,6 +1857,7 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>III</td>
 <td><strong>Fisiología vegetal.</strong> Fotosíntesis como conversión de energía. Transporte de agua y nutrientes: xilema y floema. Hormonas vegetales. Fotoperiodismo. Respuestas de las plantas al ambiente.</td>
+<td>DBA 4 (Grado 11°): Explica el metabolismo vegetal (fotosíntesis, transporte de savia y fitohormonas) y sus respuestas al medio.</td>
 <td>Argumento la importancia de la fotosíntesis como un proceso de conversión de energía necesaria para organismos aerobios. (Est. 10°-11°, Procesos biológicos)</td>
 <td>Energía en los ecosistemas (Período III, Grado 10°).</td>
 <td>B 7, 43, 45</td>
@@ -1185,6 +1866,7 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>IV</td>
 <td><strong>Biotecnología avanzada y bioética.</strong> Edición genómica: CRISPR. Terapias génicas. Organismos transgénicos. Clonación. Relación entre el ADN, el ambiente y la diversidad de los seres vivos. Debate bioético.</td>
+<td>DBA 4 (Grado 11°): Debate las aplicaciones contemporáneas de la ingeniería genética (CRISPR, transgénicos) y sus dilemas bioéticos.</td>
 <td>Explico la relación entre el ADN, el ambiente y la diversidad de los seres vivos. (Est. 10°-11°, Procesos biológicos / CTS)</td>
 <td>Expresión génica y biotecnología (Período II, Grado 8°).</td>
 <td>B 13</td>
@@ -1196,32 +1878,34 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="química-grados-6-7" class="level2">
 <h2 class="anchored" data-anchor-id="química-grados-6-7">Química (Grados 6°-7°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. Q</th>
@@ -1231,36 +1915,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>6°</td>
 <td>I</td>
-<td><strong>Estados de la materia y cambios de estado.</strong> Sólido, líquido, gaseoso y plasma. Cambios de estado: fusión, solidificación, evaporación, condensación, sublimación. Energía y cambios de estado.</td>
+<td><strong>Propiedades de la materia.</strong> Masa, volumen y propiedades específicas: densidad, punto de fusión y ebullición.</td>
+<td>DBA 2 (Grado 6°): Comprende que la temperatura y la presión influyen en las propiedades fisicoquímicas de las sustancias.</td>
 <td>Clasifico y verifico las propiedades de la materia. (Est. 6°-7°, Entorno físico)</td>
-<td>Propiedades de la materia y sus estados (Grado 3°).</td>
+<td>Propiedades de la materia (Grado 3°).</td>
 <td>Q 1</td>
 </tr>
 <tr class="even">
 <td>6°</td>
 <td>II</td>
-<td><strong>Mezclas y soluciones.</strong> Mezclas homogéneas y heterogéneas. Soluciones: soluto y solvente. Concentración cualitativa. Métodos de separación de mezclas: filtración, destilación, evaporación, cromatografía.</td>
-<td>Clasifico materiales en sustancias puras o mezclas. Verifico diferentes métodos de separación de mezclas. (Est. 6°-7°, Entorno físico)</td>
-<td>Estados de la materia (Período I).</td>
+<td><strong>Estados y cambios de estado.</strong> Sólido, líquido, gaseoso y plasma. Transiciones térmicas: fusión, evaporación, condensación, sublimación.</td>
+<td>DBA 2 (Grado 6°): Comprende cómo la temperatura afecta las transformaciones físicas de las sustancias.</td>
+<td>Clasifico y verifico las propiedades de la materia. (Est. 6°-7°, Entorno físico)</td>
+<td>Propiedades de la materia (Período I).</td>
 <td>Q 1</td>
 </tr>
 <tr class="odd">
 <td>6°</td>
 <td>III</td>
-<td><strong>Introducción a los ácidos y bases.</strong> Identificación de ácidos y bases en el laboratorio. Propiedades ácido-base. Indicadores naturales. Neutralización básica.</td>
-<td>Explico la formación de moléculas y los estados de la materia a partir de fuerzas electrostáticas. (Est. 6°-7°, Entorno físico)</td>
-<td>Mezclas y soluciones (Período II).</td>
-<td>Q 16</td>
+<td><strong>Clasificación de la materia.</strong> Sustancias puras (elementos y compuestos) frente a mezclas homogéneas y heterogéneas de uso cotidiano.</td>
+<td>DBA 2 (Grado 6°): Diferencia sustancias puras de mezclas y reconoce sus propiedades características.</td>
+<td>Clasifico materiales en sustancias puras o mezclas. (Est. 6°-7°, Entorno físico)</td>
+<td>Estados y cambios de estado (Período II).</td>
+<td>Q 1</td>
 </tr>
 <tr class="even">
 <td>6°</td>
 <td>IV</td>
-<td><strong>El átomo: introducción.</strong> Modelo atómico de Dalton. Átomos: protones, neutrones, electrones. Número atómico y masa atómica. Tabla periódica básica.</td>
-<td>Describo el desarrollo de modelos que explican la estructura de la materia. (Est. 6°-7°, Entorno físico)</td>
-<td>Introducción a los ácidos y bases (Período III).</td>
-<td>Q 2</td>
+<td><strong>Métodos de separación de mezclas.</strong> Filtración, decantación, evaporación, destilación simple e imantación.</td>
+<td>DBA 2 (Grado 6°): Comprende que las propiedades fisicoquímicas se aprovechan en las técnicas de separación de mezclas.</td>
+<td>Verifico diferentes métodos de separación de mezclas. (Est. 6°-7°, Entorno físico)</td>
+<td>Clasificación de la materia (Período III).</td>
+<td>Q 1</td>
 </tr>
 <tr class="odd">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1271,36 +1960,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>7°</td>
 <td>I</td>
-<td><strong>Modelos atómicos y tabla periódica.</strong> Modelo de Thomson. Modelo de Rutherford. Modelo de Bohr. Tabla periódica: períodos, grupos, bloques. Metales, no metales y metaloides.</td>
+<td><strong>Evolución de los modelos atómicos.</strong> Modelos atómicos clásicos: de Dalton a Thomson, Rutherford y el modelo planetario de Bohr.</td>
+<td>DBA 2 (Grado 7°): Explica cómo las sustancias se forman a partir de átomos organizados según modelos estructurales.</td>
+<td>Describo el desarrollo de modelos que explican la estructura de la materia. (Est. 6°-7°, Entorno físico)</td>
+<td>Métodos de separación de mezclas (Grado 6°).</td>
+<td>Q 2</td>
+</tr>
+<tr class="odd">
+<td>7°</td>
+<td>II</td>
+<td><strong>El átomo, partículas subatómicas, iones e isótopos.</strong> Protones, neutrones y electrones. Número atómico (<span class="math inline">\(Z\)</span>) y número de masa (<span class="math inline">\(A\)</span>). Cationes, aniones e isótopos (masa atómica promedio).</td>
+<td>DBA 2 (Grado 7°): Explica la constitución atómica (<span class="math inline">\(Z, A\)</span>, iones e isótopos) de las sustancias.</td>
+<td>Describo el desarrollo de modelos que explican la estructura de la materia. (Est. 6°-7°, Entorno físico)</td>
+<td>Evolución de los modelos atómicos (Período I).</td>
+<td>Q 2</td>
+</tr>
+<tr class="even">
+<td>7°</td>
+<td>III</td>
+<td><strong>La tabla periódica y propiedades periódicas.</strong> Períodos, grupos/familias, metales, no metales, electronegatividad, radio atómico y afinidad electrónica.</td>
+<td>DBA 2 (Grado 7°): Explica cómo los elementos se estructuran según su ubicación en la Tabla Periódica.</td>
 <td>Explico el desarrollo de modelos de organización de los elementos químicos. (Est. 6°-7°, Entorno físico)</td>
-<td>El átomo: introducción (Período IV, Grado 6°).</td>
+<td>El átomo, iones e isótopos (Período II).</td>
 <td>Q 6, 7</td>
 </tr>
 <tr class="odd">
 <td>7°</td>
-<td>II</td>
-<td><strong>Enlace químico.</strong> Enlace iónico. Enlace covalente. Enlace metálico. Polaridad de enlaces. Lewis: estructuras de punto. Número de oxidación.</td>
-<td>Explico cómo un número limitado de elementos hace posible la diversidad de la materia conocida. (Est. 6°-7°, Entorno físico)</td>
-<td>Modelos atómicos y tabla periódica (Período I).</td>
-<td>Q 8</td>
-</tr>
-<tr class="even">
-<td>7°</td>
-<td>III</td>
-<td><strong>Nomenclatura química.</strong> Nomenclatura de compuestos iónicos y covalentes. Sistemas: IUPAC, stock, tradicional. Fórmulas moleculares.</td>
-<td>Describo el desarrollo de modelos que explican la estructura de la materia. (Est. 6°-7°, Entorno físico)</td>
-<td>Enlace químico (Período II).</td>
-<td>Q 2</td>
-</tr>
-<tr class="odd">
-<td>7°</td>
 <td>IV</td>
-<td><strong>Reacciones químicas básicas.</strong> Ecuación química balanceada. Tipos de reacciones: síntesis, descomposición, sustitución simple, doble sustitución, combustión. Ley de conservación de la masa.</td>
-<td>Clasifico y verifico las propiedades de la materia. (Est. 6°-7°, Entorno físico)</td>
-<td>Nomenclatura química (Período III).</td>
-<td>Q 3-4</td>
+<td><strong>Configuración electrónica y niveles de energía.</strong> Distribución electrónica por subniveles (<span class="math inline">\(1s^2 2s^2 2p^6...\)</span>), diagramas de orbitales, reglas de Aufbau, Hund, Pauli y electrones de valencia.</td>
+<td>DBA 2 (Grado 7°): Relaciona la ubicación de los elementos en la tabla periódica con su configuración electrónica.</td>
+<td>Explico la formación de moléculas a partir de fuerzas electrostáticas y niveles energéticos. (Est. 6°-7°, Entorno físico)</td>
+<td>La tabla periódica y propiedades periódicas (Período III).</td>
+<td>Q 6</td>
 </tr>
 <tr class="even">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1311,28 +2005,29 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="química-grados-8-9" class="level2">
 <h2 class="anchored" data-anchor-id="química-grados-8-9">Química (Grados 8°-9°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. Q</th>
@@ -1342,36 +2037,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>8°</td>
 <td>I</td>
-<td><strong>Estequiometría.</strong> Mol y masa molar. Relaciones moleculares. Cálculos estequiométricos. Reactivo limitante. Rendimiento teórico y porcentual.</td>
-<td>Comparo masa, peso, cantidad de sustancia y densidad de diferentes materiales. (Est. 8°-9°, Entorno físico)</td>
-<td>Reacciones químicas básicas (Grado 7°).</td>
-<td>Q 3-4</td>
+<td><strong>Enlace químico y estructuras de Lewis.</strong> Enlace iónico, covalente (polar y apolar) y metálico; electrones de valencia y regla del octeto.</td>
+<td>DBA 3 (Grado 8°): Comprende que los diferentes tipos de enlaces determinan la estructura y propiedades de los materiales.</td>
+<td>Relaciono la estructura de las sustancias con sus propiedades físicas y químicas. (Est. 8°-9°, Entorno físico)</td>
+<td>Configuración electrónica y electrones de valencia (Grado 7°).</td>
+<td>Q 8</td>
 </tr>
 <tr class="even">
 <td>8°</td>
 <td>II</td>
-<td><strong>Gases.</strong> Ley de Boyle, Charles, Gay-Lussac, Avogadro. Ley general de los gases. Gas ideal vs.&nbsp;gas real. Presión parcial.</td>
-<td>Comparo los modelos que explican el comportamiento de gases ideales y reales. (Est. 8°-9°, Entorno físico)</td>
-<td>Estequiometría (Período I).</td>
-<td>Q 10</td>
+<td><strong>Geometría molecular y polaridad.</strong> Teoría de Repulsión de Pares de Electrones de Valencia (TRPEV: geometrías lineal, angular, trigonal plana, tetraédrica) y polaridad molecular.</td>
+<td>DBA 3 (Grado 8°): Comprende cómo la geometría de los enlaces determina las propiedades físicas y químicas.</td>
+<td>Relaciono la estructura de las sustancias con sus propiedades físicas y químicas. (Est. 8°-9°, Entorno físico)</td>
+<td>Enlace químico y estructuras de Lewis (Período I).</td>
+<td>Q 9</td>
 </tr>
 <tr class="odd">
 <td>8°</td>
 <td>III</td>
-<td><strong>Soluciones y concentración.</strong> Disolventes y solutos. Concentración: molaridad, molalidad, porcentaje en masa. Dilución. Propiedades coligativas (introducción).</td>
-<td>Establezco relaciones cuantitativas entre los componentes de una solución. (Est. 8°-9°, Entorno físico)</td>
-<td>Gases (Período II).</td>
-<td>Q 13</td>
+<td><strong>Fuerzas intermoleculares.</strong> Fuerzas de Van der Waals, dipolo-dipolo, dispersión de London y puentes de hidrógeno. Efecto en puntos de ebullición y solubilidad.</td>
+<td>DBA 3 (Grado 8°): Explica las propiedades físicas de los materiales a partir de las fuerzas intermoleculares.</td>
+<td>Comparo sólidos, líquidos y gases teniendo en cuenta el movimiento de sus moléculas y las fuerzas intermoleculares. (Est. 8°-9°, Entorno físico)</td>
+<td>Geometría molecular y polaridad (Período II).</td>
+<td>Q 11</td>
 </tr>
 <tr class="even">
 <td>8°</td>
 <td>IV</td>
-<td><strong>Termoquímica.</strong> Energía en las reacciones químicas. Entalpía de reacción. Ley de Hess. Calorimetría. Energías de enlace.</td>
-<td>Establezco relaciones entre energía interna de un sistema termodinámico, trabajo y transferencia de energía térmica; las expreso matemáticamente. (Est. 8°-9°, Entorno físico)</td>
-<td>Soluciones y concentración (Período III).</td>
-<td>Q 5</td>
+<td><strong>Nomenclatura química inorgánica.</strong> Formación y reglas de formulación para óxidos, hidróxidos, ácidos inorgánicos y sales (sistemas IUPAC, Stock, Tradicional).</td>
+<td>DBA 3 (Grado 8°): Identifica y nombra compuestos inorgánicos aplicando reglas internacionales de representación.</td>
+<td>Relaciono la estructura de las sustancias con sus propiedades y formulación. (Est. 8°-9°, Entorno físico)</td>
+<td>Enlace químico y fuerzas intermoleculares (Períodos I-III).</td>
+<td>Q 2</td>
 </tr>
 <tr class="odd">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1382,36 +2082,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>9°</td>
 <td>I</td>
-<td><strong>Estructura atómica avanzada.</strong> Modelo cuántico del átomo. Números cuánticos. Configuración electrónica. Diagramas de orbitales. Regla de Aufbau, Hund y Pauli.</td>
-<td>Comparo sólidos, líquidos y gases teniendo en cuenta el movimiento de sus moléculas y las fuerzas electroestáticas. (Est. 8°-9°, Entorno físico)</td>
-<td>Modelos atómicos y tabla periódica (Grado 7°).</td>
-<td>Q 6</td>
+<td><strong>Reacciones químicas y conservación de la masa.</strong> Ecuaciones químicas, representación de transformaciones, tipos de reacción (síntesis, descomposición, sustitución) y Ley de Lavoisier (balanceo por tanteo).</td>
+<td>DBA 3 (Grado 9°): Analiza transformaciones químicas y aplica la ley de conservación de la masa en ecuaciones balanceadas.</td>
+<td>Verifico las diferencias entre cambios químicos y mezclas. (Est. 8°-9°, Entorno físico)</td>
+<td>Nomenclatura química inorgánica (Grado 8°).</td>
+<td>Q 3-4</td>
 </tr>
 <tr class="odd">
 <td>9°</td>
 <td>II</td>
-<td><strong>Soluciones avanzadas.</strong> Concentración: molaridad, molalidad, porcentaje en masa. Dilución. Propiedades coligativas: elevación del punto de ebullición, depresión del punto de congelación.</td>
-<td>Establezco relaciones cuantitativas entre los componentes de una solución. (Est. 8°-9°, Entorno físico)</td>
-<td>Estequiometría y gases (Grado 8°).</td>
-<td>Q 13</td>
+<td><strong>Bloque unificado de estequiometría.</strong> El concepto de mol, masa molar y número de Avogadro. Relaciones cuantitativas masa-masa y mol-mol. Reactivo limitante, pureza de reactivos y rendimiento porcentual.</td>
+<td>DBA 3 (Grado 9°): Analiza las relaciones cuantitativas entre reactivos y productos en una reacción química (estequiometría).</td>
+<td>Comparo masa, peso, cantidad de sustancia y densidad de diferentes materiales. (Est. 8°-9°, Entorno físico)</td>
+<td>Reacciones químicas y conservación de la masa (Período I).</td>
+<td>Q 3-4</td>
 </tr>
 <tr class="even">
 <td>9°</td>
 <td>III</td>
-<td><strong>Ácidos y bases.</strong> Definiciones de ácidos y bases (Arrhenius, Brønsted-Lowry, Lewis). Escala de pH. Hidrólisis. Indicadores ácido-base. Neutralización. Tampones (introducción).</td>
-<td>Comparo los modelos que sustentan la definición ácido-base. (Est. 8°-9°, Entorno físico)</td>
-<td>Soluciones avanzadas (Período II).</td>
-<td>Q 16</td>
+<td><strong>Disoluciones acuosas, concentración y propiedades coligativas.</strong> Mezclas homogéneas (soluciones) y heterogéneas, soluto, solvente, solvatación. Unidades físicas (<span class="math inline">\(\%m/m, \%v/v, ppm\)</span>) y Molaridad (<span class="math inline">\(M\)</span>). Propiedades coligativas: Raoult, <span class="math inline">\(\Delta T_b, \Delta T_f\)</span>, presión osmótica.</td>
+<td>DBA 2 (Grado 9°): Comprende cómo se forman las disoluciones acuosas y expresa su concentración en unidades cuantitativas.</td>
+<td>Establezco relaciones cuantitativas entre los componentes de una solución. (Est. 8°-9°, Entorno físico)</td>
+<td>Bloque unificado de estequiometría (Período II).</td>
+<td>Q 13</td>
 </tr>
 <tr class="odd">
 <td>9°</td>
 <td>IV</td>
-<td><strong>Química orgánica introductoria.</strong> El carbono como elemento fundamental. Hidrocarburos: alcanos, alquenos, alquinos. Grupos funcionales. Isomería básica.</td>
-<td>Verifico las diferencias entre cambios químicos y mezclas. (Est. 8°-9°, Entorno físico)</td>
-<td>Ácidos y bases (Período III).</td>
-<td>Q 24</td>
+<td><strong>Electrólitos e introducción a ácidos y bases.</strong> Electrólitos fuertes, débiles y no electrólitos (conductividad e ionización). Teorías ácido-base de Arrhenius y Brønsted-Lowry, escala de pH/pOH e indicadores.</td>
+<td>DBA 2 (Grado 9°): Comprende que la acidez o basicidad de una solución se debe a la concentración de <span class="math inline">\(H^+\)</span> o <span class="math inline">\(OH^-\)</span> (escala de pH).</td>
+<td>Comparo los modelos que sustentan la definición ácido-base. (Est. 8°-9°, Entorno físico)</td>
+<td>Disoluciones acuosas y concentración (Período III).</td>
+<td>Q 4, 16</td>
 </tr>
 <tr class="even">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1422,28 +2127,29 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="química-grados-10-11" class="level2">
 <h2 class="anchored" data-anchor-id="química-grados-10-11">Química (Grados 10°-11°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> Q = <em>Química: La Ciencia Central</em> (Brown, LeMay, Bursten, Murphy &amp; Woodward, 12ª ed., 2012). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. Q</th>
@@ -1453,36 +2159,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>10°</td>
 <td>I</td>
-<td><strong>Reacciones químicas avanzadas.</strong> Mecanismos de reacción: oxidoreducción, descomposición, neutralización, precipitación. Semi-reacciones. Número de oxidación.</td>
-<td>Explico los cambios químicos desde diferentes modelos. (Est. 10°-11°, Procesos químicos)</td>
-<td>Reacciones y estequiometría (Grados 8°-9°).</td>
-<td>Q 3-4</td>
+<td><strong>Leyes de los gases y reacciones de óxido-reducción (Redox).</strong> Leyes de Boyle, Charles, Gay-Lussac, Avogadro, ecuación del gas ideal (<span class="math inline">\(PV = nRT\)</span>). Reacciones Redox: números de oxidación, método ion-electrón, oxidantes y reductores.</td>
+<td>DBA 2 (Grado 8°) / DBA 1 (Grado 10°): Relaciona variables de gases (<span class="math inline">\(PV=nRT\)</span>) y analiza reacciones Redox bajo principios cuantitativos.</td>
+<td>Comparo los modelos que explican el comportamiento de gases y explico los cambios químicos desde diferentes modelos. (Est. 10°-11°, Procesos químicos)</td>
+<td>Estequiometría y disoluciones (Grado 9°).</td>
+<td>Q 4, 10</td>
 </tr>
 <tr class="even">
 <td>10°</td>
 <td>II</td>
-<td><strong>Cinética química.</strong> Velocidad de reacción. Factores que afectan la velocidad: concentración, temperatura, catalizador, superficie. Energía de activación. Mecanismo de reacción.</td>
-<td>Identifico condiciones para controlar la velocidad de cambios químicos. (Est. 10°-11°, Procesos químicos)</td>
-<td>Reacciones químicas avanzadas (Período I).</td>
-<td>Q 14</td>
+<td><strong>Cinética química y equilibrio químico.</strong> Velocidad de reacción, leyes de velocidad, energía de activación, catálisis. Constante de equilibrio (<span class="math inline">\(K_c, K_p\)</span>), cociente de reacción (<span class="math inline">\(Q\)</span>) y Principio de Le Chatelier.</td>
+<td>DBA 2 (Grado 10°): Comprende que el equilibrio químico es un estado dinámico que puede ser alterado por factores externos (Le Chatelier).</td>
+<td>Identifico condiciones para controlar la velocidad de cambios químicos y verifico el efecto de presión y temperatura en los cambios químicos. (Est. 10°-11°, Procesos químicos)</td>
+<td>Leyes de los gases y reacciones Redox (Período I).</td>
+<td>Q 14-15</td>
 </tr>
 <tr class="odd">
 <td>10°</td>
 <td>III</td>
-<td><strong>Equilibrio químico.</strong> Constante de equilibrio (Keq). Principio de Le Chatelier. Cociente de reacción (Q). Relación entre Keq y termodinámica.</td>
-<td>Verifico el efecto de presión y temperatura en los cambios químicos. (Est. 10°-11°, Procesos químicos)</td>
-<td>Cinética química (Período II).</td>
-<td>Q 15</td>
+<td><strong>Equilibrios ácido-base avanzados, volumetría y tampones.</strong> Constantes de acidez y basicidad (<span class="math inline">\(K_a, K_b, K_w\)</span>), hidrólisis de sales, análisis titulométrico y volumetría (<span class="math inline">\(V_1 M_1 = V_2 M_2\)</span>), soluciones amortiguadoras (buffers) y curvas de titulación.</td>
+<td>DBA 2 (Grado 10°): Caracteriza equilibrios iónicos en solución acuosa y realiza análisis volumétricos.</td>
+<td>Caracterizo cambios químicos en condiciones de equilibrio. (Est. 10°-11°, Procesos químicos)</td>
+<td>Cinética química y equilibrio químico (Período II).</td>
+<td>Q 16-17</td>
 </tr>
 <tr class="even">
 <td>10°</td>
 <td>IV</td>
-<td><strong>Electroquímica.</strong> Celdas galvánicas (voltaicas). Potencial estándar de reducción. Celdas electrolíticas. Leyes de Faraday. Corrosión y protección. Pilas de combustible.</td>
-<td>Realizo cálculos cuantitativos en cambios químicos. (Est. 10°-11°, Procesos químicos)</td>
-<td>Equilibrio químico (Período III).</td>
-<td>Q 20</td>
+<td><strong>Electroquímica y química nuclear.</strong> Celdas galvánicas/voltaicas, celdas electrolíticas, potenciales estándar (<span class="math inline">\(E^\circ\)</span>), Leyes de Faraday. Química nuclear: estabilidad, emisiones <span class="math inline">\(\alpha, \beta, \gamma\)</span>, vida media (<span class="math inline">\(t_{1/2}\)</span>), fisión, fusión y datación por C-14.</td>
+<td>DBA 1 (Grado 10°): Analiza transformaciones electroquímicas y nucleares bajo principios de conservación de la energía.</td>
+<td>Realizo cálculos cuantitativos en cambios químicos y explico transformaciones nucleares. (Est. 10°-11°, Procesos químicos)</td>
+<td>Equilibrios ácido-base y volumetría (Período III).</td>
+<td>Q 20, 21</td>
 </tr>
 <tr class="odd">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1493,36 +2204,41 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>11°</td>
 <td>I</td>
-<td><strong>Equilibrios ácido-base avanzados.</strong> Tampones: preparación y capacidad. Curvas de valoración. pH en puntos característicos. Indicadores ácido-base. Hidrólisis de sales.</td>
-<td>Caracterizo cambios químicos en condiciones de equilibrio. (Est. 10°-11°, Procesos químicos)</td>
-<td>Ácidos, bases y equilibrio (Grados 9°-10°).</td>
-<td>Q 16-17</td>
+<td><strong>Termodinámica química.</strong> Entalpía (<span class="math inline">\(\Delta H\)</span>), entropía (<span class="math inline">\(\Delta S\)</span>) y energía libre de Gibbs (<span class="math inline">\(\Delta G\)</span>). Espontaneidad de reacciones químicos y leyes de la termodinámica.</td>
+<td>DBA 1 (Grado 10°/11°): Relaciona los principios energéticos (<span class="math inline">\(\Delta H, \Delta S, \Delta G\)</span>) con la espontaneidad de los cambios químicos.</td>
+<td>Relaciono los cambios químicos con la energía libre, la entropía y la entalpía. (Est. 10°-11°, Procesos químicos)</td>
+<td>Equilibrio químico y electroquímica (Grado 10°).</td>
+<td>Q 5, 19</td>
 </tr>
 <tr class="odd">
 <td>11°</td>
 <td>II</td>
-<td><strong>Termodinámica química.</strong> Entalpía, entropía y energía libre de Gibbs. Espontaneidad de reacciones. Ley de Hess (profundización). Relación entre termodinámica y equilibrio.</td>
-<td>Explico los cambios químicos desde diferentes modelos. (Est. 10°-11°, Procesos químicos)</td>
-<td>Termoquímica (Grado 8°) y equilibrios ácido-base (Período I).</td>
-<td>Q 19</td>
+<td><strong>Estructura del carbono, hidrocarburos e isomería orgánica.</strong> Hibridación del carbono (<span class="math inline">\(sp^3, sp^2, sp\)</span>). Hidrocarburos: alcanos, alquenos, alquinos, aromáticos (benceno). Isomería estructural y estereoisomería (geométrica <span class="math inline">\(cis/trans\)</span> y óptica/quiralidad).</td>
+<td>DBA 1 (Grado 11°): Comprende que la estructura del átomo de carbono determina su capacidad de formar enlaces y generar diversidad orgánica e isomería.</td>
+<td>Relaciono la estructura del carbono con la formación de cadenas hidrocarbonadas y moléculas orgánicas. (Est. 10°-11°, Procesos químicos)</td>
+<td>Termodinámica química (Período I).</td>
+<td>Q 24</td>
 </tr>
 <tr class="even">
 <td>11°</td>
 <td>III</td>
-<td><strong>Química ambiental y verde.</strong> Contaminación química del agua, aire y suelo. Química de la atmósfera: ozono y smog. Química verde: principios, solventes verdes, catálisis. Biorrefinerías. Evaluación del ciclo de vida.</td>
-<td>Identifico cambios químicos en la vida cotidiana y en el ambiente. (Est. 10°-11°, Procesos químicos / CTS)</td>
-<td>Termodinámica química (Período II).</td>
-<td>Q 18</td>
+<td><strong>Funciones orgánicas oxigenadas/nitrogenadas, mecanismos y polímeros.</strong> Alcoholes, éteres, aldehídos, cetonas, ácidos carboxílicos, ésteres, aminas, amidas. Mecanismos de reacción (sustitución, adición, eliminación) y polímeros (adición y condensación).</td>
+<td>DBA 1 (Grado 11°): Reconoce las funciones orgánicas oxigenadas/nitrogenadas y sus mecanismos de síntesis y polimerización.</td>
+<td>Relaciono la estructura del carbono con las funciones orgánicas y sus reacciones. (Est. 10°-11°, Procesos químicos)</td>
+<td>Hidrocarburos e isomería orgánica (Período II).</td>
+<td>Q 24</td>
 </tr>
 <tr class="odd">
 <td>11°</td>
 <td>IV</td>
-<td><strong>Química orgánica avanzada.</strong> Química orgánica: reacciones de sustitución, adición, eliminación. Polímeros: adición y condensación. Biomoléculas: proteínas, carbohidratos, lípidos, ácidos nucleicos.</td>
-<td>Relaciono la estructura del carbono con la formación de moléculas orgánicas. (Est. 10°-11°, Procesos químicos)</td>
-<td>Química orgánica introductoria (Grado 9°).</td>
-<td>Q 24</td>
+<td><strong>Biomoléculas y química ambiental.</strong> Carbohidratos, lípidos, proteínas, ácidos nucleicos (ADN/ARN). Química ambiental y verde: contaminación atmosférica, hídrica, capa de ozono, principios de química verde.</td>
+<td>DBA 2 (Grado 11°): Analiza el impacto ambiental del uso de recursos naturales (hidrocarburos, polímeros) y propone alternativas sostenibles (química verde).</td>
+<td>Identifico cambios químicos en la vida cotidiana, biomoléculas y en el ambiente. (Est. 10°-11°, Procesos químicos / CTS)</td>
+<td>Funciones orgánicas y mecanismos de reacción (Período III).</td>
+<td>Q 18, 24</td>
 </tr>
 <tr class="even">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1533,28 +2249,28 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-<hr>
-</section>
-<section id="entorno-físico-grados-6-7" class="level2">
-<h2 class="anchored" data-anchor-id="entorno-físico-grados-6-7">Entorno físico (Grados 6°-7°)</h2>
+<section id="entorno-físico-grados-6-7" class="level3">
+<h3 class="anchored" data-anchor-id="entorno-físico-grados-6-7">Entorno físico (Grados 6°-7°)</h3>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. FC</th>
@@ -1565,6 +2281,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>I</td>
 <td><strong>El movimiento: rapidez, velocidad y aceleración.</strong> Movimiento relativo. Rapidez instantánea y media. Velocidad y aceleración. Caída libre.</td>
+<td>DBA 1 (Grado 6°): Comprende cómo las fuerzas (de contacto o a distancia) causan cambios en el movimiento de un objeto y realiza mediciones cuantitativas.</td>
 <td>Verifico relaciones entre distancia recorrida, velocidad y fuerza involucrada en diversos tipos de movimiento. (Est. 6°-7°, Entorno físico)</td>
 <td>Fuerzas, movimiento y energía (Grados 3°-4°).</td>
 <td>FC 3</td>
@@ -1573,6 +2290,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>II</td>
 <td><strong>Energía y movimiento.</strong> Trabajo y potencia. Energía potencial y cinética. Conservación de la energía.</td>
+<td>DBA 2 (Grado 6°): Comprende las transformaciones y la conservación de la energía mecánica (cinética y potencial) en sistemas físicos.</td>
 <td>Relaciono energía y movimiento. (Est. 6°-7°, Entorno físico)</td>
 <td>El movimiento (Período I).</td>
 <td>FC 7</td>
@@ -1581,6 +2299,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>III</td>
 <td><strong>Masa, peso y densidad.</strong> Masa vs.&nbsp;peso. Densidad. Experimentos comparativos de materiales.</td>
+<td>DBA 2 (Grado 6°): Comprende las relaciones entre masa, peso y densidad en la caracterización de diferentes materiales.</td>
 <td>Comparo masa, peso y densidad de diferentes materiales mediante experimentos. (Est. 6°-7°, Entorno físico)</td>
 <td>Energía y movimiento (Período II).</td>
 <td>FC 4, 12</td>
@@ -1589,6 +2308,7 @@ ul.task-list li input[type="checkbox"] {
 <td>6°</td>
 <td>IV</td>
 <td><strong>Estados de la materia: líquidos, gases y plasma.</strong> Presión en líquidos. Flotabilidad y Principio de Arquímedes. Presión atmosférica y Ley de Boyle. Plasma.</td>
+<td>DBA 2 (Grado 6°): Comprende la influencia de la presión y la temperatura en las propiedades y estados de la materia.</td>
 <td>Explico la formación de moléculas y los estados de la materia a partir de fuerzas electrostáticas. (Est. 6°-7°, Entorno físico)</td>
 <td>Masa, peso y densidad (Período III).</td>
 <td>FC 13, 14</td>
@@ -1600,11 +2320,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>7°</td>
 <td>I</td>
 <td><strong>Leyes de Newton del movimiento.</strong> Primera ley (inercia). Segunda ley (F = ma). Tercera ley (acción-reacción). Fuerza neta y equilibrio.</td>
+<td>DBA 1 (Grado 7°): Comprende que la fuerza neta ejercida sobre un objeto produce una aceleración proporcional (Leyes de Newton).</td>
 <td>Verifico relaciones entre distancia recorrida, velocidad y fuerza involucrada en diversos tipos de movimiento. (Est. 6°-7°, Entorno físico)</td>
 <td>El movimiento (Grado 6°).</td>
 <td>FC 2, 4, 5</td>
@@ -1613,6 +2335,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>II</td>
 <td><strong>Gravedad y el sistema solar.</strong> Ley de gravitación universal. Peso y g en distintos planetas. Movimiento planetario y leyes de Kepler.</td>
+<td>DBA 1 (Grado 7°): Comprende la relación entre la fuerza gravitacional, las masas de los cuerpos celestes y el movimiento planetario.</td>
 <td>Explico el modelo planetario desde las fuerzas gravitacionales. Relaciono masa, peso y densidad con la aceleración de la gravedad en distintos puntos del sistema solar. (Est. 6°-7°, Entorno físico)</td>
 <td>Leyes de Newton (Período I).</td>
 <td>FC 9, 10</td>
@@ -1621,6 +2344,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>III</td>
 <td><strong>La Tierra y el universo.</strong> Formación y extinción de estrellas. Placas tectónicas y sus consecuencias sobre la corteza terrestre.</td>
+<td>DBA 4 (Grado 7°): Explica el origen del universo, la formación de estrellas y la dinámica de las placas tectónicas en la Tierra.</td>
 <td>Describo el proceso de formación y extinción de estrellas. Explico las consecuencias del movimiento de las placas tectónicas sobre la corteza de la Tierra. (Est. 6°-7°, Entorno físico)</td>
 <td>Gravedad (Período II).</td>
 <td>FC 9-10 + material complementario</td>
@@ -1629,6 +2353,7 @@ ul.task-list li input[type="checkbox"] {
 <td>7°</td>
 <td>IV</td>
 <td><strong>Electricidad y magnetismo.</strong> Cargas eléctricas y fuerza electrostática. Ley de Coulomb. Campos magnéticos y electroimanes. Relación carga-magnetismo.</td>
+<td>DBA 2 (Grado 7°): Comprende las interacciones electrostáticas y magnéticas y su relación con las cargas eléctricas.</td>
 <td>Verifico la acción de fuerzas electrostáticas y magnéticas y explico su relación con la carga eléctrica. (Est. 6°-7°, Entorno físico)</td>
 <td>La electricidad y sus funciones en la vida diaria (Grado 5°).</td>
 <td>FC 22, 23, 24</td>
@@ -1640,32 +2365,35 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
+</section>
 </section>
 <section id="entorno-físico-grados-8-9" class="level2">
 <h2 class="anchored" data-anchor-id="entorno-físico-grados-8-9">Entorno físico (Grados 8°-9°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. FC</th>
@@ -1676,6 +2404,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>I</td>
 <td><strong>Ondas mecánicas.</strong> Vibraciones y ondas. Ondas transversales y longitudinales. Amplitud, frecuencia, longitud de onda y velocidad de propagación.</td>
+<td>DBA 1 (Grado 8°): Comprende las características de las ondas mecánicas (amplitud, frecuencia, longitud de onda y velocidad) y su propagación.</td>
 <td>Establezco relaciones entre frecuencia, amplitud, velocidad de propagación y longitud de onda en diversos tipos de ondas mecánicas. (Est. 8°-9°, Entorno físico)</td>
 <td>Movimiento, energía y estados de la materia (Grados 6°-7°).</td>
 <td>FC 19</td>
@@ -1684,6 +2413,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>II</td>
 <td><strong>Sonido y energía de las ondas.</strong> Propagación del sonido. Intensidad, tono y timbre. Resonancia. Relación entre amplitud, frecuencia y energía de las ondas.</td>
+<td>DBA 1 (Grado 8°): Comprende la naturaleza del sonido como una onda mecánica y la conservación de su energía al cambiar de medio.</td>
 <td>Explico el principio de conservación de la energía en ondas que cambian de medio de propagación. (Est. 8°-9°, Entorno físico)</td>
 <td>Ondas mecánicas (Período I).</td>
 <td>FC 19, 20</td>
@@ -1692,6 +2422,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>III</td>
 <td><strong>Temperatura, calor y expansión.</strong> Variables de estado: presión, volumen y temperatura. Termómetros y escalas. Dilatación térmica.</td>
+<td>DBA 2 (Grado 8°): Comprende cómo las variables de estado (presión, volumen, temperatura) determinan el comportamiento térmico de los sistemas.</td>
 <td>Establezco relaciones entre las variables de estado en un sistema termodinámico para predecir cambios físicos y químicos y las expreso matemáticamente. (Est. 8°-9°, Entorno físico)</td>
 <td>Estados de la materia (Grado 6°).</td>
 <td>FC 15</td>
@@ -1700,6 +2431,7 @@ ul.task-list li input[type="checkbox"] {
 <td>8°</td>
 <td>IV</td>
 <td><strong>Transferencia de calor.</strong> Conducción, convección y radiación. Conductores y aislantes. Vientos y corrientes marinas.</td>
+<td>DBA 2 (Grado 8°): Comprende los mecanismos de transferencia de energía térmica (conducción, convección, radiación) y su impacto en fenómenos atmosféricos.</td>
 <td>Relaciono las diversas formas de transferencia de energía térmica con la formación de vientos. (Est. 8°-9°, Entorno físico)</td>
 <td>Temperatura, calor y expansión (Período III).</td>
 <td>FC 16</td>
@@ -1711,11 +2443,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>9°</td>
 <td>I</td>
 <td><strong>Energía interna, trabajo y calor.</strong> Energía interna y temperatura. Movimiento de las partículas. Relaciones entre calor, trabajo y energía interna.</td>
+<td>DBA 1 (Grado 9°): Comprende la relación entre energía interna, trabajo y calor en los sistemas físicos y termodinámicos.</td>
 <td>Establezco relaciones entre energía interna de un sistema termodinámico, trabajo y transferencia de energía térmica; las expreso matemáticamente. (Est. 8°-9°, Entorno físico)</td>
 <td>Transferencia de calor (Grado 8°).</td>
 <td>FC 18</td>
@@ -1724,6 +2458,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>II</td>
 <td><strong>Termodinámica.</strong> Primera y segunda ley. Entropía. Máquinas térmicas y refrigeradores. Eficiencia.</td>
+<td>DBA 1 (Grado 9°): Comprende la Primera y Segunda Ley de la Termodinámica y la conservación de la energía en máquinas térmicas.</td>
 <td>Explico la relación entre ciclos termodinámicos y el funcionamiento de motores. (Est. 8°-9°, CTS)</td>
 <td>Energía interna, trabajo y calor (Período I).</td>
 <td>FC 18</td>
@@ -1732,6 +2467,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>III</td>
 <td><strong>Naturaleza de la luz.</strong> Modelos corpuscular y ondulatorio. Velocidad de la luz. Reflexión y refracción. Lentes y formación de imágenes.</td>
+<td>DBA 2 (Grado 9°): Comprende la naturaleza dual de la luz y los fenómenos de reflexión, refracción y formación de imágenes.</td>
 <td>Reconozco y diferencio modelos para explicar la naturaleza y el comportamiento de la luz. (Est. 8°-9°, Entorno físico)</td>
 <td>Ondas y sonido (Grado 8°).</td>
 <td>FC 26, 28, 29</td>
@@ -1740,6 +2476,7 @@ ul.task-list li input[type="checkbox"] {
 <td>9°</td>
 <td>IV</td>
 <td><strong>Emisión de la luz.</strong> Espectros de emisión y absorción. Luz y cuantos. Fotones. Efecto fotoeléctrico (introducción).</td>
+<td>DBA 2 (Grado 9°): Comprende los fenómenos de emisión y absorción de luz y los fundamentos del modelo cuántico de la luz.</td>
 <td>Identifico aplicaciones de los diferentes modelos de la luz. (Est. 8°-9°, CTS)</td>
 <td>Naturaleza de la luz (Período III).</td>
 <td>FC 30, 31</td>
@@ -1751,32 +2488,34 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<hr>
 </section>
 <section id="física-grados-10-11" class="level2">
 <h2 class="anchored" data-anchor-id="física-grados-10-11">Física (Grados 10°-11°)</h2>
 <blockquote class="blockquote">
-<p><strong>Nota:</strong> Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
+<p><strong>Nota:</strong> DBA = Derechos Básicos de Aprendizaje del MEN; Est. = Estándares de Competencias; Cap. = Capítulo. <strong>Libro de texto:</strong> FC = <em>Física Conceptual</em> (Hewitt, 12ª ed., 2016). <strong>Nivel:</strong> Exploratorio (1°-3°) → Diferencial (4°-5°, 6°-9°) → Disciplinar (10°-11°).</p>
 </blockquote>
 <div class="wide-table" style="overflow: auto; max-height: 80vh;">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 7%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>G</th>
 <th>P</th>
 <th>Eje Temático</th>
+<th>DBA</th>
 <th>Estándares</th>
 <th>Pre-req</th>
 <th>Cap. FC</th>
@@ -1787,6 +2526,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>I</td>
 <td><strong>Leyes de Newton y movimiento.</strong> Primera, segunda y tercera ley. Movimiento rectilíneo uniforme y uniformemente acelerado. Fuerza neta y equilibrio.</td>
+<td>DBA 1 (Grado 10°): Comprende y analiza el movimiento de los cuerpos en una y dos dimensiones a partir de las Leyes de Newton.</td>
 <td>Establezco relaciones entre las diferentes fuerzas que actúan sobre los cuerpos en reposo o en movimiento rectilíneo uniforme y establezco condiciones para conservar la energía mecánica. (Est. 10°-11°, Procesos físicos)</td>
 <td>Movimiento y leyes de Newton (Grados 6°-7°).</td>
 <td>FC 2-5</td>
@@ -1795,6 +2535,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>II</td>
 <td><strong>Cantidad de movimiento e impulso.</strong> Impulso. Conservación de la cantidad de movimiento. Choques elásticos e inelásticos.</td>
+<td>DBA 1 (Grado 10°): Aplica el principio de conservación de la cantidad de movimiento e impulso en sistemas de partículas y colisiones.</td>
 <td>Establezco relaciones entre la conservación del momento lineal y el impulso en sistemas de objetos. (Est. 10°-11°, Procesos físicos)</td>
 <td>Leyes de Newton (Período I).</td>
 <td>FC 6</td>
@@ -1803,6 +2544,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>III</td>
 <td><strong>Energía, trabajo y potencia.</strong> Trabajo y potencia. Energía potencial y cinética. Conservación y transformación de la energía.</td>
+<td>DBA 1 (Grado 10°): Analiza la conservación y transformación de la energía mecánica en sistemas conservativos y no conservativos.</td>
 <td>Utilizo modelos biológicos, físicos y químicos para explicar la transformación y conservación de la energía. (Est. 10°-11°, Procesos físicos)</td>
 <td>Cantidad de movimiento (Período II).</td>
 <td>FC 7</td>
@@ -1811,6 +2553,7 @@ ul.task-list li input[type="checkbox"] {
 <td>10°</td>
 <td>IV</td>
 <td><strong>Gravitación y movimiento orbital.</strong> Ley de gravitación universal. Peso y g. Movimiento de satélites y planetas. Leyes de Kepler.</td>
+<td>DBA 1 (Grado 10°): Modela la interacción gravitacional y el movimiento orbital de los planetas y satélites.</td>
 <td>Relaciono masa, distancia y fuerza de atracción gravitacional entre objetos. (Est. 10°-11°, Procesos físicos)</td>
 <td>Energía (Período III).</td>
 <td>FC 9, 10</td>
@@ -1822,11 +2565,13 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>11°</td>
 <td>I</td>
 <td><strong>Rotación.</strong> Movimiento circular uniforme. Aceleración centrípeta. Rotación de cuerpos rígidos. Momento de inercia.</td>
+<td>DBA 1 (Grado 11°): Comprende la cinemática y dinámica rotacional de cuerpos rígidos y la conservación del momento angular.</td>
 <td>Establezco relaciones entre estabilidad y centro de masa de un objeto. (Est. 10°-11°, Procesos físicos)</td>
 <td>Gravitación (Período IV, Grado 10°).</td>
 <td>FC 8</td>
@@ -1835,6 +2580,7 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>II</td>
 <td><strong>Termodinámica.</strong> Leyes de la termodinámica. Entropía. Máquinas térmicas y refrigeradores. Eficiencia.</td>
+<td>DBA 1 (Grado 11°): Aplica las leyes de la termodinámica al análisis de la eficiencia de máquinas térmicas y la entropía.</td>
 <td>Explico la transformación de energía mecánica en energía térmica. (Est. 10°-11°, Procesos físicos)</td>
 <td>Energía y calor (Grados 9°-10°).</td>
 <td>FC 15, 18</td>
@@ -1843,6 +2589,7 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>III</td>
 <td><strong>Electrostática.</strong> Cargas eléctricas y fuerzas electrostáticas. Ley de Coulomb. Campo eléctrico. Energía potencial eléctrica.</td>
+<td>DBA 2 (Grado 11°): Comprende los conceptos de carga, campo y potencial eléctrico mediante la Ley de Coulomb.</td>
 <td>Establezco relaciones entre fuerzas macroscópicas y fuerzas electrostáticas. (Est. 10°-11°, Procesos físicos)</td>
 <td>Electricidad y magnetismo (Grado 7°).</td>
 <td>FC 22</td>
@@ -1851,11 +2598,13 @@ ul.task-list li input[type="checkbox"] {
 <td>11°</td>
 <td>IV</td>
 <td><strong>Corriente eléctrica y magnetismo.</strong> Corriente eléctrica. Ley de Ohm. Circuitos. Fuerzas magnéticas sobre cargas en movimiento.</td>
+<td>DBA 2 (Grado 11°): Analiza circuitos de corriente continua y las relaciones entre campos eléctricos y magnéticos.</td>
 <td>Relaciono voltaje y corriente con los diferentes elementos de un circuito eléctrico complejo y para todo el sistema. (Est. 10°-11°, Procesos físicos)</td>
 <td>Electrostática (Período III).</td>
 <td>FC 23, 24</td>
 </tr>
 <tr class="even">
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1948,9 +2697,27 @@ ul.task-list li input[type="checkbox"] {
     console.log("Natura Docens: Progress bar initialized.");
   }
 
+  // Helper: Force all sidebar sections to start collapsed
+  function collapseAllSidebarSections() {
+    const sidebar = document.getElementById('quarto-sidebar');
+    if (!sidebar) return;
+
+    const sections = sidebar.querySelectorAll('.sidebar-section.collapse');
+    sections.forEach(sec => {
+      sec.classList.remove('show');
+    });
+
+    const toggles = sidebar.querySelectorAll('.sidebar-item-toggle, .sidebar-link');
+    toggles.forEach(t => {
+      t.classList.add('collapsed');
+      t.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     restructureDetails();
     initProgressBar();
+    collapseAllSidebarSections();
   });
 
 })();
@@ -1969,54 +2736,88 @@ ul.task-list li input[type="checkbox"] {
 <style id="a11y-toolbar-style">
 #a11y-toolbar {
   position: fixed; bottom: 20px; right: 20px; z-index: 9999;
-  display: flex; flex-direction: column; gap: 6px;
-  font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+  display: flex; flex-direction: column; gap: 4px;
+  font-family: system-ui, sans-serif;
 }
 #a11y-toolbar button {
-  width: 44px; height: 44px; border: 2px solid #a06050; border-radius: 8px;
-  background: #fdf5f2; color: #503020; font-size: 18px; font-weight: bold;
+  position: relative;
+  width: 44px; height: 44px;
+  border: 2px solid var(--toolbar-border, #a06050); border-radius: 10px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 18px; font-weight: bold;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.1s; line-height: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.15s, box-shadow 0.15s, transform 0.1s; line-height: 1;
 }
-#a11y-toolbar button:hover { background: #f0ddd4; transform: scale(1.08); }
+#a11y-toolbar button:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  color: var(--toolbar-hover-color, #503020);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  transform: scale(1.06);
+}
 #a11y-toolbar button:active { transform: scale(0.95); }
-#a11y-toolbar button.active { background: #a06050; color: #fff; }
-#a11y-toolbar .a11y-label {
-  position: absolute; right: 52px; background: #503020; color: #fff;
-  padding: 4px 10px; border-radius: 4px; font-size: 13px; white-space: nowrap;
-  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+#a11y-toolbar button.active {
+  background: var(--toolbar-btn-active-bg, #a06050); color: #fff;
+  box-shadow: 0 2px 6px rgba(160,96,80,0.4);
 }
-#a11y-toolbar button:hover .a11y-label { opacity: 1; }
+/* Tooltip */
+#a11y-toolbar .a11y-label {
+  position: absolute; right: 52px; top: 50%; transform: translateY(-50%);
+  background: var(--toolbar-label-bg, #503020); color: var(--toolbar-label-color, #FAF8F4);
+  padding: 4px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+#a11y-toolbar .a11y-label::after {
+  content: ''; position: absolute; left: 100%; top: 50%; transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: var(--toolbar-label-bg, #503020);
+}
+#a11y-toolbar button:hover .a11y-label,
 #a11y-toolbar button:focus .a11y-label { opacity: 1; }
-#a11y-toolbar .a11y-separator { width: 28px; height: 2px; background: #c08070; margin: 2px auto; border-radius: 1px; }
+/* Separador de grupos */
+#a11y-toolbar .a11y-separator {
+  width: 32px; height: 1px;
+  background: var(--toolbar-border, #a06050); opacity: 0.4;
+  margin: 3px auto; border-radius: 1px;
+}
+/* Toasts de estado */
 #a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
-  position: fixed; bottom: 20px; right: 76px; background: #503020; color: #fff;
-  padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: bold;
+  position: fixed; bottom: 20px; right: 76px;
+  background: var(--toolbar-label-bg, #503020); color: #fff;
+  padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: bold;
   opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 #a11y-fontsize-display.show, #a11y-tts-status.show, #a11y-mode-status.show { opacity: 1; }
 #a11y-toolbar button:focus-visible {
-  outline: 3px solid #0077BB;
-  outline-offset: 2px;
+  outline: 3px solid var(--focus-outline, #0077BB); outline-offset: 2px;
 }
-@media (forced-colors: active) { #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; } }
+@media (forced-colors: active) {
+  #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; }
+}
+/* Slider velocidad */
 #a11y-tts-speed-wrap { position: relative; }
 #a11y-tts-slider {
-  position: absolute; right: 52px; bottom: 0; background: #503020;
+  position: absolute; right: 52px; bottom: 0;
+  background: var(--toolbar-label-bg, #503020);
   padding: 8px 12px; border-radius: 8px; display: flex; align-items: center;
-  gap: 8px; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  gap: 8px; white-space: nowrap; box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 #a11y-tts-range {
   width: 100px; height: 6px; -webkit-appearance: none; appearance: none;
-  background: #c08070; border-radius: 3px; outline: none; cursor: pointer;
+  background: rgba(255,255,255,0.3); border-radius: 3px; outline: none; cursor: pointer;
 }
 #a11y-tts-range::-webkit-slider-thumb {
   -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
-  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
 }
 #a11y-tts-range::-moz-range-thumb {
   width: 18px; height: 18px; border-radius: 50%;
-  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
 }
 #a11y-tts-speed-val { color: #fff; font-size: 13px; font-weight: bold; min-width: 30px; text-align: center; }
 @media (prefers-reduced-motion: reduce) { #a11y-toolbar button { transition: none; } }
@@ -2027,115 +2828,68 @@ ul.task-list li input[type="checkbox"] {
   letter-spacing: var(--body-letter-spacing) !important;
   word-spacing: var(--body-word-spacing) !important;
 }
-
-/* Toolbar móvil: compacto horizontal en la parte inferior */
-@media (max-width: 480px) {
-  #a11y-toolbar {
-    bottom: max(12px, env(safe-area-inset-bottom, 12px));
-    right: 12px;
-    gap: 4px;
-  }
-  #a11y-toolbar button {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-  }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 48px;
-    min-width: 200px;
-  }
-  #a11y-fontsize-display,
-  #a11y-tts-status,
-  #a11y-mode-status {
-    bottom: max(12px, env(safe-area-inset-bottom, 12px));
-    right: 80px;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-}
+/* ── Tablet ── */
 @media (max-width: 768px) {
   #a11y-toolbar {
     bottom: max(16px, env(safe-area-inset-bottom, 16px));
     right: 16px;
   }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 52px;
-  }
+  #a11y-tts-slider { right: auto; left: 0; bottom: 52px; }
 }
-
-/* Toggle móvil */
-#a11y-toggle-btn {
-  display: none;
-}
+/* ── FAB móvil ── */
+#a11y-toggle-btn { display: none; }
 @media (max-width: 480px) {
   #a11y-toggle-btn {
     display: flex;
     position: fixed;
     bottom: max(16px, env(safe-area-inset-bottom, 16px));
     right: 16px;
-    width: 44px;
-    height: 44px;
+    width: 48px; height: 48px;
     border-radius: 50%;
-    background: #a06050;
-    color: #fff;
-    border: none;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    z-index: 10000;
-    cursor: pointer;
+    background: var(--toolbar-btn-active-bg, #a06050);
+    color: #fff; border: none; font-size: 22px;
+    align-items: center; justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    z-index: 10000; cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    transition: transform 0.2s;
   }
+  #a11y-toggle-btn:active { transform: scale(0.92); }
   #a11y-toolbar {
-    bottom: max(68px, calc(env(safe-area-inset-bottom, 16px) + 60px));
-    right: 8px;
-    gap: 4px;
-    /* Colapsado por defecto en móvil */
-    display: none;
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 10px; gap: 4px; display: none;
   }
-  #a11y-toolbar.mobile-open {
-    display: flex;
+  #a11y-toolbar.mobile-open { display: flex; }
+  #a11y-toolbar.tts-active  { display: flex !important; }
+  #a11y-toolbar button { width: 42px; height: 42px; font-size: 16px; border-radius: 8px; }
+  /* Tooltip arriba en móvil */
+  #a11y-toolbar .a11y-label {
+    right: auto; left: 50%; top: auto;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
   }
-  /* Toolbar visible automáticamente cuando TTS está activo */
-  #a11y-toolbar.tts-active {
-    display: flex !important;
+  #a11y-toolbar .a11y-label::after {
+    left: 50%; top: 100%; transform: translateX(-50%);
+    border-left-color: transparent;
+    border-top-color: var(--toolbar-label-bg, #503020);
   }
-  #a11y-toolbar button {
-    width: 40px;
-    height: 40px;
-    font-size: 15px;
-  }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 48px;
-    min-width: 180px;
-    max-width: 260px;
-  }
-  #a11y-fontsize-display,
-  #a11y-tts-status,
-  #a11y-mode-status {
-    bottom: max(70px, calc(env(safe-area-inset-bottom, 16px) + 62px));
-    right: 60px;
-    font-size: 12px;
-    padding: 4px 8px;
+  #a11y-tts-slider { right: auto; left: 0; bottom: 50px; min-width: 180px; max-width: 260px; }
+  #a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 62px; font-size: 12px; padding: 4px 8px;
   }
 }
+
 
 </style>
 
 <button id="a11y-toggle-btn" aria-label="Abrir controles de accesibilidad" aria-expanded="false" aria-controls="a11y-toolbar">
-  <svg aria-hidden="true" class="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
-  <circle cx="12" cy="12" r="3"></circle>
-</svg>
-
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="4" r="1.5"></circle>
+    <path d="M12 7v5l3 3"></path>
+    <path d="M9 10H5.5a1 1 0 0 0-.8 1.6L7 15l-1.5 5h2l1.2-4h6.6l1.2 4h2L17 15l2.3-3.4A1 1 0 0 0 18.5 10H15"></path>
+  </svg>
 </button>
 <div id="a11y-toolbar" role="toolbar" aria-label="Controles de accesibilidad">
   <button id="a11y-font-plus" aria-label="Aumentar tamaño de texto" title="Aumentar texto">
@@ -2188,6 +2942,7 @@ ul.task-list li input[type="checkbox"] {
   <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
 </svg>
 <span class="a11y-label">Velocidad</span>
+<span class="speed-badge" id="a11y-speed-badge">1x</span>
     </button>
     <div id="a11y-tts-slider" style="display:none;">
       <input type="range" id="a11y-tts-range" min="0.5" max="2" step="0.25" value="1" aria-label="Velocidad de lectura">
@@ -2702,6 +3457,7 @@ ul.task-list li input[type="checkbox"] {
           slider: document.getElementById('a11y-tts-slider'),
           range: document.getElementById('a11y-tts-range'),
           speedVal: document.getElementById('a11y-tts-speed-val'),
+          speedBadge: document.getElementById('a11y-speed-badge'),
           toolbar: document.getElementById('a11y-toolbar')
         };
         this.hlEl = null;
@@ -2721,12 +3477,15 @@ ul.task-list li input[type="checkbox"] {
         
         this.els.range.oninput = (e) => {
           const rate = parseFloat(e.target.value);
-          this.els.speedVal.textContent = rate + 'x';
+          if (this.els.speedVal)   this.els.speedVal.textContent   = rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = rate + 'x';
           this.engine.setSpeed(rate);
         };
         if(this.engine.rate && this.els.range) {
           this.els.range.value = this.engine.rate;
-          this.els.speedVal.textContent = this.engine.rate + 'x';
+          if (this.els.speedVal)   this.els.speedVal.textContent   = this.engine.rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = this.engine.rate + 'x';
+
         }
       }
 
@@ -2913,21 +3672,491 @@ ul.task-list li input[type="checkbox"] {
 
 })();
 </script>
+<style>
+/* ── Stepper y Paginación por Secciones H2 ── */
+#section-pager-bar {
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 1.25rem 0 2rem 0;
+  box-shadow: 0 3px 10px rgba(160, 96, 80, 0.08);
+}
+
+.section-pager-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.section-pager-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--toolbar-btn-color, #503020);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-view-toggle {
+  background: #fff;
+  border: 1px solid var(--toolbar-border, #a06050);
+  border-radius: 6px;
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.section-view-toggle:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  transform: translateY(-1px);
+}
+
+.section-pager-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  padding: 2px;
+}
+
+.section-step-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  text-align: left;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+}
+.section-step-btn:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  border-color: var(--toolbar-hover-border, #8a4a38);
+}
+.section-step-btn.active {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  border-color: var(--toolbar-btn-active-bg, #a06050);
+  box-shadow: 0 3px 8px rgba(160, 96, 80, 0.35);
+}
+.section-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(160, 96, 80, 0.15);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.section-step-btn.active .section-step-num {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Navegación al final de la sección */
+.section-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 2.5rem 0 1.5rem 0;
+  padding: 12px 16px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section-nav-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+.section-nav-btn:hover:not(:disabled) {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.section-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #d0c8c0;
+  background: #f8f8f8;
+  color: #888;
+}
+
+/* Ocultar secciones inactivas en modo paginado */
+body.mode-paginated section.level2 {
+  display: none !important;
+}
+body.mode-paginated section.level2.active-pager-section {
+  display: block !important;
+}
+
+/* Estilo para el título H2 dentro de la sección activa */
+body.mode-paginated section.level2.active-pager-section > h2 {
+  font-size: 1.45rem;
+  color: var(--toolbar-btn-color, #503020);
+  border-bottom: 2px solid var(--toolbar-border, #a06050);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Ocultar elementos de subsecciones inactivas en el TOC derecho */
+body.mode-paginated #TOC li.toc-inactive-section,
+body.mode-paginated #quarto-margin-sidebar li.toc-inactive-section {
+  display: none !important;
+}
+
+/* Ocultar barra de paginación en modo continuo */
+body.mode-continuous .section-footer-nav {
+  display: none !important;
+}
+body.mode-continuous .section-step-btn {
+  opacity: 0.75;
+}
+body.mode-continuous .section-step-btn.active {
+  opacity: 1;
+}
+
+/* Header secundario Quarto en tono terracota */
+.quarto-secondary-nav {
+  background-color: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border-bottom: 1px solid var(--toolbar-border, #a06050) !important;
+}
+.quarto-secondary-nav .quarto-secondary-nav-title {
+  color: var(--toolbar-btn-color, #503020) !important;
+  font-weight: 700;
+}
+
+/* ── Estilo unificado para la navegación de capítulos al pie (.page-navigation) ── */
+.page-navigation {
+  margin-top: 2.5rem !important;
+  padding-top: 1.5rem !important;
+  border-top: 1.5px dashed var(--toolbar-border, #a06050) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+}
+
+.page-navigation .nav-page {
+  flex: 1;
+}
+
+.page-navigation .nav-page-previous {
+  text-align: left;
+}
+.page-navigation .nav-page-next {
+  text-align: right;
+}
+
+.page-navigation .pagination-link {
+  background: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border: 1.5px solid var(--toolbar-border, #a06050) !important;
+  border-radius: 10px !important;
+  color: var(--toolbar-btn-color, #503020) !important;
+  padding: 10px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+  transition: all 0.15s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.page-navigation .pagination-link:hover {
+  background: var(--toolbar-btn-active-bg, #a06050) !important;
+  color: #fff !important;
+  border-color: var(--toolbar-btn-active-bg, #a06050) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(160, 96, 80, 0.25) !important;
+}
+
+.page-navigation .pagination-link i,
+.page-navigation .pagination-link span {
+  color: inherit !important;
+}
+
+@media (max-width: 576px) {
+  #section-pager-bar {
+    padding: 10px 12px;
+  }
+  .section-pager-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-step-btn {
+    padding: 6px 8px;
+    font-size: 0.76rem;
+  }
+  .section-nav-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  var STORAGE_KEY = 'docere-view-mode';
+  var activeIndex = 0;
+  var sections = [];
+  var mode = 'paginated';
+
+  // Nombres limpios simplificados para los botones de paso
+  function getCleanLabel(rawText) {
+    var clean = rawText.replace(/^[\d\.\s]+/, '').replace(/—.*$/, '').strip ? rawText.strip() : rawText.trim();
+    if (/ideas\s*previas/i.test(clean)) return 'Ideas previas';
+    if (/contexto|contextualizaci/i.test(clean)) return 'Contexto';
+    if (/ejemplo/i.test(clean)) return 'Ejemplos';
+    if (/ejercicio/i.test(clean)) return 'Ejercicios';
+    if (/evaluaci/i.test(clean)) return 'Evaluación';
+    if (/auto/i.test(clean)) return 'Autoevaluación';
+    return clean;
+  }
+
+  function initSectionPager() {
+    var contentEl = document.getElementById('quarto-document-content');
+    if (!contentEl) return;
+
+    var allSections = Array.from(contentEl.querySelectorAll('section.level2'));
+    if (allSections.length < 2) return;
+
+    sections = allSections;
+
+    try {
+      mode = localStorage.getItem(STORAGE_KEY) || 'paginated';
+    } catch(e) {
+      mode = 'paginated';
+    }
+    document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+
+    if (window.location.hash) {
+      var targetId = decodeURIComponent(window.location.hash.substring(1));
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+          activeIndex = i;
+          break;
+        }
+      }
+    }
+
+    var pagerBar = document.createElement('div');
+    pagerBar.id = 'section-pager-bar';
+
+    var topRow = document.createElement('div');
+    topRow.className = 'section-pager-top';
+
+    var titleEl = document.createElement('span');
+    titleEl.className = 'section-pager-title';
+    titleEl.innerHTML = '📌 Secuencia de Clase';
+
+    var toggleBtn = document.createElement('button');
+    toggleBtn.className = 'section-view-toggle';
+    toggleBtn.setAttribute('aria-label', 'Cambiar modo de vista');
+    updateToggleText(toggleBtn);
+    toggleBtn.onclick = function() {
+      mode = (mode === 'paginated') ? 'continuous' : 'paginated';
+      try { localStorage.setItem(STORAGE_KEY, mode); } catch(e) {}
+      document.body.classList.remove('mode-paginated', 'mode-continuous');
+      document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+      updateToggleText(toggleBtn);
+      showSection(activeIndex, false);
+    };
+
+    topRow.appendChild(titleEl);
+    topRow.appendChild(toggleBtn);
+    pagerBar.appendChild(topRow);
+
+    var stepsContainer = document.createElement('div');
+    stepsContainer.className = 'section-pager-steps';
+
+    sections.forEach(function(sec, idx) {
+      var heading = sec.querySelector('h2');
+      var headingText = heading ? heading.textContent.trim() : ('Paso ' + (idx + 1));
+      var labelText = getCleanLabel(headingText);
+      
+      var btn = document.createElement('button');
+      btn.className = 'section-step-btn' + (idx === activeIndex ? ' active' : '');
+      btn.title = headingText;
+      btn.innerHTML = '<span class="section-step-num">' + (idx + 1) + '</span> <span>' + escapeHTML(labelText) + '</span>';
+      btn.onclick = function() {
+        showSection(idx, true);
+      };
+      stepsContainer.appendChild(btn);
+
+      createFooterNav(sec, idx, sections.length);
+    });
+
+    pagerBar.appendChild(stepsContainer);
+
+    sections[0].parentNode.insertBefore(pagerBar, sections[0]);
+
+    showSection(activeIndex, false);
+
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash) {
+        var targetId = decodeURIComponent(window.location.hash.substring(1));
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+            showSection(i, true);
+            break;
+          }
+        }
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.altKey && e.key === 'ArrowRight') {
+        if (activeIndex < sections.length - 1) showSection(activeIndex + 1, true);
+      } else if (e.altKey && e.key === 'ArrowLeft') {
+        if (activeIndex > 0) showSection(activeIndex - 1, true);
+      }
+    });
+  }
+
+  function createFooterNav(secEl, idx, total) {
+    var footerNav = document.createElement('div');
+    footerNav.className = 'section-footer-nav';
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'section-nav-btn';
+    prevBtn.innerHTML = '← Sección Anterior';
+    prevBtn.disabled = (idx === 0);
+    prevBtn.onclick = function() { showSection(idx - 1, true); };
+
+    var countLabel = document.createElement('span');
+    countLabel.style.fontSize = '0.85rem';
+    countLabel.style.fontWeight = '600';
+    countLabel.style.color = 'var(--toolbar-btn-color, #503020)';
+    countLabel.textContent = 'Página ' + (idx + 1) + ' de ' + total;
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'section-nav-btn';
+    nextBtn.innerHTML = 'Sección Siguiente →';
+    nextBtn.disabled = (idx === total - 1);
+    nextBtn.onclick = function() { showSection(idx + 1, true); };
+
+    footerNav.appendChild(prevBtn);
+    footerNav.appendChild(countLabel);
+    footerNav.appendChild(nextBtn);
+    secEl.appendChild(footerNav);
+  }
+
+  function showSection(index, scroll) {
+    if (index < 0 || index >= sections.length) return;
+    activeIndex = index;
+
+    sections.forEach(function(sec, idx) {
+      if (idx === index) {
+        sec.classList.add('active-pager-section');
+      } else {
+        sec.classList.remove('active-pager-section');
+      }
+    });
+
+    var stepBtns = document.querySelectorAll('.section-step-btn');
+    stepBtns.forEach(function(btn, idx) {
+      if (idx === index) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    syncTOC(index);
+
+    if (scroll) {
+      var target = document.getElementById('section-pager-bar');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  function syncTOC(index) {
+    var activeSec = sections[index];
+    if (!activeSec) return;
+
+    var tocContainer = document.querySelector('#quarto-margin-sidebar nav, #TOC');
+    if (!tocContainer) return;
+
+    var allH2Li = Array.from(tocContainer.querySelectorAll('ul > li'));
+    allH2Li.forEach(function(li, idx) {
+      if (mode === 'paginated') {
+        if (idx === index) {
+          li.classList.remove('toc-inactive-section');
+          li.style.display = 'block';
+        } else {
+          li.classList.add('toc-inactive-section');
+          li.style.display = 'none';
+        }
+      } else {
+        li.classList.remove('toc-inactive-section');
+        li.style.display = 'block';
+      }
+    });
+  }
+
+  function updateToggleText(btn) {
+    if (mode === 'paginated') {
+      btn.innerHTML = '📄 Modo: <strong>Página a Página</strong>';
+    } else {
+      btn.innerHTML = '📜 Modo: <strong>Continuo</strong>';
+    }
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, function(tag) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[tag] || tag;
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSectionPager);
+  } else {
+    initSectionPager();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -3328,13 +4557,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../01_Generalidades/01_Introduccion.html" class="pagination-link" aria-label="Generalidades">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Generalidades</span></span>
+      <a href="../index.html" class="pagination-link" aria-label="Natura Docens">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Natura Docens</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../03_Septimo/02_entorno_fisico/movimiento-en-la-historia.html" class="pagination-link" aria-label="Movimiento en la historia">
-        <span class="nav-page-text"><span class="chapter-title">Movimiento en la historia</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../01_Generalidades/03_PresentacionDocente.html" class="pagination-link" aria-label="Presentación del Manual del Docente: Fundamentación y Mediación">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Presentación del Manual del Docente: Fundamentación y Mediación</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

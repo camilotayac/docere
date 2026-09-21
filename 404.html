@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,14 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="/docere/site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="/docere/site_libs/quarto-html/anchor.min.js"></script>
 <link href="/docere/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/docere/site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="/docere/site_libs/quarto-html/quarto-syntax-highlighting-dark-27fd94ca9aa44b9240e1e48a9b19eda0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="/docere/site_libs/quarto-html/quarto-syntax-highlighting-764ab66b1fec845cc332a2c954c76166.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="/docere/site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="/docere/site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="/docere/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/docere/site_libs/bootstrap/bootstrap-a9c78f3887cc4db3e24c08dbb04a5e5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="/docere/site_libs/bootstrap/bootstrap-dark-3f8ea4170b78f1236f00957a89ca2b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="/docere/site_libs/bootstrap/bootstrap-a9c78f3887cc4db3e24c08dbb04a5e5b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="/docere/site_libs/bootstrap/bootstrap-faa1857450c419f5a9f81f4b20a8dd62.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -97,178 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="quarto-light">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
@@ -278,7 +106,6 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -576,9 +403,27 @@ ul.task-list li input[type="checkbox"] {
     console.log("Natura Docens: Progress bar initialized.");
   }
 
+  // Helper: Force all sidebar sections to start collapsed
+  function collapseAllSidebarSections() {
+    const sidebar = document.getElementById('quarto-sidebar');
+    if (!sidebar) return;
+
+    const sections = sidebar.querySelectorAll('.sidebar-section.collapse');
+    sections.forEach(sec => {
+      sec.classList.remove('show');
+    });
+
+    const toggles = sidebar.querySelectorAll('.sidebar-item-toggle, .sidebar-link');
+    toggles.forEach(t => {
+      t.classList.add('collapsed');
+      t.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     restructureDetails();
     initProgressBar();
+    collapseAllSidebarSections();
   });
 
 })();
@@ -597,54 +442,88 @@ ul.task-list li input[type="checkbox"] {
 <style id="a11y-toolbar-style">
 #a11y-toolbar {
   position: fixed; bottom: 20px; right: 20px; z-index: 9999;
-  display: flex; flex-direction: column; gap: 6px;
-  font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+  display: flex; flex-direction: column; gap: 4px;
+  font-family: system-ui, sans-serif;
 }
 #a11y-toolbar button {
-  width: 44px; height: 44px; border: 2px solid #a06050; border-radius: 8px;
-  background: #fdf5f2; color: #503020; font-size: 18px; font-weight: bold;
+  position: relative;
+  width: 44px; height: 44px;
+  border: 2px solid var(--toolbar-border, #a06050); border-radius: 10px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 18px; font-weight: bold;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.1s; line-height: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.15s, box-shadow 0.15s, transform 0.1s; line-height: 1;
 }
-#a11y-toolbar button:hover { background: #f0ddd4; transform: scale(1.08); }
+#a11y-toolbar button:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  color: var(--toolbar-hover-color, #503020);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  transform: scale(1.06);
+}
 #a11y-toolbar button:active { transform: scale(0.95); }
-#a11y-toolbar button.active { background: #a06050; color: #fff; }
-#a11y-toolbar .a11y-label {
-  position: absolute; right: 52px; background: #503020; color: #fff;
-  padding: 4px 10px; border-radius: 4px; font-size: 13px; white-space: nowrap;
-  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+#a11y-toolbar button.active {
+  background: var(--toolbar-btn-active-bg, #a06050); color: #fff;
+  box-shadow: 0 2px 6px rgba(160,96,80,0.4);
 }
-#a11y-toolbar button:hover .a11y-label { opacity: 1; }
+/* Tooltip */
+#a11y-toolbar .a11y-label {
+  position: absolute; right: 52px; top: 50%; transform: translateY(-50%);
+  background: var(--toolbar-label-bg, #503020); color: var(--toolbar-label-color, #FAF8F4);
+  padding: 4px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+#a11y-toolbar .a11y-label::after {
+  content: ''; position: absolute; left: 100%; top: 50%; transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: var(--toolbar-label-bg, #503020);
+}
+#a11y-toolbar button:hover .a11y-label,
 #a11y-toolbar button:focus .a11y-label { opacity: 1; }
-#a11y-toolbar .a11y-separator { width: 28px; height: 2px; background: #c08070; margin: 2px auto; border-radius: 1px; }
+/* Separador de grupos */
+#a11y-toolbar .a11y-separator {
+  width: 32px; height: 1px;
+  background: var(--toolbar-border, #a06050); opacity: 0.4;
+  margin: 3px auto; border-radius: 1px;
+}
+/* Toasts de estado */
 #a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
-  position: fixed; bottom: 20px; right: 76px; background: #503020; color: #fff;
-  padding: 6px 12px; border-radius: 6px; font-size: 14px; font-weight: bold;
+  position: fixed; bottom: 20px; right: 76px;
+  background: var(--toolbar-label-bg, #503020); color: #fff;
+  padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: bold;
   opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 #a11y-fontsize-display.show, #a11y-tts-status.show, #a11y-mode-status.show { opacity: 1; }
 #a11y-toolbar button:focus-visible {
-  outline: 3px solid #0077BB;
-  outline-offset: 2px;
+  outline: 3px solid var(--focus-outline, #0077BB); outline-offset: 2px;
 }
-@media (forced-colors: active) { #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; } }
+@media (forced-colors: active) {
+  #a11y-toolbar button { border: 2px solid ButtonText; forced-color-adjust: none; }
+}
+/* Slider velocidad */
 #a11y-tts-speed-wrap { position: relative; }
 #a11y-tts-slider {
-  position: absolute; right: 52px; bottom: 0; background: #503020;
+  position: absolute; right: 52px; bottom: 0;
+  background: var(--toolbar-label-bg, #503020);
   padding: 8px 12px; border-radius: 8px; display: flex; align-items: center;
-  gap: 8px; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  gap: 8px; white-space: nowrap; box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 #a11y-tts-range {
   width: 100px; height: 6px; -webkit-appearance: none; appearance: none;
-  background: #c08070; border-radius: 3px; outline: none; cursor: pointer;
+  background: rgba(255,255,255,0.3); border-radius: 3px; outline: none; cursor: pointer;
 }
 #a11y-tts-range::-webkit-slider-thumb {
   -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%;
-  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
 }
 #a11y-tts-range::-moz-range-thumb {
   width: 18px; height: 18px; border-radius: 50%;
-  background: #fdf5f2; border: 2px solid #a06050; cursor: pointer;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 2px solid var(--toolbar-border, #a06050); cursor: pointer;
 }
 #a11y-tts-speed-val { color: #fff; font-size: 13px; font-weight: bold; min-width: 30px; text-align: center; }
 @media (prefers-reduced-motion: reduce) { #a11y-toolbar button { transition: none; } }
@@ -655,115 +534,68 @@ ul.task-list li input[type="checkbox"] {
   letter-spacing: var(--body-letter-spacing) !important;
   word-spacing: var(--body-word-spacing) !important;
 }
-
-/* Toolbar móvil: compacto horizontal en la parte inferior */
-@media (max-width: 480px) {
-  #a11y-toolbar {
-    bottom: max(12px, env(safe-area-inset-bottom, 12px));
-    right: 12px;
-    gap: 4px;
-  }
-  #a11y-toolbar button {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-  }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 48px;
-    min-width: 200px;
-  }
-  #a11y-fontsize-display,
-  #a11y-tts-status,
-  #a11y-mode-status {
-    bottom: max(12px, env(safe-area-inset-bottom, 12px));
-    right: 80px;
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-}
+/* ── Tablet ── */
 @media (max-width: 768px) {
   #a11y-toolbar {
     bottom: max(16px, env(safe-area-inset-bottom, 16px));
     right: 16px;
   }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 52px;
-  }
+  #a11y-tts-slider { right: auto; left: 0; bottom: 52px; }
 }
-
-/* Toggle móvil */
-#a11y-toggle-btn {
-  display: none;
-}
+/* ── FAB móvil ── */
+#a11y-toggle-btn { display: none; }
 @media (max-width: 480px) {
   #a11y-toggle-btn {
     display: flex;
     position: fixed;
     bottom: max(16px, env(safe-area-inset-bottom, 16px));
     right: 16px;
-    width: 44px;
-    height: 44px;
+    width: 48px; height: 48px;
     border-radius: 50%;
-    background: #a06050;
-    color: #fff;
-    border: none;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    z-index: 10000;
-    cursor: pointer;
+    background: var(--toolbar-btn-active-bg, #a06050);
+    color: #fff; border: none; font-size: 22px;
+    align-items: center; justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    z-index: 10000; cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    transition: transform 0.2s;
   }
+  #a11y-toggle-btn:active { transform: scale(0.92); }
   #a11y-toolbar {
-    bottom: max(68px, calc(env(safe-area-inset-bottom, 16px) + 60px));
-    right: 8px;
-    gap: 4px;
-    /* Colapsado por defecto en móvil */
-    display: none;
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 10px; gap: 4px; display: none;
   }
-  #a11y-toolbar.mobile-open {
-    display: flex;
+  #a11y-toolbar.mobile-open { display: flex; }
+  #a11y-toolbar.tts-active  { display: flex !important; }
+  #a11y-toolbar button { width: 42px; height: 42px; font-size: 16px; border-radius: 8px; }
+  /* Tooltip arriba en móvil */
+  #a11y-toolbar .a11y-label {
+    right: auto; left: 50%; top: auto;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
   }
-  /* Toolbar visible automáticamente cuando TTS está activo */
-  #a11y-toolbar.tts-active {
-    display: flex !important;
+  #a11y-toolbar .a11y-label::after {
+    left: 50%; top: 100%; transform: translateX(-50%);
+    border-left-color: transparent;
+    border-top-color: var(--toolbar-label-bg, #503020);
   }
-  #a11y-toolbar button {
-    width: 40px;
-    height: 40px;
-    font-size: 15px;
-  }
-  #a11y-tts-slider {
-    right: auto;
-    left: 0;
-    bottom: 48px;
-    min-width: 180px;
-    max-width: 260px;
-  }
-  #a11y-fontsize-display,
-  #a11y-tts-status,
-  #a11y-mode-status {
-    bottom: max(70px, calc(env(safe-area-inset-bottom, 16px) + 62px));
-    right: 60px;
-    font-size: 12px;
-    padding: 4px 8px;
+  #a11y-tts-slider { right: auto; left: 0; bottom: 50px; min-width: 180px; max-width: 260px; }
+  #a11y-fontsize-display, #a11y-tts-status, #a11y-mode-status {
+    bottom: max(76px, calc(env(safe-area-inset-bottom, 16px) + 68px));
+    right: 62px; font-size: 12px; padding: 4px 8px;
   }
 }
+
 
 </style>
 
 <button id="a11y-toggle-btn" aria-label="Abrir controles de accesibilidad" aria-expanded="false" aria-controls="a11y-toolbar">
-  <svg aria-hidden="true" class="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
-  <circle cx="12" cy="12" r="3"></circle>
-</svg>
-
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="4" r="1.5"></circle>
+    <path d="M12 7v5l3 3"></path>
+    <path d="M9 10H5.5a1 1 0 0 0-.8 1.6L7 15l-1.5 5h2l1.2-4h6.6l1.2 4h2L17 15l2.3-3.4A1 1 0 0 0 18.5 10H15"></path>
+  </svg>
 </button>
 <div id="a11y-toolbar" role="toolbar" aria-label="Controles de accesibilidad">
   <button id="a11y-font-plus" aria-label="Aumentar tamaño de texto" title="Aumentar texto">
@@ -816,6 +648,7 @@ ul.task-list li input[type="checkbox"] {
   <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
 </svg>
 <span class="a11y-label">Velocidad</span>
+<span class="speed-badge" id="a11y-speed-badge">1x</span>
     </button>
     <div id="a11y-tts-slider" style="display:none;">
       <input type="range" id="a11y-tts-range" min="0.5" max="2" step="0.25" value="1" aria-label="Velocidad de lectura">
@@ -1330,6 +1163,7 @@ ul.task-list li input[type="checkbox"] {
           slider: document.getElementById('a11y-tts-slider'),
           range: document.getElementById('a11y-tts-range'),
           speedVal: document.getElementById('a11y-tts-speed-val'),
+          speedBadge: document.getElementById('a11y-speed-badge'),
           toolbar: document.getElementById('a11y-toolbar')
         };
         this.hlEl = null;
@@ -1349,12 +1183,15 @@ ul.task-list li input[type="checkbox"] {
         
         this.els.range.oninput = (e) => {
           const rate = parseFloat(e.target.value);
-          this.els.speedVal.textContent = rate + 'x';
+          if (this.els.speedVal)   this.els.speedVal.textContent   = rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = rate + 'x';
           this.engine.setSpeed(rate);
         };
         if(this.engine.rate && this.els.range) {
           this.els.range.value = this.engine.rate;
-          this.els.speedVal.textContent = this.engine.rate + 'x';
+          if (this.els.speedVal)   this.els.speedVal.textContent   = this.engine.rate + 'x';
+          if (this.els.speedBadge) this.els.speedBadge.textContent = this.engine.rate + 'x';
+
         }
       }
 
@@ -1541,21 +1378,491 @@ ul.task-list li input[type="checkbox"] {
 
 })();
 </script>
+<style>
+/* ── Stepper y Paginación por Secciones H2 ── */
+#section-pager-bar {
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 1.25rem 0 2rem 0;
+  box-shadow: 0 3px 10px rgba(160, 96, 80, 0.08);
+}
+
+.section-pager-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.section-pager-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--toolbar-btn-color, #503020);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-view-toggle {
+  background: #fff;
+  border: 1px solid var(--toolbar-border, #a06050);
+  border-radius: 6px;
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.section-view-toggle:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  transform: translateY(-1px);
+}
+
+.section-pager-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  padding: 2px;
+}
+
+.section-step-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  text-align: left;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+}
+.section-step-btn:hover {
+  background: var(--toolbar-hover-bg, #f0ddd4);
+  border-color: var(--toolbar-hover-border, #8a4a38);
+}
+.section-step-btn.active {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  border-color: var(--toolbar-btn-active-bg, #a06050);
+  box-shadow: 0 3px 8px rgba(160, 96, 80, 0.35);
+}
+.section-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(160, 96, 80, 0.15);
+  color: var(--toolbar-btn-color, #503020);
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.section-step-btn.active .section-step-num {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Navegación al final de la sección */
+.section-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 2.5rem 0 1.5rem 0;
+  padding: 12px 16px;
+  background: var(--toolbar-btn-bg, #fdf5f2);
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section-nav-btn {
+  background: #fff;
+  border: 1.5px solid var(--toolbar-border, #a06050);
+  border-radius: 8px;
+  color: var(--toolbar-btn-color, #503020);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+.section-nav-btn:hover:not(:disabled) {
+  background: var(--toolbar-btn-active-bg, #a06050);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.section-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #d0c8c0;
+  background: #f8f8f8;
+  color: #888;
+}
+
+/* Ocultar secciones inactivas en modo paginado */
+body.mode-paginated section.level2 {
+  display: none !important;
+}
+body.mode-paginated section.level2.active-pager-section {
+  display: block !important;
+}
+
+/* Estilo para el título H2 dentro de la sección activa */
+body.mode-paginated section.level2.active-pager-section > h2 {
+  font-size: 1.45rem;
+  color: var(--toolbar-btn-color, #503020);
+  border-bottom: 2px solid var(--toolbar-border, #a06050);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Ocultar elementos de subsecciones inactivas en el TOC derecho */
+body.mode-paginated #TOC li.toc-inactive-section,
+body.mode-paginated #quarto-margin-sidebar li.toc-inactive-section {
+  display: none !important;
+}
+
+/* Ocultar barra de paginación en modo continuo */
+body.mode-continuous .section-footer-nav {
+  display: none !important;
+}
+body.mode-continuous .section-step-btn {
+  opacity: 0.75;
+}
+body.mode-continuous .section-step-btn.active {
+  opacity: 1;
+}
+
+/* Header secundario Quarto en tono terracota */
+.quarto-secondary-nav {
+  background-color: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border-bottom: 1px solid var(--toolbar-border, #a06050) !important;
+}
+.quarto-secondary-nav .quarto-secondary-nav-title {
+  color: var(--toolbar-btn-color, #503020) !important;
+  font-weight: 700;
+}
+
+/* ── Estilo unificado para la navegación de capítulos al pie (.page-navigation) ── */
+.page-navigation {
+  margin-top: 2.5rem !important;
+  padding-top: 1.5rem !important;
+  border-top: 1.5px dashed var(--toolbar-border, #a06050) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+}
+
+.page-navigation .nav-page {
+  flex: 1;
+}
+
+.page-navigation .nav-page-previous {
+  text-align: left;
+}
+.page-navigation .nav-page-next {
+  text-align: right;
+}
+
+.page-navigation .pagination-link {
+  background: var(--toolbar-btn-bg, #fdf5f2) !important;
+  border: 1.5px solid var(--toolbar-border, #a06050) !important;
+  border-radius: 10px !important;
+  color: var(--toolbar-btn-color, #503020) !important;
+  padding: 10px 18px !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+  transition: all 0.15s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.page-navigation .pagination-link:hover {
+  background: var(--toolbar-btn-active-bg, #a06050) !important;
+  color: #fff !important;
+  border-color: var(--toolbar-btn-active-bg, #a06050) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(160, 96, 80, 0.25) !important;
+}
+
+.page-navigation .pagination-link i,
+.page-navigation .pagination-link span {
+  color: inherit !important;
+}
+
+@media (max-width: 576px) {
+  #section-pager-bar {
+    padding: 10px 12px;
+  }
+  .section-pager-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-step-btn {
+    padding: 6px 8px;
+    font-size: 0.76rem;
+  }
+  .section-nav-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  var STORAGE_KEY = 'docere-view-mode';
+  var activeIndex = 0;
+  var sections = [];
+  var mode = 'paginated';
+
+  // Nombres limpios simplificados para los botones de paso
+  function getCleanLabel(rawText) {
+    var clean = rawText.replace(/^[\d\.\s]+/, '').replace(/—.*$/, '').strip ? rawText.strip() : rawText.trim();
+    if (/ideas\s*previas/i.test(clean)) return 'Ideas previas';
+    if (/contexto|contextualizaci/i.test(clean)) return 'Contexto';
+    if (/ejemplo/i.test(clean)) return 'Ejemplos';
+    if (/ejercicio/i.test(clean)) return 'Ejercicios';
+    if (/evaluaci/i.test(clean)) return 'Evaluación';
+    if (/auto/i.test(clean)) return 'Autoevaluación';
+    return clean;
+  }
+
+  function initSectionPager() {
+    var contentEl = document.getElementById('quarto-document-content');
+    if (!contentEl) return;
+
+    var allSections = Array.from(contentEl.querySelectorAll('section.level2'));
+    if (allSections.length < 2) return;
+
+    sections = allSections;
+
+    try {
+      mode = localStorage.getItem(STORAGE_KEY) || 'paginated';
+    } catch(e) {
+      mode = 'paginated';
+    }
+    document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+
+    if (window.location.hash) {
+      var targetId = decodeURIComponent(window.location.hash.substring(1));
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+          activeIndex = i;
+          break;
+        }
+      }
+    }
+
+    var pagerBar = document.createElement('div');
+    pagerBar.id = 'section-pager-bar';
+
+    var topRow = document.createElement('div');
+    topRow.className = 'section-pager-top';
+
+    var titleEl = document.createElement('span');
+    titleEl.className = 'section-pager-title';
+    titleEl.innerHTML = '📌 Secuencia de Clase';
+
+    var toggleBtn = document.createElement('button');
+    toggleBtn.className = 'section-view-toggle';
+    toggleBtn.setAttribute('aria-label', 'Cambiar modo de vista');
+    updateToggleText(toggleBtn);
+    toggleBtn.onclick = function() {
+      mode = (mode === 'paginated') ? 'continuous' : 'paginated';
+      try { localStorage.setItem(STORAGE_KEY, mode); } catch(e) {}
+      document.body.classList.remove('mode-paginated', 'mode-continuous');
+      document.body.classList.add(mode === 'paginated' ? 'mode-paginated' : 'mode-continuous');
+      updateToggleText(toggleBtn);
+      showSection(activeIndex, false);
+    };
+
+    topRow.appendChild(titleEl);
+    topRow.appendChild(toggleBtn);
+    pagerBar.appendChild(topRow);
+
+    var stepsContainer = document.createElement('div');
+    stepsContainer.className = 'section-pager-steps';
+
+    sections.forEach(function(sec, idx) {
+      var heading = sec.querySelector('h2');
+      var headingText = heading ? heading.textContent.trim() : ('Paso ' + (idx + 1));
+      var labelText = getCleanLabel(headingText);
+      
+      var btn = document.createElement('button');
+      btn.className = 'section-step-btn' + (idx === activeIndex ? ' active' : '');
+      btn.title = headingText;
+      btn.innerHTML = '<span class="section-step-num">' + (idx + 1) + '</span> <span>' + escapeHTML(labelText) + '</span>';
+      btn.onclick = function() {
+        showSection(idx, true);
+      };
+      stepsContainer.appendChild(btn);
+
+      createFooterNav(sec, idx, sections.length);
+    });
+
+    pagerBar.appendChild(stepsContainer);
+
+    sections[0].parentNode.insertBefore(pagerBar, sections[0]);
+
+    showSection(activeIndex, false);
+
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash) {
+        var targetId = decodeURIComponent(window.location.hash.substring(1));
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].id === targetId || sections[i].querySelector('#' + CSS.escape(targetId))) {
+            showSection(i, true);
+            break;
+          }
+        }
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.altKey && e.key === 'ArrowRight') {
+        if (activeIndex < sections.length - 1) showSection(activeIndex + 1, true);
+      } else if (e.altKey && e.key === 'ArrowLeft') {
+        if (activeIndex > 0) showSection(activeIndex - 1, true);
+      }
+    });
+  }
+
+  function createFooterNav(secEl, idx, total) {
+    var footerNav = document.createElement('div');
+    footerNav.className = 'section-footer-nav';
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'section-nav-btn';
+    prevBtn.innerHTML = '← Sección Anterior';
+    prevBtn.disabled = (idx === 0);
+    prevBtn.onclick = function() { showSection(idx - 1, true); };
+
+    var countLabel = document.createElement('span');
+    countLabel.style.fontSize = '0.85rem';
+    countLabel.style.fontWeight = '600';
+    countLabel.style.color = 'var(--toolbar-btn-color, #503020)';
+    countLabel.textContent = 'Página ' + (idx + 1) + ' de ' + total;
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'section-nav-btn';
+    nextBtn.innerHTML = 'Sección Siguiente →';
+    nextBtn.disabled = (idx === total - 1);
+    nextBtn.onclick = function() { showSection(idx + 1, true); };
+
+    footerNav.appendChild(prevBtn);
+    footerNav.appendChild(countLabel);
+    footerNav.appendChild(nextBtn);
+    secEl.appendChild(footerNav);
+  }
+
+  function showSection(index, scroll) {
+    if (index < 0 || index >= sections.length) return;
+    activeIndex = index;
+
+    sections.forEach(function(sec, idx) {
+      if (idx === index) {
+        sec.classList.add('active-pager-section');
+      } else {
+        sec.classList.remove('active-pager-section');
+      }
+    });
+
+    var stepBtns = document.querySelectorAll('.section-step-btn');
+    stepBtns.forEach(function(btn, idx) {
+      if (idx === index) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    syncTOC(index);
+
+    if (scroll) {
+      var target = document.getElementById('section-pager-bar');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  function syncTOC(index) {
+    var activeSec = sections[index];
+    if (!activeSec) return;
+
+    var tocContainer = document.querySelector('#quarto-margin-sidebar nav, #TOC');
+    if (!tocContainer) return;
+
+    var allH2Li = Array.from(tocContainer.querySelectorAll('ul > li'));
+    allH2Li.forEach(function(li, idx) {
+      if (mode === 'paginated') {
+        if (idx === index) {
+          li.classList.remove('toc-inactive-section');
+          li.style.display = 'block';
+        } else {
+          li.classList.add('toc-inactive-section');
+          li.style.display = 'none';
+        }
+      } else {
+        li.classList.remove('toc-inactive-section');
+        li.style.display = 'block';
+      }
+    });
+  }
+
+  function updateToggleText(btn) {
+    if (mode === 'paginated') {
+      btn.innerHTML = '📄 Modo: <strong>Página a Página</strong>';
+    } else {
+      btn.innerHTML = '📜 Modo: <strong>Continuo</strong>';
+    }
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, function(tag) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[tag] || tag;
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSectionPager);
+  } else {
+    initSectionPager();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
